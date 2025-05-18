@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="container">
+  <article class="vocabulary">
+    <header class="page-header">
+      <h1 class="page-title">{{ title }}</h1>
+      <div class="level-badge level-{{ level | lower }}">{{ level }}</div>
+    </header>
+
+    <div class="page-content">
+      {{ content | safe }}
+      
+      {% if wordlist %}
+      <div class="vocabulary-list">
+        <h2>Word List</h2>
+        <div class="vocabulary-grid">
+          {% for word in wordlist %}
+          <div class="vocabulary-card">
+            <h3 class="word">{{ word.term }}</h3>
+            <p class="pronunciation">{{ word.pronunciation }}</p>
+            <p class="part-of-speech">{{ word.partOfSpeech }}</p>
+            <p class="definition">{{ word.definition }}</p>
+            {% if word.example %}
+            <p class="example"><em>"{{ word.example }}"</em></p>
+            {% endif %}
+            {% if word.synonyms %}
+            <p class="synonyms"><strong>Synonyms:</strong> {{ word.synonyms | join(", ") }}</p>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </article>
+</div>

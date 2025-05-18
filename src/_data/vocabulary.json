@@ -1,0 +1,100 @@
+[
+  {
+    "term": "Hello",
+    "pronunciation": "/həˈloʊ/",
+    "partOfSpeech": "exclamation, noun",
+    "definition": "Used as a greeting or to begin a phone conversation.",
+    "example": "Hello, how are you?",
+    "level": "Beginner",
+    "category": "Greetings"
+  },
+  {
+    "term": "Goodbye",
+    "pronunciation": "/ˌɡʊdˈbaɪ/",
+    "partOfSpeech": "exclamation, noun",
+    "definition": "Used when leaving or ending a conversation.",
+    "example": "Goodbye, see you tomorrow!",
+    "level": "Beginner",
+    "category": "Greetings"
+  },
+  {
+    "term": "Friend",
+    "pronunciation": "/frɛnd/",
+    "partOfSpeech": "noun",
+    "definition": "A person who you like and enjoy being with.",
+    "example": "She's my best friend.",
+    "synonyms": ["companion", "buddy", "pal"],
+    "level": "Beginner",
+    "category": "Relationships"
+  },
+  {
+    "term": "Delicious",
+    "pronunciation": "/dɪˈlɪʃəs/",
+    "partOfSpeech": "adjective",
+    "definition": "Having a very pleasant taste or smell.",
+    "example": "The cake was delicious.",
+    "synonyms": ["tasty", "appetizing", "flavorful"],
+    "level": "Beginner",
+    "category": "Food"
+  },
+  {
+    "term": "Acquire",
+    "pronunciation": "/əˈkwaɪər/",
+    "partOfSpeech": "verb",
+    "definition": "To come into possession or ownership of something.",
+    "example": "She acquired a taste for coffee after living in Italy.",
+    "synonyms": ["obtain", "gain", "procure"],
+    "level": "Intermediate",
+    "category": "General"
+  },
+  {
+    "term": "Compromise",
+    "pronunciation": "/ˈkɑːmprəmaɪz/",
+    "partOfSpeech": "noun, verb",
+    "definition": "An agreement or settlement that is reached by both sides making concessions.",
+    "example": "They reached a compromise after hours of negotiation.",
+    "synonyms": ["settlement", "agreement", "deal"],
+    "level": "Intermediate",
+    "category": "Business"
+  },
+  {
+    "term": "Diligent",
+    "pronunciation": "/ˈdɪlɪdʒənt/",
+    "partOfSpeech": "adjective",
+    "definition": "Having or showing care and conscientiousness in one's work or duties.",
+    "example": "She's a diligent student who always completes her assignments on time.",
+    "synonyms": ["hardworking", "industrious", "conscientious"],
+    "level": "Intermediate",
+    "category": "Character"
+  },
+  {
+    "term": "Eloquent",
+    "pronunciation": "/ˈɛləkwənt/",
+    "partOfSpeech": "adjective",
+    "definition": "Fluent or persuasive in speaking or writing.",
+    "example": "She gave an eloquent speech at the conference.",
+    "synonyms": ["articulate", "fluent", "expressive"],
+    "level": "Advanced",
+    "category": "Communication"
+  },
+  {
+    "term": "Meticulous",
+    "pronunciation": "/məˈtɪkjələs/",
+    "partOfSpeech": "adjective",
+    "definition": "Showing great attention to detail; very careful and precise.",
+    "example": "He is meticulous about his work, checking every calculation twice.",
+    "synonyms": ["thorough", "precise", "fastidious"],
+    "level": "Advanced",
+    "category": "Character"
+  },
+  {
+    "term": "Serendipity",
+    "pronunciation": "/ˌsɛrənˈdɪpɪti/",
+    "partOfSpeech": "noun",
+    "definition": "The occurrence and development of events by chance in a happy or beneficial way.",
+    "example": "Finding this book was pure serendipity.",
+    "synonyms": ["chance", "luck", "fortune"],
+    "level": "Advanced",
+    "category": "Concepts"
+  }
+]

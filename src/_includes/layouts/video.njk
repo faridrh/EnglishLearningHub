@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="container">
+  <article class="video-lesson">
+    <header class="page-header">
+      <h1 class="page-title">{{ title }}</h1>
+      <div class="category-badge">{{ category }}</div>
+    </header>
+
+    <div class="page-content">
+      {{ content | safe }}
+      
+      {% if videos %}
+      <div class="video-list">
+        {% for video in videos %}
+        <div class="video-card">
+          <h3 class="video-title">{{ video.title }}</h3>
+          <div class="video-embed">
+            {% youtube video.youtubeId %}
+          </div>
+          <p class="video-description">{{ video.description }}</p>
+          {% if video.keywords %}
+          <div class="video-keywords">
+            {% for keyword in video.keywords %}
+            <span class="keyword">{{ keyword }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </article>
+</div>

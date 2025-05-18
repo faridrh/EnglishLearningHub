@@ -1,0 +1,92 @@
+---
+layout: layouts/base.njk
+title: Home
+description: Welcome to English Learning Hub - your resource for learning English with vocabulary lists and educational videos.
+---
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">Learn English Effectively</h1>
+    <p class="hero-subtitle">Improve your vocabulary and skills with our comprehensive resources</p>
+    <div class="hero-cta">
+      <a href="/vocabulary/" class="button button-primary">Explore Vocabulary</a>
+      <a href="/videos/" class="button button-secondary">Watch Videos</a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <h2 class="feature-title">Vocabulary Learning</h2>
+        <p class="feature-description">Expand your vocabulary with word lists organized by level and topic.</p>
+        <a href="/vocabulary/" class="feature-link">View vocabulary lists</a>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <h2 class="feature-title">Video Lessons</h2>
+        <p class="feature-description">Learn through educational videos covering pronunciation, grammar, and conversation.</p>
+        <a href="/videos/" class="feature-link">Watch videos</a>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h2 class="feature-title">Level-Based Learning</h2>
+        <p class="feature-description">Content organized by beginner, intermediate, and advanced levels.</p>
+        <a href="/vocabulary/beginner/" class="feature-link">Start with basics</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-content">
+  <div class="container">
+    <div class="featured-section">
+      <h2 class="section-title">Featured Vocabulary</h2>
+      <div class="cards-grid">
+        {% for word in vocabulary | limit(3) %}
+        <div class="card vocabulary-preview">
+          <div class="card-badge">{{ word.level }}</div>
+          <h3 class="card-title">{{ word.term }}</h3>
+          <p class="card-pronunciation">{{ word.pronunciation }}</p>
+          <p class="card-definition">{{ word.definition }}</p>
+          <a href="/vocabulary/{{ word.level | lower }}/" class="card-link">See more {{ word.level | lower }} words</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <div class="featured-section">
+      <h2 class="section-title">Featured Videos</h2>
+      <div class="cards-grid">
+        {% for video in videos | limit(3) %}
+        <div class="card video-preview">
+          <div class="card-badge">{{ video.category }}</div>
+          <h3 class="card-title">{{ video.title }}</h3>
+          <p class="card-description">{{ video.description }}</p>
+          <a href="/videos/{{ video.category | lower }}/" class="card-link">See more {{ video.category | lower }} videos</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">Ready to Improve Your English?</h2>
+    <p class="cta-description">Start learning with our structured vocabulary lists and helpful videos!</p>
+    <div class="cta-buttons">
+      <a href="/vocabulary/" class="button button-primary">Explore All Resources</a>
+    </div>
+  </div>
+</section>

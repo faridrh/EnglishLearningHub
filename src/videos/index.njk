@@ -1,0 +1,116 @@
+---
+layout: layouts/base.njk
+title: Educational Videos
+description: Learn English through our educational videos covering pronunciation, grammar, and conversation skills.
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Educational Videos</h1>
+    <p class="page-description">Improve your English skills with our collection of educational videos</p>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="container">
+    <div class="search-box">
+      <h2>Find Videos</h2>
+      {% include "components/search.njk" %}
+    </div>
+  </div>
+</section>
+
+<section class="categories-section">
+  <div class="container">
+    <h2 class="section-title">Videos by Category</h2>
+    
+    <div class="category-cards">
+      <div class="category-card category-pronunciation">
+        <div class="category-icon"><i class="fas fa-volume-up"></i></div>
+        <h3 class="category-title">Pronunciation</h3>
+        <p class="category-description">Master English sounds, stress, and intonation patterns.</p>
+        <p class="category-stats">{{ videos | byCategory('Pronunciation') | length }} videos</p>
+        <a href="/videos/pronunciation/" class="button">View Pronunciation Videos</a>
+      </div>
+      
+      <div class="category-card category-grammar">
+        <div class="category-icon"><i class="fas fa-book"></i></div>
+        <h3 class="category-title">Grammar</h3>
+        <p class="category-description">Learn English grammar rules and structures clearly explained.</p>
+        <p class="category-stats">{{ videos | byCategory('Grammar') | length }} videos</p>
+        <a href="/videos/grammar/" class="button">View Grammar Videos</a>
+      </div>
+      
+      <div class="category-card category-conversation">
+        <div class="category-icon"><i class="fas fa-comments"></i></div>
+        <h3 class="category-title">Conversation</h3>
+        <p class="category-description">Improve your speaking skills with practical conversation tips.</p>
+        <p class="category-stats">{{ videos | byCategory('Conversation') | length }} videos</p>
+        <a href="/videos/conversation/" class="button">View Conversation Videos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="video-preview">
+  <div class="container">
+    <h2 class="section-title">Featured Videos</h2>
+    
+    <div class="video-grid">
+      {% for video in videos | limit(6) %}
+      <div class="video-card">
+        <h3 class="video-title">{{ video.title }}</h3>
+        <div class="video-embed">
+          {% youtube video.youtubeId %}
+        </div>
+        <p class="video-description">{{ video.description }}</p>
+        <div class="video-meta">
+          <span class="category-badge">{{ video.category }}</span>
+          <span class="level-badge level-{{ video.level | lower }}">{{ video.level }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="section-footer">
+      <p>Explore our complete video collection by category:</p>
+      <div class="button-group">
+        <a href="/videos/pronunciation/" class="button">Pronunciation</a>
+        <a href="/videos/grammar/" class="button">Grammar</a>
+        <a href="/videos/conversation/" class="button">Conversation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tips-section">
+  <div class="container">
+    <h2 class="section-title">Tips for Learning with Videos</h2>
+    
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-headphones"></i></div>
+        <h3>Use Subtitles</h3>
+        <p>Start with subtitles in your language, then switch to English subtitles, and finally try without them.</p>
+      </div>
+      
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-redo"></i></div>
+        <h3>Watch Repeatedly</h3>
+        <p>Watch videos multiple times to catch details you missed and improve comprehension.</p>
+      </div>
+      
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-microphone"></i></div>
+        <h3>Shadow the Speaker</h3>
+        <p>Try to speak along with the video to improve your pronunciation and intonation.</p>
+      </div>
+      
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-pen"></i></div>
+        <h3>Take Notes</h3>
+        <p>Write down new words and phrases to review later and reinforce your learning.</p>
+      </div>
+    </div>
+  </div>
+</section>

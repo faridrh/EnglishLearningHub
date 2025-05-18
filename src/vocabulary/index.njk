@@ -1,0 +1,112 @@
+---
+layout: layouts/base.njk
+title: Vocabulary Learning
+description: Expand your English vocabulary with our comprehensive word lists organized by level and topic.
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Vocabulary Learning</h1>
+    <p class="page-description">Explore our vocabulary resources organized by level of difficulty</p>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="container">
+    <div class="search-box">
+      <h2>Find Words</h2>
+      {% include "components/search.njk" %}
+    </div>
+  </div>
+</section>
+
+<section class="levels-section">
+  <div class="container">
+    <h2 class="section-title">Vocabulary by Level</h2>
+    
+    <div class="level-cards">
+      <div class="level-card level-beginner">
+        <h3 class="level-title">Beginner</h3>
+        <p class="level-description">Essential vocabulary for those just starting their English journey.</p>
+        <p class="level-stats">{{ vocabulary | byLevel('Beginner') | length }} words</p>
+        <a href="/vocabulary/beginner/" class="button">View Beginner Words</a>
+      </div>
+      
+      <div class="level-card level-intermediate">
+        <h3 class="level-title">Intermediate</h3>
+        <p class="level-description">Expand your vocabulary with more complex and nuanced words.</p>
+        <p class="level-stats">{{ vocabulary | byLevel('Intermediate') | length }} words</p>
+        <a href="/vocabulary/intermediate/" class="button">View Intermediate Words</a>
+      </div>
+      
+      <div class="level-card level-advanced">
+        <h3 class="level-title">Advanced</h3>
+        <p class="level-description">Sophisticated vocabulary for advanced learners and fluent speakers.</p>
+        <p class="level-stats">{{ vocabulary | byLevel('Advanced') | length }} words</p>
+        <a href="/vocabulary/advanced/" class="button">View Advanced Words</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vocabulary-preview">
+  <div class="container">
+    <h2 class="section-title">Recently Added Words</h2>
+    
+    <div class="vocabulary-grid">
+      {% for word in vocabulary | limit(6) %}
+      <div class="vocabulary-card">
+        <h3 class="word">{{ word.term }}</h3>
+        <p class="pronunciation">{{ word.pronunciation }}</p>
+        <p class="part-of-speech">{{ word.partOfSpeech }}</p>
+        <p class="definition">{{ word.definition }}</p>
+        {% if word.example %}
+        <p class="example"><em>"{{ word.example }}"</em></p>
+        {% endif %}
+        <div class="level-badge level-{{ word.level | lower }}">{{ word.level }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="section-footer">
+      <p>Explore our complete vocabulary lists organized by level:</p>
+      <div class="button-group">
+        <a href="/vocabulary/beginner/" class="button">Beginner</a>
+        <a href="/vocabulary/intermediate/" class="button">Intermediate</a>
+        <a href="/vocabulary/advanced/" class="button">Advanced</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tips-section">
+  <div class="container">
+    <h2 class="section-title">Vocabulary Learning Tips</h2>
+    
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-sticky-note"></i></div>
+        <h3>Use Flashcards</h3>
+        <p>Create physical or digital flashcards to review new words regularly.</p>
+      </div>
+      
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-book-open"></i></div>
+        <h3>Read Daily</h3>
+        <p>Reading exposes you to vocabulary in context, which helps with retention.</p>
+      </div>
+      
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-pen"></i></div>
+        <h3>Write Sentences</h3>
+        <p>Practice using new words in your own sentences to reinforce learning.</p>
+      </div>
+      
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-users"></i></div>
+        <h3>Speak with Others</h3>
+        <p>Use new vocabulary in conversation to improve recall and fluency.</p>
+      </div>
+    </div>
+  </div>
+</section>

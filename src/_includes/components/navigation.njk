@@ -1,0 +1,33 @@
+<nav class="site-navigation">
+  <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+    <span class="sr-only">Menu</span>
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <ul id="primary-menu" class="menu">
+    <li class="menu-item {% if page.url === '/' %}active{% endif %}">
+      <a href="/">Home</a>
+    </li>
+    <li class="menu-item {% if page.url.includes('/vocabulary/') %}active{% endif %}">
+      <a href="/vocabulary/">Vocabulary</a>
+    </li>
+    <li class="menu-item {% if page.url.includes('/videos/') %}active{% endif %}">
+      <a href="/videos/">Videos</a>
+    </li>
+    <li class="menu-item {% if page.url === '/about/' %}active{% endif %}">
+      <a href="/about/">About</a>
+    </li>
+    <li class="menu-item {% if page.url === '/contact/' %}active{% endif %}">
+      <a href="/contact/">Contact</a>
+    </li>
+  </ul>
+
+  <div class="search-toggle">
+    <button id="search-button" aria-label="Search">
+      <i class="fas fa-search"></i>
+    </button>
+    <div id="search-container" class="search-dropdown">
+      {% include "components/search.njk" %}
+    </div>
+  </div>
+</nav>
