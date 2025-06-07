@@ -1,0 +1,123 @@
+---
+layout: layouts/base.njk
+title: Ana Səhifə
+description: İngilis dili öyrənmək üçün ən yaxşı platform. Qrammatika, lüğət və hekayələrlə İngilis dilini mənimsəyin.
+---
+
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">İngilis Dilini Öyrənin</h1>
+      <p class="hero-description">Hər səviyyədəki öyrənənlər üçün hərtərəfli və cəlbedici dil resursları ilə İngilis dilində uğur qazanın.</p>
+      <div class="hero-buttons">
+        <a href="/az/qrammatika/" class="button primary">Qrammatikaya Başlayın</a>
+        <a href="/az/hekayeler/" class="button secondary">Hekayələri Oxuyun</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <h2 class="section-title">Nədən İbarətdir?</h2>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <h3 class="feature-title">Qrammatika Dərsləri</h3>
+        <p class="feature-description">Başlanğıcdan irəli səviyyəyə qədər sistematik qrammatika öyrətmə.</p>
+        <a href="/az/qrammatika/" class="feature-link">Qrammatikaya baxın</a>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-book-reader"></i>
+        </div>
+        <h3 class="feature-title">İnteraktiv Hekayələr</h3>
+        <p class="feature-description">Oxuma bacarıqlarınızı inkişaf etdirən maraqlı hekayələr.</p>
+        <a href="/az/hekayeler/" class="feature-link">Hekayələri oxuyun</a>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-spell-check"></i>
+        </div>
+        <h3 class="feature-title">Lüğət Kartları</h3>
+        <p class="feature-description">İnteraktiv kartlarla yeni sözləri öyrənin və təkrarlayın.</p>
+        <a href="/az/luget/" class="feature-link">Lüğətə baxın</a>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <h3 class="feature-title">Video Dərslər</h3>
+        <p class="feature-description">Müxtəlif mövzularda video məzmunla öyrənin.</p>
+        <a href="/az/videolar/" class="feature-link">Videoları izləyin</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="levels-section">
+  <div class="container">
+    <h2 class="section-title">Səviyyənizi Seçin</h2>
+    
+    <div class="level-cards">
+      <div class="level-card level-beginner">
+        <h3 class="level-title">Başlanğıc</h3>
+        <p class="level-description">İngilis dili öyrənməyə yeni başlayanlar üçün əsas bilik və bacarıqlar.</p>
+        <ul class="level-features">
+          <li>Əsas qrammatika qaydaları</li>
+          <li>Gündəlik istifadə sözləri</li>
+          <li>Sadə hekayələr</li>
+        </ul>
+        <a href="/az/qrammatika/baslangic/" class="button">Başlanğıc səviyyə</a>
+      </div>
+      
+      <div class="level-card level-intermediate">
+        <h3 class="level-title">Orta</h3>
+        <p class="level-description">Əsas bilikləri olan və daha mürəkkəb strukturları öyrənmək istəyənlər üçün.</p>
+        <ul class="level-features">
+          <li>Mürəkkəb qrammatika</li>
+          <li>Geniş lüğət</li>
+          <li>Maraqlı hekayələr</li>
+        </ul>
+        <a href="/az/qrammatika/orta/" class="button">Orta səviyyə</a>
+      </div>
+      
+      <div class="level-card level-advanced">
+        <h3 class="level-title">İrəli</h3>
+        <p class="level-description">İngilis dilində təcrübəli olanlar üçün inkişaf etmiş məzmun.</p>
+        <ul class="level-features">
+          <li>İrəli qrammatika</li>
+          <li>Peşəkar lüğət</li>
+          <li>Mürəkkəb hekayələr</li>
+        </ul>
+        <a href="/az/qrammatika/ireli/" class="button">İrəli səviyyə</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="container">
+    <div class="search-box">
+      <h2>Axtarış edin</h2>
+      <p>Spesifik mövzu və ya məzmunu tapın</p>
+      {% include "components/search.njk" %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>İngilis dili səyahətinizə bu gün başlayın</h2>
+      <p>Minlərlə öyrənənin seçdiyi platformada öz İngilis dili bacarıqlarınızı inkişaf etdirin.</p>
+      <a href="/az/qrammatika/" class="button primary large">İndi başlayın</a>
+    </div>
+  </div>
+</section>
