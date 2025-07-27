@@ -21,24 +21,14 @@ module.exports = function(eleventyConfig) {
     return vocabulary.filter(item => item.level === level);
   });
 
-  // Add a filter to find videos by category
-  eleventyConfig.addFilter("byCategory", function(videos, category) {
-    return videos.filter(item => item.category === category);
-  });
 
-  // Add a shortcode for generating YouTube embeds
-  eleventyConfig.addShortcode("youtube", function(id) {
-    return `<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
-  });
 
   // Configure collections
   eleventyConfig.addCollection("vocabularyWords", function(collectionApi) {
     return collectionApi.getAll().filter(item => item.data.collection === "vocabulary");
   });
 
-  eleventyConfig.addCollection("videoLessons", function(collectionApi) {
-    return collectionApi.getAll().filter(item => item.data.collection === "video");
-  });
+
 
   return {
     dir: {

@@ -10,7 +10,7 @@ description: Welcome to English Learning Hub - your resource for learning Englis
     <p class="hero-subtitle">Improve your vocabulary and skills with our comprehensive resources</p>
     <div class="hero-cta">
       <a href="/vocabulary/" class="button button-primary">Explore Vocabulary</a>
-      <a href="/videos/" class="button button-secondary">Watch Videos</a>
+      <a href="/grammar/" class="button button-secondary">Learn Grammar</a>
     </div>
   </div>
 </section>
@@ -29,11 +29,11 @@ description: Welcome to English Learning Hub - your resource for learning Englis
       
       <div class="feature-card">
         <div class="feature-icon">
-          <i class="fas fa-video"></i>
+          <i class="fas fa-book-open"></i>
         </div>
-        <h2 class="feature-title">Video Lessons</h2>
-        <p class="feature-description">Learn through educational videos covering pronunciation, grammar, and conversation.</p>
-        <a href="/videos/" class="feature-link">Watch videos</a>
+        <h2 class="feature-title">Reading Stories</h2>
+        <p class="feature-description">Improve your reading skills with engaging stories organized by difficulty level.</p>
+        <a href="/stories/" class="feature-link">Read stories</a>
       </div>
       
       <div class="feature-card">
@@ -66,16 +66,26 @@ description: Welcome to English Learning Hub - your resource for learning Englis
     </div>
     
     <div class="featured-section">
-      <h2 class="section-title">Featured Videos</h2>
+      <h2 class="section-title">Featured Grammar Topics</h2>
       <div class="cards-grid">
-        {% for video in videos | limit(3) %}
-        <div class="card video-preview">
-          <div class="card-badge">{{ video.category }}</div>
-          <h3 class="card-title">{{ video.title }}</h3>
-          <p class="card-description">{{ video.description }}</p>
-          <a href="/videos/{{ video.category | lower }}/" class="card-link">See more {{ video.category | lower }} videos</a>
+        <div class="card grammar-preview">
+          <div class="card-badge">Beginner</div>
+          <h3 class="card-title">Present Simple</h3>
+          <p class="card-description">Learn the basic present simple tense and how to use it in everyday situations.</p>
+          <a href="/grammar/beginner/" class="card-link">See more beginner grammar</a>
         </div>
-        {% endfor %}
+        <div class="card grammar-preview">
+          <div class="card-badge">Intermediate</div>
+          <h3 class="card-title">Passive Voice</h3>
+          <p class="card-description">Master the passive voice construction and when to use it appropriately.</p>
+          <a href="/grammar/intermediate/" class="card-link">See more intermediate grammar</a>
+        </div>
+        <div class="card grammar-preview">
+          <div class="card-badge">Advanced</div>
+          <h3 class="card-title">Subjunctive Mood</h3>
+          <p class="card-description">Explore advanced subjunctive mood usage in formal and literary contexts.</p>
+          <a href="/grammar/advanced/" class="card-link">See more advanced grammar</a>
+        </div>
       </div>
     </div>
   </div>
@@ -84,7 +94,7 @@ description: Welcome to English Learning Hub - your resource for learning Englis
 <section class="cta-section">
   <div class="container">
     <h2 class="cta-title">Ready to Improve Your English?</h2>
-    <p class="cta-description">Start learning with our structured vocabulary lists and helpful videos!</p>
+    <p class="cta-description">Start learning with our structured vocabulary lists, grammar lessons, and engaging stories!</p>
     <div class="cta-buttons">
       <a href="/vocabulary/" class="button button-primary">Explore All Resources</a>
     </div>

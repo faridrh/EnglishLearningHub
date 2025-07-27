@@ -34,13 +34,11 @@ src/
 │   ├── intermediate/
 │   └── advanced/
 ├── vocabulary/
-├── videos/
 ├── az/ (Azerbaijani translation)
 │   ├── _includes/
 │   ├── qrammatika/
 │   ├── hekayeler/
-│   ├── luget/
-│   └── videolar/
+│   └── luget/
 └── css/
     └── style.css
 ```
@@ -68,10 +66,7 @@ src/
 - **Intermediate**: 800+ intermediate words
 - **Advanced**: 1200+ advanced and academic words
 
-### Videos (Videolar)
-- **Conversation**: Real-life dialogue practice
-- **Grammar**: Visual grammar explanations
-- **Pronunciation**: Phonetics and accent training
+
 
 ## Recent Changes
 
@@ -96,6 +91,12 @@ src/
   - All story links now point to original English stories
   - Removed broken Azerbaijani story translations
   - Maintained Azerbaijani interface with English content for stories
+
+- **Video Section Removal**: Completely removed Video Lessons section
+  - Removed all video-related directories (src/videos, src/az/videolar)
+  - Updated homepage to replace video content with grammar and stories
+  - Removed video navigation links from both English and Azerbaijani versions
+  - Cleaned up Eleventy configuration by removing video-related filters and collections
   
 - **Analytics Integration**: Google Analytics (G-5FLZJH1PD0) integrated across all pages
 
