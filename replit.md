@@ -97,6 +97,13 @@ src/
   - Updated homepage to replace video content with grammar and stories
   - Removed video navigation links from both English and Azerbaijani versions
   - Cleaned up Eleventy configuration by removing video-related filters and collections
+
+- **Azerbaijani Styling Fix**: Added missing CSS styles for Azerbaijani pages
+  - Added styling for .hero-section, .features-section, .levels-section classes
+  - Added support for .hero-content, .hero-description, .hero-buttons
+  - Added button variants (.button.primary, .button.secondary, .button.large)
+  - Added .level-features styling with checkmark icons
+  - Ensured visual parity between English and Azerbaijani versions
   
 - **Analytics Integration**: Google Analytics (G-5FLZJH1PD0) integrated across all pages
 

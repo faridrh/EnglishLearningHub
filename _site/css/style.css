@@ -366,6 +366,35 @@ p {
   flex-wrap: wrap;
 }
 
+/* Azerbaijani Hero Section Classes */
+.hero-section {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-lg);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
 /* Buttons
 -------------------------------------------------- */
 .button {
@@ -403,6 +432,28 @@ p {
   background-color: var(--color-secondary-dark);
 }
 
+/* Additional button variants for Azerbaijani */
+.button.primary {
+  background-color: var(--color-primary);
+}
+
+.button.primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.button.secondary {
+  background-color: var(--color-secondary);
+}
+
+.button.secondary:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+.button.large {
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: 1.125rem;
+}
+
 .button-group {
   display: flex;
   gap: var(--spacing-md);
@@ -411,7 +462,8 @@ p {
 
 /* Features Section
 -------------------------------------------------- */
-.features {
+.features,
+.features-section {
   padding: var(--spacing-xl) 0;
 }
 
@@ -612,6 +664,24 @@ p {
 .level-stats {
   font-weight: 600;
   margin-bottom: var(--spacing-md);
+}
+
+.level-features {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-md) 0;
+}
+
+.level-features li {
+  padding: var(--spacing-xs) 0;
+  color: var(--color-text-light);
+}
+
+.level-features li:before {
+  content: "✓ ";
+  color: var(--color-primary);
+  font-weight: bold;
+  margin-right: var(--spacing-xs);
 }
 
 /* Video Cards & Embeds
@@ -921,6 +991,21 @@ p {
   color: white;
   padding: var(--spacing-xl) 0;
   text-align: center;
+}
+
+/* Azerbaijani-specific sections */
+.levels-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-background-alt);
+}
+
+.search-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .cta-title {
