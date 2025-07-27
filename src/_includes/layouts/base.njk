@@ -30,7 +30,14 @@
         </a>
         <p class="site-tagline">{{ site.tagline }}</p>
       </div>
-      {% include "components/navigation.njk" %}
+      <div class="header-right">
+        {% include "components/navigation.njk" %}
+        <div class="language-switcher">
+          <a href="/" class="lang-link active">English</a>
+          <span class="lang-separator">|</span>
+          <a href="/az/" class="lang-link">Azərbaycanca</a>
+        </div>
+      </div>
     </div>
   </header>
 
