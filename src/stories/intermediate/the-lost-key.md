@@ -11,9 +11,9 @@ word_count: 400
 
 Sarah had been looking everywhere for her house key. She had searched through her purse three times, checked every pocket of her jacket, and even looked under the cushions of her car seats. The key seemed to have completely disappeared.
 
-"This is impossible," she muttered to herself as she stood outside her apartment building. "I had it this morning when I left for work."
+"This is impossible," she <mark>muttered</mark> to herself as she stood outside her apartment building. "I had it this morning when I left for work."
 
-She tried to remember her morning routine. She had gotten up at seven o'clock, made coffee, checked her emails, and then grabbed her things to leave. She definitely remembered locking the door behind her because she always double-checked it before going to work.
+She tried to remember her morning <mark>routine</mark>. She had gotten up at seven o'clock, made coffee, checked her emails, and then grabbed her things to leave. She definitely remembered locking the door behind her because she always <mark>double-checked</mark> it before going to work.
 
 Sarah called her roommate Emma, hoping she might be home. The phone rang several times before Emma answered.
 
@@ -23,11 +23,11 @@ Sarah called her roommate Emma, hoping she might be home. The phone rang several
 
 "Oh no! That's terrible. Unfortunately, I'm still at the library studying for my exam tomorrow. I won't be back until late tonight."
 
-Sarah sighed deeply. "It's okay, I'll figure something out. Maybe I can call a locksmith."
+Sarah sighed deeply. "It's okay, I'll figure something out. Maybe I can call a <mark>locksmith</mark>."
 
 "Wait," Emma said suddenly. "Did you check the coffee shop where you stopped this morning? You mentioned you bought a latte on your way to work."
 
-Sarah's eyes widened. "You're absolutely right! I remember taking out my wallet to pay, and I might have dropped the key then." She felt a wave of hope washing over her.
+Sarah's eyes widened. "You're absolutely right! I remember taking out my wallet to pay, and I might have dropped the key then." She felt a <mark>wave of hope</mark> washing over her.
 
 "The coffee shop is only two blocks away. I'll head there right now."
 
@@ -41,11 +41,11 @@ He disappeared into the back room and returned moments later with a familiar sil
 
 "Is this yours?" he asked, holding up the key.
 
-Sarah felt enormous relief. "Yes, that's it! Thank you so much!"
+Sarah felt <mark>enormous</mark> relief. "Yes, that's it! Thank you so much!"
 
-As she walked home, Sarah realized that sometimes the answer to our problems is simpler than we think. She had been so worried about being locked out that she hadn't considered retracing her steps. From now on, she decided, she would be more careful with her belongings and remember that asking for help often leads to solutions.
+As she walked home, Sarah realized that sometimes the answer to our problems is simpler than we think. She had been so worried about being locked out that she hadn't considered <mark>retracing</mark> her steps. From now on, she decided, she would be more careful with her belongings and remember that asking for help often leads to solutions.
 
-When she finally opened her apartment door, Sarah felt grateful not just for finding her key, but for the reminder that community and kindness exist everywhere, even in small coffee shops.
+When she finally opened her apartment door, Sarah felt <mark>grateful</mark> not just for finding her key, but for the reminder that community and kindness exist everywhere, even in small coffee shops.
 
 ---
 

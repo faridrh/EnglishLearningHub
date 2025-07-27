@@ -9,29 +9,29 @@ word_count: 280
 
 # Shopping at the Store
 
-Lisa needs to buy food for her family. She makes a list and goes to the supermarket near her house. The supermarket is big and has many different foods.
+Lisa needs to buy food for her family. She makes a <mark>list</mark> and goes to the <mark>supermarket</mark> near her house. The <mark>supermarket</mark> is big and has many different foods.
 
-Lisa takes a shopping cart at the entrance. First, she goes to the fruit section. She buys apples, bananas, and oranges. The fruits are fresh and look very good.
+Lisa takes a shopping <mark>cart</mark> at the entrance. First, she goes to the fruit <mark>section</mark>. She buys apples, bananas, and oranges. The fruits are <mark>fresh</mark> and look very good.
 
-Next, Lisa goes to the vegetable section. She picks tomatoes, carrots, and lettuce. Lisa likes to make salads for her family. The vegetables are green and healthy.
+Next, Lisa goes to the vegetable <mark>section</mark>. She picks tomatoes, carrots, and lettuce. Lisa likes to make salads for her family. The vegetables are green and healthy.
 
-Lisa walks to the meat section. She buys chicken and fish. The man behind the counter is friendly. He helps Lisa choose the best meat.
+Lisa walks to the meat <mark>section</mark>. She buys chicken and fish. The man behind the counter is friendly. He helps Lisa choose the best meat.
 
-In the dairy section, Lisa takes milk, cheese, and eggs. Her children drink milk every morning with breakfast. Lisa also buys yogurt because it is healthy.
+In the <mark>dairy</mark> <mark>section</mark>, Lisa takes milk, cheese, and eggs. Her children drink milk every morning with breakfast. Lisa also buys yogurt because it is healthy.
 
-Lisa needs bread for sandwiches. She goes to the bakery section. The bread smells very good. Lisa chooses whole wheat bread because it is better for her family.
+Lisa needs bread for sandwiches. She goes to the bakery <mark>section</mark>. The bread smells very good. Lisa chooses whole wheat bread because it is better for her family.
 
-Lisa looks at her shopping list. She has everything she needs. She walks to the checkout counter. The cashier is a young woman with a big smile.
+Lisa looks at her shopping <mark>list</mark>. She has everything she needs. She walks to the <mark>checkout</mark> counter. The <mark>cashier</mark> is a young woman with a big smile.
 
-"Hello! Did you find everything you need?" asks the cashier.
+"Hello! Did you find everything you need?" asks the <mark>cashier</mark>.
 
 "Yes, thank you," says Lisa.
 
-The cashier scans all the items. The total is forty-two dollars. Lisa pays with her credit card.
+The <mark>cashier</mark> scans all the items. The total is forty-two dollars. Lisa pays with her credit card.
 
-Lisa puts all the food in bags. She says "Thank you" and "Have a nice day" to the cashier.
+Lisa puts all the food in bags. She says "Thank you" and "Have a nice day" to the <mark>cashier</mark>.
 
-At home, Lisa puts the food in the refrigerator and cupboards. She is happy because she bought good food for her family. Tonight, she will cook a delicious dinner with the fresh ingredients.
+At home, Lisa puts the food in the refrigerator and cupboards. She is happy because she bought good food for her family. Tonight, she will cook a delicious dinner with the <mark>fresh</mark> <mark>ingredients</mark>.
 
 ---
 
