@@ -87,6 +87,16 @@ src/
   - Resolved grammar section broken links
   - Added comprehensive vocabulary content for all levels
   
+- **Language Switcher**: Added visible language switching functionality
+  - Language switcher positioned in header next to navigation
+  - Users can switch between English and Azerbaijani versions
+  - Proper CSS styling with hover effects and active states
+  
+- **Story Links Fix**: Updated Azerbaijani story section
+  - All story links now point to original English stories
+  - Removed broken Azerbaijani story translations
+  - Maintained Azerbaijani interface with English content for stories
+  
 - **Analytics Integration**: Google Analytics (G-5FLZJH1PD0) integrated across all pages
 
 ## User Preferences
