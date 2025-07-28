@@ -4,6 +4,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/stories/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/stories/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/stories/**/*.jpeg");
 
   // Add a filter to limit array length (for featured posts)
   eleventyConfig.addFilter("limit", function(array, limit) {
