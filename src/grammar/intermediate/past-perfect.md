@@ -143,14 +143,176 @@ Remember that many verbs have irregular past participles used in the past perfec
 - **Had** you **met** her before the conference last year?
 - If I **had known** you were coming, I would have prepared dinner.
 
-## Practice Exercises
+## Interactive Practice Exercises
 
-Complete these sentences using the past perfect tense:
+Complete these sentences using the past perfect tense. Type your answers in the blanks and click "Check Answers" to see how you did:
 
-1. By the time we got to the cinema, the film ____________ (already/start).
-2. She ____________ (never/see) snow before she moved to Canada.
-3. The plane ____________ (take off) by the time we reached the airport.
-4. I realized that I ____________ (lose) my wallet.
-5. ____________ (you/finish) your homework before the teacher collected it?
+<div class="interactive-exercise">
+  <div class="exercise-item">
+    <p><strong>1.</strong> By the time we got to the cinema, the film <input type="text" class="fill-blank" data-answer="had already started" placeholder="____________"> (already/start).</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>2.</strong> She <input type="text" class="fill-blank" data-answer="had never seen" placeholder="____________"> (never/see) snow before she moved to Canada.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>3.</strong> The plane <input type="text" class="fill-blank" data-answer="had taken off" placeholder="____________"> (take off) by the time we reached the airport.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>4.</strong> I realized that I <input type="text" class="fill-blank" data-answer="had lost" placeholder="____________"> (lose) my wallet.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>5.</strong> <input type="text" class="fill-blank" data-answer="Had you finished" placeholder="____________"> (you/finish) your homework before the teacher collected it?</p>
+  </div>
+  
+  <div class="exercise-controls">
+    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+  </div>
+  
+  <div id="results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="score"></p>
+    <div id="feedback"></div>
+  </div>
+</div>
+
+<script>
+function checkAnswers() {
+  const inputs = document.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById('results');
+  const scoreP = document.getElementById('score');
+  const feedbackDiv = document.getElementById('feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    // Remove previous styling
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Question ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  // Show results
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
+
+function resetExercise() {
+  const inputs = document.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById('results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
+
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 120px;
+  margin: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+#feedback p {
+  margin: 5px 0;
+  padding: 5px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+}
+</style>
 
 Remember that the past perfect helps make the sequence of past events clear and is particularly useful when telling stories or explaining past experiences!
