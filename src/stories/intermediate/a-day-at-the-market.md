@@ -9,7 +9,7 @@ word_count: 450
 
 # A Day at the Market
 
-Elena loved visiting the local farmers market every Saturday morning. The colors, smells, and sounds always made her feel alive and connected to her community. She had been coming here for three years, ever since she moved to the neighborhood, and it had become one of her favorite weekly traditions.
+Elena loved visiting the local farmers market every Saturday morning. The colors, smells, and sounds always made her feel alive and connected to her community. <img src="/stories/intermediate/market-scene.jpg" alt="A vibrant farmers market scene with people shopping for fresh fruits and vegetables at colorful stalls" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She had been coming here for three years, ever since she moved to the neighborhood, and it had become one of her favorite weekly traditions.
 
 As she walked through the entrance at nine o'clock sharp, Elena was greeted by the familiar sight of colorful tents and busy <mark>vendors</mark> setting up their stalls. The autumn air was crisp, and she pulled her sweater closer as she made her way to her first stop: Mrs. Patterson's vegetable stand.
 
