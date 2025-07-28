@@ -33,6 +33,8 @@ Sarah's eyes widened. "You're absolutely right! I remember taking out my wallet 
 
 Sarah hurried down the street, her heart beating faster with each step. When she arrived at "Morning Brew," her favorite coffee shop, she went straight to the counter.
 
+<img src="/stories/intermediate/lost-key-sarah.jpg" alt="Sarah looking worried talking to a friendly barista at a coffee shop, with the barista holding keys" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;">
+
 "Excuse me," she said to the barista, a young man with friendly eyes. "I was here this morning around eight-thirty, and I think I might have dropped my house key. Did anyone happen to find one?"
 
 The barista smiled. "Actually, yes! A customer found a key on the floor near table five and brought it to us. Let me check our lost and found box."
