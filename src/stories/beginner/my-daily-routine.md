@@ -9,9 +9,9 @@ word_count: 250
 
 # My Daily Routine
 
-![Tom's Daily Routine](/images/tom-daily-routine.jpg)
-
 Tom wakes up every morning at seven o'clock. He brushes his teeth, eats breakfast, and goes to work. Tom works in an <mark>office</mark> in the <mark>city center</mark>.
+
+<img src="/images/tom-daily-routine.jpg" alt="Tom's Daily Routine" style="width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
 
 At eight o'clock, Tom leaves his house. He walks to the <mark>bus stop</mark>. The bus comes at eight-fifteen. Tom sits by the window and looks at the buildings and cars.
 
