@@ -11,7 +11,7 @@ word_count: 280
 
 Lisa needs to buy food for her family. She makes a <mark>list</mark> and goes to the <mark>supermarket</mark> near her house. The <mark>supermarket</mark> is big and has many different foods.
 
-Lisa takes a shopping <mark>cart</mark> at the entrance. First, she goes to the fruit <mark>section</mark>. She buys apples, bananas, and oranges. The fruits are <mark>fresh</mark> and look very good.
+Lisa takes a shopping <mark>cart</mark> at the entrance. First, she goes to the fruit <mark>section</mark>. <img src="/stories/beginner/shopping-store.jpg" alt="A woman shopping for fresh fruits at the supermarket" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She buys apples, bananas, and oranges. The fruits are <mark>fresh</mark> and look very good.
 
 Next, Lisa goes to the vegetable <mark>section</mark>. She picks tomatoes, carrots, and lettuce. Lisa likes to make salads for her family. The vegetables are green and healthy.
 
