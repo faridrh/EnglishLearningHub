@@ -104,6 +104,18 @@ src/
   - Added button variants (.button.primary, .button.secondary, .button.large)
   - Added .level-features styling with checkmark icons
   - Ensured visual parity between English and Azerbaijani versions
+
+- **Vocabulary Highlighting Feature**: Added vocabulary word highlighting across all stories
+  - Implemented <mark> tags to highlight key vocabulary words within story text
+  - Connected vocabulary words from each story to their respective vocabulary lists
+  - Enhanced learning experience by visually identifying important words
+  - Applied to all 10 stories across beginner, intermediate, and advanced levels
+
+- **Grammar Links Fix**: Fixed all broken grammar links in Azerbaijani version
+  - Updated all Azerbaijani grammar page links to point to English grammar content
+  - Maintained Azerbaijani interface with English grammar lessons
+  - Fixed beginner, intermediate, and advanced level navigation links
+  - Resolved 404 errors on grammar section pages
   
 - **Analytics Integration**: Google Analytics (G-5FLZJH1PD0) integrated across all pages
 
