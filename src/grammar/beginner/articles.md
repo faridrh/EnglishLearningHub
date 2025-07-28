@@ -133,14 +133,175 @@ Articles are not used in some situations:
 - My brother is learning to play **the** piano.
 - She speaks French without **an** accent. (French is a language, so no article; "an" before "accent")
 
-## Practice Exercises
+## Interactive Practice Exercises
 
-Try filling in the blanks with "a," "an," "the," or nothing (Ø) where no article is needed:
+Fill in the blanks with "a," "an," "the," or leave blank (Ø) where no article is needed:
 
-1. I have ____ dog and ____ cat. ____ dog is brown and ____ cat is black.
-2. ____ elephants are largest land mammals.
-3. We went to ____ restaurant for ____ dinner last night.
-4. My father is ____ engineer. He works for ____ Microsoft.
-5. ____ Lake Superior is one of ____ Great Lakes in ____ North America.
+<div class="interactive-exercise">
+  <div class="exercise-item">
+    <p><strong>1.</strong> I have <input type="text" class="fill-blank" data-answer="a" placeholder="____"> dog and <input type="text" class="fill-blank" data-answer="a" placeholder="____"> cat. <input type="text" class="fill-blank" data-answer="The" placeholder="____"> dog is brown and <input type="text" class="fill-blank" data-answer="the" placeholder="____"> cat is black.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>2.</strong> <input type="text" class="fill-blank" data-answer="" placeholder="____"> Elephants are <input type="text" class="fill-blank" data-answer="the" placeholder="____"> largest land mammals.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>3.</strong> We went to <input type="text" class="fill-blank" data-answer="a" placeholder="____"> restaurant for <input type="text" class="fill-blank" data-answer="" placeholder="____"> dinner last night.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>4.</strong> My father is <input type="text" class="fill-blank" data-answer="an" placeholder="____"> engineer. He works for <input type="text" class="fill-blank" data-answer="" placeholder="____"> Microsoft.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>5.</strong> <input type="text" class="fill-blank" data-answer="" placeholder="____"> Lake Superior is one of <input type="text" class="fill-blank" data-answer="the" placeholder="____"> Great Lakes in <input type="text" class="fill-blank" data-answer="" placeholder="____"> North America.</p>
+  </div>
+  
+  <div class="exercise-controls">
+    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+  </div>
+  
+  <div id="results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="score"></p>
+    <div id="feedback"></div>
+  </div>
+</div>
+
+<script>
+function checkAnswers() {
+  const inputs = document.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById('results');
+  const scoreP = document.getElementById('score');
+  const feedbackDiv = document.getElementById('feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      const displayAnswer = input.dataset.answer === '' ? '(no article)' : input.dataset.answer;
+      feedback += `<p><strong>Blank ${index + 1}:</strong> Your answer: "${input.value || '(empty)'}" | Correct answer: "${displayAnswer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
+
+function resetExercise() {
+  const inputs = document.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById('results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
+
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 80px;
+  margin: 0 3px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+#feedback p {
+  margin: 5px 0;
+  padding: 5px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+}
+</style>
 
 Remember, mastering article usage takes practice, so don't be discouraged if it seems complicated at first!

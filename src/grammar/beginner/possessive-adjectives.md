@@ -176,16 +176,182 @@ Possessive adjectives are used:
 - **Our** flight leaves at 10 AM tomorrow.
 - The students raised **their** hands to answer the question.
 
-## Practice Exercises
+## Interactive Practice Exercises
 
 Complete the sentences with the correct possessive adjective:
 
-1. I have a car. _____ car is blue.
-2. You have a new phone. Is that _____ phone?
-3. He has a sister. _____ sister is a teacher.
-4. She has three brothers. _____ brothers are all doctors.
-5. The dog is eating _____ food.
-6. We have a house in the country. _____ house is very old.
-7. They have two children. _____ children go to the same school.
+<div class="interactive-exercise">
+  <div class="exercise-item">
+    <p><strong>1.</strong> I have a car. <input type="text" class="fill-blank" data-answer="My" placeholder="_____"> car is blue.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>2.</strong> You have a new phone. Is that <input type="text" class="fill-blank" data-answer="your" placeholder="_____"> phone?</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>3.</strong> He has a sister. <input type="text" class="fill-blank" data-answer="His" placeholder="_____"> sister is a teacher.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>4.</strong> She has three brothers. <input type="text" class="fill-blank" data-answer="Her" placeholder="_____"> brothers are all doctors.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>5.</strong> The dog is eating <input type="text" class="fill-blank" data-answer="its" placeholder="_____"> food.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>6.</strong> We have a house in the country. <input type="text" class="fill-blank" data-answer="Our" placeholder="_____"> house is very old.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>7.</strong> They have two children. <input type="text" class="fill-blank" data-answer="Their" placeholder="_____"> children go to the same school.</p>
+  </div>
+  
+  <div class="exercise-controls">
+    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+  </div>
+  
+  <div id="results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="score"></p>
+    <div id="feedback"></div>
+  </div>
+</div>
+
+<script>
+function checkAnswers() {
+  const inputs = document.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById('results');
+  const scoreP = document.getElementById('score');
+  const feedbackDiv = document.getElementById('feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Question ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
+
+function resetExercise() {
+  const inputs = document.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById('results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
+
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 120px;
+  margin: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+#feedback p {
+  margin: 5px 0;
+  padding: 5px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+}
+</style>
 
 Remember that possessive adjectives are essential for clear communication in English, so practice using them correctly!

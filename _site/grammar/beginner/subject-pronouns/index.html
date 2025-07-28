@@ -283,15 +283,171 @@
 <li><strong>We</strong> enjoy traveling together. Last summer, <strong>we</strong> visited Italy.</li>
 <li>My parents are teachers. <strong>They</strong> work at the same school.</li>
 </ul>
-<h2>Practice Exercises</h2>
-<p>Replace the underlined nouns with appropriate subject pronouns:</p>
-<ol>
-<li><strong>Maria</strong> is from Spain. _____ speaks Spanish and English.</li>
-<li><strong>The cat</strong> is sleeping on the sofa. _____ looks very comfortable.</li>
-<li><strong>My friends and I</strong> went to the cinema. _____ watched an action movie.</li>
-<li><strong>The book</strong> is on the table. _____ belongs to me.</li>
-<li><strong>Tom and Lisa</strong> are married. _____ have two children.</li>
-</ol>
+<h2>Interactive Practice Exercises</h2>
+<p>Replace the nouns with appropriate subject pronouns:</p>
+<div class="interactive-exercise">
+  <div class="exercise-item">
+    <p><strong>1.</strong> <strong>Maria</strong> is from Spain. <input type="text" class="fill-blank" data-answer="She" placeholder="_____"> speaks Spanish and English.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>2.</strong> <strong>The cat</strong> is sleeping on the sofa. <input type="text" class="fill-blank" data-answer="It" placeholder="_____"> looks very comfortable.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>3.</strong> <strong>My friends and I</strong> went to the cinema. <input type="text" class="fill-blank" data-answer="We" placeholder="_____"> watched an action movie.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>4.</strong> <strong>The book</strong> is on the table. <input type="text" class="fill-blank" data-answer="It" placeholder="_____"> belongs to me.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>5.</strong> <strong>Tom and Lisa</strong> are married. <input type="text" class="fill-blank" data-answer="They" placeholder="_____"> have two children.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>6.</strong> <strong>John</strong> is my brother. <input type="text" class="fill-blank" data-answer="He" placeholder="_____"> works as a teacher.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>7.</strong> <strong>My sister and brother</strong> live in New York. <input type="text" class="fill-blank" data-answer="They" placeholder="_____"> love the city.</p>
+  </div>
+  <div class="exercise-controls">
+    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+  </div>
+  <div id="results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="score"></p>
+    <div id="feedback"></div>
+  </div>
+</div>
+<script>
+function checkAnswers() {
+  const inputs = document.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById('results');
+  const scoreP = document.getElementById('score');
+  const feedbackDiv = document.getElementById('feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Question ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
+
+function resetExercise() {
+  const inputs = document.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById('results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 120px;
+  margin: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+#feedback p {
+  margin: 5px 0;
+  padding: 5px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+}
+</style>
 <p>Remember, using the correct subject pronouns will make your English sound more natural and fluent!</p>
 
     </div>
