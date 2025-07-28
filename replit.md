@@ -70,6 +70,19 @@ src/
 
 ## Recent Changes
 
+### January 2025
+- **Modular Exercise System**: Implemented unique IDs for all interactive exercises
+  - All beginner grammar exercises now have unique identifiers (articles-exercise, plural-nouns-exercise, etc.)
+  - Updated intermediate Past Perfect exercise with modular ID system
+  - Created centralized /exercises/ page demonstrating reusable exercise components
+  - Exercises can now be embedded on multiple pages without conflicts
+  
+- **Centralized Exercises Page**: Created comprehensive interactive exercises hub
+  - Features beginner, intermediate, and mixed-level grammar exercises
+  - Demonstrates modular exercise system with different exercise types
+  - All exercises use unified JavaScript functions with unique ID parameters
+  - Added to main navigation menu for easy access
+
 ### December 2024
 - **Multilingual Implementation**: Complete Azerbaijani translation added
   - All main pages translated (Home, About, Contact)

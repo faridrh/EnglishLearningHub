@@ -147,7 +147,7 @@ Remember that many verbs have irregular past participles used in the past perfec
 
 Complete these sentences using the past perfect tense. Type your answers in the blanks and click "Check Answers" to see how you did:
 
-<div class="interactive-exercise">
+<div class="interactive-exercise" id="past-perfect-exercise" data-exercise-id="past-perfect-intermediate">
   <div class="exercise-item">
     <p><strong>1.</strong> By the time we got to the cinema, the film <input type="text" class="fill-blank" data-answer="had already started" placeholder="____________"> (already/start).</p>
   </div>
@@ -169,23 +169,24 @@ Complete these sentences using the past perfect tense. Type your answers in the 
   </div>
   
   <div class="exercise-controls">
-    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+    <button onclick="checkAnswers('past-perfect-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('past-perfect-exercise')" class="reset-btn">Reset</button>
   </div>
   
-  <div id="results" class="results-section" style="display: none;">
+  <div id="past-perfect-exercise-results" class="results-section" style="display: none;">
     <h4>Results:</h4>
-    <p id="score"></p>
-    <div id="feedback"></div>
+    <p id="past-perfect-exercise-score"></p>
+    <div id="past-perfect-exercise-feedback"></div>
   </div>
 </div>
 
 <script>
-function checkAnswers() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
-  const scoreP = document.getElementById('score');
-  const feedbackDiv = document.getElementById('feedback');
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
   
   let correct = 0;
   let total = inputs.length;
@@ -218,9 +219,10 @@ function checkAnswers() {
   }
 }
 
-function resetExercise() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
     input.value = '';

@@ -180,7 +180,7 @@ Possessive adjectives are used:
 
 Complete the sentences with the correct possessive adjective:
 
-<div class="interactive-exercise">
+<div class="interactive-exercise" id="possessive-adjectives-exercise" data-exercise-id="possessive-adjectives-beginner">
   <div class="exercise-item">
     <p><strong>1.</strong> I have a car. <input type="text" class="fill-blank" data-answer="My" placeholder="_____"> car is blue.</p>
   </div>
@@ -210,23 +210,24 @@ Complete the sentences with the correct possessive adjective:
   </div>
   
   <div class="exercise-controls">
-    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+    <button onclick="checkAnswers('possessive-adjectives-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('possessive-adjectives-exercise')" class="reset-btn">Reset</button>
   </div>
   
-  <div id="results" class="results-section" style="display: none;">
+  <div id="possessive-adjectives-exercise-results" class="results-section" style="display: none;">
     <h4>Results:</h4>
-    <p id="score"></p>
-    <div id="feedback"></div>
+    <p id="possessive-adjectives-exercise-score"></p>
+    <div id="possessive-adjectives-exercise-feedback"></div>
   </div>
 </div>
 
 <script>
-function checkAnswers() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
-  const scoreP = document.getElementById('score');
-  const feedbackDiv = document.getElementById('feedback');
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
   
   let correct = 0;
   let total = inputs.length;
@@ -257,9 +258,10 @@ function checkAnswers() {
   }
 }
 
-function resetExercise() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
     input.value = '';

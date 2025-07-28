@@ -137,7 +137,7 @@ Articles are not used in some situations:
 
 Fill in the blanks with "a," "an," "the," or leave blank (Ø) where no article is needed:
 
-<div class="interactive-exercise">
+<div class="interactive-exercise" id="articles-exercise" data-exercise-id="articles-beginner">
   <div class="exercise-item">
     <p><strong>1.</strong> I have <input type="text" class="fill-blank" data-answer="a" placeholder="____"> dog and <input type="text" class="fill-blank" data-answer="a" placeholder="____"> cat. <input type="text" class="fill-blank" data-answer="The" placeholder="____"> dog is brown and <input type="text" class="fill-blank" data-answer="the" placeholder="____"> cat is black.</p>
   </div>
@@ -159,23 +159,24 @@ Fill in the blanks with "a," "an," "the," or leave blank (Ø) where no article i
   </div>
   
   <div class="exercise-controls">
-    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+    <button onclick="checkAnswers('articles-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('articles-exercise')" class="reset-btn">Reset</button>
   </div>
   
-  <div id="results" class="results-section" style="display: none;">
+  <div id="articles-exercise-results" class="results-section" style="display: none;">
     <h4>Results:</h4>
-    <p id="score"></p>
-    <div id="feedback"></div>
+    <p id="articles-exercise-score"></p>
+    <div id="articles-exercise-feedback"></div>
   </div>
 </div>
 
 <script>
-function checkAnswers() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
-  const scoreP = document.getElementById('score');
-  const feedbackDiv = document.getElementById('feedback');
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
   
   let correct = 0;
   let total = inputs.length;
@@ -207,9 +208,10 @@ function checkAnswers() {
   }
 }
 
-function resetExercise() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
     input.value = '';

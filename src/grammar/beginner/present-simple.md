@@ -99,7 +99,7 @@ Questions in the present simple use "do" or "does" + subject + base form of the 
 
 Complete these sentences using the present simple tense:
 
-<div class="interactive-exercise">
+<div class="interactive-exercise" id="present-simple-exercise" data-exercise-id="present-simple-beginner">
   <div class="exercise-item">
     <p><strong>1.</strong> I <input type="text" class="fill-blank" data-answer="work" placeholder="______"> (work) in an office.</p>
   </div>
@@ -125,23 +125,24 @@ Complete these sentences using the present simple tense:
   </div>
   
   <div class="exercise-controls">
-    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+    <button onclick="checkAnswers('present-simple-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('present-simple-exercise')" class="reset-btn">Reset</button>
   </div>
   
-  <div id="results" class="results-section" style="display: none;">
+  <div id="present-simple-exercise-results" class="results-section" style="display: none;">
     <h4>Results:</h4>
-    <p id="score"></p>
-    <div id="feedback"></div>
+    <p id="present-simple-exercise-score"></p>
+    <div id="present-simple-exercise-feedback"></div>
   </div>
 </div>
 
 <script>
-function checkAnswers() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
-  const scoreP = document.getElementById('score');
-  const feedbackDiv = document.getElementById('feedback');
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
   
   let correct = 0;
   let total = inputs.length;
@@ -172,9 +173,10 @@ function checkAnswers() {
   }
 }
 
-function resetExercise() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
     input.value = '';

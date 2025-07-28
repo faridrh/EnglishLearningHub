@@ -152,7 +152,7 @@ In short answers, we include the subject pronoun:
 
 Replace the nouns with appropriate subject pronouns:
 
-<div class="interactive-exercise">
+<div class="interactive-exercise" id="subject-pronouns-exercise" data-exercise-id="subject-pronouns-beginner">
   <div class="exercise-item">
     <p><strong>1.</strong> <strong>Maria</strong> is from Spain. <input type="text" class="fill-blank" data-answer="She" placeholder="_____"> speaks Spanish and English.</p>
   </div>
@@ -182,23 +182,24 @@ Replace the nouns with appropriate subject pronouns:
   </div>
   
   <div class="exercise-controls">
-    <button onclick="checkAnswers()" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise()" class="reset-btn">Reset</button>
+    <button onclick="checkAnswers('subject-pronouns-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('subject-pronouns-exercise')" class="reset-btn">Reset</button>
   </div>
   
-  <div id="results" class="results-section" style="display: none;">
+  <div id="subject-pronouns-exercise-results" class="results-section" style="display: none;">
     <h4>Results:</h4>
-    <p id="score"></p>
-    <div id="feedback"></div>
+    <p id="subject-pronouns-exercise-score"></p>
+    <div id="subject-pronouns-exercise-feedback"></div>
   </div>
 </div>
 
 <script>
-function checkAnswers() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
-  const scoreP = document.getElementById('score');
-  const feedbackDiv = document.getElementById('feedback');
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
   
   let correct = 0;
   let total = inputs.length;
@@ -229,9 +230,10 @@ function checkAnswers() {
   }
 }
 
-function resetExercise() {
-  const inputs = document.querySelectorAll('.fill-blank');
-  const resultsDiv = document.getElementById('results');
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
     input.value = '';
