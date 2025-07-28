@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/story-with-translation.njk
 title: A Day at the Market
 description: An intermediate-level English story about Elena's weekly visit to the local farmers market.
 level: Intermediate
