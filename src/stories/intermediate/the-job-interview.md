@@ -9,7 +9,7 @@ word_count: 500
 
 # The Job Interview
 
-Michael adjusted his tie nervously as he sat in the waiting room. This was the opportunity he had been waiting for – a position as a marketing <mark>coordinator</mark> at GreenTech Solutions, a company known for its <mark>innovative</mark> environmental projects. He had spent weeks preparing for this moment, researching the company, practicing common interview questions, and planning his responses.
+Michael adjusted his tie nervously as he sat in the waiting room. This was the opportunity he had been waiting for – a position as a marketing <mark>coordinator</mark> at GreenTech Solutions, a company known for its <mark>innovative</mark> environmental projects. <img src="/stories/intermediate/job-interview-scene.jpg" alt="Professional job interview scene with candidates and interviewers in business attire in a modern office setting" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> He had spent weeks preparing for this moment, researching the company, practicing common interview questions, and planning his responses.
 
 The waiting room was modern and bright, with large windows overlooking the city. Plants decorated every corner, reflecting the company's commitment to <mark>sustainability</mark>. Michael tried to calm his nerves by focusing on his breathing, a technique his sister had taught him.
 
