@@ -160,34 +160,188 @@ Used with reporting verbs (say, think, believe, know, expect):
 - Writing formally or scientifically
 - You want to be diplomatic or avoid blame
 
-## Practice Examples
+## Interactive Practice Exercises
 
-**Transform these active sentences to passive:**
+Transform these sentences between active and passive voice. Type your answers and get instant feedback:
 
-1. Scientists discovered a new planet.
-2. The company will launch the product next month.
-3. Someone has stolen my wallet.
-4. They are building a new hospital.
-5. The teacher explained the lesson clearly.
+<div class="interactive-exercise" id="passive-voice-exercise" data-exercise-id="passive-voice-intermediate">
+  <div class="exercise-item">
+    <p><strong>1.</strong> Scientists discovered a new planet. → A new planet <input type="text" class="fill-blank" data-answer="was discovered" placeholder="____________"> by scientists.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>2.</strong> The company will launch the product next month. → The product <input type="text" class="fill-blank" data-answer="will be launched" placeholder="____________"> next month.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>3.</strong> Someone has stolen my wallet. → My wallet <input type="text" class="fill-blank" data-answer="has been stolen" placeholder="____________">.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>4.</strong> They are building a new hospital. → A new hospital <input type="text" class="fill-blank" data-answer="is being built" placeholder="____________">.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>5.</strong> The report was written by the manager. → The manager <input type="text" class="fill-blank" data-answer="wrote" placeholder="____________"> the report.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>6.</strong> The concert has been cancelled. → They <input type="text" class="fill-blank" data-answer="have cancelled" placeholder="____________"> the concert.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>7.</strong> A decision will be made tomorrow. → They <input type="text" class="fill-blank" data-answer="will make" placeholder="____________"> a decision tomorrow.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>8.</strong> The documents are being reviewed. → They <input type="text" class="fill-blank" data-answer="are reviewing" placeholder="____________"> the documents.</p>
+  </div>
+  
+  <div class="exercise-controls">
+    <button onclick="checkAnswers('passive-voice-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('passive-voice-exercise')" class="reset-btn">Reset</button>
+  </div>
+  
+  <div id="passive-voice-exercise-results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="passive-voice-exercise-score"></p>
+    <div id="passive-voice-exercise-feedback"></div>
+  </div>
+</div>
 
-**Answers:**
-1. A new planet was discovered (by scientists).
-2. The product will be launched next month.
-3. My wallet has been stolen.
-4. A new hospital is being built.
-5. The lesson was explained clearly (by the teacher).
+<script>
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Question ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
 
-**Transform these passive sentences to active:**
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
 
-1. The report was written by the manager.
-2. The concert has been cancelled.
-3. A decision will be made tomorrow.
-4. The documents are being reviewed.
-5. The problem was solved by the team.
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
 
-**Answers:**
-1. The manager wrote the report.
-2. They have cancelled the concert.
-3. They/Someone will make a decision tomorrow.
-4. They/Someone are reviewing the documents.
-5. The team solved the problem.
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 140px;
+  margin: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+.results-section p {
+  margin: 5px 0;
+  padding: 8px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+  font-size: 14px;
+}
+</style>

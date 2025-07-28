@@ -310,32 +310,178 @@
 <li><strong>Incorrect:</strong> The dog bit the man walking down the street.</li>
 <li><strong>Correct:</strong> The dog bit the man who was walking down the street.</li>
 </ul>
-<h2>Practice Exercises</h2>
-<p><strong>Combine these sentences using participle clauses:</strong></p>
-<ol>
-<li>She was exhausted from work. She went to bed early.</li>
-<li>The letter was written in French. I couldn't understand it.</li>
-<li>He had finished his dinner. He watched television.</li>
-<li>The students were confused by the question. They asked for clarification.</li>
-</ol>
-<p><strong>Answers:</strong></p>
-<ol>
-<li>Exhausted from work, she went to bed early.</li>
-<li>Written in French, the letter was incomprehensible to me.</li>
-<li>Having finished his dinner, he watched television.</li>
-<li>Confused by the question, the students asked for clarification.</li>
-</ol>
-<p><strong>Identify and correct the dangling participles:</strong></p>
-<ol>
-<li>Walking through the park, the flowers were beautiful.</li>
-<li>Having been painted recently, we admired the house.</li>
-</ol>
-<p><strong>Answers:</strong></p>
-<ol>
-<li>Walking through the park, we saw beautiful flowers.</li>
-<li>Having been painted recently, the house looked admirable.</li>
-</ol>
+<h2>Interactive Practice Exercises</h2>
+<p>Combine sentences using participle clauses and correct dangling participles. Type your answers and get instant feedback:</p>
+<div class="interactive-exercise" id="participle-clauses-exercise" data-exercise-id="participle-clauses-advanced">
+  <div class="exercise-item">
+    <p><strong>1.</strong> She was exhausted from work. She went to bed early. → <input type="text" class="fill-blank" data-answer="Exhausted from work" placeholder="____________">, she went to bed early.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>2.</strong> The letter was written in French. I couldn't understand it. → <input type="text" class="fill-blank" data-answer="Written in French" placeholder="____________">, the letter was incomprehensible to me.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>3.</strong> He had finished his dinner. He watched television. → <input type="text" class="fill-blank" data-answer="Having finished his dinner" placeholder="____________">, he watched television.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>4.</strong> The students were confused by the question. They asked for clarification. → <input type="text" class="fill-blank" data-answer="Confused by the question" placeholder="____________">, the students asked for clarification.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>5.</strong> Walking through the park, the flowers were beautiful. (fix dangling participle) → Walking through the park, <input type="text" class="fill-blank" data-answer="we saw beautiful flowers" placeholder="____________">.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>6.</strong> Having been painted recently, we admired the house. (fix dangling participle) → Having been painted recently, <input type="text" class="fill-blank" data-answer="the house looked admirable" placeholder="____________">.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>7.</strong> I was feeling tired. I decided to rest. → <input type="text" class="fill-blank" data-answer="Feeling tired" placeholder="____________">, I decided to rest.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>8.</strong> The book was published last year. It became a bestseller. → <input type="text" class="fill-blank" data-answer="Published last year" placeholder="____________">, the book became a bestseller.</p>
+  </div>
+  <div class="exercise-controls">
+    <button onclick="checkAnswers('participle-clauses-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('participle-clauses-exercise')" class="reset-btn">Reset</button>
+  </div>
+  <div id="participle-clauses-exercise-results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="participle-clauses-exercise-score"></p>
+    <div id="participle-clauses-exercise-feedback"></div>
+  </div>
+</div>
+<script>
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Question ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
 
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 180px;
+  margin: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+.results-section p {
+  margin: 5px 0;
+  padding: 8px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+  font-size: 14px;
+}
+</style>
     </div>
   </article>
 </div>

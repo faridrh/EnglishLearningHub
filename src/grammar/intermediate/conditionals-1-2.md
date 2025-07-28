@@ -154,26 +154,190 @@ Sometimes you might need to mix elements of different conditional structures:
 - If I **were** the president, I **would change** many laws.
 - He **wouldn't be** so tired if he **went** to bed earlier.
 
-## Practice Exercises
+## Interactive Practice Exercises
 
-### First Conditional Practice
+Complete these conditional sentences with the correct forms. Type your answers and get instant feedback:
 
-Complete these sentences using the first conditional:
-
-1. If it ____________ (not/rain) tomorrow, we ____________ (go) to the beach.
-2. I ____________ (call) you if I ____________ (need) help.
-3. If you ____________ (eat) all that chocolate, you ____________ (feel) sick.
-4. She ____________ (not/pass) the exam unless she ____________ (study) harder.
-5. If they ____________ (offer) you the job, ____________ (you/accept) it?
-
-### Second Conditional Practice
-
-Complete these sentences using the second conditional:
-
-1. If I ____________ (have) more money, I ____________ (travel) around the world.
-2. What ____________ (you/do) if you ____________ (win) the lottery?
-3. If she ____________ (be) taller, she ____________ (become) a model.
-4. I ____________ (buy) a house if I ____________ (get) a better job.
-5. If we ____________ (live) near the beach, we ____________ (swim) every day.
+<div class="interactive-exercise" id="conditionals-exercise" data-exercise-id="conditionals-intermediate">
+  <div class="exercise-item">
+    <p><strong>1.</strong> If it <input type="text" class="fill-blank" data-answer="doesn't rain" placeholder="____________"> (not/rain) tomorrow, we <input type="text" class="fill-blank" data-answer="will go" placeholder="____________"> (go) to the beach.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>2.</strong> If I <input type="text" class="fill-blank" data-answer="had" placeholder="____________"> (have) more money, I <input type="text" class="fill-blank" data-answer="would travel" placeholder="____________"> (travel) around the world.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>3.</strong> I <input type="text" class="fill-blank" data-answer="will call" placeholder="____________"> (call) you if I <input type="text" class="fill-blank" data-answer="need" placeholder="____________"> (need) help.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>4.</strong> What <input type="text" class="fill-blank" data-answer="would you do" placeholder="____________"> (you/do) if you <input type="text" class="fill-blank" data-answer="won" placeholder="____________"> (win) the lottery?</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>5.</strong> If you <input type="text" class="fill-blank" data-answer="eat" placeholder="____________"> (eat) all that chocolate, you <input type="text" class="fill-blank" data-answer="will feel" placeholder="____________"> (feel) sick.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>6.</strong> If she <input type="text" class="fill-blank" data-answer="were" placeholder="____________"> (be) taller, she <input type="text" class="fill-blank" data-answer="would become" placeholder="____________"> (become) a model.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>7.</strong> She <input type="text" class="fill-blank" data-answer="won't pass" placeholder="____________"> (not/pass) the exam unless she <input type="text" class="fill-blank" data-answer="studies" placeholder="____________"> (study) harder.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>8.</strong> If we <input type="text" class="fill-blank" data-answer="lived" placeholder="____________"> (live) near the beach, we <input type="text" class="fill-blank" data-answer="would swim" placeholder="____________"> (swim) every day.</p>
+  </div>
+  
+  <div class="exercise-controls">
+    <button onclick="checkAnswers('conditionals-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('conditionals-exercise')" class="reset-btn">Reset</button>
+  </div>
+  
+  <div id="conditionals-exercise-results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="conditionals-exercise-score"></p>
+    <div id="conditionals-exercise-feedback"></div>
+  </div>
+</div>
 
 Understanding and mastering conditional sentences will greatly improve your ability to express different possibilities and hypothetical situations in English!
+
+<script>
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Blank ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
+
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
+
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 120px;
+  margin: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+.results-section p {
+  margin: 5px 0;
+  padding: 8px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+  font-size: 14px;
+}
+</style>

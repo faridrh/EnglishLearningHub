@@ -296,36 +296,178 @@
 </ul>
 <h3>4. Overusing cleft sentences</h3>
 <p>Use cleft sentences for emphasis, not in every sentence.</p>
-<h2>Practice Exercises</h2>
-<p><strong>Transform into it-cleft sentences (emphasize the underlined part):</strong></p>
-<ol>
-<li><strong>SARAH</strong> made the cake.</li>
-<li>I need <strong>YOUR ADVICE</strong>.</li>
-<li>We met <strong>AT THE LIBRARY</strong>.</li>
-<li><strong>THE RAIN</strong> ruined our picnic.</li>
-</ol>
-<p><strong>Answers:</strong></p>
-<ol>
-<li>It was Sarah who made the cake.</li>
-<li>It's your advice that I need.</li>
-<li>It was at the library that we met.</li>
-<li>It was the rain that ruined our picnic.</li>
-</ol>
-<p><strong>Transform into wh-cleft sentences:</strong></p>
-<ol>
-<li>I want peace and quiet.</li>
-<li>She needs more confidence.</li>
-<li>They work in London.</li>
-<li>He succeeded through hard work.</li>
-</ol>
-<p><strong>Answers:</strong></p>
-<ol>
-<li>What I want is peace and quiet.</li>
-<li>What she needs is more confidence.</li>
-<li>Where they work is in London.</li>
-<li>How he succeeded was through hard work.</li>
-</ol>
+<h2>Interactive Practice Exercises</h2>
+<p>Transform these sentences into cleft sentences to add emphasis. Type your answers and get instant feedback:</p>
+<div class="interactive-exercise" id="cleft-sentences-exercise" data-exercise-id="cleft-sentences-advanced">
+  <div class="exercise-item">
+    <p><strong>1.</strong> **SARAH** made the cake. (emphasize Sarah) → It was <input type="text" class="fill-blank" data-answer="Sarah who made" placeholder="____________"> the cake.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>2.</strong> I need **YOUR ADVICE**. (emphasize advice) → It's <input type="text" class="fill-blank" data-answer="your advice that I need" placeholder="____________">.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>3.</strong> We met **AT THE LIBRARY**. (emphasize location) → It was <input type="text" class="fill-blank" data-answer="at the library that we met" placeholder="____________">.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>4.</strong> **THE RAIN** ruined our picnic. (emphasize rain) → It was <input type="text" class="fill-blank" data-answer="the rain that ruined" placeholder="____________"> our picnic.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>5.</strong> I want peace and quiet. (wh-cleft) → <input type="text" class="fill-blank" data-answer="What I want is" placeholder="____________"> peace and quiet.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>6.</strong> She needs more confidence. (wh-cleft) → <input type="text" class="fill-blank" data-answer="What she needs is" placeholder="____________"> more confidence.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>7.</strong> They work in London. (wh-cleft) → <input type="text" class="fill-blank" data-answer="Where they work is" placeholder="____________"> in London.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>8.</strong> He succeeded through hard work. (wh-cleft) → <input type="text" class="fill-blank" data-answer="How he succeeded was" placeholder="____________"> through hard work.</p>
+  </div>
+  <div class="exercise-controls">
+    <button onclick="checkAnswers('cleft-sentences-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('cleft-sentences-exercise')" class="reset-btn">Reset</button>
+  </div>
+  <div id="cleft-sentences-exercise-results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="cleft-sentences-exercise-score"></p>
+    <div id="cleft-sentences-exercise-feedback"></div>
+  </div>
+</div>
+<script>
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Question ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
 
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 180px;
+  margin: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+.results-section p {
+  margin: 5px 0;
+  padding: 8px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+  font-size: 14px;
+}
+</style>
     </div>
   </article>
 </div>

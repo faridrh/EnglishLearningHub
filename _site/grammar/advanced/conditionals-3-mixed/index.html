@@ -253,30 +253,172 @@
 <li><strong>Incorrect:</strong> If I studied medicine, I would have been a doctor now.</li>
 <li><strong>Correct:</strong> If I had studied medicine, I would be a doctor now.</li>
 </ul>
-<h2>Advanced Practice</h2>
-<h3>Rewrite using inverted conditionals:</h3>
-<ol>
-<li>If I had known about the problem, I would have helped.</li>
-<li>If you should find my keys, please call me.</li>
-<li>If we had left earlier, we wouldn't be late now.</li>
-</ol>
-<h3>Answers:</h3>
-<ol>
-<li>Had I known about the problem, I would have helped.</li>
-<li>Should you find my keys, please call me.</li>
-<li>Had we left earlier, we wouldn't be late now.</li>
-</ol>
-<h3>Create mixed conditionals:</h3>
-<ol>
-<li>I didn't go to university. (past) / I don't have a degree. (present)</li>
-<li>I'm not good at languages. (present) / I didn't learn Spanish quickly. (past)</li>
-</ol>
-<h3>Answers:</h3>
-<ol>
-<li>If I had gone to university, I would have a degree now.</li>
-<li>If I were good at languages, I would have learned Spanish quickly.</li>
-</ol>
+<h2>Interactive Practice Exercises</h2>
+<p>Complete these advanced conditional sentences and create mixed conditionals. Type your answers and get instant feedback:</p>
+<div class="interactive-exercise" id="advanced-conditionals-exercise" data-exercise-id="advanced-conditionals-advanced">
+  <div class="exercise-item">
+    <p><strong>1.</strong> If I had known about the problem, I would have helped. (inverted) → <input type="text" class="fill-blank" data-answer="Had I known" placeholder="____________"> about the problem, I would have helped.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>2.</strong> If you should find my keys, please call me. (inverted) → <input type="text" class="fill-blank" data-answer="Should you find" placeholder="____________"> my keys, please call me.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>3.</strong> If we had left earlier, we wouldn't be late now. (inverted) → <input type="text" class="fill-blank" data-answer="Had we left" placeholder="____________"> earlier, we wouldn't be late now.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>4.</strong> I didn't go to university (past) / I don't have a degree (present). → If I <input type="text" class="fill-blank" data-answer="had gone" placeholder="____________"> to university, I <input type="text" class="fill-blank" data-answer="would have" placeholder="____________"> a degree now.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>5.</strong> I'm not good at languages (present) / I didn't learn Spanish quickly (past). → If I <input type="text" class="fill-blank" data-answer="were good" placeholder="____________"> at languages, I <input type="text" class="fill-blank" data-answer="would have learned" placeholder="____________"> Spanish quickly.</p>
+  </div>
+  <div class="exercise-item">
+    <p><strong>6.</strong> I don't have time (present) / I didn't finish the project (past). → If I <input type="text" class="fill-blank" data-answer="had time" placeholder="____________">, I <input type="text" class="fill-blank" data-answer="would have finished" placeholder="____________"> the project.</p>
+  </div>
+  <div class="exercise-controls">
+    <button onclick="checkAnswers('advanced-conditionals-exercise')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('advanced-conditionals-exercise')" class="reset-btn">Reset</button>
+  </div>
+  <div id="advanced-conditionals-exercise-results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="advanced-conditionals-exercise-score"></p>
+    <div id="advanced-conditionals-exercise-feedback"></div>
+  </div>
+</div>
+<script>
+function checkAnswers(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Blank ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
 
+function resetExercise(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+</script>
+<style>
+.interactive-exercise {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.exercise-item {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.fill-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 140px;
+  margin: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.fill-blank:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.fill-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.exercise-controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.check-btn, .reset-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.check-btn:hover {
+  background: #0056b3;
+}
+
+.reset-btn {
+  background: #6c757d;
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+.results-section p {
+  margin: 5px 0;
+  padding: 8px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 3px;
+  font-size: 14px;
+}
+</style>
     </div>
   </article>
 </div>
