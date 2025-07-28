@@ -25,6 +25,11 @@ module.exports = function(eleventyConfig) {
     return vocabulary.filter(item => item.level === level);
   });
 
+  // Add dateIso filter for sitemap
+  eleventyConfig.addFilter("dateIso", function(dateObj) {
+    return new Date(dateObj).toISOString();
+  });
+
 
 
   // Configure collections

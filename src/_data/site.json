@@ -1,9 +1,10 @@
 {
   "title": "İngilis dili öyrən",
-  "tagline": "Learn English effectively with vocabulary and videos",
-  "description": "A comprehensive blog for English language learners with vocabulary lists and educational videos to improve your skills.",
-  "url": "https://englishlearninghub.com",
+  "tagline": "Learn English effectively with vocabulary and stories",
+  "description": "A comprehensive multilingual blog for English language learners with vocabulary, grammar lessons, interactive exercises, and educational stories organized by difficulty levels.",
+  "url": "https://englearn.replit.app",
   "author": "English Learning Team",
   "email": "contact@englishlearninghub.com",
-  "copyrightYear": "2023"
+  "copyrightYear": "2025",
+  "buildTime": "2025-01-28T12:00:00.000Z"
 }
