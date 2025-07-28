@@ -9,7 +9,7 @@ word_count: 550
 
 # The Unexpected Friend
 
-When Anna moved to a new city for her job as a software engineer, she never expected that her elderly neighbor would become one of her closest friends. The apartment building was old but <mark>charming</mark>, with thick walls and high ceilings that reminded her of her grandmother's house back home.
+When Anna moved to a new city for her job as a software engineer, she never expected that her elderly neighbor would become one of her closest friends. <img src="/stories/intermediate/unexpected-friendship.jpg" alt="A young woman and elderly woman helping each other carry packages, showing intergenerational friendship and kindness" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> The apartment building was old but <mark>charming</mark>, with thick walls and high ceilings that reminded her of her grandmother's house back home.
 
 On her first day, Anna was struggling to carry boxes up the narrow staircase when she heard a gentle voice behind her.
 
