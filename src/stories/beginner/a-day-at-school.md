@@ -9,7 +9,7 @@ word_count: 300
 
 # A Day at School
 
-Jenny is eight years old and goes to Green Valley <mark>Elementary School</mark>. She likes her teacher and has many friends at school.
+Jenny is eight years old and goes to Green Valley <mark>Elementary School</mark>. <img src="/stories/beginner/school-girl.jpg" alt="A young girl with pigtails smiling in a school classroom with teacher in background" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She likes her teacher and has many friends at school.
 
 Every morning, Jenny's mother drives her to school. They arrive at eight o'clock. Jenny says goodbye to her mother and walks to her <mark>classroom</mark>.
 
