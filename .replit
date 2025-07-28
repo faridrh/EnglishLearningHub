@@ -30,3 +30,7 @@ run = ["sh", "-c", "npm install @11ty/eleventy && npx @11ty/eleventy --serve --p
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 5001
+externalPort = 3000
