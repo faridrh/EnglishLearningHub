@@ -10,7 +10,7 @@ We'd love to hear from you! Whether you have questions, suggestions for improvem
 
 ## How to Reach Us
 
-You can contact the English Learning Hub team in the following ways:
+You can contact the İngilis dili öyrən team in the following ways:
 
 ### Email
 
@@ -71,7 +71,7 @@ Your feedback helps us improve our resources! We particularly welcome:
 
 ## Follow Us
 
-Stay connected with English Learning Hub and join our language learning community:
+Stay connected with İngilis dili öyrən and join our language learning community:
 
 - [Twitter](https://twitter.com/englishlearninghub)
 - [Facebook](https://facebook.com/englishlearninghub)
