@@ -16,23 +16,5 @@
     "slug": "advanced",
     "type": "vocabulary",
     "description": "Advanced vocabulary for proficient English learners"
-  },
-  {
-    "name": "Pronunciation",
-    "slug": "pronunciation",
-    "type": "videos",
-    "description": "Videos focused on improving pronunciation"
-  },
-  {
-    "name": "Grammar",
-    "slug": "grammar",
-    "type": "videos",
-    "description": "Videos explaining English grammar rules"
-  },
-  {
-    "name": "Conversation",
-    "slug": "conversation",
-    "type": "videos",
-    "description": "Videos to improve conversation skills"
   }
 ]

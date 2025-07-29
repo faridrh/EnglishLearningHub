@@ -95,6 +95,11 @@ src/
   - **English Navigation**: Removed Contact link from main navigation menu
   - **Azerbaijani Navigation**: Removed Əlaqə link from Azerbaijani navigation menu
   - **Clean Navigation**: Streamlined navigation menu focuses on core learning sections (Vocabulary, Grammar, Stories, Exercises, About)
+- **Footer Cleanup**: Removed broken video-related links from homepage footers
+  - **Categories Data**: Removed outdated video categories (Pronunciation, Grammar, Conversation) from categories.json
+  - **English Footer**: Cleaned footer links and removed Contact link to match navigation
+  - **Azerbaijani Footer**: Removed broken "Videolar" (Videos) link and Contact link
+  - **Completed Video Removal**: Finalized the video section removal process started in December 2024
 - **Smart Language Switcher**: Implemented intelligent Azerbaijani language switching for vocabulary pages
   - **Vocabulary Page Handling**: All vocabulary subpages (page-1, page-2, etc.) redirect to main Azerbaijani vocabulary page
   - **Section-Level Redirects**: Grammar and stories subpages redirect to their respective Azerbaijani main pages
