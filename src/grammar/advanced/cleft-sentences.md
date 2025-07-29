@@ -5,11 +5,13 @@ description: Understand how to use cleft sentences to emphasize specific informa
 level: Advanced
 ---
 
+<div class="grammar-content">
+
 # Cleft Sentences
 
 Cleft sentences are used to emphasize particular information by dividing a simple sentence into two clauses. The word "cleft" means "split" or "divided." These structures help focus attention on specific elements of a sentence.
 
-## Types of Cleft Sentences
+### Types of Cleft Sentences
 
 ### 1. It-Cleft Sentences
 
@@ -66,7 +68,7 @@ This is the most common type of cleft sentence.
 - **Normal wh-cleft:** What surprised me was his reaction.
 - **Reverse wh-cleft:** **His reaction is what** surprised me.
 
-## Advanced Cleft Structures
+### Advanced Cleft Structures
 
 ### All-Cleft
 Uses "all" for emphasis:
@@ -358,3 +360,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>

@@ -5,11 +5,13 @@ description: Learn advanced sentence structures with inverted word order for emp
 level: Advanced
 ---
 
+<div class="grammar-content">
+
 # Inversion
 
 Inversion occurs when we change the normal word order of a sentence, typically placing the auxiliary verb before the subject. It's used for emphasis, in formal writing, and in certain grammatical constructions.
 
-## Types of Inversion
+### Types of Inversion
 
 ### 1. After Negative Adverbials
 
@@ -337,3 +339,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>

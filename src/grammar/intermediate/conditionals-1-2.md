@@ -5,11 +5,13 @@ description: Understand how to form and use conditional sentences for possible a
 level: Intermediate
 ---
 
+<div class="grammar-content">
+
 # Conditional Sentences (Types 1 & 2)
 
 Conditional sentences express the dependency of one circumstance or set of circumstances on another. In English, there are several types of conditional sentences, each used to express a different degree of possibility. This page focuses on the first and second conditionals, which are the most commonly used types.
 
-## First Conditional (Type 1)
+### First Conditional (Type 1)
 
 The first conditional is used to talk about real and possible situations in the present or future. It expresses a strong possibility that something will happen.
 
@@ -56,7 +58,7 @@ Examples:
    - If you see John, tell him to call me.
    - Don't wait for me if I'm late.
 
-## Second Conditional (Type 2)
+### Second Conditional (Type 2)
 
 The second conditional is used to talk about unreal, imaginary, or hypothetical situations in the present or future. It describes what would happen if something unlikely were to occur or to give advice.
 
@@ -204,6 +206,8 @@ Complete these conditional sentences with the correct forms. Type your answers a
 </div>
 
 Understanding and mastering conditional sentences will greatly improve your ability to express different possibilities and hypothetical situations in English!
+
+</div>
 
 <script>
 function checkAnswers(exerciseId) {

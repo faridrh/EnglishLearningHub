@@ -5,11 +5,13 @@ description: Master complex conditional structures for unreal past situations an
 level: Advanced
 ---
 
+<div class="grammar-content">
+
 # Conditional Sentences (Type 3 & Mixed)
 
 Advanced conditional structures allow us to express complex relationships between past actions and their hypothetical consequences, as well as mix different time frames.
 
-## Third Conditional (Type 3)
+### Third Conditional (Type 3)
 
 ### Structure
 **If + past perfect, would/could/might + have + past participle**
@@ -32,7 +34,7 @@ Expresses hypothetical situations in the past - things that didn't happen but we
 - **Might have:** If it had rained, the picnic **might have been** cancelled.
 - **Should have:** If I had known, I **should have told** you.
 
-## Mixed Conditionals
+### Mixed Conditionals
 
 Mixed conditionals combine different time frames - past conditions with present results, or present conditions with past results.
 
@@ -66,7 +68,7 @@ Used when a present situation would have affected a past event:
 - **If they lived closer, they could have attended the wedding.**
   (Present: live far | Past: couldn't attend)
 
-## Advanced Structures
+### Advanced Structures
 
 ### Unless
 **Unless** = "if not"
@@ -325,3 +327,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>

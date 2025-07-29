@@ -5,11 +5,13 @@ description: Master the use of who, which, that, where, and when in relative cla
 level: Intermediate
 ---
 
+<div class="grammar-content">
+
 # Relative Clauses
 
 Relative clauses are used to give more information about a noun in a sentence. They help us avoid repetition and make our writing more sophisticated.
 
-## Types of Relative Clauses
+### Types of Relative Clauses
 
 ### Defining Relative Clauses
 These clauses give essential information about the noun. Without them, the meaning would be unclear.
@@ -23,7 +25,7 @@ These clauses give extra information that could be removed without changing the 
 **Example:** My sister, **who lives in London**, is visiting us.
 (We already know which sister; the clause adds extra information)
 
-## Relative Pronouns
+### Relative Pronouns
 
 ### Who
 Used for people (subject or object):
@@ -55,7 +57,7 @@ Used for time:
 - I remember the day **when we first met**.
 - Summer is the season **when I feel** most energetic.
 
-## Omitting Relative Pronouns
+### Omitting Relative Pronouns
 
 In defining relative clauses, we can omit the relative pronoun when it's the object:
 
@@ -66,7 +68,7 @@ In defining relative clauses, we can omit the relative pronoun when it's the obj
 - Correct: The man **who called** you is here.
 - Incorrect: ~~The man called you is here.~~
 
-## Prepositions in Relative Clauses
+### Prepositions in Relative Clauses
 
 ### Formal Style
 The preposition comes before the relative pronoun:
@@ -334,3 +336,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>

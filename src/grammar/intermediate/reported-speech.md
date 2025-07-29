@@ -5,16 +5,18 @@ description: Learn how to report what someone said without using their exact wor
 level: Intermediate
 ---
 
+<div class="grammar-content">
+
 # Reported Speech
 
 Reported speech (also called indirect speech) is used to tell someone what another person said, without using the exact words. When we use reported speech, we usually change the tense and pronouns.
 
-## Basic Structure
+### Basic Structure
 
 **Direct Speech:** "I am tired," she said.
 **Reported Speech:** She said (that) she was tired.
 
-## Tense Changes
+### Tense Changes
 
 When the reporting verb is in the past tense, we usually move the tenses "back":
 
@@ -34,14 +36,14 @@ When the reporting verb is in the past tense, we usually move the tenses "back":
 - **Direct:** "I will come."
 - **Reported:** She said she would come.
 
-## Pronoun Changes
+### Pronoun Changes
 
 Change pronouns to match the new perspective:
 
 - **Direct:** "I like your car."
 - **Reported:** He said he liked my car.
 
-## Time and Place Changes
+### Time and Place Changes
 
 Time and place references often change:
 
@@ -51,7 +53,7 @@ Time and place references often change:
 - **here** → there
 - **this** → that
 
-## Reporting Questions
+### Reporting Questions
 
 ### Yes/No Questions
 - **Direct:** "Are you coming?"
@@ -61,7 +63,7 @@ Time and place references often change:
 - **Direct:** "Where do you live?"
 - **Reported:** He asked where I lived.
 
-## Reporting Commands
+### Reporting Commands
 
 Use **tell/ask + someone + to + infinitive**:
 
@@ -71,7 +73,7 @@ Use **tell/ask + someone + to + infinitive**:
 - **Direct:** "Don't be late."
 - **Reported:** She asked me not to be late.
 
-## Common Reporting Verbs
+### Common Reporting Verbs
 
 - **say** (+ that): He said that he was busy.
 - **tell** (+ someone + that): She told me that she was leaving.
@@ -299,3 +301,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>

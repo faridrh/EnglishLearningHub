@@ -5,18 +5,20 @@ description: Understand the various uses of can, could, may, might, must, should
 level: Intermediate
 ---
 
+<div class="grammar-content">
+
 # Modal Verbs
 
 Modal verbs are auxiliary verbs that express ability, possibility, permission, obligation, and other meanings. They are followed by the base form of the main verb (without "to").
 
-## Characteristics of Modal Verbs
+### Characteristics of Modal Verbs
 
 - No -s in third person singular: He **can** swim (not "cans")
 - No infinitive form: There's no "to can"
 - Questions formed by inversion: **Can** you help me?
 - Negatives formed with "not": I **cannot** come.
 
-## CAN / COULD
+### CAN / COULD
 
 ### Ability
 **Can** (present ability):
@@ -39,7 +41,7 @@ Modal verbs are auxiliary verbs that express ability, possibility, permission, o
 - **Can** you pass the salt? (informal)
 - **Could** you help me with this? (more polite)
 
-## MAY / MIGHT
+### MAY / MIGHT
 
 ### Permission (formal)
 - **May** I come in?
@@ -58,7 +60,7 @@ Modal verbs are auxiliary verbs that express ability, possibility, permission, o
 - **May** I ask you a question?
 - **Might** I suggest a different approach?
 
-## MUST / HAVE TO
+### MUST / HAVE TO
 
 ### Obligation/Necessity
 **Must** (strong obligation, often personal opinion):
@@ -372,3 +374,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>

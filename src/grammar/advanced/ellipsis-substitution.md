@@ -5,11 +5,13 @@ description: Understand how to avoid repetition by omitting or substituting word
 level: Advanced
 ---
 
+<div class="grammar-content">
+
 # Ellipsis and Substitution
 
 Ellipsis and substitution are techniques used to avoid repetition in English by omitting words (ellipsis) or replacing them with substitute words (substitution). These create more natural, concise, and sophisticated communication.
 
-## Ellipsis
+### Ellipsis
 
 Ellipsis is the omission of words that can be understood from context. The missing words are often indicated by three dots (...) in writing, but in speech, they're simply left out.
 
@@ -58,7 +60,7 @@ In informal speech, we often omit words when the situation makes the meaning cle
 - **Full:** **You should** Turn left **at the corner**.
 - **Ellipsis:** **[You should]** Turn left **[at the corner]**.
 
-## Substitution
+### Substitution
 
 Substitution replaces words with substitute words to avoid repetition. Common substitute words include: one/ones, do/does/did, so, not, there.
 
@@ -369,3 +371,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>

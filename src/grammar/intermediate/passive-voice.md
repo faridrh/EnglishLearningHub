@@ -5,11 +5,13 @@ description: Learn when and how to use passive constructions in English.
 level: Intermediate
 ---
 
+<div class="grammar-content">
+
 # Passive Voice
 
 The passive voice is used when we want to focus on the action or the receiver of the action rather than who performs it. It's commonly used in formal writing, scientific texts, and news reports.
 
-## Formation
+### Formation
 
 **Active:** Subject + Verb + Object
 **Passive:** Object + be + Past Participle + (by + Agent)
@@ -22,7 +24,7 @@ The passive voice is used when we want to focus on the action or the receiver of
 - **Present Perfect:** The work **has been completed**.
 - **Future:** The meeting **will be held** tomorrow.
 
-## Tense Forms in Passive Voice
+### Tense Forms in Passive Voice
 
 ### Present Tenses
 - **Simple:** Coffee **is grown** in Brazil.
@@ -43,7 +45,7 @@ The passive voice is used when we want to focus on the action or the receiver of
 - The document **must be signed**.
 - The meeting **should be postponed**.
 
-## When to Use Passive Voice
+### When to Use Passive Voice
 
 ### 1. Unknown Agent
 When we don't know who performed the action:
@@ -68,7 +70,7 @@ When it's clear who performed the action:
 - Mistakes **were made**.
 - The deadline **has been missed**.
 
-## The "By" Agent
+### The "By" Agent
 
 We use "by" to show who or what performed the action:
 
@@ -345,3 +347,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>

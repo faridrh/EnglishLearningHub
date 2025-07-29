@@ -5,11 +5,13 @@ description: Learn how to talk about actions completed before another past actio
 level: Intermediate
 ---
 
+<div class="grammar-content">
+
 # Past Perfect Tense
 
 The past perfect tense is used to talk about actions or situations that occurred before another action in the past. It helps establish a clear sequence of events when talking about the past.
 
-## When to Use the Past Perfect
+### When to Use the Past Perfect
 
 1. **To describe an action that happened before another past action**
    - By the time I arrived, the meeting had already started.
@@ -33,7 +35,7 @@ The past perfect tense is used to talk about actions or situations that occurred
    - I wish I had studied harder for the exam.
    - If only they had told me about the problem earlier.
 
-## How to Form the Past Perfect
+### How to Form the Past Perfect
 
 ### Affirmative Sentences
 
@@ -318,3 +320,5 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember that the past perfect helps make the sequence of past events clear and is particularly useful when telling stories or explaining past experiences!
+
+</div>

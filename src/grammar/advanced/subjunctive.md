@@ -5,11 +5,13 @@ description: Master the subjunctive mood in formal and hypothetical expressions.
 level: Advanced
 ---
 
+<div class="grammar-content">
+
 # Subjunctive Mood
 
 The subjunctive mood is used to express wishes, suggestions, demands, hypothetical situations, and other non-factual statements. While less common in modern English than in other languages, it's still important in formal writing and certain fixed expressions.
 
-## Present Subjunctive
+### Present Subjunctive
 
 The present subjunctive uses the base form of the verb for all persons (no -s for third person singular).
 
@@ -45,7 +47,7 @@ Common nouns: suggestion, recommendation, proposal, demand, requirement
 - The **requirement that** students **attend** all classes is strict.
 - Her **proposal that** the meeting **be postponed** was accepted.
 
-## Past Subjunctive (Were-Subjunctive)
+### Past Subjunctive (Were-Subjunctive)
 
 Uses "were" for all persons in hypothetical situations.
 
@@ -357,3 +359,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>
