@@ -1,13 +1,13 @@
 ---
 layout: layouts/page.njk
 title: Beginner Vocabulary
-description: Essential vocabulary for beginning English learners - 100+ words organized in easy pages
+description: Essential vocabulary for beginning English learners - {{ vocabularyStats.beginner.totalWords }}+ words organized in easy pages
 level: Beginner
 ---
 
 # Beginner Vocabulary
 
-Welcome to our comprehensive beginner vocabulary section! We've organized **100 essential English words** into 9 easy-to-manage pages. These words are the foundation of English communication and will help you build confidence in everyday conversations.
+Welcome to our comprehensive beginner vocabulary section! We've organized **{{ vocabularyStats.beginner.totalWords }} essential English words** into {{ vocabularyStats.beginner.totalPages }} easy-to-manage pages with {{ vocabularyStats.beginner.wordsPerPage }} words each. These words are the foundation of English communication and will help you build confidence in everyday conversations.
 
 ## How to Use This System
 

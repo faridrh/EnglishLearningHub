@@ -62,7 +62,7 @@ src/
 - **Advanced**: 3 stories (Climate Change, Digital Nomads, AI Ethics)
 
 ### Vocabulary (Lüğət)
-- **Beginner**: 500+ essential words
+- **Beginner**: 108 essential words organized into 9 pages (12 words each)
 - **Intermediate**: 800+ intermediate words
 - **Advanced**: 1200+ advanced and academic words
 
@@ -71,6 +71,12 @@ src/
 ## Recent Changes
 
 ### January 2025
+- **Dynamic Vocabulary Counting System**: Implemented variable-based word counting
+  - Created vocabularyStats.js data file for centralized vocabulary statistics
+  - Main beginner vocabulary page now dynamically displays "108 essential English words" 
+  - System automatically shows correct word counts (108 words across 9 pages with 12 words each)
+  - Easy to maintain and update word counts in the future without manual text changes
+  - Eliminates hardcoded numbers in favor of dynamic data-driven display
 - **SEO Optimization**: Complete sitemap.xml and robots.txt implementation
   - Comprehensive sitemap covering all 60+ pages including grammar, stories, vocabulary sections
   - Both English and Azerbaijani versions properly indexed
