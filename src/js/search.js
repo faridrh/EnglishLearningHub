@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function collectSearchData() {
     searchData = [];
     
-    // On vocabulary pages
-    if (window.location.pathname.includes('/vocabulary/')) {
+    // On vocabulary pages (English and Azerbaijani)
+    if (window.location.pathname.includes('/vocabulary/') || window.location.pathname.includes('/luget/')) {
       const cards = document.querySelectorAll('.vocabulary-card');
       
       cards.forEach(card => {
@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
     
-    // On grammar pages
-    else if (window.location.pathname.includes('/grammar/')) {
+    // On grammar pages (English and Azerbaijani)
+    else if (window.location.pathname.includes('/grammar/') || window.location.pathname.includes('/qrammatika/')) {
       // Get all headings and content sections
       const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
       const content = document.querySelector('.grammar-content') || document.querySelector('.page-content');
@@ -150,8 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
     
-    // Homepage - collect both vocabulary and videos
-    else if (window.location.pathname === '/') {
+    // Homepage - collect both vocabulary and videos (English and Azerbaijani)
+    else if (window.location.pathname === '/' || window.location.pathname === '/az/') {
       const vocabCards = document.querySelectorAll('.vocabulary-preview .card');
       const videoCards = document.querySelectorAll('.video-preview .card');
       
