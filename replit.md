@@ -87,6 +87,12 @@ src/
   - **Professional Navigation**: Each page includes seamless navigation between vocabulary pages
   - **Rich Content**: Every word includes IPA pronunciation, definitions, examples, synonyms, and categories
   - **Complete Integration**: Updated main vocabulary index to show accurate counts (432 total words)
+- **Separate Azerbaijani Exercises Page**: Created complete Azerbaijani exercises page (/az/calishmalar.md) with translated interface while keeping exercises content in English
+  - **Translated Interface**: All headings, instructions, and navigation elements properly translated to Azerbaijani
+  - **Interactive Functionality**: Full functionality with translated button labels and feedback messages
+  - **Updated Navigation**: Azerbaijani navigation now points to dedicated /az/calishmalar/ page with proper active states
+  - **Exercise Content**: Exercises themselves remain in English as requested for learning purposes
+
 - **Azerbaijani Vocabulary Translations**: Created complete Azerbaijani translations for all vocabulary main pages
   - **Main Vocabulary Index**: Full translation at /az/luget/ with same functionality as English version
   - **Beginner Overview**: Translated to /az/luget/baslangic/ with Azerbaijani interface but English word links
