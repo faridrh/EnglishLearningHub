@@ -149,27 +149,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .grammar-content h5 {
-  background: linear-gradient(135deg, #4a6fa5, #6789bd);
-  color: white;
-  padding: 12px 20px;
-  border-radius: var(--border-radius-lg);
+  background: #f8f9fa;
+  border-left: 5px solid var(--color-secondary);
+  padding: 10px 18px;
   margin: 15px 0 12px 0;
-  box-shadow: var(--box-shadow-md);
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  box-shadow: var(--box-shadow-sm);
   position: relative;
-  overflow: hidden;
+  color: #000000;
   font-weight: 600;
 }
 
-.grammar-content h5::before {
+.grammar-content h5::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%);
-  background-size: 20px 20px;
-  pointer-events: none;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid var(--color-secondary);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 
 /* Grammar Content Sections */
