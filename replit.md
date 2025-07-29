@@ -91,6 +91,10 @@ src/
   - **Visual Indicators**: Arrow icons rotate to show section state (expanded/collapsed)
   - **Enhanced UX**: Improved readability by allowing users to focus on specific grammar topics
   - **Complete Implementation**: Successfully implemented toggle functionality across all grammar levels (beginner, intermediate, advanced) with consistent structure and behavior
+- **Contact Page Removal**: Hidden Contact page from website navigation
+  - **English Navigation**: Removed Contact link from main navigation menu
+  - **Azerbaijani Navigation**: Removed Əlaqə link from Azerbaijani navigation menu
+  - **Clean Navigation**: Streamlined navigation menu focuses on core learning sections (Vocabulary, Grammar, Stories, Exercises, About)
 - **Smart Language Switcher**: Implemented intelligent Azerbaijani language switching for vocabulary pages
   - **Vocabulary Page Handling**: All vocabulary subpages (page-1, page-2, etc.) redirect to main Azerbaijani vocabulary page
   - **Section-Level Redirects**: Grammar and stories subpages redirect to their respective Azerbaijani main pages
