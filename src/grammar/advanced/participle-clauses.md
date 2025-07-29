@@ -13,10 +13,10 @@ Participle clauses are reduced forms of relative clauses or adverbial clauses th
 
 ### Present Participle Clauses
 
-#### Formation
+##### Formation
 **Base verb + -ing**
 
-#### Replacing Active Relative Clauses
+##### Replacing Active Relative Clauses
 
 ##### Full Relative Clause → Participle Clause
 - **Full:** The man **who is standing** by the door is my teacher.
@@ -29,7 +29,7 @@ Participle clauses are reduced forms of relative clauses or adverbial clauses th
 - **Full:** The children **who were playing** in the garden came inside.
 - **Reduced:** The children **playing** in the garden came inside.
 
-#### Replacing Adverbial Clauses
+##### Replacing Adverbial Clauses
 
 ##### Time Clauses
 - **Full:** **When I was walking** to work, I met an old friend.
@@ -51,10 +51,10 @@ Participle clauses are reduced forms of relative clauses or adverbial clauses th
 
 ### Past Participle Clauses
 
-#### Formation
+##### Formation
 **Past participle (usually -ed, but can be irregular)**
 
-#### Replacing Passive Relative Clauses
+##### Replacing Passive Relative Clauses
 
 ##### Full Relative Clause → Participle Clause
 - **Full:** The book **that was written** by Shakespeare is famous.
@@ -63,7 +63,7 @@ Participle clauses are reduced forms of relative clauses or adverbial clauses th
 - **Full:** The car **which was damaged** in the accident needs repair.
 - **Reduced:** The car **damaged** in the accident needs repair.
 
-#### Replacing Passive Adverbial Clauses
+##### Replacing Passive Adverbial Clauses
 
 ##### Time Clauses
 - **Full:** **When it was completed**, the project was a success.
@@ -75,10 +75,10 @@ Participle clauses are reduced forms of relative clauses or adverbial clauses th
 
 ### Perfect Participle Clauses
 
-#### Formation
+##### Formation
 **Having + past participle**
 
-#### Uses
+##### Uses
 
 ##### Showing Completed Action Before Main Clause
 - **Having finished** his homework, he went out to play.
@@ -91,36 +91,36 @@ Participle clauses are reduced forms of relative clauses or adverbial clauses th
 
 ### Position and Punctuation
 
-#### Beginning of Sentence
+##### Beginning of Sentence
 When the participle clause comes first, use a comma:
 - **Walking** down the street, I saw my neighbor.
 - **Exhausted** from the journey, she fell asleep immediately.
 
-#### End of Sentence
+##### End of Sentence
 Usually no comma needed:
 - I saw my neighbor **walking** down the street.
 - She fell asleep immediately, **exhausted** from the journey.
 
-#### Middle of Sentence
+##### Middle of Sentence
 Use commas to separate non-defining participle clauses:
 - My brother, **working** in London, visits us monthly.
 - The document, **signed** by all parties, is now valid.
 
 ### Common Uses and Functions
 
-#### 1. Describing Simultaneous Actions
+##### 1. Describing Simultaneous Actions
 - She sat by the window **reading** a book.
 - He left the room **whistling** a tune.
 
-#### 2. Showing Cause and Effect
+##### 2. Showing Cause and Effect
 - **Not knowing** the answer, he remained silent.
 - **Injured** in the accident, she was taken to hospital.
 
-#### 3. Adding Background Information
+##### 3. Adding Background Information
 - **Born** in 1980, she is now 43 years old.
 - **Located** in the city center, the hotel is very convenient.
 
-#### 4. Expressing Manner
+##### 4. Expressing Manner
 - She answered the question **smiling**.
 - He spoke **looking** directly at the audience.
 
@@ -128,56 +128,56 @@ Use commas to separate non-defining participle clauses:
 
 A common error occurs when the subject of the participle clause differs from the subject of the main clause.
 
-#### Incorrect Examples
+##### Incorrect Examples
 - **Walking** down the street, **the building** caught my attention.
   (The building wasn't walking!)
 
 - **Having been** delayed, **the passengers** were angry.
   (The passengers weren't delayed; the flight was!)
 
-#### Correct Examples
+##### Correct Examples
 - **Walking** down the street, **I noticed** the building.
 - **Having been** delayed, **the flight** caused passenger anger.
 
 ### Advanced Structures
 
-#### Absolute Constructions
+##### Absolute Constructions
 Independent constructions with their own subjects:
 - **Weather permitting**, we'll have the picnic outside.
 - **All things considered**, the project was successful.
 - **The meeting finished**, everyone went home.
 
-#### With Prepositions
+##### With Prepositions
 Some participle clauses keep prepositions:
 - **After finishing** the work, we celebrated.
 - **Before leaving** the house, check all windows.
 - **Despite being** tired, she continued working.
 
-#### Negative Participles
+##### Negative Participles
 - **Not knowing** what to do, he asked for help.
 - **Not having been** invited, she felt excluded.
 
 ### Formal vs. Informal Usage
 
-#### Formal Writing (More Participle Clauses)
+##### Formal Writing (More Participle Clauses)
 - **Having analyzed** the data, researchers concluded that the hypothesis was correct.
 - Documents **required** for the application must be submitted by Friday.
 
-#### Informal Speech (Fewer Participle Clauses)
+##### Informal Speech (Fewer Participle Clauses)
 - After researchers analyzed the data, they concluded that the hypothesis was correct.
 - You must submit the documents that are required for the application by Friday.
 
 ### Common Mistakes
 
-#### 1. Dangling participles
+##### 1. Dangling participles
 - **Incorrect:** Driving to work, the radio announced breaking news.
 - **Correct:** Driving to work, I heard the radio announce breaking news.
 
-#### 2. Wrong participle form
+##### 2. Wrong participle form
 - **Incorrect:** The woman sitting in the chair looks worrying.
 - **Correct:** The woman sitting in the chair looks worried.
 
-#### 3. Misplaced participle clauses
+##### 3. Misplaced participle clauses
 - **Incorrect:** The dog bit the man walking down the street.
 - **Correct:** The dog bit the man who was walking down the street.
 

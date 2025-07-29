@@ -148,6 +148,16 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--box-shadow-sm);
 }
 
+.grammar-content h5 {
+  color: #000000;
+  font-weight: 600;
+  margin: 12px 0 8px 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
 /* Grammar Content Sections */
 .grammar-content {
   background: white;
