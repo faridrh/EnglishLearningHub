@@ -1240,3 +1240,61 @@ p {
     flex-direction: column;
   }
 }
+
+/* Vocabulary Page Grid
+-------------------------------------------------- */
+.vocabulary-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.page-link-card {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  text-align: center;
+  transition: all var(--transition-medium);
+  border-left: 4px solid var(--color-intermediate);
+}
+
+.page-link-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow-md);
+  border-color: var(--color-intermediate);
+}
+
+.page-link-card h3 {
+  margin-bottom: var(--spacing-xs);
+  font-size: 1.1rem;
+}
+
+.page-link-card h3 a {
+  color: var(--color-intermediate);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-link-card h3 a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.page-link-card p {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .vocabulary-page-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--spacing-sm);
+  }
+  
+  .page-link-card {
+    padding: var(--spacing-sm);
+  }
+}

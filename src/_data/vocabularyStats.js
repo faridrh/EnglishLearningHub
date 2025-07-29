@@ -6,9 +6,9 @@ module.exports = {
     description: "Essential vocabulary for beginning English learners"
   },
   intermediate: {
-    totalWords: 800,
-    totalPages: 1, 
-    wordsPerPage: 800,
+    totalWords: 180,
+    totalPages: 15, 
+    wordsPerPage: 12,
     description: "Intermediate vocabulary for developing English skills"
   },
   advanced: {

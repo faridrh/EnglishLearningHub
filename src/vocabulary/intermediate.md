@@ -1,73 +1,51 @@
 ---
-layout: layouts/vocabulary.njk
+layout: layouts/page.njk
 title: Intermediate Vocabulary
-description: Vocabulary for intermediate English learners to expand their language skills
+description: 180 essential intermediate vocabulary words organized across 15 pages for developing English skills
 level: Intermediate
-wordlist: 
-  - term: Acquire
-    pronunciation: "/əˈkwaɪər/"
-    partOfSpeech: "verb"
-    definition: "To come into possession or ownership of something."
-    example: "She acquired a taste for coffee after living in Italy."
-    synonyms: 
-      - obtain
-      - gain
-      - procure
-    level: "Intermediate"
-    category: "General"
-  - term: Compromise
-    pronunciation: "/ˈkɑːmprəmaɪz/"
-    partOfSpeech: "noun, verb"
-    definition: "An agreement or settlement that is reached by both sides making concessions."
-    example: "They reached a compromise after hours of negotiation."
-    synonyms: 
-      - settlement
-      - agreement
-      - deal
-    level: "Intermediate"
-    category: "Business"
-  - term: Diligent
-    pronunciation: "/ˈdɪlɪdʒənt/"
-    partOfSpeech: "adjective"
-    definition: "Having or showing care and conscientiousness in one's work or duties."
-    example: "She's a diligent student who always completes her assignments on time."
-    synonyms: 
-      - hardworking
-      - industrious
-      - conscientious
-    level: "Intermediate"
-    category: "Character"
 collection: vocabulary
 ---
 
 # Intermediate Vocabulary
 
-Welcome to our intermediate vocabulary section! These words will help you express more complex ideas and nuances in English. This list is designed for learners who already have a good grasp of basic English vocabulary and want to expand their language skills.
+Welcome to our comprehensive intermediate vocabulary section! This collection contains **{{ vocabularyStats.intermediate.totalWords }} carefully selected words** organized across **{{ vocabularyStats.intermediate.totalPages }} pages** to help you express more complex ideas and enhance your English communication skills.
 
-## How to Use This List
+## Overview
 
-For each word in our intermediate vocabulary list, we provide:
-- The pronunciation using the International Phonetic Alphabet (IPA)
-- The part of speech
-- A detailed definition
-- A sample sentence showing the word in context
-- Synonyms to help you understand related words
+This intermediate vocabulary collection is designed for learners who have mastered basic English vocabulary and are ready to expand their language skills. Each page contains {{ vocabularyStats.intermediate.wordsPerPage }} words with detailed information including:
 
-To effectively learn these words:
-1. Read the word and its pronunciation
-2. Understand the definition
-3. Study the example sentence
-4. Try to create your own sentence using the word
-5. Review the synonyms to expand your vocabulary further
+- **Pronunciation** using the International Phonetic Alphabet (IPA)
+- **Part of speech** (noun, verb, adjective, etc.)
+- **Clear definitions** with contextual explanations
+- **Example sentences** showing real-world usage
+- **Synonyms** to build word associations
+- **Categories** to help organize learning
 
-## Effective Learning Strategies
+## Learning Strategy
 
-At the intermediate level, simple memorization is not enough. Here are some strategies to incorporate these words into your active vocabulary:
+At the intermediate level, active vocabulary building is essential. Here are effective strategies:
 
-1. **Write a short paragraph** using at least 3-5 new words
-2. **Record yourself** using these words in sentences to practice pronunciation
-3. **Find real examples** of these words in articles, books, or videos
-4. **Use spaced repetition** to review words at increasing intervals
-5. **Create word association maps** connecting related words and concepts
+1. **Focus on context** - Study how words are used in different situations
+2. **Practice regularly** - Review 1-2 pages daily for consistent progress
+3. **Create connections** - Link new words to concepts you already know
+4. **Use actively** - Incorporate new words into your speaking and writing
+5. **Review systematically** - Use spaced repetition for long-term retention
 
-Below is our curated list of intermediate vocabulary words. Challenge yourself to use them in your daily English practice!
+## Vocabulary Pages
+
+<div class="vocabulary-page-grid">
+{% for i in range(1, vocabularyStats.intermediate.totalPages + 1) %}
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-{{ i }}/">Page {{ i }}</a></h3>
+    <p>Words {{ ((i-1) * vocabularyStats.intermediate.wordsPerPage) + 1 }}-{{ i * vocabularyStats.intermediate.wordsPerPage }}</p>
+  </div>
+{% endfor %}
+</div>
+
+## Quick Navigation
+
+- **Start Learning**: Begin with [Page 1](/vocabulary/intermediate/page-1/)
+- **Continue**: Navigate between pages using the previous/next buttons
+- **Review**: Return to this overview anytime to track your progress
+
+Ready to expand your vocabulary? Start with Page 1 and work through all {{ vocabularyStats.intermediate.totalPages }} pages at your own pace!
