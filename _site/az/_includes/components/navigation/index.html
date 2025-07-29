@@ -1,23 +1,48 @@
 <nav class="site-navigation">
-  <ul class="nav-menu">
-    <li class="nav-item">
-      <a href="/az/" class="nav-link">Ana Səhifə</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+    <span class="sr-only">Menyu</span>
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <ul id="primary-menu" class="menu">
+    <li class="menu-item ">
+      <a href="/az/">Ana Səhifə</a>
     </li>
-    <li class="nav-item">
-      <a href="/az/qrammatika/" class="nav-link">Qrammatika</a>
+    <li class="menu-item ">
+      <a href="/az/luget/">Lüğət</a>
     </li>
-    <li class="nav-item">
-      <a href="/az/hekayeler/" class="nav-link">Hekayələr</a>
+    <li class="menu-item ">
+      <a href="/az/qrammatika/">Qrammatika</a>
     </li>
-    <li class="nav-item">
-      <a href="/az/luget/" class="nav-link">Lüğət</a>
+    <li class="menu-item ">
+      <a href="/az/hekayeler/">Hekayələr</a>
     </li>
-
-    <li class="nav-item">
-      <a href="/az/haqqinda/" class="nav-link">Haqqında</a>
+    <li class="menu-item ">
+      <a href="/exercises/">Məşqlər</a>
     </li>
-    <li class="nav-item">
-      <a href="/az/elaqe/" class="nav-link">Əlaqə</a>
+    <li class="menu-item ">
+      <a href="/az/haqqinda/">Haqqında</a>
+    </li>
+    <li class="menu-item ">
+      <a href="/az/elaqe/">Əlaqə</a>
     </li>
   </ul>
+
+  <div class="search-toggle">
+    <button id="search-button" aria-label="Axtarış">
+      <i class="fas fa-search"></i>
+    </button>
+    <div id="search-container" class="search-dropdown">
+      <div class="search-form">
+  <input type="text" id="search-input" placeholder="Search content...">
+  <button type="button" id="search-submit">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+<div id="search-results" class="search-results">
+  <!-- Search results will be displayed here -->
+</div>
+
+    </div>
+  </div>
 </nav>
