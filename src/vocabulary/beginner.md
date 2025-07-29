@@ -7,7 +7,7 @@ level: Beginner
 
 # Beginner Vocabulary
 
-Welcome to our comprehensive beginner vocabulary section! We've organized **108 essential English words** into 9 easy-to-manage pages with 12 words each. These words are the foundation of English communication and will help you build confidence in everyday conversations.
+Welcome to our comprehensive beginner vocabulary section! We've organized **100 essential English words** into 9 easy-to-manage pages. These words are the foundation of English communication and will help you build confidence in everyday conversations.
 
 ## How to Use This System
 
