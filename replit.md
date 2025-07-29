@@ -82,6 +82,12 @@ src/
   - **Vocabulary Page Handling**: All vocabulary subpages (page-1, page-2, etc.) redirect to main Azerbaijani vocabulary page
   - **Section-Level Redirects**: Grammar and stories subpages redirect to their respective Azerbaijani main pages
   - **Error Prevention**: Prevents 404 errors when switching languages from pages without direct translations
+- **Enhanced SEO Implementation**: Comprehensive meta tags and structured data integration
+  - **Open Graph Tags**: Added Facebook and Twitter social media sharing optimization
+  - **Hreflang Attributes**: Implemented multilingual SEO for English and Azerbaijani versions
+  - **JSON-LD Schema**: Added educational organization structured data for better search visibility
+  - **Canonical URLs**: Implemented proper canonical URL structure across all pages
+  - **Performance Preconnects**: Added resource hints for faster loading of external assets
 - **Navigation Translation Fix**: Successfully resolved Azerbaijani navigation translation issue
   - **Created Dedicated Layout**: Built base-az.njk layout specifically for Azerbaijani pages
   - **Complete Menu Translation**: All navigation items properly display in Azerbaijani
