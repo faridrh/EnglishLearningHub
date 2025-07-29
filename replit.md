@@ -80,6 +80,13 @@ src/
   - **Professional Navigation**: Each page includes seamless navigation between vocabulary pages
   - **Rich Content**: Every word includes IPA pronunciation, definitions, examples, synonyms, and categories
   - **Complete Integration**: Updated main vocabulary index to show accurate counts (432 total words)
+- **Azerbaijani Vocabulary Translations**: Created complete Azerbaijani translations for all vocabulary main pages
+  - **Main Vocabulary Index**: Full translation at /az/luget/ with same functionality as English version
+  - **Beginner Overview**: Translated to /az/luget/baslangic/ with Azerbaijani interface but English word links
+  - **Intermediate Overview**: Translated to /az/luget/orta/ with comprehensive academic vocabulary description
+  - **Advanced Overview**: Translated to /az/luget/ireli/ with sophisticated terminology explanations
+  - **Maintained Functionality**: All dynamic word counts and statistics work in Azerbaijani pages
+  - **Preserved English Content**: Individual vocabulary words remain in English as requested for learning purposes
 - **SEO Optimization**: Complete sitemap.xml and robots.txt implementation
   - Comprehensive sitemap covering all 60+ pages including grammar, stories, vocabulary sections
   - Both English and Azerbaijani versions properly indexed

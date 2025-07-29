@@ -1,228 +1,94 @@
 ---
-layout: layouts/base.njk
+layout: layouts/page.njk
 title: İrəli Lüğət
-description: İngilis dili irəli səviyyədə akademik və peşəkar lüğət. Mürəkkəb mövzular və yüksək səviyyəli komunikasiya üçün sözlər.
+description: İrəli səviyyə İngilis danışıq üçün 144 mürəkkəb söz - 12 səhifədə təşkil edilmiş
+level: İrəli
+collection: vocabulary
 ---
 
 # İrəli Lüğət
 
-Yüksək səviyyəli İngilis dili üçün 1200+ söz və ifadə. Bu səviyyə akademik yazı, peşəkar kommunikasiya və mürəkkəb mövzularda istifadə üçün nəzərdə tutulub.
+İrəli səviyyə üçün {{ vocabularyStats.advanced.totalWords }} mürəkkəb və incə sözü mənimsəyin! Bu lüğət daha dəqiqlik, təsirlilik və intellektual dərinlik ilə ünsiyyət qurmağa kömək edəcək.
 
-## Akademik və Elmi Terminlər
+## İrəli Səviyyə Haqqında
 
-### Tədqiqat və Metodologiya
-- methodology - metodologiya
-- hypothesis - hipotez
-- empirical - empirik
-- quantitative - kəmiyyət
-- qualitative - keyfiyyət
-- correlation - korrelyasiya
-- variables - dəyişənlər
-- statistical - statistik
-- analysis - analiz
-- synthesis - sintez
+Bu irəli səviyyə lüğət kolleksiyası orta səviyyəni mənimsəmiş və mürəkkəb kommunikasiya bacarıqları inkişaf etdirmək istəyən öyrənənlər üçün nəzərdə tutulub. Hər səhifədə {{ vocabularyStats.advanced.wordsPerPage }} söz var və aşağıdakılar daxildir:
 
-### Nəzəri Anlayışlar
-- paradigm - paradiqma
-- phenomenon - fenomen
-- conceptual - konseptual
-- theoretical - nəzəri
-- abstract - abstrakt
-- concrete - konkret
-- premise - əsas
-- inference - nəticə
-- assumption - fərz
-- implication - nəticə
+- **Dəqiq tələffüz** - Beynəlxalq Fonetik Əlifba (IPA) istifadə edilərək
+- **Nitq hissəsinin təsnifatı** - Detallı qrammatik məlumat
+- **Hərtərəfli təriflər** - İncə mənalar və fərqlər izah edilir
+- **Kontekst misalları** - Mürəkkəb istifadə halları
+- **Diqqətlə seçilmiş sinonimlər** - İncə fərqləri anlamaq üçün
+- **Tematik kateqoriyalar** - Sistemli öyrənmə üçün
 
-## İqtisadiyyat və Maliyyə
+## Öyrənmə Strategiyası
 
-### Makroiqtisadiyyat
-- inflation - inflyasiya
-- recession - tənəzzül
-- fiscal policy - fiskal siyasət
-- monetary policy - pul siyasəti
-- gross domestic product - ümumi daxili məhsul
-- unemployment rate - işsizlik səviyyəsi
-- economic growth - iqtisadi artım
-- market equilibrium - bazar tarazlığı
-- supply and demand - təklif və tələbat
+İrəli səviyyədə uğur sadə əzbərləmədən çox dərin anlamaşmanı tələb edir:
 
-### Maliyyə İdarəetməsi
-- investment - investisiya
-- portfolio - portfel
-- diversification - diversifikasiya
-- risk assessment - risk qiymətləndirməsi
-- return on investment - investisiya gəliri
-- liquidity - likvidlik
-- assets - aktivlər
-- liabilities - öhdəliklər
-- equity - mənimsəmə
+1. **Etimologiya öyrənin** - Sözlərin kökləri və əlaqələrini araşdırın
+2. **Kollokasiyaları öyrənin** - Hansı sözlərin birlikdə işləndiyi
+3. **Dəqiqliyi praktika edin** - Bu sözləri dəqiq mənalar ifadə etmək üçün işlədin
+4. **Geniş oxuma** - Bu sözləri ədəbiyyat, akademik məqalələrdə tapın
+5. **Mütəmadi yazma** - Yeni lüğəti rəsmi yazıda tətbiq edin
+6. **İntellektual diskurslarda istifadə** - Bu sözləri mürəkkəb müzakirələrdə işlədin
 
-## Siyasət və Hüquq
+## Lüğət Səhifələri
 
-### Hökumət Strukturları
-- democracy - demokratiya
-- autocracy - avtokratiya
-- sovereignty - suverenlik
-- jurisdiction - yurisdiksiya
-- legislation - qanunvericilik
-- judicial - məhkəmə
-- executive - icra
-- constitutional - konstitusiya
-- federal - federal
-- municipal - bələdiyyə
+<div class="vocabulary-page-grid">
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-1/">Səhifə 1</a></h3>
+    <p>Abdicate, Aberrant, Abstruse, Acrimonious, Adroit, Aesthetic, Affable, Alacrity, Altruistic, Ameliorate, Analogous, Anathema</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-2/">Səhifə 2</a></h3>
+    <p>Anomaly, Antithesis, Apathy, Arbiter, Archaic, Articulate, Ascetic, Assiduous, Astute, Audacious, Avarice, Aversion</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-3/">Səhifə 3</a></h3>
+    <p>Banal, Bellicose, Benevolent, Bombastic, Camaraderie, Candor, Capitulate, Caustic, Charlatan, Chastise, Circumvent, Cogent</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-4/">Səhifə 4</a></h3>
+    <p>Colloquial, Complacent, Connoisseur, Contentious, Cosmopolitan, Credulity, Cursory, Cynical, Debacle, Deference, Deleterious, Demagogue</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-5/">Səhifə 5</a></h3>
+    <p>Deprecate, Desiccated, Despot, Diabolical, Didactic, Dilettante, Discordant, Disparate, Dogmatic, Dubious, Ebullient, Eclectic</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-6/">Səhifə 6</a></h3>
+    <p>Efficacious, Egregious, Elusive, Empirical, Enigmatic, Ephemeral, Epitome, Equivocal, Erudite, Esoteric, Euphemism, Exacerbate</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-7/">Səhifə 7</a></h3>
+    <p>Fastidious, Fatuous, Fecund, Felicitous, Flagrant, Garrulous, Gratuitous, Gregarious, Hackneyed, Hegemony, Hyperbole, Iconoclast</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-8/">Səhifə 8</a></h3>
+    <p>Idiosyncratic, Immutable, Impeccable, Imperious, Imperturbable, Impetuous, Incisive, Indefatigable, Ineffable, Inexorable, Insidious, Intransigent</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-9/">Səhifə 9</a></h3>
+    <p>Intrinsic, Invective, Irascible, Jocular, Jubilation, Judicious, Laconic, Lascivious, Lucid, Lugubrious, Magnanimous, Malfeasance</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-10/">Səhifə 10</a></h3>
+    <p>Mendacious, Mercurial, Meticulous, Misanthrope, Mitigate, Myriad, Nascent, Nefarious, Obsequious, Obstinate, Omniscient, Onerous</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-11/">Səhifə 11</a></h3>
+    <p>Ostentatious, Paragon, Paucity, Pejorative, Perfunctory, Perspicacious, Petulant, Philanthropist, Placate, Plethora, Pragmatic, Precocious</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-12/">Səhifə 12</a></h3>
+    <p>Prescient, Pretentious, Procrastinate, Profligate, Propitious, Quintessential, Recalcitrant, Reclusive, Sagacious, Sanguine, Ubiquitous, Zealous</p>
+  </div>
+</div>
 
-### Hüquqi Proseslər
-- litigation - məhkəmə prosesi
-- prosecution - ittiham
-- defense - müdafiə
-- evidence - sübut
-- testimony - şahidlik
-- verdict - hökm
-- appeal - apellyasiya
-- precedent - presedent
-- statute - qanun
-- regulation - tənzimləmə
+## Tez Naviqasiya
 
-## Fəlsəfə və Etika
+- **Səyahətinizə Başlayın**: [Səhifə 1](/vocabulary/advanced/page-1/) ilə başlayın  
+- **Öyrənməyə Davam Edin**: Səhifələr arasında əvvəlki/növbəti düymələrindən istifadə edin
+- **İrəliləyişi İzləyin**: Bu icmalına qayıdıb inkişafınızı görün
 
-### Fəlsəfi Məktəblər
-- rationalism - rasionalizm
-- empiricism - empirizm
-- idealism - idealizm
-- materialism - materializm
-- existentialism - eksistensializm
-- pragmatism - praqmatizm
-- nihilism - nihilizm
-- determinism - determinizm
-
-### Etik Anlayışlar
-- morality - əxlaq
-- virtue - fəzilət
-- integrity - dürüstlük
-- conscience - vicdan
-- responsibility - məsuliyyət
-- accountability - hesabatlılıq
-- transparency - şəffaflıq
-- fairness - ədalətlilik
-
-## Psixologiya və Davranış
-
-### Koqnitiv Proseslər
-- perception - qavrayış
-- cognition - idrak
-- consciousness - şüur
-- subconscious - şüuraltı
-- memory - yaddaş
-- attention - diqqət
-- concentration - konsentrasiya
-- motivation - motivasiya
-- emotion - emosiya
-- intuition - intuisiya
-
-### Sosial Psixologiya
-- conformity - uyğunluq
-- prejudice - qərəz
-- stereotype - stereotip
-- discrimination - ayrıseçkilik
-- social dynamics - sosial dinamika
-- group behavior - qrup davranışı
-- leadership - liderlik
-- influence - təsir
-
-## Texnologiya və İnnovasiya
-
-### Müasir Texnologiyalar
-- nanotechnology - nanotexnologiya
-- biotechnology - biotexnologiya
-- quantum computing - kvant hesablama
-- machine learning - maşın öyrənməsi
-- blockchain - blokçeyn
-- cryptocurrency - kriptovalyuta
-- automation - avtomatlaşdırma
-- digitalization - rəqəmsallaşdırma
-
-### İnnovativ Konseptlər
-- disruptive innovation - pozucu innovasiya
-- scalability - miqyaslanma
-- sustainability - davamlılıq
-- optimization - optimallaşdırma
-- efficiency - səmərəlilik
-- implementation - həyata keçirmə
-- integration - inteqrasiya
-- transformation - transformasiya
-
-## Ədəbiyyat və İncəsənət
-
-### Ədəbi Janrlar və Üslublar
-- allegory - alleqoriya
-- metaphor - metafora
-- symbolism - simvolizm
-- irony - ironiya
-- satire - satira
-- tragedy - faciə
-- comedy - komediya
-- epic - epik
-- narrative - hekayə
-- prose - nəsr
-
-### İncəsənət Tənqidi
-- aesthetic - estetik
-- composition - kompozisiya
-- perspective - perspektiv
-- interpretation - şərh
-- criticism - tənqid
-- analysis - analiz
-- appreciation - qiymətləndirmə
-- evaluation - qiymətləndirmə
-
-## Mürəkkəb Grammatik Strukturlar
-
-### Akademik Yazılarda İstifadə
-- "It is imperative that..." - Vacibdir ki...
-- "Notwithstanding the..." - Baxmayaraq...
-- "In light of the evidence..." - Sübutları nəzərə alaraq...
-- "Consequently..." - Nəticə etibarilə...
-- "Nevertheless..." - Buna baxmayaraq...
-
-### Formal Təqdimatlar
-- "I would like to propose..." - Təklif etmək istərdim...
-- "The data indicates..." - Məlumatlar göstərir...
-- "This warrants further investigation..." - Bu əlavə araşdırma tələb edir...
-- "The implications are significant..." - Nəticələr əhəmiyyətlidir...
-
-## Nuanslı İfadələr
-
-### Diplomatik Dil
-- diplomatic immunity - diplomatik toxunulmazlıq
-- bilateral agreement - ikitərəfli razılaşma
-- multilateral cooperation - çoxtərəfli əməkdaşlıq
-- international relations - beynəlxalq münasibətlər
-- foreign policy - xarici siyasət
-- strategic alliance - strateji ittifaq
-
-### Biznes Strategiyası
-- competitive advantage - rəqabət üstünlüğü
-- market penetration - bazara nüfuz
-- brand recognition - brend tanınması
-- customer retention - müştəri saxlama
-- profit margin - gəlir marjası
-- operational efficiency - əməliyyat səmərəliliyi
-
-## Təcrübə Tapşırıqları
-
-### 1. Akademik Yazı
-Bu lüğətdən istifadə edərək 500 sözlük akademik esseylər yazın.
-
-### 2. Debat və Mübahisə
-Mürəkkəb mövzularda arqumentlər hazırlayın və müdafiə edin.
-
-### 3. Peşəkar Prezentasiya
-İş mühitində yüksək səviyyəli təqdimatlar hazırlayın.
-
-### 4. Analitik Düşüncə
-Məqalələr və araşdırmaları tənqidi şəkildə təhlil edin.
-
----
-
-*Bu lüğət səviyyəsi sərbəst və peşəkar İngilis dili istifadəsinə imkan verir.*
+Mürəkkəb lüğətə yiyələnməyə hazırsınız? Səhifə 1 ilə başlayın və {{ vocabularyStats.advanced.totalPages }} səhifənin hamısını tamamlayaraq təsirli və dəqiq kommunikasiya bacarıqları inkişaf etdirin!

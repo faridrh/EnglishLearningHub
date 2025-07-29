@@ -1,179 +1,80 @@
 ---
-layout: layouts/base.njk
+layout: layouts/page.njk
 title: Başlanğıc Lüğət
-description: İngilis dili başlanğıc səviyyədə əsas sözlər və ifadələr. Gündəlik həyatda istifadə olunan vacib lüğət.
+description: İngilis dilinə yeni başlayanlar üçün 108 vacib söz - 9 səhifədə təşkil edilmiş
+level: Başlanğıc
+collection: vocabulary
 ---
 
 # Başlanğıc Lüğət
 
-İngilis dili öyrənməyə yeni başlayanlar üçün ən vacib 500+ söz və ifadə. Bu sözlər gündəlik həyatda ən çox istifadə olunanlardan seçilmişdir.
+İngilis dilinə başlamaq üçün ən vacib {{ vocabularyStats.beginner.totalWords }} sözü öyrənin! Bu sözlər gündəlik həyatda ən çox istifadə olunan və hər İngilis öyrənənin bilməli olduğu əsas lüğətdir.
 
-## Əsas Mövzular
+## Başlanğıc Səviyyə Haqqında
 
-### Ailə və Qohumluq
-- family - ailə
-- mother - ana
-- father - ata
-- son - oğul
-- daughter - qız
-- brother - qardaş
-- sister - bacı
-- grandmother - nənə
-- grandfather - baba
-- parents - valideynlər
+Bu başlanğıc lüğət kolleksiyası İngilis dilinə yeni başlayanlar üçün xüsusi olaraq seçilmişdir. Hər səhifədə {{ vocabularyStats.beginner.wordsPerPage }} söz var və aşağıdakı məlumatlar daxildir:
 
-### Ev və Əşyalar
-- house - ev
-- room - otaq
-- kitchen - mətbəx
-- bedroom - yataq otağı
-- table - masa
-- chair - stul
-- bed - çarpayı
-- window - pəncərə
-- door - qapı
-- bathroom - hamam
+- **Düzgün tələffüz** - Beynəlxalq Fonetik Əlifba (IPA) istifadə edilərək
+- **Nitq hissəsi** - İsim, fel, sifət və s.
+- **Aydın təriflər** - Sadə və başa düşülən izahlar
+- **Nümunə cümlələr** - Real istifadə göstərən misallar
+- **Sinonimlər** - Oxşar mənalı digər sözlər
 
-### Rənglər
-- red - qırmızı
-- blue - göy
-- green - yaşıl
-- yellow - sarı
-- black - qara
-- white - ağ
-- brown - qəhvəyi
-- pink - çəhrayı
-- purple - bənövşəyi
-- orange - narıncı
+## Öyrənmə Strategiyası
 
-### Yeməklər və İçkilər
-- food - yemək
-- bread - çörək
-- meat - ət
-- fish - balıq
-- rice - düyü
-- milk - süd
-- water - su
-- tea - çay
-- coffee - qəhvə
-- fruit - meyvə
+Bu sözləri effektiv öyrənmək üçün:
 
-### Nəqliyyat
-- car - maşın
-- bus - avtobus
-- train - qatar
-- plane - təyyarə
-- bicycle - velosiped
-- taxi - taksi
-- boat - qayıq
-- motorcycle - motosikl
+1. **Tələffüzə diqqət edin** - Hər sözün düzgün tələffüzünü öyrənin
+2. **Cümlələrdə istifadə edin** - Yeni sözləri öz cümlələrinizdə işlədin
+3. **Gündəlik praktika** - Hər gün 5-10 dəqiqə bu sözləri təkrar edin
+4. **Yazıda istifadə edin** - Yeni sözləri yazılı tapşırıqlarda işlədin
+5. **Real həyatda tətbiq edin** - Gündəlik söhbətlərdə bu sözləri istifadə etməyə çalışın
 
-### Mesleklər
-- teacher - müəllim
-- doctor - həkim
-- nurse - tibb bacısı
-- student - tələbə
-- worker - işçi
-- driver - sürücü
-- cook - aşpaz
-- police - polis
+## Lüğət Səhifələri
 
-## Əsas Fellar
+<div class="vocabulary-page-grid">
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-1/">Səhifə 1</a></h3>
+    <p>Apple, Book, Cat, Dog, Eat, Family, Good, Happy, I, Job, Key, Love</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-2/">Səhifə 2</a></h3>
+    <p>Make, New, Old, People, Question, Red, See, Time, Use, Very, Water, Year</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-3/">Səhifə 3</a></h3>
+    <p>About, After, All, Also, And, Any, As, At, Be, Because, Before, Big</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-4/">Səhifə 4</a></h3>
+    <p>But, By, Call, Can, Come, Could, Day, Do, Even, Find, First, For</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-5/">Səhifə 5</a></h3>
+    <p>From, Get, Give, Go, Have, He, Her, Here, Him, His, How, If</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-6/">Səhifə 6</a></h3>
+    <p>In, Into, Is, It, Just, Know, Last, Like, Little, Look, Man, May</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-7/">Səhifə 7</a></h3>
+    <p>Me, More, Most, My, No, Not, Now, Of, On, One, Only, Or</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-8/">Səhifə 8</a></h3>
+    <p>Other, Our, Out, Over, Own, Part, Right, Say, She, Should, So, Some</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/beginner/page-9/">Səhifə 9</a></h3>
+    <p>Take, Than, That, The, Their, Them, Then, There, These, They, This, To</p>
+  </div>
+</div>
 
-### Gündəlik Fəalliyyətlər
-- eat - yemək
-- drink - içmək
-- sleep - yatmaq
-- work - işləmək
-- study - oxumaq
-- play - oynamaq
-- watch - baxmaq
-- listen - dinləmək
-- speak - danışmaq
-- read - oxumaq
+## Tez Naviqasiya
 
-### Hərəkət Felləri
-- go - getmək
-- come - gəlmək
-- walk - yeritmək
-- run - qaçmaq
-- sit - oturmaq
-- stand - dayanmaq
-- open - açmaq
-- close - bağlamaq
-- start - başlamaq
-- stop - dayanmaq
+- **Səyahətinizə Başlayın**: [Səhifə 1](/vocabulary/beginner/page-1/) ilə başlayın
+- **Öyrənməyə Davam Edin**: Səhifələr arasında əvvəlki/növbəti düymələrindən istifadə edin
+- **İrəliləyişi İzləyin**: Bu icmalına qayıdıb inkişafınızı görün
 
-## Ən Vacib Sifətlər
-
-### Ölçü və Forma
-- big - böyük
-- small - kiçik
-- long - uzun
-- short - qısa
-- tall - hündür
-- wide - geniş
-- thin - nazik
-- thick - qalın
-
-### Keyfiyyət
-- good - yaxşı
-- bad - pis
-- beautiful - gözəl
-- ugly - çirkin
-- new - yeni
-- old - köhnə
-- clean - təmiz
-- dirty - çirkli
-
-### Hiss və Duyğular
-- happy - xoşbəxt
-- sad - kədərli
-- angry - qəzəbli
-- tired - yorğun
-- hungry - ac
-- thirsty - susuz
-
-## Zaman və Rəqəmlər
-
-### Zaman
-- today - bu gün
-- tomorrow - sabah
-- yesterday - dünən
-- morning - səhər
-- afternoon - günorta
-- evening - axşam
-- night - gecə
-- week - həftə
-- month - ay
-- year - il
-
-### Əsas Rəqəmlər
-- one - bir
-- two - iki
-- three - üç
-- four - dörd
-- five - beş
-- six - altı
-- seven - yeddi
-- eight - səkkiz
-- nine - doqquz
-- ten - on
-
-## Təcrübə Tapşırıqları
-
-### 1. Söz Kartları
-Hər gün 10 yeni söz öyrənin və kartlarla təkrarlayın.
-
-### 2. Cümlə Quruculuğu
-Öyrəndiyiniz sözlərlə sadə cümlələr qurun.
-
-### 3. Gündəlik İstifadə
-Bu sözləri gündəlik danışığınızda istifadə etməyə çalışın.
-
-### 4. Qruplandırma
-Sözləri mövzular üzrə qruplandırın və birlikdə yadda saxlayın.
-
----
-
-*Bu sözləri mənimsədikdən sonra orta səviyyə lüğətə keçə bilərsiniz.*
+Başlanğıc səviyyədə İngilis lüğətinə yiyələnməyə hazırsınız? Səhifə 1 ilə başlayın və {{ vocabularyStats.beginner.totalPages }} səhifənin hamısını tamamlayaraq möhkəm təməl qurun!

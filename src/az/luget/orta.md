@@ -1,212 +1,104 @@
 ---
-layout: layouts/base.njk
+layout: layouts/page.njk
 title: Orta Lüğət
-description: İngilis dili orta səviyyədə lüğət və ifadələr. İş həyatı, təhsil və sosial əlaqələrdə istifadə olunan sözlər.
+description: İngilis dilində orta səviyyə üçün 180 söz - 15 səhifədə təşkil edilmiş
+level: Orta
+collection: vocabulary
 ---
 
 # Orta Lüğət
 
-Əsas biliklərə malik öyrənənlər üçün 800+ söz və ifadə. Bu səviyyədə daha mürəkkəb mövzular və iş həyatında istifadə olunan sözlər yer alır.
+Orta səviyyə üçün {{ vocabularyStats.intermediate.totalWords }} əhəmiyyətli sözü mənimsəyin! Bu lüğət akademik və peşəkar mühitlərdə tez-tez istifadə olunan sözlərdən ibarətdir.
 
-## İş Həyatı və Karyera
+## Orta Səviyyə Haqqında
 
-### Şirkət və İdarəetmə
-- company - şirkət
-- office - ofis
-- manager - menecer
-- employee - işçi
-- colleague - həmkar
-- meeting - görüş
-- project - layihə
-- deadline - son tarix
-- budget - büdcə
-- client - müştəri
+Bu orta səviyyə lüğət kolleksiyası əsas lüğəti mənimsəmiş və daha mürəkkəb sözlər öyrənmək istəyən şagirdlər üçün tərtib edilmişdir. Hər səhifədə {{ vocabularyStats.intermediate.wordsPerPage }} söz var və aşağıdakılar daxildir:
 
-### İş Prosesləri
-- schedule - cədvəl
-- appointment - görüş
-- interview - müsahibə
-- presentation - təqdimat
-- report - hesabat
-- contract - müqavilə
-- salary - maaş
-- promotion - yüksəliş
-- training - təlim
-- experience - təcrübə
+- **Dəqiq tələffüz** - Beynəlxalq Fonetik Əlifba (IPA) göstərilərkən
+- **Nitq hissəsinin müəyyənləşdirilməsi** - İsim, fel, sifət və s.
+- **Detallı təriflər** - Söz mənasının tam başa düşülməsi üçün
+- **Kontekst misalları** - Real istifadə vəziyyətlərində
+- **Sinonimlərin siyahısı** - Mənaca yaxın sözlər
 
-## Təhsil və Elm
+## Öyrənmə Yanaşması
 
-### Akademik Həyat
-- university - universitet
-- professor - professor
-- lecture - mühazirə
-- research - tədqiqat
-- assignment - tapşırıq
-- examination - imtahan
-- grade - qiymət
-- degree - diplom
-- scholarship - təqaüd
-- library - kitabxana
+Bu orta səviyyə sözləri mənimsəmək üçün:
 
-### Elm Sahələri
-- science - elm
-- mathematics - riyaziyyat
-- history - tarix
-- geography - coğrafiya
-- literature - ədəbiyyat
-- physics - fizika
-- chemistry - kimya
-- biology - biologiya
-- psychology - psixologiya
-- economics - iqtisadiyyat
+1. **Məna fərqlərini öyrənin** - Sinonimlərlə müqayisə edərək
+2. **Formal kontekstdə istifadə edin** - Yazılı işlərdə tətbiq edin
+3. **Tematik qruplamalara diqqət edin** - Oxşar mövzulu sözləri birlikdə öyrənin
+4. **Peşəkar söhbətlərdə işlədin** - Rəsmi mühitlərdə istifadə edin
+5. **Mətn oxumağı artırın** - Bu sözləri əsl mətinlərdə axtarın
 
-## Texnologiya və İnnovasiya
+## Lüğət Səhifələri
 
-### Kompüter və İnternet
-- computer - kompüter
-- software - proqram təminatı
-- website - veb sayt
-- internet - internet
-- email - elektron poçt
-- password - şifrə
-- download - endirmek
-- upload - yükləmek
-- network - şəbəkə
-- database - məlumat bazası
+<div class="vocabulary-page-grid">
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-1/">Səhifə 1</a></h3>
+    <p>Ability, Abstract, Access, Achieve, Acquire, Additionally, Adequate, Affect, Allocate, Analyze, Anticipate, Approach</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-2/">Səhifə 2</a></h3>
+    <p>Appropriate, Assess, Assist, Assume, Attempt, Authority, Benefit, Capable, Capacity, Category, Challenge, Circumstances</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-3/">Səhifə 3</a></h3>
+    <p>Coherent, Colleague, Commence, Component, Comprehensive, Conclude, Conduct, Consequence, Considerable, Consist, Constitute, Contribute</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-4/">Səhifə 4</a></h3>
+    <p>Controversy, Convert, Coordinate, Corporate, Correspond, Criteria, Crucial, Demonstrate, Derive, Distribute, Domestic, Economy</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-5/">Səhifə 5</a></h3>
+    <p>Efficient, Emerge, Emphasis, Enable, Enhance, Ensure, Environment, Establish, Estimate, Evaluate, Eventually, Evidence</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-6/">Səhifə 6</a></h3>
+    <p>Exclude, Expand, Export, External, Factor, Feature, Finance, Focus, Framework, Function, Furthermore, Generate</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-7/">Səhifə 7</a></h3>
+    <p>Global, Guarantee, However, Identify, Impact, Implement, Imply, Impose, Indicate, Individual, Initial, Institute</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-8/">Səhifə 8</a></h3>
+    <p>Integrate, Internal, Interpret, Invest, Involve, Issue, Maintain, Major, Margin, Maximum, Method, Minimum</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-9/">Səhifə 9</a></h3>
+    <p>Modify, Monitor, Motivate, Nevertheless, Normal, Objective, Obtain, Obvious, Occur, Option, Overall, Participate</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-10/">Səhifə 10</a></h3>
+    <p>Perceive, Percent, Period, Permit, Perspective, Phase, Phenomenon, Policy, Positive, Potential, Previous, Primary</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-11/">Səhifə 11</a></h3>
+    <p>Principal, Principle, Proceed, Process, Promote, Proportion, Provide, Purchase, Range, Ratio, Reaction, Region</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-12/">Səhifə 12</a></h3>
+    <p>Regulate, Relevant, Require, Research, Resource, Respond, Restrict, Retain, Revenue, Section, Sector, Seek</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-13/">Səhifə 13</a></h3>
+    <p>Select, Sequence, Series, Significant, Similar, Source, Specific, Strategy, Structure, Subsequent, Substitute, Sufficient</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-14/">Səhifə 14</a></h3>
+    <p>Summary, Survive, Task, Technique, Technology, Temporary, Text, Theme, Theory, Therefore, Transfer, Transform</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-15/">Səhifə 15</a></h3>
+    <p>Transport, Trend, Ultimate, Undergo, Undertake, Uniform, Unique, Update, Utilize, Valid, Variable, Version</p>
+  </div>
+</div>
 
-### Müasir Texnologiya
-- smartphone - ağıllı telefon
-- application - tətbiq
-- social media - sosial media
-- artificial intelligence - süni zəka
-- virtual reality - virtual reallıq
-- cloud computing - bulud hesablama
-- cybersecurity - kibertəhlükəsizlik
+## Tez Naviqasiya
 
-## Səyahət və Turizm
+- **Səyahətinizə Başlayın**: [Səhifə 1](/vocabulary/intermediate/page-1/) ilə başlayın
+- **Öyrənməyə Davam Edin**: Səhifələr arasında əvvəlki/növbəti düymələrindən istifadə edin
+- **İrəliləyişi İzləyin**: Bu icmalına qayıdıb inkişafınızı görün
 
-### Səyahət Planlaması
-- destination - təyinat yeri
-- accommodation - yaşayış yeri
-- reservation - rezervasiya
-- itinerary - marşrut
-- luggage - baqaj
-- passport - pasport
-- visa - viza
-- customs - gömrük
-- insurance - sığorta
-- guidebook - bələdçi kitabı
-
-### Nəqliyyat və Yolculuq
-- flight - uçuş
-- departure - gediş
-- arrival - gəliş
-- terminal - terminal
-- boarding pass - minmə bileti
-- security check - təhlükəsizlik yoxlaması
-- delay - gecikmə
-- connection - bağlantı
-
-## Sağlamlıq və Tibb
-
-### Sağlamlıq Problemləri
-- health - sağlamlıq
-- disease - xəstəlik
-- symptom - əlamət
-- treatment - müalicə
-- medicine - dərman
-- hospital - xəstəxana
-- clinic - klinika
-- emergency - təcili
-- surgery - əməliyyat
-- recovery - sağalma
-
-### Tibbi Peşələr
-- surgeon - cərrah
-- dentist - diş həkimi
-- pharmacist - əczaçı
-- therapist - terapevt
-- specialist - mütəxəssis
-
-## Mədəniyyət və Əyləncə
-
-### İncəsənət
-- art - incəsənət
-- museum - muzey
-- gallery - qalereya
-- exhibition - sərgi
-- sculpture - heykəl
-- painting - rəsm
-- music - musiqi
-- concert - konsert
-- theater - teatr
-- performance - tamaşa
-
-### İdman və Fəaliyyət
-- exercise - məşq
-- fitness - fitnes
-- tournament - turnir
-- championship - çempionat
-- competition - yarış
-- athlete - idmançı
-- coach - məşqçi
-- stadium - stadion
-- gym - idman zalı
-
-## Mürəkkəb Sifətlər
-
-### Şəxsiyyət Xüsusiyyətləri
-- confident - əminlikli
-- creative - yaradıcı
-- ambitious - iddialı
-- reliable - etibarlı
-- flexible - çevik
-- enthusiastic - həvəsli
-- patient - səbirli
-- organized - mütəşəkkil
-- innovative - innovativ
-- professional - peşəkar
-
-### Keyfiyyət Qiymətləndirməsi
-- excellent - əla
-- outstanding - görkəmli
-- impressive - təsirli
-- effective - effektiv
-- efficient - səmərəli
-- accurate - dəqiq
-- comprehensive - hərtərəfli
-- detailed - ətraflı
-
-## Faydalı İfadələr
-
-### İş Mühitində
-- "Could you please clarify..." - Xahiş edirəm aydınlaşdırın...
-- "I would like to suggest..." - Təklif etmək istərdim...
-- "According to the report..." - Hesabata görə...
-- "We need to prioritize..." - Prioritet verməliyik...
-- "Let's schedule a meeting..." - Görüş təyin edək...
-
-### Akademik Mühitdə
-- "Based on research..." - Tədqiqata əsasən...
-- "The evidence suggests..." - Sübutlar göstərir ki...
-- "In conclusion..." - Nəticədə...
-- "Furthermore..." - Bundan əlavə...
-- "However..." - Lakin...
-
-## Təcrübə Tapşırıqları
-
-### 1. Mövzu üzrə Qruplandırma
-Sözləri peşə sahələri üzrə qruplandırın və həftəlik məşq planı hazırlayın.
-
-### 2. Kontekst Cümlələri
-Hər söz üçün 2-3 fərqli kontekstdə cümlə hazırlayın.
-
-### 3. Sinonim və Antonim
-Öyrəndiyiniz sözlərin sinonim və antonimlərini tapın.
-
-### 4. Real Situasiya Praktikası
-Bu sözləri iş müsahibəsi, təqdimat və ya akademik yazılarda istifadə edin.
-
----
-
-*Bu lüğəti mənimsədikdən sonra irəli səviyyə lüğətə keçməyə hazır olacaqsınız.*
+Orta səviyyə İngilis lüğətinə yiyələnməyə hazırsınız? Səhifə 1 ilə başlayın və {{ vocabularyStats.intermediate.totalPages }} səhifənin hamısını tamamlayaraq academic və peşəkar kommunikasiya bacarıqlarınızı artırın!
