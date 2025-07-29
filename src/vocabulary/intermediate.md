@@ -34,12 +34,66 @@ At the intermediate level, active vocabulary building is essential. Here are eff
 ## Vocabulary Pages
 
 <div class="vocabulary-page-grid">
-{% for i in range(1, vocabularyStats.intermediate.totalPages + 1) %}
   <div class="page-link-card">
-    <h3><a href="/vocabulary/intermediate/page-{{ i }}/">Page {{ i }}</a></h3>
-    <p>Words {{ ((i-1) * vocabularyStats.intermediate.wordsPerPage) + 1 }}-{{ i * vocabularyStats.intermediate.wordsPerPage }}</p>
+    <h3><a href="/vocabulary/intermediate/page-1/">Page 1</a></h3>
+    <p>Acquire, Approach, Authority, Benefit, Capacity, Certainly, Community, Complex, Concept, Consequence, Consider, Context</p>
   </div>
-{% endfor %}
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-2/">Page 2</a></h3>
+    <p>Culture, Develop, Economy, Element, Environment, Establish, Event, Evidence, Factor, Feature, Focus, Function</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-3/">Page 3</a></h3>
+    <p>Generate, Government, Impact, Implement, Individual, Industry, Information, Institution, Invest, Issue, Knowledge, Language</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-4/">Page 4</a></h3>
+    <p>Particular, Perspective, Phenomenon, Potential, Preliminary, Primarily, Procedure, Proportion, Pursue, Remarkable, Reluctant, Significant</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-5/">Page 5</a></h3>
+    <p>Subsequent, Substitute, Sufficient, Technique, Temporary, Transition, Ultimate, Undertake, Valid, Vary, Version, Volume</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-6/">Page 6</a></h3>
+    <p>Acknowledge, Analyze, Approximately, Assume, Available, Benefit, Calculate, Challenge, Communicate, Community, Compare, Complete</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-7/">Page 7</a></h3>
+    <p>Complex, Concept, Conduct, Conference, Confidence, Confirm, Consider, Construct, Contain, Context, Continue, Contribute</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-8/">Page 8</a></h3>
+    <p>Create, Culture, Decision, Define, Demand, Describe, Design, Develop, Difference, Discuss, Distribute, Document</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-9/">Page 9</a></h3>
+    <p>Economy, Education, Effective, Element, Emergency, Emphasis, Employment, Environment, Equipment, Especially, Event, Evidence</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-10/">Page 10</a></h3>
+    <p>Example, Experience, Explain, Express, Factor, Feature, Finance, Focus, Function, Future, Global, Government</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-11/">Page 11</a></h3>
+    <p>History, Identity, Importance, Include, Increase, Individual, Industry, Information, Institution, Involve, Issue, Knowledge</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-12/">Page 12</a></h3>
+    <p>Language, Legal, Level, Location, Management, Material, Medical, Method, Model, Natural, Network, Normal</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-13/">Page 13</a></h3>
+    <p>Object, Opportunity, Organization, Original, Pattern, Performance, Period, Personal, Physical, Policy, Popular, Position</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-14/">Page 14</a></h3>
+    <p>Practice, Present, Previous, Primary, Process, Product, Professional, Project, Provide, Public, Quality, Question</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/intermediate/page-15/">Page 15</a></h3>
+    <p>Range, Reason, Receive, Relationship, Research, Resource, Respond, Responsibility, Result, Society, Structure, System</p>
+  </div>
 </div>
 
 ## Quick Navigation
