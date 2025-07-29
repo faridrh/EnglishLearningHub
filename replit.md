@@ -81,6 +81,10 @@ src/
 - **Stories Search Removal**: Removed "Find Stories" search section from English stories main page
   - **Clean Layout**: Simplified stories page by removing non-functional search box
   - **Consistent Design**: All main section pages now have unified, distraction-free layouts
+- **Homepage Layout Consistency**: Updated Azerbaijani homepage to match English version structure
+  - **Unified Layout**: Both English and Azerbaijani homepages now use identical HTML structure and CSS classes
+  - **Consistent Sections**: Hero, features, featured-content, and cta-section alignment across languages
+  - **Translation Quality**: Maintained high-quality Azerbaijani translations while preserving layout consistency
 - **Smart Language Switcher**: Implemented intelligent Azerbaijani language switching for vocabulary pages
   - **Vocabulary Page Handling**: All vocabulary subpages (page-1, page-2, etc.) redirect to main Azerbaijani vocabulary page
   - **Section-Level Redirects**: Grammar and stories subpages redirect to their respective Azerbaijani main pages
