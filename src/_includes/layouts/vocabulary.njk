@@ -28,11 +28,207 @@ layout: layouts/base.njk
             {% if word.synonyms %}
             <p class="synonyms"><strong>Synonyms:</strong> {{ word.synonyms | join(", ") }}</p>
             {% endif %}
+            {% if word.category %}
+            <p class="category"><small><strong>Category:</strong> {{ word.category }}</small></p>
+            {% endif %}
           </div>
           {% endfor %}
         </div>
       </div>
+      
+      {% if currentPage and totalPages %}
+      <div class="pagination">
+        <div class="pagination-info">
+          <p>Page {{ currentPage }} of {{ totalPages }}</p>
+        </div>
+        <div class="pagination-nav">
+          {% if currentPage > 1 %}
+            <a href="/vocabulary/beginner/page-{{ currentPage - 1 }}/" class="pagination-btn prev">← Previous</a>
+          {% endif %}
+          
+          <div class="pagination-numbers">
+            {% for i in range(1, totalPages + 1) %}
+              {% if i == currentPage %}
+                <span class="pagination-current">{{ i }}</span>
+              {% else %}
+                <a href="/vocabulary/beginner/page-{{ i }}/" class="pagination-number">{{ i }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+          
+          {% if currentPage < totalPages %}
+            <a href="/vocabulary/beginner/page-{{ currentPage + 1 }}/" class="pagination-btn next">Next →</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
       {% endif %}
     </div>
   </article>
 </div>
+
+<style>
+/* Vocabulary-specific styles */
+.vocabulary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.vocabulary-card {
+  background: white;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vocabulary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.vocabulary-card .word {
+  color: #2c5aa0;
+  margin: 0 0 8px 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.vocabulary-card .pronunciation {
+  color: #666;
+  font-style: italic;
+  margin: 0 0 8px 0;
+  font-size: 0.9em;
+}
+
+.vocabulary-card .part-of-speech {
+  color: #28a745;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+.vocabulary-card .definition {
+  color: #333;
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+}
+
+.vocabulary-card .example {
+  color: #666;
+  margin: 0 0 8px 0;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-left: 3px solid #007bff;
+  border-radius: 4px;
+}
+
+.vocabulary-card .synonyms {
+  color: #666;
+  margin: 0 0 8px 0;
+  font-size: 0.9em;
+}
+
+.vocabulary-card .category {
+  color: #6c757d;
+  margin: 0;
+  text-align: right;
+}
+
+/* Pagination styles */
+.pagination {
+  margin: 40px 0 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.pagination-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pagination-info p {
+  margin: 0;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pagination-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background: #0056b3;
+  text-decoration: none;
+  color: white;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pagination-number {
+  display: inline-block;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.pagination-number:hover {
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+.pagination-current {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .vocabulary-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pagination-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .pagination-numbers {
+    justify-content: center;
+  }
+}
+</style>
