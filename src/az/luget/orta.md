@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/base-az.njk
 title: Orta Lüğət
 description: İngilis dilində orta səviyyə üçün 180 söz - 15 səhifədə təşkil edilmiş
 level: Orta

@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/base-az.njk
 title: Başlanğıc Lüğət
 description: İngilis dilinə yeni başlayanlar üçün 108 vacib söz - 9 səhifədə təşkil edilmiş
 level: Başlanğıc

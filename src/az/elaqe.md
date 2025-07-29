@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/base-az.njk
 title: Əlaqə
 description: İngilis Dili Öyrənmə Platforması ilə əlaqə saxlayın. Suallarınızı soruşun və təkliflərinizi bildirin.
 ---

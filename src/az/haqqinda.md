@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/base-az.njk
 title: Haqqında
 description: İngilis Dili Öyrənmə Platforması haqqında məlumat. Missiyamız və təklif etdiyimiz xidmətlər.
 ---

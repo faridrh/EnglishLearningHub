@@ -39,6 +39,20 @@ module.exports = function(eleventyConfig) {
 
 
 
+  // Configure separate directories for Azerbaijani pages
+  eleventyConfig.addCollection("azPages", function(collectionApi) {
+    return collectionApi.getAll().filter(item => {
+      return item.inputPath.startsWith('./src/az/');
+    });
+  });
+
+  // Add a global data that helps templates know if they're in az directory
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    isAzerbaijani: (data) => {
+      return data.page.inputPath.startsWith('./src/az/');
+    }
+  });
+
   return {
     dir: {
       input: "src",

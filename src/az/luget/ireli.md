@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/base-az.njk
 title: İrəli Lüğət
 description: İrəli səviyyə İngilis danışıq üçün 144 mürəkkəb söz - 12 səhifədə təşkil edilmiş
 level: İrəli
