@@ -155,6 +155,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--box-shadow-md);
   margin: 20px 0;
+  color: #000000;
+}
+
+.grammar-content p {
+  color: #000000;
+}
+
+.grammar-content li {
+  color: #000000;
 }
 
 /* Grammar Examples */
@@ -183,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Add visual separator between sections */
 .grammar-content h2 + p {
   font-size: 1.1em;
-  color: var(--color-text-light);
+  color: #000000;
   padding: 15px 20px;
   background: #f8f9fa;
   border-radius: var(--border-radius-md);
