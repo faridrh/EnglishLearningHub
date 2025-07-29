@@ -1,10 +1,8 @@
 ---
-layout: layouts/base-az.njk
+layout: layouts/page-az.njk
 title: İnteraktiv Çalışmalar
 description: İnteraktiv çalışmalarımızla İngilis dili qrammatikasını praktika edin. Bacarıqlarınızı sınayın və müxtəlif qrammatika mövzularında dərhal geribildirim alın.
 ---
-
-# İnteraktiv İngilis Dili Qrammatika Çalışmaları
 
 Hərtərəfli interaktiv qrammatika çalışmaları kolleksiyamıza xoş gəlmisiniz! Dərhal geribildirim və qiymətləndirmə ilə İngilis dili bacarıqlarınızı təkmilləşdirin. Hər çalışma anlayışınızı artırmağa kömək etmək üçün müəyyən qrammatika mövzularına yönəlmişdir.
 
