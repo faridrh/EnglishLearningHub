@@ -9,7 +9,7 @@ level: Beginner
 
 The present simple tense is one of the most commonly used tenses in English. It's used to express habits, general truths, repeated actions, and fixed arrangements.
 
-## When to Use the Present Simple
+### When to Use the Present Simple
 
 1. **For habits and routines**
    - I usually wake up at 7 AM every day.
@@ -27,9 +27,9 @@ The present simple tense is one of the most commonly used tenses in English. It'
    - First, you press the button, then you wait for the light.
    - You turn left at the traffic light and continue straight.
 
-## How to Form the Present Simple
+### How to Form the Present Simple
 
-### Affirmative Sentences
+##### Affirmative Sentences
 
 - **I/You/We/They + verb (base form)**
   - I work in a hospital.
@@ -39,7 +39,7 @@ The present simple tense is one of the most commonly used tenses in English. It'
   - He works in a hospital.
   - She lives in London.
 
-### Spelling Rules for Adding -s
+##### Spelling Rules for Adding -s
 
 1. Most verbs: add -s
    - work → works, play → plays, run → runs
@@ -53,7 +53,7 @@ The present simple tense is one of the most commonly used tenses in English. It'
 4. Verbs ending in vowel + y: just add -s
    - play → plays, enjoy → enjoys, say → says
 
-### Negative Sentences
+##### Negative Sentences
 
 Negative sentences in the present simple use "do not" (don't) or "does not" (doesn't) + the base form of the verb.
 
@@ -65,7 +65,7 @@ Negative sentences in the present simple use "do not" (don't) or "does not" (doe
   - He doesn't work on Sundays.
   - She doesn't live in Paris.
 
-### Questions
+##### Questions
 
 Questions in the present simple use "do" or "does" + subject + base form of the verb.
 
@@ -77,7 +77,7 @@ Questions in the present simple use "do" or "does" + subject + base form of the 
   - Does he work on weekends?
   - Does she live in Tokyo?
 
-## Common Time Expressions Used with the Present Simple
+### Common Time Expressions Used with the Present Simple
 
 - always, usually, often, sometimes, rarely, never
 - every day/week/month/year
@@ -86,7 +86,7 @@ Questions in the present simple use "do" or "does" + subject + base form of the 
 - at night/at the weekend
 - once/twice a week
 
-## Examples in Context
+### Examples in Context
 
 - I **work** from Monday to Friday, but I **don't work** on weekends.
 - She **teaches** English and **loves** her job.
@@ -95,7 +95,7 @@ Questions in the present simple use "do" or "does" + subject + base form of the 
 - The museum **closes** at 6 PM today.
 - How often **do** you **visit** your grandparents?
 
-## Interactive Practice Exercises
+### Interactive Practice Exercises
 
 Complete these sentences using the present simple tense:
 
