@@ -239,27 +239,28 @@ mark.translation-tooltip:hover {
 <script>
 // Enhanced translation functionality
 document.addEventListener('DOMContentLoaded', function() {
-  // Translation data for the market story
-  const translations = {
-    'vendors': 'satıcılar',
-    'heirloom tomatoes': 'ənənəvi pomidor',
-    'aroma': 'ətir',
-    'couldn\'t resist': 'tab gətirə bilmədi',
-    'ceramic': 'keramika',
-    'glazes': 'lak qatı',
-    'enthusiastically': 'həvəslə',
-    'seasonal arrangements': 'mövsümi kompozisiyalar',
-    'enriched': 'zənginləşdirdi',
-    'freelance': 'sərbəst'
-  };
+  // Translation data from frontmatter
+  const translations = {"unprecedented":"misilsiz","quandary":"çətinlik","culmination":"zirvə","versatility":"çeviklik","prowess":"bacarıq","utilitarian":"faydacı","intrinsic":"daxili","autonomy":"muxtariyyət","articulated":"ifadə etdi","contentious":"mübahisəli","sentience":"duyğululuq","analogical":"analogiya","anthropocentric":"insanmərkəzli","commodifying":"əmtəələşdirmə","subroutine":"alt proqram"};
 
   // Find all marked elements and add translation functionality
-  const markedElements = document.querySelectorAll('mark');
+  const markedElements = document.querySelectorAll('mark[data-translation]');
   
   markedElements.forEach(element => {
-    const text = element.textContent.trim();
+    const translationKey = element.getAttribute('data-translation');
     
-    if (translations[text]) {
+    if (translations && translations[translationKey]) {
+      element.classList.add('translation-tooltip');
+      element.setAttribute('data-translation', translations[translationKey]);
+      element.setAttribute('title', `Azerbaijani: ${translations[translationKey]}`);
+    }
+  });
+
+  // Fallback for elements without data-translation but with translations available
+  const allMarkedElements = document.querySelectorAll('mark:not([data-translation])');
+  allMarkedElements.forEach(element => {
+    const text = element.textContent.trim().toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, '_');
+    
+    if (translations && translations[text]) {
       element.classList.add('translation-tooltip');
       element.setAttribute('data-translation', translations[text]);
       element.setAttribute('title', `Azerbaijani: ${translations[text]}`);
@@ -267,18 +268,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Add keyboard accessibility (show translation on focus)
-  markedElements.forEach(element => {
-    if (element.classList.contains('translation-tooltip')) {
-      element.setAttribute('tabindex', '0');
-      
-      element.addEventListener('focus', function() {
-        this.style.outline = '2px solid #007bff';
-      });
-      
-      element.addEventListener('blur', function() {
-        this.style.outline = 'none';
-      });
-    }
+  document.querySelectorAll('.translation-tooltip').forEach(element => {
+    element.setAttribute('tabindex', '0');
+    
+    element.addEventListener('focus', function() {
+      this.style.outline = '2px solid #007bff';
+    });
+    
+    element.addEventListener('blur', function() {
+      this.style.outline = 'none';
+    });
   });
 });
 </script>

@@ -1,19 +1,25 @@
 ---
-layout: layouts/page.njk
+layout: layouts/story-with-translation.njk
 title: The Lost Key
 description: An intermediate-level English story about Sarah's search for her missing house key.
 level: Intermediate
 reading_time: 5
 word_count: 400
+translations:
+  muttered: "mırıldandı"
+  routine: "gündəlik işlər"
+  double_checked: "iki dəfə yoxladı"
+  locksmith: "açar ustası"
+  wave_of_hope: "ümid dalğası"
 ---
 
 # The Lost Key
 
 Sarah had been looking everywhere for her house key. She had searched through her purse three times, checked every pocket of her jacket, and even looked under the cushions of her car seats. The key seemed to have completely disappeared.
 
-"This is impossible," she <mark>muttered</mark> to herself as she stood outside her apartment building. "I had it this morning when I left for work."
+"This is impossible," she <mark data-translation="muttered">muttered</mark> to herself as she stood outside her apartment building. "I had it this morning when I left for work."
 
-She tried to remember her morning <mark>routine</mark>. She had gotten up at seven o'clock, made coffee, checked her emails, and then grabbed her things to leave. She definitely remembered locking the door behind her because she always <mark>double-checked</mark> it before going to work.
+She tried to remember her morning <mark data-translation="routine">routine</mark>. She had gotten up at seven o'clock, made coffee, checked her emails, and then grabbed her things to leave. She definitely remembered locking the door behind her because she always <mark data-translation="double_checked">double-checked</mark> it before going to work.
 
 Sarah called her roommate Emma, hoping she might be home. The phone rang several times before Emma answered.
 
@@ -23,11 +29,11 @@ Sarah called her roommate Emma, hoping she might be home. The phone rang several
 
 "Oh no! That's terrible. Unfortunately, I'm still at the library studying for my exam tomorrow. I won't be back until late tonight."
 
-Sarah sighed deeply. "It's okay, I'll figure something out. Maybe I can call a <mark>locksmith</mark>."
+Sarah sighed deeply. "It's okay, I'll figure something out. Maybe I can call a <mark data-translation="locksmith">locksmith</mark>."
 
 "Wait," Emma said suddenly. "Did you check the coffee shop where you stopped this morning? You mentioned you bought a latte on your way to work."
 
-Sarah's eyes widened. "You're absolutely right! I remember taking out my wallet to pay, and I might have dropped the key then." She felt a <mark>wave of hope</mark> washing over her.
+Sarah's eyes widened. "You're absolutely right! I remember taking out my wallet to pay, and I might have dropped the key then." She felt a <mark data-translation="wave_of_hope">wave of hope</mark> washing over her.
 
 "The coffee shop is only two blocks away. I'll head there right now."
 

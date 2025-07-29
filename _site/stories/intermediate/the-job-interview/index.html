@@ -104,18 +104,18 @@
 
     <div class="page-content">
       <h1>The Job Interview</h1>
-<p>Michael adjusted his tie nervously as he sat in the waiting room. This was the opportunity he had been waiting for – a position as a marketing <mark>coordinator</mark> at GreenTech Solutions, a company known for its <mark>innovative</mark> environmental projects. <img src="/stories/intermediate/job-interview-scene.jpg" alt="Professional job interview scene with candidates and interviewers in business attire in a modern office setting" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> He had spent weeks preparing for this moment, researching the company, practicing common interview questions, and planning his responses.</p>
-<p>The waiting room was modern and bright, with large windows overlooking the city. Plants decorated every corner, reflecting the company's commitment to <mark>sustainability</mark>. Michael tried to calm his nerves by focusing on his breathing, a technique his sister had taught him.</p>
+<p>Michael adjusted his tie nervously as he sat in the waiting room. This was the opportunity he had been waiting for – a position as a marketing <mark data-translation="coordinator">coordinator</mark> at GreenTech Solutions, a company known for its <mark data-translation="innovative">innovative</mark> environmental projects. <img src="/stories/intermediate/job-interview-scene.jpg" alt="Professional job interview scene with candidates and interviewers in business attire in a modern office setting" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> He had spent weeks preparing for this moment, researching the company, practicing common interview questions, and planning his responses.</p>
+<p>The waiting room was modern and bright, with large windows overlooking the city. Plants decorated every corner, reflecting the company's commitment to <mark data-translation="sustainability">sustainability</mark>. Michael tried to calm his nerves by focusing on his breathing, a technique his sister had taught him.</p>
 <p>&quot;Michael Thompson?&quot; called a professional-looking woman with short brown hair and a friendly smile. &quot;I'm Jennifer Martinez, the HR manager. Thank you for coming in today.&quot;</p>
-<p>Michael stood up and shook her hand <mark>firmly</mark>, remembering his father's advice about making a good first impression. &quot;Thank you for the opportunity, Ms. Martinez. I'm excited to be here.&quot;</p>
+<p>Michael stood up and shook her hand <mark data-translation="firmly">firmly</mark>, remembering his father's advice about making a good first impression. &quot;Thank you for the opportunity, Ms. Martinez. I'm excited to be here.&quot;</p>
 <p>They walked through an open office space where employees worked at standing desks and collaborated in glass-walled meeting rooms. The atmosphere seemed relaxed yet productive, exactly the kind of environment Michael hoped to work in.</p>
-<p>In the conference room, Michael met David Kim, the marketing director who would be his potential <mark>supervisor</mark>. David was younger than Michael had expected, probably in his early thirties, with an easy-going manner that helped put Michael at ease.</p>
+<p>In the conference room, Michael met David Kim, the marketing director who would be his potential <mark data-translation="supervisor">supervisor</mark>. David was younger than Michael had expected, probably in his early thirties, with an easy-going manner that helped put Michael at ease.</p>
 <p>&quot;So, Michael,&quot; Jennifer began, &quot;tell us what attracted you to GreenTech Solutions.&quot;</p>
-<p>Michael had practiced this answer many times. &quot;I've always been passionate about environmental issues, and I believe marketing can play a crucial role in promoting sustainable practices. Your company's mission to make eco-friendly technology accessible to everyday consumers really <mark>resonates with</mark> me.&quot;</p>
-<p>David nodded <mark>approvingly</mark>. &quot;That's great to hear. Can you give us an example of a marketing campaign you've worked on that you're particularly proud of?&quot;</p>
+<p>Michael had practiced this answer many times. &quot;I've always been passionate about environmental issues, and I believe marketing can play a crucial role in promoting sustainable practices. Your company's mission to make eco-friendly technology accessible to everyday consumers really <mark data-translation="resonates_with">resonates with</mark> me.&quot;</p>
+<p>David nodded <mark data-translation="approvingly">approvingly</mark>. &quot;That's great to hear. Can you give us an example of a marketing campaign you've worked on that you're particularly proud of?&quot;</p>
 <p>Michael described a social media campaign he had developed for his previous employer, a local nonprofit organization. He explained how he had increased their online engagement by 150% and helped them recruit twice as many volunteers for their annual cleanup event.</p>
-<p>&quot;Impressive,&quot; said Jennifer. &quot;Now, this position would require you to work closely with different departments. How do you handle situations where team members have <mark>conflicting</mark> ideas?&quot;</p>
-<p>Michael thought for a moment before answering. &quot;In my experience, conflicts often arise from miscommunication or different perspectives on the same goal. I try to listen carefully to understand everyone's concerns, then <mark>facilitate</mark> a discussion to find common ground. Sometimes the best solutions come from combining different viewpoints.&quot;</p>
+<p>&quot;Impressive,&quot; said Jennifer. &quot;Now, this position would require you to work closely with different departments. How do you handle situations where team members have <mark data-translation="conflicting">conflicting</mark> ideas?&quot;</p>
+<p>Michael thought for a moment before answering. &quot;In my experience, conflicts often arise from miscommunication or different perspectives on the same goal. I try to listen carefully to understand everyone's concerns, then <mark data-translation="facilitate">facilitate</mark> a discussion to find common ground. Sometimes the best solutions come from combining different viewpoints.&quot;</p>
 <p>The interview continued for another thirty minutes, covering topics from Michael's technical skills to his long-term career goals. He felt increasingly confident as the conversation flowed naturally.</p>
 <p>Near the end, David asked, &quot;Do you have any questions for us?&quot;</p>
 <p>Michael had prepared several thoughtful questions. &quot;I'm curious about the company's plans for expansion. How do you see the marketing department evolving over the next few years?&quot;</p>
@@ -157,6 +157,125 @@
   </article>
 </div>
 
+<style>
+/* Translation tooltip styles */
+.translation-tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.translation-tooltip::after {
+  content: attr(data-translation);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2c3e50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.translation-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  border: 6px solid transparent;
+  border-top-color: #2c3e50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.translation-tooltip:hover::after,
+.translation-tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Enhanced styling for marked words with translations */
+mark.translation-tooltip {
+  background-color: #fff3cd;
+  border-bottom: 2px dotted #ffc107;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+mark.translation-tooltip:hover {
+  background-color: #fff8e1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .translation-tooltip::after {
+    font-size: 12px;
+    padding: 6px 8px;
+    max-width: 200px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+</style>
+
+<script>
+// Enhanced translation functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Translation data from frontmatter
+  const translations = {"coordinator":"koordinator","innovative":"yenilikçi","sustainability":"davamlılıq","firmly":"möhkəm","supervisor":"rəhbər","resonates_with":"uyğun gəlir","approvingly":"təsdiqləyici","conflicting":"ziddiyyətli","facilitate":"asanlaşdırmaq"};
+
+  // Find all marked elements and add translation functionality
+  const markedElements = document.querySelectorAll('mark[data-translation]');
+  
+  markedElements.forEach(element => {
+    const translationKey = element.getAttribute('data-translation');
+    
+    if (translations && translations[translationKey]) {
+      element.classList.add('translation-tooltip');
+      element.setAttribute('data-translation', translations[translationKey]);
+      element.setAttribute('title', `Azerbaijani: ${translations[translationKey]}`);
+    }
+  });
+
+  // Fallback for elements without data-translation but with translations available
+  const allMarkedElements = document.querySelectorAll('mark:not([data-translation])');
+  allMarkedElements.forEach(element => {
+    const text = element.textContent.trim().toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, '_');
+    
+    if (translations && translations[text]) {
+      element.classList.add('translation-tooltip');
+      element.setAttribute('data-translation', translations[text]);
+      element.setAttribute('title', `Azerbaijani: ${translations[text]}`);
+    }
+  });
+
+  // Add keyboard accessibility (show translation on focus)
+  document.querySelectorAll('.translation-tooltip').forEach(element => {
+    element.setAttribute('tabindex', '0');
+    
+    element.addEventListener('focus', function() {
+      this.style.outline = '2px solid #007bff';
+    });
+    
+    element.addEventListener('blur', function() {
+      this.style.outline = 'none';
+    });
+  });
+});
+</script>
   </main>
 
   <footer class="site-footer">
