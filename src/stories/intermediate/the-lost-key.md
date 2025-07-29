@@ -11,6 +11,9 @@ translations:
   double_checked: "iki dəfə yoxladı"
   locksmith: "açar ustası"
   wave_of_hope: "ümid dalğası"
+  enormous: "nəhəng"
+  retracing: "geri izləmək"
+  grateful: "minnətdar"
 ---
 
 # The Lost Key
@@ -49,11 +52,11 @@ He disappeared into the back room and returned moments later with a familiar sil
 
 "Is this yours?" he asked, holding up the key.
 
-Sarah felt <mark>enormous</mark> relief. "Yes, that's it! Thank you so much!"
+Sarah felt <mark data-translation="enormous">enormous</mark> relief. "Yes, that's it! Thank you so much!"
 
-As she walked home, Sarah realized that sometimes the answer to our problems is simpler than we think. She had been so worried about being locked out that she hadn't considered <mark>retracing</mark> her steps. From now on, she decided, she would be more careful with her belongings and remember that asking for help often leads to solutions.
+As she walked home, Sarah realized that sometimes the answer to our problems is simpler than we think. She had been so worried about being locked out that she hadn't considered <mark data-translation="retracing">retracing</mark> her steps. From now on, she decided, she would be more careful with her belongings and remember that asking for help often leads to solutions.
 
-When she finally opened her apartment door, Sarah felt <mark>grateful</mark> not just for finding her key, but for the reminder that community and kindness exist everywhere, even in small coffee shops.
+When she finally opened her apartment door, Sarah felt <mark data-translation="grateful">grateful</mark> not just for finding her key, but for the reminder that community and kindness exist everywhere, even in small coffee shops.
 
 ---
 
