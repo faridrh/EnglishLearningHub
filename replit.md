@@ -75,6 +75,9 @@ src/
   - **Cleaner Interface**: Simplified vocabulary page layout by removing non-functional search box
   - **Navigation Search**: Users can still access search functionality through header navigation dropdown
   - **Focus on Content**: Page now focuses directly on vocabulary levels and learning tips
+- **Grammar Search Removal**: Removed "Find Grammar Topics" search sections from both English and Azerbaijani grammar main pages
+  - **Consistent Experience**: All main section pages now have cleaner layouts without redundant search functionality
+  - **Streamlined Navigation**: Users access search through header navigation across the entire site
 - **Navigation Translation Fix**: Successfully resolved Azerbaijani navigation translation issue
   - **Created Dedicated Layout**: Built base-az.njk layout specifically for Azerbaijani pages
   - **Complete Menu Translation**: All navigation items properly display in Azerbaijani
