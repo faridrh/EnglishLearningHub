@@ -5,11 +5,13 @@ description: Learn how to use my, your, his, her, its, our, and their to show ow
 level: Beginner
 ---
 
+<div class="grammar-content">
+
 # Possessive Adjectives
 
 Possessive adjectives are used to show ownership or relationship between people or things. They appear before nouns and tell us who something belongs to.
 
-## The Seven Possessive Adjectives in English
+### The Seven Possessive Adjectives in English
 
 English has seven possessive adjectives, each corresponding to a subject pronoun:
 
@@ -23,7 +25,7 @@ English has seven possessive adjectives, each corresponding to a subject pronoun
 | we              | our                  |
 | they            | their                |
 
-## How to Use Possessive Adjectives
+### How to Use Possessive Adjectives
 
 Possessive adjectives:
 - Come before the noun they modify
@@ -72,7 +74,7 @@ Possessive adjectives:
    - Multiple things: The companies increased their prices.
    - A single person of unspecified gender: Someone left their umbrella.
 
-## Important Distinctions
+### Important Distinctions
 
 ### Its vs. It's
 
@@ -131,7 +133,7 @@ Do not confuse possessive adjectives with possessive pronouns:
 | our                  | ours               |
 | their                | theirs             |
 
-## Agreement with Nouns
+### Agreement with Nouns
 
 In English, possessive adjectives agree with the possessor (the owner), not with the noun that follows them:
 
@@ -140,7 +142,7 @@ In English, possessive adjectives agree with the possessor (the owner), not with
 
 This is different from many other languages where possessives agree with the thing being possessed.
 
-## Usage in Sentences
+### Usage in Sentences
 
 Possessive adjectives are used:
 
@@ -166,7 +168,7 @@ Possessive adjectives are used:
    - On her own
    - Take their time
 
-## Examples in Context
+### Examples in Context
 
 - I can't find **my** keys. Have you seen them?
 - Please close **your** books and listen carefully.
@@ -176,7 +178,7 @@ Possessive adjectives are used:
 - **Our** flight leaves at 10 AM tomorrow.
 - The students raised **their** hands to answer the question.
 
-## Interactive Practice Exercises
+### Interactive Practice Exercises
 
 Complete the sentences with the correct possessive adjective:
 
@@ -357,3 +359,5 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember that possessive adjectives are essential for clear communication in English, so practice using them correctly!
+
+</div>

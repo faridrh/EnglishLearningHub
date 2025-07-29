@@ -5,11 +5,13 @@ description: Understand the correct usage of I, you, he, she, it, we, and they.
 level: Beginner
 ---
 
+<div class="grammar-content">
+
 # Subject Pronouns
 
 Subject pronouns are used to replace the subject noun in a sentence. They help us avoid repetition and make our sentences more concise and natural-sounding.
 
-## The Seven Subject Pronouns in English
+### The Seven Subject Pronouns in English
 
 English has seven subject pronouns:
 
@@ -21,7 +23,7 @@ English has seven subject pronouns:
 6. **We** - First person plural
 7. **They** - Third person plural
 
-## How to Use Subject Pronouns
+### How to Use Subject Pronouns
 
 Subject pronouns typically come at the beginning of a sentence or clause and act as the doer of the action (the subject).
 
@@ -68,7 +70,7 @@ Subject pronouns typically come at the beginning of a sentence or clause and act
    - Multiple things: The books are on the table. They are mine.
    - A single person when their gender is unknown, unspecified, or non-binary: Someone left their umbrella. They might come back for it.
 
-## Subject Pronouns vs. Noun Subjects
+### Subject Pronouns vs. Noun Subjects
 
 Subject pronouns replace nouns to avoid repetition:
 
@@ -125,7 +127,7 @@ In short answers, we include the subject pronoun:
 - "Are you a teacher?" "Yes, I am." / "No, I'm not."
 - "Is she your sister?" "Yes, she is." / "No, she isn't."
 
-## Cultural Notes
+### Cultural Notes
 
 1. In English, pronouns are not usually omitted, unlike in some other languages:
    - Incorrect: Am going to the store.
@@ -138,7 +140,7 @@ In short answers, we include the subject pronoun:
 3. In formal academic writing, "one" can sometimes be used as an impersonal subject pronoun:
    - One must always check one's work before submitting it.
 
-## Examples in Context
+### Examples in Context
 
 - **I** am learning English because **I** want to study abroad.
 - Are **you** coming to the party? **You** should bring a friend.
@@ -148,7 +150,7 @@ In short answers, we include the subject pronoun:
 - **We** enjoy traveling together. Last summer, **we** visited Italy.
 - My parents are teachers. **They** work at the same school.
 
-## Interactive Practice Exercises
+### Interactive Practice Exercises
 
 Replace the nouns with appropriate subject pronouns:
 
@@ -329,3 +331,5 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember, using the correct subject pronouns will make your English sound more natural and fluent!
+
+</div>

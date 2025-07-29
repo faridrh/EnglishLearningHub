@@ -5,11 +5,13 @@ description: Master the basic rules for using articles in English sentences.
 level: Beginner
 ---
 
+<div class="grammar-content">
+
 # Articles (a, an, the)
 
 Articles are small but important words that come before nouns. There are two types of articles in English: indefinite articles (a, an) and the definite article (the). Understanding how to use them correctly will greatly improve your English fluency.
 
-## Indefinite Articles: "A" and "An"
+### Indefinite Articles: "A" and "An"
 
 The indefinite articles "a" and "an" are used before singular countable nouns when we're talking about something for the first time, or when we're referring to any example of something.
 
@@ -50,7 +52,7 @@ Use "an" before words that begin with a vowel sound:
    - a lot of, a few, a couple, a dozen
    - a hundred, a thousand
 
-## Definite Article: "The"
+### Definite Article: "The"
 
 The definite article "the" is used before singular and plural nouns when we're talking about something specific that both the speaker and listener know about.
 
@@ -83,7 +85,7 @@ The definite article "the" is used before singular and plural nouns when we're t
    - the United Nations, the European Union
    - the Smiths, the Johnsons
 
-## When NOT to Use Articles
+### When NOT to Use Articles
 
 Articles are not used in some situations:
 
@@ -106,7 +108,7 @@ Articles are not used in some situations:
    - English is spoken in many countries.
    - I usually take bus to work. (No article when using transportation in general)
 
-## Common Mistakes to Avoid
+### Common Mistakes to Avoid
 
 1. **Using "the" with general plural or uncountable nouns**
    - Incorrect: The happiness is important in life.
@@ -124,7 +126,7 @@ Articles are not used in some situations:
    - Incorrect: I study the mathematics at university.
    - Correct: I study mathematics at university.
 
-## Examples in Context
+### Examples in Context
 
 - I saw **a** cat in my garden yesterday. **The** cat was chasing birds.
 - **The** book you lent me was very interesting.
@@ -133,7 +135,7 @@ Articles are not used in some situations:
 - My brother is learning to play **the** piano.
 - She speaks French without **an** accent. (French is a language, so no article; "an" before "accent")
 
-## Interactive Practice Exercises
+### Interactive Practice Exercises
 
 Fill in the blanks with "a," "an," "the," or leave blank (Ø) where no article is needed:
 
@@ -307,3 +309,5 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember, mastering article usage takes practice, so don't be discouraged if it seems complicated at first!
+
+</div>

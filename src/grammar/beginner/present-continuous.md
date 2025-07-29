@@ -5,11 +5,13 @@ description: Understand when to use the present continuous for actions happening
 level: Beginner
 ---
 
+<div class="grammar-content">
+
 # Present Continuous Tense
 
 The present continuous tense (also called the present progressive) is used to talk about actions happening right now or around the current time period.
 
-## When to Use the Present Continuous
+### When to Use the Present Continuous
 
 1. **For actions happening right now**
    - I am studying English at the moment.
@@ -31,7 +33,7 @@ The present continuous tense (also called the present progressive) is used to ta
    - He is always losing his keys.
    - They are always complaining about something.
 
-## How to Form the Present Continuous
+### How to Form the Present Continuous
 
 ### Affirmative Sentences
 
@@ -95,7 +97,7 @@ Questions in the present continuous use "am," "are," or "is" + subject + the -in
   - Is he waiting outside?
   - Is she coming with us?
 
-## Verbs Rarely Used in the Continuous Form
+### Verbs Rarely Used in the Continuous Form
 
 Some verbs are rarely used in the continuous form because they describe states rather than actions:
 
@@ -109,7 +111,7 @@ Example:
 - Incorrect: I am knowing the answer.
 - Correct: I know the answer.
 
-## Common Time Expressions Used with the Present Continuous
+### Common Time Expressions Used with the Present Continuous
 
 - now, right now, at the moment
 - today, tonight, this week/month
@@ -117,7 +119,7 @@ Example:
 - these days, nowadays
 - Look! Listen!
 
-## Examples in Context
+### Examples in Context
 
 - I **am studying** for my exam right now.
 - She **isn't working** today because she's sick.
@@ -126,7 +128,7 @@ Example:
 - We **are having** dinner with friends tonight.
 - The children **are always playing** video games instead of doing homework.
 
-## Interactive Practice Exercises
+### Interactive Practice Exercises
 
 Complete these sentences using the present continuous tense:
 
@@ -303,3 +305,5 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember the difference between the present simple (for habits and routines) and the present continuous (for actions happening now)!
+
+</div>

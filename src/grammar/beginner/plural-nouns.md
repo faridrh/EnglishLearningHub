@@ -5,11 +5,13 @@ description: Learn how to form regular and irregular plural nouns in English.
 level: Beginner
 ---
 
+<div class="grammar-content">
+
 # Plural Nouns
 
 Plural nouns are used to indicate when there is more than one of a specific person, place, thing, or idea. Understanding how to form plural nouns correctly is an essential skill for English language learners.
 
-## Regular Plural Nouns
+### Regular Plural Nouns
 
 Most nouns in English form their plurals by adding -s to the singular form.
 
@@ -68,7 +70,7 @@ Most nouns in English form their plurals by adding -s to the singular form.
    - radio → radios
    - zoo → zoos
 
-## Irregular Plural Nouns
+### Irregular Plural Nouns
 
 Some nouns don't follow the regular rules for forming plurals. These are called irregular plurals, and they must be memorized.
 
@@ -119,7 +121,7 @@ Some nouns don't follow the regular rules for forming plurals. These are called 
      - check-in → check-ins
      - grown-up → grown-ups
 
-## Uncountable Nouns
+### Uncountable Nouns
 
 Some nouns in English are uncountable, meaning they don't have a plural form. These nouns are always treated as singular.
 
@@ -149,7 +151,7 @@ To express quantity with uncountable nouns, use expressions like:
 - a loaf of bread, two slices of cheese
 - a bit of fun, a lot of happiness
 
-## Plural vs. Singular for Specific Cases
+### Plural vs. Singular for Specific Cases
 
 1. **Collective nouns** can be singular or plural depending on whether the group acts as a unit or as individuals:
    - The team is winning the championship. (acting as a unit)
@@ -164,7 +166,7 @@ To express quantity with uncountable nouns, use expressions like:
    - The news is on at 6 PM.
    - Physics involves the study of matter and energy.
 
-## Examples in Context
+### Examples in Context
 
 - There are five **books** on the table.
 - Two **children** are playing in the park.
@@ -174,7 +176,7 @@ To express quantity with uncountable nouns, use expressions like:
 - The **information** you gave me was very helpful. (uncountable)
 - I need three **loaves** of bread for the party.
 
-## Interactive Practice Exercises
+### Interactive Practice Exercises
 
 Change these singular nouns to their plural forms:
 
@@ -367,3 +369,5 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember, practicing with real-world examples and reading extensively will help you become more familiar with both regular and irregular plural forms!
+
+</div>
