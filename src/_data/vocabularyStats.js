@@ -12,9 +12,9 @@ module.exports = {
     description: "Intermediate vocabulary for developing English skills"
   },
   advanced: {
-    totalWords: 1200,
-    totalPages: 1,
-    wordsPerPage: 1200, 
+    totalWords: 144,
+    totalPages: 12,
+    wordsPerPage: 12, 
     description: "Advanced vocabulary for fluent English communication"
   }
 };

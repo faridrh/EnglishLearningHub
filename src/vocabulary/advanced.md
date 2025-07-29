@@ -1,77 +1,94 @@
 ---
-layout: layouts/vocabulary.njk
+layout: layouts/page.njk
 title: Advanced Vocabulary
-description: Sophisticated vocabulary for advanced English learners and fluent speakers
+description: 144 sophisticated vocabulary words organized across 12 pages for advanced English communication
 level: Advanced
-wordlist: 
-  - term: Eloquent
-    pronunciation: "/ˈɛləkwənt/"
-    partOfSpeech: "adjective"
-    definition: "Fluent or persuasive in speaking or writing."
-    example: "She gave an eloquent speech at the conference."
-    synonyms: 
-      - articulate
-      - fluent
-      - expressive
-    level: "Advanced"
-    category: "Communication"
-  - term: Meticulous
-    pronunciation: "/məˈtɪkjələs/"
-    partOfSpeech: "adjective"
-    definition: "Showing great attention to detail; very careful and precise."
-    example: "He is meticulous about his work, checking every calculation twice."
-    synonyms: 
-      - thorough
-      - precise
-      - fastidious
-    level: "Advanced"
-    category: "Character"
-  - term: Serendipity
-    pronunciation: "/ˌsɛrənˈdɪpɪti/"
-    partOfSpeech: "noun"
-    definition: "The occurrence and development of events by chance in a happy or beneficial way."
-    example: "Finding this book was pure serendipity."
-    synonyms: 
-      - chance
-      - luck
-      - fortune
-    level: "Advanced"
-    category: "Concepts"
 collection: vocabulary
 ---
 
 # Advanced Vocabulary
 
-Welcome to our advanced vocabulary section! This collection of sophisticated words will help you communicate with greater precision and nuance. These words are typically used in academic, professional, or literary contexts and will enhance your ability to express complex ideas.
+Welcome to our comprehensive advanced vocabulary section! This collection contains **{{ vocabularyStats.advanced.totalWords }} sophisticated words** organized across **{{ vocabularyStats.advanced.totalPages }} pages** to help you communicate with greater precision, eloquence, and intellectual depth.
 
-## How to Use This List
+## Overview
 
-For each advanced word, we provide:
-- Precise pronunciation using the International Phonetic Alphabet
-- Part of speech classification
-- Comprehensive definition
-- Contextual example sentence
-- Carefully selected synonyms
+This advanced vocabulary collection is designed for learners who have mastered intermediate English and are ready to develop sophisticated communication skills. Each page contains {{ vocabularyStats.advanced.wordsPerPage }} words with comprehensive information including:
 
-At this advanced level, it's important to not only understand these words but to develop an intuitive sense of their connotations, usage contexts, and subtle distinctions from similar words.
+- **Precise pronunciation** using the International Phonetic Alphabet (IPA)
+- **Part of speech** classification
+- **Comprehensive definitions** with nuanced explanations
+- **Contextual examples** showing sophisticated usage
+- **Carefully selected synonyms** to understand subtle distinctions
+- **Thematic categories** for organized learning
 
-## Advanced Learning Techniques
+## Learning Strategy
 
-To truly master these sophisticated vocabulary items:
+At the advanced level, mastery requires deep understanding beyond simple memorization:
 
-1. **Analyze word roots and etymology** to understand deeper meanings and connections
-2. **Study collocations** - words that frequently appear together with these terms
-3. **Compare and contrast** with synonyms to understand subtle differences
-4. **Find authentic examples** in literature, academic papers, or professional writing
-5. **Incorporate them into your writing** - aim to use 2-3 new words in each piece you write
-6. **Discuss abstract topics** using these words to solidify your understanding
+1. **Analyze etymology** - Study word roots and origins to understand deeper connections
+2. **Study collocations** - Learn which words commonly appear together
+3. **Practice precision** - Use these words to express exact meanings and subtle distinctions
+4. **Read extensively** - Find these words in literature, academic papers, and professional writing
+5. **Write regularly** - Incorporate new vocabulary into formal writing and presentations
+6. **Engage in discourse** - Use these words in intellectual discussions and debates
 
-## Context is Key
+## Vocabulary Pages
 
-Many advanced words carry nuanced meanings that vary slightly depending on context. Pay attention to:
-- Different meanings across various domains (business vs. literature, etc.)
-- Connotative vs. denotative meanings
-- Formal vs. informal usage
-- American vs. British English variations
+<div class="vocabulary-page-grid">
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-1/">Page 1</a></h3>
+    <p>Abdicate, Aberrant, Abstruse, Acrimonious, Adroit, Aesthetic, Affable, Alacrity, Altruistic, Ameliorate, Analogous, Anathema</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-2/">Page 2</a></h3>
+    <p>Anomaly, Antithesis, Apathy, Arbiter, Archaic, Articulate, Ascetic, Assiduous, Astute, Audacious, Avarice, Aversion</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-3/">Page 3</a></h3>
+    <p>Banal, Bellicose, Benevolent, Bombastic, Camaraderie, Candor, Capitulate, Caustic, Charlatan, Chastise, Circumvent, Cogent</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-4/">Page 4</a></h3>
+    <p>Colloquial, Complacent, Connoisseur, Contentious, Cosmopolitan, Credulity, Cursory, Cynical, Debacle, Deference, Deleterious, Demagogue</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-5/">Page 5</a></h3>
+    <p>Deprecate, Desiccated, Despot, Diabolical, Didactic, Dilettante, Discordant, Disparate, Dogmatic, Dubious, Ebullient, Eclectic</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-6/">Page 6</a></h3>
+    <p>Efficacious, Egregious, Elusive, Empirical, Enigmatic, Ephemeral, Epitome, Equivocal, Erudite, Esoteric, Euphemism, Exacerbate</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-7/">Page 7</a></h3>
+    <p>Fastidious, Fatuous, Fecund, Felicitous, Flagrant, Garrulous, Gratuitous, Gregarious, Hackneyed, Hegemony, Hyperbole, Iconoclast</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-8/">Page 8</a></h3>
+    <p>Idiosyncratic, Immutable, Impeccable, Imperious, Imperturbable, Impetuous, Incisive, Indefatigable, Ineffable, Inexorable, Insidious, Intransigent</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-9/">Page 9</a></h3>
+    <p>Intrinsic, Invective, Irascible, Jocular, Jubilation, Judicious, Laconic, Lascivious, Lucid, Lugubrious, Magnanimous, Malfeasance</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-10/">Page 10</a></h3>
+    <p>Mendacious, Mercurial, Meticulous, Misanthrope, Mitigate, Myriad, Nascent, Nefarious, Obsequious, Obstinate, Omniscient, Onerous</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-11/">Page 11</a></h3>
+    <p>Ostentatious, Paragon, Paucity, Pejorative, Perfunctory, Perspicacious, Petulant, Philanthropist, Placate, Plethora, Pragmatic, Precocious</p>
+  </div>
+  <div class="page-link-card">
+    <h3><a href="/vocabulary/advanced/page-12/">Page 12</a></h3>
+    <p>Prescient, Pretentious, Procrastinate, Profligate, Propitious, Quintessential, Recalcitrant, Reclusive, Sagacious, Sanguine, Ubiquitous, Zealous</p>
+  </div>
+</div>
 
-Below you'll find our carefully curated list of advanced vocabulary. These words will add sophistication and precision to your English communication.
+## Quick Navigation
+
+- **Begin Your Journey**: Start with [Page 1](/vocabulary/advanced/page-1/)
+- **Continue Learning**: Navigate between pages using the previous/next buttons
+- **Track Progress**: Return to this overview to see your advancement
+
+Ready to master sophisticated vocabulary? Begin with Page 1 and work through all {{ vocabularyStats.advanced.totalPages }} pages to develop eloquent and precise communication skills!
