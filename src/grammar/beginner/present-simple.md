@@ -5,6 +5,8 @@ description: Learn how to form and use the present simple tense for habits, fact
 level: Beginner
 ---
 
+<div class="grammar-content">
+
 # Present Simple Tense
 
 The present simple tense is one of the most commonly used tenses in English. It's used to express habits, general truths, repeated actions, and fixed arrangements.
@@ -270,5 +272,7 @@ function resetExercise(exerciseId) {
   border-radius: 3px;
 }
 </style>
+
+</div>
 
 Remember, mastering the present simple tense is essential for effective communication in English!
