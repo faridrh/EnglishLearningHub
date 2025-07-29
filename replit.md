@@ -77,6 +77,11 @@ src/
   - **Updated All Pages**: All /az/ pages now use correct translated layout
   - **Translation Correction**: Updated "Exercises" translation from "Məşqlər" to "Çalışmalar" per user preference
   - **Maintained Functionality**: Search, active states, and mobile navigation work perfectly in both languages
+  - **Grammar Layout Fix**: Completely rebuilt Azerbaijani grammar main page to match English structure and fix display issues
+    - **Structural Consistency**: Updated from custom layout to standard English page structure (levels-section, topics-grid, tips-section)
+    - **English Subject Names**: All grammar topics display in English (Articles, Present Simple, Modal Verbs, etc.) while maintaining Azerbaijani interface
+    - **Proper CSS Classes**: Fixed broken layout by using correct CSS classes that match existing stylesheet
+    - **Complete Functionality**: All navigation links, search, and responsive design work correctly in both languages
 
 - **Complete Vocabulary System Implementation**: Fully implemented all three vocabulary levels
   - **Beginner Level**: 108 essential words across 9 pages with professional paginated structure
