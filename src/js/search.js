@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Get the search elements
+  const searchButton = document.getElementById('search-button');
+  const searchContainer = document.getElementById('search-container');
   const searchInput = document.getElementById('search-input');
   const searchSubmit = document.getElementById('search-submit');
   const searchResults = document.getElementById('search-results');
@@ -7,9 +9,26 @@ document.addEventListener('DOMContentLoaded', function() {
   // Search data - will be populated with content from the page
   let searchData = [];
   
-  // Exit early if search elements don't exist
+  // Exit early if essential search elements don't exist
   if (!searchInput || !searchSubmit || !searchResults) {
     return;
+  }
+  
+  // Toggle search dropdown
+  if (searchButton && searchContainer) {
+    searchButton.addEventListener('click', function() {
+      searchContainer.classList.toggle('active');
+      if (searchContainer.classList.contains('active')) {
+        searchInput.focus();
+      }
+    });
+    
+    // Close search when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!searchContainer.contains(event.target) && !searchButton.contains(event.target)) {
+        searchContainer.classList.remove('active');
+      }
+    });
   }
   
   // Process search input
