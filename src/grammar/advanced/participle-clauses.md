@@ -11,177 +11,177 @@ level: Advanced
 
 Participle clauses are reduced forms of relative clauses or adverbial clauses that use present participles (-ing) or past participles (-ed). They make writing more concise and sophisticated by eliminating unnecessary words.
 
-## Present Participle Clauses
+### Present Participle Clauses
 
-### Formation
+#### Formation
 **Base verb + -ing**
 
-### Replacing Active Relative Clauses
+#### Replacing Active Relative Clauses
 
-#### Full Relative Clause → Participle Clause
+##### Full Relative Clause → Participle Clause
 - **Full:** The man **who is standing** by the door is my teacher.
 - **Reduced:** The man **standing** by the door is my teacher.
 
 - **Full:** Students **who are studying** abroad often face challenges.
 - **Reduced:** Students **studying** abroad often face challenges.
 
-#### Continuous Tenses
+##### Continuous Tenses
 - **Full:** The children **who were playing** in the garden came inside.
 - **Reduced:** The children **playing** in the garden came inside.
 
-### Replacing Adverbial Clauses
+#### Replacing Adverbial Clauses
 
-#### Time Clauses
+##### Time Clauses
 - **Full:** **When I was walking** to work, I met an old friend.
 - **Reduced:** **Walking** to work, I met an old friend.
 
 - **Full:** **While she was cooking** dinner, she listened to music.
 - **Reduced:** **Cooking** dinner, she listened to music.
 
-#### Reason Clauses
+##### Reason Clauses
 - **Full:** **Because he felt** tired, he went to bed early.
 - **Reduced:** **Feeling** tired, he went to bed early.
 
 - **Full:** **Since they were** late for the meeting, they apologized.
 - **Reduced:** **Being** late for the meeting, they apologized.
 
-#### Result Clauses
+##### Result Clauses
 - **Full:** The earthquake destroyed the building, **which left** many homeless.
 - **Reduced:** The earthquake destroyed the building, **leaving** many homeless.
 
-## Past Participle Clauses
+### Past Participle Clauses
 
-### Formation
+#### Formation
 **Past participle (usually -ed, but can be irregular)**
 
-### Replacing Passive Relative Clauses
+#### Replacing Passive Relative Clauses
 
-#### Full Relative Clause → Participle Clause
+##### Full Relative Clause → Participle Clause
 - **Full:** The book **that was written** by Shakespeare is famous.
 - **Reduced:** The book **written** by Shakespeare is famous.
 
 - **Full:** The car **which was damaged** in the accident needs repair.
 - **Reduced:** The car **damaged** in the accident needs repair.
 
-### Replacing Passive Adverbial Clauses
+#### Replacing Passive Adverbial Clauses
 
-#### Time Clauses
+##### Time Clauses
 - **Full:** **When it was completed**, the project was a success.
 - **Reduced:** **Completed**, the project was a success.
 
-#### Condition Clauses
+##### Condition Clauses
 - **Full:** **If it is used** correctly, this medicine is effective.
 - **Reduced:** **Used** correctly, this medicine is effective.
 
-## Perfect Participle Clauses
+### Perfect Participle Clauses
 
-### Formation
+#### Formation
 **Having + past participle**
 
-### Uses
+#### Uses
 
-#### Showing Completed Action Before Main Clause
+##### Showing Completed Action Before Main Clause
 - **Having finished** his homework, he went out to play.
 - **Having lived** in Japan for five years, she speaks fluent Japanese.
 - **Having been** to Paris many times, I know it well.
 
-#### Passive Perfect Participles
+##### Passive Perfect Participles
 - **Having been warned** about the danger, they proceeded carefully.
 - **Having been built** in 1850, the house needs renovation.
 
-## Position and Punctuation
+### Position and Punctuation
 
-### Beginning of Sentence
+#### Beginning of Sentence
 When the participle clause comes first, use a comma:
 - **Walking** down the street, I saw my neighbor.
 - **Exhausted** from the journey, she fell asleep immediately.
 
-### End of Sentence
+#### End of Sentence
 Usually no comma needed:
 - I saw my neighbor **walking** down the street.
 - She fell asleep immediately, **exhausted** from the journey.
 
-### Middle of Sentence
+#### Middle of Sentence
 Use commas to separate non-defining participle clauses:
 - My brother, **working** in London, visits us monthly.
 - The document, **signed** by all parties, is now valid.
 
-## Common Uses and Functions
+### Common Uses and Functions
 
-### 1. Describing Simultaneous Actions
+#### 1. Describing Simultaneous Actions
 - She sat by the window **reading** a book.
 - He left the room **whistling** a tune.
 
-### 2. Showing Cause and Effect
+#### 2. Showing Cause and Effect
 - **Not knowing** the answer, he remained silent.
 - **Injured** in the accident, she was taken to hospital.
 
-### 3. Adding Background Information
+#### 3. Adding Background Information
 - **Born** in 1980, she is now 43 years old.
 - **Located** in the city center, the hotel is very convenient.
 
-### 4. Expressing Manner
+#### 4. Expressing Manner
 - She answered the question **smiling**.
 - He spoke **looking** directly at the audience.
 
-## Dangling Participles
+### Dangling Participles
 
 A common error occurs when the subject of the participle clause differs from the subject of the main clause.
 
-### Incorrect Examples
+#### Incorrect Examples
 - **Walking** down the street, **the building** caught my attention.
   (The building wasn't walking!)
 
 - **Having been** delayed, **the passengers** were angry.
   (The passengers weren't delayed; the flight was!)
 
-### Correct Examples
+#### Correct Examples
 - **Walking** down the street, **I noticed** the building.
 - **Having been** delayed, **the flight** caused passenger anger.
 
-## Advanced Structures
+### Advanced Structures
 
-### Absolute Constructions
+#### Absolute Constructions
 Independent constructions with their own subjects:
 - **Weather permitting**, we'll have the picnic outside.
 - **All things considered**, the project was successful.
 - **The meeting finished**, everyone went home.
 
-### With Prepositions
+#### With Prepositions
 Some participle clauses keep prepositions:
 - **After finishing** the work, we celebrated.
 - **Before leaving** the house, check all windows.
 - **Despite being** tired, she continued working.
 
-### Negative Participles
+#### Negative Participles
 - **Not knowing** what to do, he asked for help.
 - **Not having been** invited, she felt excluded.
 
-## Formal vs. Informal Usage
+### Formal vs. Informal Usage
 
-### Formal Writing (More Participle Clauses)
+#### Formal Writing (More Participle Clauses)
 - **Having analyzed** the data, researchers concluded that the hypothesis was correct.
 - Documents **required** for the application must be submitted by Friday.
 
-### Informal Speech (Fewer Participle Clauses)
+#### Informal Speech (Fewer Participle Clauses)
 - After researchers analyzed the data, they concluded that the hypothesis was correct.
 - You must submit the documents that are required for the application by Friday.
 
-## Common Mistakes
+### Common Mistakes
 
-### 1. Dangling participles
+#### 1. Dangling participles
 - **Incorrect:** Driving to work, the radio announced breaking news.
 - **Correct:** Driving to work, I heard the radio announce breaking news.
 
-### 2. Wrong participle form
+#### 2. Wrong participle form
 - **Incorrect:** The woman sitting in the chair looks worrying.
 - **Correct:** The woman sitting in the chair looks worried.
 
-### 3. Misplaced participle clauses
+#### 3. Misplaced participle clauses
 - **Incorrect:** The dog bit the man walking down the street.
 - **Correct:** The dog bit the man who was walking down the street.
 
-## Interactive Practice Exercises
+### Interactive Practice Exercises
 
 Combine sentences using participle clauses and correct dangling participles. Type your answers and get instant feedback:
 
