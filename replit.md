@@ -78,6 +78,10 @@ src/
 - **Grammar Search Removal**: Removed "Find Grammar Topics" search sections from both English and Azerbaijani grammar main pages
   - **Consistent Experience**: All main section pages now have cleaner layouts without redundant search functionality
   - **Streamlined Navigation**: Users access search through header navigation across the entire site
+- **Smart Language Switcher**: Implemented intelligent Azerbaijani language switching for vocabulary pages
+  - **Vocabulary Page Handling**: All vocabulary subpages (page-1, page-2, etc.) redirect to main Azerbaijani vocabulary page
+  - **Section-Level Redirects**: Grammar and stories subpages redirect to their respective Azerbaijani main pages
+  - **Error Prevention**: Prevents 404 errors when switching languages from pages without direct translations
 - **Navigation Translation Fix**: Successfully resolved Azerbaijani navigation translation issue
   - **Created Dedicated Layout**: Built base-az.njk layout specifically for Azerbaijani pages
   - **Complete Menu Translation**: All navigation items properly display in Azerbaijani
