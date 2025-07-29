@@ -71,6 +71,13 @@ src/
 ## Recent Changes
 
 ### January 2025
+- **Navigation Translation Fix**: Successfully resolved Azerbaijani navigation translation issue
+  - **Created Dedicated Layout**: Built base-az.njk layout specifically for Azerbaijani pages
+  - **Complete Menu Translation**: All navigation items properly display in Azerbaijani
+  - **Updated All Pages**: All /az/ pages now use correct translated layout
+  - **Translation Correction**: Updated "Exercises" translation from "Məşqlər" to "Çalışmalar" per user preference
+  - **Maintained Functionality**: Search, active states, and mobile navigation work perfectly in both languages
+
 - **Complete Vocabulary System Implementation**: Fully implemented all three vocabulary levels
   - **Beginner Level**: 108 essential words across 9 pages with professional paginated structure
   - **Intermediate Level**: 180 academic words across 15 pages with business and professional vocabulary
