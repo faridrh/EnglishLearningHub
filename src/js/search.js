@@ -40,6 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
     
+    // Ensure we have search data
+    if (searchData.length === 0) {
+      collectSearchData();
+    }
+    
     // Perform search
     const results = performSearch(query);
     displaySearchResults(results);
@@ -225,4 +230,40 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Collect initial search data
   collectSearchData();
+  
+  // Initialize search immediately if on vocabulary page
+  if (window.location.pathname === '/vocabulary/') {
+    // Add some default searchable content from the page
+    const levelCards = document.querySelectorAll('.level-card');
+    levelCards.forEach(card => {
+      const title = card.querySelector('.level-title')?.textContent || '';
+      const description = card.querySelector('.level-description')?.textContent || '';
+      const stats = card.querySelector('.level-stats')?.textContent || '';
+      
+      if (title) {
+        searchData.push({
+          title: `${title} Level Vocabulary`,
+          content: `${description} ${stats}`,
+          meta: 'Vocabulary Level',
+          url: card.querySelector('a')?.href || window.location.pathname
+        });
+      }
+    });
+    
+    // Add tip cards as searchable content
+    const tipCards = document.querySelectorAll('.tip-card');
+    tipCards.forEach(card => {
+      const title = card.querySelector('h3')?.textContent || '';
+      const description = card.querySelector('p')?.textContent || '';
+      
+      if (title) {
+        searchData.push({
+          title: title,
+          content: description,
+          meta: 'Learning Tip',
+          url: window.location.pathname + '#tips'
+        });
+      }
+    });
+  }
 });
