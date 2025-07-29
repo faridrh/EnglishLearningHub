@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Get the search elements
-  const searchButton = document.getElementById('search-button');
-  const searchContainer = document.getElementById('search-container');
   const searchInput = document.getElementById('search-input');
   const searchSubmit = document.getElementById('search-submit');
   const searchResults = document.getElementById('search-results');
@@ -9,20 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Search data - will be populated with content from the page
   let searchData = [];
   
-  // Toggle search dropdown
-  searchButton.addEventListener('click', function() {
-    searchContainer.classList.toggle('active');
-    if (searchContainer.classList.contains('active')) {
-      searchInput.focus();
-    }
-  });
-  
-  // Close search when clicking outside
-  document.addEventListener('click', function(event) {
-    if (!searchContainer.contains(event.target) && !searchButton.contains(event.target)) {
-      searchContainer.classList.remove('active');
-    }
-  });
+  // Exit early if search elements don't exist
+  if (!searchInput || !searchSubmit || !searchResults) {
+    return;
+  }
   
   // Process search input
   function handleSearch() {
@@ -43,6 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
   searchInput.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
       handleSearch();
+    } else {
+      // Live search as user types
+      if (event.target.value.length >= 2) {
+        handleSearch();
+      } else if (event.target.value.length === 0) {
+        searchResults.innerHTML = '';
+      }
     }
   });
   
@@ -65,6 +60,52 @@ document.addEventListener('DOMContentLoaded', function() {
             content: definition,
             meta: level,
             url: window.location.pathname + '#' + term.toLowerCase().replace(/\s+/g, '-')
+          });
+        }
+      });
+    }
+    
+    // On grammar pages
+    else if (window.location.pathname.includes('/grammar/')) {
+      // Get all headings and content sections
+      const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+      const content = document.querySelector('.grammar-content') || document.querySelector('.page-content');
+      
+      headings.forEach(heading => {
+        const title = heading.textContent.trim();
+        const nextElement = heading.nextElementSibling;
+        let description = '';
+        
+        // Get content after the heading
+        if (nextElement) {
+          if (nextElement.tagName === 'P') {
+            description = nextElement.textContent.substring(0, 150);
+          } else if (nextElement.tagName === 'UL' || nextElement.tagName === 'OL') {
+            const listItems = nextElement.querySelectorAll('li');
+            description = Array.from(listItems).slice(0,2).map(li => li.textContent).join(', ');
+          }
+        }
+        
+        if (title && title !== 'Interactive Practice Exercises') {
+          searchData.push({
+            title: title,
+            content: description,
+            meta: 'Grammar Topic',
+            url: window.location.pathname + '#' + title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
+          });
+        }
+      });
+      
+      // Add examples from the page
+      const examples = document.querySelectorAll('strong, em, .example');
+      examples.forEach((example, index) => {
+        const text = example.textContent.trim();
+        if (text.length > 10 && text.length < 100 && !text.includes('•')) {
+          searchData.push({
+            title: `Example: ${text}`,
+            content: 'Grammar example from this page',
+            meta: 'Example',
+            url: window.location.pathname + '#example-' + index
           });
         }
       });
