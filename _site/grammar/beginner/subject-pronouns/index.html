@@ -549,6 +549,75 @@ function resetExercise(exerciseId) {
   </article>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all H3 elements in grammar content
+  const h3Elements = document.querySelectorAll('.grammar-content h3');
+  
+  h3Elements.forEach(function(h3) {
+    // Add toggle icon and make it clickable
+    h3.style.cursor = 'pointer';
+    h3.style.position = 'relative';
+    h3.style.paddingRight = '30px';
+    
+    // Create toggle icon
+    const toggleIcon = document.createElement('span');
+    toggleIcon.className = 'toggle-icon';
+    toggleIcon.innerHTML = '▼';
+    toggleIcon.style.position = 'absolute';
+    toggleIcon.style.right = '0';
+    toggleIcon.style.top = '50%';
+    toggleIcon.style.transform = 'translateY(-50%)';
+    toggleIcon.style.fontSize = '14px';
+    toggleIcon.style.color = '#666';
+    toggleIcon.style.transition = 'transform 0.3s ease';
+    
+    h3.appendChild(toggleIcon);
+    
+    // Find all content between this H3 and the next H3 or end of section
+    const contentElements = [];
+    let nextElement = h3.nextElementSibling;
+    
+    while (nextElement && !nextElement.matches('h3, h2, h1')) {
+      contentElements.push(nextElement);
+      nextElement = nextElement.nextElementSibling;
+    }
+    
+    // Create a wrapper div for the collapsible content
+    const wrapper = document.createElement('div');
+    wrapper.className = 'collapsible-content';
+    wrapper.style.overflow = 'hidden';
+    wrapper.style.transition = 'max-height 0.3s ease';
+    
+    // Move all content elements into the wrapper
+    contentElements.forEach(function(element) {
+      wrapper.appendChild(element);
+    });
+    
+    // Insert wrapper after H3
+    h3.parentNode.insertBefore(wrapper, h3.nextSibling);
+    
+    // Set initial max-height
+    wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+    
+    // Add click event listener
+    h3.addEventListener('click', function() {
+      const isCollapsed = wrapper.style.maxHeight === '0px';
+      
+      if (isCollapsed) {
+        // Expand
+        wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+        toggleIcon.style.transform = 'translateY(-50%) rotate(0deg)';
+      } else {
+        // Collapse
+        wrapper.style.maxHeight = '0px';
+        toggleIcon.style.transform = 'translateY(-50%) rotate(-90deg)';
+      }
+    });
+  });
+});
+</script>
+
   </main>
 
   <footer class="site-footer">

@@ -85,6 +85,11 @@ src/
   - **Unified Layout**: Both English and Azerbaijani homepages now use identical HTML structure and CSS classes
   - **Consistent Sections**: Hero, features, featured-content, and cta-section alignment across languages
   - **Translation Quality**: Maintained high-quality Azerbaijani translations while preserving layout consistency
+- **H3 Toggle Functionality**: Added collapsible sections to grammar pages
+  - **Interactive H3 Headers**: All H3 elements in grammar content are now clickable with toggle icons
+  - **Smooth Animations**: Content sections expand/collapse with smooth transitions
+  - **Visual Indicators**: Arrow icons rotate to show section state (expanded/collapsed)
+  - **Enhanced UX**: Improved readability by allowing users to focus on specific grammar topics
 - **Smart Language Switcher**: Implemented intelligent Azerbaijani language switching for vocabulary pages
   - **Vocabulary Page Handling**: All vocabulary subpages (page-1, page-2, etc.) redirect to main Azerbaijani vocabulary page
   - **Section-Level Redirects**: Grammar and stories subpages redirect to their respective Azerbaijani main pages
