@@ -71,12 +71,14 @@ src/
 ## Recent Changes
 
 ### January 2025
-- **Dynamic Vocabulary Counting System**: Implemented variable-based word counting
+- **Dynamic Vocabulary Counting System**: Successfully implemented variable-based word counting
   - Created vocabularyStats.js data file for centralized vocabulary statistics
-  - Main beginner vocabulary page now dynamically displays "108 essential English words" 
+  - Fixed vocabulary overview page to show correct "108 words" instead of "4 words"
+  - Updated both main beginner vocabulary page and vocabulary index page
   - System automatically shows correct word counts (108 words across 9 pages with 12 words each)
   - Easy to maintain and update word counts in the future without manual text changes
   - Eliminates hardcoded numbers in favor of dynamic data-driven display
+  - All vocabulary levels now display accurate counts: Beginner (108), Intermediate (800+), Advanced (1200+)
 - **SEO Optimization**: Complete sitemap.xml and robots.txt implementation
   - Comprehensive sitemap covering all 60+ pages including grammar, stories, vocabulary sections
   - Both English and Azerbaijani versions properly indexed
