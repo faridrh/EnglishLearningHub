@@ -104,18 +104,18 @@
 
     <div class="page-content">
       <h1>Shopping at the Store</h1>
-<p>Lisa needs to buy food for her family. She makes a <mark>list</mark> and goes to the <mark>supermarket</mark> near her house. The <mark>supermarket</mark> is big and has many different foods.</p>
-<p>Lisa takes a shopping <mark>cart</mark> at the entrance. First, she goes to the fruit <mark>section</mark>. <img src="/stories/beginner/shopping-store.jpg" alt="A woman shopping for fresh fruits at the supermarket" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She buys apples, bananas, and oranges. The fruits are <mark>fresh</mark> and look very good.</p>
-<p>Next, Lisa goes to the vegetable <mark>section</mark>. She picks tomatoes, carrots, and lettuce. Lisa likes to make salads for her family. The vegetables are green and healthy.</p>
-<p>Lisa walks to the meat <mark>section</mark>. She buys chicken and fish. The man behind the counter is friendly. He helps Lisa choose the best meat.</p>
-<p>In the <mark>dairy</mark> <mark>section</mark>, Lisa takes milk, cheese, and eggs. Her children drink milk every morning with breakfast. Lisa also buys yogurt because it is healthy.</p>
-<p>Lisa needs bread for sandwiches. She goes to the bakery <mark>section</mark>. The bread smells very good. Lisa chooses whole wheat bread because it is better for her family.</p>
-<p>Lisa looks at her shopping <mark>list</mark>. She has everything she needs. She walks to the <mark>checkout</mark> counter. The <mark>cashier</mark> is a young woman with a big smile.</p>
-<p>&quot;Hello! Did you find everything you need?&quot; asks the <mark>cashier</mark>.</p>
+<p>Lisa needs to buy food for her family. She makes a <mark data-translation="list">list</mark> and goes to the <mark data-translation="supermarket">supermarket</mark> near her house. The <mark data-translation="supermarket">supermarket</mark> is big and has many different foods.</p>
+<p>Lisa takes a shopping <mark data-translation="cart">cart</mark> at the entrance. First, she goes to the fruit <mark data-translation="section">section</mark>. <img src="/stories/beginner/shopping-store.jpg" alt="A woman shopping for fresh fruits at the supermarket" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She buys apples, bananas, and oranges. The fruits are <mark data-translation="fresh">fresh</mark> and look very good.</p>
+<p>Next, Lisa goes to the vegetable <mark data-translation="section">section</mark>. She picks tomatoes, carrots, and lettuce. Lisa likes to make salads for her family. The vegetables are green and healthy.</p>
+<p>Lisa walks to the meat <mark data-translation="section">section</mark>. She buys chicken and fish. The man behind the counter is friendly. He helps Lisa choose the best meat.</p>
+<p>In the <mark data-translation="dairy">dairy</mark> <mark data-translation="section">section</mark>, Lisa takes milk, cheese, and eggs. Her children drink milk every morning with breakfast. Lisa also buys yogurt because it is healthy.</p>
+<p>Lisa needs bread for sandwiches. She goes to the bakery <mark data-translation="section">section</mark>. The bread smells very good. Lisa chooses whole wheat bread because it is better for her family.</p>
+<p>Lisa looks at her shopping <mark data-translation="list">list</mark>. She has everything she needs. She walks to the <mark data-translation="checkout">checkout</mark> counter. The <mark data-translation="cashier">cashier</mark> is a young woman with a big smile.</p>
+<p>&quot;Hello! Did you find everything you need?&quot; asks the <mark data-translation="cashier">cashier</mark>.</p>
 <p>&quot;Yes, thank you,&quot; says Lisa.</p>
-<p>The <mark>cashier</mark> scans all the items. The total is forty-two dollars. Lisa pays with her credit card.</p>
-<p>Lisa puts all the food in bags. She says &quot;Thank you&quot; and &quot;Have a nice day&quot; to the <mark>cashier</mark>.</p>
-<p>At home, Lisa puts the food in the refrigerator and cupboards. She is happy because she bought good food for her family. Tonight, she will cook a delicious dinner with the <mark>fresh</mark> <mark>ingredients</mark>.</p>
+<p>The <mark data-translation="cashier">cashier</mark> scans all the items. The total is forty-two dollars. Lisa pays with her credit card.</p>
+<p>Lisa puts all the food in bags. She says &quot;Thank you&quot; and &quot;Have a nice day&quot; to the <mark data-translation="cashier">cashier</mark>.</p>
+<p>At home, Lisa puts the food in the refrigerator and cupboards. She is happy because she bought good food for her family. Tonight, she will cook a delicious dinner with the <mark data-translation="fresh">fresh</mark> <mark data-translation="ingredients">ingredients</mark>.</p>
 <hr>
 <h2>Vocabulary Practice</h2>
 <p><strong>Key words from the story:</strong></p>
@@ -149,6 +149,126 @@
   </article>
 </div>
 
+<style>
+/* Translation tooltip styles */
+.translation-tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.translation-tooltip::after {
+  content: attr(data-translation);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2c3e50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.translation-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  border: 6px solid transparent;
+  border-top-color: #2c3e50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.translation-tooltip:hover::after,
+.translation-tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Enhanced styling for marked words with translations */
+mark.translation-tooltip {
+  background-color: #fff3cd;
+  border-bottom: 2px dotted #ffc107;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+mark.translation-tooltip:hover {
+  background-color: #fff8e1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .translation-tooltip::after {
+    font-size: 12px;
+    padding: 6px 8px;
+    max-width: 200px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+</style>
+
+<script>
+// Enhanced translation functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Translation data for the market story
+  const translations = {
+    'vendors': 'satıcılar',
+    'heirloom tomatoes': 'ənənəvi pomidor',
+    'aroma': 'ətir',
+    'couldn\'t resist': 'tab gətirə bilmədi',
+    'ceramic': 'keramika',
+    'glazes': 'lak qatı',
+    'enthusiastically': 'həvəslə',
+    'seasonal arrangements': 'mövsümi kompozisiyalar',
+    'enriched': 'zənginləşdirdi',
+    'freelance': 'sərbəst'
+  };
+
+  // Find all marked elements and add translation functionality
+  const markedElements = document.querySelectorAll('mark');
+  
+  markedElements.forEach(element => {
+    const text = element.textContent.trim();
+    
+    if (translations[text]) {
+      element.classList.add('translation-tooltip');
+      element.setAttribute('data-translation', translations[text]);
+      element.setAttribute('title', `Azerbaijani: ${translations[text]}`);
+    }
+  });
+
+  // Add keyboard accessibility (show translation on focus)
+  markedElements.forEach(element => {
+    if (element.classList.contains('translation-tooltip')) {
+      element.setAttribute('tabindex', '0');
+      
+      element.addEventListener('focus', function() {
+        this.style.outline = '2px solid #007bff';
+      });
+      
+      element.addEventListener('blur', function() {
+        this.style.outline = 'none';
+      });
+    }
+  });
+});
+</script>
   </main>
 
   <footer class="site-footer">
