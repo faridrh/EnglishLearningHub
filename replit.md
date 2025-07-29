@@ -71,6 +71,10 @@ src/
 ## Recent Changes
 
 ### January 2025
+- **Search Section Removal**: Removed "Find Words" search section from main vocabulary page per user request
+  - **Cleaner Interface**: Simplified vocabulary page layout by removing non-functional search box
+  - **Navigation Search**: Users can still access search functionality through header navigation dropdown
+  - **Focus on Content**: Page now focuses directly on vocabulary levels and learning tips
 - **Navigation Translation Fix**: Successfully resolved Azerbaijani navigation translation issue
   - **Created Dedicated Layout**: Built base-az.njk layout specifically for Azerbaijani pages
   - **Complete Menu Translation**: All navigation items properly display in Azerbaijani
