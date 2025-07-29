@@ -22,7 +22,7 @@ Hərtərəfli interaktiv qrammatika çalışmaları kolleksiyamıza xoş gəlmis
 
 <div class="exercise-collection">
 
-### 1. Artikellər (a, an, the)
+### 1. Articles (a, an, the)
 İngilis cümlələrində artikellərin düzgün istifadəsini öyrənin.
 
 <div class="exercise-wrapper">
@@ -59,7 +59,7 @@ Hərtərəfli interaktiv qrammatika çalışmaları kolleksiyamıza xoş gəlmis
   </div>
 </div>
 
-### 2. Sadə Hazırki zaman və Davam edən Hazırki zaman
+### 2. Present Simple vs Present Continuous
 Adi hərəkətlər və hazırda baş verən hərəkətlər arasındakı fərqi praktika edin.
 
 <div class="exercise-wrapper">
@@ -96,7 +96,7 @@ Adi hərəkətlər və hazırda baş verən hərəkətlər arasındakı fərqi p
   </div>
 </div>
 
-### 3. Mübtəda Əvəzlikləri
+### 3. Subject Pronouns
 İsimləri düzgün mübtəda əvəzlikləri ilə əvəz etməyi praktika edin.
 
 <div class="exercise-wrapper">
@@ -133,7 +133,7 @@ Adi hərəkətlər və hazırda baş verən hərəkətlər arasındakı fərqi p
   </div>
 </div>
 
-### 4. Çoxluq Formaları
+### 4. Plural Forms
 İngilis dilində isimlərin düzgün çoxluq formalarını öyrənin.
 
 <div class="exercise-wrapper">
@@ -170,7 +170,7 @@ Adi hərəkətlər və hazırda baş verən hərəkətlər arasındakı fərqi p
   </div>
 </div>
 
-### 5. Modal Feillər
+### 5. Modal Verbs
 İngilis dilində modal feillərin düzgün istifadəsini öyrənin.
 
 <div class="exercise-wrapper">
