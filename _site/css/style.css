@@ -90,6 +90,107 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text);
 }
 
+/* Grammar Page Styled Headers */
+.grammar-content h2 {
+  background: linear-gradient(135deg, #4a6fa5, #6789bd);
+  color: white;
+  padding: 15px 25px;
+  border-radius: var(--border-radius-lg);
+  margin: 30px 0 20px 0;
+  box-shadow: var(--box-shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.grammar-content h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.grammar-content h3 {
+  background: #f8f9fa;
+  border-left: 5px solid var(--color-secondary);
+  padding: 12px 20px;
+  margin: 20px 0 15px 0;
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  box-shadow: var(--box-shadow-sm);
+  position: relative;
+}
+
+.grammar-content h3::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid var(--color-secondary);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.grammar-content h4 {
+  background: #fff3e0;
+  border: 2px solid #ffb74d;
+  padding: 10px 18px;
+  margin: 15px 0 12px 0;
+  border-radius: var(--border-radius-md);
+  color: #e65100;
+  font-weight: 600;
+  box-shadow: var(--box-shadow-sm);
+}
+
+/* Grammar Content Sections */
+.grammar-content {
+  background: white;
+  padding: 30px;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-md);
+  margin: 20px 0;
+}
+
+/* Grammar Examples */
+.grammar-content ul li {
+  background: #f0f7ff;
+  border-left: 4px solid #2196f3;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+.grammar-content ul li strong {
+  color: #1976d2;
+}
+
+/* Special styling for example sections */
+.grammar-content p + ul {
+  margin-top: 15px;
+}
+
+.grammar-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Add visual separator between sections */
+.grammar-content h2 + p {
+  font-size: 1.1em;
+  color: var(--color-text-light);
+  padding: 15px 20px;
+  background: #f8f9fa;
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid var(--color-primary);
+  margin-bottom: 25px;
+}
+
 h1 {
   font-size: 2.5rem;
 }

@@ -5,6 +5,8 @@ description: Learn how to use present and past participles to create concise sen
 level: Advanced
 ---
 
+<div class="grammar-content">
+
 # Participle Clauses
 
 Participle clauses are reduced forms of relative clauses or adverbial clauses that use present participles (-ing) or past participles (-ed). They make writing more concise and sophisticated by eliminating unnecessary words.
@@ -364,3 +366,5 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>
