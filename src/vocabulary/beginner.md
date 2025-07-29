@@ -83,6 +83,18 @@ Each vocabulary page contains:
 4. **Review previous pages** regularly to reinforce learning
 5. **Use the words in conversations** as much as possible
 
+## Connect Your Learning
+
+### Grammar Topics to Practice With
+- **[Present Simple Tense](/grammar/beginner/present-simple/)** - Use these vocabulary words in basic sentences
+- **[Subject Pronouns](/grammar/beginner/subject-pronouns/)** - Learn to use these words with "I," "you," "he," "she"
+- **[Articles](/grammar/beginner/articles/)** - Practice using "a," "an," and "the" with vocabulary words
+
+### Stories That Use These Words
+- **[My Daily Routine](/stories/beginner/my-daily-routine/)** - See beginner vocabulary in context
+- **[A Day at School](/stories/beginner/a-day-at-school/)** - Practice everyday vocabulary
+- **[Shopping at the Store](/stories/beginner/shopping-at-the-store/)** - Learn shopping vocabulary
+
 ## Quick Start
 
 Ready to begin? **[Start with Page 1 →](/vocabulary/beginner/page-1/)**

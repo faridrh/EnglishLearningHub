@@ -91,4 +91,16 @@ At the advanced level, mastery requires deep understanding beyond simple memoriz
 - **Continue Learning**: Navigate between pages using the previous/next buttons
 - **Track Progress**: Return to this overview to see your advancement
 
+## Connect Your Learning
+
+### Grammar Topics for Advanced Expression
+- **[Subjunctive Mood](/grammar/advanced/subjunctive/)** - Express sophisticated hypothetical situations with advanced vocabulary
+- **[Cleft Sentences](/grammar/advanced/cleft-sentences/)** - Emphasize key points using complex vocabulary
+- **[Participle Clauses](/grammar/advanced/participle-clauses/)** - Create sophisticated sentence structures
+
+### Stories Demonstrating Advanced Usage
+- **[The Ethics of Artificial Intelligence](/stories/advanced/the-ethics-of-artificial-intelligence/)** - Academic and philosophical vocabulary
+- **[Climate Change and the Last Forest](/stories/advanced/climate-change-and-the-last-forest/)** - Environmental and scientific terminology
+- **[The Digital Nomad's Dilemma](/stories/advanced/the-digital-nomads-dilemma/)** - Professional and lifestyle vocabulary
+
 Ready to master sophisticated vocabulary? Begin with Page 1 and work through all {{ vocabularyStats.advanced.totalPages }} pages to develop eloquent and precise communication skills!

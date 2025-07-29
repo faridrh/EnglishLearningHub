@@ -20,7 +20,7 @@ translations:
 
 Tom wakes up every morning at seven o'clock. He brushes his teeth, eats breakfast, and goes to work. Tom works in an <mark data-translation="office">office</mark> in the <mark data-translation="city_center">city center</mark>.
 
-<img src="/images/tom-daily-routine.jpg" alt="Tom's Daily Routine" style="width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
+<img src="/images/tom-daily-routine.jpg" alt="Illustration of Tom's daily routine showing morning activities, office work, and evening relaxation - English learning story for beginners" style="width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
 
 At eight o'clock, Tom leaves his house. He walks to the <mark data-translation="bus_stop">bus stop</mark>. The bus comes at eight-fifteen. Tom sits by the window and looks at the buildings and cars.
 
@@ -53,6 +53,22 @@ Tomorrow will be another good day for Tom. He will wake up at seven o'clock and 
 - **restaurant** - a place where you can eat
 - **supermarket** - a big store for food
 - **adventure** - exciting story
+
+---
+
+## Related Learning Materials
+
+### Grammar Topics
+- **[Present Simple Tense](/grammar/beginner/present-simple/)** - Learn the grammar used throughout this story
+- **[Subject Pronouns](/grammar/beginner/subject-pronouns/)** - Practice using "he," "she," and "it" like in this story
+
+### Vocabulary Practice  
+- **[Beginner Vocabulary Page 1](/vocabulary/beginner/page-1/)** - Essential greetings and daily words
+- **[Beginner Vocabulary Page 4](/vocabulary/beginner/page-4/)** - Time and daily routine vocabulary
+
+### Similar Stories
+- **[A Day at School](/stories/beginner/a-day-at-school/)** - Another beginner story about daily activities
+- **[Shopping at the Store](/stories/beginner/shopping-at-the-store/)** - Practice everyday English conversations
 
 ## Comprehension Questions
 

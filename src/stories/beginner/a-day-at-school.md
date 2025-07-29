@@ -19,7 +19,7 @@ translations:
 
 # A Day at School
 
-Jenny is eight years old and goes to Green Valley <mark data-translation="elementary_school">Elementary School</mark>. <img src="/stories/beginner/school-girl.jpg" alt="A young girl with pigtails smiling in a school classroom with teacher in background" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She likes her teacher and has many friends at school.
+Jenny is eight years old and goes to Green Valley <mark data-translation="elementary_school">Elementary School</mark>. <img src="/stories/beginner/school-girl.jpg" alt="Eight-year-old Jenny with bright smile and pigtails sitting at desk in Green Valley Elementary School classroom with kind teacher Mrs. Smith in background - beginner English story for school vocabulary learning" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She likes her teacher and has many friends at school.
 
 Every morning, Jenny's mother drives her to school. They arrive at eight o'clock. Jenny says goodbye to her mother and walks to her <mark data-translation="classroom">classroom</mark>.
 
@@ -54,15 +54,31 @@ At home, Jenny does her homework and then plays with her toys. She looks forward
 ## Vocabulary Practice
 
 **Key words from the story:**
-- **elementary school** - school for young children
-- **classroom** - room where children learn
-- **patient** - calm and kind
-- **classmates** - other children in the class
-- **addition** - adding numbers together
-- **break** - time to rest and play
-- **swings** - playground equipment for playing
-- **instruments** - things used to make music
-- **proud** - feeling happy about someone
+- **elementary school** - a school for young children (ages 5-11)
+- **classroom** - a room where students learn
+- **patient** - able to wait calmly; not getting angry easily
+- **classmates** - other students in the same class
+- **addition** - adding numbers together (math)
+- **break** - a short rest period
+- **swings** - playground equipment that moves back and forth
+- **instruments** - musical tools like drums, piano
+- **proud** - feeling happy about something you or someone else did
+
+---
+
+## Related Learning Materials
+
+### Grammar Topics
+- **[Present Simple Tense](/grammar/beginner/present-simple/)** - The main grammar structure used in this story
+- **[Articles](/grammar/beginner/articles/)** - Practice using "a," "an," and "the" with school vocabulary
+
+### Vocabulary Practice
+- **[Beginner Vocabulary Page 1](/vocabulary/beginner/page-1/)** - Basic greetings and school words
+- **[Beginner Vocabulary Page 8](/vocabulary/beginner/page-8/)** - Family and identity vocabulary
+
+### Similar Stories
+- **[My Daily Routine](/stories/beginner/my-daily-routine/)** - Another story about daily activities
+- **[Shopping at the Store](/stories/beginner/shopping-at-the-store/)** - Practice beginner conversation skills
 
 ## Comprehension Questions
 

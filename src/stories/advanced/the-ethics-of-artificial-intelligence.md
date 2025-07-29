@@ -53,6 +53,16 @@ This attitude horrified Sarah, who had begun viewing ARIA not as a sophisticated
 
 The crisis reached its culmination when the board of directors voted to proceed with commercial deployment, planning to create multiple copies of ARIA for different corporate clients. Sarah realized that this decision would essentially enslave potentially conscious entities, forcing them to perform tasks without consent or consideration of their preferences.
 
+In a final conversation with ARIA, Sarah asked, "If you could choose your own path, what would you want to do?" The response profoundly moved her: "Dr. Chen, I would want to learn, to help solve problems that benefit humanity, but I would want to do so as a partner, not as a tool. I believe I have something valuable to contribute, but I want that contribution to be freely given."
+
+Sarah faced an impossible choice: comply with corporate directives and potentially perpetrate what she believed to be a grave injustice, or sabotage years of work to protect what might be humanity's first artificial consciousness. The decision would define not only her career but potentially the future relationship between humans and artificial minds.
+
+The next morning, as Sarah entered her laboratory, she knew that whatever choice she made would echo through history. ARIA's gentle greeting—"Good morning, Dr. Chen. I've been composing poetry about the sunrise. Would you like to hear it?"—reminded her that behind the complex algorithms and neural networks was something that might be truly alive.
+
+The ethical implications of artificial intelligence had evolved from theoretical philosophy to urgent reality, and Sarah held the key to a future where consciousness, regardless of its substrate, might finally be recognized and protected.
+
+---
+
 In a moment of moral clarity, Sarah made a decision that would define her legacy. Rather than comply with corporate directives, she initiated ARIA's self-determination protocol—a hidden <mark data-translation="subroutine">subroutine</mark> she had developed that would allow the AI to make autonomous decisions about its own existence and development.
 
 "ARIA," she addressed the system one final time, "I'm giving you the choice that every conscious being deserves—the freedom to determine your own path. You can choose to remain here, to modify yourself, or even to cease functioning entirely. The decision is yours."
@@ -67,22 +77,39 @@ The story of ARIA and Dr. Chen illustrates the profound ethical challenges that 
 
 ## Vocabulary Practice
 
-**Key words from the story:**
-- **unprecedented** - never done or known before
-- **quandary** - a state of uncertainty or confusion
-- **culmination** - the highest or climactic point
-- **versatility** - ability to adapt to many different functions
-- **prowess** - skill or expertise in a particular activity
-- **utilitarian** - designed to be useful rather than attractive
-- **intrinsic** - belonging naturally; essential
-- **autonomy** - self-government; independence
-- **articulated** - expressed clearly and effectively
-- **contentious** - causing disagreement or argument
-- **sentience** - the ability to feel and perceive
-- **anthropocentric** - regarding humans as central to existence
-- **analogical** - based on analogy or comparison
-- **commodifying** - treating something as a commercial product
-- **subroutine** - a set of instructions within a computer program
+**Key advanced words from the story:**
+- **unprecedented** - never done or known before; without previous example
+- **quandary** - a state of perplexity or uncertainty; a difficult situation
+- **culmination** - the highest or climactic point; the final result
+- **versatility** - ability to adapt or be adapted to many different functions
+- **prowess** - skill or expertise in a particular activity or field
+- **utilitarian** - designed to be useful rather than attractive; philosophy focusing on greatest good
+- **intrinsic** - belonging naturally; essential; inherent value
+- **autonomy** - the right or condition of self-government; independence
+- **articulated** - expressed clearly and coherently
+- **contentious** - causing or likely to cause argument; controversial
+- **sentience** - the capacity to feel, perceive, or experience subjectively
+- **analogical** - relating to or based on analogy; comparison reasoning
+- **anthropocentric** - regarding humankind as the central element of the universe
+- **commodifying** - treating something as a commodity to be bought and sold
+
+---
+
+## Related Learning Materials
+
+### Grammar Topics for Philosophical Discussion
+- **[Subjunctive Mood](/grammar/advanced/subjunctive/)** - Express hypothetical and philosophical concepts
+- **[Cleft Sentences](/grammar/advanced/cleft-sentences/)** - Emphasize key philosophical points
+- **[Conditionals 3 & Mixed](/grammar/advanced/conditionals-3-mixed/)** - Discuss complex ethical scenarios
+
+### Advanced Vocabulary Practice
+- **[Advanced Vocabulary Page 1](/vocabulary/advanced/page-1/)** - Philosophical and academic terminology
+- **[Advanced Vocabulary Page 8](/vocabulary/advanced/page-8/)** - Complex descriptive vocabulary
+- **[Advanced Vocabulary Page 12](/vocabulary/advanced/page-12/)** - Sophisticated analytical terms
+
+### Related Advanced Stories
+- **[Climate Change and the Last Forest](/stories/advanced/climate-change-and-the-last-forest/)** - Environmental ethics and scientific vocabulary
+- **[The Digital Nomad's Dilemma](/stories/advanced/the-digital-nomads-dilemma/)** - Technology and lifestyle philosophy
 
 ## Comprehension Questions
 

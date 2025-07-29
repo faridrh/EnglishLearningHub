@@ -277,3 +277,19 @@ function resetExercise(exerciseId) {
 </div>
 
 Remember, mastering the present simple tense is essential for effective communication in English!
+
+---
+
+## Related Learning Materials
+
+### Vocabulary to Practice With
+- **[Beginner Vocabulary Page 7](/vocabulary/beginner/page-7/)** - Essential verbs to use with present simple
+- **[Beginner Vocabulary Page 4](/vocabulary/beginner/page-4/)** - Time expressions for present simple
+
+### Stories Using Present Simple
+- **[My Daily Routine](/stories/beginner/my-daily-routine/)** - See how present simple describes daily activities
+- **[A Day at School](/stories/beginner/a-day-at-school/)** - Practice present simple in school contexts
+
+### Related Grammar Topics
+- **[Subject Pronouns](/grammar/beginner/subject-pronouns/)** - Learn the subjects used with present simple verbs
+- **[Present Continuous](/grammar/beginner/present-continuous/)** - Compare present simple with present continuous

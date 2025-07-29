@@ -102,4 +102,16 @@ At the intermediate level, active vocabulary building is essential. Here are eff
 - **Continue**: Navigate between pages using the previous/next buttons
 - **Review**: Return to this overview anytime to track your progress
 
+## Connect Your Learning
+
+### Grammar Topics for Advanced Practice
+- **[Passive Voice](/grammar/intermediate/passive-voice/)** - Use sophisticated vocabulary in passive constructions
+- **[Modal Verbs](/grammar/intermediate/modal-verbs/)** - Express opinions and possibilities with advanced vocabulary
+- **[Reported Speech](/grammar/intermediate/reported-speech/)** - Practice academic vocabulary in reported statements
+
+### Stories That Challenge Your Vocabulary
+- **[The Job Interview](/stories/intermediate/the-job-interview/)** - Professional vocabulary in context
+- **[A Day at the Market](/stories/intermediate/a-day-at-the-market/)** - Cultural and business vocabulary
+- **[The Lost Key](/stories/intermediate/the-lost-key/)** - Problem-solving vocabulary
+
 Ready to expand your vocabulary? Start with Page 1 and work through all {{ vocabularyStats.intermediate.totalPages }} pages at your own pace!

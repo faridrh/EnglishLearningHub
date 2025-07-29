@@ -20,7 +20,7 @@ translations:
 
 # A Day at the Market
 
-Elena loved visiting the local farmers market every Saturday morning. The colors, smells, and sounds always made her feel alive and connected to her community. <img src="/stories/intermediate/market-scene.jpg" alt="A vibrant farmers market scene with people shopping for fresh fruits and vegetables at colorful stalls" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She had been coming here for three years, ever since she moved to the neighborhood, and it had become one of her favorite weekly traditions.
+Elena loved visiting the local farmers market every Saturday morning. The colors, smells, and sounds always made her feel alive and connected to her community. <img src="/stories/intermediate/market-scene.jpg" alt="Vibrant farmers market scene showing Elena shopping for fresh heirloom tomatoes and artisanal goods at colorful vendor stalls - intermediate English story for cultural and business vocabulary learning" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She had been coming here for three years, ever since she moved to the neighborhood, and it had become one of her favorite weekly traditions.
 
 As she walked through the entrance at nine o'clock sharp, Elena was greeted by the familiar sight of colorful tents and busy <mark data-translation="vendors">vendors</mark> setting up their stalls. The autumn air was crisp, and she pulled her sweater closer as she made her way to her first stop: Mrs. Patterson's vegetable stand.
 
@@ -55,16 +55,33 @@ When Elena reached her apartment, she immediately began preparing her tomato sou
 ## Vocabulary Practice
 
 **Key words from the story:**
-- **vendors** - people who sell things
-- **heirloom tomatoes** - special varieties of tomatoes passed down through generations
-- **aroma** - a pleasant smell
-- **couldn't resist** - was unable to stop herself from doing something
-- **ceramic** - made from clay that has been heated
-- **glazes** - shiny coatings on pottery
-- **enthusiastically** - with great excitement and interest
-- **seasonal arrangements** - flower displays that change with the seasons
-- **enriched** - made richer or better
-- **freelance** - working independently for different clients
+- **vendors** - people who sell goods
+- **heirloom tomatoes** - traditional variety tomatoes passed down through generations
+- **aroma** - a pleasant, distinctive smell
+- **couldn't resist** - was unable to refuse or avoid
+- **ceramic** - made from clay and hardened by heat
+- **glazes** - glass-like coating on ceramics
+- **enthusiastically** - with great excitement and energy
+- **seasonal arrangements** - flower displays using plants from the current season
+- **enriched** - made richer or more meaningful
+- **freelance** - working independently, not permanently employed
+
+---
+
+## Related Learning Materials
+
+### Grammar Topics
+- **[Past Perfect Tense](/grammar/intermediate/past-perfect/)** - Learn the grammar structures used in this story
+- **[Modal Verbs](/grammar/intermediate/modal-verbs/)** - Practice "would," "could," and "had" in context
+- **[Relative Clauses](/grammar/intermediate/relative-clauses/)** - Complex sentence structures from the story
+
+### Vocabulary Practice
+- **[Intermediate Vocabulary Page 9](/vocabulary/intermediate/page-9/)** - Economic and business terminology
+- **[Intermediate Vocabulary Page 14](/vocabulary/intermediate/page-14/)** - Professional and community vocabulary
+
+### Similar Stories
+- **[The Job Interview](/stories/intermediate/the-job-interview/)** - Another intermediate story with professional vocabulary
+- **[The Lost Key](/stories/intermediate/the-lost-key/)** - Practice problem-solving vocabulary
 
 ## Comprehension Questions
 

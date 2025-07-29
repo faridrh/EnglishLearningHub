@@ -376,3 +376,19 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Vocabulary for Advanced Expression
+- **[Intermediate Vocabulary Page 3](/vocabulary/intermediate/page-3/)** - Professional vocabulary that pairs well with modal verbs
+- **[Intermediate Vocabulary Page 12](/vocabulary/intermediate/page-12/)** - Academic expressions for modal verb contexts
+
+### Stories Demonstrating Modal Usage
+- **[The Job Interview](/stories/intermediate/the-job-interview/)** - Professional use of "would," "could," and "should"
+- **[The Digital Nomad's Dilemma](/stories/advanced/the-digital-nomads-dilemma/)** - Complex modal verb usage in decision-making
+
+### Related Grammar Topics
+- **[Conditionals 1 & 2](/grammar/intermediate/conditionals-1-2/)** - Modal verbs in conditional sentences
+- **[Reported Speech](/grammar/intermediate/reported-speech/)** - How modals change in reported speech
