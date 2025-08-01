@@ -155,6 +155,65 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
     
+    // On exercises page
+    else if (window.location.pathname.includes('/exercises/')) {
+      // Get all exercise cards from different levels
+      const exerciseCards = document.querySelectorAll('.exercise-card');
+      
+      exerciseCards.forEach(card => {
+        const title = card.querySelector('.exercise-title')?.textContent || '';
+        const description = card.querySelector('.exercise-description')?.textContent || '';
+        const level = card.querySelector('.difficulty-badge')?.textContent || '';
+        const link = card.querySelector('.exercise-link')?.getAttribute('href') || '';
+        
+        if (title) {
+          searchData.push({
+            title: title,
+            content: description,
+            meta: `${level} Exercise`,
+            url: link
+          });
+        }
+      });
+      
+      // Add section headings and content
+      const headings = document.querySelectorAll('h1, h2, h3, h4');
+      headings.forEach(heading => {
+        const title = heading.textContent.trim();
+        const nextElement = heading.nextElementSibling;
+        let description = '';
+        
+        if (nextElement && nextElement.tagName === 'P') {
+          description = nextElement.textContent.substring(0, 150);
+        }
+        
+        if (title && !title.includes('Grammar Adventure') && !title.includes('Features')) {
+          searchData.push({
+            title: title,
+            content: description,
+            meta: 'Section',
+            url: window.location.pathname + '#' + title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
+          });
+        }
+      });
+      
+      // Add feature cards content
+      const featureCards = document.querySelectorAll('.feature-card');
+      featureCards.forEach(card => {
+        const title = card.querySelector('h3')?.textContent || '';
+        const description = card.querySelector('p')?.textContent || '';
+        
+        if (title) {
+          searchData.push({
+            title: title,
+            content: description,
+            meta: 'Feature',
+            url: window.location.pathname + '#' + title.toLowerCase().replace(/\s+/g, '-')
+          });
+        }
+      });
+    }
+    
     // Homepage - collect both vocabulary and videos (English and Azerbaijani)
     else if (window.location.pathname === '/' || window.location.pathname === '/az/') {
       const vocabCards = document.querySelectorAll('.vocabulary-preview .card');
