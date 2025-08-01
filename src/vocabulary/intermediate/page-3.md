@@ -155,6 +155,7 @@ wordlist:
     definition: "Clearly; in a way that is easily perceived or understood."
     azerbaijani: "aydın şəkildə, açıq-aşkar"
     example: "Obviously, we need to leave earlier to avoid traffic."
+    exampleAz: "Açıq-aşkar, tıxacdan qaçmaq üçün daha tez getməliyik."
     synonyms: 
       - clearly
       - evidently
