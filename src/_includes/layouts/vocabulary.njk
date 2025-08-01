@@ -43,7 +43,7 @@ layout: layouts/base.njk
         </div>
         <div class="pagination-nav">
           {% if currentPage > 1 %}
-            <a href="/vocabulary/beginner/page-{{ currentPage - 1 }}/" class="pagination-btn prev">← Previous</a>
+            <a href="/vocabulary/{{ level | lower }}/page-{{ currentPage - 1 }}/" class="pagination-btn prev">← Previous</a>
           {% endif %}
           
           <div class="pagination-numbers">
@@ -51,13 +51,13 @@ layout: layouts/base.njk
               {% if i == currentPage %}
                 <span class="pagination-current">{{ i }}</span>
               {% else %}
-                <a href="/vocabulary/beginner/page-{{ i }}/" class="pagination-number">{{ i }}</a>
+                <a href="/vocabulary/{{ level | lower }}/page-{{ i }}/" class="pagination-number">{{ i }}</a>
               {% endif %}
             {% endfor %}
           </div>
           
           {% if currentPage < totalPages %}
-            <a href="/vocabulary/beginner/page-{{ currentPage + 1 }}/" class="pagination-btn next">Next →</a>
+            <a href="/vocabulary/{{ level | lower }}/page-{{ currentPage + 1 }}/" class="pagination-btn next">Next →</a>
           {% endif %}
         </div>
       </div>
