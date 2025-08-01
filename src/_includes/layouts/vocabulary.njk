@@ -23,7 +23,7 @@ layout: layouts/base.njk
             <p class="part-of-speech">{{ word.partOfSpeech }}</p>
             <p class="definition">{{ word.definition }}</p>
             {% if word.azerbaijani %}
-            <p class="azerbaijani-translation"><strong>Azerbaijani:</strong> {{ word.azerbaijani }}</p>
+            <p class="azerbaijani-translation">{{ word.azerbaijani }}</p>
             {% endif %}
             {% if word.example %}
             <p class="example"><em>"{{ word.example }}"</em></p>
@@ -125,11 +125,11 @@ layout: layouts/base.njk
 }
 
 .vocabulary-card .azerbaijani-translation {
-  color: #dc3545;
+  color: #000;
   margin: 0 0 10px 0;
-  background: #fff5f5;
+  background: #fff3cd;
   padding: 8px 12px;
-  border-left: 3px solid #dc3545;
+  border-left: 3px solid #ffc107;
   border-radius: 4px;
   font-weight: 500;
 }
@@ -144,11 +144,11 @@ layout: layouts/base.njk
 }
 
 .vocabulary-card .example-az {
-  color: #666;
+  color: #000;
   margin: 0 0 8px 0;
-  background: #fff5f5;
+  background: #fff3cd;
   padding: 8px 12px;
-  border-left: 3px solid #dc3545;
+  border-left: 3px solid #ffc107;
   border-radius: 4px;
   font-style: italic;
 }
