@@ -329,3 +329,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Conditionals 3 & Mixed Exercises](/grammar/advanced/conditionals-3-mixed-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Advanced Vocabulary Page 7](/vocabulary/advanced/page-7/)** - Hypothetical and unreal situations vocabulary
+- **[Advanced Vocabulary Page 14](/vocabulary/advanced/page-14/)** - Complex time expressions
+
+### Stories Using Advanced Conditionals
+- **[The Digital Nomad's Dilemma](/stories/advanced/the-digital-nomads-dilemma/)** - Complex decision-making scenarios
+- **[The Ethics of Artificial Intelligence](/stories/advanced/the-ethics-of-artificial-intelligence/)** - Hypothetical future scenarios
+
+### Related Grammar Topics
+- **[Conditionals 1 & 2](/grammar/intermediate/conditionals-1-2/)** - Foundation for advanced conditionals
+- **[Subjunctive Mood](/grammar/advanced/subjunctive/)** - Subjunctive in unreal conditions
+- **[Modal Verbs](/grammar/intermediate/modal-verbs/)** - Perfect modals in conditional sentences

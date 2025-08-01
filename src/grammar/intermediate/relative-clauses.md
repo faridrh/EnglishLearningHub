@@ -338,3 +338,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Relative Clauses Exercises](/grammar/intermediate/relative-clauses-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Intermediate Vocabulary Page 9](/vocabulary/intermediate/page-9/)** - Descriptive vocabulary for relative clauses
+- **[Intermediate Vocabulary Page 13](/vocabulary/intermediate/page-13/)** - Complex noun phrases
+
+### Stories Using Relative Clauses
+- **[The Unexpected Friend](/stories/intermediate/the-unexpected-friend/)** - See how relative clauses add detail to descriptions
+- **[A Day at the Market](/stories/intermediate/a-day-at-the-market/)** - Practice relative clauses in descriptive contexts
+
+### Related Grammar Topics
+- **[Present Perfect](/grammar/intermediate/present-perfect/)** - Combining relative clauses with perfect tenses
+- **[Passive Voice](/grammar/intermediate/passive-voice/)** - Passive constructions in relative clauses
+- **[Complex Sentences](/grammar/advanced/complex-sentences/)** - Advanced sentence construction

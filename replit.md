@@ -25,7 +25,14 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 
 ## Recent Major Developments
 
-### Enhanced Bilingual Vocabulary System (Latest Update)
+### Complete Related Materials Integration (Latest Update)
+- **Comprehensive Linking System**: Added "Related Learning Materials" sections to ALL intermediate and advanced grammar topics
+- **Exercise Page Integration**: Each grammar topic now includes direct links to its dedicated exercise page (e.g., `/grammar/intermediate/past-perfect-exercises/`)
+- **Cross-Content Connections**: Vocabulary pages, stories, and related grammar topics are interconnected for comprehensive learning paths
+- **Educational Architecture**: Enhanced topic clusters connecting grammar lessons with relevant vocabulary and story content across all proficiency levels
+- **SEO Enhancement**: Improved internal linking structure enhances content discoverability and learning progression
+
+### Enhanced Bilingual Vocabulary System (Previous Update)
 - **Azerbaijani Translation Integration**: Added comprehensive Azerbaijani translations to vocabulary cards across all levels (beginner, intermediate, advanced)
 - **Visual Design Enhancement**: Implemented light yellow background highlighting for Azerbaijani translations with optimal readability (black text on #fffbf0 background)
 - **Bilingual Examples**: Both English and Azerbaijani example sentences provided for contextual learning

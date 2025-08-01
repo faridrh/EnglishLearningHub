@@ -341,3 +341,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Inversion Exercises](/grammar/advanced/inversion-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Advanced Vocabulary Page 5](/vocabulary/advanced/page-5/)** - Emphatic and literary expressions
+- **[Advanced Vocabulary Page 15](/vocabulary/advanced/page-15/)** - Formal discourse vocabulary
+
+### Stories Using Inversion
+- **[The Digital Nomad's Dilemma](/stories/advanced/the-digital-nomads-dilemma/)** - Literary style with inverted structures
+- **[Climate Change and the Last Forest](/stories/advanced/climate-change-and-the-last-forest/)** - Formal writing with emphasis
+
+### Related Grammar Topics
+- **[Cleft Sentences](/grammar/advanced/cleft-sentences/)** - Another way to create emphasis
+- **[Conditional Sentences](/grammar/advanced/conditionals-3-mixed/)** - Inversion in conditional structures
+- **[Question Formation](/grammar/beginner/question-formation/)** - Basic question inversion patterns

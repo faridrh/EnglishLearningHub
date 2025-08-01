@@ -368,3 +368,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Participle Clauses Exercises](/grammar/advanced/participle-clauses-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Advanced Vocabulary Page 6](/vocabulary/advanced/page-6/)** - Action verbs for participle constructions
+- **[Advanced Vocabulary Page 10](/vocabulary/advanced/page-10/)** - Academic and formal verbs
+
+### Stories Using Participle Clauses
+- **[Climate Change and the Last Forest](/stories/advanced/climate-change-and-the-last-forest/)** - Environmental narrative with concise descriptions
+- **[The Digital Nomad's Dilemma](/stories/advanced/the-digital-nomads-dilemma/)** - Complex sentence structures
+
+### Related Grammar Topics
+- **[Present and Past Participles](/grammar/intermediate/participles/)** - Foundation for understanding participle clauses
+- **[Relative Clauses](/grammar/intermediate/relative-clauses/)** - Compare with participle clause constructions
+- **[Ellipsis & Substitution](/grammar/advanced/ellipsis-substitution/)** - Creating concise, effective sentences

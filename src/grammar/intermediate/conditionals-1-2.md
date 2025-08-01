@@ -345,3 +345,25 @@ function resetExercise(exerciseId) {
   font-size: 14px;
 }
 </style>
+
+</div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Conditionals 1 & 2 Exercises](/grammar/intermediate/conditionals-1-2-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Intermediate Vocabulary Page 7](/vocabulary/intermediate/page-7/)** - Situations and conditions vocabulary
+- **[Intermediate Vocabulary Page 14](/vocabulary/intermediate/page-14/)** - Hypothetical scenarios vocabulary
+
+### Stories Using Conditionals
+- **[The Job Interview](/stories/intermediate/the-job-interview/)** - See conditionals in professional decision-making
+- **[The Digital Nomad's Dilemma](/stories/advanced/the-digital-nomads-dilemma/)** - Complex conditional reasoning
+
+### Related Grammar Topics
+- **[Modal Verbs](/grammar/intermediate/modal-verbs/)** - Using modals in conditional sentences
+- **[Future Tenses](/grammar/intermediate/future-tenses/)** - Future forms in conditional clauses
+- **[Conditionals 3 & Mixed](/grammar/advanced/conditionals-3-mixed/)** - More advanced conditional forms

@@ -362,3 +362,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Cleft Sentences Exercises](/grammar/advanced/cleft-sentences-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Advanced Vocabulary Page 3](/vocabulary/advanced/page-3/)** - Emphasis and focus vocabulary
+- **[Advanced Vocabulary Page 11](/vocabulary/advanced/page-11/)** - Discourse markers for emphasis
+
+### Stories Using Cleft Sentences
+- **[The Ethics of Artificial Intelligence](/stories/advanced/the-ethics-of-artificial-intelligence/)** - Academic emphasis techniques
+- **[The Digital Nomad's Dilemma](/stories/advanced/the-digital-nomads-dilemma/)** - Narrative emphasis and focus
+
+### Related Grammar Topics
+- **[Inversion](/grammar/advanced/inversion/)** - Another technique for creating emphasis
+- **[Relative Clauses](/grammar/intermediate/relative-clauses/)** - Foundation for understanding cleft structures
+- **[Question Formation](/grammar/beginner/question-formation/)** - WH-questions in cleft sentences

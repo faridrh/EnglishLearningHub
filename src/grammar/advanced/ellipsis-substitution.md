@@ -373,3 +373,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Ellipsis & Substitution Exercises](/grammar/advanced/ellipsis-substitution-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Advanced Vocabulary Page 9](/vocabulary/advanced/page-9/)** - Discourse markers and connectors
+- **[Advanced Vocabulary Page 13](/vocabulary/advanced/page-13/)** - Formal writing expressions
+
+### Stories Using Ellipsis & Substitution
+- **[Climate Change and the Last Forest](/stories/advanced/climate-change-and-the-last-forest/)** - Academic writing with concise expression
+- **[The Ethics of Artificial Intelligence](/stories/advanced/the-ethics-of-artificial-intelligence/)** - Formal discourse techniques
+
+### Related Grammar Topics
+- **[Relative Clauses](/grammar/intermediate/relative-clauses/)** - Avoiding repetition in complex sentences
+- **[Participle Clauses](/grammar/advanced/participle-clauses/)** - Another way to create concise sentences
+- **[Cohesion and Coherence](/grammar/advanced/cohesion-coherence/)** - Text organization techniques

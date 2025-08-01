@@ -361,3 +361,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Subjunctive Exercises](/grammar/advanced/subjunctive-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Advanced Vocabulary Page 8](/vocabulary/advanced/page-8/)** - Formal expressions often used with subjunctive
+- **[Advanced Vocabulary Page 12](/vocabulary/advanced/page-12/)** - Academic and formal vocabulary
+
+### Stories Using Subjunctive
+- **[The Ethics of Artificial Intelligence](/stories/advanced/the-ethics-of-artificial-intelligence/)** - Formal discussions with subjunctive mood
+- **[Climate Change and the Last Forest](/stories/advanced/climate-change-and-the-last-forest/)** - Academic writing style with subjunctive
+
+### Related Grammar Topics
+- **[Conditionals 3 & Mixed](/grammar/advanced/conditionals-3-mixed/)** - Subjunctive in complex conditional structures
+- **[Formal Writing Structures](/grammar/advanced/formal-writing/)** - Subjunctive in academic writing
+- **[Modal Verbs](/grammar/intermediate/modal-verbs/)** - Understanding nuanced expressions of possibility

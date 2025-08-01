@@ -322,3 +322,23 @@ function resetExercise(exerciseId) {
 Remember that the past perfect helps make the sequence of past events clear and is particularly useful when telling stories or explaining past experiences!
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Past Perfect Exercises](/grammar/intermediate/past-perfect-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Intermediate Vocabulary Page 5](/vocabulary/intermediate/page-5/)** - Time expressions useful with past perfect
+- **[Intermediate Vocabulary Page 8](/vocabulary/intermediate/page-8/)** - Action verbs for past perfect contexts
+
+### Stories Using Past Perfect
+- **[The Lost Key](/stories/intermediate/the-lost-key/)** - See how past perfect shows sequence of events
+- **[The Unexpected Friend](/stories/intermediate/the-unexpected-friend/)** - Practice past perfect in storytelling
+
+### Related Grammar Topics
+- **[Present Perfect](/grammar/intermediate/present-perfect/)** - Compare past perfect with present perfect
+- **[Simple Past](/grammar/beginner/simple-past/)** - Understand the difference between past perfect and simple past
+- **[Reported Speech](/grammar/intermediate/reported-speech/)** - Past perfect is often used in reported speech

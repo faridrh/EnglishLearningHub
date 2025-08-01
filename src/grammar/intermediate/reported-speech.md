@@ -303,3 +303,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Reported Speech Exercises](/grammar/intermediate/reported-speech-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Intermediate Vocabulary Page 10](/vocabulary/intermediate/page-10/)** - Reporting verbs and expressions
+- **[Intermediate Vocabulary Page 2](/vocabulary/intermediate/page-2/)** - Communication vocabulary
+
+### Stories Using Reported Speech
+- **[The Job Interview](/stories/intermediate/the-job-interview/)** - Professional reporting situations
+- **[The Lost Key](/stories/intermediate/the-lost-key/)** - Narrative reporting in storytelling
+
+### Related Grammar Topics
+- **[Past Perfect](/grammar/intermediate/past-perfect/)** - Past perfect in reported speech
+- **[Modal Verbs](/grammar/intermediate/modal-verbs/)** - How modals change in reported speech
+- **[Question Formation](/grammar/beginner/question-formation/)** - Turning direct questions into reported questions

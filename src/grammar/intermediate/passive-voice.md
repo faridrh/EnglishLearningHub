@@ -349,3 +349,23 @@ function resetExercise(exerciseId) {
 </style>
 
 </div>
+
+---
+
+## Related Learning Materials
+
+### Practice Exercises
+- **[Passive Voice Exercises](/grammar/intermediate/passive-voice-exercises/)** - Dedicated practice page with comprehensive exercises
+
+### Vocabulary to Practice With
+- **[Intermediate Vocabulary Page 6](/vocabulary/intermediate/page-6/)** - Action verbs perfect for passive voice practice
+- **[Intermediate Vocabulary Page 11](/vocabulary/intermediate/page-11/)** - Professional vocabulary often used in passive constructions
+
+### Stories Using Passive Voice
+- **[The Job Interview](/stories/intermediate/the-job-interview/)** - See how passive voice is used in professional contexts
+- **[A Day at the Market](/stories/intermediate/a-day-at-the-market/)** - Practice passive voice in everyday situations
+
+### Related Grammar Topics
+- **[Past Perfect](/grammar/intermediate/past-perfect/)** - Combining passive voice with past perfect
+- **[Modal Verbs](/grammar/intermediate/modal-verbs/)** - Using modals with passive voice
+- **[Present Perfect](/grammar/intermediate/present-perfect/)** - Present perfect passive constructions
