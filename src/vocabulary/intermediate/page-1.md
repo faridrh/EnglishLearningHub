@@ -10,7 +10,9 @@ wordlist:
     pronunciation: "/əˈkwaɪər/"
     partOfSpeech: "verb"
     definition: "To come into possession or ownership of something."
+    azerbaijani: "əldə etmək, qazanmaq"
     example: "She acquired a taste for coffee after living in Italy."
+    exampleAz: "İtaliyada yaşadıqdan sonra qəhvəyə həvəs göstərdi."
     synonyms: 
       - obtain
       - gain
@@ -21,7 +23,9 @@ wordlist:
     pronunciation: "/əˈkʌmplɪʃ/"
     partOfSpeech: "verb"
     definition: "To complete or achieve something successfully."
+    azerbaijani: "nail olmaq, həyata keçirmək"
     example: "He accomplished his goal of running a marathon."
+    exampleAz: "O, maraton qaçmaq məqsədinə nail oldu."
     synonyms: 
       - achieve
       - complete
@@ -32,7 +36,9 @@ wordlist:
     pronunciation: "/ˈædɪkwət/"
     partOfSpeech: "adjective"
     definition: "Satisfactory or acceptable in quality or quantity."
+    azerbaijani: "kifayət edən, uyğun"
     example: "The salary was adequate for their basic needs."
+    exampleAz: "Maaş onların əsas ehtiyacları üçün kifayət edirdi."
     synonyms: 
       - sufficient
       - satisfactory
@@ -43,7 +49,9 @@ wordlist:
     pronunciation: "/ænˈtɪsəpeɪt/"
     partOfSpeech: "verb"
     definition: "To expect or look forward to something."
+    azerbaijani: "gözləmək, təxmin etmək"
     example: "We anticipate heavy traffic during rush hour."
+    exampleAz: "Biz sıxlıq saatlarında ağır trafik gözləyirik."
     synonyms: 
       - expect
       - foresee

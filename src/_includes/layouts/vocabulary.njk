@@ -22,8 +22,14 @@ layout: layouts/base.njk
             <p class="pronunciation">{{ word.pronunciation }}</p>
             <p class="part-of-speech">{{ word.partOfSpeech }}</p>
             <p class="definition">{{ word.definition }}</p>
+            {% if word.azerbaijani %}
+            <p class="azerbaijani-translation"><strong>Azerbaijani:</strong> {{ word.azerbaijani }}</p>
+            {% endif %}
             {% if word.example %}
             <p class="example"><em>"{{ word.example }}"</em></p>
+            {% endif %}
+            {% if word.exampleAz %}
+            <p class="example-az"><em>"{{ word.exampleAz }}"</em></p>
             {% endif %}
             {% if word.synonyms %}
             <p class="synonyms"><strong>Synonyms:</strong> {{ word.synonyms | join(", ") }}</p>
@@ -118,6 +124,16 @@ layout: layouts/base.njk
   line-height: 1.5;
 }
 
+.vocabulary-card .azerbaijani-translation {
+  color: #dc3545;
+  margin: 0 0 10px 0;
+  background: #fff5f5;
+  padding: 8px 12px;
+  border-left: 3px solid #dc3545;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
 .vocabulary-card .example {
   color: #666;
   margin: 0 0 8px 0;
@@ -125,6 +141,16 @@ layout: layouts/base.njk
   padding: 8px 12px;
   border-left: 3px solid #007bff;
   border-radius: 4px;
+}
+
+.vocabulary-card .example-az {
+  color: #666;
+  margin: 0 0 8px 0;
+  background: #fff5f5;
+  padding: 8px 12px;
+  border-left: 3px solid #dc3545;
+  border-radius: 4px;
+  font-style: italic;
 }
 
 .vocabulary-card .synonyms {
