@@ -63,6 +63,84 @@ Choose the correct article for each sentence:
   </div>
 </div>
 
+---
+
+## Exercise 2: Basic Article Usage
+
+Fill in the blanks with **a**, **an**, or **the**.
+
+<div class="interactive-exercise" id="articles-exercise-2" data-exercise-id="articles-basic-usage">
+  <div class="exercise-item">
+    <p><strong>1.</strong> I saw <input type="text" class="fill-blank" data-answer="an" placeholder="____"> elephant at the zoo yesterday.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>2.</strong> She wants to buy <input type="text" class="fill-blank" data-answer="a" placeholder="____"> new phone.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>3.</strong> We stayed at <input type="text" class="fill-blank" data-answer="a" placeholder="____"> hotel near the beach.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>4.</strong> He is <input type="text" class="fill-blank" data-answer="an" placeholder="____"> honest man.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>5.</strong> I found <input type="text" class="fill-blank" data-answer="a" placeholder="____"> book on the table. <input type="text" class="fill-blank" data-answer="The" placeholder="____"> book was very interesting.</p>
+  </div>
+  
+  <div class="exercise-controls">
+    <button onclick="checkAnswers('articles-exercise-2')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('articles-exercise-2')" class="reset-btn">Reset</button>
+  </div>
+  
+  <div id="articles-exercise-2-results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="articles-exercise-2-score"></p>
+    <div id="articles-exercise-2-feedback"></div>
+  </div>
+</div>
+
+---
+
+## Exercise 3: Contextual Article Practice
+
+Fill in the blanks with **a**, **an**, or **the**.
+
+<div class="interactive-exercise" id="articles-exercise-3" data-exercise-id="articles-contextual">
+  <div class="exercise-item">
+    <p><strong>1.</strong> I need <input type="text" class="fill-blank" data-answer="an" placeholder="____"> umbrella because it's raining.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>2.</strong> They visited <input type="text" class="fill-blank" data-answer="a" placeholder="____"> museum in Paris.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>3.</strong> She adopted <input type="text" class="fill-blank" data-answer="a" placeholder="____"> cat and named it Luna.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>4.</strong> <input type="text" class="fill-blank" data-answer="The" placeholder="____"> sun rises in the east.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>5.</strong> He ate <input type="text" class="fill-blank" data-answer="an" placeholder="____"> apple and then drank <input type="text" class="fill-blank" data-answer="a" placeholder="____"> glass of water.</p>
+  </div>
+  
+  <div class="exercise-controls">
+    <button onclick="checkAnswers('articles-exercise-3')" class="check-btn">Check Answers</button>
+    <button onclick="resetExercise('articles-exercise-3')" class="reset-btn">Reset</button>
+  </div>
+  
+  <div id="articles-exercise-3-results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="articles-exercise-3-score"></p>
+    <div id="articles-exercise-3-feedback"></div>
+  </div>
+</div>
+
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
