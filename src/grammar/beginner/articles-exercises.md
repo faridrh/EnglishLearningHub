@@ -43,6 +43,14 @@ Choose the correct article for each sentence:
     <p><strong>6.</strong> He wants to be <input type="text" class="fill-blank" data-answer="a" placeholder="____"> doctor.</p>
   </div>
   
+  <div class="exercise-item">
+    <p><strong>7.</strong> I love <input type="text" class="fill-blank" data-answer="" placeholder="____"> chocolate, but I don't like <input type="text" class="fill-blank" data-answer="the" placeholder="____"> chocolate cake on the counter.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>8.</strong> My sister plays <input type="text" class="fill-blank" data-answer="the" placeholder="____"> piano and <input type="text" class="fill-blank" data-answer="" placeholder="____"> tennis very well.</p>
+  </div>
+  
   <div class="exercise-controls">
     <button onclick="checkAnswers('articles-exercise')" class="check-btn">Check Answers</button>
     <button onclick="resetExercise('articles-exercise')" class="reset-btn">Reset</button>
