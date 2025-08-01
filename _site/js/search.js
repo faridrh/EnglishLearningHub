@@ -157,21 +157,22 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // On exercises page
     else if (window.location.pathname.includes('/exercises/')) {
-      // Get all exercise cards from different levels
-      const exerciseCards = document.querySelectorAll('.exercise-card');
+      // Get all exercise links and their cards
+      const exerciseLinks = document.querySelectorAll('.exercise-link');
       
-      exerciseCards.forEach(card => {
-        const title = card.querySelector('.exercise-title')?.textContent || '';
-        const description = card.querySelector('.exercise-description')?.textContent || '';
-        const level = card.querySelector('.difficulty-badge')?.textContent || '';
-        const link = card.querySelector('.exercise-link')?.getAttribute('href') || '';
+      exerciseLinks.forEach(link => {
+        const card = link.querySelector('.exercise-card');
+        const title = card?.querySelector('h3')?.textContent || '';
+        const description = card?.querySelector('p')?.textContent || '';
+        const level = card?.querySelector('.difficulty-badge')?.textContent || '';
+        const url = link.getAttribute('href') || '';
         
         if (title) {
           searchData.push({
             title: title,
             content: description,
             meta: `${level} Exercise`,
-            url: link
+            url: url
           });
         }
       });
