@@ -236,7 +236,7 @@ description: İngilis qrammatikasını hərtərəfli interaktiv çalışmalar ko
 Çalışma praktikanızı hərtərəfli qrammatika dərslərimizlə tamamlayın:
 
 - **[Qrammatika Dərsləri](/az/qrammatika/)** - Bütün mövzular üçün tam nəzəriyyə və izahlar
-- **[Söz Ehtiyatı Praktikası](/az/leksika/)** - Hər səviyyədə söz gücünüzü qurun  
+- **[Söz Ehtiyatı Praktikası](/az/luget/)** - Hər səviyyədə söz gücünüzü qurun  
 - **[Oxu Hekayələri](/az/hekayeler/)** - Maraqli hekayələr vasitəsilə qrammatikanı kontekstdə görün
 
 <style>
