@@ -18,16 +18,15 @@ Welcome to your personalized English learning journey! Choose from our comprehen
         <h3>Instant Feedback</h3>
         <p>Get immediate results on every answer</p>
       </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">🎯</span>
-        <h3>Targeted Practice</h3>
-        <p>Focus on specific grammar topics</p>
-      </div>
       <div class="feature-card">
         <span class="feature-icon">🔄</span>
         <h3>Unlimited Practice</h3>
         <p>Retry exercises as many times as you want</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎯</span>
+        <h3>Targeted Practice</h3>
+        <p>Focus on specific grammar topics</p>
       </div>
     </div>
   </div>
