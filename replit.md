@@ -25,7 +25,15 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 
 ## Recent Major Developments
 
-### Complete Exercise Page System (Latest Update)
+### Enhanced Bilingual Vocabulary System (Latest Update)
+- **Azerbaijani Translation Integration**: Added comprehensive Azerbaijani translations to vocabulary cards across all levels (beginner, intermediate, advanced)
+- **Visual Design Enhancement**: Implemented light yellow background highlighting for Azerbaijani translations with optimal readability (black text on #fffbf0 background)
+- **Bilingual Examples**: Both English and Azerbaijani example sentences provided for contextual learning
+- **Template System**: Enhanced vocabulary template with conditional rendering for `azerbaijani` and `exampleAz` fields
+- **Consistent Styling**: Clean, professional appearance with rounded corners and proper spacing for translation highlights
+- **User Preference Integration**: Styling customized based on user feedback for optimal visual comfort
+
+### Complete Exercise Page System (Previous Update)
 - **Comprehensive Coverage**: Created dedicated exercise pages for ALL 18 grammar topics across all levels
 - **Beginner Exercise Pages** (6 topics): articles-exercises, plural-nouns-exercises, possessive-adjectives-exercises, present-simple-exercises, present-continuous-exercises, subject-pronouns-exercises
 - **Intermediate Exercise Pages** (6 topics): conditionals-1-2-exercises, modal-verbs-exercises, passive-voice-exercises, past-perfect-exercises, relative-clauses-exercises, reported-speech-exercises

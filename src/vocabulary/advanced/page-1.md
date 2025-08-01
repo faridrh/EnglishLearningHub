@@ -10,7 +10,9 @@ wordlist:
     pronunciation: "/ˈæbdɪkeɪt/"
     partOfSpeech: "verb"
     definition: "To give up or renounce a throne, high office, dignity, or function."
+    azerbaijani: "taxtdan əl çəkmək, imtina etmək"
     example: "The king decided to abdicate in favor of his son."
+    exampleAz: "Kral oğlunun xeyrinə taxtdan əl çəkməyə qərar verdi."
     synonyms: 
       - relinquish
       - surrender
@@ -21,7 +23,9 @@ wordlist:
     pronunciation: "/æˈberənt/"
     partOfSpeech: "adjective"
     definition: "Departing from an accepted standard; deviant."
+    azerbaijani: "anomal, normadan kənar"
     example: "His aberrant behavior concerned his colleagues."
+    exampleAz: "Onun anomal davranışı həmkarlarını narahat etdi."
     synonyms: 
       - abnormal
       - deviant
@@ -32,7 +36,9 @@ wordlist:
     pronunciation: "/æbˈstrus/"
     partOfSpeech: "adjective"
     definition: "Difficult to understand; obscure."
+    azerbaijani: "anlaşılması çətin, mübhəm"
     example: "The professor's lecture on quantum mechanics was quite abstruse."
+    exampleAz: "Professorun kvant mexanikası haqqında mühazirəsi olduqca anlaşılması çətin idi."
     synonyms: 
       - obscure
       - esoteric
