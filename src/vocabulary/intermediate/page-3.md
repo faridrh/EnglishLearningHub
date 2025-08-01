@@ -10,7 +10,9 @@ wordlist:
     pronunciation: "/ɪkˈskluːd/"
     partOfSpeech: "verb"
     definition: "To deny someone access to or bar someone from a place, group, or privilege."
+    azerbaijani: "istisna etmək, kənarlaşdırmaq"
     example: "The club decided to exclude harmful members."
+    exampleAz: "Klub zərərli üzvləri istisna etməyə qərar verdi."
     synonyms: 
       - omit
       - leave out
@@ -21,7 +23,9 @@ wordlist:
     pronunciation: "/ɪkˈstensɪv/"
     partOfSpeech: "adjective"
     definition: "Covering or affecting a large area; having a wide scope."
+    azerbaijani: "geniş, əhatəli"
     example: "The library has an extensive collection of books."
+    exampleAz: "Kitabxananın geniş kitab kolleksiyası var."
     synonyms: 
       - broad
       - wide
@@ -32,7 +36,9 @@ wordlist:
     pronunciation: "/ˈfɜːrðərmɔːr/"
     partOfSpeech: "adverb"
     definition: "In addition; besides (used to introduce a fresh consideration)."
+    azerbaijani: "bundan əlavə, üstəlik"
     example: "The plan is expensive. Furthermore, it may not work."
+    exampleAz: "Plan bahalıdır. Üstəlik, işləməyə bilər."
     synonyms: 
       - moreover
       - additionally
@@ -43,7 +49,9 @@ wordlist:
     pronunciation: "/ˈdʒenəreɪt/"
     partOfSpeech: "verb"
     definition: "To cause something to arise or come about; produce or create."
+    azerbaijani: "yaratmaq, əmələ gətirmək"
     example: "The new marketing campaign will generate more sales."
+    exampleAz: "Yeni marketing kampaniyası daha çox satış yaradacaq."
     synonyms: 
       - produce
       - create
@@ -54,7 +62,9 @@ wordlist:
     pronunciation: "/ˌɡærənˈtiː/"
     partOfSpeech: "noun, verb"
     definition: "A formal promise or assurance; to provide a formal assurance."
+    azerbaijani: "zəmanət, təminat"
     example: "The company offers a one-year guarantee on all products."
+    exampleAz: "Şirkət bütün məhsullar üçün bir illik zəmanət təklif edir."
     synonyms: 
       - promise
       - assurance
@@ -65,7 +75,9 @@ wordlist:
     pronunciation: "/haɪˈpɑːθəsɪs/"
     partOfSpeech: "noun"
     definition: "A supposition or proposed explanation made on the basis of limited evidence."
+    azerbaijani: "fərziyyə, ehtimal"
     example: "The scientist tested her hypothesis through careful experiments."
+    exampleAz: "Alim öz fərziyyəsini diqqətli təcrübələrlə sınadı."
     synonyms: 
       - theory
       - assumption
@@ -76,7 +88,9 @@ wordlist:
     pronunciation: "/ˈɪləstreɪt/"
     partOfSpeech: "verb"
     definition: "To explain or make something clear by using examples, charts, pictures, etc."
+    azerbaijani: "izah etmək, göstərmək"
     example: "The teacher used diagrams to illustrate the concept."
+    exampleAz: "Müəllim konsepti izah etmək üçün diaqramlardan istifadə etdi."
     synonyms: 
       - demonstrate
       - show
@@ -87,7 +101,9 @@ wordlist:
     pronunciation: "/ˈɪmplɪment/"
     partOfSpeech: "verb"
     definition: "To put a decision or plan into effect."
+    azerbaijani: "həyata keçirmək, tətbiq etmək"
     example: "The school will implement new safety measures next month."
+    exampleAz: "Məktəb gələn ay yeni təhlükəsizlik tədbirlərini həyata keçirəcək."
     synonyms: 
       - execute
       - carry out
@@ -98,7 +114,9 @@ wordlist:
     pronunciation: "/ˈɪndɪkeɪt/"
     partOfSpeech: "verb"
     definition: "To point out; to show, point, or make clear in another way."
+    azerbaijani: "göstərmək, işarə etmək"
     example: "The survey results indicate a growing concern about climate change."
+    exampleAz: "Sorğu nəticələri iqlim dəyişikliyi ilə bağlı artan narahatlığı göstərir."
     synonyms: 
       - show
       - suggest
@@ -109,7 +127,9 @@ wordlist:
     pronunciation: "/ɪˈnɪʃətɪv/"
     partOfSpeech: "noun"
     definition: "The ability to assess and initiate things independently; a new plan or process."
+    azerbaijani: "təşəbbüs, iniciativ"
     example: "She took the initiative to organize the charity event."
+    exampleAz: "O, xeyriyyə tədbirini təşkil etmək üçün təşəbbüs göstərdi."
     synonyms: 
       - enterprise
       - drive
@@ -120,7 +140,9 @@ wordlist:
     pronunciation: "/ˌnʌnðəˈles/"
     partOfSpeech: "adverb"
     definition: "In spite of that; nevertheless."
+    azerbaijani: "buna baxmayaraq, bununla belə"
     example: "The weather was bad; nonetheless, we enjoyed our trip."
+    exampleAz: "Hava pis idi; buna baxmayaraq, səyahətimizdən həzz aldıq."
     synonyms: 
       - nevertheless
       - however
@@ -131,6 +153,7 @@ wordlist:
     pronunciation: "/ˈɑːbviəsli/"
     partOfSpeech: "adverb"  
     definition: "Clearly; in a way that is easily perceived or understood."
+    azerbaijani: "aydın şəkildə, açıq-aşkar"
     example: "Obviously, we need to leave earlier to avoid traffic."
     synonyms: 
       - clearly
