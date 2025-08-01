@@ -18,11 +18,7 @@ Welcome to your personalized English learning journey! Choose from our comprehen
         <h3>Instant Feedback</h3>
         <p>Get immediate results on every answer</p>
       </div>
-      <div class="feature-card">
-        <span class="feature-icon">📊</span>
-        <h3>Progress Tracking</h3>
-        <p>See your scores and improvement over time</p>
-      </div>
+
       <div class="feature-card">
         <span class="feature-icon">🎯</span>
         <h3>Targeted Practice</h3>
