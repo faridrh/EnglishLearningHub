@@ -17,6 +17,8 @@ wordlist:
       - special
     level: "Intermediate"
     category: "Specification"
+    azerbaijani: "Xüsusi"
+    exampleAz: "Mən tarix haqqında xüsusi bir kitab axtarıram."
   - term: Perspective
     pronunciation: "/pərˈspektɪv/"
     partOfSpeech: "noun"
@@ -28,6 +30,8 @@ wordlist:
       - angle
     level: "Intermediate"
     category: "Opinion"
+    azerbaijani: "Baxış bucağı"
+    exampleAz: "Mənim baxış bucağımdan layihə uğurlu idi."
   - term: Phenomenon
     pronunciation: "/fəˈnɑːmənən/"
     partOfSpeech: "noun"
@@ -39,6 +43,8 @@ wordlist:
       - manifestation
     level: "Intermediate"
     category: "Science"
+    azerbaijani: "Fenomen"
+    exampleAz: "Şimal işıqları maraqlı bir təbii fenomendir."
   - term: Potential
     pronunciation: "/pəˈtenʃəl/"
     partOfSpeech: "adjective, noun"
@@ -50,6 +56,8 @@ wordlist:
       - promise
     level: "Intermediate"
     category: "Ability"
+    azerbaijani: "Potensial"
+    exampleAz: "O, musiqiçi kimi böyük potensiala malikdir."
   - term: Preliminary
     pronunciation: "/prɪˈlɪməˌneri/"
     partOfSpeech: "adjective"
@@ -61,6 +69,8 @@ wordlist:
       - introductory
     level: "Intermediate"
     category: "Preparation"
+    azerbaijani: "İlkin"
+    exampleAz: "İlkin nəticələr ümidvericidir."
   - term: Primarily
     pronunciation: "/ˈpraɪˌmerəli/"
     partOfSpeech: "adverb"
@@ -72,6 +82,8 @@ wordlist:
       - mostly
     level: "Intermediate"
     category: "Emphasis"
+    azerbaijani: "Əsasən"
+    exampleAz: "Şirkət əsasən proqram təminatının inkişafına yönəlib."
   - term: Procedure
     pronunciation: "/prəˈsiːdʒər/"
     partOfSpeech: "noun"
@@ -83,6 +95,8 @@ wordlist:
       - protocol
     level: "Intermediate"
     category: "Method"
+    azerbaijani: "Prosedur"
+    exampleAz: "Zəhmət olmasa, təcrübə zamanı təhlükəsizlik proseduruna əməl edin."
   - term: Proportion
     pronunciation: "/prəˈpɔːrʃən/"
     partOfSpeech: "noun"
@@ -94,6 +108,8 @@ wordlist:
       - fraction
     level: "Intermediate"
     category: "Mathematics"
+    azerbaijani: "Nisbət"
+    exampleAz: "Tələbələrin böyük bir nisbəti imtahandan keçdi."
   - term: Pursue
     pronunciation: "/pərˈsuː/"
     partOfSpeech: "verb"
@@ -105,6 +121,8 @@ wordlist:
       - seek
     level: "Intermediate"
     category: "Action"
+    azerbaijani: "İzləmək"
+    exampleAz: "O, tibb sahəsində karyera qurmağa qərar verdi."
   - term: Remarkable
     pronunciation: "/rɪˈmɑːrkəbəl/"
     partOfSpeech: "adjective"
@@ -116,6 +134,8 @@ wordlist:
       - impressive
     level: "Intermediate"
     category: "Quality"
+    azerbaijani: "Qeyd olunmağa layiq"
+    exampleAz: "Rəssam gənc yaşlarında qeyd olunmağa layiq istedad göstərdi."
   - term: Reluctant
     pronunciation: "/rɪˈlʌktənt/"
     partOfSpeech: "adjective"
@@ -127,6 +147,8 @@ wordlist:
       - disinclined
     level: "Intermediate"
     category: "Attitude"
+    azerbaijani: "İstəksiz"
+    exampleAz: "O, şəxsi təcrübələrini bölüşməyə istəksiz idi."
   - term: Significant
     pronunciation: "/sɪɡˈnɪfɪkənt/"
     partOfSpeech: "adjective"
@@ -138,6 +160,8 @@ wordlist:
       - considerable
     level: "Intermediate"
     category: "Importance"
+    azerbaijani: "Əhəmiyyətli"
+    exampleAz: "Test nəticələrində əhəmiyyətli bir irəliləyiş oldu."
 collection: vocabulary
 ---
 
