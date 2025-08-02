@@ -17,6 +17,8 @@ wordlist:
       - article
     level: "Intermediate"
     category: "Thing"
+    azerbaijani: "Əşya"
+    exampleAz: "Muzey müxtəlif sivilizasiyalardan qədim əşyaları nümayiş etdirdi."
   - term: Opportunity
     pronunciation: "/ˌɑːpərˈtuːnəti/"
     partOfSpeech: "noun"
@@ -28,6 +30,8 @@ wordlist:
       - opening
     level: "Intermediate"
     category: "Chance"
+    azerbaijani: "Fürsət"
+    exampleAz: "Bu iş peşəkar inkişaf üçün böyük bir fürsət təqdim edir."
   - term: Organization
     pronunciation: "/ˌɔːrɡənəˈzeɪʃən/"
     partOfSpeech: "noun"
@@ -39,6 +43,8 @@ wordlist:
       - company
     level: "Intermediate"
     category: "Group"
+    azerbaijani: "Təşkilat"
+    exampleAz: "O, evsiz insanlara kömək edən xeyriyyə təşkilatında könüllü işləyir."
   - term: Original
     pronunciation: "/əˈrɪdʒənəl/"
     partOfSpeech: "adjective, noun"
@@ -50,6 +56,8 @@ wordlist:
       - authentic
     level: "Intermediate"
     category: "Beginning"
+    azerbaijani: "Orijinal"
+    exampleAz: "Orijinal rəsm milli qalereyada nümayiş olunur."
   - term: Pattern
     pronunciation: "/ˈpætərn/"
     partOfSpeech: "noun"
@@ -61,6 +69,8 @@ wordlist:
       - sequence
     level: "Intermediate"
     category: "Design"
+    azerbaijani: "Nümunə"
+    exampleAz: "Alimlər gələcək şəraiti proqnozlaşdırmaq üçün hava nümunələrini öyrənirlər."
   - term: Performance
     pronunciation: "/pərˈfɔːrməns/"
     partOfSpeech: "noun"
@@ -72,6 +82,8 @@ wordlist:
       - achievement
     level: "Intermediate"
     category: "Achievement"
+    azerbaijani: "İcra"
+    exampleAz: "Onun tamaşadakı çıxışı əla rəylər aldı."
   - term: Period
     pronunciation: "/ˈpɪriəd/"
     partOfSpeech: "noun"
@@ -83,6 +95,8 @@ wordlist:
       - span
     level: "Intermediate"
     category: "Time"
+    azerbaijani: "Dövr"
+    exampleAz: "Renessans Avropa tarixində mühüm bir dövr idi."
   - term: Personal
     pronunciation: "/ˈpɜːrsənəl/"
     partOfSpeech: "adjective"
@@ -94,6 +108,8 @@ wordlist:
       - own
     level: "Intermediate"
     category: "Individual"
+    azerbaijani: "Şəxsi"
+    exampleAz: "Zəhmət olmasa, şəxsi əşyalarınızı həmişə yanınızda saxlayın."
   - term: Physical
     pronunciation: "/ˈfɪzɪkəl/"
     partOfSpeech: "adjective"
@@ -105,6 +121,8 @@ wordlist:
       - material
     level: "Intermediate"
     category: "Body"
+    azerbaijani: "Fiziki"
+    exampleAz: "Müntəzəm fiziki məşq sağlamlığın qorunması üçün vacibdir."
   - term: Policy
     pronunciation: "/ˈpɑːləsi/"
     partOfSpeech: "noun"
@@ -116,6 +134,8 @@ wordlist:
       - strategy
     level: "Intermediate"
     category: "Rule"
+    azerbaijani: "Siyasət"
+    exampleAz: "Şirkətin ayrı-seçkiliyə qarşı ciddi siyasəti var."
   - term: Popular
     pronunciation: "/ˈpɑːpjələr/"
     partOfSpeech: "adjective"
@@ -127,6 +147,8 @@ wordlist:
       - trendy
     level: "Intermediate"
     category: "Preference"
+    azerbaijani: "Məşhur"
+    exampleAz: "Bu restoran kollec tələbələri arasında çox məşhurdur."
   - term: Position
     pronunciation: "/pəˈzɪʃən/"
     partOfSpeech: "noun, verb"
@@ -138,6 +160,8 @@ wordlist:
       - job
     level: "Intermediate"
     category: "Location"
+    azerbaijani: "Vəzifə"
+    exampleAz: "O, marketinq meneceri vəzifəsinə müraciət etdi."
 collection: vocabulary
 ---
 

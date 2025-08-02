@@ -17,6 +17,8 @@ wordlist:
       - record
     level: "Intermediate"
     category: "Time"
+    azerbaijani: "Tarix"
+    exampleAz: "O, tarix üzrə ixtisaslaşdı və muzey kuratoru oldu."
   - term: Identity
     pronunciation: "/aɪˈdentəti/"
     partOfSpeech: "noun"

@@ -17,6 +17,8 @@ wordlist:
       - accept
     level: "Intermediate"
     category: "Recognition"
+    azerbaijani: "Qəbul etmək"
+    exampleAz: "O, səhvlərini qəbul etdi və üzr istədi."
   - term: Analyze
     pronunciation: "/ˈænəlaɪz/"
     partOfSpeech: "verb"

@@ -17,6 +17,8 @@ wordlist:
       - sample
     level: "Intermediate"
     category: "Illustration"
+    azerbaijani: "Nümunə"
+    exampleAz: "Bu sözü necə istifadə etmək olar, bir nümunə göstərə bilərsinizmi?"
   - term: Experience
     pronunciation: "/ɪkˈspɪriəns/"
     partOfSpeech: "noun, verb"

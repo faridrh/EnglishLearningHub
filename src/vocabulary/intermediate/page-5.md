@@ -17,6 +17,8 @@ wordlist:
       - succeeding
     level: "Intermediate"
     category: "Sequence"
+    azerbaijani: "Sonrakı"
+    exampleAz: "Birinci görüş yaxşı keçdi, sonrakı görüşlər isə daha yaxşı oldu."
   - term: Substitute
     pronunciation: "/ˈsʌbstəˌtuːt/"
     partOfSpeech: "noun, verb"
@@ -28,6 +30,8 @@ wordlist:
       - stand-in
     level: "Intermediate"
     category: "Replacement"
+    azerbaijani: "Əvəzləyici"
+    exampleAz: "Biz reseptdə şəkər əvəzinə bal istifadə etdik."
   - term: Sufficient
     pronunciation: "/səˈfɪʃənt/"
     partOfSpeech: "adjective"
@@ -39,6 +43,8 @@ wordlist:
       - ample
     level: "Intermediate"
     category: "Quantity"
+    azerbaijani: "Kafi"
+    exampleAz: "Layihəni tamamlamaq üçün kifayət qədər vaxtımız varmı?"
   - term: Technique
     pronunciation: "/tekˈniːk/"
     partOfSpeech: "noun"
@@ -50,6 +56,8 @@ wordlist:
       - procedure
     level: "Intermediate"
     category: "Method"
+    azerbaijani: "Texnika"
+    exampleAz: "O, riyaziyyat problemlərini həll etmək üçün yeni bir texnika öyrəndi."
   - term: Temporary
     pronunciation: "/ˈtempəreri/"
     partOfSpeech: "adjective"
@@ -61,6 +69,8 @@ wordlist:
       - provisional
     level: "Intermediate"
     category: "Duration"
+    azerbaijani: "Müvəqqəti"
+    exampleAz: "Yolun bağlanması yalnız təmir edilərkən müvəqqətidir."
   - term: Transition
     pronunciation: "/trænˈzɪʃən/"
     partOfSpeech: "noun, verb"
@@ -72,6 +82,8 @@ wordlist:
       - transformation
     level: "Intermediate"
     category: "Change"
+    azerbaijani: "Keçid"
+    exampleAz: "Liseydən kollecə keçid çətin ola bilər."
   - term: Ultimate
     pronunciation: "/ˈʌltəmət/"
     partOfSpeech: "adjective"
@@ -83,6 +95,8 @@ wordlist:
       - supreme
     level: "Intermediate"
     category: "Finality"
+    azerbaijani: "Sonuncu"
+    exampleAz: "Onun son məqsədi həkim olmaqdır."
   - term: Undertake
     pronunciation: "/ˌʌndərˈteɪk/"
     partOfSpeech: "verb"
@@ -94,6 +108,8 @@ wordlist:
       - commence
     level: "Intermediate"
     category: "Commitment"
+    azerbaijani: "Öhdəlik"
+    exampleAz: "Şirkət böyük bir təmir layihəsinə başlayacaq."
   - term: Valid
     pronunciation: "/ˈvælɪd/"
     partOfSpeech: "adjective"
@@ -105,6 +121,8 @@ wordlist:
       - legitimate
     level: "Intermediate"
     category: "Logic"
+    azerbaijani: "Etibarlı"
+    exampleAz: "O, müzakirə zamanı etibarlı bir məsələ qaldırdı."
   - term: Vary
     pronunciation: "/ˈveri/"
     partOfSpeech: "verb"
@@ -116,6 +134,8 @@ wordlist:
       - fluctuate
     level: "Intermediate"
     category: "Change"
+    azerbaijani: "Fərqlənmək"
+    exampleAz: "Qiymətlər mövsümə görə fərqlənə bilər."
   - term: Version
     pronunciation: "/ˈvɜːrʒən/"
     partOfSpeech: "noun"
@@ -127,6 +147,8 @@ wordlist:
       - form
     level: "Intermediate"
     category: "Variation"
+    azerbaijani: "Versiya"
+    exampleAz: "Bu proqram təminatının ən son versiyasıdır."
   - term: Volume
     pronunciation: "/ˈvɑːljuːm/"
     partOfSpeech: "noun"
@@ -138,6 +160,8 @@ wordlist:
       - loudness
     level: "Intermediate"
     category: "Measurement"
+    azerbaijani: "Həcm"
+    exampleAz: "Zəhmət olmasa, televiziyanın səsini azaldın."
 collection: vocabulary
 ---
 

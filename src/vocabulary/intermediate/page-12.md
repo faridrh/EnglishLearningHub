@@ -17,6 +17,8 @@ wordlist:
       - tongue
     level: "Intermediate"
     category: "Communication"
+    azerbaijani: "Dil"
+    exampleAz: "Yeni bir dil öyrənmək fərqli mədəniyyətlərə qapılar açır."
   - term: Legal
     pronunciation: "/ˈliːɡəl/"
     partOfSpeech: "adjective"
@@ -28,6 +30,8 @@ wordlist:
       - judicial
     level: "Intermediate"
     category: "Law"
+    azerbaijani: "Hüquqi"
+    exampleAz: "Biznesə başlamazdan əvvəl hüquqi tələbləri başa düşmək vacibdir."
   - term: Level
     pronunciation: "/ˈlevəl/"
     partOfSpeech: "noun, adjective"
@@ -39,6 +43,8 @@ wordlist:
       - grade
     level: "Intermediate"
     category: "Measurement"
+    azerbaijani: "Səviyyə"
+    exampleAz: "O, İngilis dili təhsilində irəli səviyyəyə çatıb."
   - term: Location
     pronunciation: "/loʊˈkeɪʃən/"
     partOfSpeech: "noun"
@@ -50,6 +56,8 @@ wordlist:
       - site
     level: "Intermediate"
     category: "Place"
+    azerbaijani: "Yer"
+    exampleAz: "Restoran şəhər mərkəzində əla bir yerdə yerləşir."
   - term: Management
     pronunciation: "/ˈmænɪdʒmənt/"
     partOfSpeech: "noun"
@@ -61,6 +69,8 @@ wordlist:
       - direction
     level: "Intermediate"
     category: "Control"
+    azerbaijani: "İdarəetmə"
+    exampleAz: "Vaxtın düzgün idarə edilməsi kollec uğuru üçün vacibdir."
   - term: Material
     pronunciation: "/məˈtɪriəl/"
     partOfSpeech: "noun, adjective"
@@ -72,6 +82,8 @@ wordlist:
       - fabric
     level: "Intermediate"
     category: "Substance"
+    azerbaijani: "Material"
+    exampleAz: "Bina yüksək keyfiyyətli materiallardan tikilib."
   - term: Medical
     pronunciation: "/ˈmedɪkəl/"
     partOfSpeech: "adjective"
@@ -83,6 +95,8 @@ wordlist:
       - therapeutic
     level: "Intermediate"
     category: "Health"
+    azerbaijani: "Tibbi"
+    exampleAz: "O, tibbi sahədə karyera qurmağa qərar verdi."
   - term: Method
     pronunciation: "/ˈmeθəd/"
     partOfSpeech: "noun"
@@ -94,6 +108,8 @@ wordlist:
       - system
     level: "Intermediate"
     category: "Approach"
+    azerbaijani: "Metod"
+    exampleAz: "Bu tədris metodu gənc öyrənənlər üçün çox təsirli olub."
   - term: Model
     pronunciation: "/ˈmɑːdəl/"
     partOfSpeech: "noun, verb"
@@ -105,6 +121,8 @@ wordlist:
       - pattern
     level: "Intermediate"
     category: "Example"
+    azerbaijani: "Model"
+    exampleAz: "Yeni işçi komandaya peşəkar davranış nümunəsi göstərəcək."
   - term: Natural
     pronunciation: "/ˈnætʃərəl/"
     partOfSpeech: "adjective"
@@ -116,6 +134,8 @@ wordlist:
       - innate
     level: "Intermediate"
     category: "Nature"
+    azerbaijani: "Təbii"
+    exampleAz: "Park ərazinin təbii gözəlliyini və vəhşi təbiətini qoruyur."
   - term: Network
     pronunciation: "/ˈnetwɜːrk/"
     partOfSpeech: "noun, verb"
@@ -127,6 +147,8 @@ wordlist:
       - web
     level: "Intermediate"
     category: "Connection"
+    azerbaijani: "Şəbəkə"
+    exampleAz: "Peşəkar şəbəkə qurmaq karyeranızı irəlilətməyə kömək edə bilər."
   - term: Normal
     pronunciation: "/ˈnɔːrməl/"
     partOfSpeech: "adjective"
@@ -138,6 +160,8 @@ wordlist:
       - ordinary
     level: "Intermediate"
     category: "Standard"
+    azerbaijani: "Normal"
+    exampleAz: "Vacib təqdimatdan əvvəl əsəbi olmaq normaldır."
 collection: vocabulary
 ---
 

@@ -17,6 +17,8 @@ wordlist:
       - elaborate
     level: "Intermediate"
     category: "Complexity"
+    azerbaijani: "Mürəkkəb"
+    exampleAz: "Problem əvvəl göründüyündən daha mürəkkəbdir."
   - term: Concept
     pronunciation: "/ˈkɑːnsept/"
     partOfSpeech: "noun"

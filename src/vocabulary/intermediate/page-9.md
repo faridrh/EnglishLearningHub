@@ -17,6 +17,8 @@ wordlist:
       - commerce
     level: "Intermediate"
     category: "Economics"
+    azerbaijani: "İqtisadiyyat"
+    exampleAz: "Ölkənin iqtisadiyyatı son illərdə əhəmiyyətli dərəcədə artıb."
   - term: Education
     pronunciation: "/ˌedʒuˈkeɪʃən/"
     partOfSpeech: "noun"

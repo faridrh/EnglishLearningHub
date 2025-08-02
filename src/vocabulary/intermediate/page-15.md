@@ -17,6 +17,8 @@ wordlist:
       - extent
     level: "Intermediate"
     category: "Variety"
+    azerbaijani: "Aralıq"
+    exampleAz: "Mağaza müxtəlif büdcələr üçün geniş məhsul çeşidi təklif edir."
   - term: Reason
     pronunciation: "/ˈriːzən/"
     partOfSpeech: "noun, verb"
@@ -28,6 +30,8 @@ wordlist:
       - motive
     level: "Intermediate"
     category: "Logic"
+    azerbaijani: "Səbəb"
+    exampleAz: "Görüşün səbəbi yeni layihə cədvəlini müzakirə etməkdir."
   - term: Receive
     pronunciation: "/rɪˈsiːv/"
     partOfSpeech: "verb"
@@ -39,6 +43,8 @@ wordlist:
       - acquire
     level: "Intermediate"
     category: "Getting"
+    azerbaijani: "Qəbul etmək"
+    exampleAz: "Tələbələr məzuniyyət mərasimində sertifikatlarını alacaqlar."
   - term: Relationship
     pronunciation: "/rɪˈleɪʃənʃɪp/"
     partOfSpeech: "noun"
@@ -50,6 +56,8 @@ wordlist:
       - bond
     level: "Intermediate"
     category: "Connection"
+    azerbaijani: "Münasibət"
+    exampleAz: "Karyera uğuru üçün həmkarlarla güclü münasibətlər qurmaq vacibdir."
   - term: Research
     pronunciation: "/rɪˈsɜːrtʃ/"
     partOfSpeech: "noun, verb"
@@ -61,6 +69,8 @@ wordlist:
       - inquiry
     level: "Intermediate"
     category: "Investigation"
+    azerbaijani: "Tədqiqat"
+    exampleAz: "Professor bərpa olunan enerji mənbələri üzərində tədqiqat aparır."
   - term: Resource
     pronunciation: "/ˈriːsɔːrs/"
     partOfSpeech: "noun"
@@ -72,6 +82,8 @@ wordlist:
       - supply
     level: "Intermediate"
     category: "Supply"
+    azerbaijani: "Resurs"
+    exampleAz: "Kitabxanada tələbələrin istifadə edə biləcəyi çoxlu onlayn resurslar var."
   - term: Respond
     pronunciation: "/rɪˈspɑːnd/"
     partOfSpeech: "verb"
@@ -83,6 +95,8 @@ wordlist:
       - react
     level: "Intermediate"
     category: "Communication"
+    azerbaijani: "Cavab vermək"
+    exampleAz: "Zəhmət olmasa, 24 saat ərzində e-poçta cavab verin."
   - term: Responsibility
     pronunciation: "/rɪˌspɑːnsəˈbɪləti/"
     partOfSpeech: "noun"
@@ -94,6 +108,8 @@ wordlist:
       - accountability
     level: "Intermediate"
     category: "Duty"
+    azerbaijani: "Məsuliyyət"
+    exampleAz: "Ətraf mühiti qorumaq hər kəsin məsuliyyətidir."
   - term: Result
     pronunciation: "/rɪˈzʌlt/"
     partOfSpeech: "noun, verb"
@@ -105,6 +121,8 @@ wordlist:
       - effect
     level: "Intermediate"
     category: "Outcome"
+    azerbaijani: "Nəticə"
+    exampleAz: "Təcrübənin nəticəsi bizim hipotezimizi təsdiqlədi."
   - term: Society  
     pronunciation: "/səˈsaɪəti/"
     partOfSpeech: "noun"
@@ -116,6 +134,8 @@ wordlist:
       - culture
     level: "Intermediate"
     category: "Community"
+    azerbaijani: "Cəmiyyət"
+    exampleAz: "Texnologiya müasir cəmiyyətə dərin təsir göstərmişdir."
   - term: Structure
     pronunciation: "/ˈstrʌktʃər/"
     partOfSpeech: "noun, verb"
@@ -127,6 +147,8 @@ wordlist:
       - arrangement
     level: "Intermediate"
     category: "Organization"
+    azerbaijani: "Struktur"
+    exampleAz: "Binanın zəlzələlərə davam gətirə bilən möhkəm polad strukturu var."
   - term: System
     pronunciation: "/ˈsɪstəm/"
     partOfSpeech: "noun"
@@ -138,6 +160,8 @@ wordlist:
       - organization
     level: "Intermediate"
     category: "Organization"
+    azerbaijani: "Sistem"
+    exampleAz: "Məktəb tələbə qeydləri üçün yeni kompüter sistemi tətbiq edib."
 collection: vocabulary
 ---
 

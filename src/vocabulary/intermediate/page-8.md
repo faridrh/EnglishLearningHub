@@ -17,6 +17,8 @@ wordlist:
       - generate
     level: "Intermediate"
     category: "Creation"
+    azerbaijani: "Yaratmaq"
+    exampleAz: "Rəssam muzey üçün heykəl yaradacaq."
   - term: Culture
     pronunciation: "/ˈkʌltʃər/"
     partOfSpeech: "noun"

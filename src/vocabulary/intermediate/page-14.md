@@ -17,6 +17,8 @@ wordlist:
       - training
     level: "Intermediate"
     category: "Learning"
+    azerbaijani: "Təcrübə"
+    exampleAz: "Musiqi aləti öyrənərkən təcrübə mükəmməllik gətirir."
   - term: Present
     pronunciation: "/ˈprezənt/"
     partOfSpeech: "adjective, noun, verb"
@@ -28,6 +30,8 @@ wordlist:
       - display
     level: "Intermediate"
     category: "Time"
+    azerbaijani: "Hazır"
+    exampleAz: "Bütün tələbələr yekun imtahan üçün hazır olmalıdır."
   - term: Previous
     pronunciation: "/ˈpriːviəs/"
     partOfSpeech: "adjective"
@@ -39,6 +43,8 @@ wordlist:
       - prior
     level: "Intermediate"
     category: "Time"
+    azerbaijani: "Əvvəlki"
+    exampleAz: "Əvvəlki təcrübəyə əsaslanaraq bu yanaşmanı tövsiyə edirəm."
   - term: Primary
     pronunciation: "/ˈpraɪmeri/"
     partOfSpeech: "adjective"
@@ -50,6 +56,8 @@ wordlist:
       - chief
     level: "Intermediate"
     category: "Importance"
+    azerbaijani: "Əsas"
+    exampleAz: "Təhsilin əsas məqsədi tənqidi düşüncə bacarıqlarını inkişaf etdirməkdir."
   - term: Process
     pronunciation: "/ˈprɑːses/"
     partOfSpeech: "noun, verb"
@@ -61,6 +69,8 @@ wordlist:
       - system
     level: "Intermediate"
     category: "Method"
+    azerbaijani: "Proses"
+    exampleAz: "Universitetə qəbul prosesi mürəkkəb ola bilər."
   - term: Product
     pronunciation: "/ˈprɑːdʌkt/"
     partOfSpeech: "noun"
@@ -72,6 +82,8 @@ wordlist:
       - merchandise
     level: "Intermediate"
     category: "Item"
+    azerbaijani: "Məhsul"
+    exampleAz: "Şirkət gənc istehlakçılara yönəlmiş yeni məhsul təqdim etdi."
   - term: Professional
     pronunciation: "/prəˈfeʃənəl/"
     partOfSpeech: "adjective, noun"
@@ -83,6 +95,8 @@ wordlist:
       - qualified
     level: "Intermediate"
     category: "Work"
+    azerbaijani: "Peşəkar"
+    exampleAz: "O, təzyiq altında belə peşəkar münasibətini qoruyur."
   - term: Project
     pronunciation: "/ˈprɑːdʒekt/"
     partOfSpeech: "noun, verb"
@@ -94,6 +108,8 @@ wordlist:
       - assignment
     level: "Intermediate"
     category: "Task"
+    azerbaijani: "Layihə"
+    exampleAz: "Tədqiqat layihəsi təxminən altı ay davam edəcək."
   - term: Provide
     pronunciation: "/prəˈvaɪd/"
     partOfSpeech: "verb"
@@ -105,6 +121,8 @@ wordlist:
       - give
     level: "Intermediate"
     category: "Supply"
+    azerbaijani: "Təmin etmək"
+    exampleAz: "Məktəb incəsənət dərsi üçün bütün lazımi materialları təmin edəcək."
   - term: Public
     pronunciation: "/ˈpʌblɪk/"
     partOfSpeech: "adjective, noun"
@@ -116,6 +134,8 @@ wordlist:
       - common
     level: "Intermediate"
     category: "Community"
+    azerbaijani: "İctimai"
+    exampleAz: "Park gün işığı saatlarında ictimaiyyət üçün açıqdır."
   - term: Quality
     pronunciation: "/ˈkwɑːləti/"
     partOfSpeech: "noun"
@@ -127,6 +147,8 @@ wordlist:
       - caliber
     level: "Intermediate"
     category: "Standard"
+    azerbaijani: "Keyfiyyət"
+    exampleAz: "Bu universitetdə təhsilin keyfiyyəti beynəlxalq səviyyədə tanınır."
   - term: Question
     pronunciation: "/ˈkwestʃən/"
     partOfSpeech: "noun, verb"
@@ -138,6 +160,8 @@ wordlist:
       - doubt
     level: "Intermediate"
     category: "Communication"
+    azerbaijani: "Sual"
+    exampleAz: "Tapşırıqla bağlı hər hansı sualınız varsa, zəhmət olmasa soruşun."
 collection: vocabulary
 ---
 
