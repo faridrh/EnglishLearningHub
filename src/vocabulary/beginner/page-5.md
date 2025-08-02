@@ -13,6 +13,9 @@ wordlist:
     example: "She's wearing a red dress."
     level: "Beginner"
     category: "Colors"
+    azerbaijani: "Qırmızı"
+    exampleAz: "O, qırmızı don geyinib."
+
   - term: Blue
     pronunciation: "/bluː/"
     partOfSpeech: "adjective, noun"
@@ -20,6 +23,9 @@ wordlist:
     example: "The ocean is blue."
     level: "Beginner"
     category: "Colors"
+    azerbaijani: "Mavi"
+    exampleAz: "Okean mavidir."
+
   - term: Green
     pronunciation: "/ɡriːn/"
     partOfSpeech: "adjective, noun"
@@ -27,6 +33,9 @@ wordlist:
     example: "The trees are green in summer."
     level: "Beginner"
     category: "Colors"
+    azerbaijani: "Yaşıl"
+    exampleAz: "Ağaclar yayda yaşıldır."
+
   - term: Black
     pronunciation: "/blæk/"
     partOfSpeech: "adjective, noun"
@@ -34,6 +43,9 @@ wordlist:
     example: "I have black hair."
     level: "Beginner"
     category: "Colors"
+    azerbaijani: "Qara"
+    exampleAz: "Mənim qara saçlarım var."
+
   - term: White
     pronunciation: "/waɪt/"
     partOfSpeech: "adjective, noun"
@@ -41,6 +53,9 @@ wordlist:
     example: "The walls are painted white."
     level: "Beginner"
     category: "Colors"
+    azerbaijani: "Ağ"
+    exampleAz: "Divarlar ağ rənglənib."
+
   - term: Yellow
     pronunciation: "/ˈjɛloʊ/"
     partOfSpeech: "adjective, noun"
@@ -48,6 +63,9 @@ wordlist:
     example: "Bananas are yellow."
     level: "Beginner"
     category: "Colors"
+    azerbaijani: "Sarı"
+    exampleAz: "Bananlar sarıdır."
+
   - term: One
     pronunciation: "/wʌn/"
     partOfSpeech: "number"
@@ -55,6 +73,9 @@ wordlist:
     example: "I have one brother."
     level: "Beginner"
     category: "Numbers"
+    azerbaijani: "Bir"
+    exampleAz: "Mənim bir qardaşım var."
+
   - term: Two
     pronunciation: "/tuː/"
     partOfSpeech: "number"
@@ -62,6 +83,9 @@ wordlist:
     example: "There are two cats in the garden."
     level: "Beginner"
     category: "Numbers"
+    azerbaijani: "İki"
+    exampleAz: "Bağçada iki pişik var."
+
   - term: Three
     pronunciation: "/θriː/"
     partOfSpeech: "number"

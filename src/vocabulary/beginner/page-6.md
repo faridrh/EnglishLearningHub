@@ -13,6 +13,9 @@ wordlist:
     example: "My mother cooks delicious food."
     level: "Beginner"
     category: "Family"
+    azerbaijani: "Ana"
+    exampleAz: "Mənim anam dadlı yemək bişirir."
+
   - term: Father
     pronunciation: "/ˈfɑːðər/"
     partOfSpeech: "noun"
@@ -20,6 +23,9 @@ wordlist:
     example: "My father works in an office."
     level: "Beginner"
     category: "Family"
+    azerbaijani: "Ata"
+    exampleAz: "Mənim atam ofisdə işləyir."
+
   - term: Brother
     pronunciation: "/ˈbrʌðər/"
     partOfSpeech: "noun"
@@ -27,6 +33,9 @@ wordlist:
     example: "My brother is younger than me."
     level: "Beginner"
     category: "Family"
+    azerbaijani: "Qardaş"
+    exampleAz: "Mənim qardaşım məndən kiçikdir."
+
   - term: Sister
     pronunciation: "/ˈsɪstər/"
     partOfSpeech: "noun"
@@ -34,6 +43,9 @@ wordlist:
     example: "My sister lives in another city."
     level: "Beginner"
     category: "Family"
+    azerbaijani: "Bacı"
+    exampleAz: "Mənim bacım başqa şəhərdə yaşayır."
+
   - term: Child
     pronunciation: "/tʃaɪld/"
     partOfSpeech: "noun"
@@ -41,6 +53,9 @@ wordlist:
     example: "The child is playing in the park."
     level: "Beginner"
     category: "Family"
+    azerbaijani: "Uşaq"
+    exampleAz: "Uşaq parkda oynayır."
+
   - term: Baby
     pronunciation: "/ˈbeɪbi/"
     partOfSpeech: "noun"
@@ -48,6 +63,9 @@ wordlist:
     example: "The baby is sleeping."
     level: "Beginner"
     category: "Family"
+    azerbaijani: "Körpə"
+    exampleAz: "Körpə yatır."
+
   - term: Man
     pronunciation: "/mæn/"
     partOfSpeech: "noun"
@@ -55,6 +73,9 @@ wordlist:
     example: "The man is wearing a suit."
     level: "Beginner"
     category: "People"
+    azerbaijani: "Kişi"
+    exampleAz: "Kişi kostyum geyinib."
+
   - term: Woman
     pronunciation: "/ˈwʊmən/"
     partOfSpeech: "noun"
@@ -62,6 +83,9 @@ wordlist:
     example: "The woman is reading a book."
     level: "Beginner"
     category: "People"
+    azerbaijani: "Qadın"
+    exampleAz: "Qadın kitab oxuyur."
+
   - term: Boy
     pronunciation: "/bɔɪ/"
     partOfSpeech: "noun"
@@ -69,6 +93,9 @@ wordlist:
     example: "The boy is playing football."
     level: "Beginner"
     category: "People"
+    azerbaijani: "Oğlan"
+    exampleAz: "Oğlan futbol oynayır."
+
   - term: Girl
     pronunciation: "/ɡɜːrl/"
     partOfSpeech: "noun"
@@ -76,6 +103,9 @@ wordlist:
     example: "The girl is singing beautifully."
     level: "Beginner"
     category: "People"
+    azerbaijani: "Qız"
+    exampleAz: "Qız gözəl mahnı oxuyur."
+
   - term: Person
     pronunciation: "/ˈpɜːrsən/"
     partOfSpeech: "noun"
@@ -83,6 +113,9 @@ wordlist:
     example: "She is a very kind person."
     level: "Beginner"
     category: "People"
+    azerbaijani: "Şəxs"
+    exampleAz: "O, çox mehriban şəxsdir."
+
   - term: People
     pronunciation: "/ˈpiːpəl/"
     partOfSpeech: "noun"
@@ -90,6 +123,8 @@ wordlist:
     example: "Many people came to the party."
     level: "Beginner"
     category: "People"
+    azerbaijani: "İnsanlar"
+    exampleAz: "Partiyə çox insan gəldi."
 collection: vocabulary
 ---
 

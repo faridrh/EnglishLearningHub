@@ -13,6 +13,9 @@ wordlist:
     example: "Come here, please."
     level: "Beginner"
     category: "Location"
+    azerbaijani: "Bura"
+    exampleAz: "Bura gəlin, zəhmət olmasa."
+
   - term: There
     pronunciation: "/ðɛr/"
     partOfSpeech: "adverb"
@@ -20,6 +23,9 @@ wordlist:
     example: "The book is over there."
     level: "Beginner"
     category: "Location"
+    azerbaijani: "Ora"
+    exampleAz: "Kitab orada, üstdədir."
+
   - term: Where
     pronunciation: "/wɛr/"
     partOfSpeech: "adverb"
@@ -27,6 +33,9 @@ wordlist:
     example: "Where do you live?"
     level: "Beginner"
     category: "Questions"
+    azerbaijani: "Hara"
+    exampleAz: "Siz harada yaşayırsınız?"
+
   - term: What
     pronunciation: "/wʌt/"
     partOfSpeech: "pronoun"
@@ -34,6 +43,9 @@ wordlist:
     example: "What is your favorite color?"
     level: "Beginner"
     category: "Questions"
+    azerbaijani: "Nə"
+    exampleAz: "Sənin sevimli rəngin nədir?"
+
   - term: When
     pronunciation: "/wɛn/"
     partOfSpeech: "adverb"
@@ -41,6 +53,9 @@ wordlist:
     example: "When is your birthday?"
     level: "Beginner"
     category: "Questions"
+    azerbaijani: "Nə vaxt"
+    exampleAz: "Sənin ad günün nə vaxtdır?"
+
   - term: Why
     pronunciation: "/waɪ/"
     partOfSpeech: "adverb"
@@ -48,6 +63,9 @@ wordlist:
     example: "Why are you late?"
     level: "Beginner"
     category: "Questions"
+    azerbaijani: "Niyə"
+    exampleAz: "Niyə gecikirsən?"
+
   - term: How
     pronunciation: "/haʊ/"
     partOfSpeech: "adverb"
@@ -55,6 +73,9 @@ wordlist:
     example: "How do you make coffee?"
     level: "Beginner"
     category: "Questions"
+    azerbaijani: "Necə"
+    exampleAz: "Sən qəhvəni necə hazırlayırsan?"
+
   - term: Who
     pronunciation: "/huː/"
     partOfSpeech: "pronoun"
@@ -62,6 +83,9 @@ wordlist:
     example: "Who is your teacher?"
     level: "Beginner"
     category: "Questions"
+    azerbaijani: "Kim"
+    exampleAz: "Sənin müəllimin kimdir?"
+
   - term: New
     pronunciation: "/nuː/"
     partOfSpeech: "adjective"
@@ -69,6 +93,9 @@ wordlist:
     example: "I bought a new car."
     level: "Beginner"
     category: "Descriptions"
+    azerbaijani: "Yeni"
+    exampleAz: "Mən yeni maşın aldım."
+
   - term: Old
     pronunciation: "/oʊld/"
     partOfSpeech: "adjective"
@@ -76,6 +103,9 @@ wordlist:
     example: "My grandfather is very old."
     level: "Beginner"
     category: "Descriptions"
+    azerbaijani: "Köhnə"
+    exampleAz: "Mənim babam çox yaşlıdır."
+
   - term: Nice
     pronunciation: "/naɪs/"
     partOfSpeech: "adjective"
@@ -83,6 +113,9 @@ wordlist:
     example: "It's a nice day today."
     level: "Beginner"
     category: "Descriptions"
+    azerbaijani: "Gözəl"
+    exampleAz: "Bu gün gözəl bir gündür."
+
   - term: Beautiful
     pronunciation: "/ˈbjuːtəfəl/"
     partOfSpeech: "adjective"
@@ -90,6 +123,8 @@ wordlist:
     example: "The flowers are beautiful."
     level: "Beginner"
     category: "Descriptions"
+    azerbaijani: "Gözəl"
+    exampleAz: "Çiçəklər çox gözəldir."
 collection: vocabulary
 ---
 

@@ -56,6 +56,8 @@ wordlist:
       - jovial
     level: "Advanced"
     category: "Humor"
+    azerbaijani: "Zarafatcıl"
+    exampleAz: "Onun zarafatcıl tərzi ciddi görüşləri belə daha xoş edirdi."
   - term: Jubilation
     pronunciation: "/ˌdʒubəˈleɪʃən/"
     partOfSpeech: "noun"
@@ -67,6 +69,8 @@ wordlist:
       - celebration
     level: "Advanced"
     category: "Emotion"
+    azerbaijani: "Sevinc"
+    exampleAz: "Komandanın qələbəsi azarkeşlər tərəfindən sevinclə qarşılandı."
   - term: Judicious
     pronunciation: "/dʒuˈdɪʃəs/"
     partOfSpeech: "adjective"
@@ -78,6 +82,8 @@ wordlist:
       - prudent
     level: "Advanced"
     category: "Wisdom"
+    azerbaijani: "Ağıllı, düşüncəli"
+    exampleAz: "Onun resurslardan ağıllı istifadəsi layihənin uğurunu təmin etdi."
   - term: Laconic
     pronunciation: "/ləˈkɑːnɪk/"
     partOfSpeech: "adjective"
@@ -89,6 +95,8 @@ wordlist:
       - terse
     level: "Advanced"
     category: "Communication"
+    azerbaijani: "Qısa, yığcam"
+    exampleAz: "Onun 'Bəlkə' kimi yığcam cavabı hamını qeyri-müəyyən vəziyyətdə qoydu."
   - term: Lascivious
     pronunciation: "/ləˈsɪviəs/"
     partOfSpeech: "adjective"
@@ -100,6 +108,8 @@ wordlist:
       - licentious
     level: "Advanced"
     category: "Behavior"
+    azerbaijani: "Şəhvətli"
+    exampleAz: "Şəhvətli şərhlər hamını narahat etdi."
   - term: Lucid
     pronunciation: "/ˈlusɪd/"
     partOfSpeech: "adjective"
@@ -111,6 +121,8 @@ wordlist:
       - rational
     level: "Advanced"
     category: "Clarity"
+    azerbaijani: "Aydın"
+    exampleAz: "Yaşına baxmayaraq, o, aydın düşüncəli və səlis danışan idi."
   - term: Lugubrious
     pronunciation: "/ləˈɡubriəs/"
     partOfSpeech: "adjective"
@@ -122,6 +134,8 @@ wordlist:
       - melancholy
     level: "Advanced"
     category: "Mood"
+    azerbaijani: "Kədərli"
+    exampleAz: "Kədərli musiqi matəm mərasiminə tam uyğun idi."
   - term: Magnanimous
     pronunciation: "/mægˈnænəməs/"
     partOfSpeech: "adjective"
@@ -133,6 +147,8 @@ wordlist:
       - benevolent
     level: "Advanced"
     category: "Character"
+    azerbaijani: "Alicənab"
+    exampleAz: "Alicənab bir jest olaraq, o, rəqibini qələbə münasibətilə təbrik etdi."
   - term: Malfeasance
     pronunciation: "/mælˈfizəns/"
     partOfSpeech: "noun"
@@ -144,6 +160,8 @@ wordlist:
       - corruption
     level: "Advanced"
     category: "Ethics"
+    azerbaijani: "Qanunsuzluq"
+    exampleAz: "Mer vəzifəsində qanunsuzluqda ittiham olundu."
 collection: vocabulary
 ---
 

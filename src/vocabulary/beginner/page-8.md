@@ -13,6 +13,9 @@ wordlist:
     example: "I have a headache in my head."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Baş"
+    exampleAz: "Başımda ağrı var."
+
   - term: Hand
     pronunciation: "/hænd/"
     partOfSpeech: "noun"
@@ -20,6 +23,9 @@ wordlist:
     example: "I write with my right hand."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Əl"
+    exampleAz: "Mən sağ əlimlə yazıram."
+
   - term: Eye
     pronunciation: "/aɪ/"
     partOfSpeech: "noun"
@@ -27,6 +33,9 @@ wordlist:
     example: "I have brown eyes."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Göz"
+    exampleAz: "Mənim qəhvəyi gözlərim var."
+
   - term: Mouth
     pronunciation: "/maʊθ/"
     partOfSpeech: "noun"
@@ -34,6 +43,9 @@ wordlist:
     example: "Open your mouth and say 'ah'."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Ağız"
+    exampleAz: "Ağzını aç və 'ah' de."
+
   - term: Foot
     pronunciation: "/fʊt/"
     partOfSpeech: "noun"
@@ -41,6 +53,9 @@ wordlist:
     example: "My foot hurts from walking."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Ayaq"
+    exampleAz: "Ayağım gəzərkən ağrıyır."
+
   - term: Leg
     pronunciation: "/lɛɡ/"
     partOfSpeech: "noun"
@@ -48,6 +63,9 @@ wordlist:
     example: "I hurt my leg playing football."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Ayaq"
+    exampleAz: "Futbol oynayarkən ayağımı zədələdim."
+
   - term: Arm
     pronunciation: "/ɑːrm/"
     partOfSpeech: "noun"
@@ -55,6 +73,9 @@ wordlist:
     example: "I carry the bag on my arm."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Qol"
+    exampleAz: "Çantamı qolumda daşıyıram."
+
   - term: Face
     pronunciation: "/feɪs/"
     partOfSpeech: "noun"
@@ -62,6 +83,9 @@ wordlist:
     example: "She has a beautiful face."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Üz"
+    exampleAz: "Onun gözəl üzü var."
+
   - term: Hair
     pronunciation: "/hɛr/"
     partOfSpeech: "noun"
@@ -69,6 +93,9 @@ wordlist:
     example: "She has long black hair."
     level: "Beginner"
     category: "Body Parts"
+    azerbaijani: "Saç"
+    exampleAz: "Onun uzun qara saçları var."
+
   - term: Name
     pronunciation: "/neɪm/"
     partOfSpeech: "noun"
@@ -76,6 +103,9 @@ wordlist:
     example: "What is your name?"
     level: "Beginner"
     category: "Identity"
+    azerbaijani: "Ad"
+    exampleAz: "Sənin adın nədir?"
+
   - term: Age
     pronunciation: "/eɪdʒ/"
     partOfSpeech: "noun"
@@ -83,6 +113,9 @@ wordlist:
     example: "What is your age?"
     level: "Beginner"
     category: "Identity"
+    azerbaijani: "Yaş"
+    exampleAz: "Sənin yaşın nədir?"
+
   - term: Job
     pronunciation: "/dʒɑːb/"
     partOfSpeech: "noun"
@@ -90,6 +123,8 @@ wordlist:
     example: "I love my job as a teacher."
     level: "Beginner"
     category: "Work"
+    azerbaijani: "İş"
+    exampleAz: "Mən müəllim kimi işimi sevirəm."
 collection: vocabulary
 ---
 
