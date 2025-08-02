@@ -21,7 +21,7 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npm install @11ty/eleventy && npx @11ty/eleventy --serve --port=5000"
+args = "npx eleventy --serve --port=5000"
 waitForPort = 5000
 
 [deployment]
