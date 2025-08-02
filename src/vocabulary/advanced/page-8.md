@@ -17,6 +17,8 @@ wordlist:
       - quirky
     level: "Advanced"
     category: "Uniqueness"
+    azerbaijani: "Özünəməxsus"
+    exampleAz: "Onun özünəməxsus problem həll etmə yanaşması tez-tez gözlənilməz nəticələr verirdi."
   - term: Immutable
     pronunciation: "/ɪˈmjutəbəl/"
     partOfSpeech: "adjective"
@@ -28,6 +30,8 @@ wordlist:
       - permanent
     level: "Advanced"
     category: "Permanence"
+    azerbaijani: "Dəyişməz"
+    exampleAz: "Fizika qanunları dəyişməz prinsiplər hesab olunur."
   - term: Impeccable
     pronunciation: "/ɪmˈpekəbəl/"
     partOfSpeech: "adjective"
@@ -39,6 +43,8 @@ wordlist:
       - exemplary
     level: "Advanced"
     category: "Perfection"
+    azerbaijani: "Qüsursuz"
+    exampleAz: "Onun modadakı qüsursuz zövqünü hamı bəyənirdi."
   - term: Imperious
     pronunciation: "/ɪmˈpɪriəs/"
     partOfSpeech: "adjective"

@@ -17,6 +17,8 @@ wordlist:
       - hackneyed
     level: "Advanced"
     category: "Quality"
+    azerbaijani: "Banal"
+    exampleAz: "Onun banal şərhləri intellektual müzakirəyə heç nə əlavə etmədi."
   - term: Bellicose
     pronunciation: "/ˈbelɪkoʊs/"
     partOfSpeech: "adjective"
@@ -28,6 +30,8 @@ wordlist:
       - warlike
     level: "Advanced"
     category: "Behavior"
+    azerbaijani: "Aqressiv"
+    exampleAz: "Aqressiv ritorika millətlər arasında gərginliyi artırdı."
   - term: Benevolent
     pronunciation: "/bəˈnevələnt/"
     partOfSpeech: "adjective"
@@ -39,6 +43,8 @@ wordlist:
       - philanthropic
     level: "Advanced"
     category: "Character"
+    azerbaijani: "Xeyirxah"
+    exampleAz: "Xeyirxah donor bütün təqaüd proqramını maliyyələşdirdi."
   - term: Bombastic
     pronunciation: "/bɑːmˈbæstɪk/"
     partOfSpeech: "adjective"
@@ -50,6 +56,8 @@ wordlist:
       - pretentious
     level: "Advanced"
     category: "Communication"
+    azerbaijani: "Şişirdilmiş"
+    exampleAz: "Siyasətçinin şişirdilmiş çıxışı real məsələlərə toxunmadı."
   - term: Camaraderie
     pronunciation: "/ˌkæməˈrɑːdəri/"
     partOfSpeech: "noun"
@@ -61,6 +69,8 @@ wordlist:
       - solidarity
     level: "Advanced"
     category: "Relationships"
+    azerbaijani: "Yoldaşlıq"
+    exampleAz: "Komanda üzvləri arasında yoldaşlıq qeyd zamanı aydın idi."
   - term: Candor
     pronunciation: "/ˈkændər/"
     partOfSpeech: "noun"
@@ -72,6 +82,8 @@ wordlist:
       - directness
     level: "Advanced"
     category: "Honesty"
+    azerbaijani: "Səmimiyyət"
+    exampleAz: "Bu çətin mövzunu müzakirə edərkən səmimiyyətinizi qiymətləndirirəm."
   - term: Capitulate
     pronunciation: "/kəˈpɪtʃəleɪt/"
     partOfSpeech: "verb"
@@ -83,6 +95,8 @@ wordlist:
       - submit
     level: "Advanced"
     category: "Defeat"
+    azerbaijani: "Təslim olmaq"
+    exampleAz: "Saatlarla davam edən danışıqlardan sonra onlar nəhayət bizim şərtlərimizə təslim oldular."
   - term: Caustic
     pronunciation: "/ˈkɔːstɪk/"
     partOfSpeech: "adjective"
@@ -94,6 +108,8 @@ wordlist:
       - corrosive
     level: "Advanced"
     category: "Criticism"
+    azerbaijani: "Acıdil"
+    exampleAz: "Onun təkliflə bağlı acıdil şərhləri bir neçə komitə üzvünü incitdi."
   - term: Charlatan
     pronunciation: "/ˈʃɑːrlətən/"
     partOfSpeech: "noun"
@@ -105,6 +121,8 @@ wordlist:
       - impostor
     level: "Advanced"
     category: "Deception"
+    azerbaijani: "Fırıldaqçı"
+    exampleAz: "Guya mütəxəssis olan şəxs heç bir real etibara malik olmayan fırıldaqçı kimi ifşa edildi."
   - term: Chastise
     pronunciation: "/tʃæˈstaɪz/"
     partOfSpeech: "verb"
@@ -116,6 +134,8 @@ wordlist:
       - censure
     level: "Advanced"
     category: "Correction"
+    azerbaijani: "Tənbeh etmək"
+    exampleAz: "Müəllim tələbəni esse plagiatına görə tənbeh etdi."
   - term: Circumvent
     pronunciation: "/ˈsɜːrkəmvent/"
     partOfSpeech: "verb"
@@ -127,6 +147,8 @@ wordlist:
       - sidestep
     level: "Advanced"
     category: "Strategy"
+    azerbaijani: "Yan keçmək"
+    exampleAz: "Onlar yeni qaydalara qanuni şəkildə yan keçməyin yolunu tapdılar."
   - term: Cogent
     pronunciation: "/ˈkoʊdʒənt/"
     partOfSpeech: "adjective"
@@ -138,6 +160,8 @@ wordlist:
       - convincing
     level: "Advanced"
     category: "Logic"
+    azerbaijani: "İnandırıcı"
+    exampleAz: "O, siyasətin dəyişdirilməsi üçün inandırıcı bir arqument təqdim etdi."
 collection: vocabulary
 ---
 

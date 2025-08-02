@@ -108,7 +108,7 @@ wordlist:
       - commence
     level: "Intermediate"
     category: "Commitment"
-    azerbaijani: "Öhdəlik"
+    azerbaijani: "Öhdəlik götürmək"
     exampleAz: "Şirkət böyük bir təmir layihəsinə başlayacaq."
   - term: Valid
     pronunciation: "/ˈvælɪd/"

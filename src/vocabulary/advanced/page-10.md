@@ -17,6 +17,8 @@ wordlist:
       - deceitful
     level: "Advanced"
     category: "Honesty"
+    azerbaijani: "Yalançı"
+    exampleAz: "Yalançı şahid bir neçə ziddiyyətdə yaxalandı."
   - term: Mercurial
     pronunciation: "/mərˈkjʊriəl/"
     partOfSpeech: "adjective"
@@ -28,6 +30,8 @@ wordlist:
       - capricious
     level: "Advanced"
     category: "Temperament"
+    azerbaijani: "Dəyişkən"
+    exampleAz: "Onun dəyişkən xasiyyəti onunla işləməyi çətinləşdirirdi."
   - term: Meticulous
     pronunciation: "/məˈtɪkjələs/"
     partOfSpeech: "adjective"
@@ -39,6 +43,8 @@ wordlist:
       - thorough
     level: "Advanced"
     category: "Precision"
+    azerbaijani: "Diqqətli"
+    exampleAz: "Diqqətli tədqiqatçı hər mənbəni iki dəfə yoxladı."
   - term: Misanthrope
     pronunciation: "/ˈmɪsənθroʊp/"
     partOfSpeech: "noun"
@@ -50,6 +56,8 @@ wordlist:
       - cynic
     level: "Advanced"
     category: "Personality"
+    azerbaijani: "İnsanlığa nifrət edən"
+    exampleAz: "Qoca insanlığa nifrət edən biri kimi yaşayırdı və nadir hallarda qonşularla danışırdı."
   - term: Mitigate
     pronunciation: "/ˈmɪtəɡeɪt/"
     partOfSpeech: "verb"
@@ -61,6 +69,8 @@ wordlist:
       - lessen
     level: "Advanced"
     category: "Reduction"
+    azerbaijani: "Yüngülləşdirmək"
+    exampleAz: "Şirkət ətraf mühitə dəymiş ziyanı yüngülləşdirmək üçün addımlar atdı."
   - term: Myriad
     pronunciation: "/ˈmɪriəd/"
     partOfSpeech: "noun, adjective"
@@ -72,6 +82,8 @@ wordlist:
       - multitude
     level: "Advanced"
     category: "Quantity"
+    azerbaijani: "Sonsuz sayda"
+    exampleAz: "Bağda sonsuz sayda rəngarəng çiçəklər var idi."
   - term: Nascent
     pronunciation: "/ˈnæsənt/"
     partOfSpeech: "adjective"
@@ -83,6 +95,8 @@ wordlist:
       - budding
     level: "Advanced"
     category: "Beginning"
+    azerbaijani: "Yeni yaranan"
+    exampleAz: "Yeni yaranan texnologiya gələcək inkişaf üçün vəd etdi."
   - term: Nefarious
     pronunciation: "/nəˈferiəs/"
     partOfSpeech: "adjective"
@@ -94,6 +108,8 @@ wordlist:
       - evil
     level: "Advanced"
     category: "Evil"
+    azerbaijani: "Şərli"
+    exampleAz: "Detektiv cinayətkarın şərli planını aşkar etdi."
   - term: Obsequious
     pronunciation: "/əbˈsikwiəs/"
     partOfSpeech: "adjective"
@@ -105,6 +121,8 @@ wordlist:
       - sycophantic
     level: "Advanced"
     category: "Behavior"
+    azerbaijani: "İtaətkar"
+    exampleAz: "Onun rəhbərə qarşı itaətkar davranışı həmkarlarını narahat edirdi."
   - term: Obstinate
     pronunciation: "/ˈɑːbstənət/"
     partOfSpeech: "adjective"
@@ -116,6 +134,8 @@ wordlist:
       - inflexible
     level: "Advanced"
     category: "Stubbornness"
+    azerbaijani: "İnadkar"
+    exampleAz: "Bütün sübutlara baxmayaraq, o, inanclarında inadkar qaldı."
   - term: Omniscient
     pronunciation: "/ɑːmˈnɪʃənt/"
     partOfSpeech: "adjective"
@@ -127,6 +147,8 @@ wordlist:
       - wise
     level: "Advanced"
     category: "Knowledge"
+    azerbaijani: "Hər şeyi bilən"
+    exampleAz: "Hər şeyi bilən nağılçı bütün personajların düşüncələrini bilirdi."
   - term: Onerous
     pronunciation: "/ˈoʊnərəs/"
     partOfSpeech: "adjective"
@@ -138,6 +160,8 @@ wordlist:
       - taxing
     level: "Advanced"
     category: "Difficulty"
+    azerbaijani: "Çətin"
+    exampleAz: "Minlərlə sənədin gözdən keçirilməsi çətin vəzifəsi aylar sürdü."
 collection: vocabulary
 ---
 

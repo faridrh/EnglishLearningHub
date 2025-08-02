@@ -30,6 +30,8 @@ wordlist:
       - instruction
     level: "Intermediate"
     category: "Learning"
+    azerbaijani: "Təhsil"
+    exampleAz: "O inanır ki, təhsil uğurun açarıdır."
   - term: Effective
     pronunciation: "/ɪˈfektɪv/"
     partOfSpeech: "adjective"
@@ -41,6 +43,8 @@ wordlist:
       - productive
     level: "Intermediate"
     category: "Success"
+    azerbaijani: "Effektiv"
+    exampleAz: "Yeni tədris metodu çox effektiv oldu."
   - term: Element
     pronunciation: "/ˈeləmənt/"
     partOfSpeech: "noun"

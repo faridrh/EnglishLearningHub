@@ -30,6 +30,8 @@ wordlist:
       - individuality
     level: "Intermediate"
     category: "Self"
+    azerbaijani: "Kimlik"
+    exampleAz: "Mədəni kimlik şəxsi inkişafda mühüm rol oynayır."
   - term: Importance
     pronunciation: "/ɪmˈpɔːrtəns/"
     partOfSpeech: "noun"
@@ -41,6 +43,8 @@ wordlist:
       - weight
     level: "Intermediate"
     category: "Value"
+    azerbaijani: "Əhəmiyyət"
+    exampleAz: "Təhsilin əhəmiyyətini həddindən artıq vurğulamaq olmaz."
   - term: Include
     pronunciation: "/ɪnˈkluːd/"
     partOfSpeech: "verb"
@@ -52,6 +56,8 @@ wordlist:
       - involve
     level: "Intermediate"
     category: "Inclusion"
+    azerbaijani: "Daxil etmək"
+    exampleAz: "Paketə səhər yeməyi və şam yeməyi daxildir."
   - term: Increase
     pronunciation: "/ɪnˈkriːs/"
     partOfSpeech: "verb, noun"
@@ -63,6 +69,8 @@ wordlist:
       - expand
     level: "Intermediate"
     category: "Growth"
+    azerbaijani: "Artmaq"
+    exampleAz: "Bu il onlayn alış-verişdə artım olub."
   - term: Individual
     pronunciation: "/ˌɪndəˈvɪdʒuəl/"
     partOfSpeech: "adjective, noun"
@@ -74,6 +82,8 @@ wordlist:
       - separate
     level: "Intermediate"
     category: "Person"
+    azerbaijani: "Fərdi"
+    exampleAz: "Hər bir fərdin özünəməxsus istedad və bacarıqları var."
   - term: Industry
     pronunciation: "/ˈɪndəstri/"
     partOfSpeech: "noun"
@@ -85,6 +95,8 @@ wordlist:
       - field
     level: "Intermediate"
     category: "Business"
+    azerbaijani: "Sənaye"
+    exampleAz: "Texnologiya sənayesi bir çox yeni iş imkanları yaradıb."
   - term: Information
     pronunciation: "/ˌɪnfərˈmeɪʃən/"
     partOfSpeech: "noun"
@@ -96,6 +108,8 @@ wordlist:
       - details
     level: "Intermediate"
     category: "Knowledge"
+    azerbaijani: "Məlumat"
+    exampleAz: "İnternet çoxlu miqdarda məlumata çıxış imkanı verir."
   - term: Institution
     pronunciation: "/ˌɪnstəˈtuːʃən/"
     partOfSpeech: "noun"
@@ -107,6 +121,8 @@ wordlist:
       - foundation
     level: "Intermediate"
     category: "Organization"
+    azerbaijani: "İnstitut"
+    exampleAz: "Universitet nüfuzlu bir təhsil institutudur."
   - term: Involve
     pronunciation: "/ɪnˈvɑːlv/"
     partOfSpeech: "verb"
@@ -118,6 +134,8 @@ wordlist:
       - entail
     level: "Intermediate"
     category: "Participation"
+    azerbaijani: "Cəlb etmək"
+    exampleAz: "Layihə bir neçə şöbə arasında əməkdaşlığı cəlb edəcək."
   - term: Issue
     pronunciation: "/ˈɪʃuː/"
     partOfSpeech: "noun, verb"
@@ -129,6 +147,8 @@ wordlist:
       - concern
     level: "Intermediate"
     category: "Problem"
+    azerbaijani: "Məsələ"
+    exampleAz: "İqlim dəyişikliyi planetimizin qarşısında duran əsas məsələdir."
   - term: Knowledge
     pronunciation: "/ˈnɑːlɪdʒ/"
     partOfSpeech: "noun"
@@ -140,6 +160,8 @@ wordlist:
       - learning
     level: "Intermediate"
     category: "Learning"
+    azerbaijani: "Bilik"
+    exampleAz: "Onun kompüter bilikləri iş tapmasına kömək etdi."
 collection: vocabulary
 ---
 

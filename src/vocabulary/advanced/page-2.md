@@ -17,6 +17,8 @@ wordlist:
       - irregularity
     level: "Advanced"
     category: "Deviation"
+    azerbaijani: "Anomaliya"
+    exampleAz: "Bu vaxtda temperaturun qəfil düşməsi anomaliya idi."
   - term: Antithesis
     pronunciation: "/ænˈtɪθəsɪs/"
     partOfSpeech: "noun"
@@ -28,6 +30,8 @@ wordlist:
       - contradiction
     level: "Advanced"
     category: "Opposition"
+    azerbaijani: "Antitez"
+    exampleAz: "Onun rahat üslubu rəsmi iş geyiminin tam antitezi idi."
   - term: Apathy
     pronunciation: "/ˈæpəθi/"
     partOfSpeech: "noun"
@@ -39,6 +43,8 @@ wordlist:
       - disinterest
     level: "Advanced"
     category: "Emotion"
+    azerbaijani: "Laqeydlik"
+    exampleAz: "Seçkilərdə seçici laqeydliyi aşağı iştirak səviyyəsinə səbəb oldu."
   - term: Arbiter
     pronunciation: "/ˈɑːrbɪtər/"
     partOfSpeech: "noun"
@@ -50,6 +56,8 @@ wordlist:
       - referee
     level: "Advanced"
     category: "Authority"
+    azerbaijani: "Hakim"
+    exampleAz: "Hakim hüquqi mübahisədə son qərar verən şəxs idi."
   - term: Archaic
     pronunciation: "/ɑːrˈkeɪɪk/"
     partOfSpeech: "adjective"
@@ -61,6 +69,8 @@ wordlist:
       - outdated
     level: "Advanced"
     category: "Time"
+    azerbaijani: "Arxaik"
+    exampleAz: "'Thou' sözünün istifadəsi müasir İngilis dilində arxaikdir."
   - term: Articulate
     pronunciation: "/ɑːrˈtɪkjələt/"
     partOfSpeech: "adjective, verb"
@@ -72,6 +82,8 @@ wordlist:
       - coherent
     level: "Advanced"
     category: "Communication"
+    azerbaijani: "Aydın danışan"
+    exampleAz: "O, tədqiqat nəticələrini çox aydın şəkildə izah etdi."
   - term: Ascetic
     pronunciation: "/əˈsetɪk/"
     partOfSpeech: "adjective, noun"
@@ -83,6 +95,8 @@ wordlist:
       - abstemious
     level: "Advanced"
     category: "Lifestyle"
+    azerbaijani: "Asketik"
+    exampleAz: "Rahib monastırda asketik həyat tərzi sürürdü."
   - term: Assiduous
     pronunciation: "/əˈsɪdʒuəs/"
     partOfSpeech: "adjective" 
@@ -94,6 +108,8 @@ wordlist:
       - meticulous
     level: "Advanced"
     category: "Work Ethic"
+    azerbaijani: "Səylə çalışan"
+    exampleAz: "Onun səylə apardığı tədqiqat inqilabi kəşflərə səbəb oldu."
   - term: Astute
     pronunciation: "/əˈstut/"
     partOfSpeech: "adjective"
@@ -105,6 +121,8 @@ wordlist:
       - discerning
     level: "Advanced"
     category: "Intelligence"
+    azerbaijani: "Zəkalı"
+    exampleAz: "Onun zəkalı müşahidələri mürəkkəb problemi həll etməyə kömək etdi."
   - term: Audacious
     pronunciation: "/ɔːˈdeɪʃəs/"
     partOfSpeech: "adjective"
@@ -116,6 +134,8 @@ wordlist:
       - fearless
     level: "Advanced"
     category: "Courage"
+    azerbaijani: "Cəsarətli"
+    exampleAz: "Everestə oksigensiz qalxmaq cəsarətli bir plan idi."
   - term: Avarice
     pronunciation: "/ˈævərɪs/"
     partOfSpeech: "noun"
@@ -127,6 +147,8 @@ wordlist:
       - rapacity
     level: "Advanced"
     category: "Vice"
+    azerbaijani: "Tamahkarlıq"
+    exampleAz: "Onun tamahkarlığı nəticədə onun süqutuna səbəb oldu."
   - term: Aversion
     pronunciation: "/əˈvɜːrʒən/"
     partOfSpeech: "noun"
@@ -138,6 +160,8 @@ wordlist:
       - repugnance
     level: "Advanced"
     category: "Preference"
+    azerbaijani: "Nifrət"
+    exampleAz: "O, ictimai çıxışlara qarşı nifrət bəsləyirdi."
 collection: vocabulary
 ---
 

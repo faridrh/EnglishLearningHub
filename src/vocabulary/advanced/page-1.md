@@ -50,6 +50,8 @@ wordlist:
     partOfSpeech: "adjective"
     definition: "Angry and bitter; harsh or biting in sharpness."
     example: "The divorce proceedings became increasingly acrimonious."
+    azerbaijani: "Acı, kəskin"
+    exampleAz: "Boşanma prosesi getdikcə daha acı xarakter aldı."
     synonyms: 
       - bitter
       - hostile
@@ -61,6 +63,8 @@ wordlist:
     partOfSpeech: "adjective"
     definition: "Clever or skillful in using the hands or mind."
     example: "She was adroit at handling difficult negotiations."
+    azerbaijani: "Bacarıqlı, məharətli"
+    exampleAz: "O, çətin danışıqları aparmaqda məharətli idi."
     synonyms: 
       - skillful
       - dexterous
@@ -72,6 +76,8 @@ wordlist:
     partOfSpeech: "adjective, noun"
     definition: "Concerned with beauty or the appreciation of beauty."
     example: "The building's aesthetic appeal attracted many visitors."
+    azerbaijani: "Estetik"
+    exampleAz: "Binanın estetik görünüşü bir çox ziyarətçini cəlb etdi."
     synonyms: 
       - artistic
       - beautiful
@@ -83,6 +89,8 @@ wordlist:
     partOfSpeech: "adjective"
     definition: "Friendly, good-natured, or easy to talk to."
     example: "Despite his high position, he remained affable and approachable."
+    azerbaijani: "Xoşrəftar"
+    exampleAz: "Yüksək vəzifəsinə baxmayaraq, o, xoşrəftar və əlçatan olaraq qaldı."
     synonyms: 
       - amiable
       - genial
@@ -94,6 +102,8 @@ wordlist:
     partOfSpeech: "noun"
     definition: "Brisk and cheerful readiness."
     example: "She accepted the challenge with alacrity."
+    azerbaijani: "Çeviklik, hazırlıq"
+    exampleAz: "O, çağırışı böyük həvəslə qəbul etdi."
     synonyms: 
       - eagerness
       - enthusiasm
@@ -105,6 +115,8 @@ wordlist:
     partOfSpeech: "adjective"
     definition: "Showing a disinterested and selfless concern for the well-being of others."
     example: "Her altruistic nature led her to volunteer at the shelter every weekend."
+    azerbaijani: "Fədakar"
+    exampleAz: "Onun fədakar təbiəti onu hər həftə sonu sığınacaqda könüllü işləməyə yönəltdi."
     synonyms: 
       - unselfish
       - charitable
@@ -116,6 +128,8 @@ wordlist:
     partOfSpeech: "verb"
     definition: "To make something bad or unsatisfactory better."
     example: "The new policies were designed to ameliorate working conditions."
+    azerbaijani: "Yaxşılaşdırmaq"
+    exampleAz: "Yeni siyasətlər iş şəraitini yaxşılaşdırmaq üçün hazırlanmışdı."
     synonyms: 
       - improve
       - enhance
@@ -127,6 +141,8 @@ wordlist:
     partOfSpeech: "adjective"
     definition: "Comparable in certain respects, typically in a way that makes clearer the nature of the things compared."
     example: "The heart is analogous to a pump in the way it circulates blood."
+    azerbaijani: "Oxşar, bənzər"
+    exampleAz: "Ürək qanı dövr etdirmək baxımından nasosa bənzərdir."
     synonyms: 
       - similar
       - comparable
@@ -138,6 +154,8 @@ wordlist:
     partOfSpeech: "noun"
     definition: "Something or someone that one vehemently dislikes."
     example: "The idea of censorship was anathema to the journalist."
+    azerbaijani: "Nifrət edilən şey"
+    exampleAz: "Senzura ideyası jurnalist üçün nifrət edilən bir şey idi."
     synonyms: 
       - abomination
       - curse

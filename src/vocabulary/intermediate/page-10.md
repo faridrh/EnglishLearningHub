@@ -30,6 +30,8 @@ wordlist:
       - background
     level: "Intermediate"
     category: "Knowledge"
+    azerbaijani: "Təcrübə"
+    exampleAz: "Onun marketinqdə beş illik təcrübəsi var."
   - term: Explain
     pronunciation: "/ɪkˈspleɪn/"
     partOfSpeech: "verb"
@@ -41,6 +43,8 @@ wordlist:
       - interpret
     level: "Intermediate"
     category: "Communication"
+    azerbaijani: "İzah etmək"
+    exampleAz: "Müəllim yeni qrammatika qaydalarını izah edəcək."
   - term: Express
     pronunciation: "/ɪkˈspres/"
     partOfSpeech: "verb"

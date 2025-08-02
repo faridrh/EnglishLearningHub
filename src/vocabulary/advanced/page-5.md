@@ -1,4 +1,4 @@
----
+--- 
 layout: layouts/vocabulary.njk
 title: Advanced Vocabulary - Page 5
 description: Advanced vocabulary for fluent English communication - Page 5 of 12
@@ -17,6 +17,8 @@ wordlist:
       - criticize
     level: "Advanced"
     category: "Criticism"
+    azerbaijani: "Tənqid etmək, bəyənməmək"
+    exampleAz: "Tənqidçi rəssamın son işini orijinal olmadığı üçün bəyənmədi."
   - term: Desiccated
     pronunciation: "/ˈdesɪkeɪtɪd/"
     partOfSpeech: "adjective"
@@ -28,6 +30,8 @@ wordlist:
       - parched
     level: "Advanced"
     category: "Physical State"
+    azerbaijani: "Qurumuş"
+    exampleAz: "Qurumuş landşaft güclü quraqlığın təsirini göstərirdi."
   - term: Despot
     pronunciation: "/ˈdespɑːt/"
     partOfSpeech: "noun"
@@ -39,6 +43,8 @@ wordlist:
       - autocrat
     level: "Advanced"
     category: "Authority"
+    azerbaijani: "Despot, zalım"
+    exampleAz: "Despot bütün müxalifəti boğaraq dəmir yumruqla hakimiyyət sürdü."
   - term: Diabolical
     pronunciation: "/ˌdaɪəˈbɑːlɪkəl/"
     partOfSpeech: "adjective"
@@ -50,6 +56,8 @@ wordlist:
       - fiendish
     level: "Advanced"
     category: "Evil"
+    azerbaijani: "Şeytani, çox pis"
+    exampleAz: "Pis adamın şeytani planı az qala uğur qazanacaqdı."
   - term: Didactic
     pronunciation: "/daɪˈdæktɪk/"
     partOfSpeech: "adjective"
@@ -61,6 +69,8 @@ wordlist:
       - moralistic
     level: "Advanced"
     category: "Teaching"
+    azerbaijani: "Öyrədici"
+    exampleAz: "Roman əyləndirici olmaqdan çox öyrədici olduğu üçün tənqid olundu."
   - term: Dilettante
     pronunciation: "/ˈdɪləˌtænt/"
     partOfSpeech: "noun"
@@ -72,6 +82,8 @@ wordlist:
       - superficial enthusiast
     level: "Advanced"
     category: "Expertise"
+    azerbaijani: "Həvəskar"
+    exampleAz: "O, ciddi bədii təhsili olmadığı üçün həvəskar hesab edildi."
   - term: Discordant
     pronunciation: "/dɪsˈkɔːrdənt/"
     partOfSpeech: "adjective"
@@ -83,6 +95,8 @@ wordlist:
       - jarring
     level: "Advanced"
     category: "Harmony"
+    azerbaijani: "Uyğunsuz, ahəngsiz"
+    exampleAz: "Xorun uyğunsuz səsləri çıxışı korladı."
   - term: Disparate
     pronunciation: "/ˈdɪspərət/"
     partOfSpeech: "adjective"
@@ -94,6 +108,8 @@ wordlist:
       - unrelated
     level: "Advanced"
     category: "Difference"
+    azerbaijani: "Fərqli, əlaqəsiz"
+    exampleAz: "Komitə maraqları zidd olan fərqli qruplardan ibarət idi."
   - term: Dogmatic
     pronunciation: "/dɔːɡˈmætɪk/"
     partOfSpeech: "adjective"
@@ -105,6 +121,8 @@ wordlist:
       - doctrinaire
     level: "Advanced"
     category: "Attitude"
+    azerbaijani: "Dogmatik, sərt"
+    exampleAz: "Onun dogmatik tədris yanaşması tələbə suallarına yer qoymurdu."
   - term: Dubious
     pronunciation: "/ˈdubiəs/"
     partOfSpeech: "adjective"
@@ -116,6 +134,8 @@ wordlist:
       - suspicious
     level: "Advanced"
     category: "Certainty"
+    azerbaijani: "Şübhəli"
+    exampleAz: "Tədqiqat nəticələri şübhəli metodologiyaya əsaslanırdı."
   - term: Ebullient
     pronunciation: "/ɪˈbʌljənt/"
     partOfSpeech: "adjective"
@@ -127,6 +147,8 @@ wordlist:
       - vivacious
     level: "Advanced"
     category: "Emotion"
+    azerbaijani: "Coşqulu, şən"
+    exampleAz: "Onun coşqulu xarakteri onu sosial tədbirlərdə məşhur etdi."
   - term: Eclectic
     pronunciation: "/ɪˈklektɪk/"
     partOfSpeech: "adjective"
@@ -138,6 +160,8 @@ wordlist:
       - wide-ranging
     level: "Advanced"
     category: "Variety"
+    azerbaijani: "Ekletik, müxtəlif"
+    exampleAz: "Onun ekletik musiqi kolleksiyasında klassikdən hip-hopa qədər hər şey var idi."
 collection: vocabulary
 ---
 

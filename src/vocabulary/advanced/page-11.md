@@ -17,6 +17,9 @@ wordlist:
       - flashy
     level: "Advanced"
     category: "Display"
+    azerbaijani: "Təmtəraqlı"
+    exampleAz: "Onun sərvətini nümayiş etdirməsi başqalarını narahat etdi."
+
   - term: Paragon
     pronunciation: "/ˈpærəɡɑːn/"
     partOfSpeech: "noun"
@@ -28,6 +31,9 @@ wordlist:
       - ideal
     level: "Advanced"
     category: "Perfection"
+    azerbaijani: "Nümunə"
+    exampleAz: "O, əxlaq və dürüstlüyün nümunəsi hesab olunurdu."
+
   - term: Paucity
     pronunciation: "/ˈpɔːsəti/"
     partOfSpeech: "noun"
@@ -39,6 +45,9 @@ wordlist:
       - lack
     level: "Advanced"
     category: "Quantity"
+    azerbaijani: "Azlıq, çatışmazlıq"
+    exampleAz: "Sübutların azlığı nəticəyə gəlməyi çətinləşdirdi."
+
   - term: Pejorative
     pronunciation: "/pɪˈdʒɔːrətɪv/"
     partOfSpeech: "adjective, noun"
@@ -50,6 +59,9 @@ wordlist:
       - negative
     level: "Advanced"
     category: "Language"
+    azerbaijani: "Alçaldıcı"
+    exampleAz: "Bu termin qarşı fikirləri rədd etmək üçün alçaldıcı söz kimi istifadə olunurdu."
+
   - term: Perfunctory
     pronunciation: "/pərˈfʌŋktəri/"
     partOfSpeech: "adjective"
@@ -61,6 +73,9 @@ wordlist:
       - mechanical
     level: "Advanced"
     category: "Effort"
+    azerbaijani: "Səthi"
+    exampleAz: "Onun səthi üzrxahlığı həqiqətən peşman olmadığını göstərdi."
+
   - term: Perspicacious
     pronunciation: "/ˌpɜːrspɪˈkeɪʃəs/"
     partOfSpeech: "adjective"
@@ -72,6 +87,9 @@ wordlist:
       - astute
     level: "Advanced"
     category: "Intelligence"
+    azerbaijani: "Dərin düşüncəli"
+    exampleAz: "Onun dərin düşüncəli təhlili plandakı çatışmazlıqları üzə çıxardı."
+
   - term: Petulant
     pronunciation: "/ˈpetʃələnt/"
     partOfSpeech: "adjective"
@@ -83,6 +101,9 @@ wordlist:
       - sulky
     level: "Advanced"
     category: "Temperament"
+    azerbaijani: "Hirslənən"
+    exampleAz: "Onun tənqidə qarşı hirslənən cavabı qeyri-peşəkar idi."
+
   - term: Philanthropist
     pronunciation: "/fɪˈlænθrəpɪst/"
     partOfSpeech: "noun"
@@ -94,6 +115,9 @@ wordlist:
       - humanitarian
     level: "Advanced"
     category: "Generosity"
+    azerbaijani: "Xeyriyyəçi"
+    exampleAz: "Xeyriyyəçi təhsil məqsədləri üçün milyonlarla pul ianə etdi."
+
   - term: Placate
     pronunciation: "/ˈpleɪkeɪt/"
     partOfSpeech: "verb"
@@ -105,7 +129,10 @@ wordlist:
       - calm
     level: "Advanced"
     category: "Peace"
-  - term: Plethhora
+    azerbaijani: "Sakitləşdirmək"
+    exampleAz: "O, qəzəbli müştərini tam geri ödəmə ilə sakitləşdirməyə çalışdı."
+
+  - term: Plethora
     pronunciation: "/ˈpleθərə/"
     partOfSpeech: "noun"
     definition: "A large or excessive amount of something."
@@ -116,6 +143,9 @@ wordlist:
       - profusion
     level: "Advanced"
     category: "Quantity"
+    azerbaijani: "Bolluq"
+    exampleAz: "Bazar üzvi məhsulların bolluğunu təklif edirdi."
+
   - term: Pragmatic
     pronunciation: "/præɡˈmætɪk/"
     partOfSpeech: "adjective"
@@ -127,6 +157,9 @@ wordlist:
       - sensible
     level: "Advanced"
     category: "Approach"
+    azerbaijani: "Praqmatik"
+    exampleAz: "Onun problemləri həll etməkdə praqmatik yanaşması hamını təsirləndirdi."
+
   - term: Precocious
     pronunciation: "/prɪˈkoʊʃəs/"
     partOfSpeech: "adjective"
@@ -138,6 +171,8 @@ wordlist:
       - mature
     level: "Advanced"
     category: "Development"
+    azerbaijani: "Erkən inkişaf etmiş"
+    exampleAz: "Erkən inkişaf etmiş uşaq beş yaşında romanlar oxuyurdu."
 collection: vocabulary
 ---
 

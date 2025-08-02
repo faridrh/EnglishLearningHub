@@ -17,6 +17,8 @@ wordlist:
       - scrupulous
     level: "Advanced"
     category: "Precision"
+    azerbaijani: "Həssas, diqqətli"
+    exampleAz: "O, laboratoriya avadanlığını təmiz saxlamaqda çox diqqətli idi."
   - term: Fatuous
     pronunciation: "/ˈfætʃuəs/"
     partOfSpeech: "adjective"
@@ -28,6 +30,8 @@ wordlist:
       - inane
     level: "Advanced"
     category: "Intelligence"
+    azerbaijani: "Axmaq"
+    exampleAz: "Onun ciddi müzakirə zamanı axmaq şərhləri yersiz idi."
   - term: Fecund
     pronunciation: "/ˈfekənd/"
     partOfSpeech: "adjective"
@@ -39,6 +43,8 @@ wordlist:
       - prolific
     level: "Advanced"
     category: "Productivity"
+    azerbaijani: "Bərəkətli"
+    exampleAz: "Müəllifin bərəkətli təsəvvürü onlarla roman yaratdı."
   - term: Felicitous
     pronunciation: "/fəˈlɪsɪtəs/"
     partOfSpeech: "adjective"
@@ -50,6 +56,8 @@ wordlist:
       - fitting
     level: "Advanced"
     category: "Appropriateness"
+    azerbaijani: "Təbrikəlayiq"
+    exampleAz: "Onun sözlərin təbrikəlayiq seçimi əhvalatı mükəmməl şəkildə əks etdirdi."
   - term: Flagrant
     pronunciation: "/ˈfleɪɡrənt/"
     partOfSpeech: "adjective"
@@ -61,6 +69,8 @@ wordlist:
       - glaring
     level: "Advanced"
     category: "Obviousness"
+    azerbaijani: "Aşkar, gözə çarpan"
+    exampleAz: "Hakimin ev sahibi komandaya qarşı aşkar qərəzi hamıya bəlli idi."
   - term: Garrulous
     pronunciation: "/ˈɡærələs/"
     partOfSpeech: "adjective"
@@ -72,6 +82,8 @@ wordlist:
       - chatty
     level: "Advanced"
     category: "Communication"
+    azerbaijani: "Çənəboz, çox danışan"
+    exampleAz: "Çox danışan sərnişin bütün uçuş zamanı dayanmadan danışdı."
   - term: Gratuitous
     pronunciation: "/ɡrəˈtuɪtəs/"
     partOfSpeech: "adjective"
@@ -83,6 +95,8 @@ wordlist:
       - excessive
     level: "Advanced"
     category: "Necessity"
+    azerbaijani: "Lazımsız, yersiz"
+    exampleAz: "Filmin lazımsız zorakılığı hekayənin keyfiyyətini aşağı saldı."
   - term: Gregarious
     pronunciation: "/ɡrɪˈɡeriəs/"
     partOfSpeech: "adjective"
@@ -94,6 +108,8 @@ wordlist:
       - friendly
     level: "Advanced"
     category: "Personality"
+    azerbaijani: "Sosial, ünsiyyətcil"
+    exampleAz: "Onun sosial təbiəti onu partiyalarda populyar etdi."
   - term: Hackneyed
     pronunciation: "/ˈhæknid/"
     partOfSpeech: "adjective"
@@ -105,6 +121,8 @@ wordlist:
       - overused
     level: "Advanced"
     category: "Originality"
+    azerbaijani: "Köhnəlmiş, istifadə olunmuş"
+    exampleAz: "Nitq köhnəlmiş ifadələr və klişelərlə dolu idi."
   - term: Hegemony
     pronunciation: "/hɪˈɡemoʊni/"
     partOfSpeech: "noun"
@@ -116,6 +134,8 @@ wordlist:
       - control
     level: "Advanced"
     category: "Power"
+    azerbaijani: "Hegemonluq, hökmranlıq"
+    exampleAz: "İmperatorluq bütün bölgəyə hegemonluq qurdu."
   - term: Hyperbole
     pronunciation: "/haɪˈpɜːrbəli/"
     partOfSpeech: "noun"
@@ -127,6 +147,8 @@ wordlist:
       - embellishment
     level: "Advanced"
     category: "Language"
+    azerbaijani: "Abartma, mübaliğə"
+    exampleAz: "O, at yeyə biləcəyini dedikdə, bu açıq-aşkar bir mübaliğə idi."
   - term: Iconoclast
     pronunciation: "/aɪˈkɑːnəklæst/"
     partOfSpeech: "noun"
@@ -138,6 +160,8 @@ wordlist:
       - dissenter
     level: "Advanced"
     category: "Rebellion"
+    azerbaijani: "İkonoklast, simvola qarşı çıxan"
+    exampleAz: "Bir ikonoklast olaraq, o, bir çox ənənəvi fərziyyələri sual altına aldı."
 collection: vocabulary
 ---
 

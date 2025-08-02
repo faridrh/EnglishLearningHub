@@ -17,6 +17,8 @@ wordlist:
       - fundamental
     level: "Advanced"
     category: "Nature"
+    azerbaijani: "Daxili, təbii"
+    exampleAz: "Təhsilin daxili dəyəri maddi faydalardan daha çoxdur."
   - term: Invective
     pronunciation: "/ɪnˈvektɪv/"
     partOfSpeech: "noun"
@@ -28,6 +30,8 @@ wordlist:
       - denunciation
     level: "Advanced"
     category: "Criticism"
+    azerbaijani: "Təhqiramiz"
+    exampleAz: "Siyasətçinin nitqi rəqiblərinə qarşı təhqiramiz sözlərlə dolu idi."
   - term: Irascible
     pronunciation: "/ɪˈræsəbəl/"
     partOfSpeech: "adjective"
@@ -39,6 +43,8 @@ wordlist:
       - cantankerous
     level: "Advanced"
     category: "Temperament"
+    azerbaijani: "Hirsli, əsəbi"
+    exampleAz: "Əsəbi qoca həyətində oynayan uşaqlara qışqırırdı."
   - term: Jocular
     pronunciation: "/ˈdʒɑːkjələr/"
     partOfSpeech: "adjective"

@@ -17,6 +17,8 @@ wordlist:
       - clairvoyant
     level: "Advanced"
     category: "Foresight"
+    azerbaijani: "Öncədən bilən"
+    exampleAz: "Onun bazar çökməsi ilə bağlı öncədən verdiyi xəbərdarlıqlar doğru çıxdı."
   - term: Pretentious
     pronunciation: "/prɪˈtenʃəs/"
     partOfSpeech: "adjective"
@@ -28,6 +30,8 @@ wordlist:
       - ostentatious
     level: "Advanced"
     category: "Attitude"
+    azerbaijani: "Özünü bəyənmiş"
+    exampleAz: "Özünü bəyənmiş incəsənət tənqidçisi lazımsız dərəcədə mürəkkəb dil işlətdi."
   - term: Procrastinate
     pronunciation: "/proʊˈkræstəneɪt/"
     partOfSpeech: "verb"
@@ -39,6 +43,8 @@ wordlist:
       - defer
     level: "Advanced"
     category: "Time Management"
+    azerbaijani: "Təxirə salmaq"
+    exampleAz: "Tələbələr çətin tapşırıqlarla qarşılaşanda tez-tez işi təxirə salırlar."
   - term: Profligate
     pronunciation: "/ˈprɑːflɪɡət/"
     partOfSpeech: "adjective, noun"
@@ -50,6 +56,8 @@ wordlist:
       - spendthrift
     level: "Advanced"
     category: "Spending"
+    azerbaijani: "İsrafçı"
+    exampleAz: "Onun israfçı xərcləmə vərdişləri maliyyə fəlakətinə səbəb oldu."
   - term: Propitious
     pronunciation: "/prəˈpɪʃəs/"
     partOfSpeech: "adjective"
@@ -61,6 +69,8 @@ wordlist:
       - promising
     level: "Advanced"
     category: "Fortune"
+    azerbaijani: "Əlverişli"
+    exampleAz: "Günəşli hava onların açıq hava toyları üçün əlverişli idi."
   - term: Quintessential
     pronunciation: "/ˌkwɪntəˈsenʃəl/"
     partOfSpeech: "adjective"
@@ -72,6 +82,8 @@ wordlist:
       - perfect
     level: "Advanced"
     category: "Perfection"
+    azerbaijani: "Tipik, nümunəvi"
+    exampleAz: "O, həmişə nəzakətli və diqqətli olan nümunəvi bir centlmen idi."
   - term: Recalcitrant
     pronunciation: "/rɪˈkælsɪtrənt/"
     partOfSpeech: "adjective"
@@ -83,6 +95,8 @@ wordlist:
       - unruly
     level: "Advanced"
     category: "Behavior"
+    azerbaijani: "İnadkar, itaətsiz"
+    exampleAz: "İnadkar tələbə sinif qaydalarına əməl etməkdən imtina etdi."
   - term: Reclusive
     pronunciation: "/rɪˈklusɪv/"
     partOfSpeech: "adjective"
@@ -94,6 +108,8 @@ wordlist:
       - withdrawn
     level: "Advanced"
     category: "Social Behavior"
+    azerbaijani: "Təcrid olunmuş, tənha"
+    exampleAz: "Təcrid olunmuş yazıçı nadir hallarda müsahibə verirdi və ictimaiyyət qarşısına çıxırdı."
   - term: Sagacious
     pronunciation: "/səˈɡeɪʃəs/"
     partOfSpeech: "adjective"
@@ -105,6 +121,8 @@ wordlist:
       - astute
     level: "Advanced"
     category: "Wisdom"
+    azerbaijani: "Müdrik"
+    exampleAz: "Müdrik məsləhətçi mürəkkəb danışıqlarda kömək etdi."
   - term: Sanguine
     pronunciation: "/ˈsæŋɡwɪn/"
     partOfSpeech: "adjective"
@@ -116,6 +134,8 @@ wordlist:
       - confident
     level: "Advanced"
     category: "Attitude"
+    azerbaijani: "Nikbin"
+    exampleAz: "Çətinliklərə baxmayaraq, o, layihənin uğuruna nikbin yanaşdı."
   - term: Ubiquitous
     pronunciation: "/juˈbɪkwətəs/"
     partOfSpeech: "adjective"
@@ -127,6 +147,8 @@ wordlist:
       - widespread
     level: "Advanced"
     category: "Presence"
+    azerbaijani: "Hər yerdə olan"
+    exampleAz: "Ağıllı telefonlar müasir cəmiyyətdə hər yerdə yayılıb."
   - term: Zealous
     pronunciation: "/ˈzeləs/"
     partOfSpeech: "adjective"
@@ -138,6 +160,8 @@ wordlist:
       - fervent
     level: "Advanced"
     category: "Enthusiasm"
+    azerbaijani: "Həvəsli, coşqulu"
+    exampleAz: "Həvəsli fəal ətraf mühitin qorunması üçün yorulmadan kampaniya apardı."
 collection: vocabulary
 ---
 

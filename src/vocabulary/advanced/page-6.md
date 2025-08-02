@@ -17,6 +17,8 @@ wordlist:
       - potent
     level: "Advanced"
     category: "Effectiveness"
+    azerbaijani: "Təsirli"
+    exampleAz: "Yeni müalicə üsulu simptomları azaltmaqda təsirli oldu."
   - term: Egregious
     pronunciation: "/ɪˈɡriːdʒəs/"
     partOfSpeech: "adjective"
@@ -28,6 +30,9 @@ wordlist:
       - appalling
     level: "Advanced"
     category: "Quality"
+    azerbaijani: "Həddindən artıq pis"
+    exampleAz: "Şirkətin təhlükəsizlik qaydalarını həddindən artıq pozması ağır cərimələrə səbəb oldu."
+
   - term: Elusive
     pronunciation: "/ɪˈlusɪv/"
     partOfSpeech: "adjective"
@@ -39,6 +44,8 @@ wordlist:
       - fleeting
     level: "Advanced"
     category: "Difficulty"
+    azerbaijani: "Çətin tapılan"
+    exampleAz: "Saatlarla araşdırmaya baxmayaraq problemin həlli çətin tapılan olaraq qaldı."
   - term: Empirical
     pronunciation: "/ɪmˈpɪrɪkəl/"
     partOfSpeech: "adjective"
