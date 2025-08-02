@@ -13,6 +13,8 @@ wordlist:
     example: "I am happy to see you."
     level: "Beginner"
     category: "Emotions"
+    azerbaijani: "Şad/xoşbəxt"
+    exampleAz: "Səni gördüyümə şadam."
   - term: Sad
     pronunciation: "/sæd/"
     partOfSpeech: "adjective"
@@ -20,6 +22,8 @@ wordlist:
     example: "She feels sad about the news."
     level: "Beginner"
     category: "Emotions"
+    azerbaijani: "Kədərli"
+    exampleAz: "O, xəbərlərdən kədərlənir."
   - term: Big
     pronunciation: "/bɪɡ/"
     partOfSpeech: "adjective"
@@ -27,6 +31,8 @@ wordlist:
     example: "That's a very big house."
     level: "Beginner"
     category: "Descriptions"
+    azerbaijani: "Böyük"
+    exampleAz: "Bu çox böyük bir evdir."
   - term: Small
     pronunciation: "/smɔːl/"
     partOfSpeech: "adjective"
@@ -34,6 +40,8 @@ wordlist:
     example: "I live in a small apartment."
     level: "Beginner"
     category: "Descriptions"
+    azerbaijani: "Kiçik"
+    exampleAz: "Mən kiçik bir mənzildə yaşayıram."
   - term: Good
     pronunciation: "/ɡʊd/"
     partOfSpeech: "adjective"
@@ -41,6 +49,8 @@ wordlist:
     example: "This is a good book."
     level: "Beginner"
     category: "Descriptions"
+    azerbaijani: "Yaxşı"
+    exampleAz: "Bu yaxşı bir kitabdır."
   - term: Bad
     pronunciation: "/bæd/"
     partOfSpeech: "adjective"
@@ -48,6 +58,8 @@ wordlist:
     example: "The weather is bad today."
     level: "Beginner"
     category: "Descriptions"
+    azerbaijani: "Pis"
+    exampleAz: "Bu gün hava pisdır."
   - term: Hot
     pronunciation: "/hɑːt/"
     partOfSpeech: "adjective"
@@ -55,6 +67,8 @@ wordlist:
     example: "The coffee is too hot to drink."
     level: "Beginner"
     category: "Temperature"
+    azerbaijani: "İsti"
+    exampleAz: "Qəhvə içmək üçün çox istidir."
   - term: Cold
     pronunciation: "/koʊld/"
     partOfSpeech: "adjective"
@@ -62,6 +76,8 @@ wordlist:
     example: "It's cold outside today."
     level: "Beginner"
     category: "Temperature"
+    azerbaijani: "Soyuq"
+    exampleAz: "Bu gün çöldə soyuqdur."
   - term: Cat
     pronunciation: "/kæt/"
     partOfSpeech: "noun"
@@ -69,6 +85,8 @@ wordlist:
     example: "My cat likes to sleep in the sun."
     level: "Beginner"
     category: "Animals"
+    azerbaijani: "Pişik"
+    exampleAz: "Mənim pişiyim günəşdə yatmağı sevir."
   - term: Dog
     pronunciation: "/dɔːɡ/"
     partOfSpeech: "noun"
@@ -76,6 +94,8 @@ wordlist:
     example: "The dog is playing in the garden."
     level: "Beginner"
     category: "Animals"
+    azerbaijani: "İt"
+    exampleAz: "İt bağda oynayır."
   - term: Car
     pronunciation: "/kɑːr/"
     partOfSpeech: "noun"
@@ -83,6 +103,8 @@ wordlist:
     example: "I drive my car to work."
     level: "Beginner"
     category: "Transportation"
+    azerbaijani: "Avtomobil"
+    exampleAz: "Mən avtomobilimlə işə gedirəm."
   - term: Bus
     pronunciation: "/bʌs/"
     partOfSpeech: "noun"
@@ -90,6 +112,8 @@ wordlist:
     example: "I take the bus to school."
     level: "Beginner"
     category: "Transportation"
+    azerbaijani: "Avtobus"
+    exampleAz: "Mən məktəbə avtobusla gedirəm."
 collection: vocabulary
 ---
 

@@ -13,6 +13,8 @@ wordlist:
     example: "I'm reading an interesting book."
     level: "Beginner"
     category: "Objects"
+    azerbaijani: "Kitab"
+    exampleAz: "Mən maraqlı bir kitab oxuyuram."
   - term: Phone
     pronunciation: "/foʊn/"
     partOfSpeech: "noun"
@@ -20,6 +22,8 @@ wordlist:
     example: "My phone is ringing."
     level: "Beginner"
     category: "Technology"
+    azerbaijani: "Telefon"
+    exampleAz: "Mənim telefonum zəng çalır."
   - term: Computer
     pronunciation: "/kəmˈpjuːtər/"
     partOfSpeech: "noun"
@@ -27,6 +31,8 @@ wordlist:
     example: "I use my computer for work."
     level: "Beginner"
     category: "Technology"
+    azerbaijani: "Kompüter"
+    exampleAz: "Mən iş üçün kompüterimdən istifadə edirəm."
   - term: Money
     pronunciation: "/ˈmʌni/"
     partOfSpeech: "noun"
@@ -34,6 +40,8 @@ wordlist:
     example: "I need money to buy groceries."
     level: "Beginner"
     category: "Finance"
+    azerbaijani: "Pul"
+    exampleAz: "Ərzaq almaq üçün pula ehtiyacım var."
   - term: Work
     pronunciation: "/wɜːrk/"
     partOfSpeech: "noun, verb"
@@ -41,6 +49,8 @@ wordlist:
     example: "I work in an office."
     level: "Beginner"
     category: "Activities"
+    azerbaijani: "İş"
+    exampleAz: "Mən ofisdə işləyirəm."
   - term: Sleep
     pronunciation: "/sliːp/"
     partOfSpeech: "noun, verb"
@@ -48,6 +58,8 @@ wordlist:
     example: "I need eight hours of sleep."
     level: "Beginner"
     category: "Activities"
+    azerbaijani: "Yuxu"
+    exampleAz: "Mənə səkkiz saat yuxu lazımdır."
   - term: Eat
     pronunciation: "/iːt/"
     partOfSpeech: "verb"
@@ -55,6 +67,8 @@ wordlist:
     example: "I eat breakfast every morning."
     level: "Beginner"
     category: "Activities"
+    azerbaijani: "Yemək"
+    exampleAz: "Mən hər səhər səhər yeməyi yeyirəm."
   - term: Drink
     pronunciation: "/drɪŋk/"
     partOfSpeech: "verb"
@@ -62,6 +76,8 @@ wordlist:
     example: "I drink coffee in the morning."
     level: "Beginner"
     category: "Activities"
+    azerbaijani: "İçmək"
+    exampleAz: "Mən səhərlər qəhvə içirəm."
   - term: Walk
     pronunciation: "/wɔːk/"
     partOfSpeech: "verb"
@@ -69,6 +85,8 @@ wordlist:
     example: "I walk to the park every day."
     level: "Beginner"
     category: "Activities"
+    azerbaijani: "Gəzmək"
+    exampleAz: "Mən hər gün parka gəzirəm."
   - term: Run
     pronunciation: "/rʌn/"
     partOfSpeech: "verb"
@@ -76,6 +94,8 @@ wordlist:
     example: "I run in the morning for exercise."
     level: "Beginner"
     category: "Activities"
+    azerbaijani: "Qaçmaq"
+    exampleAz: "Mən səhərlər idman üçün qaçıram."
   - term: Read
     pronunciation: "/riːd/"
     partOfSpeech: "verb"
@@ -83,6 +103,8 @@ wordlist:
     example: "I read the newspaper every day."
     level: "Beginner"
     category: "Activities"
+    azerbaijani: "Oxumaq"
+    exampleAz: "Mən hər gün qəzet oxuyuram."
   - term: Write
     pronunciation: "/raɪt/"
     partOfSpeech: "verb"
@@ -90,6 +112,8 @@ wordlist:
     example: "I write in my diary every night."
     level: "Beginner"
     category: "Activities"
+    azerbaijani: "Yazmaq"
+    exampleAz: "Mən hər gecə gündəliyimə yazıram."
 collection: vocabulary
 ---
 

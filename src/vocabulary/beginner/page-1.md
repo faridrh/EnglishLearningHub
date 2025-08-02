@@ -83,6 +83,8 @@ wordlist:
     partOfSpeech: "noun"
     definition: "A building where people live."
     example: "My house has three bedrooms."
+    azerbaijani: "ev"
+    exampleAz: "Mənim evimin üç yataq otağı var."
     level: "Beginner"
     category: "Places"
   - term: School
@@ -90,6 +92,8 @@ wordlist:
     partOfSpeech: "noun"
     definition: "A place where children learn."
     example: "I go to school every morning."
+    azerbaijani: "məktəb"
+    exampleAz: "Mən hər səhər məktəbə gedirəm."
     level: "Beginner"
     category: "Places"
   - term: Family
@@ -97,6 +101,8 @@ wordlist:
     partOfSpeech: "noun"
     definition: "Parents and their children."
     example: "I love my family very much."
+    azerbaijani: "aile"
+    exampleAz: "Mən ailəmi çox sevirəm."
     level: "Beginner"
     category: "Relationships"
   - term: Friend
@@ -108,6 +114,8 @@ wordlist:
       - companion
       - buddy
       - pal
+    azerbaijani: "dost"
+    exampleAz: "O, mənim ən yaxşı dostumdur."
     level: "Beginner"
     category: "Relationships"
 collection: vocabulary
