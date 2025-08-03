@@ -25,7 +25,16 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 
 ## Recent Major Developments
 
-### Complete Related Materials Integration (Latest Update)
+### Little Red Riding Hood Story Addition (Latest Update - January 2025)
+- **New Intermediate Story**: Added "Little Red Riding Hood" classic fairy tale to intermediate stories collection
+- **Text Highlighting System**: Applied vocabulary highlighting with Azerbaijani translation tooltips throughout the story
+- **SEO-Optimized Content**: Included comprehensive alt text for story image and structured metadata
+- **Educational Integration**: Connected story with relevant grammar topics, vocabulary pages, and similar stories through "Related Learning Materials" section
+- **Cultural Context**: Added cultural notes explaining the story's significance and moral lessons
+- **Interactive Elements**: Included comprehension questions, discussion points, and vocabulary practice sections
+- **Professional Layout**: Consistent with existing intermediate story format including reading time, word count, and structured navigation
+
+### Complete Related Materials Integration (Previous Update)
 - **Comprehensive Linking System**: Added "Related Learning Materials" sections to ALL intermediate and advanced grammar topics
 - **Exercise Page Integration**: Each grammar topic now includes direct links to its dedicated exercise page (e.g., `/grammar/intermediate/past-perfect-exercises/`)
 - **Cross-Content Connections**: Vocabulary pages, stories, and related grammar topics are interconnected for comprehensive learning paths
