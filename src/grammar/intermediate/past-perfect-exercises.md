@@ -62,6 +62,56 @@ Complete each sentence using the past perfect tense. Remember:
   </div>
 </div>
 
+## Exercise 2: Complete the Sentences
+
+Choose the correct past perfect form to complete each sentence. Pay attention to the time sequence of events.
+
+<div class="interactive-exercise" id="past-perfect-exercise-2" data-exercise-id="past-perfect-intermediate-2">
+  <div class="exercise-item">
+    <p><strong>1.</strong> By the time the train arrived, we <input type="text" class="fill-blank" data-answer="had eaten" placeholder="______"> already <input type="text" class="fill-blank" data-answer="eaten" placeholder="______"> our breakfast.</p>
+    <div class="explanation" style="display: none;">
+      <p><strong>Correct Answer:</strong> had eaten</p>
+      <p><strong>Explanation:</strong> The past perfect tense is used to describe an action that was completed before another action in the past. Here, 'had eaten' is correct because the breakfast was finished before the train arrived.</p>
+    </div>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>2.</strong> She <input type="text" class="fill-blank" data-answer="had" placeholder="______"> already <input type="text" class="fill-blank" data-answer="read" placeholder="______"> the book before the teacher assigned it.</p>
+    <div class="explanation" style="display: none;">
+      <p><strong>Correct Answer:</strong> had read</p>
+      <p><strong>Explanation:</strong> The past perfect tense 'had read' is used to indicate that the action of reading the book was completed before the teacher assigned it.</p>
+    </div>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>3.</strong> They <input type="text" class="fill-blank" data-answer="had" placeholder="______"> not <input type="text" class="fill-blank" data-answer="done" placeholder="______"> the homework before the class started.</p>
+    <div class="explanation" style="display: none;">
+      <p><strong>Correct Answer:</strong> had done</p>
+      <p><strong>Explanation:</strong> The past perfect tense 'had done' is correct because it shows that the homework was not completed before the class started.</p>
+    </div>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>4.</strong> We <input type="text" class="fill-blank" data-answer="had" placeholder="______"> already <input type="text" class="fill-blank" data-answer="seen" placeholder="______"> the movie when they invited us to watch it.</p>
+    <div class="explanation" style="display: none;">
+      <p><strong>Correct Answer:</strong> had seen</p>
+      <p><strong>Explanation:</strong> The past perfect tense 'had seen' is used to indicate that the action of watching the movie was completed before they invited us.</p>
+    </div>
+  </div>
+  
+  <div class="exercise-controls">
+    <button onclick="checkAnswers2('past-perfect-exercise-2')" class="check-btn">Check Answers</button>
+    <button onclick="showExplanations('past-perfect-exercise-2')" class="explanation-btn">Show Explanations</button>
+    <button onclick="resetExercise2('past-perfect-exercise-2')" class="reset-btn">Reset</button>
+  </div>
+  
+  <div id="past-perfect-exercise-2-results" class="results-section" style="display: none;">
+    <h4>Results:</h4>
+    <p id="past-perfect-exercise-2-score"></p>
+    <div id="past-perfect-exercise-2-feedback"></div>
+  </div>
+</div>
+
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
@@ -107,6 +157,77 @@ function resetExercise(exerciseId) {
   inputs.forEach(input => {
     input.value = '';
     input.classList.remove('correct', 'incorrect');
+  });
+  
+  resultsDiv.style.display = 'none';
+}
+
+function checkAnswers2(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const scoreP = document.getElementById(exerciseId + '-score');
+  const feedbackDiv = document.getElementById(exerciseId + '-feedback');
+  
+  let correct = 0;
+  let total = inputs.length;
+  let feedback = '';
+  
+  inputs.forEach((input, index) => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = input.dataset.answer.toLowerCase();
+    
+    input.classList.remove('correct', 'incorrect');
+    
+    if (userAnswer === correctAnswer || 
+        (correctAnswer === 'had eaten' && userAnswer === 'had already eaten') ||
+        (correctAnswer === 'had read' && userAnswer === 'had already read') ||
+        (correctAnswer === 'had done' && userAnswer === 'had not done') ||
+        (correctAnswer === 'had seen' && userAnswer === 'had already seen')) {
+      input.classList.add('correct');
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      feedback += `<p><strong>Question ${Math.floor(index/2) + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
+    }
+  });
+  
+  resultsDiv.style.display = 'block';
+  scoreP.textContent = `Score: ${Math.floor(correct/2)}/4 (${Math.round((correct/8)*100)}%)`;
+  
+  if (correct === total) {
+    feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
+  } else {
+    feedbackDiv.innerHTML = feedback;
+  }
+}
+
+function showExplanations(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const explanations = exercise.querySelectorAll('.explanation');
+  
+  explanations.forEach(explanation => {
+    if (explanation.style.display === 'none') {
+      explanation.style.display = 'block';
+    } else {
+      explanation.style.display = 'none';
+    }
+  });
+}
+
+function resetExercise2(exerciseId) {
+  const exercise = document.getElementById(exerciseId);
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const resultsDiv = document.getElementById(exerciseId + '-results');
+  const explanations = exercise.querySelectorAll('.explanation');
+  
+  inputs.forEach(input => {
+    input.value = '';
+    input.classList.remove('correct', 'incorrect');
+  });
+  
+  explanations.forEach(explanation => {
+    explanation.style.display = 'none';
   });
   
   resultsDiv.style.display = 'none';
@@ -196,6 +317,40 @@ function resetExercise(exerciseId) {
   border: 1px solid #ffeaa7;
   border-radius: 3px;
   font-size: 14px;
+}
+
+.explanation {
+  margin-top: 10px;
+  padding: 12px;
+  background: #e8f4f8;
+  border: 1px solid #b8e6ff;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.explanation p {
+  margin: 5px 0;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.explanation-btn {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.explanation-btn:hover {
+  background: #138496;
 }
 </style>
 
