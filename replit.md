@@ -25,7 +25,7 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 
 ## Recent Major Developments
 
-### Little Red Riding Hood Story Addition (Latest Update - January 2025)
+### Little Red Riding Hood Story Addition & Azerbaijani Stories Page Fix (Latest Update - January 2025)
 - **New Intermediate Story**: Added "Little Red Riding Hood" classic fairy tale to intermediate stories collection
 - **Text Highlighting System**: Applied vocabulary highlighting with Azerbaijani translation tooltips throughout the story
 - **SEO-Optimized Content**: Included comprehensive alt text for story image and structured metadata
@@ -33,6 +33,9 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 - **Cultural Context**: Added cultural notes explaining the story's significance and moral lessons
 - **Interactive Elements**: Included comprehension questions, discussion points, and vocabulary practice sections
 - **Professional Layout**: Consistent with existing intermediate story format including reading time, word count, and structured navigation
+- **Azerbaijani Stories Page Enhancement**: Fixed missing story cards section in `/az/hekayeler/` to match English version `/stories/`
+- **Bilingual Story Cards**: Added complete "Featured Stories" section with Azerbaijani translations including the new Little Red Riding Hood story
+- **Reading Tips Section**: Added comprehensive reading tips section in Azerbaijani for improved user experience
 
 ### Complete Related Materials Integration (Previous Update)
 - **Comprehensive Linking System**: Added "Related Learning Materials" sections to ALL intermediate and advanced grammar topics
