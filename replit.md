@@ -36,9 +36,10 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 - **Azerbaijani Stories Page Enhancement**: Fixed missing story cards section in `/az/hekayeler/` to match English version `/stories/`
 - **Bilingual Story Cards**: Added complete "Featured Stories" section with Azerbaijani translations including the new Little Red Riding Hood story
 - **Reading Tips Section**: Added comprehensive reading tips section in Azerbaijani for improved user experience
-- **Azerbaijani Vocabulary Layout Fix**: Corrected layout inconsistencies in `/az/luget/orta/` to match English version structure
-- **Vocabulary Content Synchronization**: Updated word lists in Azerbaijani intermediate vocabulary to match English version exactly
-- **Cross-Reference Integration**: Added "Connect Your Learning" section with grammar and story links in Azerbaijani
+- **Complete Azerbaijani Vocabulary Layout Fix**: Corrected layout inconsistencies across all vocabulary levels (`/az/luget/baslangic/`, `/az/luget/orta/`, `/az/luget/ireli/`) to match English versions exactly
+- **Full Vocabulary Content Synchronization**: Updated word lists in all Azerbaijani vocabulary pages (beginner, intermediate, advanced) to match English versions exactly
+- **Comprehensive Cross-Reference Integration**: Added "Connect Your Learning" sections with grammar and story links in Azerbaijani across all vocabulary levels
+- **Template Unification**: Changed all Azerbaijani vocabulary pages from `layouts/base-az.njk` to `layouts/page.njk` for consistent structure
 
 ### Complete Related Materials Integration (Previous Update)
 - **Comprehensive Linking System**: Added "Related Learning Materials" sections to ALL intermediate and advanced grammar topics

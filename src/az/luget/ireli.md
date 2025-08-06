@@ -1,5 +1,5 @@
 ---
-layout: layouts/base-az.njk
+layout: layouts/page.njk
 title: İrəli Lüğət
 description: İrəli səviyyə İngilis danışıq üçün 144 mürəkkəb söz - 12 səhifədə təşkil edilmiş
 level: İrəli
@@ -90,5 +90,17 @@ Bu irəli səviyyə lüğət kolleksiyası orta səviyyəni mənimsəmiş və m�
 - **Səyahətinizə Başlayın**: [Səhifə 1](/vocabulary/advanced/page-1/) ilə başlayın  
 - **Öyrənməyə Davam Edin**: Səhifələr arasında əvvəlki/növbəti düymələrindən istifadə edin
 - **İrəliləyişi İzləyin**: Bu icmalına qayıdıb inkişafınızı görün
+
+## Öyrənməni Əlaqələndirin
+
+### Mürəkkəb İfadə üçün Qrammatika Mövzuları
+- **[Subjunctive (İstək forması)](/grammar/advanced/subjunctive/)** - Mürəkkəb lüğətlə xəyali və istək formalarını ifadə edin
+- **[İnversiya](/grammar/advanced/inversion/)** - Təsirli və rəsmi lüğətlə stil inversiyasını öyrənin
+- **[Participle Clauses](/grammar/advanced/participle-clauses/)** - İrəliləmiş lüğətlə mürəkkəb quruluşlar yaradın
+
+### İrəliləmiş Lüğət üçün Hekayələr
+- **[Rəqəmsal Göçəri Dilemması](/stories/advanced/the-digital-nomads-dilemma/)** - Müasir iş və texnologiya lüğəti
+- **[Həkimlik Etikası](/stories/advanced/medical-ethics/)** - Peşəkar və etik dəyərlər lüğəti
+- **[Elm və Kəşflər](/stories/advanced/scientific-discovery/)** - Akademik və elm lüğəti
 
 Mürəkkəb lüğətə yiyələnməyə hazırsınız? Səhifə 1 ilə başlayın və {{ vocabularyStats.advanced.totalPages }} səhifənin hamısını tamamlayaraq təsirli və dəqiq kommunikasiya bacarıqları inkişaf etdirin!
