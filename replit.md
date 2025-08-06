@@ -40,6 +40,7 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 - **Full Vocabulary Content Synchronization**: Updated word lists in all Azerbaijani vocabulary pages (beginner, intermediate, advanced) to match English versions exactly
 - **Comprehensive Cross-Reference Integration**: Added "Connect Your Learning" sections with grammar and story links in Azerbaijani across all vocabulary levels
 - **Template Unification**: Changed all Azerbaijani vocabulary pages from `layouts/base-az.njk` to `layouts/page.njk` for consistent structure
+- **Comprehensive Sitemap Update**: Updated sitemap.xml to include all recent additions: Little Red Riding Hood story, all exercise pages (18 total), all vocabulary sub-pages (36 total), complete Azerbaijani section structure, and proper SEO organization for www.ingilisdili.com
 
 ### Complete Related Materials Integration (Previous Update)
 - **Comprehensive Linking System**: Added "Related Learning Materials" sections to ALL intermediate and advanced grammar topics
