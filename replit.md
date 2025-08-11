@@ -42,6 +42,7 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 - **Template Unification**: Changed all Azerbaijani vocabulary pages from `layouts/base-az.njk` to `layouts/page.njk` for consistent structure
 - **Comprehensive Sitemap Update**: Updated sitemap.xml to include all recent additions: Little Red Riding Hood story, all exercise pages (18 total), all vocabulary sub-pages (36 total), complete Azerbaijani section structure, and proper SEO organization for www.ingilisdili.com
 - **Interactive English Level Placement Test**: Created comprehensive 25-question placement test with sections for Grammar, Vocabulary, Reading Comprehension, and Sentence Structure, featuring real-time scoring, progress tracking, level assessment (A1-C2), and personalized learning recommendations
+- **Bilingual Placement Test System**: Added complete Azerbaijani interface version of the placement test ("İngilis dili səviyyə testi") with translated UI elements while maintaining English questions for learning purposes, integrated into Azerbaijani navigation as "Səviyyə Testi"
 
 ### Complete Related Materials Integration (Previous Update)
 - **Comprehensive Linking System**: Added "Related Learning Materials" sections to ALL intermediate and advanced grammar topics

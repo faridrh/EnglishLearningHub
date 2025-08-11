@@ -748,6 +748,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Azerbaijani Placement Test -->
+  <url>
+    <loc>https://ingilisdili.com/az/seviyye-testi/</loc>
+    <lastmod>2025-01-11T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Azerbaijani Vocabulary Pages -->
   <url>
     <loc>https://ingilisdili.com/az/luget/baslangic/</loc>
