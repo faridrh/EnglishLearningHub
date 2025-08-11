@@ -10,7 +10,7 @@ eleventyNavigation:
 
 # İngilis dili səviyyə testi
 
-Hərtərəfli 25 sualdan ibarət yerləşdirmə testimizlə İngilis dili bilik səviyyənizi sınayın. Bu qiymətləndirmə qrammatika, lüğət, oxu anlama və cümlə quruluşunu əhatə edərək sizin hazırkı İngilis dili səviyyənizi müəyyən edir.
+25 sualdan ibarət testimizlə İngilis dili bilik səviyyənizi yoxlayın. Bu qiymətləndirmə qrammatika, lüğət, oxu anlama və cümlə quruluşunu əhatə edərək hazırkı İngilis dili səviyyənizi dəqiq müəyyənləşdirir.
 
 ## Təlimatlar
 - Hər sual üçün ən yaxşı cavabı seçin (A, B, C və ya D)
