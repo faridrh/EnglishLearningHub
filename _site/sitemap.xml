@@ -377,6 +377,20 @@
     <priority>0.8</priority>
   </url>
   
+  <url>
+    <loc>https://ingilisdili.com/stories/beginner/making-new-friends/</loc>
+    <lastmod>2025-01-18T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://ingilisdili.com/stories/beginner/weekend-at-the-park/</loc>
+    <lastmod>2025-01-18T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Stories Intermediate -->
   <url>
     <loc>https://ingilisdili.com/stories/intermediate/a-day-at-the-market/</loc>
