@@ -366,14 +366,14 @@ function submitQuiz() {
     if (selectedAnswer) {
       if (selectedAnswer.value === correctAnswers[`q${i}`]) {
         score++;
-        feedback.innerHTML = '<span class="correct">✓ Correct!</span>';
+        feedback.innerHTML = `<span class="correct">✓ Correct! Your answer: <strong>${selectedAnswer.value}</strong></span>`;
         feedback.className = 'quiz-feedback correct';
       } else {
-        feedback.innerHTML = `<span class="incorrect">✗ Incorrect. The correct answer is: ${correctAnswers[`q${i}`]}</span>`;
+        feedback.innerHTML = `<span class="incorrect">✗ Your answer: <strong>${selectedAnswer.value}</strong><br>Correct answer: <strong>${correctAnswers[`q${i}`]}</strong></span>`;
         feedback.className = 'quiz-feedback incorrect';
       }
     } else {
-      feedback.innerHTML = '<span class="incorrect">✗ No answer selected</span>';
+      feedback.innerHTML = `<span class="incorrect">✗ No answer selected<br>Correct answer: <strong>${correctAnswers[`q${i}`]}</strong></span>`;
       feedback.className = 'quiz-feedback incorrect';
     }
     
