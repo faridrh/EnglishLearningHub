@@ -1,5 +1,5 @@
 ---
-layout: layouts/base-az.njk
+layout: layouts/page.njk
 title: İngilis Dili Qrammatika Testi
 description: Qısa test sualları ilə İngilis dili qrammatika biliyinizi yoxlayın. Tərəqqinizi yoxlamaq üçün başlanğıc, orta və irəli səviyyələrdən seçin.
 ---
