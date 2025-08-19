@@ -8,7 +8,32 @@ description: Qısa test sualları ilə İngilis dili qrammatika biliyinizi yoxla
 
 Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sualları ilə qrammatika biliyinizi yoxlayın.
 
+## Bütün Mövcud İnteraktiv Testlər
+
+**Başlanğıc Səviyyə (4 test):**
+- [Articles Testi](/quiz/beginner/articles-quiz/) - 5 sual
+- [Cəm Adlar Testi](/quiz/beginner/plural-nouns-quiz/) - 5 sual
+- [Present Simple Testi](/quiz/beginner/present-simple-quiz/) - 5 sual
+- [Present Continuous Testi](/quiz/beginner/present-continuous-quiz/) - 5 sual
+
+**Orta Səviyyə (2 test):**
+- [Past Perfect Testi](/quiz/intermediate/past-perfect-quiz/) - 5 sual
+- [Modal Verbs Testi](/quiz/intermediate/modal-verbs-quiz/) - 5 sual
+
+**İrəli Səviyyə (1 test):**
+- [Subjunctive Mood Testi](/quiz/advanced/subjunctive-quiz/) - 5 sual
+
+---
+
 ## Başlanğıc Səviyyə
+
+### İnteraktiv Testlər
+- [Articles Testi](/quiz/beginner/articles-quiz/) - 5 sual
+- [Cəm Adlar Testi](/quiz/beginner/plural-nouns-quiz/) - 5 sual
+- [Present Simple Testi](/quiz/beginner/present-simple-quiz/) - 5 sual
+- [Present Continuous Testi](/quiz/beginner/present-continuous-quiz/) - 5 sual
+
+### Qısa Təkrar Sualları
 
 ### Articles (Artikllər)
 **Düzgün artikli seçin:**
@@ -84,6 +109,12 @@ Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sual
 
 ## Orta Səviyyə
 
+### İnteraktiv Testlər
+- [Past Perfect Testi](/quiz/intermediate/past-perfect-quiz/) - 5 sual
+- [Modal Verbs Testi](/quiz/intermediate/modal-verbs-quiz/) - 5 sual
+
+### Qısa Təkrar Sualları
+
 ### Past Perfect (Keçmiş Mükəmməl Zaman)
 **Past Perfect ilə tamamlayın:**
 1. When I arrived, she _____ already _____ (leave).
@@ -152,6 +183,11 @@ Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sual
 ---
 
 ## İrəli Səviyyə
+
+### İnteraktiv Testlər
+- [Subjunctive Mood Testi](/quiz/advanced/subjunctive-quiz/) - 5 sual
+
+### Qısa Təkrar Sualları
 
 ### Subjunctive Mood (Şərti Meyl)
 **Şərti meyl ilə tamamlayın:**
