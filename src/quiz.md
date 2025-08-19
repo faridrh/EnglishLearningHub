@@ -8,6 +8,23 @@ description: Test your English grammar knowledge with our quick quiz questions. 
 
 Test your grammar knowledge with quick quiz questions organized by difficulty level.
 
+## All Available Interactive Quizzes
+
+**Beginner Level (4 quizzes):**
+- [Articles Quiz](/quiz/beginner/articles-quiz/) - 5 questions
+- [Plural Nouns Quiz](/quiz/beginner/plural-nouns-quiz/) - 5 questions
+- [Present Simple Quiz](/quiz/beginner/present-simple-quiz/) - 5 questions
+- [Present Continuous Quiz](/quiz/beginner/present-continuous-quiz/) - 5 questions
+
+**Intermediate Level (2 quizzes):**
+- [Past Perfect Quiz](/quiz/intermediate/past-perfect-quiz/) - 5 questions
+- [Modal Verbs Quiz](/quiz/intermediate/modal-verbs-quiz/) - 5 questions
+
+**Advanced Level (1 quiz):**
+- [Subjunctive Mood Quiz](/quiz/advanced/subjunctive-quiz/) - 5 questions
+
+---
+
 ## Beginner Level
 
 ### Interactive Quizzes
