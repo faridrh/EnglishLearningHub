@@ -25,7 +25,16 @@ The platform is built using Eleventy (11ty) as a static site generator with Nunj
 
 ## Recent Major Developments
 
-### Little Red Riding Hood Story Addition & Azerbaijani Stories Page Fix (Latest Update - January 2025)
+### Enhanced Beginner Stories & Grammar Quiz System (Latest Update - January 2025)
+- **Additional Beginner Stories**: Added two new engaging stories to the beginner collection: "Making New Friends" (about starting at a new school) and "Weekend at the Park" (about family outdoor activities)
+- **Story Structure Consistency**: Both new stories follow established format with vocabulary highlighting, Azerbaijani translations, comprehension questions, and related learning materials
+- **Expanded Story Collection**: Beginner level now features 5 complete stories providing diverse learning scenarios for new English learners
+- **Simple Grammar Quiz System**: Created comprehensive quiz page covering all grammar topics from beginner to advanced levels with immediate answer keys
+- **Bilingual Quiz Access**: Added quiz functionality in both English (/quiz/) and Azerbaijani (/az/quiz/) with complete interface translations
+- **Navigation Integration**: Added "Quiz" and "Test" links to both English and Azerbaijani navigation menus for easy access
+- **SEO Optimization**: Updated sitemap.xml to include both new story pages and quiz pages for improved search visibility
+
+### Little Red Riding Hood Story Addition & Azerbaijani Stories Page Fix (Previous Update - January 2025)
 - **New Intermediate Story**: Added "Little Red Riding Hood" classic fairy tale to intermediate stories collection
 - **Text Highlighting System**: Applied vocabulary highlighting with Azerbaijani translation tooltips throughout the story
 - **SEO-Optimized Content**: Included comprehensive alt text for story image and structured metadata
