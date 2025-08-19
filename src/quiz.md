@@ -11,7 +11,10 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 ## Beginner Level
 
 ### Interactive Quizzes
+- [Articles Quiz](/quiz/beginner/articles-quiz/) - 5 questions
 - [Plural Nouns Quiz](/quiz/beginner/plural-nouns-quiz/) - 5 questions
+- [Present Simple Quiz](/quiz/beginner/present-simple-quiz/) - 5 questions
+- [Present Continuous Quiz](/quiz/beginner/present-continuous-quiz/) - 5 questions
 
 ### Quick Review Questions
 
@@ -89,6 +92,12 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 
 ## Intermediate Level
 
+### Interactive Quizzes
+- [Past Perfect Quiz](/quiz/intermediate/past-perfect-quiz/) - 5 questions
+- [Modal Verbs Quiz](/quiz/intermediate/modal-verbs-quiz/) - 5 questions
+
+### Quick Review Questions
+
 ### Past Perfect
 **Complete with past perfect:**
 1. When I arrived, she _____ already _____ (leave).
@@ -157,6 +166,11 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 ---
 
 ## Advanced Level
+
+### Interactive Quizzes
+- [Subjunctive Mood Quiz](/quiz/advanced/subjunctive-quiz/) - 5 questions
+
+### Quick Review Questions
 
 ### Subjunctive Mood
 **Complete with subjunctive:**

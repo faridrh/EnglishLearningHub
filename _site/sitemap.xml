@@ -92,7 +92,49 @@
   
   <!-- Individual Quiz Pages -->
   <url>
+    <loc>https://ingilisdili.com/quiz/beginner/articles-quiz/</loc>
+    <lastmod>2025-01-18T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>https://ingilisdili.com/quiz/beginner/plural-nouns-quiz/</loc>
+    <lastmod>2025-01-18T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://ingilisdili.com/quiz/beginner/present-simple-quiz/</loc>
+    <lastmod>2025-01-18T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://ingilisdili.com/quiz/beginner/present-continuous-quiz/</loc>
+    <lastmod>2025-01-18T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://ingilisdili.com/quiz/intermediate/past-perfect-quiz/</loc>
+    <lastmod>2025-01-18T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://ingilisdili.com/quiz/intermediate/modal-verbs-quiz/</loc>
+    <lastmod>2025-01-18T12:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://ingilisdili.com/quiz/advanced/subjunctive-quiz/</loc>
     <lastmod>2025-01-18T12:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
