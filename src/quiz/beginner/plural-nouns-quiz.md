@@ -410,7 +410,7 @@ updateNavigation();
 - **Grammar Lesson**: [Plural Nouns](/grammar/beginner/plural-nouns/)
 - **Practice Exercises**: [Plural Nouns Exercises](/grammar/beginner/plural-nouns-exercises/)
 - **Vocabulary**: [Beginner Vocabulary](/vocabulary/beginner/)
-- **More Quizzes**: [Grammar Quiz](/quiz/)
+- **Back to All Quizzes**: [Grammar Quiz](/quiz/)
 
 ---
 

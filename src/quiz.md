@@ -10,6 +10,11 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 
 ## Beginner Level
 
+### Interactive Quizzes
+- [Plural Nouns Quiz](/quiz/beginner/plural-nouns-quiz/) - 5 questions
+
+### Quick Review Questions
+
 ### Articles
 **Choose the correct article:**
 1. I saw ___ elephant at the zoo.
