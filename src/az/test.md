@@ -18,9 +18,11 @@ Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sual
 - [Mübtəda Əvəzlikləri Testi](/quiz/beginner/subject-pronouns-quiz/) - 5 sual
 - [Mənsubiyyət Sifətləri Testi](/quiz/beginner/possessive-adjectives-quiz/) - 5 sual
 
-**Orta Səviyyə (2 test):**
+**Orta Səviyyə (4 test):**
 - [Past Perfect Testi](/quiz/intermediate/past-perfect-quiz/) - 5 sual
 - [Modal Verbs Testi](/quiz/intermediate/modal-verbs-quiz/) - 5 sual
+- [Passive Voice Testi](/quiz/intermediate/passive-voice-quiz/) - 5 sual
+- [Conditionals 1 & 2 Testi](/quiz/intermediate/conditionals-1-2-quiz/) - 5 sual
 
 **İrəli Səviyyə (1 test):**
 - [Subjunctive Mood Testi](/quiz/advanced/subjunctive-quiz/) - 5 sual
@@ -116,6 +118,8 @@ Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sual
 ### İnteraktiv Testlər
 - [Past Perfect Testi](/quiz/intermediate/past-perfect-quiz/) - 5 sual
 - [Modal Verbs Testi](/quiz/intermediate/modal-verbs-quiz/) - 5 sual
+- [Passive Voice Testi](/quiz/intermediate/passive-voice-quiz/) - 5 sual
+- [Conditionals 1 & 2 Testi](/quiz/intermediate/conditionals-1-2-quiz/) - 5 sual
 
 ### Qısa Təkrar Sualları
 
