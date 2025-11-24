@@ -18,11 +18,13 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 - [Subject Pronouns Quiz](/quiz/beginner/subject-pronouns-quiz/) - 5 questions
 - [Possessive Adjectives Quiz](/quiz/beginner/possessive-adjectives-quiz/) - 5 questions
 
-**Intermediate Level (4 quizzes):**
+**Intermediate Level (6 quizzes):**
 - [Past Perfect Quiz](/quiz/intermediate/past-perfect-quiz/) - 5 questions
 - [Modal Verbs Quiz](/quiz/intermediate/modal-verbs-quiz/) - 5 questions
 - [Passive Voice Quiz](/quiz/intermediate/passive-voice-quiz/) - 5 questions
 - [Conditionals 1 & 2 Quiz](/quiz/intermediate/conditionals-1-2-quiz/) - 5 questions
+- [Relative Clauses Quiz](/quiz/intermediate/relative-clauses-quiz/) - 5 questions
+- [Reported Speech Quiz](/quiz/intermediate/reported-speech-quiz/) - 5 questions
 
 **Advanced Level (1 quiz):**
 - [Subjunctive Mood Quiz](/quiz/advanced/subjunctive-quiz/) - 5 questions
@@ -120,6 +122,8 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 - [Modal Verbs Quiz](/quiz/intermediate/modal-verbs-quiz/) - 5 questions
 - [Passive Voice Quiz](/quiz/intermediate/passive-voice-quiz/) - 5 questions
 - [Conditionals 1 & 2 Quiz](/quiz/intermediate/conditionals-1-2-quiz/) - 5 questions
+- [Relative Clauses Quiz](/quiz/intermediate/relative-clauses-quiz/) - 5 questions
+- [Reported Speech Quiz](/quiz/intermediate/reported-speech-quiz/) - 5 questions
 
 ### Quick Review Questions
 
