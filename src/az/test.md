@@ -10,11 +10,13 @@ Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sual
 
 ## Bütün Mövcud İnteraktiv Testlər
 
-**Başlanğıc Səviyyə (4 test):**
+**Başlanğıc Səviyyə (6 test):**
 - [Articles Testi](/quiz/beginner/articles-quiz/) - 5 sual
 - [Cəm Adlar Testi](/quiz/beginner/plural-nouns-quiz/) - 5 sual
 - [Present Simple Testi](/quiz/beginner/present-simple-quiz/) - 5 sual
 - [Present Continuous Testi](/quiz/beginner/present-continuous-quiz/) - 5 sual
+- [Mübtəda Əvəzlikləri Testi](/quiz/beginner/subject-pronouns-quiz/) - 5 sual
+- [Mənsubiyyət Sifətləri Testi](/quiz/beginner/possessive-adjectives-quiz/) - 5 sual
 
 **Orta Səviyyə (2 test):**
 - [Past Perfect Testi](/quiz/intermediate/past-perfect-quiz/) - 5 sual
@@ -32,6 +34,8 @@ Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sual
 - [Cəm Adlar Testi](/quiz/beginner/plural-nouns-quiz/) - 5 sual
 - [Present Simple Testi](/quiz/beginner/present-simple-quiz/) - 5 sual
 - [Present Continuous Testi](/quiz/beginner/present-continuous-quiz/) - 5 sual
+- [Mübtəda Əvəzlikləri Testi](/quiz/beginner/subject-pronouns-quiz/) - 5 sual
+- [Mənsubiyyət Sifətləri Testi](/quiz/beginner/possessive-adjectives-quiz/) - 5 sual
 
 ### Qısa Təkrar Sualları
 
