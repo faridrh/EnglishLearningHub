@@ -36,17 +36,7 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 
 ---
 
-## Beginner Level
-
-### Interactive Quizzes
-- [Articles Quiz](/quiz/beginner/articles-quiz/) - 5 questions
-- [Plural Nouns Quiz](/quiz/beginner/plural-nouns-quiz/) - 5 questions
-- [Present Simple Quiz](/quiz/beginner/present-simple-quiz/) - 5 questions
-- [Present Continuous Quiz](/quiz/beginner/present-continuous-quiz/) - 5 questions
-- [Subject Pronouns Quiz](/quiz/beginner/subject-pronouns-quiz/) - 5 questions
-- [Possessive Adjectives Quiz](/quiz/beginner/possessive-adjectives-quiz/) - 5 questions
-
-### Quick Review Questions
+## Quick Review Questions - Beginner Level
 
 ### Articles
 **Choose the correct article:**
