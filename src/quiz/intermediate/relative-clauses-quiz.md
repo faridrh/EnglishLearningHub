@@ -210,6 +210,12 @@ function submitQuiz() {
   
   resultsDiv.style.display = 'block';
   
+  // Show all questions in review mode
+  document.querySelectorAll('.quiz-question').forEach(q => {
+    q.classList.remove('active');
+    q.style.display = 'block';
+  });
+  
   // Hide navigation buttons
   document.querySelector('.quiz-navigation').style.display = 'none';
 }
