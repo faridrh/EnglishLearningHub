@@ -26,8 +26,13 @@ Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sual
 - [Relative Clauses Testi](/quiz/intermediate/relative-clauses-quiz/) - 5 sual
 - [Reported Speech Testi](/quiz/intermediate/reported-speech-quiz/) - 5 sual
 
-**İrəli Səviyyə (1 test):**
+**İrəli Səviyyə (6 test):**
 - [Subjunctive Mood Testi](/quiz/advanced/subjunctive-quiz/) - 5 sual
+- [Inversion Testi](/quiz/advanced/inversion-quiz/) - 5 sual
+- [Cleft Sentences Testi](/quiz/advanced/cleft-sentences-quiz/) - 5 sual
+- [Conditionals 3 & Mixed Testi](/quiz/advanced/conditionals-3-mixed-quiz/) - 5 sual
+- [Ellipsis & Substitution Testi](/quiz/advanced/ellipsis-substitution-quiz/) - 5 sual
+- [Participle Clauses Testi](/quiz/advanced/participle-clauses-quiz/) - 5 sual
 
 ---
 
@@ -198,6 +203,11 @@ Müxtəlif çətinlik səviyyələrinə görə təşkil edilmiş qısa test sual
 
 ### İnteraktiv Testlər
 - [Subjunctive Mood Testi](/quiz/advanced/subjunctive-quiz/) - 5 sual
+- [Inversion Testi](/quiz/advanced/inversion-quiz/) - 5 sual
+- [Cleft Sentences Testi](/quiz/advanced/cleft-sentences-quiz/) - 5 sual
+- [Conditionals 3 & Mixed Testi](/quiz/advanced/conditionals-3-mixed-quiz/) - 5 sual
+- [Ellipsis & Substitution Testi](/quiz/advanced/ellipsis-substitution-quiz/) - 5 sual
+- [Participle Clauses Testi](/quiz/advanced/participle-clauses-quiz/) - 5 sual
 
 ### Qısa Təkrar Sualları
 

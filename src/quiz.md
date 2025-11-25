@@ -26,8 +26,13 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 - [Relative Clauses Quiz](/quiz/intermediate/relative-clauses-quiz/) - 5 questions
 - [Reported Speech Quiz](/quiz/intermediate/reported-speech-quiz/) - 5 questions
 
-**Advanced Level (1 quiz):**
+**Advanced Level (6 quizzes):**
 - [Subjunctive Mood Quiz](/quiz/advanced/subjunctive-quiz/) - 5 questions
+- [Inversion Quiz](/quiz/advanced/inversion-quiz/) - 5 questions
+- [Cleft Sentences Quiz](/quiz/advanced/cleft-sentences-quiz/) - 5 questions
+- [Conditionals 3 & Mixed Quiz](/quiz/advanced/conditionals-3-mixed-quiz/) - 5 questions
+- [Ellipsis & Substitution Quiz](/quiz/advanced/ellipsis-substitution-quiz/) - 5 questions
+- [Participle Clauses Quiz](/quiz/advanced/participle-clauses-quiz/) - 5 questions
 
 ---
 
@@ -198,6 +203,11 @@ Test your grammar knowledge with quick quiz questions organized by difficulty le
 
 ### Interactive Quizzes
 - [Subjunctive Mood Quiz](/quiz/advanced/subjunctive-quiz/) - 5 questions
+- [Inversion Quiz](/quiz/advanced/inversion-quiz/) - 5 questions
+- [Cleft Sentences Quiz](/quiz/advanced/cleft-sentences-quiz/) - 5 questions
+- [Conditionals 3 & Mixed Quiz](/quiz/advanced/conditionals-3-mixed-quiz/) - 5 questions
+- [Ellipsis & Substitution Quiz](/quiz/advanced/ellipsis-substitution-quiz/) - 5 questions
+- [Participle Clauses Quiz](/quiz/advanced/participle-clauses-quiz/) - 5 questions
 
 ### Quick Review Questions
 
