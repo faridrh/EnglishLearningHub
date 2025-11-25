@@ -1,79 +1,52 @@
 ---
-layout: layouts/base-az.njk
-title: Haqqında
-description: İngilis Dili Öyrənmə Platforması haqqında məlumat. Missiyamız və təklif etdiyimiz xidmətlər.
+layout: layouts/page.njk
+title: Haqqında İngilis dili öyrən
+description: İngilis dili öyrənənlərin bacarıqlarını yaxşılaşdırmalarına kömək etmək üçün nəzərdə tutulan hərtərəfli resurslar haqqında.
 ---
 
-# Haqqında
+# Haqqında İngilis dili öyrən
+
+İngilis dili öyrən-ə xoş gəlmisiniz - bu platform, bütün səviyyələrdəki İngilis dili öyrənənlərin hərtərəfli lüğət resursları və təhsili materiallar vasitəsilə bacarıqlarını inkişaf etdirmələrinə kömək etmək üçün nəzərdə tutulmuşdur.
 
 ## Bizim Missiyamız
 
-İngilis Dili Öyrənmə Platforması hər səviyyədəki öyrənənlərə keyfiyyətli və əlçatan İngilis dili təhsili təqdim etmək məqsədilə yaradılmışdır. Biz inanırıq ki, hər kəsin öz ana dilindən asılı olmayaraq İngilis dilini öyrənmək imkanı olmalıdır.
+Bizim missiyamız İngilis dili öyrənməsini əlçatan, cəlbedici və effektiv etməkdir. Biz inanırıq ki:
+
+- Dil öyrənməsi strukturlaşdırılmış lakin əyləncəli olmalıdır
+- Resurslar aydın, praktik və istifadə edilməsi asan olmalıdır
+- Məzmun tədricən öyrənməyi dəstəkləmək üçün səviyyələrə görə təşkil edilməlidir
+- Vizual və audio materiallar öyrənmə təcrübəsini gücləndirir
 
 ## Nə Təklif Edirik?
 
-### Hərtərəfli Qrammatika Dərsləri
-- **Başlanğıc səviyyə**: Əsas qrammatika qaydaları və strukturları
-- **Orta səviyyə**: Daha mürəkkəb qrammatika mövzuları
-- **İrəli səviyyə**: İnkişaf etmiş qrammatika və üslub
+İngilis dili öyrən-ə sizin İngilis dili öyrənmə yolunuzu dəstəkləmək üçün müxtəlif resurslar təqdim edir:
 
-### İnteraktiv Hekayələr
-Oxuma bacarıqlarınızı inkişaf etdirən və lüğətinizi genişləndirən maraqlı hekayələr üç fərqli çətinlik səviyyəsində.
+### Lüğət Öyrənməsi
+- Səviyyəyə görə təşkil edilmiş hərtərəfli lüğət siyahıları (başlanğıc, orta, irəli)
+- Aydın təriflər, telaffuzlar və nümunə cümlələr
+- Əlaqəli sözlər və sinonimləri lüğətinizi genişləndirmək üçün
 
-### Lüğət Kartları
-Yeni sözləri öyrənmək və təkrarlamaq üçün interaktiv lüğət kartları sistemi.
-
-### Video Məzmun
-Müxtəlif mövzularda video dərslər və təlimatlar.
+### Təhsili Materiallar
+- Daha təbii səslənməniz üçün telaffuz bələdçiləri
+- Mürəkkəb anlayışları sadə edən qrammatika izahatları
+- Real dünya kommunikasiyası üçün söhbət tətbiqi
 
 ## Bizim Yanaşmamız
 
-### 1. Elmdən İstifadə
-Dil öyrənmə sahəsindəki ən son araşdırmalara əsaslanaraq məzmunumuzu strukturlaşdırırıq.
+Dil təhsili üçün praktik, öyrənənə yönəlmiş bir yanaşma benimsəyirik:
 
-### 2. İnteraktivlik
-Passiv oxuma əvəzinə aktiv təcrübə və məşq üçün imkanlar yaradırıq.
+1. **Aydın Təşkilat**: Məzmun asan naviqasiya üçün səviyyə və mövzuya görə təşkil edilir
+2. **Vizual Öyrənmə**: Videoları daha yaxşı yadda qalmaq üçün mətn əsasında öyrənməni tamamlamaq
+3. **Praktik Nümunələr**: Real dünya nümunələri dilin kontekstdə istifadəsini göstərir
+4. **Tədricən Çətinlik**: Bacarıqlarınız inkişaf etdikcə sizinlə böyüyən resurslar
+5. **Əlçatan Dizayn**: Bütün cihazlarda işləyən təmiz, cavab verən dizayn
 
-### 3. Müntəzəm İrəliləmə
-Hər səviyyədə ardıcıl və məntiqi inkişaf üçün sistematik yanaşma.
+## Kimik Biz
 
-### 4. Praktik Tətbiq
-Real həyatda istifadə edilə bilən dil bacarıqlarına diqqət yetiririk.
+İngilis dili öyrən, İngilis dili müəllim və təhsil məzmunu inkişaf etdirənlərdən ibarət təcrübəli bir komanda tərəfindən yaradılmışdır ki, bu da öyrənənlərin dünyanın hər yerində İngilis bacarıqlarını inkişaf etdirmələrinə kömək etmə ehtiraslı istəyini daşıyırlar. Komanda üzvləri TESOL (Digər Dil Danışanlarına İngilis Öyrətmə), dilçilik və tədris dizaynı sahələrində fonda malikdir.
 
-## Kimə Uyğundur?
+## Bizimlə Əlaqə Saxlayın
 
-### Başlanğıc Öyrənənlər
-İngilis dili öyrənməyə yeni başlayanlar üçün addım-addım təlimat.
+Sizin fikirlərini və təkliflərinizi qiymətləndiririk! Resurslarımızı yaxşılaşdırmaq üçün fikirlər və ya müəyyən mövzular üçün tələblər varsa, zəhmət olmasa [bizimlə əlaqə saxlayın](/az/elaqe/).
 
-### Orta Səviyyə Öyrənənlər
-Mövcud biliklərini möhkəmləndirmək və genişləndirmək istəyənlər üçün.
-
-### İrəli Səviyyə Öyrənənlər
-Dil bacarıqlarını mükəmməlləşdirmək istəyən təcrübəli öyrənənlər üçün.
-
-### Müəllimlər
-Dərs materialları və resurslar axtaran İngilis dili müəllimləri üçün.
-
-## Texnologiya
-
-Platformamız müasir web texnologiyalarından istifadə edərək istifadəçi dostu və tez yüklənən təcrübə təmin edir. Bütün məzmun mobil cihazlarda da optimal şəkildə işləyir.
-
-## Gələcək Planları
-
-### Genişlənmə
-- Daha çox dil səviyyələri əlavə edilməsi
-- Yeni məzmun növləri (podkastlar, oyunlar)
-- İnteraktiv məşqlər və testlər
-
-### Cəmiyyət
-- Öyrənənlər arası əlaqə imkanları
-- Müəllimlər üçün xüsusi resurslar
-- Geribildirim və təklif sistemi
-
-## Əlaqə
-
-Platformamız haqqında suallarınız varsa və ya təkliflərinizi bildirmək istəyirsinizsə, [əlaqə](/az/elaqe/) səhifəmizdən bizə müraciət edə bilərsiniz.
-
----
-
-*İngilis dili öyrənmə səyahətinizdə uğurlar diləyirik!*
+İngilis dili öyrən-i dil öyrənmə resursu seçdiyiniz üçün təşəkkür edirik. Sizin İngilis dili öyrənmə səyahətinin bir hissəsi olmaqdan heyəcan duyuruq!
