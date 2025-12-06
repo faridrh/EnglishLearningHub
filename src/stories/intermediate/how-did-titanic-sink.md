@@ -15,7 +15,7 @@ translations:
   grazed: "sürüşdü, cızıldadı"
   hull: "gəminin gövdəsi"
   lifeboat: "xilasedici qayıq"
-  chaos: "kaoس"
+  chaos: "xaos"
   sank: "batdı"
   disaster: "fəlakət"
 ---
