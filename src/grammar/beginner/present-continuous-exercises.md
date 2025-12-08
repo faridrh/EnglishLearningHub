@@ -130,7 +130,7 @@ function resetExercise(exerciseId) {
 
 .fill-blank:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #333;
 }
 
 .fill-blank.correct {
@@ -177,7 +177,7 @@ function resetExercise(exerciseId) {
   padding: 15px;
   background: white;
   border-radius: 5px;
-  border-left: 4px solid #007bff;
+  
 }
 
 .results-section p {

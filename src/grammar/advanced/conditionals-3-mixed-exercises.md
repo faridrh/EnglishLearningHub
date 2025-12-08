@@ -133,7 +133,7 @@ function resetExercise(exerciseId) {
 
 .fill-blank:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #333;
   box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
@@ -185,13 +185,13 @@ function resetExercise(exerciseId) {
   padding: 20px;
   background: #f8f9fa;
   border-radius: 6px;
-  border-left: 4px solid #007bff;
+  
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .results-section h4 {
   margin-top: 0;
-  color: #007bff;
+  color: #333;
 }
 
 .results-section p {
