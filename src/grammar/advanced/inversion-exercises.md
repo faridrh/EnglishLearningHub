@@ -213,6 +213,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Inversion Quiz](/quiz/advanced/inversion-quiz/)** - Test your knowledge with a quiz
+
 - **[Inversion Grammar Lesson](/grammar/advanced/inversion/)** - Learn the rules and theory
 - **[Emphasis and Style](/grammar/advanced/cleft-sentences/)** - Other emphasis techniques
 - **[More Advanced Exercises](/exercises/)** - Practice other advanced grammar topics

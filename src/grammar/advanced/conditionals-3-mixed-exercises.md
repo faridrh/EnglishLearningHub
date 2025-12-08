@@ -208,6 +208,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Conditionals-3-mixed Quiz](/quiz/advanced/conditionals-3-mixed-quiz/)** - Test your knowledge with a quiz
+
 - **[Conditionals 3 & Mixed Grammar Lesson](/grammar/advanced/conditionals-3-mixed/)** - Learn the rules and theory
 - **[Basic Conditionals](/grammar/intermediate/conditionals-1-2/)** - Review first and second conditionals
 - **[More Advanced Exercises](/exercises/)** - Practice other advanced grammar topics

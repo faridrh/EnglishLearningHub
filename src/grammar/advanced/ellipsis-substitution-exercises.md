@@ -213,6 +213,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Ellipsis-substitution Quiz](/quiz/advanced/ellipsis-substitution-quiz/)** - Test your knowledge with a quiz
+
 - **[Ellipsis & Substitution Grammar Lesson](/grammar/advanced/ellipsis-substitution/)** - Learn the rules and theory
 - **[Advanced Writing Style](/grammar/advanced/participle-clauses/)** - Other ways to improve writing flow
 - **[More Advanced Exercises](/exercises/)** - Practice other advanced grammar topics

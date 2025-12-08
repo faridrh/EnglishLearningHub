@@ -353,6 +353,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Subject-pronouns Quiz](/quiz/beginner/subject-pronouns-quiz/)** - Test your knowledge with a quiz
+
 - **[Subject Pronouns Grammar Lesson](/grammar/beginner/subject-pronouns/)** - Learn the rules and theory
 - **[Object Pronouns](/grammar/intermediate/relative-clauses/)** - Learn about other pronouns
 - **[More Beginner Exercises](/exercises/)** - Practice other beginner grammar topics

@@ -358,6 +358,8 @@ function resetExercise2(exerciseId) {
 
 ## Related Materials
 
+- **[Past-perfect Quiz](/quiz/intermediate/past-perfect-quiz/)** - Test your knowledge with a quiz
+
 - **[Past Perfect Grammar Lesson](/grammar/intermediate/past-perfect/)** - Learn the rules and theory
 - **[Past Perfect vs Simple Past](/grammar/intermediate/past-perfect/)** - Understanding the difference
 - **[More Intermediate Exercises](/exercises/)** - Practice other intermediate grammar topics

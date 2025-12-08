@@ -195,6 +195,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Conditionals-1-2 Quiz](/quiz/intermediate/conditionals-1-2-quiz/)** - Test your knowledge with a quiz
+
 - **[Conditionals 1 & 2 Grammar Lesson](/grammar/intermediate/conditionals-1-2/)** - Learn the rules and theory
 - **[Advanced Conditionals](/grammar/advanced/conditionals-3-mixed/)** - Third conditional and mixed types
 - **[More Intermediate Exercises](/exercises/)** - Practice other intermediate grammar topics

@@ -349,6 +349,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Present-continuous Quiz](/quiz/beginner/present-continuous-quiz/)** - Test your knowledge with a quiz
+
 - **[Present Continuous Grammar Lesson](/grammar/beginner/present-continuous/)** - Learn the rules and theory
 - **[Present Simple vs Present Continuous](/grammar/beginner/present-simple/)** - Compare the two tenses
 - **[More Beginner Exercises](/exercises/)** - Practice other beginner grammar topics

@@ -212,6 +212,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Subjunctive Quiz](/quiz/advanced/subjunctive-quiz/)** - Test your knowledge with a quiz
+
 - **[Subjunctive Mood Grammar Lesson](/grammar/advanced/subjunctive/)** - Learn the rules and theory
 - **[Advanced Conditionals](/grammar/advanced/conditionals-3-mixed/)** - Complex conditional structures
 - **[More Advanced Exercises](/exercises/)** - Practice other advanced grammar topics

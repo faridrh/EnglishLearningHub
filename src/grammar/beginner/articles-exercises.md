@@ -280,6 +280,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Articles Quiz](/quiz/beginner/articles-quiz/)** - Test your knowledge with a quiz
+
 - **[Articles Grammar Lesson](/grammar/beginner/articles/)** - Learn the rules and theory
 - **[More Practice with Nouns](/grammar/beginner/plural-nouns/)** - Articles work with nouns
 - **[More Beginner Exercises](/exercises/)** - Practice other beginner grammar topics

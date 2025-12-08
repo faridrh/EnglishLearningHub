@@ -224,6 +224,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Cleft-sentences Quiz](/quiz/advanced/cleft-sentences-quiz/)** - Test your knowledge with a quiz
+
 - **[Cleft Sentences Grammar Lesson](/grammar/advanced/cleft-sentences/)** - Learn the rules and theory
 - **[Emphasis Techniques](/grammar/advanced/inversion/)** - Other ways to add emphasis
 - **[More Advanced Exercises](/exercises/)** - Practice other advanced grammar topics

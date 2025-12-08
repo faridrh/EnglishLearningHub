@@ -205,6 +205,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Modal-verbs Quiz](/quiz/intermediate/modal-verbs-quiz/)** - Test your knowledge with a quiz
+
 - **[Modal Verbs Grammar Lesson](/grammar/intermediate/modal-verbs/)** - Learn the rules and theory
 - **[Advanced Modal Usage](/grammar/advanced/subjunctive/)** - More complex modal constructions
 - **[More Intermediate Exercises](/exercises/)** - Practice other intermediate grammar topics

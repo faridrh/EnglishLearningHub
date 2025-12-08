@@ -201,6 +201,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Relative-clauses Quiz](/quiz/intermediate/relative-clauses-quiz/)** - Test your knowledge with a quiz
+
 - **[Relative Clauses Grammar Lesson](/grammar/intermediate/relative-clauses/)** - Learn the rules and theory
 - **[Advanced Relative Structures](/grammar/advanced/cleft-sentences/)** - Cleft sentences and emphasis
 - **[More Intermediate Exercises](/exercises/)** - Practice other intermediate grammar topics

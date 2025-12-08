@@ -214,6 +214,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Participle-clauses Quiz](/quiz/advanced/participle-clauses-quiz/)** - Test your knowledge with a quiz
+
 - **[Participle Clauses Grammar Lesson](/grammar/advanced/participle-clauses/)** - Learn the rules and theory
 - **[Advanced Writing Style](/grammar/advanced/ellipsis-substitution/)** - Other ways to improve writing flow
 - **[More Advanced Exercises](/exercises/)** - Practice other advanced grammar topics

@@ -350,6 +350,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Plural-nouns Quiz](/quiz/beginner/plural-nouns-quiz/)** - Test your knowledge with a quiz
+
 - **[Plural Nouns Grammar Lesson](/grammar/beginner/plural-nouns/)** - Learn the rules and theory
 - **[Articles with Plural Nouns](/grammar/beginner/articles/)** - Using articles with plurals
 - **[More Beginner Exercises](/exercises/)** - Practice other beginner grammar topics

@@ -357,6 +357,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Possessive-adjectives Quiz](/quiz/beginner/possessive-adjectives-quiz/)** - Test your knowledge with a quiz
+
 - **[Possessive Adjectives Grammar Lesson](/grammar/beginner/possessive-adjectives/)** - Learn the rules and theory
 - **[Subject Pronouns](/grammar/beginner/subject-pronouns/)** - Related pronoun topics
 - **[More Beginner Exercises](/exercises/)** - Practice other beginner grammar topics

@@ -200,6 +200,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Passive-voice Quiz](/quiz/intermediate/passive-voice-quiz/)** - Test your knowledge with a quiz
+
 - **[Passive Voice Grammar Lesson](/grammar/intermediate/passive-voice/)** - Learn the rules and theory
 - **[Active vs Passive Voice](/grammar/intermediate/passive-voice/)** - Understanding when to use each
 - **[More Intermediate Exercises](/exercises/)** - Practice other intermediate grammar topics

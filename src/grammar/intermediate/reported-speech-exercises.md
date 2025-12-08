@@ -202,6 +202,8 @@ function resetExercise(exerciseId) {
 
 ## Related Materials
 
+- **[Reported-speech Quiz](/quiz/intermediate/reported-speech-quiz/)** - Test your knowledge with a quiz
+
 - **[Reported Speech Grammar Lesson](/grammar/intermediate/reported-speech/)** - Learn the rules and theory
 - **[Direct vs Indirect Speech](/grammar/intermediate/reported-speech/)** - Understanding the differences
 - **[More Intermediate Exercises](/exercises/)** - Practice other intermediate grammar topics
