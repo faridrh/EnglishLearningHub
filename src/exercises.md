@@ -300,10 +300,12 @@ Complement your exercise practice with our comprehensive grammar lessons:
 /* Level Navigation */
 .level-navigation {
   margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .level-card {
-  margin-bottom: 50px;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -462,6 +464,13 @@ Complement your exercise practice with our comprehensive grammar lessons:
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .level-navigation {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .exercises-hero {
     padding: 30px 15px;
@@ -478,7 +487,6 @@ Complement your exercise practice with our comprehensive grammar lessons:
   
   .level-card {
     padding: 20px;
-    margin-bottom: 30px;
   }
   
   .level-header h2 {
