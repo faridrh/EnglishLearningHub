@@ -301,7 +301,7 @@ Complement your exercise practice with our comprehensive grammar lessons:
 .level-navigation {
   margin: 40px 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -309,6 +309,13 @@ Complement your exercise practice with our comprehensive grammar lessons:
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.level-card.advanced {
+  grid-column: 1 / -1;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .level-card.beginner {
@@ -324,6 +331,10 @@ Complement your exercise practice with our comprehensive grammar lessons:
 .level-card.advanced {
   background: linear-gradient(135deg, #ff9a9e 0%, #a8caba 100%);
   border-left: 6px solid #dc3545;
+  grid-column: 1 / -1;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .level-header {
