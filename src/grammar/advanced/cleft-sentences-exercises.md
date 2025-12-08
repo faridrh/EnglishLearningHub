@@ -48,6 +48,16 @@ Use cleft sentence structures for emphasis:
     What she wants to learn <input type="text" class="fill-blank" data-answer="is Spanish" placeholder="________________">.</p>
   </div>
   
+  <div class="exercise-item">
+    <p><strong>7.</strong> My brother fixed the car. (emphasize my brother)<br>
+    It was <input type="text" class="fill-blank" data-answer="my brother who fixed" placeholder="________________"> the car.</p>
+  </div>
+  
+  <div class="exercise-item">
+    <p><strong>8.</strong> They moved to London. (emphasize London)<br>
+    It was <input type="text" class="fill-blank" data-answer="London where they" placeholder="________________"> moved.</p>
+  </div>
+  
   <div class="exercise-controls">
     <button onclick="checkAnswers('cleft-sentences-exercise')" class="check-btn">Check Answers</button>
     <button onclick="resetExercise('cleft-sentences-exercise')" class="reset-btn">Reset</button>
