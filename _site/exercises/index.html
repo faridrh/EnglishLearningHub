@@ -536,8 +536,8 @@
 
 .exercises-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
   margin-top: 20px;
 }
 
@@ -553,10 +553,10 @@
 
 .exercise-card {
   background: white;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 18px;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -568,38 +568,39 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, #007bff, #28a745);
   transition: height 0.3s ease;
 }
 
 .exercise-card:hover::before {
-  height: 6px;
+  height: 5px;
 }
 
 .topic-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .exercise-card h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
   color: #333;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .exercise-card p {
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.4;
+  font-size: 0.9rem;
 }
 
 .difficulty-badge {
   display: inline-block;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.7rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
