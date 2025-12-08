@@ -534,6 +534,65 @@ function resetExercise(exerciseId) {
   </article>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const h3Elements = document.querySelectorAll('.grammar-content h3');
+  
+  h3Elements.forEach(function(h3) {
+    h3.style.cursor = 'pointer';
+    h3.style.position = 'relative';
+    h3.style.paddingRight = '30px';
+    
+    const toggleIcon = document.createElement('span');
+    toggleIcon.className = 'toggle-icon';
+    toggleIcon.innerHTML = '▼';
+    toggleIcon.style.position = 'absolute';
+    toggleIcon.style.right = '0';
+    toggleIcon.style.top = '50%';
+    toggleIcon.style.transform = 'translateY(-50%)';
+    toggleIcon.style.fontSize = '14px';
+    toggleIcon.style.color = '#666';
+    toggleIcon.style.transition = 'transform 0.3s ease';
+    
+    h3.appendChild(toggleIcon);
+    
+    const contentElements = [];
+    let nextElement = h3.nextElementSibling;
+    
+    while (nextElement && !nextElement.matches('h3, h2, h1')) {
+      contentElements.push(nextElement);
+      nextElement = nextElement.nextElementSibling;
+    }
+    
+    const wrapper = document.createElement('div');
+    wrapper.className = 'collapsible-content';
+    wrapper.style.overflow = 'hidden';
+    wrapper.style.transition = 'max-height 0.3s ease';
+    
+    contentElements.forEach(function(element) {
+      wrapper.appendChild(element);
+    });
+    
+    h3.parentNode.insertBefore(wrapper, h3.nextSibling);
+    
+    // Start COLLAPSED by default (closed)
+    wrapper.style.maxHeight = '0px';
+    toggleIcon.style.transform = 'translateY(-50%) rotate(-90deg)';
+    
+    h3.addEventListener('click', function() {
+      const isCollapsed = wrapper.style.maxHeight === '0px';
+      
+      if (isCollapsed) {
+        wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+        toggleIcon.style.transform = 'translateY(-50%) rotate(0deg)';
+      } else {
+        wrapper.style.maxHeight = '0px';
+        toggleIcon.style.transform = 'translateY(-50%) rotate(-90deg)';
+      }
+    });
+  });
+});
+</script>
 
   </main>
 
