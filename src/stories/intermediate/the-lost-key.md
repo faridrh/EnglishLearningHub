@@ -18,6 +18,8 @@ translations:
 
 # The Lost Key
 
+<img src="/images/stories/lost-key.jpg" alt="Person searching for lost house key, looking stressed and concerned while checking pockets and bags" class="story-image-right">
+
 Sarah had been looking everywhere for her house key. She had searched through her purse three times, checked every pocket of her jacket, and even looked under the cushions of her car seats. The key seemed to have completely disappeared.
 
 "This is impossible," she <mark data-translation="muttered">muttered</mark> to herself as she stood outside her apartment building. "I had it this morning when I left for work."
@@ -41,8 +43,6 @@ Sarah's eyes widened. "You're absolutely right! I remember taking out my wallet 
 "The coffee shop is only two blocks away. I'll head there right now."
 
 Sarah hurried down the street, her heart beating faster with each step. When she arrived at "Morning Brew," her favorite coffee shop, she went straight to the counter.
-
-<img src="/stories/intermediate/lost-key-sarah.jpg" alt="Sarah looking worried talking to a friendly barista at a coffee shop, with the barista holding keys" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;">
 
 "Excuse me," she said to the barista, a young man with friendly eyes. "I was here this morning around eight-thirty, and I think I might have dropped my house key. Did anyone happen to find one?"
 

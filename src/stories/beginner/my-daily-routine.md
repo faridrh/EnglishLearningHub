@@ -18,9 +18,9 @@ translations:
 
 # My Daily Routine
 
-Tom wakes up every morning at seven o'clock. He brushes his teeth, eats breakfast, and goes to work. Tom works in an <mark data-translation="office">office</mark> in the <mark data-translation="city_center">city center</mark>.
+<img src="/images/stories/daily-routine.jpg" alt="Person waking up in the morning, showing a typical daily routine with breakfast and getting ready for work" class="story-image-right">
 
-<img src="/images/tom-daily-routine.jpg" alt="Illustration of Tom's daily routine showing morning activities, office work, and evening relaxation - English learning story for beginners" style="width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
+Tom wakes up every morning at seven o'clock. He brushes his teeth, eats breakfast, and goes to work. Tom works in an <mark data-translation="office">office</mark> in the <mark data-translation="city_center">city center</mark>.
 
 At eight o'clock, Tom leaves his house. He walks to the <mark data-translation="bus_stop">bus stop</mark>. The bus comes at eight-fifteen. Tom sits by the window and looks at the buildings and cars.
 

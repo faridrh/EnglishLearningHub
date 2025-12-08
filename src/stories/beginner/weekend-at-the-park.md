@@ -20,9 +20,9 @@ translations:
 
 # Weekend at the Park
 
-It is Saturday morning. The <mark data-translation="weather">weather</mark> is <mark data-translation="beautiful">beautiful</mark>. The sun is shining brightly, and there are no clouds in the sky.
+<img src="/images/stories/park.jpg" alt="Family enjoying outdoor activities at the park on a sunny weekend, with children playing and parents relaxing" class="story-image-right">
 
-<img src="/images/weekend-at-park.jpg" alt="Illustration of a family enjoying activities at a park on a sunny weekend - beginner English learning story about outdoor recreation" style="width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
+It is Saturday morning. The <mark data-translation="weather">weather</mark> is <mark data-translation="beautiful">beautiful</mark>. The sun is shining brightly, and there are no clouds in the sky.
 
 Jenny and her little brother Alex are going to the park with their parents. Mom packs sandwiches, fruit, and juice for a <mark data-translation="picnic">picnic</mark>. Dad takes a big <mark data-translation="blanket">blanket</mark> and a football.
 

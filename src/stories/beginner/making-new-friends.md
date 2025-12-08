@@ -18,9 +18,9 @@ translations:
 
 # Making New Friends
 
-Sarah is <mark data-translation="nervous">nervous</mark> but <mark data-translation="excited">excited</mark>. Today is her first day at a new school. She moved to this city last week with her family.
+<img src="/images/stories/making-friends.jpg" alt="Children making friends at school, showing students playing and interacting together in a friendly environment" class="story-image-right">
 
-<img src="/images/making-new-friends.jpg" alt="Illustration of children making friends at school - beginner English learning story about friendship and school life" style="width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
+Sarah is <mark data-translation="nervous">nervous</mark> but <mark data-translation="excited">excited</mark>. Today is her first day at a new school. She moved to this city last week with her family.
 
 Sarah walks into the <mark data-translation="classroom">classroom</mark>. The <mark data-translation="teacher">teacher</mark>, Ms. Johnson, smiles and says, "Welcome, Sarah! Please sit next to Emma." Emma has curly brown hair and a big smile.
 

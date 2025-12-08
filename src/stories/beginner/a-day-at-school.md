@@ -19,7 +19,9 @@ translations:
 
 # A Day at School
 
-Jenny is eight years old and goes to Green Valley <mark data-translation="elementary_school">Elementary School</mark>. <img src="/stories/beginner/school-girl.jpg" alt="Eight-year-old Jenny with bright smile and pigtails sitting at desk in Green Valley Elementary School classroom with kind teacher Mrs. Smith in background - beginner English story for school vocabulary learning" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She likes her teacher and has many friends at school.
+<img src="/images/stories/school.jpg" alt="Students in a bright classroom learning with their teacher, showing a typical school day environment" class="story-image-right">
+
+Jenny is eight years old and goes to Green Valley <mark data-translation="elementary_school">Elementary School</mark>. She likes her teacher and has many friends at school.
 
 Every morning, Jenny's mother drives her to school. They arrive at eight o'clock. Jenny says goodbye to her mother and walks to her <mark data-translation="classroom">classroom</mark>.
 

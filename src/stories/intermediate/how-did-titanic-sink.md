@@ -30,7 +30,7 @@ At the beginning of the 20th century, a British shipping company wanted to build
 
 It was named RMS Titanic. The people were thrilled. Many believed that the Titanic was <mark data-translation="unsinkable">unsinkable</mark>. Engineers explained that the ship was divided into many <mark data-translation="watertight">watertight</mark> areas. Even if a part were damaged, the Titanic could continue to sail. No one suspected how wrong this assumption was.
 
-<img src="/images/stories/titanic.jpg" alt="RMS Titanic sinking into the freezing North Atlantic waters near a massive iceberg during the tragic night of April 14-15, 1912 - one of history's greatest maritime disasters" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;">
+<img src="/images/stories/titanic.jpg" alt="RMS Titanic near iceberg in the North Atlantic during the tragic night of April 14-15, 1912" class="story-image-right">
 
 ## The First Journey Begins
 

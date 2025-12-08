@@ -20,7 +20,9 @@ translations:
 
 # A Day at the Market
 
-Elena loved visiting the local farmers market every Saturday morning. The colors, smells, and sounds always made her feel alive and connected to her community. <img src="/stories/intermediate/market-scene.jpg" alt="Vibrant farmers market scene showing Elena shopping for fresh heirloom tomatoes and artisanal goods at colorful vendor stalls - intermediate English story for cultural and business vocabulary learning" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She had been coming here for three years, ever since she moved to the neighborhood, and it had become one of her favorite weekly traditions.
+<img src="/images/stories/market.jpg" alt="Vibrant farmers market with colorful vendor stalls selling fresh vegetables, fruits, and artisanal goods" class="story-image-right">
+
+Elena loved visiting the local farmers market every Saturday morning. The colors, smells, and sounds always made her feel alive and connected to her community. She had been coming here for three years, ever since she moved to the neighborhood, and it had become one of her favorite weekly traditions.
 
 As she walked through the entrance at nine o'clock sharp, Elena was greeted by the familiar sight of colorful tents and busy <mark data-translation="vendors">vendors</mark> setting up their stalls. The autumn air was crisp, and she pulled her sweater closer as she made her way to her first stop: Mrs. Patterson's vegetable stand.
 

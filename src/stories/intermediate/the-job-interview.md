@@ -19,7 +19,9 @@ translations:
 
 # The Job Interview
 
-Michael adjusted his tie nervously as he sat in the waiting room. This was the opportunity he had been waiting for – a position as a marketing <mark data-translation="coordinator">coordinator</mark> at GreenTech Solutions, a company known for its <mark data-translation="innovative">innovative</mark> environmental projects. <img src="/stories/intermediate/job-interview-scene.jpg" alt="Professional job interview scene showing confident candidate Michael meeting with HR manager Jennifer and marketing director David in modern GreenTech Solutions office - intermediate English story for workplace vocabulary learning" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> He had spent weeks preparing for this moment, researching the company, practicing common interview questions, and planning his responses.
+<img src="/images/stories/job-interview.jpg" alt="Professional job interview scene in a modern office with candidate and interviewers in a meeting" class="story-image-right">
+
+Michael adjusted his tie nervously as he sat in the waiting room. This was the opportunity he had been waiting for – a position as a marketing <mark data-translation="coordinator">coordinator</mark> at GreenTech Solutions, a company known for its <mark data-translation="innovative">innovative</mark> environmental projects. He had spent weeks preparing for this moment, researching the company, practicing common interview questions, and planning his responses.
 
 The waiting room was modern and bright, with large windows overlooking the city. Plants decorated every corner, reflecting the company's commitment to <mark data-translation="sustainability">sustainability</mark>. Michael tried to calm his nerves by focusing on his breathing, a technique his sister had taught him.
 

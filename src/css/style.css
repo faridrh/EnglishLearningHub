@@ -1472,3 +1472,37 @@ p {
 .collapsible-content.collapsed {
   margin-bottom: 0;
 }
+
+/* Story Images
+-------------------------------------------------- */
+.story-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-md);
+  margin: 20px auto;
+  display: block;
+}
+
+.story-image-right {
+  float: right;
+  margin: 0 0 20px 20px;
+  max-width: 350px;
+}
+
+.story-image-left {
+  float: left;
+  margin: 0 20px 20px 0;
+  max-width: 350px;
+}
+
+@media (max-width: 768px) {
+  .story-image-right,
+  .story-image-left {
+    float: none;
+    margin: 20px auto;
+    max-width: 100%;
+    display: block;
+  }
+}

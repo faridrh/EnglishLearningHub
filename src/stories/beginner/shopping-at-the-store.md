@@ -19,9 +19,11 @@ translations:
 
 # Shopping at the Store
 
+<img src="/images/stories/shopping.jpg" alt="Woman shopping for groceries at the supermarket with a cart full of fresh fruits and vegetables" class="story-image-right">
+
 Lisa needs to buy food for her family. She makes a <mark data-translation="list">list</mark> and goes to the <mark data-translation="supermarket">supermarket</mark> near her house. The <mark data-translation="supermarket">supermarket</mark> is big and has many different foods.
 
-Lisa takes a shopping <mark data-translation="cart">cart</mark> at the entrance. First, she goes to the fruit <mark data-translation="section">section</mark>. <img src="/stories/beginner/shopping-store.jpg" alt="A woman shopping for fresh fruits at the supermarket" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;"> She buys apples, bananas, and oranges. The fruits are <mark data-translation="fresh">fresh</mark> and look very good.
+Lisa takes a shopping <mark data-translation="cart">cart</mark> at the entrance. First, she goes to the fruit <mark data-translation="section">section</mark>. She buys apples, bananas, and oranges. The fruits are <mark data-translation="fresh">fresh</mark> and look very good.
 
 Next, Lisa goes to the vegetable <mark data-translation="section">section</mark>. She picks tomatoes, carrots, and lettuce. Lisa likes to make salads for her family. The vegetables are green and healthy.
 

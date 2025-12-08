@@ -20,9 +20,9 @@ translations:
 
 # Little Red Riding Hood
 
-Once upon a time, there was a girl called Little Red Riding Hood. She lived with her mother in a small village. She always wore a red <mark data-translation="cape">cape</mark>, and that's why people called her that.
+<img src="/images/stories/little-red-riding-hood.jpg" alt="Little Red Riding Hood in her iconic red cape meeting the cunning wolf in an enchanted forest - classic fairy tale" class="story-image-right">
 
-<img src="/images/stories/little-red-riding-hood.jpg" alt="Little Red Riding Hood in her iconic red cape meeting the cunning wolf in an enchanted moonlit forest - classic fairy tale illustration for intermediate English story learning" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 10px 0; float: right; margin-left: 20px;">
+Once upon a time, there was a girl called Little Red Riding Hood. She lived with her mother in a small village. She always wore a red <mark data-translation="cape">cape</mark>, and that's why people called her that.
 
 One day, her mother said, "Please take this basket of food to your grandmother. She is sick and lives in the forest." Little Red Riding Hood <mark data-translation="nodded">nodded</mark> and started her <mark data-translation="journey">journey</mark>.
 
