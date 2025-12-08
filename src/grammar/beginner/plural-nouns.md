@@ -183,55 +183,55 @@ Change these singular nouns to their plural forms:
 <div class="interactive-exercise" id="plural-nouns-exercise" data-exercise-id="plural-nouns-beginner">
   <div class="exercise-item">
     <p><strong>1.</strong> cat → <input type="text" class="fill-blank" data-answer="cats" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>2.</strong> box → <input type="text" class="fill-blank" data-answer="boxes" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>3.</strong> baby → <input type="text" class="fill-blank" data-answer="babies" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>4.</strong> knife → <input type="text" class="fill-blank" data-answer="knives" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>5.</strong> child → <input type="text" class="fill-blank" data-answer="children" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>6.</strong> tomato → <input type="text" class="fill-blank" data-answer="tomatoes" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>7.</strong> man → <input type="text" class="fill-blank" data-answer="men" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>8.</strong> fish → <input type="text" class="fill-blank" data-answer="fish" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>9.</strong> woman → <input type="text" class="fill-blank" data-answer="women" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>10.</strong> story → <input type="text" class="fill-blank" data-answer="stories" placeholder="______"></p>
-  </div>
+  
   
   <div class="exercise-controls">
     <button onclick="checkAnswers('plural-nouns-exercise')" class="check-btn">Check Answers</button>
     <button onclick="resetExercise('plural-nouns-exercise')" class="reset-btn">Reset</button>
-  </div>
+  
   
   <div id="plural-nouns-exercise-results" class="results-section" style="display: none;">
     <h4>Results:</h4>
     <p id="plural-nouns-exercise-score"></p>
-    <div id="plural-nouns-exercise-feedback"></div>
-  </div>
-</div>
+    <div id="plural-nouns-exercise-feedback">
+  
+
 
 <script>
 function checkAnswers(exerciseId) {
@@ -369,5 +369,14 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember, practicing with real-world examples and reading extensively will help you become more familiar with both regular and irregular plural forms!
+
+
+---
+
+## Related Learning Materials
+
+### Practice & Quiz
+- **[Plural Nouns Exercises](/grammar/beginner/plural-nouns-exercises/)** - Practice with interactive exercises
+- **[Plural Nouns Quiz](/quiz/beginner/plural-nouns-quiz/)** - Test your knowledge
 
 </div>

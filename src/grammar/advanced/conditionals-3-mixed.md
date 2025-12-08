@@ -336,6 +336,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Conditionals 3 & Mixed Exercises](/grammar/advanced/conditionals-3-mixed-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Conditionals-3-mixed Quiz](/quiz/advanced/conditionals-3-mixed-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Advanced Vocabulary Page 7](/vocabulary/advanced/page-7/)** - Hypothetical and unreal situations vocabulary

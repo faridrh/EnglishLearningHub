@@ -369,6 +369,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Cleft Sentences Exercises](/grammar/advanced/cleft-sentences-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Cleft-sentences Quiz](/quiz/advanced/cleft-sentences-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Advanced Vocabulary Page 3](/vocabulary/advanced/page-3/)** - Emphasis and focus vocabulary

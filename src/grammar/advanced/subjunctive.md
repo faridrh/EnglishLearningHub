@@ -368,6 +368,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Subjunctive Exercises](/grammar/advanced/subjunctive-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Subjunctive Quiz](/quiz/advanced/subjunctive-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Advanced Vocabulary Page 8](/vocabulary/advanced/page-8/)** - Formal expressions often used with subjunctive

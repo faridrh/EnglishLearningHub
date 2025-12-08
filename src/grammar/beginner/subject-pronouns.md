@@ -157,43 +157,43 @@ Replace the nouns with appropriate subject pronouns:
 <div class="interactive-exercise" id="subject-pronouns-exercise" data-exercise-id="subject-pronouns-beginner">
   <div class="exercise-item">
     <p><strong>1.</strong> <strong>Maria</strong> is from Spain. <input type="text" class="fill-blank" data-answer="She" placeholder="_____"> speaks Spanish and English.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>2.</strong> <strong>The cat</strong> is sleeping on the sofa. <input type="text" class="fill-blank" data-answer="It" placeholder="_____"> looks very comfortable.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>3.</strong> <strong>My friends and I</strong> went to the cinema. <input type="text" class="fill-blank" data-answer="We" placeholder="_____"> watched an action movie.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>4.</strong> <strong>The book</strong> is on the table. <input type="text" class="fill-blank" data-answer="It" placeholder="_____"> belongs to me.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>5.</strong> <strong>Tom and Lisa</strong> are married. <input type="text" class="fill-blank" data-answer="They" placeholder="_____"> have two children.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>6.</strong> <strong>John</strong> is my brother. <input type="text" class="fill-blank" data-answer="He" placeholder="_____"> works as a teacher.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>7.</strong> <strong>My sister and brother</strong> live in New York. <input type="text" class="fill-blank" data-answer="They" placeholder="_____"> love the city.</p>
-  </div>
+  
   
   <div class="exercise-controls">
     <button onclick="checkAnswers('subject-pronouns-exercise')" class="check-btn">Check Answers</button>
     <button onclick="resetExercise('subject-pronouns-exercise')" class="reset-btn">Reset</button>
-  </div>
+  
   
   <div id="subject-pronouns-exercise-results" class="results-section" style="display: none;">
     <h4>Results:</h4>
     <p id="subject-pronouns-exercise-score"></p>
-    <div id="subject-pronouns-exercise-feedback"></div>
-  </div>
-</div>
+    <div id="subject-pronouns-exercise-feedback">
+  
+
 
 <script>
 function checkAnswers(exerciseId) {
@@ -331,5 +331,14 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember, using the correct subject pronouns will make your English sound more natural and fluent!
+
+
+---
+
+## Related Learning Materials
+
+### Practice & Quiz
+- **[Subject Pronouns Exercises](/grammar/beginner/subject-pronouns-exercises/)** - Practice with interactive exercises
+- **[Subject Pronouns Quiz](/quiz/beginner/subject-pronouns-quiz/)** - Test your knowledge
 
 </div>

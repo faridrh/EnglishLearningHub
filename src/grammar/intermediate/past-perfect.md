@@ -329,6 +329,7 @@ Remember that the past perfect helps make the sequence of past events clear and 
 
 ### Practice Exercises
 - **[Past Perfect Exercises](/grammar/intermediate/past-perfect-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Past-perfect Quiz](/quiz/intermediate/past-perfect-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Intermediate Vocabulary Page 5](/vocabulary/intermediate/page-5/)** - Time expressions useful with past perfect

@@ -185,43 +185,43 @@ Complete the sentences with the correct possessive adjective:
 <div class="interactive-exercise" id="possessive-adjectives-exercise" data-exercise-id="possessive-adjectives-beginner">
   <div class="exercise-item">
     <p><strong>1.</strong> I have a car. <input type="text" class="fill-blank" data-answer="My" placeholder="_____"> car is blue.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>2.</strong> You have a new phone. Is that <input type="text" class="fill-blank" data-answer="your" placeholder="_____"> phone?</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>3.</strong> He has a sister. <input type="text" class="fill-blank" data-answer="His" placeholder="_____"> sister is a teacher.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>4.</strong> She has three brothers. <input type="text" class="fill-blank" data-answer="Her" placeholder="_____"> brothers are all doctors.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>5.</strong> The dog is eating <input type="text" class="fill-blank" data-answer="its" placeholder="_____"> food.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>6.</strong> We have a house in the country. <input type="text" class="fill-blank" data-answer="Our" placeholder="_____"> house is very old.</p>
-  </div>
+  
   
   <div class="exercise-item">
     <p><strong>7.</strong> They have two children. <input type="text" class="fill-blank" data-answer="Their" placeholder="_____"> children go to the same school.</p>
-  </div>
+  
   
   <div class="exercise-controls">
     <button onclick="checkAnswers('possessive-adjectives-exercise')" class="check-btn">Check Answers</button>
     <button onclick="resetExercise('possessive-adjectives-exercise')" class="reset-btn">Reset</button>
-  </div>
+  
   
   <div id="possessive-adjectives-exercise-results" class="results-section" style="display: none;">
     <h4>Results:</h4>
     <p id="possessive-adjectives-exercise-score"></p>
-    <div id="possessive-adjectives-exercise-feedback"></div>
-  </div>
-</div>
+    <div id="possessive-adjectives-exercise-feedback">
+  
+
 
 <script>
 function checkAnswers(exerciseId) {
@@ -359,5 +359,14 @@ function resetExercise(exerciseId) {
 </style>
 
 Remember that possessive adjectives are essential for clear communication in English, so practice using them correctly!
+
+
+---
+
+## Related Learning Materials
+
+### Practice & Quiz
+- **[Possessive Adjectives Exercises](/grammar/beginner/possessive-adjectives-exercises/)** - Practice with interactive exercises
+- **[Possessive Adjectives Quiz](/quiz/beginner/possessive-adjectives-quiz/)** - Test your knowledge
 
 </div>

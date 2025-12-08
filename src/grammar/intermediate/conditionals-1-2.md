@@ -354,6 +354,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Conditionals 1 & 2 Exercises](/grammar/intermediate/conditionals-1-2-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Conditionals-1-2 Quiz](/quiz/intermediate/conditionals-1-2-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Intermediate Vocabulary Page 7](/vocabulary/intermediate/page-7/)** - Situations and conditions vocabulary

@@ -348,6 +348,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Inversion Exercises](/grammar/advanced/inversion-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Inversion Quiz](/quiz/advanced/inversion-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Advanced Vocabulary Page 5](/vocabulary/advanced/page-5/)** - Emphatic and literary expressions

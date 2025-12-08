@@ -356,6 +356,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Passive Voice Exercises](/grammar/intermediate/passive-voice-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Passive-voice Quiz](/quiz/intermediate/passive-voice-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Intermediate Vocabulary Page 6](/vocabulary/intermediate/page-6/)** - Action verbs perfect for passive voice practice

@@ -381,6 +381,10 @@ function resetExercise(exerciseId) {
 
 ## Related Learning Materials
 
+### Practice & Quiz
+- **[Modal Verbs Exercises](/grammar/intermediate/modal-verbs-exercises/)** - Practice with interactive exercises
+- **[Modal Verbs Quiz](/quiz/intermediate/modal-verbs-quiz/)** - Test your knowledge
+
 ### Vocabulary for Advanced Expression
 - **[Intermediate Vocabulary Page 3](/vocabulary/intermediate/page-3/)** - Professional vocabulary that pairs well with modal verbs
 - **[Intermediate Vocabulary Page 12](/vocabulary/intermediate/page-12/)** - Academic expressions for modal verb contexts

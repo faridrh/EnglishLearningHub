@@ -380,6 +380,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Ellipsis & Substitution Exercises](/grammar/advanced/ellipsis-substitution-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Ellipsis-substitution Quiz](/quiz/advanced/ellipsis-substitution-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Advanced Vocabulary Page 9](/vocabulary/advanced/page-9/)** - Discourse markers and connectors

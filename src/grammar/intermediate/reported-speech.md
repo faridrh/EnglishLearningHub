@@ -310,6 +310,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Reported Speech Exercises](/grammar/intermediate/reported-speech-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Reported-speech Quiz](/quiz/intermediate/reported-speech-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Intermediate Vocabulary Page 10](/vocabulary/intermediate/page-10/)** - Reporting verbs and expressions

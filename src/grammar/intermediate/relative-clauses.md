@@ -345,6 +345,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Relative Clauses Exercises](/grammar/intermediate/relative-clauses-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Relative-clauses Quiz](/quiz/intermediate/relative-clauses-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Intermediate Vocabulary Page 9](/vocabulary/intermediate/page-9/)** - Descriptive vocabulary for relative clauses

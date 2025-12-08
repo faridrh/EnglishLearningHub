@@ -282,6 +282,10 @@ Remember, mastering the present simple tense is essential for effective communic
 
 ## Related Learning Materials
 
+### Practice & Quiz
+- **[Present Simple Exercises](/grammar/beginner/present-simple-exercises/)** - Practice with interactive exercises
+- **[Present Simple Quiz](/quiz/beginner/present-simple-quiz/)** - Test your knowledge
+
 ### Vocabulary to Practice With
 - **[Beginner Vocabulary Page 7](/vocabulary/beginner/page-7/)** - Essential verbs to use with present simple
 - **[Beginner Vocabulary Page 4](/vocabulary/beginner/page-4/)** - Time expressions for present simple

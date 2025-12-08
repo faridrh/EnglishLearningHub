@@ -375,6 +375,7 @@ function resetExercise(exerciseId) {
 
 ### Practice Exercises
 - **[Participle Clauses Exercises](/grammar/advanced/participle-clauses-exercises/)** - Dedicated practice page with comprehensive exercises
+- **[Participle-clauses Quiz](/quiz/advanced/participle-clauses-quiz/)** - Test your knowledge
 
 ### Vocabulary to Practice With
 - **[Advanced Vocabulary Page 6](/vocabulary/advanced/page-6/)** - Action verbs for participle constructions
