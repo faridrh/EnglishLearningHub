@@ -39,6 +39,9 @@ Test your English proficiency with our comprehensive 25-question placement test.
     <div id="score-display" class="score-display"></div>
     <div id="level-display" class="level-display"></div>
     <div id="level-description" class="level-description"></div>
+    <div class="promo-banner">
+      <p>Start your 7 day free trial with our AI based English language learning at <a href="https://www.ingilisdili.net" target="_blank">www.ingilisdili.net</a></p>
+    </div>
     <div class="action-buttons">
       <button class="btn btn-primary" onclick="restartTest()">Retake Test</button>
       <a href="/grammar/" class="btn btn-secondary">Start Learning Grammar</a>
@@ -246,6 +249,33 @@ Test your English proficiency with our comprehensive 25-question placement test.
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.promo-banner {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 25px auto;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.promo-banner p {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.promo-banner a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.promo-banner a:hover {
+  color: #e8f5e9;
 }
 
 .action-buttons {

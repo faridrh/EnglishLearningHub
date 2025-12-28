@@ -219,6 +219,9 @@
     <div id="score-display" class="score-display"></div>
     <div id="level-display" class="level-display"></div>
     <div id="level-description" class="level-description"></div>
+    <div class="promo-banner">
+      <p>Süni intellekt əsaslı ingilis dili proqramına qoşulun (7 günlük pulsuz istifadə) <a href="https://www.ingilisdili.net" target="_blank">www.ingilisdili.net</a></p>
+    </div>
     <div class="action-buttons">
       <button class="btn btn-primary" onclick="restartTest()">Testi Təkrar Et</button>
       <a href="/az/qrammatika/" class="btn btn-secondary">Qrammatika Öyrənməyə Başla</a>
@@ -425,6 +428,33 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.promo-banner {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 25px auto;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.promo-banner p {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.promo-banner a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.promo-banner a:hover {
+  color: #e8f5e9;
 }
 
 .action-buttons {
