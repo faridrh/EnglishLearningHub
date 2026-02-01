@@ -41,6 +41,197 @@ description: Expand your English vocabulary with our comprehensive word lists or
   </div>
 </section>
 
+<section class="vocabulary-flashcards">
+  <div class="container">
+    <h2 class="section-title">Practice Intermediate Vocabulary</h2>
+    <p class="section-subtitle">Boost your learning with interactive flashcards. Try a few words from our Intermediate level!</p>
+    
+    <!-- Flashcard Section -->
+    {% set intermediate_page_1 = collections.all | selectattr("url", "equalto", "/vocabulary/intermediate/page-1/") | first %}
+    {% if intermediate_page_1 and intermediate_page_1.data.wordlist %}
+      <div class="flashcard-section" style="background: white; border: 1px solid #e0e6ed; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <div class="flashcard-wrapper">
+          <!-- Progress Indicator -->
+          <div class="fc-progress-container">
+            <div id="fc-progress-dots" class="fc-progress-dots"></div>
+            <span id="fc-progress-text" class="fc-progress-text">1 / {{ intermediate_page_1.data.wordlist | length }}</span>
+          </div>
+
+          <!-- Flashcard -->
+          <div class="fc-card-container" onclick="fcFlipCard()">
+            <div id="fc-card-inner" class="fc-card-inner">
+              <div class="fc-card-front">
+                <span class="fc-emoji" id="fc-front-emoji">✨</span>
+                <p id="fc-term" class="fc-term">Loading...</p>
+                <p class="fc-hint">Click to flip</p>
+              </div>
+              <div class="fc-card-back">
+                <p id="fc-definition" class="fc-definition">Loading...</p>
+                <span class="fc-emoji" id="fc-back-emoji">📚</span>
+                <p class="fc-hint-back">Click to flip back</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div class="fc-nav-buttons">
+            <button onclick="fcPrevCard()" class="fc-btn fc-btn-secondary">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+              Previous
+            </button>
+            <button onclick="fcNextCard()" class="fc-btn fc-btn-primary">
+              Next
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <!-- Score Buttons -->
+          <div class="fc-score-buttons">
+            <button onclick="fcMarkKnown()" class="fc-btn fc-btn-known">I know this</button>
+            <button onclick="fcMarkLearning()" class="fc-btn fc-btn-learning">Still learning</button>
+          </div>
+
+          <!-- Stats -->
+          <div class="fc-stats">
+            <div class="fc-stat fc-stat-known">
+              <p class="fc-stat-number" id="fc-known-count">0</p>
+              <p class="fc-stat-label">Known</p>
+            </div>
+            <div class="fc-stat fc-stat-learning">
+              <p class="fc-stat-number" id="fc-learning-count">0</p>
+              <p class="fc-stat-label">Learning</p>
+            </div>
+            <div class="fc-stat fc-stat-remaining">
+              <p class="fc-stat-number" id="fc-remaining-count">{{ intermediate_page_1.data.wordlist | length }}</p>
+              <p class="fc-stat-label">Remaining</p>
+            </div>
+          </div>
+
+          <!-- Completion Message -->
+          <div id="fc-completion" class="fc-completion" style="display: none;">
+            <span class="fc-completion-emoji">🎉</span>
+            <h3>Awesome job!</h3>
+            <p>Ready for more? Explore all levels below!</p>
+            <button onclick="fcResetDeck()" class="fc-btn fc-btn-primary">Start Over</button>
+          </div>
+        </div>
+      </div>
+
+      <script>
+      (function() {
+        const flashcards = [
+          {% for word in intermediate_page_1.data.wordlist %}
+          { 
+            term: "{{ word.term | replace('"', '\\"') }}", 
+            definition: "{{ word.azerbaijani | replace('"', '\\"') }}",
+            emoji: "✨",
+            backEmoji: "{{ word.emoji if word.emoji else '📚' }}"
+          }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ];
+
+        let currentIndex = 0;
+        let isFlipped = false;
+        let knownCards = new Set();
+        let learningCards = new Set();
+
+        function init() {
+          renderProgressDots();
+          updateCard();
+          updateStats();
+        }
+
+        function renderProgressDots() {
+          const container = document.getElementById('fc-progress-dots');
+          if (!container) return;
+          container.innerHTML = flashcards.map((_, i) => 
+            `<div class="fc-progress-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
+          ).join('');
+        }
+
+        function updateProgressDots() {
+          const dots = document.querySelectorAll('.fc-progress-dot');
+          dots.forEach((dot, i) => {
+            dot.classList.remove('active', 'known', 'learning');
+            if (knownCards.has(i)) dot.classList.add('known');
+            else if (learningCards.has(i)) dot.classList.add('learning');
+            if (i === currentIndex) dot.classList.add('active');
+          });
+        }
+
+        window.fcFlipCard = function() {
+          const cardInner = document.getElementById('fc-card-inner');
+          isFlipped = !isFlipped;
+          cardInner.classList.toggle('flipped', isFlipped);
+        };
+
+        function updateCard() {
+          const card = flashcards[currentIndex];
+          document.getElementById('fc-term').textContent = card.term;
+          document.getElementById('fc-definition').textContent = card.definition;
+          document.getElementById('fc-front-emoji').textContent = card.emoji;
+          document.getElementById('fc-back-emoji').textContent = card.backEmoji;
+          document.getElementById('fc-progress-text').textContent = `${currentIndex + 1} / ${flashcards.length}`;
+          if (isFlipped) {
+            isFlipped = false;
+            document.getElementById('fc-card-inner').classList.remove('flipped');
+          }
+          updateProgressDots();
+        }
+
+        window.fcNextCard = function() {
+          if (currentIndex < flashcards.length - 1) { currentIndex++; updateCard(); }
+          else { checkCompletion(); }
+        };
+
+        window.fcPrevCard = function() {
+          if (currentIndex > 0) { currentIndex--; updateCard(); }
+        };
+
+        window.fcMarkKnown = function() {
+          knownCards.add(currentIndex);
+          learningCards.delete(currentIndex);
+          updateStats();
+          updateProgressDots();
+          if (currentIndex < flashcards.length - 1) { setTimeout(() => { currentIndex++; updateCard(); }, 300); }
+          else { checkCompletion(); }
+        };
+
+        window.fcMarkLearning = function() {
+          learningCards.add(currentIndex);
+          knownCards.delete(currentIndex);
+          updateStats();
+          updateProgressDots();
+          if (currentIndex < flashcards.length - 1) { setTimeout(() => { currentIndex++; updateCard(); }, 300); }
+          else { checkCompletion(); }
+        };
+
+        function updateStats() {
+          document.getElementById('fc-known-count').textContent = knownCards.size;
+          document.getElementById('fc-learning-count').textContent = learningCards.size;
+          document.getElementById('fc-remaining-count').textContent = flashcards.length - knownCards.size - learningCards.size;
+        }
+
+        function checkCompletion() {
+          if (knownCards.size + learningCards.size === flashcards.length) {
+            document.getElementById('fc-completion').style.display = 'block';
+          }
+        }
+
+        window.fcResetDeck = function() {
+          currentIndex = 0; knownCards.clear(); learningCards.clear();
+          document.getElementById('fc-completion').style.display = 'none';
+          updateCard(); updateStats(); renderProgressDots();
+        };
+
+        if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); }
+        else { init(); }
+      })();
+      </script>
+    {% endif %}
+  </div>
+</section>
+
 <section class="vocabulary-preview">
   <div class="container">
     <h2 class="section-title">Recently Added Words</h2>
