@@ -624,20 +624,29 @@ layout: layouts/base.njk
     { 
       term: "{{ word.term | replace('"', '\\"') }}", 
       definition: "{{ word.azerbaijani | replace('"', '\\"') }}",
-      emoji: "📚",
-      backEmoji: "✨"
+      emoji: "✨",
+      backEmoji: "{{ word.emoji if word.emoji else '📚' }}"
     }{% if not loop.last %},{% endif %}
     {% endfor %}
   ];
 
-  // Emoji mapping for categories
-  const emojiMap = {
+  // Emoji mapping for back side (Azerbaijani side)
+  const backEmojiMap = {
     "Greetings": "👋",
     "Politeness": "🙏",
     "Basic Responses": "💬",
     "Food & Drink": "🍽️",
     "Places": "🏠",
     "Relationships": "👫",
+    "Morning": "🌅",
+    "Night": "🌙",
+    "Smile": "😊",
+    "Check": "✅",
+    "Cross": "❌",
+    "Stop": "🤚",
+    "Water": "💧",
+    "Love": "❤️",
+    "SOS": "🆘",
     "default": "📚"
   };
 
