@@ -47,188 +47,183 @@ description: Expand your English vocabulary with our comprehensive word lists or
     <p class="section-subtitle">Boost your learning with interactive flashcards. Try a few words from our Intermediate level!</p>
     
     <!-- Flashcard Section -->
-    {% set intermediate_page_1 = collections.all | selectattr("url", "equalto", "/vocabulary/intermediate/page-1/") | first %}
-    {% if intermediate_page_1 and intermediate_page_1.data.wordlist %}
-      <div class="flashcard-section" style="background: white; border: 1px solid #e0e6ed; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); display: block !important;">
-        <div class="flashcard-wrapper">
-          <!-- Progress Indicator -->
-          <div class="fc-progress-container">
-            <div id="fc-progress-dots" class="fc-progress-dots"></div>
-            <span id="fc-progress-text" class="fc-progress-text">1 / {{ intermediate_page_1.data.wordlist | length }}</span>
-          </div>
+    <div class="flashcard-section" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdfa 100%); border-radius: 16px; padding: 30px; text-align: center; margin-top: 20px;">
+      <div class="flashcard-wrapper" style="max-width: 500px; margin: 0 auto;">
+        <!-- Progress Indicator -->
+        <div class="fc-progress-container" style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 24px;">
+          <div id="fc-progress-dots" class="fc-progress-dots" style="display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;"></div>
+          <span id="fc-progress-text" class="fc-progress-text" style="color: #475569; font-weight: 600;">1 / 6</span>
+        </div>
 
-          <!-- Flashcard -->
-          <div class="fc-card-container" onclick="fcFlipCard()">
-            <div id="fc-card-inner" class="fc-card-inner">
-              <div class="fc-card-front">
-                <span class="fc-emoji" id="fc-front-emoji">✨</span>
-                <p id="fc-term" class="fc-term">Loading...</p>
-                <p class="fc-hint">Click to flip</p>
-              </div>
-              <div class="fc-card-back">
-                <p id="fc-definition" class="fc-definition">Loading...</p>
-                <span class="fc-emoji" id="fc-back-emoji">📚</span>
-                <p class="fc-hint-back">Click to flip back</p>
-              </div>
+        <!-- Flashcard -->
+        <div class="fc-card-container" onclick="fcFlipCard()" style="perspective: 1000px; width: 100%; height: 280px; cursor: pointer; margin-bottom: 20px;">
+          <div id="fc-card-inner" class="fc-card-inner" style="position: relative; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d;">
+            <div class="fc-card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; background: white; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 2px solid #e0f2fe;">
+              <span class="fc-emoji" id="fc-front-emoji" style="font-size: 48px; margin-bottom: 16px;">✨</span>
+              <p id="fc-term" class="fc-term" style="font-size: 28px; font-weight: 600; color: #1e293b; margin: 0 0 16px 0; text-align: center;">Acquire</p>
+              <p class="fc-hint" style="color: #94a3b8; font-size: 14px; margin: 0;">Click to flip</p>
             </div>
-          </div>
-
-          <!-- Navigation Buttons -->
-          <div class="fc-nav-buttons">
-            <button onclick="fcPrevCard()" class="fc-btn fc-btn-secondary">
-              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-              Previous
-            </button>
-            <button onclick="fcNextCard()" class="fc-btn fc-btn-primary">
-              Next
-              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </button>
-          </div>
-
-          <!-- Score Buttons -->
-          <div class="fc-score-buttons">
-            <button onclick="fcMarkKnown()" class="fc-btn fc-btn-known">I know this</button>
-            <button onclick="fcMarkLearning()" class="fc-btn fc-btn-learning">Still learning</button>
-          </div>
-
-          <!-- Stats -->
-          <div class="fc-stats">
-            <div class="fc-stat fc-stat-known">
-              <p class="fc-stat-number" id="fc-known-count">0</p>
-              <p class="fc-stat-label">Known</p>
+            <div class="fc-card-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; background: linear-gradient(135deg, #06b6d4, #14b8a6); box-shadow: 0 10px 40px rgba(6,182,212,0.3); transform: rotateY(180deg);">
+              <p id="fc-definition" class="fc-definition" style="font-size: 28px; font-weight: 600; color: white; margin: 0 0 16px 0; text-align: center;">əldə etmək, qazanmaq</p>
+              <span class="fc-emoji" id="fc-back-emoji" style="font-size: 48px; margin-bottom: 16px;">📚</span>
+              <p class="fc-hint-back" style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 0;">Click to flip back</p>
             </div>
-            <div class="fc-stat fc-stat-learning">
-              <p class="fc-stat-number" id="fc-learning-count">0</p>
-              <p class="fc-stat-label">Learning</p>
-            </div>
-            <div class="fc-stat fc-stat-remaining">
-              <p class="fc-stat-number" id="fc-remaining-count">{{ intermediate_page_1.data.wordlist | length }}</p>
-              <p class="fc-stat-label">Remaining</p>
-            </div>
-          </div>
-
-          <!-- Completion Message -->
-          <div id="fc-completion" class="fc-completion" style="display: none;">
-            <span class="fc-completion-emoji">🎉</span>
-            <h3>Awesome job!</h3>
-            <p>Ready for more? Explore all levels below!</p>
-            <button onclick="fcResetDeck()" class="fc-btn fc-btn-primary">Start Over</button>
           </div>
         </div>
+
+        <!-- Navigation Buttons -->
+        <div class="fc-nav-buttons" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 16px;">
+          <button onclick="fcPrevCard()" class="fc-btn fc-btn-secondary" style="display: flex; align-items: center; gap: 8px; padding: 12px 24px; border: 1px solid #e2e8f0; border-radius: 50px; font-weight: 500; font-size: 15px; cursor: pointer; background: white; color: #475569;">
+            ← Previous
+          </button>
+          <button onclick="fcNextCard()" class="fc-btn fc-btn-primary" style="display: flex; align-items: center; gap: 8px; padding: 12px 24px; border: none; border-radius: 50px; font-weight: 500; font-size: 15px; cursor: pointer; background: linear-gradient(135deg, #06b6d4, #14b8a6); color: white;">
+            Next →
+          </button>
+        </div>
+
+        <!-- Score Buttons -->
+        <div class="fc-score-buttons" style="display: flex; justify-content: center; gap: 12px; margin-bottom: 24px;">
+          <button onclick="fcMarkKnown()" class="fc-btn fc-btn-known" style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; border: none; border-radius: 50px; font-weight: 500; font-size: 14px; cursor: pointer; background: #10b981; color: white;">✓ I know this</button>
+          <button onclick="fcMarkLearning()" class="fc-btn fc-btn-learning" style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; border: none; border-radius: 50px; font-weight: 500; font-size: 14px; cursor: pointer; background: #f43f5e; color: white;">+ Still learning</button>
+        </div>
+
+        <!-- Stats -->
+        <div class="fc-stats" style="display: flex; justify-content: center; gap: 20px;">
+          <div class="fc-stat fc-stat-known" style="background: rgba(255,255,255,0.7); border-radius: 16px; padding: 16px 24px; text-align: center;">
+            <p class="fc-stat-number" id="fc-known-count" style="font-size: 24px; font-weight: 700; margin: 0 0 4px 0; color: #10b981;">0</p>
+            <p class="fc-stat-label" style="font-size: 14px; color: #64748b; margin: 0;">Known</p>
+          </div>
+          <div class="fc-stat fc-stat-learning" style="background: rgba(255,255,255,0.7); border-radius: 16px; padding: 16px 24px; text-align: center;">
+            <p class="fc-stat-number" id="fc-learning-count" style="font-size: 24px; font-weight: 700; margin: 0 0 4px 0; color: #f43f5e;">0</p>
+            <p class="fc-stat-label" style="font-size: 14px; color: #64748b; margin: 0;">Learning</p>
+          </div>
+          <div class="fc-stat fc-stat-remaining" style="background: rgba(255,255,255,0.7); border-radius: 16px; padding: 16px 24px; text-align: center;">
+            <p class="fc-stat-number" id="fc-remaining-count" style="font-size: 24px; font-weight: 700; margin: 0 0 4px 0; color: #475569;">6</p>
+            <p class="fc-stat-label" style="font-size: 14px; color: #64748b; margin: 0;">Remaining</p>
+          </div>
+        </div>
+
+        <!-- Completion Message -->
+        <div id="fc-completion" class="fc-completion" style="display: none; background: white; border-radius: 16px; padding: 32px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); margin-top: 24px;">
+          <span class="fc-completion-emoji" style="font-size: 60px; display: block; margin-bottom: 16px;">🎉</span>
+          <h3 style="color: #1e293b; margin: 0 0 8px 0;">Awesome job!</h3>
+          <p style="color: #64748b; margin: 0 0 20px 0;">Ready for more? <a href="/vocabulary/intermediate/page-1/">Explore all intermediate words</a></p>
+          <button onclick="fcResetDeck()" class="fc-btn fc-btn-primary" style="padding: 12px 24px; border: none; border-radius: 50px; font-weight: 500; font-size: 15px; cursor: pointer; background: linear-gradient(135deg, #06b6d4, #14b8a6); color: white;">Start Over</button>
+        </div>
       </div>
+    </div>
 
-      <script>
-      (function() {
-        const flashcards = [
-          {% for word in intermediate_page_1.data.wordlist %}
-          { 
-            term: "{{ word.term | replace('"', '\\"') }}", 
-            definition: "{{ word.azerbaijani | replace('"', '\\"') }}",
-            emoji: "✨",
-            backEmoji: "{{ word.emoji if word.emoji else '📚' }}"
-          }{% if not loop.last %},{% endif %}
-          {% endfor %}
-        ];
+    <script>
+    (function() {
+      const flashcards = [
+        { term: "Acquire", definition: "əldə etmək, qazanmaq", emoji: "✨", backEmoji: "📚" },
+        { term: "Accomplish", definition: "nail olmaq, həyata keçirmək", emoji: "✨", backEmoji: "🏆" },
+        { term: "Adequate", definition: "kifayət edən, uyğun", emoji: "✨", backEmoji: "✅" },
+        { term: "Anticipate", definition: "gözləmək, təxmin etmək", emoji: "✨", backEmoji: "🔮" },
+        { term: "Beneficial", definition: "faydalı, xeyirli", emoji: "✨", backEmoji: "💪" },
+        { term: "Capacity", definition: "tutum, qabiliyyət", emoji: "✨", backEmoji: "📊" }
+      ];
 
-        let currentIndex = 0;
-        let isFlipped = false;
-        let knownCards = new Set();
-        let learningCards = new Set();
+      let currentIndex = 0;
+      let isFlipped = false;
+      let knownCards = new Set();
+      let learningCards = new Set();
 
-        function init() {
-          renderProgressDots();
-          updateCard();
-          updateStats();
+      function init() {
+        renderProgressDots();
+        updateCard();
+        updateStats();
+      }
+
+      function renderProgressDots() {
+        const container = document.getElementById('fc-progress-dots');
+        if (!container) return;
+        container.innerHTML = flashcards.map((_, i) => 
+          `<div style="width: 10px; height: 10px; border-radius: 50%; background: ${i === 0 ? '#06b6d4' : '#cbd5e1'}; transition: all 0.3s ease;" class="fc-dot" data-index="${i}"></div>`
+        ).join('');
+      }
+
+      function updateProgressDots() {
+        const dots = document.querySelectorAll('.fc-dot');
+        dots.forEach((dot, i) => {
+          let bg = '#cbd5e1';
+          if (knownCards.has(i)) bg = '#10b981';
+          else if (learningCards.has(i)) bg = '#f43f5e';
+          if (i === currentIndex) { bg = '#06b6d4'; dot.style.transform = 'scale(1.3)'; }
+          else { dot.style.transform = 'scale(1)'; }
+          dot.style.background = bg;
+        });
+      }
+
+      window.fcFlipCard = function() {
+        const cardInner = document.getElementById('fc-card-inner');
+        isFlipped = !isFlipped;
+        cardInner.style.transform = isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
+      };
+
+      function updateCard() {
+        const card = flashcards[currentIndex];
+        document.getElementById('fc-term').textContent = card.term;
+        document.getElementById('fc-definition').textContent = card.definition;
+        document.getElementById('fc-front-emoji').textContent = card.emoji;
+        document.getElementById('fc-back-emoji').textContent = card.backEmoji;
+        document.getElementById('fc-progress-text').textContent = `${currentIndex + 1} / ${flashcards.length}`;
+        if (isFlipped) {
+          isFlipped = false;
+          document.getElementById('fc-card-inner').style.transform = 'rotateY(0deg)';
         }
+        updateProgressDots();
+      }
 
-        function renderProgressDots() {
-          const container = document.getElementById('fc-progress-dots');
-          if (!container) return;
-          container.innerHTML = flashcards.map((_, i) => 
-            `<div class="fc-progress-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
-          ).join('');
+      window.fcNextCard = function() {
+        if (currentIndex < flashcards.length - 1) { currentIndex++; updateCard(); }
+        else { checkCompletion(); }
+      };
+
+      window.fcPrevCard = function() {
+        if (currentIndex > 0) { currentIndex--; updateCard(); }
+      };
+
+      window.fcMarkKnown = function() {
+        knownCards.add(currentIndex);
+        learningCards.delete(currentIndex);
+        updateStats();
+        updateProgressDots();
+        if (currentIndex < flashcards.length - 1) { setTimeout(() => { currentIndex++; updateCard(); }, 300); }
+        else { checkCompletion(); }
+      };
+
+      window.fcMarkLearning = function() {
+        learningCards.add(currentIndex);
+        knownCards.delete(currentIndex);
+        updateStats();
+        updateProgressDots();
+        if (currentIndex < flashcards.length - 1) { setTimeout(() => { currentIndex++; updateCard(); }, 300); }
+        else { checkCompletion(); }
+      };
+
+      function updateStats() {
+        document.getElementById('fc-known-count').textContent = knownCards.size;
+        document.getElementById('fc-learning-count').textContent = learningCards.size;
+        document.getElementById('fc-remaining-count').textContent = flashcards.length - knownCards.size - learningCards.size;
+      }
+
+      function checkCompletion() {
+        if (knownCards.size + learningCards.size === flashcards.length) {
+          document.getElementById('fc-completion').style.display = 'block';
         }
+      }
 
-        function updateProgressDots() {
-          const dots = document.querySelectorAll('.fc-progress-dot');
-          dots.forEach((dot, i) => {
-            dot.classList.remove('active', 'known', 'learning');
-            if (knownCards.has(i)) dot.classList.add('known');
-            else if (learningCards.has(i)) dot.classList.add('learning');
-            if (i === currentIndex) dot.classList.add('active');
-          });
-        }
+      window.fcResetDeck = function() {
+        currentIndex = 0; knownCards.clear(); learningCards.clear();
+        document.getElementById('fc-completion').style.display = 'none';
+        updateCard(); updateStats(); renderProgressDots();
+      };
 
-        window.fcFlipCard = function() {
-          const cardInner = document.getElementById('fc-card-inner');
-          isFlipped = !isFlipped;
-          cardInner.classList.toggle('flipped', isFlipped);
-        };
-
-        function updateCard() {
-          const card = flashcards[currentIndex];
-          document.getElementById('fc-term').textContent = card.term;
-          document.getElementById('fc-definition').textContent = card.definition;
-          document.getElementById('fc-front-emoji').textContent = card.emoji;
-          document.getElementById('fc-back-emoji').textContent = card.backEmoji;
-          document.getElementById('fc-progress-text').textContent = `${currentIndex + 1} / ${flashcards.length}`;
-          if (isFlipped) {
-            isFlipped = false;
-            document.getElementById('fc-card-inner').classList.remove('flipped');
-          }
-          updateProgressDots();
-        }
-
-        window.fcNextCard = function() {
-          if (currentIndex < flashcards.length - 1) { currentIndex++; updateCard(); }
-          else { checkCompletion(); }
-        };
-
-        window.fcPrevCard = function() {
-          if (currentIndex > 0) { currentIndex--; updateCard(); }
-        };
-
-        window.fcMarkKnown = function() {
-          knownCards.add(currentIndex);
-          learningCards.delete(currentIndex);
-          updateStats();
-          updateProgressDots();
-          if (currentIndex < flashcards.length - 1) { setTimeout(() => { currentIndex++; updateCard(); }, 300); }
-          else { checkCompletion(); }
-        };
-
-        window.fcMarkLearning = function() {
-          learningCards.add(currentIndex);
-          knownCards.delete(currentIndex);
-          updateStats();
-          updateProgressDots();
-          if (currentIndex < flashcards.length - 1) { setTimeout(() => { currentIndex++; updateCard(); }, 300); }
-          else { checkCompletion(); }
-        };
-
-        function updateStats() {
-          document.getElementById('fc-known-count').textContent = knownCards.size;
-          document.getElementById('fc-learning-count').textContent = learningCards.size;
-          document.getElementById('fc-remaining-count').textContent = flashcards.length - knownCards.size - learningCards.size;
-        }
-
-        function checkCompletion() {
-          if (knownCards.size + learningCards.size === flashcards.length) {
-            document.getElementById('fc-completion').style.display = 'block';
-          }
-        }
-
-        window.fcResetDeck = function() {
-          currentIndex = 0; knownCards.clear(); learningCards.clear();
-          document.getElementById('fc-completion').style.display = 'none';
-          updateCard(); updateStats(); renderProgressDots();
-        };
-
-        if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); }
-        else { init(); }
-      })();
-      </script>
-    {% endif %}
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); }
+      else { init(); }
+    })();
+    </script>
   </div>
 </section>
 
