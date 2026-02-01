@@ -237,7 +237,7 @@ description: Expand your English vocabulary with our comprehensive word lists or
     <h2 class="section-title">Recently Added Words</h2>
     
     <div class="vocabulary-grid">
-      {% for word in vocabulary | limit(6) %}
+      {% for word in vocabulary | limit(3) %}
       <div class="vocabulary-card">
         <h3 class="word">{{ word.term }}</h3>
         <p class="pronunciation">{{ word.pronunciation }}</p>
