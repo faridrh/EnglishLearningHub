@@ -40,7 +40,7 @@ eleventyNavigation:
     <div id="level-display" class="level-display"></div>
     <div id="level-description" class="level-description"></div>
     <div class="promo-banner">
-      <p>Süni intellekt əsaslı ingilis dili proqramına qoşulun (7 günlük pulsuz istifadə) <a href="https://www.ingilisdili.net" target="_blank">www.ingilisdili.net</a></p>
+      <p>Süni intellekt əsaslı ingilis dili proqramına qoşulun (7 günlük pulsuz istifadə) <a href="https://www.ingilisdili.net?utm_source=ingilisdili_com" target="_blank">www.ingilisdili.net</a></p>
     </div>
     <div class="action-buttons">
       <button class="btn btn-primary" onclick="restartTest()">Testi Təkrar Et</button>
