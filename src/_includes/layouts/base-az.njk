@@ -31,8 +31,8 @@
   
   <!-- Hreflang for multilingual SEO -->
   <link rel="alternate" hreflang="az" href="https://www.ingilisdili.com{{ page.url }}">
-  <link rel="alternate" hreflang="en" href="https://www.ingilisdili.com{% if page.url != '/az/' %}{{ page.url | replace('/az/', '/') | replace('luget', 'vocabulary') | replace('qrammatika', 'grammar') | replace('hekayeler', 'stories') | replace('haqqinda', 'about') | replace('elaqe', 'contact') }}{% else %}/{% endif %}">
-  <link rel="alternate" hreflang="x-default" href="https://www.ingilisdili.com{% if page.url != '/az/' %}{{ page.url | replace('/az/', '/') | replace('luget', 'vocabulary') | replace('qrammatika', 'grammar') | replace('hekayeler', 'stories') | replace('haqqinda', 'about') | replace('elaqe', 'contact') }}{% else %}/{% endif %}">
+  <link rel="alternate" hreflang="en" href="https://www.ingilisdili.com{% if page.url != '/az/' %}{{ page.url | replace('/az/', '/') | replace('luget', 'vocabulary') | replace('qrammatika', 'grammar') | replace('hekayeler', 'stories') | replace('haqqinda', 'about') | replace('elaqe', 'contact') | replace('oyunlar', 'games') }}{% else %}/{% endif %}">
+  <link rel="alternate" hreflang="x-default" href="https://www.ingilisdili.com{% if page.url != '/az/' %}{{ page.url | replace('/az/', '/') | replace('luget', 'vocabulary') | replace('qrammatika', 'grammar') | replace('hekayeler', 'stories') | replace('haqqinda', 'about') | replace('elaqe', 'contact') | replace('oyunlar', 'games') }}{% else %}/{% endif %}">
   
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -142,6 +142,9 @@
     </li>
     <li class="menu-item {% if page.url === '/az/calishmalar/' %}active{% endif %}">
       <a href="/az/calishmalar/">Çalışmalar</a>
+    </li>
+    <li class="menu-item {% if page.url === '/az/oyunlar/' %}active{% endif %}">
+      <a href="/az/oyunlar/">Oyunlar</a>
     </li>
     <li class="menu-item {% if page.url === '/az/test/' %}active{% endif %}">
       <a href="/az/test/">Test</a>
