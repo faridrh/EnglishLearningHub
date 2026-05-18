@@ -6,14 +6,14 @@ description: Test your knowledge of ellipsis and substitution with this interact
 
 # Ellipsis & Substitution Quiz
 
-Test your understanding of ellipsis and substitution with these 5 questions. Choose the correct answer for each question.
+Test your understanding of ellipsis and substitution with these 15 questions across three 5-question quizzes. Choose the correct answer for each question.
 
 <div class="quiz-container" id="ellipsisSubstitutionQuiz">
   <div class="quiz-progress">
     <div class="progress-bar">
       <div class="progress-fill" id="progressFill"></div>
     </div>
-    <span class="progress-text" id="progressText">Question 1 of 5</span>
+    <span class="progress-text" id="progressText">Question 1 of 15</span>
   </div>
 
   <div class="quiz-question active" data-question="1">
@@ -116,6 +116,210 @@ Test your understanding of ellipsis and substitution with these 5 questions. Cho
     <div class="quiz-feedback" id="feedback5"></div>
   </div>
 
+  <h3>Quiz 2 of 3: Ellipsis in Short Answers</h3>
+
+  <div class="quiz-question" data-question="6">
+    <h3>Question 6</h3>
+    <p>"Have you finished your homework?" "Yes, I have." The second answer shows:</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q6" value="auxiliary ellipsis">
+        <span>auxiliary ellipsis</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q6" value="substitution">
+        <span>substitution</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q6" value="fronting">
+        <span>fronting</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback6"></div>
+  </div>
+
+  <div class="quiz-question" data-question="7">
+    <h3>Question 7</h3>
+    <p>Complete the short reply: "Who can help?" "John ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q7" value="can">
+        <span>can</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q7" value="can help">
+        <span>can help</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q7" value="could">
+        <span>could</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback7"></div>
+  </div>
+
+  <div class="quiz-question" data-question="8">
+    <h3>Question 8</h3>
+    <p>"Do you like sushi?" "I do, but my brother ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q8" value="doesn't">
+        <span>doesn't</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q8" value="doesn't like it">
+        <span>doesn't like it</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q8" value="not">
+        <span>not</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback8"></div>
+  </div>
+
+  <div class="quiz-question" data-question="9">
+    <h3>Question 9</h3>
+    <p>"Will you join us?" "I hope _____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q9" value="so">
+        <span>so</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q9" value="it">
+        <span>it</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q9" value="join">
+        <span>join</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback9"></div>
+  </div>
+
+  <div class="quiz-question" data-question="10">
+    <h3>Question 10</h3>
+    <p>In "I can swim, and she can too," the word "too" functions as:</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q10" value="substitution">
+        <span>substitution</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q10" value="ellipsis">
+        <span>ellipsis</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q10" value="repetition">
+        <span>repetition</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback10"></div>
+  </div>
+
+  <h3>Quiz 3 of 3: Substitution in Clauses and Noun Phrases</h3>
+
+  <div class="quiz-question" data-question="11">
+    <h3>Question 11</h3>
+    <p>"My car is faster than yours." The word "yours" is an example of:</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q11" value="substitution">
+        <span>substitution</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q11" value="ellipsis">
+        <span>ellipsis</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q11" value="conjunction">
+        <span>conjunction</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback11"></div>
+  </div>
+
+  <div class="quiz-question" data-question="12">
+    <h3>Question 12</h3>
+    <p>Complete: "I prefer the black bag to the red _____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q12" value="one">
+        <span>one</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q12" value="bag">
+        <span>bag</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q12" value="it">
+        <span>it</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback12"></div>
+  </div>
+
+  <div class="quiz-question" data-question="13">
+    <h3>Question 13</h3>
+    <p>"Did she finish the report?" "She did." The second sentence is an example of:</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q13" value="verb phrase ellipsis">
+        <span>verb phrase ellipsis</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q13" value="substitution">
+        <span>substitution</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q13" value="coordination">
+        <span>coordination</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback13"></div>
+  </div>
+
+  <div class="quiz-question" data-question="14">
+    <h3>Question 14</h3>
+    <p>"I don't enjoy loud music, and neither does my sister." The phrase "does my sister" is best described as:</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q14" value="substitution">
+        <span>substitution</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q14" value="ellipsis">
+        <span>ellipsis</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q14" value="inversion">
+        <span>inversion</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback14"></div>
+  </div>
+
+  <div class="quiz-question" data-question="15">
+    <h3>Question 15</h3>
+    <p>Complete: "She has read more novels than _____." (substitute for "I have read")</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="q15" value="I">
+        <span>I</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q15" value="me">
+        <span>me</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="q15" value="mine">
+        <span>mine</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" id="feedback15"></div>
+  </div>
+
   <div class="quiz-navigation">
     <button id="prevBtn" onclick="changeQuestion(-1)" disabled>Previous</button>
     <button id="nextBtn" onclick="changeQuestion(1)">Next</button>
@@ -131,13 +335,23 @@ Test your understanding of ellipsis and substitution with these 5 questions. Cho
 
 <script>
 let currentQuestion = 1;
-const totalQuestions = 5;
+const totalQuestions = 15;
 const correctAnswers = {
   q1: 'so',
   q2: 'substitution', 
   q3: 'tea',
   q4: 'VP substitution',
-  q5: 'I'
+  q5: 'I',
+  q6: 'auxiliary ellipsis',
+  q7: 'can help',
+  q8: "doesn't like it",
+  q9: 'so',
+  q10: 'substitution',
+  q11: 'substitution',
+  q12: 'one',
+  q13: 'verb phrase ellipsis',
+  q14: 'substitution',
+  q15: 'I'
 };
 
 function changeQuestion(direction) {
