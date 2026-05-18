@@ -378,7 +378,7 @@ Test your understanding of ellipsis and substitution with three separate 5-quest
 </div>
 
 <script>
-function initializeQuiz(containerId, correctAnswers) {
+function initializeQuiz(containerId, namePrefix, correctAnswers) {
   const container = document.getElementById(containerId);
   const totalQuestions = Object.keys(correctAnswers).length;
   let currentQuestion = 1;
@@ -431,7 +431,7 @@ function initializeQuiz(containerId, correctAnswers) {
     let score = 0;
 
     for (let i = 1; i <= totalQuestions; i++) {
-      const selectedAnswer = container.querySelector(`input[name="${containerId}-q${i}"]:checked`);
+      const selectedAnswer = container.querySelector(`input[name="${namePrefix}-q${i}"]:checked`);
       const feedback = container.querySelector(`[data-feedback="${i}"]`);
 
       if (selectedAnswer) {
@@ -492,7 +492,7 @@ function initializeQuiz(containerId, correctAnswers) {
   updateNavigation();
 }
 
-initializeQuiz('ellipsisSubstitutionQuiz1', {
+initializeQuiz('ellipsisSubstitutionQuiz1', 'quiz1', {
   q1: 'so',
   q2: 'substitution',
   q3: 'tea',
@@ -500,7 +500,7 @@ initializeQuiz('ellipsisSubstitutionQuiz1', {
   q5: 'I'
 });
 
-initializeQuiz('ellipsisSubstitutionQuiz2', {
+initializeQuiz('ellipsisSubstitutionQuiz2', 'quiz2', {
   q1: 'can',
   q2: 'so',
   q3: 'did',
@@ -508,7 +508,7 @@ initializeQuiz('ellipsisSubstitutionQuiz2', {
   q5: 'seen the email'
 });
 
-initializeQuiz('ellipsisSubstitutionQuiz3', {
+initializeQuiz('ellipsisSubstitutionQuiz3', 'quiz3', {
   q1: 'apples',
   q2: 'one',
   q3: 'it',
