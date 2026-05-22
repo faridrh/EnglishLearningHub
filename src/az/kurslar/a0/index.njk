@@ -1,0 +1,45 @@
+---
+layout: layouts/base-az.njk
+title: A0 onlayn ingilis dili kursu
+description: Sıfırdan başlayanlar üçün A0 onlayn ingilis dili kursu.
+courseLevel: A0
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">A0 Onlayn İngilis Dili Kursu</h1>
+    <p class="page-description">Sıfırdan başlayın və ilk söz və cümlələrinizi qurun</p>
+  </div>
+</section>
+
+<section class="grammar-topics">
+  <div class="container">
+    <h2 class="section-title">A0 Dərsləri</h2>
+    <div class="topics-grid">
+      {% for lesson in a0Lessons %}
+      <div class="topic-card">
+        <h3 class="topic-title">Dərs {{ lesson.number }}: {{ lesson.indexTitle }}</h3>
+        <p class="topic-description">{{ lesson.indexDescription }}</p>
+        <a href="/courses/a0/lesson-{{ lesson.number }}/" class="topic-link">Dərsi Aç</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="section-footer">
+      {% for lesson in a0Lessons %}
+      <a href="/courses/a0/lesson-{{ lesson.number }}/" class="button{% if loop.index % 2 == 0 %} button-secondary{% endif %}">Dərs {{ lesson.number }}: {{ lesson.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">Növbəti addıma hazırsınız?</h2>
+    <p class="cta-description">A0 tamamlandıqdan sonra A1 səviyyəsinə keçin.</p>
+    <div class="cta-buttons">
+      <a href="/az/kurslar/a1/" class="button button-primary">A1 Kursuna Keç</a>
+      <a href="/az/kurslar/" class="button button-secondary">Bütün Kurslara Bax</a>
+    </div>
+  </div>
+</section>
