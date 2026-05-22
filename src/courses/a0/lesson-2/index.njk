@@ -74,23 +74,23 @@ lessonNumber: 2
 
 <section class="grammar-topics">
   <div class="container">
-    <h2 class="section-title">Listen With Browser TTS</h2>
+    <h2 class="section-title">Sentence Building</h2>
     <div class="topics-grid">
       <div class="topic-card">
-        <h3 class="topic-title">Lesson Audio Practice</h3>
-        <p class="topic-description">Use your browser speaker to hear the lesson. If no sound plays, your browser may not support speech synthesis.</p>
-
-        <div class="button-group" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;">
-          <button type="button" class="button button-secondary" id="tts-stop">Stop Audio</button>
-        </div>
+        <h3 class="topic-title">Build a self-introduction</h3>
+        <p class="topic-description">Type your name to complete the sentence.</p>
 
         <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
-          <label for="name-spell-input" style="font-weight: 600;">Say your name:</label>
-          <input id="name-spell-input" type="text" placeholder="Type your name" style="padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-width: 220px;">
-          <button type="button" class="button" id="speak-name">Read My Name</button>
+          <label for="lesson-2-name-input" style="font-weight: 600;">Your name:</label>
+          <input id="lesson-2-name-input" type="text" placeholder="Farid" style="padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-width: 220px;">
+          <button type="button" class="button" id="lesson-2-build-sentence">Build Sentence</button>
         </div>
 
-        <p id="tts-status" style="margin-top: 12px; color: #475569; font-size: 0.95rem;"></p>
+        <p style="margin-top: 14px; font-size: 1.05rem;">
+          My name is <strong><span id="lesson-2-name-output">_____</span></strong>.
+        </p>
+        <p style="margin-top: 10px; color: #475569; font-size: 0.95rem;">Example: My name is Farid.</p>
+        <p id="lesson-2-sentence-feedback" style="margin-top: 12px; color: #475569; font-size: 0.95rem;"></p>
       </div>
     </div>
   </div>
@@ -100,78 +100,42 @@ lessonNumber: 2
 (function () {
   const statusEl = document.getElementById('tts-status');
   const speakButtons = document.querySelectorAll('[data-speak]');
-  const stopButton = document.getElementById('tts-stop');
-  const speakNameButton = document.getElementById('speak-name');
-  const nameInput = document.getElementById('name-spell-input');
+  const builderInput = document.getElementById('lesson-2-name-input');
+  const builderOutput = document.getElementById('lesson-2-name-output');
+  const builderFeedback = document.getElementById('lesson-2-sentence-feedback');
+  const builderButton = document.getElementById('lesson-2-build-sentence');
 
-  function setStatus(message) {
-    if (statusEl) statusEl.textContent = message;
-  }
-
-  function supported() {
-    return typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
-  }
-
-  function speak(text) {
-    if (!supported()) {
-      setStatus('Browser TTS is not supported on this device.');
-      return;
+  function updateBuilder() {
+    const value = builderInput ? builderInput.value.trim() : '';
+    if (builderOutput) {
+      builderOutput.textContent = value || '_____';
     }
-
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.9;
-    utterance.pitch = 1;
-    utterance.onstart = function () {
-      setStatus('Playing audio...');
-    };
-    utterance.onend = function () {
-      setStatus('Audio finished.');
-    };
-    utterance.onerror = function () {
-      setStatus('Could not play audio. Please try again.');
-    };
-    window.speechSynthesis.speak(utterance);
-  }
-
-  function spellName(nameValue) {
-    const trimmed = nameValue.trim();
-    if (!trimmed) {
-      setStatus('Type your name first.');
-      return;
+    if (builderFeedback) {
+      builderFeedback.textContent = value
+        ? 'Built sentence: My name is ' + value + '.'
+        : 'Type a name to build the sentence.';
     }
-
-    const letters = trimmed.toUpperCase().replace(/\s+/g, '').split('').join(', ');
-    speak(letters);
   }
 
   speakButtons.forEach(function (button) {
     button.addEventListener('click', function () {
-      speak(button.getAttribute('data-speak'));
+      if (statusEl) {
+        statusEl.textContent = button.getAttribute('data-speak') || '';
+      }
     });
   });
 
-  if (speakNameButton) {
-    speakNameButton.addEventListener('click', function () {
-      spellName(nameInput ? nameInput.value : '');
+  if (builderInput) {
+    builderInput.addEventListener('input', updateBuilder);
+  }
+
+  if (builderButton) {
+    builderButton.addEventListener('click', function () {
+      updateBuilder();
     });
   }
 
-  if (stopButton) {
-    stopButton.addEventListener('click', function () {
-      if (supported()) {
-        window.speechSynthesis.cancel();
-        setStatus('Audio stopped.');
-      }
-    });
-  }
-
-  if (!supported()) {
-    setStatus('Browser TTS is not supported on this device.');
-  } else {
-    setStatus('Click any button to hear the lesson.');
-  }
+  updateBuilder();
 })();
 </script>
 
@@ -180,7 +144,8 @@ lessonNumber: 2
     <h2 class="cta-title">Lesson Complete</h2>
     <p class="cta-description">Practice these greetings aloud and use them in short conversations.</p>
     <div class="cta-buttons">
-      <a href="/courses/a0/lesson-1/" class="button button-primary">Back to Lesson 1</a>
+      <a href="/courses/a0/lesson-1/" class="button button-secondary">Back to Lesson 1</a>
+      <a href="/courses/a0/lesson-3/" class="button button-primary">Next: Lesson 3</a>
       <a href="/courses/a0/" class="button button-secondary">Back to A0 Course</a>
     </div>
   </div>
