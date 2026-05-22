@@ -6,14 +6,16 @@ description: Test your knowledge of ellipsis and substitution with this interact
 
 # Ellipsis & Substitution Quiz
 
-Test your understanding of ellipsis and substitution with these 5 questions. Choose the correct answer for each question.
+Test your understanding of ellipsis and substitution with three separate 5-question quizzes. Choose the correct answer for each question.
 
-<div class="quiz-container" id="ellipsisSubstitutionQuiz">
+## Quiz 1: Core Concepts
+
+<div class="quiz-container" id="ellipsisSubstitutionQuiz1">
   <div class="quiz-progress">
     <div class="progress-bar">
-      <div class="progress-fill" id="progressFill"></div>
+      <div class="progress-fill"></div>
     </div>
-    <span class="progress-text" id="progressText">Question 1 of 5</span>
+    <span class="progress-text">Question 1 of 5</span>
   </div>
 
   <div class="quiz-question active" data-question="1">
@@ -21,19 +23,19 @@ Test your understanding of ellipsis and substitution with these 5 questions. Cho
     <p>"Are you coming to the party?" "I hope _____."</p>
     <div class="quiz-options">
       <label class="quiz-option">
-        <input type="radio" name="q1" value="so">
+        <input type="radio" name="quiz1-q1" value="so">
         <span>so</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q1" value="to">
+        <input type="radio" name="quiz1-q1" value="to">
         <span>to</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q1" value="yes">
+        <input type="radio" name="quiz1-q1" value="yes">
         <span>yes</span>
       </label>
     </div>
-    <div class="quiz-feedback" id="feedback1"></div>
+    <div class="quiz-feedback" data-feedback="1"></div>
   </div>
 
   <div class="quiz-question" data-question="2">
@@ -41,39 +43,39 @@ Test your understanding of ellipsis and substitution with these 5 questions. Cho
     <p>"My car is faster than yours." The word "yours" is an example of:</p>
     <div class="quiz-options">
       <label class="quiz-option">
-        <input type="radio" name="q2" value="substitution">
+        <input type="radio" name="quiz1-q2" value="substitution">
         <span>substitution</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q2" value="ellipsis">
+        <input type="radio" name="quiz1-q2" value="ellipsis">
         <span>ellipsis</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q2" value="inversion">
+        <input type="radio" name="quiz1-q2" value="inversion">
         <span>inversion</span>
       </label>
     </div>
-    <div class="quiz-feedback" id="feedback2"></div>
+    <div class="quiz-feedback" data-feedback="2"></div>
   </div>
 
   <div class="quiz-question" data-question="3">
     <h3>Question 3</h3>
-    <p>Complete: "She likes coffee, but he prefers _____." (instead of "he prefers tea")</p>
+    <p>Complete: "She likes coffee, but he prefers ____."</p>
     <div class="quiz-options">
       <label class="quiz-option">
-        <input type="radio" name="q3" value="tea">
+        <input type="radio" name="quiz1-q3" value="tea">
         <span>tea</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q3" value="not coffee">
+        <input type="radio" name="quiz1-q3" value="not coffee">
         <span>not coffee</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q3" value="prefer">
+        <input type="radio" name="quiz1-q3" value="prefer">
         <span>prefer</span>
       </label>
     </div>
-    <div class="quiz-feedback" id="feedback3"></div>
+    <div class="quiz-feedback" data-feedback="3"></div>
   </div>
 
   <div class="quiz-question" data-question="4">
@@ -81,170 +83,438 @@ Test your understanding of ellipsis and substitution with these 5 questions. Cho
     <p>"Did she finish her project?" "She did." The second sentence demonstrates:</p>
     <div class="quiz-options">
       <label class="quiz-option">
-        <input type="radio" name="q4" value="verb ellipsis">
+        <input type="radio" name="quiz1-q4" value="verb ellipsis">
         <span>verb ellipsis</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q4" value="noun ellipsis">
+        <input type="radio" name="quiz1-q4" value="noun ellipsis">
         <span>noun ellipsis</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q4" value="VP substitution">
+        <input type="radio" name="quiz1-q4" value="VP substitution">
         <span>VP substitution</span>
       </label>
     </div>
-    <div class="quiz-feedback" id="feedback4"></div>
+    <div class="quiz-feedback" data-feedback="4"></div>
   </div>
 
   <div class="quiz-question" data-question="5">
     <h3>Question 5</h3>
-    <p>Complete: "She has read more books than _____." (substitution for "I have read")</p>
+    <p>Complete: "She has read more books than ____."</p>
     <div class="quiz-options">
       <label class="quiz-option">
-        <input type="radio" name="q5" value="I">
+        <input type="radio" name="quiz1-q5" value="I">
         <span>I</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q5" value="me">
+        <input type="radio" name="quiz1-q5" value="me">
         <span>me</span>
       </label>
       <label class="quiz-option">
-        <input type="radio" name="q5" value="I have">
+        <input type="radio" name="quiz1-q5" value="I have">
         <span>I have</span>
       </label>
     </div>
-    <div class="quiz-feedback" id="feedback5"></div>
+    <div class="quiz-feedback" data-feedback="5"></div>
   </div>
 
   <div class="quiz-navigation">
-    <button id="prevBtn" onclick="changeQuestion(-1)" disabled>Previous</button>
-    <button id="nextBtn" onclick="changeQuestion(1)">Next</button>
-    <button id="submitBtn" onclick="submitQuiz()" style="display: none;">Submit Quiz</button>
+    <button class="prev-btn" type="button" disabled>Previous</button>
+    <button class="next-btn" type="button">Next</button>
+    <button class="submit-btn" type="button" style="display: none;">Submit Quiz</button>
   </div>
 
-  <div class="quiz-results" id="quizResults" style="display: none;">
+  <div class="quiz-results" style="display: none;">
     <h3>Quiz Results</h3>
-    <p id="finalScore"></p>
-    <button onclick="resetQuiz()">Try Again</button>
+    <p class="final-score"></p>
+    <button class="reset-btn" type="button">Try Again</button>
+  </div>
+</div>
+
+## Quiz 2: Ellipsis in Short Answers
+
+<div class="quiz-container" id="ellipsisSubstitutionQuiz2">
+  <div class="quiz-progress">
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    <span class="progress-text">Question 1 of 5</span>
+  </div>
+
+  <div class="quiz-question active" data-question="1">
+    <h3>Question 1</h3>
+    <p>Complete: "Can Ben drive?" "Yes, he ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q1" value="can">
+        <span>can</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q1" value="can drive">
+        <span>can drive</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q1" value="is">
+        <span>is</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="1"></div>
+  </div>
+
+  <div class="quiz-question" data-question="2">
+    <h3>Question 2</h3>
+    <p>Complete: "Will they arrive on time?" "I hope ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q2" value="so">
+        <span>so</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q2" value="it">
+        <span>it</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q2" value="them">
+        <span>them</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="2"></div>
+  </div>
+
+  <div class="quiz-question" data-question="3">
+    <h3>Question 3</h3>
+    <p>Complete: "Sara didn't finish the report, but Leo ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q3" value="did">
+        <span>did</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q3" value="did finish">
+        <span>did finish</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q3" value="was">
+        <span>was</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="3"></div>
+  </div>
+
+  <div class="quiz-question" data-question="4">
+    <h3>Question 4</h3>
+    <p>Choose the best completion: "I ordered the pasta, and my friend did ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q4" value="too">
+        <span>too</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q4" value="so">
+        <span>so</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q4" value="one">
+        <span>one</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="4"></div>
+  </div>
+
+  <div class="quiz-question" data-question="5">
+    <h3>Question 5</h3>
+    <p>In "Have you seen the email?" "Yes, I have," the answer avoids repeating:</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q5" value="seen the email">
+        <span>seen the email</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q5" value="yes">
+        <span>yes</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz2-q5" value="I">
+        <span>I</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="5"></div>
+  </div>
+
+  <div class="quiz-navigation">
+    <button class="prev-btn" type="button" disabled>Previous</button>
+    <button class="next-btn" type="button">Next</button>
+    <button class="submit-btn" type="button" style="display: none;">Submit Quiz</button>
+  </div>
+
+  <div class="quiz-results" style="display: none;">
+    <h3>Quiz Results</h3>
+    <p class="final-score"></p>
+    <button class="reset-btn" type="button">Try Again</button>
+  </div>
+</div>
+
+## Quiz 3: Substitution in Noun Phrases and Clauses
+
+<div class="quiz-container" id="ellipsisSubstitutionQuiz3">
+  <div class="quiz-progress">
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    <span class="progress-text">Question 1 of 5</span>
+  </div>
+
+  <div class="quiz-question active" data-question="1">
+    <h3>Question 1</h3>
+    <p>"These apples are sweeter than those." The word "those" replaces:</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q1" value="apples">
+        <span>apples</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q1" value="sweeter">
+        <span>sweeter</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q1" value="these apples are">
+        <span>these apples are</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="1"></div>
+  </div>
+
+  <div class="quiz-question" data-question="2">
+    <h3>Question 2</h3>
+    <p>Complete: "I don't need the big suitcase; I'll take the small ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q2" value="one">
+        <span>one</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q2" value="it">
+        <span>it</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q2" value="that">
+        <span>that</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="2"></div>
+  </div>
+
+  <div class="quiz-question" data-question="3">
+    <h3>Question 3</h3>
+    <p>Complete: "If you don't want the last cookie, I'll take ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q3" value="it">
+        <span>it</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q3" value="one">
+        <span>one</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q3" value="so">
+        <span>so</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="3"></div>
+  </div>
+
+  <div class="quiz-question" data-question="4">
+    <h3>Question 4</h3>
+    <p>Complete: "Jack plays the guitar better than I ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q4" value="do">
+        <span>do</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q4" value="am">
+        <span>am</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q4" value="play">
+        <span>play</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="4"></div>
+  </div>
+
+  <div class="quiz-question" data-question="5">
+    <h3>Question 5</h3>
+    <p>Choose the best completion: "I need a blue pen. Do you have ____."</p>
+    <div class="quiz-options">
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q5" value="one">
+        <span>one</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q5" value="it">
+        <span>it</span>
+      </label>
+      <label class="quiz-option">
+        <input type="radio" name="quiz3-q5" value="them">
+        <span>them</span>
+      </label>
+    </div>
+    <div class="quiz-feedback" data-feedback="5"></div>
+  </div>
+
+  <div class="quiz-navigation">
+    <button class="prev-btn" type="button" disabled>Previous</button>
+    <button class="next-btn" type="button">Next</button>
+    <button class="submit-btn" type="button" style="display: none;">Submit Quiz</button>
+  </div>
+
+  <div class="quiz-results" style="display: none;">
+    <h3>Quiz Results</h3>
+    <p class="final-score"></p>
+    <button class="reset-btn" type="button">Try Again</button>
   </div>
 </div>
 
 <script>
-let currentQuestion = 1;
-const totalQuestions = 5;
-const correctAnswers = {
+function initializeQuiz(containerId, namePrefix, correctAnswers) {
+  const container = document.getElementById(containerId);
+  const totalQuestions = Object.keys(correctAnswers).length;
+  let currentQuestion = 1;
+
+  const progressFill = container.querySelector('.progress-fill');
+  const progressText = container.querySelector('.progress-text');
+  const prevBtn = container.querySelector('.prev-btn');
+  const nextBtn = container.querySelector('.next-btn');
+  const submitBtn = container.querySelector('.submit-btn');
+  const resultsDiv = container.querySelector('.quiz-results');
+  const finalScore = container.querySelector('.final-score');
+  const resetBtn = container.querySelector('.reset-btn');
+
+  function updateProgress() {
+    const percentage = (currentQuestion / totalQuestions) * 100;
+    progressFill.style.width = percentage + '%';
+    progressText.textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+  }
+
+  function updateNavigation() {
+    prevBtn.disabled = currentQuestion === 1;
+
+    if (currentQuestion === totalQuestions) {
+      nextBtn.style.display = 'none';
+      submitBtn.style.display = 'inline-block';
+    } else {
+      nextBtn.style.display = 'inline-block';
+      submitBtn.style.display = 'none';
+    }
+  }
+
+  function showQuestion(questionNumber) {
+    container.querySelectorAll('.quiz-question').forEach(question => {
+      question.classList.remove('active');
+      question.style.display = '';
+    });
+
+    const nextQuestion = container.querySelector(`[data-question="${questionNumber}"]`);
+    nextQuestion.classList.add('active');
+  }
+
+  function changeQuestion(direction) {
+    currentQuestion += direction;
+    showQuestion(currentQuestion);
+    updateProgress();
+    updateNavigation();
+  }
+
+  function submitQuiz() {
+    let score = 0;
+
+    for (let i = 1; i <= totalQuestions; i++) {
+      const selectedAnswer = container.querySelector(`input[name="${namePrefix}-q${i}"]:checked`);
+      const feedback = container.querySelector(`[data-feedback="${i}"]`);
+
+      if (selectedAnswer) {
+        if (selectedAnswer.value === correctAnswers[`q${i}`]) {
+          score++;
+          feedback.innerHTML = `<span class="correct">✓ Correct! Your answer: <strong>${selectedAnswer.value}</strong></span>`;
+          feedback.className = 'quiz-feedback correct';
+        } else {
+          feedback.innerHTML = `<span class="incorrect">✗ Your answer: <strong>${selectedAnswer.value}</strong><br>Correct answer: <strong>${correctAnswers[`q${i}`]}</strong></span>`;
+          feedback.className = 'quiz-feedback incorrect';
+        }
+      } else {
+        feedback.innerHTML = `<span class="incorrect">✗ No answer selected<br>Correct answer: <strong>${correctAnswers[`q${i}`]}</strong></span>`;
+        feedback.className = 'quiz-feedback incorrect';
+      }
+
+      feedback.style.display = 'block';
+    }
+
+    finalScore.textContent = `You scored ${score} out of ${totalQuestions} (${Math.round((score / totalQuestions) * 100)}%)`;
+    resultsDiv.style.display = 'block';
+
+    container.querySelectorAll('.quiz-question').forEach(question => {
+      question.classList.remove('active');
+      question.style.display = 'block';
+    });
+
+    container.querySelector('.quiz-navigation').style.display = 'none';
+  }
+
+  function resetQuiz() {
+    currentQuestion = 1;
+
+    container.querySelectorAll('input[type="radio"]').forEach(input => {
+      input.checked = false;
+    });
+
+    container.querySelectorAll('.quiz-feedback').forEach(feedback => {
+      feedback.style.display = 'none';
+      feedback.innerHTML = '';
+      feedback.className = 'quiz-feedback';
+    });
+
+    resultsDiv.style.display = 'none';
+    container.querySelector('.quiz-navigation').style.display = 'flex';
+
+    showQuestion(1);
+    updateProgress();
+    updateNavigation();
+  }
+
+  prevBtn.addEventListener('click', () => changeQuestion(-1));
+  nextBtn.addEventListener('click', () => changeQuestion(1));
+  submitBtn.addEventListener('click', submitQuiz);
+  resetBtn.addEventListener('click', resetQuiz);
+
+  updateProgress();
+  updateNavigation();
+}
+
+initializeQuiz('ellipsisSubstitutionQuiz1', 'quiz1', {
   q1: 'so',
-  q2: 'substitution', 
+  q2: 'substitution',
   q3: 'tea',
   q4: 'VP substitution',
   q5: 'I'
-};
+});
 
-function changeQuestion(direction) {
-  const currentQ = document.querySelector('.quiz-question.active');
-  currentQ.classList.remove('active');
-  
-  currentQuestion += direction;
-  
-  const nextQ = document.querySelector(`[data-question="${currentQuestion}"]`);
-  nextQ.classList.add('active');
-  
-  updateProgress();
-  updateNavigation();
-}
+initializeQuiz('ellipsisSubstitutionQuiz2', 'quiz2', {
+  q1: 'can',
+  q2: 'so',
+  q3: 'did',
+  q4: 'too',
+  q5: 'seen the email'
+});
 
-function updateProgress() {
-  const progressFill = document.getElementById('progressFill');
-  const progressText = document.getElementById('progressText');
-  
-  const percentage = (currentQuestion / totalQuestions) * 100;
-  progressFill.style.width = percentage + '%';
-  progressText.textContent = `Question ${currentQuestion} of ${totalQuestions}`;
-}
-
-function updateNavigation() {
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const submitBtn = document.getElementById('submitBtn');
-  
-  prevBtn.disabled = currentQuestion === 1;
-  
-  if (currentQuestion === totalQuestions) {
-    nextBtn.style.display = 'none';
-    submitBtn.style.display = 'inline-block';
-  } else {
-    nextBtn.style.display = 'inline-block';
-    submitBtn.style.display = 'none';
-  }
-}
-
-function submitQuiz() {
-  let score = 0;
-  
-  for (let i = 1; i <= totalQuestions; i++) {
-    const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
-    const feedback = document.getElementById(`feedback${i}`);
-    
-    if (selectedAnswer) {
-      if (selectedAnswer.value === correctAnswers[`q${i}`]) {
-        score++;
-        feedback.innerHTML = `<span class="correct">✓ Correct! Your answer: <strong>${selectedAnswer.value}</strong></span>`;
-        feedback.className = 'quiz-feedback correct';
-      } else {
-        feedback.innerHTML = `<span class="incorrect">✗ Your answer: <strong>${selectedAnswer.value}</strong><br>Correct answer: <strong>${correctAnswers[`q${i}`]}</strong></span>`;
-        feedback.className = 'quiz-feedback incorrect';
-      }
-    } else {
-      feedback.innerHTML = `<span class="incorrect">✗ No answer selected<br>Correct answer: <strong>${correctAnswers[`q${i}`]}</strong></span>`;
-      feedback.className = 'quiz-feedback incorrect';
-    }
-    
-    feedback.style.display = 'block';
-  }
-  
-  const resultsDiv = document.getElementById('quizResults');
-  const finalScore = document.getElementById('finalScore');
-  
-  const percentage = Math.round((score / totalQuestions) * 100);
-  finalScore.textContent = `You scored ${score} out of ${totalQuestions} (${percentage}%)`;
-  
-  resultsDiv.style.display = 'block';
-  
-  // Show all questions in review mode
-  document.querySelectorAll('.quiz-question').forEach(q => {
-    q.classList.remove('active');
-    q.style.display = 'block';
-  });
-  
-  document.querySelector('.quiz-navigation').style.display = 'none';
-}
-
-function resetQuiz() {
-  currentQuestion = 1;
-  
-  document.querySelectorAll('input[type="radio"]').forEach(input => {
-    input.checked = false;
-  });
-  
-  document.querySelectorAll('.quiz-feedback').forEach(feedback => {
-    feedback.style.display = 'none';
-    feedback.innerHTML = '';
-  });
-  
-  document.querySelectorAll('.quiz-question').forEach(q => {
-    q.classList.remove('active');
-  });
-  document.querySelector('[data-question="1"]').classList.add('active');
-  
-  document.getElementById('quizResults').style.display = 'none';
-  document.querySelector('.quiz-navigation').style.display = 'block';
-  
-  updateProgress();
-  updateNavigation();
-}
-
-updateProgress();
-updateNavigation();
+initializeQuiz('ellipsisSubstitutionQuiz3', 'quiz3', {
+  q1: 'apples',
+  q2: 'one',
+  q3: 'it',
+  q4: 'do',
+  q5: 'one'
+});
 </script>
 
 <style>
@@ -252,6 +522,12 @@ updateNavigation();
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.quiz-container + .quiz-container {
+  margin-top: 30px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 30px;
 }
 
 .quiz-progress {
@@ -361,16 +637,16 @@ updateNavigation();
   transition: background-color 0.3s ease;
 }
 
-#prevBtn, #nextBtn, #submitBtn {
+.prev-btn, .next-btn, .submit-btn {
   background-color: #007bff;
   color: white;
 }
 
-#prevBtn:hover, #nextBtn:hover, #submitBtn:hover {
+.prev-btn:hover, .next-btn:hover, .submit-btn:hover {
   background-color: #0056b3;
 }
 
-#prevBtn:disabled {
+.prev-btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
