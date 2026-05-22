@@ -232,12 +232,6 @@ permalink: /games/word-runner/index.html
         return { overlapX, overlapY };
       }
 
-      function intersects(a, b, aInset = 0, bInset = 0, minOverlapX = 1, minOverlapY = 1) {
-        const { overlapX, overlapY } = getOverlap(a, b, aInset, bInset);
-
-        return overlapX >= minOverlapX && overlapY >= minOverlapY;
-      }
-
       function applyHitPenalty() {
         if (state.damageCooldown > 0) return;
         state.lives -= 1;
@@ -282,23 +276,37 @@ permalink: /games/word-runner/index.html
         for (const item of state.wordItems) {
           item.x -= state.speed;
           const overlap = getOverlap(player, item, 8, 6);
-          const hasContact = overlap.overlapX >= 18 && overlap.overlapY >= 14;
-          if (!item.hit && hasContact) {
-            item.hit = true;
-            if (item.isTarget) {
-              state.score += 10;
-            } else {
-              const playerFeetY = player.y + player.h;
-              const playerFeetBandTop = playerFeetY - 12;
-              const itemTop = item.y;
-              const itemBottom = item.y + item.h;
+          if (item.hit) {
+            continue;
+          }
 
-              // Penalize only when the wrong word reaches the player's lower body/feet zone.
-              const feetOverlap = Math.min(playerFeetY, itemBottom) - Math.max(playerFeetBandTop, itemTop);
-              const meaningfulFeetContact = feetOverlap >= 6;
-              if (meaningfulFeetContact) {
-                applyHitPenalty();
-              }
+          // Target words are intentionally a bit more forgiving to collect.
+          const canCollectTarget = overlap.overlapX >= 12 && overlap.overlapY >= 10;
+
+          if (item.isTarget && canCollectTarget) {
+            item.hit = true;
+            state.score += 10;
+            continue;
+          }
+
+          // Wrong words should only penalize on meaningful lower-body contact.
+          const isLowLaneWord = item.y >= (groundY - 44);
+          const minWrongOverlapY = isLowLaneWord ? 10 : 14;
+          const hasStrongContact = overlap.overlapX >= 18 && overlap.overlapY >= minWrongOverlapY;
+          if (!item.isTarget && hasStrongContact) {
+            const playerFeetY = player.y + player.h;
+            const playerFeetBandTop = playerFeetY - 12;
+            const itemTop = item.y;
+            const itemBottom = item.y + item.h;
+            const itemCenterY = item.y + (item.h / 2);
+
+            const feetOverlap = Math.min(playerFeetY, itemBottom) - Math.max(playerFeetBandTop, itemTop);
+            const meaningfulFeetContact = feetOverlap >= (isLowLaneWord ? 5 : 8);
+            const notHeadGraze = itemCenterY >= player.y + (player.h * 0.35);
+
+            if (meaningfulFeetContact && notHeadGraze) {
+              item.hit = true;
+              applyHitPenalty();
             }
           }
         }
