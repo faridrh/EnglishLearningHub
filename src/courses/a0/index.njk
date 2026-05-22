@@ -16,78 +16,19 @@ courseLevel: A0
   <div class="container">
     <h2 class="section-title">A0 Lessons</h2>
     <div class="topics-grid">
+      {% for lesson in a0Lessons %}
       <div class="topic-card">
-        <h3 class="topic-title">Alphabet and Pronunciation Basics</h3>
-        <p class="topic-description">Learn the English alphabet sounds and simple pronunciation rules.</p>
-        <a href="/courses/a0/lesson-1/" class="topic-link">Start Lesson 1</a>
+        <h3 class="topic-title">{{ lesson.indexTitle }}</h3>
+        <p class="topic-description">{{ lesson.indexDescription }}</p>
+        <a href="/courses/a0/lesson-{{ lesson.number }}/" class="topic-link">Start Lesson {{ lesson.number }}</a>
       </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Greetings and Introductions</h3>
-        <p class="topic-description">Practice saying hello, introducing yourself, and basic polite expressions.</p>
-        <a href="/courses/a0/lesson-2/" class="topic-link">Start Lesson 2</a>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Numbers & Age</h3>
-        <p class="topic-description">Use numbers 1–20 and say your age.</p>
-        <a href="/courses/a0/lesson-3/" class="topic-link">Start Lesson 3</a>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Countries, Nationalities & To Be</h3>
-        <p class="topic-description">Use am, is, and are in simple identity sentences.</p>
-        <a href="/courses/a0/lesson-4/" class="topic-link">Start Lesson 4</a>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Family & People</h3>
-        <p class="topic-description">Talk about family members with simple my/he/she sentences.</p>
-        <a href="/courses/a0/lesson-5/" class="topic-link">Start Lesson 5</a>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Everyday Objects & Articles</h3>
-        <p class="topic-description">Use a/an with common everyday objects.</p>
-        <a href="/courses/a0/lesson-6/" class="topic-link">Start Lesson 6</a>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Basic Verbs & Daily Actions</h3>
-        <p class="topic-description">Use simple present verbs in short daily sentences.</p>
-        <a href="/courses/a0/lesson-7/" class="topic-link">Start Lesson 7</a>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Colors, Shapes & Descriptions</h3>
-        <p class="topic-description">Describe simple objects with color and shape words.</p>
-        <a href="/courses/a0/lesson-8/" class="topic-link">Start Lesson 8</a>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Time, Days & Simple Routines</h3>
-        <p class="topic-description">Talk about days and daily routines in short sentences.</p>
-        <a href="/courses/a0/lesson-9/" class="topic-link">Start Lesson 9</a>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Simple Questions & Short Answers</h3>
-        <p class="topic-description">Ask and answer basic questions with short responses.</p>
-        <a href="/courses/a0/lesson-10/" class="topic-link">Start Lesson 10</a>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="section-footer">
-      <a href="/courses/a0/lesson-1/" class="button">Open Lesson 1: Alphabet and Basic Sounds</a>
-      <a href="/courses/a0/lesson-2/" class="button button-secondary">Open Lesson 2: Greetings and Introductions</a>
-      <a href="/courses/a0/lesson-3/" class="button">Open Lesson 3: Numbers & Age</a>
-      <a href="/courses/a0/lesson-4/" class="button button-secondary">Open Lesson 4: Countries, Nationalities & To Be</a>
-      <a href="/courses/a0/lesson-5/" class="button">Open Lesson 5: Family & People</a>
-      <a href="/courses/a0/lesson-6/" class="button button-secondary">Open Lesson 6: Everyday Objects & Articles</a>
-      <a href="/courses/a0/lesson-7/" class="button">Open Lesson 7: Basic Verbs & Daily Actions</a>
-      <a href="/courses/a0/lesson-8/" class="button button-secondary">Open Lesson 8: Colors, Shapes & Descriptions</a>
-      <a href="/courses/a0/lesson-9/" class="button">Open Lesson 9: Time, Days & Simple Routines</a>
-      <a href="/courses/a0/lesson-10/" class="button button-secondary">Open Lesson 10: Simple Questions & Short Answers</a>
+      {% for lesson in a0Lessons %}
+      <a href="/courses/a0/lesson-{{ lesson.number }}/" class="button{% if loop.index % 2 == 0 %} button-secondary{% endif %}">Open Lesson {{ lesson.number }}: {{ lesson.title }}</a>
+      {% endfor %}
     </div>
   </div>
 </section>

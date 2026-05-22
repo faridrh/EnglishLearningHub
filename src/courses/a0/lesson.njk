@@ -1,0 +1,182 @@
+---
+pagination:
+  data: a0Lessons
+  size: 1
+  alias: lesson
+permalink: "/courses/a0/lesson-{{ lesson.number }}/"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "A0 Lesson {{ lesson.number }} - {{ lesson.title }}"
+  description: "Lesson {{ lesson.number }} for A0 English course. {{ lesson.goal }}"
+  courseLevel: "A0"
+  lessonNumber: "{{ lesson.number }}"
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Lesson {{ lesson.number }} - {{ lesson.title }}</h1>
+    <p class="page-description">{{ lesson.pageDescription }}</p>
+  </div>
+</section>
+
+<section class="grammar-topics">
+  <div class="container">
+    <h2 class="section-title">Goal</h2>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <p class="topic-description">{{ lesson.goal }}</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Content</h2>
+    <div class="topics-grid">
+      {% for item in lesson.content %}
+      <div class="topic-card">
+        <h3 class="topic-title">{{ item.title }}</h3>
+        <p class="topic-description">{{ item.text | safe }}</p>
+        {% if item.speakLabel and item.speakText %}
+        <button type="button" class="button" data-speak="{{ item.speakText }}" style="margin-top: 10px;">{{ item.speakLabel }}</button>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="tips-section">
+  <div class="container">
+    <h2 class="section-title">Practice</h2>
+    <div class="tips-grid">
+      {% for card in lesson.practice %}
+      <div class="tip-card">
+        {% if card.icon %}
+        <div class="tip-icon"><i class="{{ card.icon }}"></i></div>
+        {% endif %}
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.text }}</p>
+        {% if card.speakLabel and card.speakText %}
+        <button type="button" class="button" data-speak="{{ card.speakText }}" style="margin-top: 10px;">{{ card.speakLabel }}</button>
+        {% endif %}
+        {% if card.linkLabel and card.linkUrl %}
+        <a href="{{ card.linkUrl }}" class="button" style="margin-top: 10px;">{{ card.linkLabel }}</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if lesson.exercise.type == "sentence" %}
+<section class="grammar-topics">
+  <div class="container">
+    <h2 class="section-title">{{ lesson.exercise.sectionTitle }}</h2>
+    <div class="topics-grid">
+      <div
+        class="topic-card"
+        data-exercise-type="sentence"
+        data-display-template="{{ lesson.exercise.displayTemplate }}"
+        data-speak-template="{{ lesson.exercise.speakTemplate }}"
+        data-empty-message="{{ lesson.exercise.emptyMessage }}"
+        data-feedback-prefix="{{ lesson.exercise.feedbackPrefix }}"
+      >
+        <h3 class="topic-title">{{ lesson.exercise.title }}</h3>
+        <p class="topic-description">{{ lesson.exercise.instruction }}</p>
+        <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+          {% for field in lesson.exercise.fields %}
+          <label for="lesson-{{ lesson.number }}-{{ field.name }}" style="font-weight: 600;">{{ field.label }}:</label>
+          {% if field.inputType == "select" %}
+          <select
+            id="lesson-{{ lesson.number }}-{{ field.name }}"
+            data-field-name="{{ field.name }}"
+            style="padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-width: 180px;"
+          >
+            {% for option in field.options %}
+            <option value="{{ option }}">{{ option }}</option>
+            {% endfor %}
+          </select>
+          {% else %}
+          <input
+            id="lesson-{{ lesson.number }}-{{ field.name }}"
+            type="text"
+            placeholder="{{ field.placeholder }}"
+            data-field-name="{{ field.name }}"
+            style="padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-width: 180px;"
+          >
+          {% endif %}
+          {% endfor %}
+          <button type="button" class="button" data-action="build-sentence">Build Sentence</button>
+        </div>
+        <p style="margin-top: 14px; font-size: 1.05rem;"><span data-role="preview"></span></p>
+        {% if lesson.exercise.example %}
+        <p style="margin-top: 10px; color: #475569; font-size: 0.95rem;">{{ lesson.exercise.example }}</p>
+        {% endif %}
+        <p data-role="feedback" style="margin-top: 12px; color: #475569; font-size: 0.95rem;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if lesson.exercise.type == "dragdrop-articles" %}
+<section class="grammar-topics">
+  <div class="container">
+    <h2 class="section-title">{{ lesson.exercise.sectionTitle }}</h2>
+    <div class="topics-grid">
+      <div class="topic-card" data-exercise-type="dragdrop-articles">
+        <h3 class="topic-title">{{ lesson.exercise.title }}</h3>
+        <p class="topic-description">{{ lesson.exercise.instruction }}</p>
+
+        <div data-role="word-bank" style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
+          {% for word in lesson.exercise.words %}
+          <button
+            type="button"
+            class="button button-secondary lesson-word"
+            id="lesson-{{ lesson.number }}-word-{{ loop.index }}"
+            draggable="true"
+            data-word="{{ word.word }}"
+            data-article="{{ word.article }}"
+          >{{ word.word }}</button>
+          {% endfor %}
+        </div>
+
+        <div style="margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+          <div class="lesson-drop-zone" data-zone="a" style="border: 2px dashed #94a3b8; border-radius: 10px; padding: 12px; min-height: 140px;">
+            <h4 style="margin: 0 0 8px;">a</h4>
+            <div data-zone-target="a" style="display: flex; gap: 8px; flex-wrap: wrap;"></div>
+          </div>
+          <div class="lesson-drop-zone" data-zone="an" style="border: 2px dashed #94a3b8; border-radius: 10px; padding: 12px; min-height: 140px;">
+            <h4 style="margin: 0 0 8px;">an</h4>
+            <div data-zone-target="an" style="display: flex; gap: 8px; flex-wrap: wrap;"></div>
+          </div>
+        </div>
+
+        <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <button type="button" class="button" data-action="check">Check Answers</button>
+          <button type="button" class="button button-secondary" data-action="reset">Reset</button>
+        </div>
+
+        <p data-role="feedback" style="margin-top: 12px; color: #475569; font-size: 0.95rem;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<script src="/js/a0-lesson.js" defer></script>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">Lesson Complete</h2>
+    <p class="cta-description">{{ lesson.ctaDescription }}</p>
+    <div class="cta-buttons">
+      {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}" class="button button-secondary">Back to Lesson {{ lesson.number - 1 }}</a>
+      {% endif %}
+      {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}" class="button button-primary">Next: Lesson {{ lesson.number + 1 }}</a>
+      {% endif %}
+      <a href="/courses/a0/" class="button button-secondary">Back to A0 Course</a>
+      <a href="/courses/" class="button button-secondary">View All Courses</a>
+    </div>
+  </div>
+</section>

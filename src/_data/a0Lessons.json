@@ -1,0 +1,611 @@
+[
+  {
+    "number": 1,
+    "title": "Alphabet and Basic Sounds",
+    "indexTitle": "Alphabet and Pronunciation Basics",
+    "indexDescription": "Learn the English alphabet sounds and simple pronunciation rules.",
+    "pageDescription": "Recognize letters and pronounce basic English sounds",
+    "goal": "Recognize letters and pronounce basic English sounds.",
+    "content": [
+      {
+        "title": "1) Alphabet A-Z",
+        "text": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z",
+        "speakLabel": "Read Alphabet",
+        "speakText": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      {
+        "title": "2) Vowel Sounds (A, E, I, O, U)",
+        "text": "A - /eI/ (as in name)<br>E - /i:/ (as in me)<br>I - /aI/ (as in five)<br>O - /oU/ (as in go)<br>U - /ju:/ (as in use)",
+        "speakLabel": "Read Vowels",
+        "speakText": "A, E, I, O, U"
+      },
+      {
+        "title": "3) Simple Phonics",
+        "text": "ba, be, bi, bo, bu",
+        "speakLabel": "Read Phonics",
+        "speakText": "ba, be, bi, bo, bu"
+      },
+      {
+        "title": "4) Practice Words",
+        "text": "cat, dog, bus, pen, map",
+        "speakLabel": "Read Practice Words",
+        "speakText": "cat, dog, bus, pen, map"
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-signature",
+        "title": "Task 1: Spell Your Name",
+        "text": "Say your name letter by letter in English."
+      },
+      {
+        "icon": "fas fa-volume-up",
+        "title": "Task 2: Read 5 Simple Words",
+        "text": "cat, dog, bus, pen, map"
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build your simple sentence",
+      "instruction": "Type your name and make a sentence.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Your name",
+          "inputType": "text",
+          "placeholder": "Farid"
+        }
+      ],
+      "displayTemplate": "My name is {name}.",
+      "speakTemplate": "My name is {name}.",
+      "emptyMessage": "Type your name to build the sentence.",
+      "feedbackPrefix": "Built sentence:",
+      "example": "Example: My name is Farid."
+    },
+    "ctaDescription": "Practice these sounds aloud every day before moving to the next lesson."
+  },
+  {
+    "number": 2,
+    "title": "Greetings and Introductions",
+    "indexTitle": "Greetings and Introductions",
+    "indexDescription": "Practice saying hello, introducing yourself, and basic polite expressions.",
+    "pageDescription": "Say hello and introduce yourself",
+    "goal": "Say hello and introduce yourself.",
+    "content": [
+      {
+        "title": "1) Greetings",
+        "text": "Hello, Hi, Goodbye",
+        "speakLabel": "Read Greetings",
+        "speakText": "Hello, Hi, Goodbye"
+      },
+      {
+        "title": "2) Introduce Yourself",
+        "text": "My name is... / I am...",
+        "speakLabel": "Read Introductions",
+        "speakText": "My name is... I am..."
+      },
+      {
+        "title": "3) Ask a Name",
+        "text": "What is your name?",
+        "speakLabel": "Read Question",
+        "speakText": "What is your name?"
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-comments",
+        "title": "Mini-dialogue",
+        "text": "Hi, I am Farid. Nice to meet you.",
+        "speakLabel": "Read Mini-dialogue",
+        "speakText": "Hi, I am Farid. Nice to meet you."
+      },
+      {
+        "icon": "fas fa-user",
+        "title": "Try It Yourself",
+        "text": "Say your name and greet another person politely."
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build a self-introduction",
+      "instruction": "Type your name to complete the sentence.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Your name",
+          "inputType": "text",
+          "placeholder": "Farid"
+        }
+      ],
+      "displayTemplate": "My name is {name}.",
+      "speakTemplate": "My name is {name}.",
+      "emptyMessage": "Type a name to build the sentence.",
+      "feedbackPrefix": "Built sentence:",
+      "example": "Example: My name is Farid."
+    },
+    "ctaDescription": "Practice these greetings aloud and use them in short conversations."
+  },
+  {
+    "number": 3,
+    "title": "Numbers and Age",
+    "indexTitle": "Numbers and Age",
+    "indexDescription": "Use numbers 1-20 and say your age.",
+    "pageDescription": "Use numbers 1-20 and say your age",
+    "goal": "Use numbers 1-20 and say your age.",
+    "content": [
+      {
+        "title": "1) Numbers 1-20",
+        "text": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
+        "speakLabel": "Read Numbers 1-20",
+        "speakText": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20"
+      },
+      {
+        "title": "2) Ask About Age",
+        "text": "How old are you?",
+        "speakLabel": "Read Question",
+        "speakText": "How old are you?"
+      },
+      {
+        "title": "3) Say Your Age",
+        "text": "I am ___ years old.",
+        "speakLabel": "Read Answer Pattern",
+        "speakText": "I am years old."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-user-check",
+        "title": "Say Your Age",
+        "text": "Practice the sentence: I am ___ years old."
+      },
+      {
+        "icon": "fas fa-cubes",
+        "title": "Count Objects Around You",
+        "text": "Count books, pens, chairs, or any objects you can see."
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build your age sentence",
+      "instruction": "Type a number to complete the sentence.",
+      "fields": [
+        {
+          "name": "age",
+          "label": "Your age",
+          "inputType": "text",
+          "placeholder": "10"
+        }
+      ],
+      "displayTemplate": "I am {age} years old.",
+      "speakTemplate": "I am {age} years old.",
+      "emptyMessage": "Type a number to build the sentence.",
+      "feedbackPrefix": "Built sentence:",
+      "example": "Example: I am 10 years old."
+    },
+    "ctaDescription": "Practice numbers aloud and ask someone their age in English."
+  },
+  {
+    "number": 4,
+    "title": "Countries, Nationalities and To Be",
+    "indexTitle": "Countries, Nationalities and To Be",
+    "indexDescription": "Use am, is, and are in simple identity sentences.",
+    "pageDescription": "Use am, is, and are in simple sentences",
+    "goal": "Use am, is, and are in simple sentences.",
+    "content": [
+      {
+        "title": "1) Country",
+        "text": "I am from...",
+        "speakLabel": "Read Pattern",
+        "speakText": "I am from Azerbaijan."
+      },
+      {
+        "title": "2) Nationality",
+        "text": "I am Azerbaijani. / I am Georgian.",
+        "speakLabel": "Read Nationalities",
+        "speakText": "I am Azerbaijani. I am Georgian."
+      },
+      {
+        "title": "3) He/She Is",
+        "text": "He is... / She is...",
+        "speakLabel": "Read He/She",
+        "speakText": "He is from Georgia. She is from Azerbaijan."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-flag",
+        "title": "Model Sentence",
+        "text": "I am from Azerbaijan. I am Azerbaijani.",
+        "speakLabel": "Read Practice Sentence",
+        "speakText": "I am from Azerbaijan. I am Azerbaijani."
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build your sentence",
+      "instruction": "Type a country and nationality.",
+      "fields": [
+        {
+          "name": "country",
+          "label": "Country",
+          "inputType": "text",
+          "placeholder": "Azerbaijan"
+        },
+        {
+          "name": "nationality",
+          "label": "Nationality",
+          "inputType": "text",
+          "placeholder": "Azerbaijani"
+        }
+      ],
+      "displayTemplate": "I am from {country}. I am {nationality}.",
+      "speakTemplate": "I am from {country}. I am {nationality}.",
+      "emptyMessage": "Type both country and nationality.",
+      "feedbackPrefix": "Built sentence:"
+    },
+    "ctaDescription": "Practice am, is, and are with people and nationalities."
+  },
+  {
+    "number": 5,
+    "title": "Family and People",
+    "indexTitle": "Family and People",
+    "indexDescription": "Talk about family members with simple my/he/she sentences.",
+    "pageDescription": "Talk about family members",
+    "goal": "Talk about family members.",
+    "content": [
+      {
+        "title": "1) Family Words",
+        "text": "mother, father, brother, sister, friend",
+        "speakLabel": "Read Family Words",
+        "speakText": "mother, father, brother, sister, friend"
+      },
+      {
+        "title": "2) This Is My...",
+        "text": "This is my mother. This is my friend.",
+        "speakLabel": "Read This Is My",
+        "speakText": "This is my mother. This is my friend."
+      },
+      {
+        "title": "3) He/She Is My...",
+        "text": "He is my brother. She is my sister.",
+        "speakLabel": "Read He/She Is My",
+        "speakText": "He is my brother. She is my sister."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-users",
+        "title": "Introduce 3 Family Members",
+        "text": "Example: This is my mother. This is my father. This is my sister.",
+        "speakLabel": "Read Example",
+        "speakText": "This is my mother. This is my father. This is my sister."
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build your family sentence",
+      "instruction": "Type a family member to complete the sentence.",
+      "fields": [
+        {
+          "name": "familyMember",
+          "label": "Family member",
+          "inputType": "text",
+          "placeholder": "brother"
+        }
+      ],
+      "displayTemplate": "This is my {familyMember}.",
+      "speakTemplate": "This is my {familyMember}.",
+      "emptyMessage": "Type a family member to build the sentence.",
+      "feedbackPrefix": "Built sentence:"
+    },
+    "ctaDescription": "Introduce people around you with short sentences."
+  },
+  {
+    "number": 6,
+    "title": "Everyday Objects and Articles",
+    "indexTitle": "Everyday Objects and Articles",
+    "indexDescription": "Use a/an with common everyday objects.",
+    "pageDescription": "Use a/an and basic nouns",
+    "goal": "Use a/an and basic nouns.",
+    "content": [
+      {
+        "title": "1) Everyday Objects",
+        "text": "pen, phone, bag, key, book",
+        "speakLabel": "Read Objects",
+        "speakText": "pen, phone, bag, key, book"
+      },
+      {
+        "title": "2) Articles",
+        "text": "a / an",
+        "speakLabel": "Read Articles",
+        "speakText": "a, an"
+      },
+      {
+        "title": "3) This Is a...",
+        "text": "This is a pen. This is an apple.",
+        "speakLabel": "Read Sentences",
+        "speakText": "This is a pen. This is an apple."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-search",
+        "title": "Identify 5 Objects Around You",
+        "text": "Say each object with a/an, for example: a pen, a bag, a key.",
+        "linkLabel": "Open Articles Exercises",
+        "linkUrl": "/grammar/beginner/articles-exercises/"
+      }
+    ],
+    "exercise": {
+      "type": "dragdrop-articles",
+      "sectionTitle": "Drag and Drop: a / an",
+      "title": "Sort the words into a or an",
+      "instruction": "Drag each word to the correct article box. On touch devices, tap a word then tap a box.",
+      "words": [
+        { "word": "apple", "article": "an" },
+        { "word": "umbrella", "article": "an" },
+        { "word": "egg", "article": "an" },
+        { "word": "book", "article": "a" },
+        { "word": "phone", "article": "a" },
+        { "word": "key", "article": "a" }
+      ]
+    },
+    "ctaDescription": "Keep practicing with objects you can see every day."
+  },
+  {
+    "number": 7,
+    "title": "Basic Verbs and Daily Actions",
+    "indexTitle": "Basic Verbs and Daily Actions",
+    "indexDescription": "Use simple present verbs in short daily sentences.",
+    "pageDescription": "Use simple present verbs",
+    "goal": "Use simple present verbs.",
+    "content": [
+      {
+        "title": "1) Verbs",
+        "text": "eat, drink, go, like, have",
+        "speakLabel": "Read Verbs",
+        "speakText": "eat, drink, go, like, have"
+      },
+      {
+        "title": "2) Basic Patterns",
+        "text": "I eat... / I like... / I have...",
+        "speakLabel": "Read Patterns",
+        "speakText": "I eat. I like. I have."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-mug-hot",
+        "title": "Sentence 1",
+        "text": "I like tea.",
+        "speakLabel": "Read Sentence",
+        "speakText": "I like tea."
+      },
+      {
+        "icon": "fas fa-mobile-alt",
+        "title": "Sentence 2",
+        "text": "I have a phone.",
+        "speakLabel": "Read Sentence",
+        "speakText": "I have a phone."
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build with I + verb",
+      "instruction": "Type one verb and one object.",
+      "fields": [
+        {
+          "name": "verb",
+          "label": "Verb",
+          "inputType": "text",
+          "placeholder": "like"
+        },
+        {
+          "name": "object",
+          "label": "Object",
+          "inputType": "text",
+          "placeholder": "tea"
+        }
+      ],
+      "displayTemplate": "I {verb} {object}.",
+      "speakTemplate": "I {verb} {object}.",
+      "emptyMessage": "Type a verb and an object.",
+      "feedbackPrefix": "Built sentence:"
+    },
+    "ctaDescription": "Use these verbs in short, clear daily sentences."
+  },
+  {
+    "number": 8,
+    "title": "Colors, Shapes and Descriptions",
+    "indexTitle": "Colors, Shapes and Descriptions",
+    "indexDescription": "Describe simple objects with color and shape words.",
+    "pageDescription": "Describe simple things",
+    "goal": "Describe simple things.",
+    "content": [
+      {
+        "title": "1) Colors",
+        "text": "red, blue, green, black, white",
+        "speakLabel": "Read Colors",
+        "speakText": "red, blue, green, black, white"
+      },
+      {
+        "title": "2) Shapes",
+        "text": "circle, square",
+        "speakLabel": "Read Shapes",
+        "speakText": "circle, square"
+      },
+      {
+        "title": "3) It Is...",
+        "text": "It is...",
+        "speakLabel": "Read Examples",
+        "speakText": "It is red. It is a square."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-palette",
+        "title": "Describe an Object",
+        "text": "It is a red book.",
+        "speakLabel": "Read Practice Sentence",
+        "speakText": "It is a red book."
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build with It is a...",
+      "instruction": "Type one color and one object.",
+      "fields": [
+        {
+          "name": "color",
+          "label": "Color",
+          "inputType": "text",
+          "placeholder": "red"
+        },
+        {
+          "name": "object",
+          "label": "Object",
+          "inputType": "text",
+          "placeholder": "book"
+        }
+      ],
+      "displayTemplate": "It is a {color} {object}.",
+      "speakTemplate": "It is a {color} {object}.",
+      "emptyMessage": "Type a color and an object.",
+      "feedbackPrefix": "Built sentence:"
+    },
+    "ctaDescription": "Describe objects around you with simple color phrases."
+  },
+  {
+    "number": 9,
+    "title": "Time, Days and Simple Routines",
+    "indexTitle": "Time, Days and Simple Routines",
+    "indexDescription": "Talk about days and daily routines in short sentences.",
+    "pageDescription": "Talk about your daily routine",
+    "goal": "Talk about your daily routine.",
+    "content": [
+      {
+        "title": "1) Days of the Week",
+        "text": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+        "speakLabel": "Read Days",
+        "speakText": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"
+      },
+      {
+        "title": "2) Day Parts",
+        "text": "morning / afternoon / evening",
+        "speakLabel": "Read Day Parts",
+        "speakText": "morning, afternoon, evening"
+      },
+      {
+        "title": "3) Routine Patterns",
+        "text": "I wake up... I go to work...",
+        "speakLabel": "Read Routine",
+        "speakText": "I wake up in the morning. I go to work in the afternoon."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-clock",
+        "title": "3-Sentence Routine",
+        "text": "Say your daily routine in 3 sentences."
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build one routine sentence",
+      "instruction": "Type one action and one day part.",
+      "fields": [
+        {
+          "name": "action",
+          "label": "Action",
+          "inputType": "text",
+          "placeholder": "wake up"
+        },
+        {
+          "name": "time",
+          "label": "Time",
+          "inputType": "text",
+          "placeholder": "morning"
+        }
+      ],
+      "displayTemplate": "I {action} in the {time}.",
+      "speakTemplate": "I {action} in the {time}.",
+      "emptyMessage": "Type an action and a day part.",
+      "feedbackPrefix": "Built sentence:"
+    },
+    "ctaDescription": "Say your routine clearly using day and time words."
+  },
+  {
+    "number": 10,
+    "title": "Simple Questions and Short Answers",
+    "indexTitle": "Simple Questions and Short Answers",
+    "indexDescription": "Ask and answer basic questions with short responses.",
+    "pageDescription": "Ask and answer basic questions",
+    "goal": "Ask and answer basic questions.",
+    "content": [
+      {
+        "title": "1) What Is This?",
+        "text": "What is this?",
+        "speakLabel": "Read Question",
+        "speakText": "What is this?"
+      },
+      {
+        "title": "2) Where Are You From?",
+        "text": "Where are you from?",
+        "speakLabel": "Read Question",
+        "speakText": "Where are you from?"
+      },
+      {
+        "title": "3) Do You Like...?",
+        "text": "Do you like...?",
+        "speakLabel": "Read Question",
+        "speakText": "Do you like tea?"
+      },
+      {
+        "title": "4) Short Answers",
+        "text": "Yes, I do / No, I do not",
+        "speakLabel": "Read Answers",
+        "speakText": "Yes, I do. No, I do not."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-question-circle",
+        "title": "5 Question-Answer Pairs",
+        "text": "Practice five short question and answer pairs with a partner."
+      }
+    ],
+    "exercise": {
+      "type": "sentence",
+      "sectionTitle": "Sentence Building",
+      "title": "Build a Q&A pair",
+      "instruction": "Type a topic and choose a short answer.",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "inputType": "text",
+          "placeholder": "tea"
+        },
+        {
+          "name": "answer",
+          "label": "Answer",
+          "inputType": "select",
+          "options": ["Yes, I do.", "No, I do not."]
+        }
+      ],
+      "displayTemplate": "Q: Do you like {topic}? A: {answer}",
+      "speakTemplate": "Do you like {topic}? {answer}",
+      "emptyMessage": "Type a topic to build the question.",
+      "feedbackPrefix": "Built pair:"
+    },
+    "ctaDescription": "You can now ask and answer simple everyday questions."
+  }
+]
