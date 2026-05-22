@@ -91,6 +91,18 @@ Welcome to our collection of interactive games designed to make learning English
   </div>
 
   <div class="game-card">
+    <div class="game-icon">🏃</div>
+    <h3 class="game-title">Word Runner</h3>
+    <p class="game-description">Jump through a side-scrolling track, collect verb words, and avoid wrong words and obstacles.</p>
+    <div class="game-features">
+      <span class="feature-tag">Action</span>
+      <span class="feature-tag">Grammar</span>
+      <span class="feature-tag">Fast Reflex</span>
+    </div>
+    <a href="/games/word-runner/" class="game-play-btn">Play Word Runner</a>
+  </div>
+
+  <div class="game-card">
     <div class="game-icon">📘</div>
     <h3 class="game-title">IELTS Words Match</h3>
     <p class="game-description">See an IELTS-level word and pick the best matching description from four options.</p>

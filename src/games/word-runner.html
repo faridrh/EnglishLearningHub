@@ -1,0 +1,429 @@
+---
+layout: false
+permalink: /games/word-runner/index.html
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Runner</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at 15% 20%, #1d4ed8 0%, #0f172a 48%, #020617 100%);
+        color: #e2e8f0;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      }
+
+      .hud-card {
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(148, 163, 184, 0.3);
+      }
+
+      .game-shell {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+
+      .canvas-wrap {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        box-shadow: 0 20px 60px rgba(2, 6, 23, 0.6);
+        background: linear-gradient(180deg, #1e40af 0%, #1d4ed8 30%, #0f172a 100%);
+      }
+
+      canvas {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .mobile-jump {
+        position: absolute;
+        right: 14px;
+        bottom: 14px;
+        border: 0;
+        border-radius: 999px;
+        width: 86px;
+        height: 86px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #0f172a;
+        background: #facc15;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.5);
+      }
+
+      @media (min-width: 768px) {
+        .mobile-jump {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="game-shell px-4 py-6 sm:px-6 sm:py-8">
+      <a href="/games/" class="inline-flex items-center rounded-lg bg-slate-900/80 px-4 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-700">← Back to Games</a>
+
+      <section class="mt-5 rounded-2xl p-5 hud-card">
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Word Runner</h1>
+        <p class="mt-2 text-slate-300">Run, jump, and collect the correct words. Avoid wrong words to protect your lives.</p>
+        <p class="mt-2 text-slate-400 text-sm">Target rule: collect only <span class="font-bold text-amber-300">verbs</span> in this round.</p>
+      </section>
+
+      <section class="mt-4 grid gap-3 sm:grid-cols-4">
+        <div class="hud-card rounded-xl p-3">
+          <p class="text-xs uppercase tracking-wide text-slate-400">Score</p>
+          <p id="scoreEl" class="text-2xl font-bold text-emerald-300">0</p>
+        </div>
+        <div class="hud-card rounded-xl p-3">
+          <p class="text-xs uppercase tracking-wide text-slate-400">Lives</p>
+          <p id="livesEl" class="text-2xl font-bold text-rose-300">3</p>
+        </div>
+        <div class="hud-card rounded-xl p-3">
+          <p class="text-xs uppercase tracking-wide text-slate-400">Distance</p>
+          <p id="distanceEl" class="text-2xl font-bold text-sky-300">0 m</p>
+        </div>
+        <div class="hud-card rounded-xl p-3">
+          <p class="text-xs uppercase tracking-wide text-slate-400">Best</p>
+          <p id="bestEl" class="text-2xl font-bold text-fuchsia-300">0</p>
+        </div>
+      </section>
+
+      <section class="mt-4 canvas-wrap">
+        <canvas id="gameCanvas" width="920" height="420" aria-label="Word Runner game area"></canvas>
+        <button id="jumpBtn" class="mobile-jump" type="button">JUMP</button>
+      </section>
+
+      <section class="mt-4 rounded-xl p-4 hud-card">
+        <h2 class="font-bold text-lg">How to play</h2>
+        <ul class="mt-2 text-slate-300 text-sm leading-6 list-disc pl-5">
+          <li>Press <strong>Space</strong> or <strong>Arrow Up</strong> to jump.</li>
+          <li>Collect <strong>verb</strong> words for points.</li>
+          <li>Touching non-verb words or ground obstacles loses a life.</li>
+          <li>Survive as long as possible and beat your best score.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script>
+      const canvas = document.getElementById("gameCanvas");
+      const ctx = canvas.getContext("2d");
+      const scoreEl = document.getElementById("scoreEl");
+      const livesEl = document.getElementById("livesEl");
+      const distanceEl = document.getElementById("distanceEl");
+      const bestEl = document.getElementById("bestEl");
+      const jumpBtn = document.getElementById("jumpBtn");
+
+      const wordBank = [
+        { text: "run", isTarget: true },
+        { text: "jump", isTarget: true },
+        { text: "write", isTarget: true },
+        { text: "laugh", isTarget: true },
+        { text: "read", isTarget: true },
+        { text: "listen", isTarget: true },
+        { text: "book", isTarget: false },
+        { text: "river", isTarget: false },
+        { text: "school", isTarget: false },
+        { text: "apple", isTarget: false },
+        { text: "window", isTarget: false },
+        { text: "planet", isTarget: false }
+      ];
+
+      const player = {
+        x: 150,
+        y: 0,
+        w: 54,
+        h: 62,
+        vy: 0,
+        onGround: true
+      };
+
+      const state = {
+        running: false,
+        score: 0,
+        lives: 3,
+        distance: 0,
+        speed: 4,
+        gravity: 0.74,
+        jumpPower: -17.5,
+        spawnTimer: 0,
+        spawnInterval: 78,
+        wordItems: [],
+        flashFrames: 0,
+        damageCooldown: 0,
+        best: Number(localStorage.getItem("wordRunnerBest") || 0)
+      };
+
+      const groundY = canvas.height - 72;
+      player.y = groundY - player.h;
+      bestEl.textContent = String(state.best);
+
+      function resetGame() {
+        state.score = 0;
+        state.lives = 3;
+        state.distance = 0;
+        state.speed = 4;
+        state.spawnTimer = 0;
+        state.wordItems = [];
+        state.damageCooldown = 0;
+        state.running = true;
+        player.y = groundY - player.h;
+        player.vy = 0;
+        player.onGround = true;
+        updateHud();
+      }
+
+      function updateHud() {
+        scoreEl.textContent = String(state.score);
+        livesEl.textContent = String(state.lives);
+        distanceEl.textContent = `${Math.floor(state.distance)} m`;
+      }
+
+      function jump() {
+        if (!state.running) {
+          resetGame();
+          return;
+        }
+        if (!player.onGround) return;
+        player.vy = state.jumpPower;
+        player.onGround = false;
+      }
+
+      function spawnEntities() {
+        const maybeWord = Math.random() < 0.78;
+        if (maybeWord) {
+          const word = wordBank[Math.floor(Math.random() * wordBank.length)];
+          const midAir = Math.random() < 0.45;
+          const baseY = midAir ? groundY - 120 - Math.random() * 80 : groundY - 36;
+          const itemWidth = Math.max(62, 26 + (word.text.length * 11));
+          state.wordItems.push({
+            x: canvas.width + 20,
+            y: baseY,
+            w: itemWidth,
+            h: 30,
+            text: word.text,
+            isTarget: word.isTarget,
+            hit: false
+          });
+        }
+
+      }
+
+      function getOverlap(a, b, aInset = 0, bInset = 0) {
+        const ax = a.x + aInset;
+        const ay = a.y + aInset;
+        const aw = a.w - (aInset * 2);
+        const ah = a.h - (aInset * 2);
+
+        const bx = b.x + bInset;
+        const by = b.y + bInset;
+        const bw = b.w - (bInset * 2);
+        const bh = b.h - (bInset * 2);
+
+        const overlapX = Math.min(ax + aw, bx + bw) - Math.max(ax, bx);
+        const overlapY = Math.min(ay + ah, by + bh) - Math.max(ay, by);
+
+        return { overlapX, overlapY };
+      }
+
+      function intersects(a, b, aInset = 0, bInset = 0, minOverlapX = 1, minOverlapY = 1) {
+        const { overlapX, overlapY } = getOverlap(a, b, aInset, bInset);
+
+        return overlapX >= minOverlapX && overlapY >= minOverlapY;
+      }
+
+      function applyHitPenalty() {
+        if (state.damageCooldown > 0) return;
+        state.lives -= 1;
+        state.flashFrames = 14;
+        state.damageCooldown = 20;
+        if (state.lives <= 0) {
+          state.running = false;
+          if (state.score > state.best) {
+            state.best = state.score;
+            localStorage.setItem("wordRunnerBest", String(state.best));
+            bestEl.textContent = String(state.best);
+          }
+        }
+      }
+
+      function update() {
+        if (!state.running) return;
+
+        if (state.damageCooldown > 0) {
+          state.damageCooldown -= 1;
+        }
+
+        state.distance += state.speed * 0.14;
+        state.speed = Math.min(9.5, state.speed + 0.0007);
+
+        player.vy += state.gravity;
+        player.y += player.vy;
+
+        if (player.y >= groundY - player.h) {
+          player.y = groundY - player.h;
+          player.vy = 0;
+          player.onGround = true;
+        }
+
+        state.spawnTimer += 1;
+        if (state.spawnTimer >= state.spawnInterval) {
+          state.spawnTimer = 0;
+          state.spawnInterval = 58 + Math.floor(Math.random() * 45);
+          spawnEntities();
+        }
+
+        for (const item of state.wordItems) {
+          item.x -= state.speed;
+          const overlap = getOverlap(player, item, 8, 6);
+          const hasContact = overlap.overlapX >= 18 && overlap.overlapY >= 14;
+          if (!item.hit && hasContact) {
+            item.hit = true;
+            if (item.isTarget) {
+              state.score += 10;
+            } else {
+              const playerFeetY = player.y + player.h;
+              const playerFeetBandTop = playerFeetY - 12;
+              const itemTop = item.y;
+              const itemBottom = item.y + item.h;
+
+              // Penalize only when the wrong word reaches the player's lower body/feet zone.
+              const feetOverlap = Math.min(playerFeetY, itemBottom) - Math.max(playerFeetBandTop, itemTop);
+              const meaningfulFeetContact = feetOverlap >= 6;
+              if (meaningfulFeetContact) {
+                applyHitPenalty();
+              }
+            }
+          }
+        }
+
+        state.wordItems = state.wordItems.filter((item) => item.x + item.w > -40 && !item.hit);
+
+        updateHud();
+      }
+
+      function drawSky() {
+        const grad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        grad.addColorStop(0, "#1d4ed8");
+        grad.addColorStop(0.6, "#1e40af");
+        grad.addColorStop(1, "#0f172a");
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "rgba(255,255,255,0.18)";
+        for (let i = 0; i < 8; i += 1) {
+          const x = ((i * 130) - (state.distance * 0.8)) % (canvas.width + 200);
+          const y = 45 + (i % 3) * 38;
+          ctx.beginPath();
+          ctx.arc(x, y, 18, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      function drawGround() {
+        ctx.fillStyle = "#14532d";
+        ctx.fillRect(0, groundY, canvas.width, canvas.height - groundY);
+        ctx.fillStyle = "#166534";
+        for (let i = 0; i < canvas.width; i += 42) {
+          const offset = (state.distance * 3) % 42;
+          ctx.fillRect(i - offset, groundY + 18, 24, 6);
+        }
+      }
+
+      function drawPlayer() {
+        ctx.fillStyle = state.flashFrames > 0 ? "#fecaca" : "#f8fafc";
+        ctx.fillRect(player.x, player.y, player.w, player.h);
+        ctx.fillStyle = "#0f172a";
+        ctx.fillRect(player.x + 10, player.y + 12, 8, 8);
+        ctx.fillRect(player.x + 36, player.y + 12, 8, 8);
+        ctx.fillRect(player.x + 14, player.y + 40, 26, 6);
+      }
+
+      function drawWords() {
+        for (const item of state.wordItems) {
+          ctx.fillStyle = item.isTarget ? "#10b981" : "#f97316";
+          ctx.fillRect(item.x, item.y, item.w, item.h);
+          ctx.fillStyle = "#0f172a";
+          ctx.font = "700 16px Trebuchet MS";
+          ctx.fillText(item.text, item.x + 8, item.y + 21);
+        }
+      }
+
+      function drawStartOverlay() {
+        ctx.fillStyle = "rgba(2, 6, 23, 0.55)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "#f8fafc";
+        ctx.textAlign = "center";
+        ctx.font = "800 42px Trebuchet MS";
+        ctx.fillText("Word Runner", canvas.width / 2, 155);
+        ctx.font = "600 24px Trebuchet MS";
+        ctx.fillText("Collect VERBS, avoid other words and rocks", canvas.width / 2, 205);
+        ctx.font = "700 26px Trebuchet MS";
+        ctx.fillStyle = "#facc15";
+        ctx.fillText("Press SPACE or tap JUMP to start", canvas.width / 2, 265);
+        ctx.textAlign = "start";
+      }
+
+      function drawGameOverOverlay() {
+        ctx.fillStyle = "rgba(2, 6, 23, 0.6)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "#f8fafc";
+        ctx.textAlign = "center";
+        ctx.font = "800 44px Trebuchet MS";
+        ctx.fillText("Game Over", canvas.width / 2, 155);
+        ctx.font = "700 28px Trebuchet MS";
+        ctx.fillStyle = "#34d399";
+        ctx.fillText(`Score: ${state.score}`, canvas.width / 2, 210);
+        ctx.fillStyle = "#e2e8f0";
+        ctx.font = "600 24px Trebuchet MS";
+        ctx.fillText("Press SPACE or tap JUMP to play again", canvas.width / 2, 260);
+        ctx.textAlign = "start";
+      }
+
+      function draw() {
+        drawSky();
+        drawGround();
+        drawWords();
+        drawPlayer();
+
+        if (!state.running && state.score === 0 && state.distance === 0) {
+          drawStartOverlay();
+        }
+
+        if (!state.running && (state.score > 0 || state.distance > 0) && state.lives <= 0) {
+          drawGameOverOverlay();
+        }
+      }
+
+      function gameLoop() {
+        update();
+        draw();
+        if (state.flashFrames > 0) {
+          state.flashFrames -= 1;
+        }
+        requestAnimationFrame(gameLoop);
+      }
+
+      window.addEventListener("keydown", (event) => {
+        if (event.code === "Space" || event.code === "ArrowUp") {
+          event.preventDefault();
+          jump();
+        }
+      });
+
+      jumpBtn.addEventListener("click", jump);
+      canvas.addEventListener("pointerdown", jump);
+
+      updateHud();
+      gameLoop();
+    </script>
+  </body>
+</html>
