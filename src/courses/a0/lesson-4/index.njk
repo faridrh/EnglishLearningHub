@@ -1,0 +1,151 @@
+---
+layout: layouts/base.njk
+title: A0 Lesson 4 - Countries, Nationalities and To Be
+description: Lesson 4 for A0 English course. Use am, is, and are in simple sentences.
+courseLevel: A0
+lessonNumber: 4
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Lesson 4 - Countries, Nationalities & To Be</h1>
+    <p class="page-description">Use am, is, and are in simple sentences</p>
+  </div>
+</section>
+
+<section class="grammar-topics">
+  <div class="container">
+    <h2 class="section-title">Goal</h2>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <p class="topic-description">Use am, is, and are in simple sentences.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Content</h2>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <h3 class="topic-title">1) Country</h3>
+        <p class="topic-description">I am from...</p>
+        <button type="button" class="button" data-speak="I am from Azerbaijan." style="margin-top: 10px;">Read Pattern</button>
+      </div>
+
+      <div class="topic-card">
+        <h3 class="topic-title">2) Nationality</h3>
+        <p class="topic-description">I am Azerbaijani. / I am Georgian.</p>
+        <button type="button" class="button" data-speak="I am Azerbaijani. I am Georgian." style="margin-top: 10px;">Read Nationalities</button>
+      </div>
+
+      <div class="topic-card">
+        <h3 class="topic-title">3) He/She Is</h3>
+        <p class="topic-description">He is... / She is...</p>
+        <button type="button" class="button" data-speak="He is from Georgia. She is from Azerbaijan." style="margin-top: 10px;">Read He/She</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tips-section">
+  <div class="container">
+    <h2 class="section-title">Practice</h2>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-flag"></i></div>
+        <h3>Model Sentence</h3>
+        <p>I am from Azerbaijan. I am Azerbaijani.</p>
+        <button type="button" class="button" data-speak="I am from Azerbaijan. I am Azerbaijani." style="margin-top: 10px;">Read Practice Sentence</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grammar-topics">
+  <div class="container">
+    <h2 class="section-title">Sentence Building</h2>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <h3 class="topic-title">Build your sentence</h3>
+        <p class="topic-description">Type a country and nationality.</p>
+        <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+          <label for="lesson-4-country-input" style="font-weight: 600;">Country:</label>
+          <input id="lesson-4-country-input" type="text" placeholder="Azerbaijan" style="padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-width: 180px;">
+          <label for="lesson-4-nationality-input" style="font-weight: 600;">Nationality:</label>
+          <input id="lesson-4-nationality-input" type="text" placeholder="Azerbaijani" style="padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-width: 180px;">
+          <button type="button" class="button" id="lesson-4-build-sentence">Build Sentence</button>
+        </div>
+        <p style="margin-top: 14px; font-size: 1.05rem;">
+          I am from <strong><span id="lesson-4-country-output">_____</span></strong>. I am <strong><span id="lesson-4-nationality-output">_____</span></strong>.
+        </p>
+        <p id="lesson-4-sentence-feedback" style="margin-top: 12px; color: #475569; font-size: 0.95rem;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  const speakButtons = document.querySelectorAll('[data-speak]');
+  const countryInput = document.getElementById('lesson-4-country-input');
+  const nationalityInput = document.getElementById('lesson-4-nationality-input');
+  const countryOutput = document.getElementById('lesson-4-country-output');
+  const nationalityOutput = document.getElementById('lesson-4-nationality-output');
+  const feedback = document.getElementById('lesson-4-sentence-feedback');
+  const buildButton = document.getElementById('lesson-4-build-sentence');
+
+  function supported() {
+    return typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+  }
+
+  function speak(text) {
+    if (!supported()) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function updateBuilder() {
+    const country = countryInput ? countryInput.value.trim() : '';
+    const nationality = nationalityInput ? nationalityInput.value.trim() : '';
+    if (countryOutput) countryOutput.textContent = country || '_____';
+    if (nationalityOutput) nationalityOutput.textContent = nationality || '_____';
+
+    if (feedback) {
+      if (country && nationality) {
+        feedback.textContent = 'Built sentence: I am from ' + country + '. I am ' + nationality + '.';
+      } else {
+        feedback.textContent = 'Type both country and nationality.';
+      }
+    }
+
+    if (country && nationality) {
+      speak('I am from ' + country + '. I am ' + nationality + '.');
+    }
+  }
+
+  speakButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      speak(button.getAttribute('data-speak') || '');
+    });
+  });
+
+  if (buildButton) {
+    buildButton.addEventListener('click', updateBuilder);
+  }
+})();
+</script>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">Lesson Complete</h2>
+    <p class="cta-description">Practice am, is, and are with people and nationalities.</p>
+    <div class="cta-buttons">
+      <a href="/courses/a0/lesson-3/" class="button button-secondary">Back to Lesson 3</a>
+      <a href="/courses/a0/lesson-5/" class="button button-primary">Next: Lesson 5</a>
+      <a href="/courses/a0/" class="button button-secondary">Back to A0 Course</a>
+    </div>
+  </div>
+</section>

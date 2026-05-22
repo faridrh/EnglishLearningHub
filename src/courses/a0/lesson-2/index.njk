@@ -98,12 +98,35 @@ lessonNumber: 2
 
 <script>
 (function () {
-  const statusEl = document.getElementById('tts-status');
   const speakButtons = document.querySelectorAll('[data-speak]');
   const builderInput = document.getElementById('lesson-2-name-input');
   const builderOutput = document.getElementById('lesson-2-name-output');
   const builderFeedback = document.getElementById('lesson-2-sentence-feedback');
   const builderButton = document.getElementById('lesson-2-build-sentence');
+
+  function supported() {
+    return typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+  }
+
+  function speak(text) {
+    if (!supported()) return;
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function speakBuilderSentence(value) {
+    const trimmed = value.trim();
+    if (!trimmed) {
+      return;
+    }
+
+    speak('My name is ' + trimmed + '.');
+  }
 
   function updateBuilder() {
     const value = builderInput ? builderInput.value.trim() : '';
@@ -119,9 +142,7 @@ lessonNumber: 2
 
   speakButtons.forEach(function (button) {
     button.addEventListener('click', function () {
-      if (statusEl) {
-        statusEl.textContent = button.getAttribute('data-speak') || '';
-      }
+      speak(button.getAttribute('data-speak') || '');
     });
   });
 
@@ -132,6 +153,7 @@ lessonNumber: 2
   if (builderButton) {
     builderButton.addEventListener('click', function () {
       updateBuilder();
+      speakBuilderSentence(builderInput ? builderInput.value : '');
     });
   }
 
