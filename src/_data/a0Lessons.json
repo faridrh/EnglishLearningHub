@@ -464,25 +464,76 @@
         "text": "Example: This is my mother. This is my father. This is my sister.",
         "speakLabel": "Read Example",
         "speakText": "This is my mother. This is my father. This is my sister."
+      },
+      {
+        "icon": "fas fa-heart",
+        "title": "Talk About One Person",
+        "text": "Say: He is my father. She is my mother."
+      },
+      {
+        "icon": "fas fa-user-friends",
+        "title": "Add a Friend",
+        "text": "Say: This is my friend."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build your family sentence",
-      "instruction": "Type a family member to complete the sentence.",
-      "fields": [
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Family words & introduce people",
+      "instruction": "Start practicing right away: learn family words, practice useful sentences, then build your own.",
+      "sentence": {
+        "displayTemplate": "This is my {familyMember}.",
+        "speakTemplate": "This is my {familyMember}.",
+        "emptyMessage": "Type a family member to build the sentence.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: This is my brother."
+      },
+      "steps": [
         {
-          "name": "familyMember",
-          "label": "Family member",
-          "inputType": "text",
-          "placeholder": "brother"
+          "type": "listen-phrases",
+          "title": "1. Learn family words",
+          "hint": "Click each word, listen, and repeat.",
+          "progressLabel": "Family words practiced",
+          "items": [
+            { "label": "mother", "speakText": "mother" },
+            { "label": "father", "speakText": "father" },
+            { "label": "brother", "speakText": "brother" },
+            { "label": "sister", "speakText": "sister" },
+            { "label": "friend", "speakText": "friend" },
+            { "label": "grandmother", "speakText": "grandmother" },
+            { "label": "grandfather", "speakText": "grandfather" },
+            { "label": "child", "speakText": "child" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice family sentences",
+          "hint": "Listen and say these short introductions.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "This is my mother.", "speakText": "This is my mother." },
+            { "label": "This is my father.", "speakText": "This is my father." },
+            { "label": "This is my friend.", "speakText": "This is my friend." },
+            { "label": "He is my brother.", "speakText": "He is my brother." },
+            { "label": "She is my sister.", "speakText": "She is my sister." },
+            { "label": "They are my parents.", "speakText": "They are my parents." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build your family sentence",
+          "hint": "Type a family member and hear your sentence.",
+          "fields": [
+            {
+              "name": "familyMember",
+              "label": "Family member",
+              "inputType": "text",
+              "placeholder": "brother"
+            }
+          ],
+          "example": "Example: This is my brother."
         }
-      ],
-      "displayTemplate": "This is my {familyMember}.",
-      "speakTemplate": "This is my {familyMember}.",
-      "emptyMessage": "Type a family member to build the sentence.",
-      "feedbackPrefix": "Built sentence:"
+      ]
     },
     "ctaDescription": "Introduce people around you with short sentences."
   },
@@ -520,20 +571,90 @@
         "text": "Say each object with a/an, for example: a pen, a bag, a key.",
         "linkLabel": "Open Articles Exercises",
         "linkUrl": "/grammar/beginner/articles-exercises/"
+      },
+      {
+        "icon": "fas fa-apple-alt",
+        "title": "a or an?",
+        "text": "Remember: use an before a, e, i, o, u sounds."
+      },
+      {
+        "icon": "fas fa-book",
+        "title": "Point and Say",
+        "text": "Point to objects near you and say: This is a... / This is an..."
       }
     ],
     "exercise": {
-      "type": "dragdrop-articles",
-      "sectionTitle": "Drag and Drop: a / an",
-      "title": "Sort the words into a or an",
-      "instruction": "Drag each word to the correct article box. On touch devices, tap a word then tap a box.",
-      "words": [
-        { "word": "apple", "article": "an" },
-        { "word": "umbrella", "article": "an" },
-        { "word": "egg", "article": "an" },
-        { "word": "book", "article": "a" },
-        { "word": "phone", "article": "a" },
-        { "word": "key", "article": "a" }
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Objects, a/an & build sentences",
+      "instruction": "Start practicing right away: learn object words, sort a/an, then build a sentence.",
+      "sentence": {
+        "displayTemplate": "This is a {object}.",
+        "speakTemplate": "This is a {object}.",
+        "emptyMessage": "Type an object to build the sentence.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: This is a pen. (For vowel sounds, say: This is an apple.)"
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Learn everyday objects",
+          "hint": "Click each object word and repeat it.",
+          "progressLabel": "Objects practiced",
+          "items": [
+            { "label": "pen", "speakText": "pen" },
+            { "label": "phone", "speakText": "phone" },
+            { "label": "bag", "speakText": "bag" },
+            { "label": "key", "speakText": "key" },
+            { "label": "book", "speakText": "book" },
+            { "label": "apple", "speakText": "apple" },
+            { "label": "umbrella", "speakText": "umbrella" },
+            { "label": "egg", "speakText": "egg" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Listen to a / an examples",
+          "hint": "Notice when we use a and when we use an.",
+          "progressLabel": "Examples practiced",
+          "items": [
+            { "label": "a pen", "speakText": "a pen" },
+            { "label": "a book", "speakText": "a book" },
+            { "label": "a phone", "speakText": "a phone" },
+            { "label": "an apple", "speakText": "an apple" },
+            { "label": "an egg", "speakText": "an egg" },
+            { "label": "an umbrella", "speakText": "an umbrella" },
+            { "label": "This is a pen.", "speakText": "This is a pen." },
+            { "label": "This is an apple.", "speakText": "This is an apple." }
+          ]
+        },
+        {
+          "type": "dragdrop-articles",
+          "title": "3. Drag and drop: a or an?",
+          "hint": "Drag each word to the correct box. On phones, tap a word then tap a box.",
+          "words": [
+            { "word": "apple", "article": "an" },
+            { "word": "umbrella", "article": "an" },
+            { "word": "egg", "article": "an" },
+            { "word": "book", "article": "a" },
+            { "word": "phone", "article": "a" },
+            { "word": "key", "article": "a" }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "4. Build your object sentence",
+          "hint": "Type an object you can see and hear the sentence.",
+          "fields": [
+            {
+              "name": "object",
+              "label": "Object",
+              "inputType": "text",
+              "placeholder": "pen"
+            }
+          ],
+          "example": "Example: This is a pen."
+        }
       ]
     },
     "ctaDescription": "Keep practicing with objects you can see every day."
@@ -573,31 +694,79 @@
         "text": "I have a phone.",
         "speakLabel": "Read Sentence",
         "speakText": "I have a phone."
+      },
+      {
+        "icon": "fas fa-utensils",
+        "title": "Your Daily Actions",
+        "text": "Say three things you do every day: I eat..., I drink..., I go..."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build with I + verb",
-      "instruction": "Type one verb and one object.",
-      "fields": [
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Verbs, actions & daily sentences",
+      "instruction": "Start practicing right away: learn verbs, practice patterns, then build your own sentence.",
+      "sentence": {
+        "displayTemplate": "I {verb} {object}.",
+        "speakTemplate": "I {verb} {object}.",
+        "emptyMessage": "Type a verb and an object.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: I like tea."
+      },
+      "steps": [
         {
-          "name": "verb",
-          "label": "Verb",
-          "inputType": "text",
-          "placeholder": "like"
+          "type": "listen-phrases",
+          "title": "1. Learn basic verbs",
+          "hint": "Click each verb and say it out loud.",
+          "progressLabel": "Verbs practiced",
+          "items": [
+            { "label": "eat", "speakText": "eat" },
+            { "label": "drink", "speakText": "drink" },
+            { "label": "go", "speakText": "go" },
+            { "label": "like", "speakText": "like" },
+            { "label": "have", "speakText": "have" },
+            { "label": "read", "speakText": "read" },
+            { "label": "play", "speakText": "play" },
+            { "label": "work", "speakText": "work" }
+          ]
         },
         {
-          "name": "object",
-          "label": "Object",
-          "inputType": "text",
-          "placeholder": "tea"
+          "type": "listen-phrases",
+          "title": "2. Practice daily sentences",
+          "hint": "Listen and repeat these simple present sentences.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "I eat bread.", "speakText": "I eat bread." },
+            { "label": "I drink water.", "speakText": "I drink water." },
+            { "label": "I like tea.", "speakText": "I like tea." },
+            { "label": "I have a phone.", "speakText": "I have a phone." },
+            { "label": "I go to school.", "speakText": "I go to school." },
+            { "label": "I read a book.", "speakText": "I read a book." },
+            { "label": "I play football.", "speakText": "I play football." },
+            { "label": "I work at home.", "speakText": "I work at home." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build with I + verb",
+          "hint": "Type a verb and an object, then hear your sentence.",
+          "fields": [
+            {
+              "name": "verb",
+              "label": "Verb",
+              "inputType": "text",
+              "placeholder": "like"
+            },
+            {
+              "name": "object",
+              "label": "Object",
+              "inputType": "text",
+              "placeholder": "tea"
+            }
+          ],
+          "example": "Example: I like tea."
         }
-      ],
-      "displayTemplate": "I {verb} {object}.",
-      "speakTemplate": "I {verb} {object}.",
-      "emptyMessage": "Type a verb and an object.",
-      "feedbackPrefix": "Built sentence:"
+      ]
     },
     "ctaDescription": "Use these verbs in short, clear daily sentences."
   },
@@ -635,31 +804,84 @@
         "text": "It is a red book.",
         "speakLabel": "Read Practice Sentence",
         "speakText": "It is a red book."
+      },
+      {
+        "icon": "fas fa-shapes",
+        "title": "Name Shapes",
+        "text": "Find a circle or square near you and say: It is a circle."
+      },
+      {
+        "icon": "fas fa-eye",
+        "title": "Look Around",
+        "text": "Describe three things with color: It is a blue bag."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build with It is a...",
-      "instruction": "Type one color and one object.",
-      "fields": [
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Colors, shapes & descriptions",
+      "instruction": "Start practicing right away: learn colors and shapes, then build a description sentence.",
+      "sentence": {
+        "displayTemplate": "It is a {color} {object}.",
+        "speakTemplate": "It is a {color} {object}.",
+        "emptyMessage": "Type a color and an object.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: It is a red book."
+      },
+      "steps": [
         {
-          "name": "color",
-          "label": "Color",
-          "inputType": "text",
-          "placeholder": "red"
+          "type": "listen-phrases",
+          "title": "1. Learn colors",
+          "hint": "Click each color and repeat it.",
+          "progressLabel": "Colors practiced",
+          "items": [
+            { "label": "red", "speakText": "red" },
+            { "label": "blue", "speakText": "blue" },
+            { "label": "green", "speakText": "green" },
+            { "label": "black", "speakText": "black" },
+            { "label": "white", "speakText": "white" },
+            { "label": "yellow", "speakText": "yellow" },
+            { "label": "orange", "speakText": "orange" },
+            { "label": "brown", "speakText": "brown" }
+          ]
         },
         {
-          "name": "object",
-          "label": "Object",
-          "inputType": "text",
-          "placeholder": "book"
+          "type": "listen-phrases",
+          "title": "2. Learn shapes & descriptions",
+          "hint": "Listen and practice shape and description phrases.",
+          "progressLabel": "Phrases practiced",
+          "items": [
+            { "label": "circle", "speakText": "circle" },
+            { "label": "square", "speakText": "square" },
+            { "label": "It is red.", "speakText": "It is red." },
+            { "label": "It is blue.", "speakText": "It is blue." },
+            { "label": "It is a square.", "speakText": "It is a square." },
+            { "label": "It is a circle.", "speakText": "It is a circle." },
+            { "label": "It is a red book.", "speakText": "It is a red book." },
+            { "label": "It is a blue bag.", "speakText": "It is a blue bag." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build with It is a...",
+          "hint": "Type a color and an object, then hear your sentence.",
+          "fields": [
+            {
+              "name": "color",
+              "label": "Color",
+              "inputType": "text",
+              "placeholder": "red"
+            },
+            {
+              "name": "object",
+              "label": "Object",
+              "inputType": "text",
+              "placeholder": "book"
+            }
+          ],
+          "example": "Example: It is a red book."
         }
-      ],
-      "displayTemplate": "It is a {color} {object}.",
-      "speakTemplate": "It is a {color} {object}.",
-      "emptyMessage": "Type a color and an object.",
-      "feedbackPrefix": "Built sentence:"
+      ]
     },
     "ctaDescription": "Describe objects around you with simple color phrases."
   },
@@ -695,31 +917,83 @@
         "icon": "fas fa-clock",
         "title": "3-Sentence Routine",
         "text": "Say your daily routine in 3 sentences."
+      },
+      {
+        "icon": "fas fa-sun",
+        "title": "Morning, Afternoon, Evening",
+        "text": "Say one thing you do in the morning, afternoon, and evening."
+      },
+      {
+        "icon": "fas fa-calendar-week",
+        "title": "Favorite Day",
+        "text": "Say: My favorite day is Friday. / My favorite day is Sunday."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build one routine sentence",
-      "instruction": "Type one action and one day part.",
-      "fields": [
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Days, time & daily routines",
+      "instruction": "Start practicing right away: learn days and time words, practice routines, then build your sentence.",
+      "sentence": {
+        "displayTemplate": "I {action} in the {time}.",
+        "speakTemplate": "I {action} in the {time}.",
+        "emptyMessage": "Type an action and a day part.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: I wake up in the morning."
+      },
+      "steps": [
         {
-          "name": "action",
-          "label": "Action",
-          "inputType": "text",
-          "placeholder": "wake up"
+          "type": "listen-grid",
+          "title": "1. Click the days of the week",
+          "hint": "Tap each day to hear it. Practice until you know all seven.",
+          "progressLabel": "Days practiced",
+          "items": [
+            { "label": "Mon", "speakText": "Monday" },
+            { "label": "Tue", "speakText": "Tuesday" },
+            { "label": "Wed", "speakText": "Wednesday" },
+            { "label": "Thu", "speakText": "Thursday" },
+            { "label": "Fri", "speakText": "Friday" },
+            { "label": "Sat", "speakText": "Saturday" },
+            { "label": "Sun", "speakText": "Sunday" }
+          ]
         },
         {
-          "name": "time",
-          "label": "Time",
-          "inputType": "text",
-          "placeholder": "morning"
+          "type": "listen-phrases",
+          "title": "2. Practice time & routine phrases",
+          "hint": "Listen and repeat these daily routine sentences.",
+          "progressLabel": "Phrases practiced",
+          "items": [
+            { "label": "morning", "speakText": "morning" },
+            { "label": "afternoon", "speakText": "afternoon" },
+            { "label": "evening", "speakText": "evening" },
+            { "label": "I wake up in the morning.", "speakText": "I wake up in the morning." },
+            { "label": "I go to work in the afternoon.", "speakText": "I go to work in the afternoon." },
+            { "label": "I watch TV in the evening.", "speakText": "I watch TV in the evening." },
+            { "label": "I study on Monday.", "speakText": "I study on Monday." },
+            { "label": "I rest on Sunday.", "speakText": "I rest on Sunday." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build one routine sentence",
+          "hint": "Type an action and a day part, then hear your sentence.",
+          "fields": [
+            {
+              "name": "action",
+              "label": "Action",
+              "inputType": "text",
+              "placeholder": "wake up"
+            },
+            {
+              "name": "time",
+              "label": "Time",
+              "inputType": "text",
+              "placeholder": "morning"
+            }
+          ],
+          "example": "Example: I wake up in the morning."
         }
-      ],
-      "displayTemplate": "I {action} in the {time}.",
-      "speakTemplate": "I {action} in the {time}.",
-      "emptyMessage": "Type an action and a day part.",
-      "feedbackPrefix": "Built sentence:"
+      ]
     },
     "ctaDescription": "Say your routine clearly using day and time words."
   },
@@ -761,31 +1035,92 @@
         "icon": "fas fa-question-circle",
         "title": "5 Question-Answer Pairs",
         "text": "Practice five short question and answer pairs with a partner."
+      },
+      {
+        "icon": "fas fa-comments",
+        "title": "Yes / No Practice",
+        "text": "Answer: Yes, I do. / No, I do not. for three different likes."
+      },
+      {
+        "icon": "fas fa-map-marker-alt",
+        "title": "Where Are You From?",
+        "text": "Ask and answer: Where are you from? I am from..."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build a Q&A pair",
-      "instruction": "Type a topic and choose a short answer.",
-      "fields": [
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Questions, answers & Q&A builder",
+      "instruction": "Start practicing right away: learn question words, short answers, then build your own Q&A pair.",
+      "sentence": {
+        "displayTemplate": "Q: Do you like {topic}? A: {answer}",
+        "speakTemplate": "Do you like {topic}? {answer}",
+        "emptyMessage": "Type a topic to build the question.",
+        "feedbackPrefix": "Built pair:",
+        "example": "Example: Q: Do you like tea? A: Yes, I do."
+      },
+      "steps": [
         {
-          "name": "topic",
-          "label": "Topic",
-          "inputType": "text",
-          "placeholder": "tea"
+          "type": "listen-phrases",
+          "title": "1. Practice basic questions",
+          "hint": "Click each question, listen, and repeat with rising intonation.",
+          "progressLabel": "Questions practiced",
+          "items": [
+            { "label": "What is this?", "speakText": "What is this?" },
+            { "label": "Where are you from?", "speakText": "Where are you from?" },
+            { "label": "Do you like tea?", "speakText": "Do you like tea?" },
+            { "label": "Do you like coffee?", "speakText": "Do you like coffee?" },
+            { "label": "What is your name?", "speakText": "What is your name?" },
+            { "label": "How are you?", "speakText": "How are you?" }
+          ]
         },
         {
-          "name": "answer",
-          "label": "Answer",
-          "inputType": "select",
-          "options": ["Yes, I do.", "No, I do not."]
+          "type": "listen-phrases",
+          "title": "2. Practice short answers",
+          "hint": "Learn useful short answers for everyday questions.",
+          "progressLabel": "Answers practiced",
+          "items": [
+            { "label": "Yes, I do.", "speakText": "Yes, I do." },
+            { "label": "No, I do not.", "speakText": "No, I do not." },
+            { "label": "Yes, I am.", "speakText": "Yes, I am." },
+            { "label": "No, I am not.", "speakText": "No, I am not." },
+            { "label": "I am from Azerbaijan.", "speakText": "I am from Azerbaijan." },
+            { "label": "It is a book.", "speakText": "It is a book." }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "3. Listen to full Q&A pairs",
+          "hint": "Hear complete question and answer dialogues.",
+          "progressLabel": "Dialogues practiced",
+          "items": [
+            { "label": "Do you like tea? Yes, I do.", "speakText": "Do you like tea? Yes, I do." },
+            { "label": "Do you like coffee? No, I do not.", "speakText": "Do you like coffee? No, I do not." },
+            { "label": "Where are you from? I am from Georgia.", "speakText": "Where are you from? I am from Georgia." },
+            { "label": "What is this? It is a phone.", "speakText": "What is this? It is a phone." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "4. Build your own Q&A pair",
+          "hint": "Type a topic, choose Yes or No, then hear the full pair.",
+          "fields": [
+            {
+              "name": "topic",
+              "label": "Topic",
+              "inputType": "text",
+              "placeholder": "tea"
+            },
+            {
+              "name": "answer",
+              "label": "Answer",
+              "inputType": "select",
+              "options": ["Yes, I do.", "No, I do not."]
+            }
+          ],
+          "example": "Example: Q: Do you like tea? A: Yes, I do."
         }
-      ],
-      "displayTemplate": "Q: Do you like {topic}? A: {answer}",
-      "speakTemplate": "Do you like {topic}? {answer}",
-      "emptyMessage": "Type a topic to build the question.",
-      "feedbackPrefix": "Built pair:"
+      ]
     },
     "ctaDescription": "You can now ask and answer simple everyday questions."
   }
