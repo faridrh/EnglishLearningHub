@@ -9,7 +9,7 @@ description: İngilisdili.com is part of LeaTalk — a language-learning project
 LeaTalk helps you learn languages with short, structured practice you can fit into real life. **İngilisdili.com** is the English learning hub in that project — free courses from A0 to A2, vocabulary, grammar, stories, and games. Start here on the web, practise on Android with LeaTalk, deepen Danish on EasyDanish, and stay inspired with us on Instagram.
 
 <div class="about-link-grid">
-  <a class="about-link-card" href="https://leatalk-website.vercel.app/" target="_blank" rel="noopener noreferrer">
+  <a class="about-link-card" href="https://www.leatalk.com" target="_blank" rel="noopener noreferrer">
     <span class="about-link-label">Website</span>
     <h2>LeaTalk on the web</h2>
     <p>Explore the LeaTalk product site for German vocabulary paths, games, and more language tools.</p>
@@ -44,7 +44,7 @@ LeaTalk is a language-learning product focused on steady progress: a little prac
 
 - **[İngilisdili.com](https://ingilisdili.com)** — free English courses (A0–A2), vocabulary, grammar, stories, quizzes, and games
 - **[EasyDanish](https://www.easydanish.com)** — Danish for English speakers, beginner through advanced, with stories, quizzes, and mini-games
-- **[LeaTalk website](https://leatalk-website.vercel.app/)** — product hub for structured vocabulary paths and language tools
+- **[LeaTalk website](https://www.leatalk.com)** — product hub for structured vocabulary paths and language tools
 
 ## Why learners choose us
 
@@ -59,7 +59,7 @@ LeaTalk is a language-learning product focused on steady progress: a little prac
 2. [Download LeaTalk from Google Play](https://play.google.com/store/apps/details?id=com.leatalk.app) and complete your first short practice session.
 3. Open [www.easydanish.com](https://www.easydanish.com) if you want to learn Danish week by week.
 4. Follow [@leatalkofficial](https://www.instagram.com/leatalkofficial/) for motivation, tips, and news about new content.
-5. Visit the [LeaTalk website](https://leatalk-website.vercel.app/) for more product resources.
+5. Visit the [LeaTalk website](https://www.leatalk.com) for more product resources.
 
 ## Ready when you are
 
@@ -70,5 +70,5 @@ Whether you have five minutes on your phone or a quiet evening at the desk, LeaT
   <a class="button button-secondary" href="https://play.google.com/store/apps/details?id=com.leatalk.app" target="_blank" rel="noopener noreferrer">Download the Android app</a>
   <a class="button button-secondary" href="https://www.easydanish.com" target="_blank" rel="noopener noreferrer">Start learning on EasyDanish</a>
   <a class="button button-secondary" href="https://www.instagram.com/leatalkofficial/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
-  <a class="button button-secondary" href="https://leatalk-website.vercel.app/" target="_blank" rel="noopener noreferrer">LeaTalk website</a>
+  <a class="button button-secondary" href="https://www.leatalk.com" target="_blank" rel="noopener noreferrer">LeaTalk website</a>
 </div>

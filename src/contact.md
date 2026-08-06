@@ -73,7 +73,7 @@ Your feedback helps us improve our resources! We particularly welcome:
 
 İngilisdili.com is part of the **LeaTalk** language-learning project. Stay connected:
 
-- [LeaTalk website](https://leatalk-website.vercel.app/)
+- [LeaTalk website](https://www.leatalk.com)
 - [LeaTalk Android app (Google Play)](https://play.google.com/store/apps/details?id=com.leatalk.app)
 - [EasyDanish](https://www.easydanish.com)
 - [Instagram @leatalkofficial](https://www.instagram.com/leatalkofficial/)

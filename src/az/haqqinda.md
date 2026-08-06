@@ -9,7 +9,7 @@ description: İngilisdili.com LeaTalk layihəsinin bir hissəsidir — pulsuz İ
 LeaTalk real həyata sığan qısa, strukturlaşdırılmış məşqlərlə dil öyrənməyə kömək edir. **İngilisdili.com** bu layihənin İngilis dili mərkəzidir — A0-dan A2-yə pulsuz kurslar, lüğət, qrammatika, hekayələr və oyunlar. Vebdə buradan başlayın, Android-də LeaTalk ilə məşq edin, EasyDanish-də Danimarka dilini öyrənin və Instagram-da bizi izləyin.
 
 <div class="about-link-grid">
-  <a class="about-link-card" href="https://leatalk-website.vercel.app/" target="_blank" rel="noopener noreferrer">
+  <a class="about-link-card" href="https://www.leatalk.com" target="_blank" rel="noopener noreferrer">
     <span class="about-link-label">Vebsayt</span>
     <h2>LeaTalk vebdə</h2>
     <p>Alman lüğət yolları, oyunlar və digər dil alətləri üçün LeaTalk məhsul saytını kəşf edin.</p>
@@ -44,7 +44,7 @@ LeaTalk sabit irəliləyişə fokuslanan dil öyrənmə məhsuludur: hər gün a
 
 - **[İngilisdili.com](https://ingilisdili.com)** — pulsuz İngilis dili kursları (A0–A2), lüğət, qrammatika, hekayələr, testlər və oyunlar
 - **[EasyDanish](https://www.easydanish.com)** — İngilis dilindən Danimarka dilinə, başlanğıcdan irəli səviyyəyə qədər
-- **[LeaTalk vebsaytı](https://leatalk-website.vercel.app/)** — strukturlaşdırılmış lüğət yolları və dil alətləri üçün məhsul mərkəzi
+- **[LeaTalk vebsaytı](https://www.leatalk.com)** — strukturlaşdırılmış lüğət yolları və dil alətləri üçün məhsul mərkəzi
 
 ## Niyə bizi seçirlər
 
@@ -59,7 +59,7 @@ LeaTalk sabit irəliləyişə fokuslanan dil öyrənmə məhsuludur: hər gün a
 2. [Google Play-dən LeaTalk yükləyin](https://play.google.com/store/apps/details?id=com.leatalk.app) və ilk qısa məşqi tamamlayın.
 3. Danimarka dili üçün [www.easydanish.com](https://www.easydanish.com) saytını açın.
 4. Motivasiya və yeniliklər üçün [@leatalkofficial](https://www.instagram.com/leatalkofficial/) hesabını izləyin.
-5. Daha çox resurs üçün [LeaTalk vebsaytına](https://leatalk-website.vercel.app/) baxın.
+5. Daha çox resurs üçün [LeaTalk vebsaytına](https://www.leatalk.com) baxın.
 
 ## Hazır olduqda
 
@@ -70,5 +70,5 @@ Beş dəqiqəniz olsun, ya da sakit bir axşam — LeaTalk, İngilisdili.com və
   <a class="button button-secondary" href="https://play.google.com/store/apps/details?id=com.leatalk.app" target="_blank" rel="noopener noreferrer">Android tətbiqini yüklə</a>
   <a class="button button-secondary" href="https://www.easydanish.com" target="_blank" rel="noopener noreferrer">EasyDanish-də öyrən</a>
   <a class="button button-secondary" href="https://www.instagram.com/leatalkofficial/" target="_blank" rel="noopener noreferrer">Instagram-da izlə</a>
-  <a class="button button-secondary" href="https://leatalk-website.vercel.app/" target="_blank" rel="noopener noreferrer">LeaTalk vebsaytı</a>
+  <a class="button button-secondary" href="https://www.leatalk.com" target="_blank" rel="noopener noreferrer">LeaTalk vebsaytı</a>
 </div>
