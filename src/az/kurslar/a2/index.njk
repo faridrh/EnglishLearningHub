@@ -16,38 +16,23 @@ courseLevel: A2
   </div>
 </section>
 
-<section class="tips-section">
+<section class="grammar-topics">
   <div class="container">
-    <h2 class="section-title">Bu Kursda Nə Öyrənəcəksiniz</h2>
-    <div class="tips-grid">
-      <div class="tip-card">
-        <div class="tip-icon"><i class="fas fa-language"></i></div>
-        <h3>Daha Dəqiq İfadə</h3>
-        <p>Fikirlərinizi daha aydın və məntiqli şəkildə ifadə etməyi öyrənin.</p>
+    <h2 class="section-title">A2 Dərsləri</h2>
+    <div class="topics-grid">
+      {% for lesson in a2Lessons %}
+      <div class="topic-card">
+        <h3 class="topic-title">Dərs {{ lesson.number }}: {{ lesson.indexTitle }}</h3>
+        <p class="topic-description">{{ lesson.indexDescription }}</p>
+        <a href="/courses/a2/lesson-{{ lesson.number }}/" class="topic-link">Dərsi Aç</a>
       </div>
-      <div class="tip-card">
-        <div class="tip-icon"><i class="fas fa-users"></i></div>
-        <h3>Real Ünsiyyət Məşqləri</h3>
-        <p>Həqiqi situasiyalar üçün dialoq və danışıq praktikasını artırın.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon"><i class="fas fa-check-circle"></i></div>
-        <h3>Qrammatika Gücləndirmə</h3>
-        <p>Daha kompleks cümlə quruluşları ilə dəqiqliyinizi artırın.</p>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="section-footer">
-      <a href="/courses/a2/" class="button button-primary">A2 Kursunu Aç</a>
-      <a href="/az/kurslar/" class="button button-secondary">Bütün Kurslara Bax</a>
-      <a
-        href="https://www.ingilisdili.net/free-lessons"
-        class="button button-secondary"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Pulsuz Dərsləri Kəşf Et
-      </a>
+      {% for lesson in a2Lessons %}
+      <a href="/courses/a2/lesson-{{ lesson.number }}/" class="button{% if loop.index % 2 == 0 %} button-secondary{% endif %}">Dərs {{ lesson.number }}: {{ lesson.title }}</a>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -67,6 +52,25 @@ courseLevel: A2
         rel="noopener noreferrer"
       >
         Pulsuz Dərslərə Başla
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" style="background-color: var(--color-primary-dark);">
+  <div class="container">
+    <h2 class="cta-title">Əla iş!</h2>
+    <p class="cta-description">A2 dərslərini tamamlayın, sonra səviyyə testinə baxın və ya pulsuz məşq edin.</p>
+    <div class="cta-buttons">
+      <a href="/az/kurslar/" class="button button-primary">Bütün Kurslara Bax</a>
+      <a href="/az/seviyye-testi/" class="button button-secondary">Səviyyə Testi</a>
+      <a
+        href="https://www.ingilisdili.net/free-lessons"
+        class="button button-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pulsuz Dərsləri Kəşf Et
       </a>
     </div>
   </div>

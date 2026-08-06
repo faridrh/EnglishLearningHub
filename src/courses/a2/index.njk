@@ -18,21 +18,21 @@ courseLevel: A2
 
 <section class="grammar-topics">
   <div class="container">
+    <h2 class="section-title">A2 Lessons</h2>
     <div class="topics-grid">
+      {% for lesson in a2Lessons %}
       <div class="topic-card">
-        <h3 class="topic-title">Past and Future Communication</h3>
-        <p class="topic-description">Speak about plans, experiences, and events with clearer structure.</p>
+        <h3 class="topic-title">{{ lesson.indexTitle }}</h3>
+        <p class="topic-description">{{ lesson.indexDescription }}</p>
+        <a href="/courses/a2/lesson-{{ lesson.number }}/" class="topic-link">Start Lesson {{ lesson.number }}</a>
       </div>
+      {% endfor %}
+    </div>
 
-      <div class="topic-card">
-        <h3 class="topic-title">Functional Grammar for Real Situations</h3>
-        <p class="topic-description">Use comparatives, modals, and connectors in practical contexts.</p>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Reading and Listening Confidence</h3>
-        <p class="topic-description">Understand short texts and conversations on familiar topics more easily.</p>
-      </div>
+    <div class="section-footer">
+      {% for lesson in a2Lessons %}
+      <a href="/courses/a2/lesson-{{ lesson.number }}/" class="button{% if loop.index % 2 == 0 %} button-secondary{% endif %}">Open Lesson {{ lesson.number }}: {{ lesson.title }}</a>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -60,7 +60,7 @@ courseLevel: A2
 <section class="cta-section" style="background-color: var(--color-primary-dark);">
   <div class="container">
     <h2 class="cta-title">Great Work</h2>
-    <p class="cta-description">You have completed the current available levels. More courses are coming soon.</p>
+    <p class="cta-description">Complete the A2 lessons, then check your level or explore more free practice.</p>
     <div class="cta-buttons">
       <a href="/courses/" class="button button-primary">View All Courses</a>
       <a href="/placement-test/" class="button button-secondary">Take Level Test</a>
