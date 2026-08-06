@@ -98,6 +98,101 @@ eleventyComputed:
       </div>
     </div>
 
+    {% elif lesson.exercise.type == "multi-practice" %}
+    <div
+      class="lesson-exercise-card"
+      data-exercise-type="multi-practice"
+      {% if lesson.exercise.sentence %}
+      data-display-template="{{ lesson.exercise.sentence.displayTemplate }}"
+      data-speak-template="{{ lesson.exercise.sentence.speakTemplate }}"
+      data-empty-message="{{ lesson.exercise.sentence.emptyMessage }}"
+      data-feedback-prefix="{{ lesson.exercise.sentence.feedbackPrefix }}"
+      {% endif %}
+    >
+      <h3 class="topic-title">{{ lesson.exercise.title }}</h3>
+      <p class="topic-description">{{ lesson.exercise.instruction }}</p>
+
+      {% for step in lesson.exercise.steps %}
+      <div class="lesson-step" data-step-type="{{ step.type }}">
+        <h4 class="lesson-step-title">{{ step.title }}</h4>
+        {% if step.hint %}
+        <p class="lesson-step-hint">{{ step.hint }}</p>
+        {% endif %}
+
+        {% if step.type == "listen-grid" %}
+        <div class="alphabet-grid" role="group" aria-label="{{ step.title }}">
+          {% for item in step.items %}
+          <button
+            type="button"
+            class="alphabet-key practice-track-btn"
+            data-track-id="{{ item.id or item.label or item.speakText }}"
+            data-speak="{{ item.speakText or item.label }}"
+          >{{ item.label }}</button>
+          {% endfor %}
+        </div>
+        <p class="lesson-progress" data-role="step-progress" data-progress-label="{{ step.progressLabel or 'Practiced' }}">
+          {{ step.progressLabel or "Practiced" }}: <strong>0</strong> / {{ step.items | length }}
+        </p>
+
+        {% elif step.type == "listen-phrases" %}
+        <div class="practice-word-grid">
+          {% for item in step.items %}
+          <button
+            type="button"
+            class="practice-word-btn practice-track-btn"
+            data-track-id="{{ item.id or item.label or item.speakText }}"
+            data-speak="{{ item.speakText or item.label }}"
+            data-word="{{ item.id or item.label }}"
+          >
+            <span class="practice-word-label">{{ item.label }}</span>
+            {% if item.sublabel %}
+            <span class="practice-word-sublabel">{{ item.sublabel }}</span>
+            {% endif %}
+            <span class="practice-word-action"><i class="fas fa-volume-up" aria-hidden="true"></i> Listen</span>
+          </button>
+          {% endfor %}
+        </div>
+        <p class="lesson-progress" data-role="step-progress" data-progress-label="{{ step.progressLabel or 'Phrases practiced' }}">
+          {{ step.progressLabel or "Phrases practiced" }}: <strong>0</strong> / {{ step.items | length }}
+        </p>
+
+        {% elif step.type == "sentence" %}
+        <div class="sentence-builder-fields">
+          {% for field in step.fields or lesson.exercise.sentence.fields %}
+          <label class="lesson-field-label" for="lesson-{{ lesson.number }}-{{ field.name }}">{{ field.label }}</label>
+          {% if field.inputType == "select" %}
+          <select
+            id="lesson-{{ lesson.number }}-{{ field.name }}"
+            class="lesson-field-input"
+            data-field-name="{{ field.name }}"
+          >
+            {% for option in field.options %}
+            <option value="{{ option }}">{{ option }}</option>
+            {% endfor %}
+          </select>
+          {% else %}
+          <input
+            id="lesson-{{ lesson.number }}-{{ field.name }}"
+            type="text"
+            class="lesson-field-input"
+            placeholder="{{ field.placeholder }}"
+            data-field-name="{{ field.name }}"
+          >
+          {% endif %}
+          {% endfor %}
+          <button type="button" class="button" data-action="build-sentence">Build &amp; Hear Sentence</button>
+        </div>
+        <p class="sentence-preview"><span data-role="preview"></span></p>
+        {% set exampleText = step.example or (lesson.exercise.sentence.example if lesson.exercise.sentence else none) %}
+        {% if exampleText %}
+        <p class="lesson-example">{{ exampleText }}</p>
+        {% endif %}
+        <p data-role="feedback" class="lesson-feedback"></p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
     {% elif lesson.exercise.type == "sentence" %}
     <div
       class="lesson-exercise-card"

@@ -120,26 +120,71 @@
         "icon": "fas fa-user",
         "title": "Try It Yourself",
         "text": "Say your name and greet another person politely."
+      },
+      {
+        "icon": "fas fa-handshake",
+        "title": "Polite Reply",
+        "text": "Answer: Nice to meet you too."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build a self-introduction",
-      "instruction": "Type your name to complete the sentence.",
-      "fields": [
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Greetings, questions & introduce yourself",
+      "instruction": "Start practicing right away: listen to greetings, practice useful phrases, then build your introduction.",
+      "sentence": {
+        "displayTemplate": "Hi, my name is {name}. Nice to meet you.",
+        "speakTemplate": "Hi, my name is {name}. Nice to meet you.",
+        "emptyMessage": "Type your name to build the sentence.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: Hi, my name is Farid. Nice to meet you."
+      },
+      "steps": [
         {
-          "name": "name",
-          "label": "Your name",
-          "inputType": "text",
-          "placeholder": "Farid"
+          "type": "listen-phrases",
+          "title": "1. Listen to greetings",
+          "hint": "Click each greeting, then say it out loud.",
+          "progressLabel": "Greetings practiced",
+          "items": [
+            { "label": "Hello", "speakText": "Hello" },
+            { "label": "Hi", "speakText": "Hi" },
+            { "label": "Good morning", "speakText": "Good morning" },
+            { "label": "Good afternoon", "speakText": "Good afternoon" },
+            { "label": "Good evening", "speakText": "Good evening" },
+            { "label": "Goodbye", "speakText": "Goodbye" },
+            { "label": "Bye", "speakText": "Bye" },
+            { "label": "See you later", "speakText": "See you later" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice introduction phrases",
+          "hint": "Listen, repeat, and learn how to introduce yourself.",
+          "progressLabel": "Phrases practiced",
+          "items": [
+            { "label": "My name is...", "speakText": "My name is" },
+            { "label": "I am...", "speakText": "I am" },
+            { "label": "What is your name?", "speakText": "What is your name?" },
+            { "label": "Nice to meet you.", "speakText": "Nice to meet you." },
+            { "label": "How are you?", "speakText": "How are you?" },
+            { "label": "I am fine, thank you.", "speakText": "I am fine, thank you." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build your introduction",
+          "hint": "Type your name and hear your full introduction.",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Your name",
+              "inputType": "text",
+              "placeholder": "Farid"
+            }
+          ],
+          "example": "Example: Hi, my name is Farid. Nice to meet you."
         }
-      ],
-      "displayTemplate": "My name is {name}.",
-      "speakTemplate": "My name is {name}.",
-      "emptyMessage": "Type a name to build the sentence.",
-      "feedbackPrefix": "Built sentence:",
-      "example": "Example: My name is Farid."
+      ]
     },
     "ctaDescription": "Practice these greetings aloud and use them in short conversations."
   },
@@ -180,26 +225,83 @@
         "icon": "fas fa-cubes",
         "title": "Count Objects Around You",
         "text": "Count books, pens, chairs, or any objects you can see."
+      },
+      {
+        "icon": "fas fa-question",
+        "title": "Ask a Friend",
+        "text": "Ask: How old are you? Then answer with your age."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build your age sentence",
-      "instruction": "Type a number to complete the sentence.",
-      "fields": [
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Numbers, questions & your age",
+      "instruction": "Start practicing right away: hear numbers 1–20, practice age phrases, then build your age sentence.",
+      "sentence": {
+        "displayTemplate": "I am {age} years old.",
+        "speakTemplate": "I am {age} years old.",
+        "emptyMessage": "Type a number to build the sentence.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: I am 10 years old."
+      },
+      "steps": [
         {
-          "name": "age",
-          "label": "Your age",
-          "inputType": "text",
-          "placeholder": "10"
+          "type": "listen-grid",
+          "title": "1. Click numbers 1–20",
+          "hint": "Tap each number to hear it. Practice until you know them all.",
+          "progressLabel": "Numbers practiced",
+          "items": [
+            { "label": "1", "speakText": "one" },
+            { "label": "2", "speakText": "two" },
+            { "label": "3", "speakText": "three" },
+            { "label": "4", "speakText": "four" },
+            { "label": "5", "speakText": "five" },
+            { "label": "6", "speakText": "six" },
+            { "label": "7", "speakText": "seven" },
+            { "label": "8", "speakText": "eight" },
+            { "label": "9", "speakText": "nine" },
+            { "label": "10", "speakText": "ten" },
+            { "label": "11", "speakText": "eleven" },
+            { "label": "12", "speakText": "twelve" },
+            { "label": "13", "speakText": "thirteen" },
+            { "label": "14", "speakText": "fourteen" },
+            { "label": "15", "speakText": "fifteen" },
+            { "label": "16", "speakText": "sixteen" },
+            { "label": "17", "speakText": "seventeen" },
+            { "label": "18", "speakText": "eighteen" },
+            { "label": "19", "speakText": "nineteen" },
+            { "label": "20", "speakText": "twenty" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice age phrases",
+          "hint": "Listen and repeat these useful questions and answers.",
+          "progressLabel": "Phrases practiced",
+          "items": [
+            { "label": "How old are you?", "speakText": "How old are you?" },
+            { "label": "I am 10 years old.", "speakText": "I am 10 years old." },
+            { "label": "I am 15 years old.", "speakText": "I am 15 years old." },
+            { "label": "I am 20 years old.", "speakText": "I am 20 years old." },
+            { "label": "She is 12 years old.", "speakText": "She is 12 years old." },
+            { "label": "He is 18 years old.", "speakText": "He is 18 years old." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build your age sentence",
+          "hint": "Type your age and hear the full sentence.",
+          "fields": [
+            {
+              "name": "age",
+              "label": "Your age",
+              "inputType": "text",
+              "placeholder": "10"
+            }
+          ],
+          "example": "Example: I am 10 years old."
         }
-      ],
-      "displayTemplate": "I am {age} years old.",
-      "speakTemplate": "I am {age} years old.",
-      "emptyMessage": "Type a number to build the sentence.",
-      "feedbackPrefix": "Built sentence:",
-      "example": "Example: I am 10 years old."
+      ]
     },
     "ctaDescription": "Practice numbers aloud and ask someone their age in English."
   },
@@ -237,31 +339,94 @@
         "text": "I am from Azerbaijan. I am Azerbaijani.",
         "speakLabel": "Read Practice Sentence",
         "speakText": "I am from Azerbaijan. I am Azerbaijani."
+      },
+      {
+        "icon": "fas fa-users",
+        "title": "Talk About Others",
+        "text": "Practice: He is from Georgia. She is Azerbaijani."
+      },
+      {
+        "icon": "fas fa-globe",
+        "title": "Your Country",
+        "text": "Say where you are from and your nationality three times."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build your sentence",
-      "instruction": "Type a country and nationality.",
-      "fields": [
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Countries, nationalities & to be",
+      "instruction": "Start practicing right away: listen to country and nationality phrases, then build your own sentence.",
+      "sentence": {
+        "displayTemplate": "I am from {country}. I am {nationality}.",
+        "speakTemplate": "I am from {country}. I am {nationality}.",
+        "emptyMessage": "Type both country and nationality.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: I am from Azerbaijan. I am Azerbaijani."
+      },
+      "steps": [
         {
-          "name": "country",
-          "label": "Country",
-          "inputType": "text",
-          "placeholder": "Azerbaijan"
+          "type": "listen-phrases",
+          "title": "1. Listen to country phrases",
+          "hint": "Click each phrase, then repeat it out loud.",
+          "progressLabel": "Country phrases practiced",
+          "items": [
+            { "label": "I am from Azerbaijan.", "speakText": "I am from Azerbaijan." },
+            { "label": "I am from Georgia.", "speakText": "I am from Georgia." },
+            { "label": "I am from Turkey.", "speakText": "I am from Turkey." },
+            { "label": "I am from the UK.", "speakText": "I am from the UK." },
+            { "label": "He is from Georgia.", "speakText": "He is from Georgia." },
+            { "label": "She is from Azerbaijan.", "speakText": "She is from Azerbaijan." }
+          ]
         },
         {
-          "name": "nationality",
-          "label": "Nationality",
-          "inputType": "text",
-          "placeholder": "Azerbaijani"
+          "type": "listen-phrases",
+          "title": "2. Practice nationalities",
+          "hint": "Listen and say each nationality clearly.",
+          "progressLabel": "Nationalities practiced",
+          "items": [
+            { "label": "Azerbaijani", "sublabel": "I am Azerbaijani.", "speakText": "Azerbaijani. I am Azerbaijani." },
+            { "label": "Georgian", "sublabel": "I am Georgian.", "speakText": "Georgian. I am Georgian." },
+            { "label": "Turkish", "sublabel": "I am Turkish.", "speakText": "Turkish. I am Turkish." },
+            { "label": "British", "sublabel": "I am British.", "speakText": "British. I am British." },
+            { "label": "American", "sublabel": "I am American.", "speakText": "American. I am American." },
+            { "label": "Russian", "sublabel": "I am Russian.", "speakText": "Russian. I am Russian." }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "3. Practice am / is / are",
+          "hint": "Focus on the verb forms while you listen and repeat.",
+          "progressLabel": "To-be phrases practiced",
+          "items": [
+            { "label": "I am a student.", "speakText": "I am a student." },
+            { "label": "He is a teacher.", "speakText": "He is a teacher." },
+            { "label": "She is a doctor.", "speakText": "She is a doctor." },
+            { "label": "You are my friend.", "speakText": "You are my friend." },
+            { "label": "We are students.", "speakText": "We are students." },
+            { "label": "They are from Turkey.", "speakText": "They are from Turkey." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "4. Build your sentence",
+          "hint": "Type your country and nationality, then hear the full sentence.",
+          "fields": [
+            {
+              "name": "country",
+              "label": "Country",
+              "inputType": "text",
+              "placeholder": "Azerbaijan"
+            },
+            {
+              "name": "nationality",
+              "label": "Nationality",
+              "inputType": "text",
+              "placeholder": "Azerbaijani"
+            }
+          ],
+          "example": "Example: I am from Azerbaijan. I am Azerbaijani."
         }
-      ],
-      "displayTemplate": "I am from {country}. I am {nationality}.",
-      "speakTemplate": "I am from {country}. I am {nationality}.",
-      "emptyMessage": "Type both country and nationality.",
-      "feedbackPrefix": "Built sentence:"
+      ]
     },
     "ctaDescription": "Practice am, is, and are with people and nationalities."
   },

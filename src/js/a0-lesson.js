@@ -24,8 +24,12 @@
   function setupTtsButtons() {
     var buttons = document.querySelectorAll("[data-speak]");
     buttons.forEach(function (button) {
-      // Alphabet and practice-word buttons handle their own speak + progress.
-      if (button.classList.contains("alphabet-key") || button.classList.contains("practice-word-btn")) {
+      // Progress-tracked practice buttons handle their own speak + progress.
+      if (
+        button.classList.contains("alphabet-key") ||
+        button.classList.contains("practice-word-btn") ||
+        button.classList.contains("practice-track-btn")
+      ) {
         return;
       }
 
@@ -120,6 +124,25 @@
       (practiced >= total ? ' <span class="lesson-progress-done">✓ Great work!</span>' : "");
   }
 
+  function setupTrackedButtons(buttons, progressEl, progressLabel) {
+    var practiced = {};
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var id =
+          button.getAttribute("data-track-id") ||
+          button.getAttribute("data-letter") ||
+          button.getAttribute("data-word") ||
+          button.getAttribute("data-speak") ||
+          "";
+        speak(button.getAttribute("data-speak") || id);
+        practiced[id] = true;
+        button.classList.add("is-practiced");
+        updateProgress(progressEl, Object.keys(practiced).length, buttons.length, progressLabel);
+      });
+    });
+  }
+
   function setupAlphabetPractice() {
     var exercises = document.querySelectorAll('[data-exercise-type="alphabet-practice"]');
 
@@ -130,37 +153,27 @@
       var wordButtons = exercise.querySelectorAll(".practice-word-btn");
       var letterProgress = exercise.querySelector('[data-role="letter-progress"]');
       var wordProgress = exercise.querySelector('[data-role="word-progress"]');
-      var practicedLetters = {};
-      var practicedWords = {};
 
-      letterButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-          var letter = button.getAttribute("data-letter") || button.getAttribute("data-speak") || "";
-          speak(letter);
-          practicedLetters[letter] = true;
-          button.classList.add("is-practiced");
-          updateProgress(
-            letterProgress,
-            Object.keys(practicedLetters).length,
-            letterButtons.length,
-            "Letters practiced"
-          );
-        });
-      });
+      setupTrackedButtons(letterButtons, letterProgress, "Letters practiced");
+      setupTrackedButtons(wordButtons, wordProgress, "Words practiced");
+    });
+  }
 
-      wordButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-          var word = button.getAttribute("data-word") || button.getAttribute("data-speak") || "";
-          speak(button.getAttribute("data-speak") || word);
-          practicedWords[word] = true;
-          button.classList.add("is-practiced");
-          updateProgress(
-            wordProgress,
-            Object.keys(practicedWords).length,
-            wordButtons.length,
-            "Words practiced"
-          );
-        });
+  function setupMultiPractice() {
+    var exercises = document.querySelectorAll('[data-exercise-type="multi-practice"]');
+
+    exercises.forEach(function (exercise) {
+      setupSentenceBuilder(exercise);
+
+      var steps = exercise.querySelectorAll(".lesson-step");
+      steps.forEach(function (step) {
+        var buttons = step.querySelectorAll(".practice-track-btn");
+        if (!buttons.length) return;
+
+        var progressEl = step.querySelector('[data-role="step-progress"]');
+        var label =
+          (progressEl && progressEl.getAttribute("data-progress-label")) || "Practiced";
+        setupTrackedButtons(buttons, progressEl, label);
       });
     });
   }
@@ -300,6 +313,7 @@
     setupTtsButtons();
     setupSentenceBuilders();
     setupAlphabetPractice();
+    setupMultiPractice();
     setupDragDropArticles();
   });
 })();

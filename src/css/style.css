@@ -1816,3 +1816,10 @@ p {
     align-items: stretch;
   }
 }
+
+.practice-word-sublabel {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  text-align: center;
+  line-height: 1.3;
+}
