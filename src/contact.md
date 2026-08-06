@@ -69,13 +69,13 @@ Your feedback helps us improve our resources! We particularly welcome:
 - Reports of any errors or unclear explanations
 - Features you'd like to see added to the website
 
-## Follow Us
+## Follow Us & LeaTalk
 
-Stay connected with İngilis dili öyrən and join our language learning community:
+İngilisdili.com is part of the **LeaTalk** language-learning project. Stay connected:
 
-- [Twitter](https://twitter.com/englishlearninghub)
-- [Facebook](https://facebook.com/englishlearninghub)
-- [Instagram](https://instagram.com/englishlearninghub)
-- [YouTube](https://youtube.com/englishlearninghub)
+- [LeaTalk website](https://leatalk-website.vercel.app/)
+- [LeaTalk Android app (Google Play)](https://play.google.com/store/apps/details?id=com.leatalk.app)
+- [EasyDanish](https://www.easydanish.com)
+- [Instagram @leatalkofficial](https://www.instagram.com/leatalkofficial/)
 
-Thank you for being part of our English learning community!
+Thank you for being part of our language learning community!

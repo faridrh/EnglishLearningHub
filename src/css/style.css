@@ -1823,3 +1823,84 @@ p {
   text-align: center;
   line-height: 1.3;
 }
+
+/* About / LeaTalk project cards
+-------------------------------------------------- */
+.about-eyebrow {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0 var(--spacing-xl);
+}
+
+.about-link-card {
+  display: block;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-sm);
+  padding: var(--spacing-lg);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.about-link-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--box-shadow-md);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-link-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-secondary-dark);
+  background: #fff4df;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-link-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.about-link-card p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.about-link-cta {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.about-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-content .about-link-card h2 {
+  margin-top: 0;
+}
