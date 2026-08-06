@@ -24,74 +24,144 @@
   function setupTtsButtons() {
     var buttons = document.querySelectorAll("[data-speak]");
     buttons.forEach(function (button) {
+      // Alphabet and practice-word buttons handle their own speak + progress.
+      if (button.classList.contains("alphabet-key") || button.classList.contains("practice-word-btn")) {
+        return;
+      }
+
       button.addEventListener("click", function () {
         speak(button.getAttribute("data-speak") || "");
       });
     });
   }
 
+  function setupSentenceBuilder(builder) {
+    var inputs = builder.querySelectorAll("[data-field-name]");
+    var preview = builder.querySelector('[data-role="preview"]');
+    var feedback = builder.querySelector('[data-role="feedback"]');
+    var buildButton = builder.querySelector('[data-action="build-sentence"]');
+    var displayTemplate = builder.getAttribute("data-display-template") || "";
+    var speakTemplate = builder.getAttribute("data-speak-template") || displayTemplate;
+    var emptyMessage = builder.getAttribute("data-empty-message") || "Please complete all fields.";
+    var feedbackPrefix = builder.getAttribute("data-feedback-prefix") || "Built sentence:";
+
+    function getValues() {
+      var values = {};
+      inputs.forEach(function (input) {
+        var fieldName = input.getAttribute("data-field-name");
+        values[fieldName] = (input.value || "").trim();
+      });
+      return values;
+    }
+
+    function hasEmpty(values) {
+      return Object.keys(values).some(function (key) {
+        return !values[key];
+      });
+    }
+
+    function renderPreview(values) {
+      if (preview) {
+        preview.textContent = fillTemplate(displayTemplate, values, "_____");
+      }
+    }
+
+    function buildSentence() {
+      var values = getValues();
+      renderPreview(values);
+
+      if (hasEmpty(values)) {
+        if (feedback) {
+          feedback.textContent = emptyMessage;
+          feedback.classList.remove("is-success");
+        }
+        return;
+      }
+
+      var sentence = fillTemplate(speakTemplate, values, "").replace(/\s+/g, " ").trim();
+      if (feedback) {
+        feedback.textContent = feedbackPrefix + " " + sentence;
+        feedback.classList.add("is-success");
+      }
+      speak(sentence);
+    }
+
+    inputs.forEach(function (input) {
+      input.addEventListener("input", function () {
+        renderPreview(getValues());
+      });
+      input.addEventListener("change", function () {
+        renderPreview(getValues());
+      });
+      input.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          buildSentence();
+        }
+      });
+    });
+
+    if (buildButton) {
+      buildButton.addEventListener("click", buildSentence);
+    }
+
+    renderPreview(getValues());
+  }
+
   function setupSentenceBuilders() {
     var builders = document.querySelectorAll('[data-exercise-type="sentence"]');
+    builders.forEach(setupSentenceBuilder);
+  }
 
-    builders.forEach(function (builder) {
-      var inputs = builder.querySelectorAll("[data-field-name]");
-      var preview = builder.querySelector('[data-role="preview"]');
-      var feedback = builder.querySelector('[data-role="feedback"]');
-      var buildButton = builder.querySelector('[data-action="build-sentence"]');
-      var displayTemplate = builder.getAttribute("data-display-template") || "";
-      var speakTemplate = builder.getAttribute("data-speak-template") || displayTemplate;
-      var emptyMessage = builder.getAttribute("data-empty-message") || "Please complete all fields.";
-      var feedbackPrefix = builder.getAttribute("data-feedback-prefix") || "Built sentence:";
+  function updateProgress(el, practiced, total, label) {
+    if (!el) return;
+    el.innerHTML =
+      label + ": <strong>" + practiced + "</strong> / " + total +
+      (practiced >= total ? ' <span class="lesson-progress-done">✓ Great work!</span>' : "");
+  }
 
-      function getValues() {
-        var values = {};
-        inputs.forEach(function (input) {
-          var fieldName = input.getAttribute("data-field-name");
-          values[fieldName] = (input.value || "").trim();
-        });
-        return values;
-      }
+  function setupAlphabetPractice() {
+    var exercises = document.querySelectorAll('[data-exercise-type="alphabet-practice"]');
 
-      function hasEmpty(values) {
-        return Object.keys(values).some(function (key) {
-          return !values[key];
-        });
-      }
+    exercises.forEach(function (exercise) {
+      setupSentenceBuilder(exercise);
 
-      function renderPreview(values) {
-        if (preview) {
-          preview.textContent = fillTemplate(displayTemplate, values, "_____");
-        }
-      }
+      var letterButtons = exercise.querySelectorAll(".alphabet-key");
+      var wordButtons = exercise.querySelectorAll(".practice-word-btn");
+      var letterProgress = exercise.querySelector('[data-role="letter-progress"]');
+      var wordProgress = exercise.querySelector('[data-role="word-progress"]');
+      var practicedLetters = {};
+      var practicedWords = {};
 
-      function buildSentence() {
-        var values = getValues();
-        renderPreview(values);
-
-        if (hasEmpty(values)) {
-          if (feedback) feedback.textContent = emptyMessage;
-          return;
-        }
-
-        var sentence = fillTemplate(speakTemplate, values, "").replace(/\s+/g, " ").trim();
-        if (feedback) feedback.textContent = feedbackPrefix + " " + sentence;
-        speak(sentence);
-      }
-
-      inputs.forEach(function (input) {
-        input.addEventListener("input", function () {
-          renderPreview(getValues());
-        });
-        input.addEventListener("change", function () {
-          renderPreview(getValues());
+      letterButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var letter = button.getAttribute("data-letter") || button.getAttribute("data-speak") || "";
+          speak(letter);
+          practicedLetters[letter] = true;
+          button.classList.add("is-practiced");
+          updateProgress(
+            letterProgress,
+            Object.keys(practicedLetters).length,
+            letterButtons.length,
+            "Letters practiced"
+          );
         });
       });
 
-      if (buildButton) {
-        buildButton.addEventListener("click", buildSentence);
-      }
-
-      renderPreview(getValues());
+      wordButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var word = button.getAttribute("data-word") || button.getAttribute("data-speak") || "";
+          speak(button.getAttribute("data-speak") || word);
+          practicedWords[word] = true;
+          button.classList.add("is-practiced");
+          updateProgress(
+            wordProgress,
+            Object.keys(practicedWords).length,
+            wordButtons.length,
+            "Words practiced"
+          );
+        });
+      });
     });
   }
 
@@ -100,8 +170,8 @@
 
     exercises.forEach(function (exercise) {
       var wordBank = exercise.querySelector('[data-role="word-bank"]');
-      var words = exercise.querySelectorAll('.lesson-word');
-      var zones = exercise.querySelectorAll('.lesson-drop-zone');
+      var words = exercise.querySelectorAll(".lesson-word");
+      var zones = exercise.querySelectorAll(".lesson-drop-zone");
       var zoneA = exercise.querySelector('[data-zone-target="a"]');
       var zoneAn = exercise.querySelector('[data-zone-target="an"]');
       var checkButton = exercise.querySelector('[data-action="check"]');
@@ -112,8 +182,14 @@
       });
       var selectedWord = null;
 
-      function setFeedback(message) {
-        if (feedback) feedback.textContent = message;
+      function setFeedback(message, isSuccess) {
+        if (!feedback) return;
+        feedback.textContent = message;
+        if (isSuccess) {
+          feedback.classList.add("is-success");
+        } else {
+          feedback.classList.remove("is-success");
+        }
       }
 
       function clearWordStyles() {
@@ -145,76 +221,76 @@
         var placed = 0;
 
         words.forEach(function (word) {
-          var parentZone = word.closest('.lesson-drop-zone');
+          var parentZone = word.closest(".lesson-drop-zone");
           if (!parentZone) return;
 
           placed += 1;
-          var zoneArticle = parentZone.getAttribute('data-zone');
-          var expected = word.getAttribute('data-article');
+          var zoneArticle = parentZone.getAttribute("data-zone");
+          var expected = word.getAttribute("data-article");
 
           if (zoneArticle === expected) {
             correct += 1;
-            word.style.backgroundColor = '#dcfce7';
-            word.style.borderColor = '#16a34a';
-            word.style.color = '#166534';
+            word.style.backgroundColor = "#dcfce7";
+            word.style.borderColor = "#16a34a";
+            word.style.color = "#166534";
           } else {
-            word.style.backgroundColor = '#fee2e2';
-            word.style.borderColor = '#dc2626';
-            word.style.color = '#991b1b';
+            word.style.backgroundColor = "#fee2e2";
+            word.style.borderColor = "#dc2626";
+            word.style.color = "#991b1b";
           }
         });
 
         if (placed < words.length) {
-          setFeedback('Place all words into a or an first.');
+          setFeedback("Place all words into a or an first.");
           return;
         }
 
         if (correct === words.length) {
-          setFeedback('Great job. All answers are correct.');
-          speak('Great job. All answers are correct.');
+          setFeedback("Great job. All answers are correct.", true);
+          speak("Great job. All answers are correct.");
         } else {
-          setFeedback('You got ' + correct + ' out of ' + words.length + ' correct. Try again.');
+          setFeedback("You got " + correct + " out of " + words.length + " correct. Try again.");
         }
       }
 
       words.forEach(function (word) {
-        word.addEventListener('dragstart', function (event) {
-          event.dataTransfer.setData('text/plain', word.id);
+        word.addEventListener("dragstart", function (event) {
+          event.dataTransfer.setData("text/plain", word.id);
         });
 
-        word.addEventListener('click', function () {
+        word.addEventListener("click", function () {
           clearWordStyles();
           selectedWord = word;
-          word.style.outline = '2px solid #1d4ed8';
+          word.style.outline = "2px solid #1d4ed8";
         });
       });
 
       zones.forEach(function (zone) {
-        zone.addEventListener('dragover', function (event) {
+        zone.addEventListener("dragover", function (event) {
           event.preventDefault();
         });
 
-        zone.addEventListener('drop', function (event) {
+        zone.addEventListener("drop", function (event) {
           event.preventDefault();
-          var draggedId = event.dataTransfer.getData('text/plain');
+          var draggedId = event.dataTransfer.getData("text/plain");
           var draggedWord = document.getElementById(draggedId);
           if (draggedWord) {
             clearWordStyles();
-            moveWordToZone(draggedWord, zone.getAttribute('data-zone'));
+            moveWordToZone(draggedWord, zone.getAttribute("data-zone"));
           }
         });
 
-        zone.addEventListener('click', function () {
+        zone.addEventListener("click", function () {
           if (selectedWord) {
             clearWordStyles();
-            moveWordToZone(selectedWord, zone.getAttribute('data-zone'));
+            moveWordToZone(selectedWord, zone.getAttribute("data-zone"));
             selectedWord = null;
           }
         });
       });
 
-      if (checkButton) checkButton.addEventListener('click', checkAnswers);
-      if (resetButton) resetButton.addEventListener('click', resetExercise);
+      if (checkButton) checkButton.addEventListener("click", checkAnswers);
+      if (resetButton) resetButton.addEventListener("click", resetExercise);
 
       resetExercise();
     });
@@ -223,6 +299,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     setupTtsButtons();
     setupSentenceBuilders();
+    setupAlphabetPractice();
     setupDragDropArticles();
   });
 })();

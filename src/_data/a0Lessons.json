@@ -36,32 +36,48 @@
       {
         "icon": "fas fa-signature",
         "title": "Task 1: Spell Your Name",
-        "text": "Say your name letter by letter in English."
+        "text": "Say your name letter by letter in English. Example: F-A-R-I-D."
       },
       {
         "icon": "fas fa-volume-up",
         "title": "Task 2: Read 5 Simple Words",
-        "text": "cat, dog, bus, pen, map"
+        "text": "cat, dog, bus, pen, map — say each word clearly three times."
+      },
+      {
+        "icon": "fas fa-microphone",
+        "title": "Task 3: Vowel Practice",
+        "text": "Say A, E, I, O, U slowly, then faster. Listen and repeat."
       }
     ],
     "exercise": {
-      "type": "sentence",
-      "sectionTitle": "Sentence Building",
-      "title": "Build your simple sentence",
-      "instruction": "Type your name and make a sentence.",
-      "fields": [
-        {
-          "name": "name",
-          "label": "Your name",
-          "inputType": "text",
-          "placeholder": "Farid"
-        }
+      "type": "alphabet-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Alphabet, words & your first sentence",
+      "instruction": "Start practicing immediately: hear letters, practice words, then build a sentence with your name.",
+      "letters": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+      "words": [
+        { "word": "cat", "speakText": "cat" },
+        { "word": "dog", "speakText": "dog" },
+        { "word": "bus", "speakText": "bus" },
+        { "word": "pen", "speakText": "pen" },
+        { "word": "map", "speakText": "map" }
       ],
-      "displayTemplate": "My name is {name}.",
-      "speakTemplate": "My name is {name}.",
-      "emptyMessage": "Type your name to build the sentence.",
-      "feedbackPrefix": "Built sentence:",
-      "example": "Example: My name is Farid."
+      "sentence": {
+        "instruction": "Type your name to complete the sentence, then hear it spoken.",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Your name",
+            "inputType": "text",
+            "placeholder": "Farid"
+          }
+        ],
+        "displayTemplate": "My name is {name}.",
+        "speakTemplate": "My name is {name}.",
+        "emptyMessage": "Type your name to build the sentence.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: My name is Farid."
+      }
     },
     "ctaDescription": "Practice these sounds aloud every day before moving to the next lesson."
   },
