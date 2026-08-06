@@ -16,38 +16,23 @@ courseLevel: A1
   </div>
 </section>
 
-<section class="tips-section">
+<section class="grammar-topics">
   <div class="container">
-    <h2 class="section-title">Bu Kursda Nə Öyrənəcəksiniz</h2>
-    <div class="tips-grid">
-      <div class="tip-card">
-        <div class="tip-icon"><i class="fas fa-comments"></i></div>
-        <h3>Gündəlik Danışıq</h3>
-        <p>Tanışlıq, ailə, iş və gündəlik mövzular üzrə əsas ifadələr.</p>
+    <h2 class="section-title">A1 Dərsləri</h2>
+    <div class="topics-grid">
+      {% for lesson in a1Lessons %}
+      <div class="topic-card">
+        <h3 class="topic-title">Dərs {{ lesson.number }}: {{ lesson.indexTitle }}</h3>
+        <p class="topic-description">{{ lesson.indexDescription }}</p>
+        <a href="/courses/a1/lesson-{{ lesson.number }}/" class="topic-link">Dərsi Aç</a>
       </div>
-      <div class="tip-card">
-        <div class="tip-icon"><i class="fas fa-pen"></i></div>
-        <h3>Sadə Yazı Bacarıqları</h3>
-        <p>Qısa mətnlər və düzgün cümlə quruluşu ilə yazı məşqi.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon"><i class="fas fa-book-reader"></i></div>
-        <h3>Oxu və Anlama</h3>
-        <p>Qısa mətnlərlə əsas fikir və detalları anlama bacarığı.</p>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="section-footer">
-      <a href="/courses/a1/" class="button button-primary">A1 Kursunu Aç</a>
-      <a href="/az/kurslar/" class="button button-secondary">Bütün Kurslara Bax</a>
-      <a
-        href="https://www.ingilisdili.net/free-lessons"
-        class="button button-secondary"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Pulsuz Dərsləri Kəşf Et
-      </a>
+      {% for lesson in a1Lessons %}
+      <a href="/courses/a1/lesson-{{ lesson.number }}/" class="button{% if loop.index % 2 == 0 %} button-secondary{% endif %}">Dərs {{ lesson.number }}: {{ lesson.title }}</a>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -67,6 +52,25 @@ courseLevel: A1
         rel="noopener noreferrer"
       >
         Pulsuz Dərslərə Başla
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" style="background-color: var(--color-primary-dark);">
+  <div class="container">
+    <h2 class="cta-title">Növbəti addıma hazırsınız?</h2>
+    <p class="cta-description">A1 tamamlandıqdan sonra A2 səviyyəsinə keçin.</p>
+    <div class="cta-buttons">
+      <a href="/az/kurslar/a2/" class="button button-primary">A2 Kursuna Keç</a>
+      <a href="/az/kurslar/" class="button button-secondary">Bütün Kurslara Bax</a>
+      <a
+        href="https://www.ingilisdili.net/free-lessons"
+        class="button button-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pulsuz Dərsləri Kəşf Et
       </a>
     </div>
   </div>

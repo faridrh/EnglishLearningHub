@@ -1,0 +1,1013 @@
+[
+  {
+    "number": 1,
+    "title": "Daily Routines and Simple Present",
+    "indexTitle": "Daily Routines and Simple Present",
+    "indexDescription": "Talk about habits, routines, and regular activities with confidence.",
+    "pageDescription": "Describe your daily routine with the present simple",
+    "goal": "Talk about daily habits using the present simple (I/you/we/they).",
+    "content": [
+      {
+        "title": "1) Present Simple (I / you / we / they)",
+        "text": "I work. You study. We live in Baku. They go to school.",
+        "speakLabel": "Read Examples",
+        "speakText": "I work. You study. We live in Baku. They go to school."
+      },
+      {
+        "title": "2) Daily Routine Verbs",
+        "text": "wake up, get up, have breakfast, go to work, come home, go to bed",
+        "speakLabel": "Read Verbs",
+        "speakText": "wake up, get up, have breakfast, go to work, come home, go to bed"
+      },
+      {
+        "title": "3) Time Expressions",
+        "text": "every day, in the morning, in the afternoon, in the evening, at night",
+        "speakLabel": "Read Time Words",
+        "speakText": "every day, in the morning, in the afternoon, in the evening, at night"
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-sun",
+        "title": "Your Morning",
+        "text": "Say 3 things you do every morning."
+      },
+      {
+        "icon": "fas fa-moon",
+        "title": "Your Evening",
+        "text": "Say 3 things you do in the evening."
+      },
+      {
+        "icon": "fas fa-calendar-day",
+        "title": "Every Day",
+        "text": "Tell a partner about your typical day in 5 short sentences."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Routine verbs, phrases & your day",
+      "instruction": "Start practicing right away: learn routine verbs, practice sentences, then build your own.",
+      "sentence": {
+        "displayTemplate": "I {action} in the {time}.",
+        "speakTemplate": "I {action} in the {time}.",
+        "emptyMessage": "Type an action and a time.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: I wake up in the morning."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Learn routine verbs",
+          "hint": "Click each verb, listen, and repeat.",
+          "progressLabel": "Verbs practiced",
+          "items": [
+            { "label": "wake up", "speakText": "wake up" },
+            { "label": "get up", "speakText": "get up" },
+            { "label": "have breakfast", "speakText": "have breakfast" },
+            { "label": "go to work", "speakText": "go to work" },
+            { "label": "study", "speakText": "study" },
+            { "label": "come home", "speakText": "come home" },
+            { "label": "have dinner", "speakText": "have dinner" },
+            { "label": "go to bed", "speakText": "go to bed" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice routine sentences",
+          "hint": "Listen and say these present simple sentences.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "I wake up at 7.", "speakText": "I wake up at 7." },
+            { "label": "I have breakfast every day.", "speakText": "I have breakfast every day." },
+            { "label": "I go to work in the morning.", "speakText": "I go to work in the morning." },
+            { "label": "We study English.", "speakText": "We study English." },
+            { "label": "They come home in the evening.", "speakText": "They come home in the evening." },
+            { "label": "I go to bed at night.", "speakText": "I go to bed at night." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build your routine sentence",
+          "hint": "Type an action and a time of day.",
+          "fields": [
+            { "name": "action", "label": "Action", "inputType": "text", "placeholder": "wake up" },
+            { "name": "time", "label": "Time", "inputType": "text", "placeholder": "morning" }
+          ],
+          "example": "Example: I wake up in the morning."
+        }
+      ]
+    },
+    "ctaDescription": "Practice your daily routine aloud every day this week."
+  },
+  {
+    "number": 2,
+    "title": "Present Simple with He and She",
+    "indexTitle": "He/She Present Simple",
+    "indexDescription": "Use -s endings correctly with he, she, and it.",
+    "pageDescription": "Talk about other people with he/she + verb-s",
+    "goal": "Use the present simple correctly with he, she, and it.",
+    "content": [
+      {
+        "title": "1) He / She / It + verb-s",
+        "text": "He works. She studies. It rains a lot.",
+        "speakLabel": "Read Examples",
+        "speakText": "He works. She studies. It rains a lot."
+      },
+      {
+        "title": "2) Spelling Rules",
+        "text": "work → works, go → goes, study → studies, watch → watches",
+        "speakLabel": "Read Spelling",
+        "speakText": "works, goes, studies, watches"
+      },
+      {
+        "title": "3) Talking About People",
+        "text": "My brother works in a bank. My sister lives in Baku.",
+        "speakLabel": "Read Sentences",
+        "speakText": "My brother works in a bank. My sister lives in Baku."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-user",
+        "title": "Talk About a Friend",
+        "text": "Say 4 sentences about a friend using he or she."
+      },
+      {
+        "icon": "fas fa-briefcase",
+        "title": "Jobs",
+        "text": "Say what people do: He works... She teaches..."
+      },
+      {
+        "icon": "fas fa-check",
+        "title": "Spot the -s",
+        "text": "Listen for the -s ending when you practice sentences."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "He/she forms, sentences & builder",
+      "instruction": "Practice verb forms with he and she, then build your own sentence.",
+      "sentence": {
+        "displayTemplate": "She {verb} {object}.",
+        "speakTemplate": "She {verb} {object}.",
+        "emptyMessage": "Type a verb and an object.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: She studies English."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Hear he/she verb forms",
+          "hint": "Notice the -s sound at the end of the verb.",
+          "progressLabel": "Forms practiced",
+          "items": [
+            { "label": "works", "speakText": "works" },
+            { "label": "lives", "speakText": "lives" },
+            { "label": "studies", "speakText": "studies" },
+            { "label": "goes", "speakText": "goes" },
+            { "label": "watches", "speakText": "watches" },
+            { "label": "teaches", "speakText": "teaches" },
+            { "label": "likes", "speakText": "likes" },
+            { "label": "has", "speakText": "has" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice he/she sentences",
+          "hint": "Listen and repeat full sentences.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "He works in a shop.", "speakText": "He works in a shop." },
+            { "label": "She lives in Baku.", "speakText": "She lives in Baku." },
+            { "label": "He studies English.", "speakText": "He studies English." },
+            { "label": "She goes to school.", "speakText": "She goes to school." },
+            { "label": "He watches TV.", "speakText": "He watches TV." },
+            { "label": "She has two children.", "speakText": "She has two children." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build a she/he sentence",
+          "hint": "Type a present simple verb with -s and an object.",
+          "fields": [
+            { "name": "verb", "label": "Verb (-s)", "inputType": "text", "placeholder": "studies" },
+            { "name": "object", "label": "Object", "inputType": "text", "placeholder": "English" }
+          ],
+          "example": "Example: She studies English."
+        }
+      ]
+    },
+    "ctaDescription": "Practice talking about friends and family with he and she."
+  },
+  {
+    "number": 3,
+    "title": "Questions and Negatives with Do/Does",
+    "indexTitle": "Do / Does Questions",
+    "indexDescription": "Ask questions and make negative sentences with do and does.",
+    "pageDescription": "Ask and answer present simple questions",
+    "goal": "Form questions and negatives with do and does.",
+    "content": [
+      {
+        "title": "1) Questions",
+        "text": "Do you work? Does she study? Do they live here?",
+        "speakLabel": "Read Questions",
+        "speakText": "Do you work? Does she study? Do they live here?"
+      },
+      {
+        "title": "2) Short Answers",
+        "text": "Yes, I do. / No, I don't. Yes, she does. / No, he doesn't.",
+        "speakLabel": "Read Answers",
+        "speakText": "Yes, I do. No, I don't. Yes, she does. No, he doesn't."
+      },
+      {
+        "title": "3) Negatives",
+        "text": "I don't like coffee. He doesn't work on Sunday.",
+        "speakLabel": "Read Negatives",
+        "speakText": "I don't like coffee. He doesn't work on Sunday."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-question",
+        "title": "Ask 5 Questions",
+        "text": "Ask a partner: Do you...? Does he...?"
+      },
+      {
+        "icon": "fas fa-reply",
+        "title": "Short Answers Only",
+        "text": "Answer only with Yes, I do / No, I don't."
+      },
+      {
+        "icon": "fas fa-ban",
+        "title": "Negatives",
+        "text": "Say 3 things you don't do every day."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Do/does questions, answers & builder",
+      "instruction": "Practice questions and short answers, then build your own Q&A.",
+      "sentence": {
+        "displayTemplate": "Q: Do you {verb} {object}? A: {answer}",
+        "speakTemplate": "Do you {verb} {object}? {answer}",
+        "emptyMessage": "Complete all fields.",
+        "feedbackPrefix": "Built pair:",
+        "example": "Example: Q: Do you like tea? A: Yes, I do."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Practice questions",
+          "hint": "Use rising intonation for yes/no questions.",
+          "progressLabel": "Questions practiced",
+          "items": [
+            { "label": "Do you work?", "speakText": "Do you work?" },
+            { "label": "Do you study English?", "speakText": "Do you study English?" },
+            { "label": "Do you like coffee?", "speakText": "Do you like coffee?" },
+            { "label": "Does she live here?", "speakText": "Does she live here?" },
+            { "label": "Does he work on Monday?", "speakText": "Does he work on Monday?" },
+            { "label": "Do they go to school?", "speakText": "Do they go to school?" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice answers & negatives",
+          "hint": "Listen carefully to do / does / don't / doesn't.",
+          "progressLabel": "Answers practiced",
+          "items": [
+            { "label": "Yes, I do.", "speakText": "Yes, I do." },
+            { "label": "No, I don't.", "speakText": "No, I don't." },
+            { "label": "Yes, she does.", "speakText": "Yes, she does." },
+            { "label": "No, he doesn't.", "speakText": "No, he doesn't." },
+            { "label": "I don't like coffee.", "speakText": "I don't like coffee." },
+            { "label": "He doesn't work on Sunday.", "speakText": "He doesn't work on Sunday." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build a Q&A pair",
+          "hint": "Type a verb and object, then choose an answer.",
+          "fields": [
+            { "name": "verb", "label": "Verb", "inputType": "text", "placeholder": "like" },
+            { "name": "object", "label": "Object", "inputType": "text", "placeholder": "tea" },
+            {
+              "name": "answer",
+              "label": "Answer",
+              "inputType": "select",
+              "options": ["Yes, I do.", "No, I don't."]
+            }
+          ],
+          "example": "Example: Q: Do you like tea? A: Yes, I do."
+        }
+      ]
+    },
+    "ctaDescription": "Ask and answer do/does questions with a partner every day."
+  },
+  {
+    "number": 4,
+    "title": "Family and People Vocabulary",
+    "indexTitle": "Family and People",
+    "indexDescription": "Expand vocabulary for family members and describing people.",
+    "pageDescription": "Talk about family and describe people",
+    "goal": "Describe family members and people you know.",
+    "content": [
+      {
+        "title": "1) Family Words",
+        "text": "parents, children, uncle, aunt, cousin, husband, wife",
+        "speakLabel": "Read Family Words",
+        "speakText": "parents, children, uncle, aunt, cousin, husband, wife"
+      },
+      {
+        "title": "2) Describing People",
+        "text": "tall, short, young, old, friendly, kind",
+        "speakLabel": "Read Adjectives",
+        "speakText": "tall, short, young, old, friendly, kind"
+      },
+      {
+        "title": "3) Useful Patterns",
+        "text": "I have two brothers. My mother is kind. He is my cousin.",
+        "speakLabel": "Read Patterns",
+        "speakText": "I have two brothers. My mother is kind. He is my cousin."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-users",
+        "title": "Your Family",
+        "text": "Introduce 4 people in your family."
+      },
+      {
+        "icon": "fas fa-smile",
+        "title": "Describe Someone",
+        "text": "Describe a friend: She is friendly and tall."
+      },
+      {
+        "icon": "fas fa-home",
+        "title": "Who Lives With You?",
+        "text": "Say who lives in your home."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Family words, descriptions & sentences",
+      "instruction": "Learn family vocabulary, practice descriptions, then build a sentence.",
+      "sentence": {
+        "displayTemplate": "My {person} is {adjective}.",
+        "speakTemplate": "My {person} is {adjective}.",
+        "emptyMessage": "Type a person and an adjective.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: My mother is kind."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Learn family words",
+          "hint": "Click each word and repeat.",
+          "progressLabel": "Words practiced",
+          "items": [
+            { "label": "parents", "speakText": "parents" },
+            { "label": "children", "speakText": "children" },
+            { "label": "uncle", "speakText": "uncle" },
+            { "label": "aunt", "speakText": "aunt" },
+            { "label": "cousin", "speakText": "cousin" },
+            { "label": "husband", "speakText": "husband" },
+            { "label": "wife", "speakText": "wife" },
+            { "label": "neighbour", "speakText": "neighbour" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice descriptions",
+          "hint": "Listen and repeat sentences about people.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "I have two brothers.", "speakText": "I have two brothers." },
+            { "label": "My mother is kind.", "speakText": "My mother is kind." },
+            { "label": "My father is tall.", "speakText": "My father is tall." },
+            { "label": "She is my cousin.", "speakText": "She is my cousin." },
+            { "label": "He is friendly.", "speakText": "He is friendly." },
+            { "label": "They are my parents.", "speakText": "They are my parents." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build a description",
+          "hint": "Type a family member and an adjective.",
+          "fields": [
+            { "name": "person", "label": "Person", "inputType": "text", "placeholder": "mother" },
+            { "name": "adjective", "label": "Adjective", "inputType": "text", "placeholder": "kind" }
+          ],
+          "example": "Example: My mother is kind."
+        }
+      ]
+    },
+    "ctaDescription": "Practice describing your family and friends with simple adjectives."
+  },
+  {
+    "number": 5,
+    "title": "Home and Rooms",
+    "indexTitle": "Home and Rooms",
+    "indexDescription": "Talk about your home, rooms, and furniture.",
+    "pageDescription": "Describe your home and the rooms in it",
+    "goal": "Talk about homes, rooms, and common furniture.",
+    "content": [
+      {
+        "title": "1) Types of Home",
+        "text": "house, flat/apartment, room",
+        "speakLabel": "Read Homes",
+        "speakText": "house, flat, apartment, room"
+      },
+      {
+        "title": "2) Rooms",
+        "text": "kitchen, bedroom, bathroom, living room, garden",
+        "speakLabel": "Read Rooms",
+        "speakText": "kitchen, bedroom, bathroom, living room, garden"
+      },
+      {
+        "title": "3) There Is / There Are",
+        "text": "There is a kitchen. There are two bedrooms.",
+        "speakLabel": "Read Patterns",
+        "speakText": "There is a kitchen. There are two bedrooms."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-home",
+        "title": "Your Home",
+        "text": "Describe your home in 4 sentences."
+      },
+      {
+        "icon": "fas fa-door-open",
+        "title": "Rooms Tour",
+        "text": "Name every room in your home."
+      },
+      {
+        "icon": "fas fa-couch",
+        "title": "Furniture",
+        "text": "Say what is in your living room."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Rooms, there is/are & home sentences",
+      "instruction": "Learn room words, practice patterns, then describe your home.",
+      "sentence": {
+        "displayTemplate": "There is a {room} in my home.",
+        "speakTemplate": "There is a {room} in my home.",
+        "emptyMessage": "Type a room name.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: There is a kitchen in my home."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Learn room words",
+          "hint": "Click each room and repeat.",
+          "progressLabel": "Rooms practiced",
+          "items": [
+            { "label": "kitchen", "speakText": "kitchen" },
+            { "label": "bedroom", "speakText": "bedroom" },
+            { "label": "bathroom", "speakText": "bathroom" },
+            { "label": "living room", "speakText": "living room" },
+            { "label": "garden", "speakText": "garden" },
+            { "label": "balcony", "speakText": "balcony" },
+            { "label": "hall", "speakText": "hall" },
+            { "label": "dining room", "speakText": "dining room" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice home sentences",
+          "hint": "Listen for there is / there are.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "I live in a flat.", "speakText": "I live in a flat." },
+            { "label": "There is a kitchen.", "speakText": "There is a kitchen." },
+            { "label": "There are two bedrooms.", "speakText": "There are two bedrooms." },
+            { "label": "The living room is big.", "speakText": "The living room is big." },
+            { "label": "There is a table in the kitchen.", "speakText": "There is a table in the kitchen." },
+            { "label": "My bedroom is small.", "speakText": "My bedroom is small." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build a home sentence",
+          "hint": "Type a room in your home.",
+          "fields": [
+            { "name": "room", "label": "Room", "inputType": "text", "placeholder": "kitchen" }
+          ],
+          "example": "Example: There is a kitchen in my home."
+        }
+      ]
+    },
+    "ctaDescription": "Describe your home to a friend using there is / there are."
+  },
+  {
+    "number": 6,
+    "title": "Work and Jobs",
+    "indexTitle": "Work and Jobs",
+    "indexDescription": "Talk about jobs, workplaces, and what people do.",
+    "pageDescription": "Talk about jobs and places of work",
+    "goal": "Name common jobs and talk about work.",
+    "content": [
+      {
+        "title": "1) Jobs",
+        "text": "teacher, doctor, driver, student, engineer, shop assistant",
+        "speakLabel": "Read Jobs",
+        "speakText": "teacher, doctor, driver, student, engineer, shop assistant"
+      },
+      {
+        "title": "2) Workplaces",
+        "text": "school, hospital, office, shop, factory",
+        "speakLabel": "Read Places",
+        "speakText": "school, hospital, office, shop, factory"
+      },
+      {
+        "title": "3) Patterns",
+        "text": "I am a teacher. She works in a hospital. He is a student.",
+        "speakLabel": "Read Patterns",
+        "speakText": "I am a teacher. She works in a hospital. He is a student."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-briefcase",
+        "title": "Your Job / Studies",
+        "text": "Say what you do: I am a... / I work in..."
+      },
+      {
+        "icon": "fas fa-user-tie",
+        "title": "People You Know",
+        "text": "Talk about 3 people's jobs."
+      },
+      {
+        "icon": "fas fa-building",
+        "title": "Where Do They Work?",
+        "text": "Match jobs to places: A doctor works in a hospital."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Jobs, workplaces & job sentences",
+      "instruction": "Learn job vocabulary, practice sentences, then build your own.",
+      "sentence": {
+        "displayTemplate": "I am a {job}. I work in a {place}.",
+        "speakTemplate": "I am a {job}. I work in a {place}.",
+        "emptyMessage": "Type a job and a place.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: I am a teacher. I work in a school."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Learn job words",
+          "hint": "Click each job and repeat.",
+          "progressLabel": "Jobs practiced",
+          "items": [
+            { "label": "teacher", "speakText": "teacher" },
+            { "label": "doctor", "speakText": "doctor" },
+            { "label": "driver", "speakText": "driver" },
+            { "label": "student", "speakText": "student" },
+            { "label": "engineer", "speakText": "engineer" },
+            { "label": "shop assistant", "speakText": "shop assistant" },
+            { "label": "nurse", "speakText": "nurse" },
+            { "label": "cook", "speakText": "cook" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice work sentences",
+          "hint": "Listen and repeat job and workplace phrases.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "I am a student.", "speakText": "I am a student." },
+            { "label": "She is a doctor.", "speakText": "She is a doctor." },
+            { "label": "He works in an office.", "speakText": "He works in an office." },
+            { "label": "She works in a hospital.", "speakText": "She works in a hospital." },
+            { "label": "I work in a shop.", "speakText": "I work in a shop." },
+            { "label": "They work at school.", "speakText": "They work at school." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build your work sentence",
+          "hint": "Type a job and a workplace.",
+          "fields": [
+            { "name": "job", "label": "Job", "inputType": "text", "placeholder": "teacher" },
+            { "name": "place", "label": "Place", "inputType": "text", "placeholder": "school" }
+          ],
+          "example": "Example: I am a teacher. I work in a school."
+        }
+      ]
+    },
+    "ctaDescription": "Practice talking about jobs you know and where people work."
+  },
+  {
+    "number": 7,
+    "title": "Food and Meals",
+    "indexTitle": "Food and Meals",
+    "indexDescription": "Talk about food, meals, and likes/dislikes.",
+    "pageDescription": "Talk about food and what you eat",
+    "goal": "Talk about food, meals, and preferences.",
+    "content": [
+      {
+        "title": "1) Food Words",
+        "text": "bread, rice, meat, fish, fruit, vegetables, water, tea, coffee",
+        "speakLabel": "Read Food",
+        "speakText": "bread, rice, meat, fish, fruit, vegetables, water, tea, coffee"
+      },
+      {
+        "title": "2) Meals",
+        "text": "breakfast, lunch, dinner, snack",
+        "speakLabel": "Read Meals",
+        "speakText": "breakfast, lunch, dinner, snack"
+      },
+      {
+        "title": "3) Likes and Dislikes",
+        "text": "I like tea. I don't like coffee. She loves fruit.",
+        "speakLabel": "Read Preferences",
+        "speakText": "I like tea. I don't like coffee. She loves fruit."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-utensils",
+        "title": "Your Meals",
+        "text": "Say what you usually eat for breakfast, lunch, and dinner."
+      },
+      {
+        "icon": "fas fa-heart",
+        "title": "Likes",
+        "text": "Name 5 foods you like."
+      },
+      {
+        "icon": "fas fa-thumbs-down",
+        "title": "Dislikes",
+        "text": "Name 3 foods you don't like."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Food words, preferences & builder",
+      "instruction": "Learn food vocabulary, practice likes/dislikes, then build a sentence.",
+      "sentence": {
+        "displayTemplate": "I {like} {food}.",
+        "speakTemplate": "I {like} {food}.",
+        "emptyMessage": "Type like/don't like and a food.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: I like tea."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Learn food words",
+          "hint": "Click each food word and repeat.",
+          "progressLabel": "Food words practiced",
+          "items": [
+            { "label": "bread", "speakText": "bread" },
+            { "label": "rice", "speakText": "rice" },
+            { "label": "meat", "speakText": "meat" },
+            { "label": "fish", "speakText": "fish" },
+            { "label": "fruit", "speakText": "fruit" },
+            { "label": "vegetables", "speakText": "vegetables" },
+            { "label": "tea", "speakText": "tea" },
+            { "label": "coffee", "speakText": "coffee" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice food sentences",
+          "hint": "Listen and talk about meals and preferences.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "I have breakfast at 8.", "speakText": "I have breakfast at 8." },
+            { "label": "I like tea.", "speakText": "I like tea." },
+            { "label": "I don't like coffee.", "speakText": "I don't like coffee." },
+            { "label": "She loves fruit.", "speakText": "She loves fruit." },
+            { "label": "We eat rice for lunch.", "speakText": "We eat rice for lunch." },
+            { "label": "They drink water.", "speakText": "They drink water." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build a food sentence",
+          "hint": "Use like or don't like with a food word.",
+          "fields": [
+            { "name": "like", "label": "like / don't like", "inputType": "text", "placeholder": "like" },
+            { "name": "food", "label": "Food", "inputType": "text", "placeholder": "tea" }
+          ],
+          "example": "Example: I like tea."
+        }
+      ]
+    },
+    "ctaDescription": "Talk about your favourite meals and food every day."
+  },
+  {
+    "number": 8,
+    "title": "Free Time and Hobbies",
+    "indexTitle": "Free Time and Hobbies",
+    "indexDescription": "Talk about free-time activities and hobbies.",
+    "pageDescription": "Talk about hobbies and free time",
+    "goal": "Describe free-time activities and hobbies.",
+    "content": [
+      {
+        "title": "1) Hobby Verbs",
+        "text": "read, watch, play, listen to, cook, walk, swim",
+        "speakLabel": "Read Verbs",
+        "speakText": "read, watch, play, listen to, cook, walk, swim"
+      },
+      {
+        "title": "2) Free-Time Phrases",
+        "text": "in my free time, at the weekend, after work",
+        "speakLabel": "Read Phrases",
+        "speakText": "in my free time, at the weekend, after work"
+      },
+      {
+        "title": "3) Patterns",
+        "text": "I play football. She watches films. We listen to music.",
+        "speakLabel": "Read Patterns",
+        "speakText": "I play football. She watches films. We listen to music."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-football-ball",
+        "title": "Your Hobbies",
+        "text": "Say 3 things you do in your free time."
+      },
+      {
+        "icon": "fas fa-film",
+        "title": "Weekend Plans",
+        "text": "Say what you usually do at the weekend."
+      },
+      {
+        "icon": "fas fa-music",
+        "title": "Ask a Friend",
+        "text": "Ask: What do you do in your free time?"
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Hobbies, free time & builder",
+      "instruction": "Learn hobby phrases, practice sentences, then build your own.",
+      "sentence": {
+        "displayTemplate": "In my free time, I {activity}.",
+        "speakTemplate": "In my free time, I {activity}.",
+        "emptyMessage": "Type an activity.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: In my free time, I read books."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Learn hobby activities",
+          "hint": "Click each activity and repeat.",
+          "progressLabel": "Activities practiced",
+          "items": [
+            { "label": "read books", "speakText": "read books" },
+            { "label": "watch films", "speakText": "watch films" },
+            { "label": "play football", "speakText": "play football" },
+            { "label": "listen to music", "speakText": "listen to music" },
+            { "label": "cook", "speakText": "cook" },
+            { "label": "walk in the park", "speakText": "walk in the park" },
+            { "label": "swim", "speakText": "swim" },
+            { "label": "play games", "speakText": "play games" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice free-time sentences",
+          "hint": "Listen and talk about free time.",
+          "progressLabel": "Sentences practiced",
+          "items": [
+            { "label": "In my free time, I read.", "speakText": "In my free time, I read." },
+            { "label": "I play football at the weekend.", "speakText": "I play football at the weekend." },
+            { "label": "She watches films.", "speakText": "She watches films." },
+            { "label": "We listen to music.", "speakText": "We listen to music." },
+            { "label": "He cooks after work.", "speakText": "He cooks after work." },
+            { "label": "They walk in the park.", "speakText": "They walk in the park." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build your hobby sentence",
+          "hint": "Type what you do in your free time.",
+          "fields": [
+            { "name": "activity", "label": "Activity", "inputType": "text", "placeholder": "read books" }
+          ],
+          "example": "Example: In my free time, I read books."
+        }
+      ]
+    },
+    "ctaDescription": "Talk about your hobbies with classmates or friends."
+  },
+  {
+    "number": 9,
+    "title": "Wh- Questions",
+    "indexTitle": "Who, What, Where, When, How",
+    "indexDescription": "Use who, what, where, when, and how in practical speaking tasks.",
+    "pageDescription": "Ask information questions with wh- words",
+    "goal": "Ask and answer questions with who, what, where, when, and how.",
+    "content": [
+      {
+        "title": "1) Question Words",
+        "text": "Who? What? Where? When? How? Why?",
+        "speakLabel": "Read Question Words",
+        "speakText": "Who? What? Where? When? How? Why?"
+      },
+      {
+        "title": "2) Example Questions",
+        "text": "Where do you live? What do you do? When do you work?",
+        "speakLabel": "Read Questions",
+        "speakText": "Where do you live? What do you do? When do you work?"
+      },
+      {
+        "title": "3) Example Answers",
+        "text": "I live in Baku. I am a student. I work in the morning.",
+        "speakLabel": "Read Answers",
+        "speakText": "I live in Baku. I am a student. I work in the morning."
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-question-circle",
+        "title": "Interview a Partner",
+        "text": "Ask 5 wh- questions about their life."
+      },
+      {
+        "icon": "fas fa-map-marker-alt",
+        "title": "Where / When",
+        "text": "Practice: Where do you live? When do you study?"
+      },
+      {
+        "icon": "fas fa-user",
+        "title": "Who / What",
+        "text": "Practice: Who is your teacher? What do you like?"
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Wh- words, questions & answers",
+      "instruction": "Practice question words and full questions, then build your own.",
+      "sentence": {
+        "displayTemplate": "{questionWord} do you {verb}?",
+        "speakTemplate": "{questionWord} do you {verb}?",
+        "emptyMessage": "Type a question word and a verb.",
+        "feedbackPrefix": "Built question:",
+        "example": "Example: Where do you live?"
+      },
+      "steps": [
+        {
+          "type": "listen-grid",
+          "title": "1. Click the question words",
+          "hint": "Tap each wh- word and say it clearly.",
+          "progressLabel": "Question words practiced",
+          "items": [
+            { "label": "Who", "speakText": "Who" },
+            { "label": "What", "speakText": "What" },
+            { "label": "Where", "speakText": "Where" },
+            { "label": "When", "speakText": "When" },
+            { "label": "How", "speakText": "How" },
+            { "label": "Why", "speakText": "Why" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice full questions & answers",
+          "hint": "Listen to natural Q&A pairs.",
+          "progressLabel": "Q&A practiced",
+          "items": [
+            { "label": "Where do you live?", "speakText": "Where do you live?" },
+            { "label": "I live in Baku.", "speakText": "I live in Baku." },
+            { "label": "What do you do?", "speakText": "What do you do?" },
+            { "label": "I am a student.", "speakText": "I am a student." },
+            { "label": "When do you work?", "speakText": "When do you work?" },
+            { "label": "How are you?", "speakText": "How are you?" },
+            { "label": "Who is your teacher?", "speakText": "Who is your teacher?" },
+            { "label": "Why do you study English?", "speakText": "Why do you study English?" }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build a wh- question",
+          "hint": "Type a question word and a verb phrase.",
+          "fields": [
+            { "name": "questionWord", "label": "Question word", "inputType": "text", "placeholder": "Where" },
+            { "name": "verb", "label": "Verb phrase", "inputType": "text", "placeholder": "live" }
+          ],
+          "example": "Example: Where do you live?"
+        }
+      ]
+    },
+    "ctaDescription": "Use wh- questions in short conversations every day."
+  },
+  {
+    "number": 10,
+    "title": "Can for Ability and Requests",
+    "indexTitle": "Can for Ability and Requests",
+    "indexDescription": "Talk about abilities and make polite requests with can.",
+    "pageDescription": "Use can for ability and polite requests",
+    "goal": "Use can to talk about ability and make simple requests.",
+    "content": [
+      {
+        "title": "1) Ability",
+        "text": "I can swim. She can drive. They can speak English.",
+        "speakLabel": "Read Ability",
+        "speakText": "I can swim. She can drive. They can speak English."
+      },
+      {
+        "title": "2) Negatives",
+        "text": "I can't cook. He can't drive.",
+        "speakLabel": "Read Negatives",
+        "speakText": "I can't cook. He can't drive."
+      },
+      {
+        "title": "3) Requests",
+        "text": "Can you help me? Can I open the window?",
+        "speakLabel": "Read Requests",
+        "speakText": "Can you help me? Can I open the window?"
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-swimmer",
+        "title": "Your Abilities",
+        "text": "Say 3 things you can do and 2 things you can't do."
+      },
+      {
+        "icon": "fas fa-hands-helping",
+        "title": "Polite Requests",
+        "text": "Practice: Can you help me, please?"
+      },
+      {
+        "icon": "fas fa-comments",
+        "title": "Mini Dialogue",
+        "text": "A: Can you speak English? B: Yes, I can. / No, I can't."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Can, can't & polite requests",
+      "instruction": "Practice ability phrases and requests, then build your own sentence.",
+      "sentence": {
+        "displayTemplate": "I can {ability}.",
+        "speakTemplate": "I can {ability}.",
+        "emptyMessage": "Type an ability.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: I can speak English."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Practice ability phrases",
+          "hint": "Click each phrase and say what you can or can't do.",
+          "progressLabel": "Ability phrases practiced",
+          "items": [
+            { "label": "I can swim.", "speakText": "I can swim." },
+            { "label": "I can drive.", "speakText": "I can drive." },
+            { "label": "I can speak English.", "speakText": "I can speak English." },
+            { "label": "I can cook.", "speakText": "I can cook." },
+            { "label": "I can't sing.", "speakText": "I can't sing." },
+            { "label": "She can dance.", "speakText": "She can dance." },
+            { "label": "He can't drive.", "speakText": "He can't drive." },
+            { "label": "They can play football.", "speakText": "They can play football." }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice requests & answers",
+          "hint": "Listen to polite questions and short answers.",
+          "progressLabel": "Requests practiced",
+          "items": [
+            { "label": "Can you help me?", "speakText": "Can you help me?" },
+            { "label": "Can you open the window?", "speakText": "Can you open the window?" },
+            { "label": "Can I sit here?", "speakText": "Can I sit here?" },
+            { "label": "Yes, I can.", "speakText": "Yes, I can." },
+            { "label": "No, I can't.", "speakText": "No, I can't." },
+            { "label": "Of course.", "speakText": "Of course." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build an ability sentence",
+          "hint": "Type something you can do.",
+          "fields": [
+            { "name": "ability", "label": "Ability", "inputType": "text", "placeholder": "speak English" }
+          ],
+          "example": "Example: I can speak English."
+        }
+      ]
+    },
+    "ctaDescription": "Practice can for ability and polite requests in real conversations."
+  }
+]

@@ -3,18 +3,18 @@ pagination:
   data: lessonItems
   size: 1
   alias: lesson
-permalink: "/courses/a0/lesson-{{ lesson.number }}/"
+permalink: "/courses/a1/lesson-{{ lesson.number }}/"
 layout: layouts/base.njk
 eleventyComputed:
-  title: "A0 Lesson {{ lesson.number }} - {{ lesson.title }}"
-  description: "Lesson {{ lesson.number }} for A0 English course. {{ lesson.goal }}"
-  courseLevel: "A0"
+  title: "A1 Lesson {{ lesson.number }} - {{ lesson.title }}"
+  description: "Lesson {{ lesson.number }} for A1 English course. {{ lesson.goal }}"
+  courseLevel: "A1"
   lessonNumber: "{{ lesson.number }}"
 ---
 
 <section class="page-header lesson-page-header">
   <div class="container">
-    <p class="lesson-eyebrow">A0 Course · Lesson {{ lesson.number }}</p>
+    <p class="lesson-eyebrow">A1 Course · Lesson {{ lesson.number }}</p>
     <h1 class="page-title">{{ lesson.title }}</h1>
     <p class="page-description">{{ lesson.pageDescription }}</p>
     <p class="lesson-goal"><strong>Goal:</strong> {{ lesson.goal }}</p>
@@ -367,7 +367,7 @@ eleventyComputed:
 <section class="cta-section">
   <div class="container">
     <h2 class="cta-title">Want More Free Practice?</h2>
-    <p class="cta-description">Keep learning with free lessons on our partner site, then continue to the next A0 lesson.</p>
+    <p class="cta-description">Keep learning with free lessons on our partner site, then continue to the next A1 lesson.</p>
     <div class="cta-buttons">
       <a
         href="https://www.ingilisdili.net/free-lessons"
@@ -379,6 +379,8 @@ eleventyComputed:
       </a>
       {% if pagination.href.next %}
       <a href="{{ pagination.href.next }}" class="button button-primary">Next: Lesson {{ lesson.number + 1 }}</a>
+      {% else %}
+      <a href="/courses/a2/" class="button button-primary">Continue to A2 Course</a>
       {% endif %}
     </div>
   </div>
@@ -394,8 +396,10 @@ eleventyComputed:
       {% endif %}
       {% if pagination.href.next %}
       <a href="{{ pagination.href.next }}" class="button button-primary">Next: Lesson {{ lesson.number + 1 }}</a>
+      {% else %}
+      <a href="/courses/a2/" class="button button-primary">Go to A2 Course</a>
       {% endif %}
-      <a href="/courses/a0/" class="button button-secondary">Back to A0 Course</a>
+      <a href="/courses/a1/" class="button button-secondary">Back to A1 Course</a>
       <a href="/courses/" class="button button-secondary">View All Courses</a>
     </div>
   </div>

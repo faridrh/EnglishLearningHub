@@ -18,21 +18,21 @@ courseLevel: A1
 
 <section class="grammar-topics">
   <div class="container">
+    <h2 class="section-title">A1 Lessons</h2>
     <div class="topics-grid">
+      {% for lesson in a1Lessons %}
       <div class="topic-card">
-        <h3 class="topic-title">Daily Routines and Simple Present</h3>
-        <p class="topic-description">Talk about habits, routines, and regular activities with confidence.</p>
+        <h3 class="topic-title">{{ lesson.indexTitle }}</h3>
+        <p class="topic-description">{{ lesson.indexDescription }}</p>
+        <a href="/courses/a1/lesson-{{ lesson.number }}/" class="topic-link">Start Lesson {{ lesson.number }}</a>
       </div>
+      {% endfor %}
+    </div>
 
-      <div class="topic-card">
-        <h3 class="topic-title">Family, Home, and Work Vocabulary</h3>
-        <p class="topic-description">Expand your word bank for common real-life conversations.</p>
-      </div>
-
-      <div class="topic-card">
-        <h3 class="topic-title">Asking and Answering Basic Questions</h3>
-        <p class="topic-description">Use who, what, where, when, and how in practical speaking tasks.</p>
-      </div>
+    <div class="section-footer">
+      {% for lesson in a1Lessons %}
+      <a href="/courses/a1/lesson-{{ lesson.number }}/" class="button{% if loop.index % 2 == 0 %} button-secondary{% endif %}">Open Lesson {{ lesson.number }}: {{ lesson.title }}</a>
+      {% endfor %}
     </div>
   </div>
 </section>
