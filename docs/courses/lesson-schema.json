@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ingilisdili.com/schemas/course-lesson.json",
+  "title": "CourseLesson",
+  "description": "One interactive course lesson (A0/A1/A2). Array of these objects forms a level file.",
+  "type": "object",
+  "required": [
+    "number",
+    "title",
+    "indexTitle",
+    "indexDescription",
+    "pageDescription",
+    "goal",
+    "content",
+    "practice",
+    "exercise",
+    "ctaDescription"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "number": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Lesson number used in URL, e.g. lesson-3"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "indexTitle": { "type": "string", "minLength": 1 },
+    "indexDescription": { "type": "string", "minLength": 1 },
+    "pageDescription": { "type": "string", "minLength": 1 },
+    "goal": { "type": "string", "minLength": 1 },
+    "ctaDescription": { "type": "string", "minLength": 1 },
+    "content": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/contentItem" }
+    },
+    "practice": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/practiceItem" }
+    },
+    "exercise": {
+      "oneOf": [
+        { "$ref": "#/$defs/multiPracticeExercise" },
+        { "$ref": "#/$defs/alphabetPracticeExercise" },
+        { "$ref": "#/$defs/sentenceExercise" },
+        { "$ref": "#/$defs/dragdropArticlesExercise" }
+      ]
+    }
+  },
+  "$defs": {
+    "contentItem": {
+      "type": "object",
+      "required": ["title", "text"],
+      "properties": {
+        "title": { "type": "string" },
+        "text": { "type": "string" },
+        "speakLabel": { "type": "string" },
+        "speakText": { "type": "string" }
+      }
+    },
+    "practiceItem": {
+      "type": "object",
+      "required": ["title", "text"],
+      "properties": {
+        "icon": { "type": "string" },
+        "title": { "type": "string" },
+        "text": { "type": "string" },
+        "speakLabel": { "type": "string" },
+        "speakText": { "type": "string" },
+        "linkLabel": { "type": "string" },
+        "linkUrl": { "type": "string" }
+      }
+    },
+    "listenItem": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "speakText": { "type": "string" },
+        "sublabel": { "type": "string" }
+      }
+    },
+    "field": {
+      "type": "object",
+      "required": ["name", "label", "inputType"],
+      "properties": {
+        "name": { "type": "string", "pattern": "^[a-zA-Z][a-zA-Z0-9_]*$" },
+        "label": { "type": "string" },
+        "inputType": { "type": "string", "enum": ["text", "select"] },
+        "placeholder": { "type": "string" },
+        "options": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      }
+    },
+    "sentenceConfig": {
+      "type": "object",
+      "required": ["displayTemplate", "speakTemplate"],
+      "properties": {
+        "instruction": { "type": "string" },
+        "fields": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/field" }
+        },
+        "displayTemplate": {
+          "type": "string",
+          "description": "Use {fieldName} placeholders"
+        },
+        "speakTemplate": { "type": "string" },
+        "emptyMessage": { "type": "string" },
+        "feedbackPrefix": { "type": "string" },
+        "example": { "type": "string" }
+      }
+    },
+    "multiPracticeStep": {
+      "type": "object",
+      "required": ["type", "title"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["listen-phrases", "listen-grid", "sentence", "dragdrop-articles"]
+        },
+        "title": { "type": "string" },
+        "hint": { "type": "string" },
+        "progressLabel": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/listenItem" }
+        },
+        "fields": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/field" }
+        },
+        "example": { "type": "string" },
+        "words": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["word", "article"],
+            "properties": {
+              "word": { "type": "string" },
+              "article": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "multiPracticeExercise": {
+      "type": "object",
+      "required": ["type", "title", "instruction", "steps"],
+      "properties": {
+        "type": { "const": "multi-practice" },
+        "sectionTitle": { "type": "string" },
+        "title": { "type": "string" },
+        "instruction": { "type": "string" },
+        "sentence": { "$ref": "#/$defs/sentenceConfig" },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/multiPracticeStep" }
+        }
+      }
+    },
+    "alphabetPracticeExercise": {
+      "type": "object",
+      "required": ["type", "title", "instruction", "letters", "words", "sentence"],
+      "properties": {
+        "type": { "const": "alphabet-practice" },
+        "sectionTitle": { "type": "string" },
+        "title": { "type": "string" },
+        "instruction": { "type": "string" },
+        "letters": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "words": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["word"],
+            "properties": {
+              "word": { "type": "string" },
+              "speakText": { "type": "string" }
+            }
+          }
+        },
+        "sentence": { "$ref": "#/$defs/sentenceConfig" }
+      }
+    },
+    "sentenceExercise": {
+      "type": "object",
+      "required": ["type", "title", "instruction", "fields", "displayTemplate", "speakTemplate"],
+      "properties": {
+        "type": { "const": "sentence" },
+        "sectionTitle": { "type": "string" },
+        "title": { "type": "string" },
+        "instruction": { "type": "string" },
+        "fields": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/field" }
+        },
+        "displayTemplate": { "type": "string" },
+        "speakTemplate": { "type": "string" },
+        "emptyMessage": { "type": "string" },
+        "feedbackPrefix": { "type": "string" },
+        "example": { "type": "string" }
+      }
+    },
+    "dragdropArticlesExercise": {
+      "type": "object",
+      "required": ["type", "title", "instruction", "words"],
+      "properties": {
+        "type": { "const": "dragdrop-articles" },
+        "sectionTitle": { "type": "string" },
+        "title": { "type": "string" },
+        "instruction": { "type": "string" },
+        "words": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["word", "article"],
+            "properties": {
+              "word": { "type": "string" },
+              "article": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

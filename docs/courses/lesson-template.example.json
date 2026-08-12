@@ -1,0 +1,104 @@
+[
+  {
+    "number": 1,
+    "title": "Greetings and Introductions",
+    "indexTitle": "Greetings and Introductions",
+    "indexDescription": "Say hello, introduce yourself, and use basic polite phrases.",
+    "pageDescription": "Learn to greet people and say your name",
+    "goal": "Greet someone and introduce yourself in short sentences.",
+    "content": [
+      {
+        "title": "1) Greetings",
+        "text": "Hello · Hi · Goodbye · See you later",
+        "speakLabel": "Listen",
+        "speakText": "Hello. Hi. Goodbye. See you later."
+      },
+      {
+        "title": "2) Introduce yourself",
+        "text": "My name is… / I am…",
+        "speakLabel": "Listen",
+        "speakText": "My name is. I am."
+      },
+      {
+        "title": "3) Questions",
+        "text": "What is your name? How are you?",
+        "speakLabel": "Listen",
+        "speakText": "What is your name? How are you?"
+      }
+    ],
+    "practice": [
+      {
+        "icon": "fas fa-comments",
+        "title": "Mini dialogue",
+        "text": "Hi, I am Alex. Nice to meet you.",
+        "speakLabel": "Listen",
+        "speakText": "Hi, I am Alex. Nice to meet you."
+      },
+      {
+        "icon": "fas fa-user",
+        "title": "Your turn",
+        "text": "Say your name and greet another person."
+      },
+      {
+        "icon": "fas fa-handshake",
+        "title": "Polite reply",
+        "text": "Answer: Nice to meet you too."
+      }
+    ],
+    "exercise": {
+      "type": "multi-practice",
+      "sectionTitle": "Practice Now",
+      "title": "Greetings, phrases & introduce yourself",
+      "instruction": "Start practicing right away: listen, repeat, then build your introduction.",
+      "sentence": {
+        "displayTemplate": "Hi, my name is {name}. Nice to meet you.",
+        "speakTemplate": "Hi, my name is {name}. Nice to meet you.",
+        "emptyMessage": "Type your name to build the sentence.",
+        "feedbackPrefix": "Built sentence:",
+        "example": "Example: Hi, my name is Alex. Nice to meet you."
+      },
+      "steps": [
+        {
+          "type": "listen-phrases",
+          "title": "1. Listen to greetings",
+          "hint": "Click each greeting, then say it out loud.",
+          "progressLabel": "Greetings practiced",
+          "items": [
+            { "label": "Hello", "speakText": "Hello" },
+            { "label": "Hi", "speakText": "Hi" },
+            { "label": "Good morning", "speakText": "Good morning" },
+            { "label": "Goodbye", "speakText": "Goodbye" },
+            { "label": "See you later", "speakText": "See you later" }
+          ]
+        },
+        {
+          "type": "listen-phrases",
+          "title": "2. Practice introduction phrases",
+          "hint": "Listen and repeat.",
+          "progressLabel": "Phrases practiced",
+          "items": [
+            { "label": "My name is…", "speakText": "My name is" },
+            { "label": "I am…", "speakText": "I am" },
+            { "label": "What is your name?", "speakText": "What is your name?" },
+            { "label": "Nice to meet you.", "speakText": "Nice to meet you." }
+          ]
+        },
+        {
+          "type": "sentence",
+          "title": "3. Build your introduction",
+          "hint": "Type your name and hear the full sentence.",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Your name",
+              "inputType": "text",
+              "placeholder": "Alex"
+            }
+          ],
+          "example": "Example: Hi, my name is Alex. Nice to meet you."
+        }
+      ]
+    },
+    "ctaDescription": "Practice these greetings aloud before the next lesson."
+  }
+]
