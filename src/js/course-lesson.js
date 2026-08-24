@@ -309,11 +309,333 @@
     });
   }
 
+  function escapeHtml(text) {
+    return String(text)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function shuffleList(items) {
+    var copy = items.slice();
+    var i;
+    var j;
+    var tmp;
+    for (i = copy.length - 1; i > 0; i -= 1) {
+      j = Math.floor(Math.random() * (i + 1));
+      tmp = copy[i];
+      copy[i] = copy[j];
+      copy[j] = tmp;
+    }
+    if (copy.length > 1) {
+      var same = true;
+      for (i = 0; i < copy.length; i += 1) {
+        if (copy[i] !== items[i]) {
+          same = false;
+          break;
+        }
+      }
+      if (same) return shuffleList(items);
+    }
+    return copy;
+  }
+
+  function arraysEqual(a, b) {
+    if (a.length !== b.length) return false;
+    var i;
+    for (i = 0; i < a.length; i += 1) {
+      if (a[i] !== b[i]) return false;
+    }
+    return true;
+  }
+
+  function setupSentenceOrder() {
+    var exercises = document.querySelectorAll('[data-exercise-type="sentence-order"]');
+
+    exercises.forEach(function (exercise) {
+      var dataEl = exercise.querySelector('[data-role="sentence-order-data"]');
+      var items;
+      try {
+        items = JSON.parse((dataEl && dataEl.textContent) || "[]");
+      } catch (err) {
+        items = [];
+      }
+      if (!items.length) return;
+
+      var counterEl = exercise.querySelector('[data-role="counter"]');
+      var scoreEl = exercise.querySelector('[data-role="score"]');
+      var promptEl = exercise.querySelector('[data-role="prompt"]');
+      var answerEl = exercise.querySelector('[data-role="answer"]');
+      var bankEl = exercise.querySelector('[data-role="bank"]');
+      var feedbackEl = exercise.querySelector('[data-role="feedback"]');
+      var roundEl = exercise.querySelector('[data-role="round"]');
+      var completeEl = exercise.querySelector('[data-role="complete"]');
+      var summaryEl = exercise.querySelector('[data-role="summary"]');
+      var resetBtn = exercise.querySelector('[data-action="reset"]');
+      var showBtn = exercise.querySelector('[data-action="show-answer"]');
+      var nextBtn = exercise.querySelector('[data-action="next"]');
+      var restartBtn = exercise.querySelector('[data-action="restart"]');
+
+      var index = 0;
+      var correctCount = 0;
+      var bank = [];
+      var chosen = [];
+      var locked = false;
+      var resolved = false;
+      var advanceTimer = null;
+
+      function current() {
+        return items[index];
+      }
+
+      function expectedWords() {
+        return current().words || [];
+      }
+
+      function speakCurrent() {
+        speak(current().speakText || expectedWords().join(" "));
+      }
+
+      function setFeedback(message, state) {
+        if (!feedbackEl) return;
+        feedbackEl.textContent = message || "";
+        feedbackEl.classList.remove("is-success", "is-error");
+        if (state === "success") feedbackEl.classList.add("is-success");
+        if (state === "error") feedbackEl.classList.add("is-error");
+      }
+
+      function clearTimer() {
+        if (advanceTimer) {
+          window.clearTimeout(advanceTimer);
+          advanceTimer = null;
+        }
+      }
+
+      function updateMeta() {
+        if (counterEl) {
+          counterEl.textContent = "Sentence " + (index + 1) + " / " + items.length;
+        }
+        if (scoreEl) scoreEl.textContent = "Correct: " + correctCount;
+      }
+
+      function renderChips() {
+        if (!answerEl || !bankEl) return;
+
+        answerEl.classList.remove("is-empty");
+        if (!chosen.length) {
+          answerEl.classList.add("is-empty");
+          answerEl.innerHTML = '<span class="sentence-order-placeholder">Tap the words below</span>';
+        } else {
+          answerEl.innerHTML = chosen
+            .map(function (chip) {
+              return (
+                '<button type="button" class="sentence-order-chip is-placed" data-chip-id="' +
+                chip.id +
+                '"' +
+                (locked ? " disabled" : "") +
+                ">" +
+                escapeHtml(chip.text) +
+                "</button>"
+              );
+            })
+            .join("");
+        }
+
+        bankEl.innerHTML = bank
+          .filter(function (chip) {
+            return !chosen.some(function (picked) {
+              return picked.id === chip.id;
+            });
+          })
+          .map(function (chip) {
+            return (
+              '<button type="button" class="sentence-order-chip" data-chip-id="' +
+              chip.id +
+              '"' +
+              (locked ? " disabled" : "") +
+              ">" +
+              escapeHtml(chip.text) +
+              "</button>"
+            );
+          })
+          .join("");
+      }
+
+      function startRound() {
+        clearTimer();
+        locked = false;
+        resolved = false;
+        chosen = [];
+        bank = shuffleList(expectedWords()).map(function (text, i) {
+          return { id: "c" + i, text: text };
+        });
+        if (promptEl) promptEl.textContent = current().prompt || "";
+        if (nextBtn) nextBtn.hidden = true;
+        if (resetBtn) resetBtn.disabled = false;
+        if (showBtn) showBtn.disabled = false;
+        if (answerEl) answerEl.classList.remove("is-correct", "is-wrong");
+        setFeedback("");
+        updateMeta();
+        renderChips();
+      }
+
+      function chosenTexts() {
+        return chosen.map(function (chip) {
+          return chip.text;
+        });
+      }
+
+      function markCorrect() {
+        locked = true;
+        if (!resolved) {
+          correctCount += 1;
+          resolved = true;
+          updateMeta();
+        }
+        if (answerEl) {
+          answerEl.classList.add("is-correct");
+          answerEl.classList.remove("is-wrong", "is-empty");
+        }
+        setFeedback("Correct!", "success");
+        speakCurrent();
+        if (resetBtn) resetBtn.disabled = true;
+        if (showBtn) showBtn.disabled = true;
+        if (nextBtn) {
+          nextBtn.hidden = false;
+          nextBtn.textContent = index >= items.length - 1 ? "See results" : "Next sentence";
+        }
+        renderChips();
+        clearTimer();
+        advanceTimer = window.setTimeout(goNext, 1600);
+      }
+
+      function markWrong() {
+        if (answerEl) {
+          answerEl.classList.add("is-wrong");
+          answerEl.classList.remove("is-correct");
+        }
+        setFeedback("Not quite. Tap a word to change it, or reset.", "error");
+      }
+
+      function maybeCheck() {
+        if (locked) return;
+        if (chosen.length !== expectedWords().length) {
+          if (answerEl) answerEl.classList.remove("is-wrong", "is-correct");
+          setFeedback("");
+          return;
+        }
+        if (arraysEqual(chosenTexts(), expectedWords())) {
+          markCorrect();
+        } else {
+          markWrong();
+        }
+      }
+
+      function goNext() {
+        clearTimer();
+        if (index >= items.length - 1) {
+          showComplete();
+          return;
+        }
+        index += 1;
+        startRound();
+      }
+
+      function showComplete() {
+        clearTimer();
+        if (roundEl) roundEl.hidden = true;
+        if (completeEl) completeEl.hidden = false;
+        if (summaryEl) {
+          summaryEl.textContent = "You got " + correctCount + " / " + items.length + " correct.";
+        }
+        if (counterEl) counterEl.textContent = "Finished";
+      }
+
+      function restart() {
+        index = 0;
+        correctCount = 0;
+        if (roundEl) roundEl.hidden = false;
+        if (completeEl) completeEl.hidden = true;
+        startRound();
+      }
+
+      if (bankEl) {
+        bankEl.addEventListener("click", function (event) {
+          var btn = event.target.closest("[data-chip-id]");
+          if (!btn || btn.disabled || locked) return;
+          var id = btn.getAttribute("data-chip-id");
+          var chip = bank.find(function (item) {
+            return item.id === id;
+          });
+          if (!chip) return;
+          chosen.push(chip);
+          renderChips();
+          maybeCheck();
+        });
+      }
+
+      if (answerEl) {
+        answerEl.addEventListener("click", function (event) {
+          var btn = event.target.closest("[data-chip-id]");
+          if (!btn || btn.disabled || locked) return;
+          var id = btn.getAttribute("data-chip-id");
+          chosen = chosen.filter(function (chip) {
+            return chip.id !== id;
+          });
+          renderChips();
+          maybeCheck();
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener("click", function () {
+          if (locked) return;
+          chosen = [];
+          if (answerEl) answerEl.classList.remove("is-wrong", "is-correct");
+          setFeedback("");
+          renderChips();
+        });
+      }
+
+      if (showBtn) {
+        showBtn.addEventListener("click", function () {
+          if (locked) return;
+          clearTimer();
+          locked = true;
+          resolved = true;
+          chosen = expectedWords().map(function (text, i) {
+            return { id: "ans" + i, text: text };
+          });
+          if (answerEl) {
+            answerEl.classList.remove("is-wrong", "is-empty");
+            answerEl.classList.add("is-correct");
+          }
+          setFeedback("Answer: " + expectedWords().join(" "));
+          speakCurrent();
+          if (resetBtn) resetBtn.disabled = true;
+          showBtn.disabled = true;
+          if (nextBtn) {
+            nextBtn.hidden = false;
+            nextBtn.textContent = index >= items.length - 1 ? "See results" : "Next sentence";
+          }
+          renderChips();
+        });
+      }
+
+      if (nextBtn) nextBtn.addEventListener("click", goNext);
+      if (restartBtn) restartBtn.addEventListener("click", restart);
+
+      startRound();
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     setupTtsButtons();
     setupSentenceBuilders();
     setupAlphabetPractice();
     setupMultiPractice();
     setupDragDropArticles();
+    setupSentenceOrder();
   });
 })();

@@ -62,14 +62,38 @@
           "hint": "Click each past form and repeat it clearly.",
           "progressLabel": "Past forms practiced",
           "items": [
-            { "label": "worked", "speakText": "worked" },
-            { "label": "played", "speakText": "played" },
-            { "label": "studied", "speakText": "studied" },
-            { "label": "watched", "speakText": "watched" },
-            { "label": "went", "speakText": "went" },
-            { "label": "saw", "speakText": "saw" },
-            { "label": "had", "speakText": "had" },
-            { "label": "bought", "speakText": "bought" }
+            {
+              "label": "worked",
+              "speakText": "worked"
+            },
+            {
+              "label": "played",
+              "speakText": "played"
+            },
+            {
+              "label": "studied",
+              "speakText": "studied"
+            },
+            {
+              "label": "watched",
+              "speakText": "watched"
+            },
+            {
+              "label": "went",
+              "speakText": "went"
+            },
+            {
+              "label": "saw",
+              "speakText": "saw"
+            },
+            {
+              "label": "had",
+              "speakText": "had"
+            },
+            {
+              "label": "bought",
+              "speakText": "bought"
+            }
           ]
         },
         {
@@ -78,12 +102,30 @@
           "hint": "Listen and say complete past simple sentences.",
           "progressLabel": "Sentences practiced",
           "items": [
-            { "label": "I worked yesterday.", "speakText": "I worked yesterday." },
-            { "label": "She studied English last night.", "speakText": "She studied English last night." },
-            { "label": "We went to the park.", "speakText": "We went to the park." },
-            { "label": "He saw a film.", "speakText": "He saw a film." },
-            { "label": "They had dinner at home.", "speakText": "They had dinner at home." },
-            { "label": "I bought a new phone.", "speakText": "I bought a new phone." }
+            {
+              "label": "I worked yesterday.",
+              "speakText": "I worked yesterday."
+            },
+            {
+              "label": "She studied English last night.",
+              "speakText": "She studied English last night."
+            },
+            {
+              "label": "We went to the park.",
+              "speakText": "We went to the park."
+            },
+            {
+              "label": "He saw a film.",
+              "speakText": "He saw a film."
+            },
+            {
+              "label": "They had dinner at home.",
+              "speakText": "They had dinner at home."
+            },
+            {
+              "label": "I bought a new phone.",
+              "speakText": "I bought a new phone."
+            }
           ]
         },
         {
@@ -91,10 +133,102 @@
           "title": "3. Build your past sentence",
           "hint": "Type a past verb and what you did.",
           "fields": [
-            { "name": "verb", "label": "Past verb", "inputType": "text", "placeholder": "watched" },
-            { "name": "object", "label": "Object", "inputType": "text", "placeholder": "a film" }
+            {
+              "name": "verb",
+              "label": "Past verb",
+              "inputType": "text",
+              "placeholder": "watched"
+            },
+            {
+              "name": "object",
+              "label": "Object",
+              "inputType": "text",
+              "placeholder": "a film"
+            }
           ],
           "example": "Example: I watched a film yesterday."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mən dünən işlədim.",
+          "words": [
+            "I",
+            "worked",
+            "yesterday."
+          ],
+          "speakText": "I worked yesterday."
+        },
+        {
+          "prompt": "O (qız) dünən axşam ingilis dili oxudu.",
+          "words": [
+            "She",
+            "studied",
+            "English",
+            "last",
+            "night."
+          ],
+          "speakText": "She studied English last night."
+        },
+        {
+          "prompt": "Biz parka getdik.",
+          "words": [
+            "We",
+            "went",
+            "to",
+            "the",
+            "park."
+          ],
+          "speakText": "We went to the park."
+        },
+        {
+          "prompt": "O (oğlan) filmə baxdı.",
+          "words": [
+            "He",
+            "saw",
+            "a",
+            "film."
+          ],
+          "speakText": "He saw a film."
+        },
+        {
+          "prompt": "Onlar evdə şam yeməyi yedilər.",
+          "words": [
+            "They",
+            "had",
+            "dinner",
+            "at",
+            "home."
+          ],
+          "speakText": "They had dinner at home."
+        },
+        {
+          "prompt": "Mən yeni telefon aldım.",
+          "words": [
+            "I",
+            "bought",
+            "a",
+            "new",
+            "phone."
+          ],
+          "speakText": "I bought a new phone."
+        },
+        {
+          "prompt": "Mən dünən axşam televizora baxdım.",
+          "words": [
+            "I",
+            "watched",
+            "TV",
+            "last",
+            "night."
+          ],
+          "speakText": "I watched TV last night."
         }
       ]
     },
@@ -163,12 +297,30 @@
           "hint": "Use rising intonation for yes/no questions.",
           "progressLabel": "Questions practiced",
           "items": [
-            { "label": "Did you work yesterday?", "speakText": "Did you work yesterday?" },
-            { "label": "Did you go out?", "speakText": "Did you go out?" },
-            { "label": "Did she study English?", "speakText": "Did she study English?" },
-            { "label": "Did he buy a ticket?", "speakText": "Did he buy a ticket?" },
-            { "label": "Did they like the food?", "speakText": "Did they like the food?" },
-            { "label": "Did you see the film?", "speakText": "Did you see the film?" }
+            {
+              "label": "Did you work yesterday?",
+              "speakText": "Did you work yesterday?"
+            },
+            {
+              "label": "Did you go out?",
+              "speakText": "Did you go out?"
+            },
+            {
+              "label": "Did she study English?",
+              "speakText": "Did she study English?"
+            },
+            {
+              "label": "Did he buy a ticket?",
+              "speakText": "Did he buy a ticket?"
+            },
+            {
+              "label": "Did they like the food?",
+              "speakText": "Did they like the food?"
+            },
+            {
+              "label": "Did you see the film?",
+              "speakText": "Did you see the film?"
+            }
           ]
         },
         {
@@ -177,12 +329,30 @@
           "hint": "Listen carefully to did / didn't.",
           "progressLabel": "Answers practiced",
           "items": [
-            { "label": "Yes, I did.", "speakText": "Yes, I did." },
-            { "label": "No, I didn't.", "speakText": "No, I didn't." },
-            { "label": "Yes, she did.", "speakText": "Yes, she did." },
-            { "label": "No, he didn't.", "speakText": "No, he didn't." },
-            { "label": "I didn't go out.", "speakText": "I didn't go out." },
-            { "label": "They didn't buy it.", "speakText": "They didn't buy it." }
+            {
+              "label": "Yes, I did.",
+              "speakText": "Yes, I did."
+            },
+            {
+              "label": "No, I didn't.",
+              "speakText": "No, I didn't."
+            },
+            {
+              "label": "Yes, she did.",
+              "speakText": "Yes, she did."
+            },
+            {
+              "label": "No, he didn't.",
+              "speakText": "No, he didn't."
+            },
+            {
+              "label": "I didn't go out.",
+              "speakText": "I didn't go out."
+            },
+            {
+              "label": "They didn't buy it.",
+              "speakText": "They didn't buy it."
+            }
           ]
         },
         {
@@ -190,16 +360,105 @@
           "title": "3. Build a past Q&A pair",
           "hint": "Type a base verb and object, then choose an answer.",
           "fields": [
-            { "name": "verb", "label": "Verb (base form)", "inputType": "text", "placeholder": "watch" },
-            { "name": "object", "label": "Object", "inputType": "text", "placeholder": "TV" },
+            {
+              "name": "verb",
+              "label": "Verb (base form)",
+              "inputType": "text",
+              "placeholder": "watch"
+            },
+            {
+              "name": "object",
+              "label": "Object",
+              "inputType": "text",
+              "placeholder": "TV"
+            },
             {
               "name": "answer",
               "label": "Answer",
               "inputType": "select",
-              "options": ["Yes, I did.", "No, I didn't."]
+              "options": [
+                "Yes, I did.",
+                "No, I didn't."
+              ]
             }
           ],
           "example": "Example: Q: Did you watch TV? A: Yes, I did."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Sən dünən işlədin?",
+          "words": [
+            "Did",
+            "you",
+            "work",
+            "yesterday?"
+          ],
+          "speakText": "Did you work yesterday?"
+        },
+        {
+          "prompt": "Sən bayıra çıxdın?",
+          "words": [
+            "Did",
+            "you",
+            "go",
+            "out?"
+          ],
+          "speakText": "Did you go out?"
+        },
+        {
+          "prompt": "O (qız) ingilis dili oxudu?",
+          "words": [
+            "Did",
+            "she",
+            "study",
+            "English?"
+          ],
+          "speakText": "Did she study English?"
+        },
+        {
+          "prompt": "Bəli, etdim.",
+          "words": [
+            "Yes,",
+            "I",
+            "did."
+          ],
+          "speakText": "Yes, I did."
+        },
+        {
+          "prompt": "Xeyr, etmədim.",
+          "words": [
+            "No,",
+            "I",
+            "didn't."
+          ],
+          "speakText": "No, I didn't."
+        },
+        {
+          "prompt": "Mən bayıra çıxmadım.",
+          "words": [
+            "I",
+            "didn't",
+            "go",
+            "out."
+          ],
+          "speakText": "I didn't go out."
+        },
+        {
+          "prompt": "Onlar onu almadılar.",
+          "words": [
+            "They",
+            "didn't",
+            "buy",
+            "it."
+          ],
+          "speakText": "They didn't buy it."
         }
       ]
     },
@@ -268,14 +527,38 @@
           "hint": "Click each -ing form and repeat.",
           "progressLabel": "Forms practiced",
           "items": [
-            { "label": "studying", "speakText": "studying" },
-            { "label": "working", "speakText": "working" },
-            { "label": "watching", "speakText": "watching" },
-            { "label": "meeting", "speakText": "meeting" },
-            { "label": "cooking", "speakText": "cooking" },
-            { "label": "travelling", "speakText": "travelling" },
-            { "label": "waiting", "speakText": "waiting" },
-            { "label": "reading", "speakText": "reading" }
+            {
+              "label": "studying",
+              "speakText": "studying"
+            },
+            {
+              "label": "working",
+              "speakText": "working"
+            },
+            {
+              "label": "watching",
+              "speakText": "watching"
+            },
+            {
+              "label": "meeting",
+              "speakText": "meeting"
+            },
+            {
+              "label": "cooking",
+              "speakText": "cooking"
+            },
+            {
+              "label": "travelling",
+              "speakText": "travelling"
+            },
+            {
+              "label": "waiting",
+              "speakText": "waiting"
+            },
+            {
+              "label": "reading",
+              "speakText": "reading"
+            }
           ]
         },
         {
@@ -284,12 +567,30 @@
           "hint": "Listen for am / is / are + -ing.",
           "progressLabel": "Sentences practiced",
           "items": [
-            { "label": "I am studying now.", "speakText": "I am studying now." },
-            { "label": "She is working at the moment.", "speakText": "She is working at the moment." },
-            { "label": "They are watching a film.", "speakText": "They are watching a film." },
-            { "label": "I am meeting a friend tomorrow.", "speakText": "I am meeting a friend tomorrow." },
-            { "label": "We are travelling next week.", "speakText": "We are travelling next week." },
-            { "label": "He is cooking dinner.", "speakText": "He is cooking dinner." }
+            {
+              "label": "I am studying now.",
+              "speakText": "I am studying now."
+            },
+            {
+              "label": "She is working at the moment.",
+              "speakText": "She is working at the moment."
+            },
+            {
+              "label": "They are watching a film.",
+              "speakText": "They are watching a film."
+            },
+            {
+              "label": "I am meeting a friend tomorrow.",
+              "speakText": "I am meeting a friend tomorrow."
+            },
+            {
+              "label": "We are travelling next week.",
+              "speakText": "We are travelling next week."
+            },
+            {
+              "label": "He is cooking dinner.",
+              "speakText": "He is cooking dinner."
+            }
           ]
         },
         {
@@ -297,10 +598,105 @@
           "title": "3. Build a continuous sentence",
           "hint": "Type a verb-ing form and an object.",
           "fields": [
-            { "name": "verbIng", "label": "Verb-ing", "inputType": "text", "placeholder": "studying" },
-            { "name": "object", "label": "Object", "inputType": "text", "placeholder": "English" }
+            {
+              "name": "verbIng",
+              "label": "Verb-ing",
+              "inputType": "text",
+              "placeholder": "studying"
+            },
+            {
+              "name": "object",
+              "label": "Object",
+              "inputType": "text",
+              "placeholder": "English"
+            }
           ],
           "example": "Example: I am studying English."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mən indi oxuyuram.",
+          "words": [
+            "I",
+            "am",
+            "studying",
+            "now."
+          ],
+          "speakText": "I am studying now."
+        },
+        {
+          "prompt": "O (qız) hazırda işləyir.",
+          "words": [
+            "She",
+            "is",
+            "working",
+            "at",
+            "the",
+            "moment."
+          ],
+          "speakText": "She is working at the moment."
+        },
+        {
+          "prompt": "Onlar filmə baxırlar.",
+          "words": [
+            "They",
+            "are",
+            "watching",
+            "a",
+            "film."
+          ],
+          "speakText": "They are watching a film."
+        },
+        {
+          "prompt": "Mən sabah dostumla görüşürəm.",
+          "words": [
+            "I",
+            "am",
+            "meeting",
+            "a",
+            "friend",
+            "tomorrow."
+          ],
+          "speakText": "I am meeting a friend tomorrow."
+        },
+        {
+          "prompt": "Biz gələn həftə səyahət edirik.",
+          "words": [
+            "We",
+            "are",
+            "travelling",
+            "next",
+            "week."
+          ],
+          "speakText": "We are travelling next week."
+        },
+        {
+          "prompt": "O (oğlan) şam yeməyi bişirir.",
+          "words": [
+            "He",
+            "is",
+            "cooking",
+            "dinner."
+          ],
+          "speakText": "He is cooking dinner."
+        },
+        {
+          "prompt": "O (qız) kitab oxuyur.",
+          "words": [
+            "She",
+            "is",
+            "reading",
+            "a",
+            "book."
+          ],
+          "speakText": "She is reading a book."
         }
       ]
     },
@@ -369,12 +765,30 @@
           "hint": "Click each plan phrase and repeat.",
           "progressLabel": "Phrases practiced",
           "items": [
-            { "label": "going to study", "speakText": "going to study" },
-            { "label": "going to travel", "speakText": "going to travel" },
-            { "label": "going to cook", "speakText": "going to cook" },
-            { "label": "going to meet friends", "speakText": "going to meet friends" },
-            { "label": "going to watch a film", "speakText": "going to watch a film" },
-            { "label": "going to buy tickets", "speakText": "going to buy tickets" }
+            {
+              "label": "going to study",
+              "speakText": "going to study"
+            },
+            {
+              "label": "going to travel",
+              "speakText": "going to travel"
+            },
+            {
+              "label": "going to cook",
+              "speakText": "going to cook"
+            },
+            {
+              "label": "going to meet friends",
+              "speakText": "going to meet friends"
+            },
+            {
+              "label": "going to watch a film",
+              "speakText": "going to watch a film"
+            },
+            {
+              "label": "going to buy tickets",
+              "speakText": "going to buy tickets"
+            }
           ]
         },
         {
@@ -383,12 +797,30 @@
           "hint": "Listen and talk about future plans.",
           "progressLabel": "Sentences practiced",
           "items": [
-            { "label": "I am going to study tonight.", "speakText": "I am going to study tonight." },
-            { "label": "She is going to travel next month.", "speakText": "She is going to travel next month." },
-            { "label": "We are going to meet friends.", "speakText": "We are going to meet friends." },
-            { "label": "He is going to cook dinner.", "speakText": "He is going to cook dinner." },
-            { "label": "They are going to buy tickets.", "speakText": "They are going to buy tickets." },
-            { "label": "I am not going to work tomorrow.", "speakText": "I am not going to work tomorrow." }
+            {
+              "label": "I am going to study tonight.",
+              "speakText": "I am going to study tonight."
+            },
+            {
+              "label": "She is going to travel next month.",
+              "speakText": "She is going to travel next month."
+            },
+            {
+              "label": "We are going to meet friends.",
+              "speakText": "We are going to meet friends."
+            },
+            {
+              "label": "He is going to cook dinner.",
+              "speakText": "He is going to cook dinner."
+            },
+            {
+              "label": "They are going to buy tickets.",
+              "speakText": "They are going to buy tickets."
+            },
+            {
+              "label": "I am not going to work tomorrow.",
+              "speakText": "I am not going to work tomorrow."
+            }
           ]
         },
         {
@@ -396,10 +828,115 @@
           "title": "3. Build your plan sentence",
           "hint": "Type your plan and when.",
           "fields": [
-            { "name": "plan", "label": "Plan", "inputType": "text", "placeholder": "study English" },
-            { "name": "time", "label": "Time", "inputType": "text", "placeholder": "tomorrow" }
+            {
+              "name": "plan",
+              "label": "Plan",
+              "inputType": "text",
+              "placeholder": "study English"
+            },
+            {
+              "name": "time",
+              "label": "Time",
+              "inputType": "text",
+              "placeholder": "tomorrow"
+            }
           ],
           "example": "Example: I am going to study English tomorrow."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mən bu axşam dərs oxuyacağam.",
+          "words": [
+            "I",
+            "am",
+            "going",
+            "to",
+            "study",
+            "tonight."
+          ],
+          "speakText": "I am going to study tonight."
+        },
+        {
+          "prompt": "O (qız) gələn ay səyahət edəcək.",
+          "words": [
+            "She",
+            "is",
+            "going",
+            "to",
+            "travel",
+            "next",
+            "month."
+          ],
+          "speakText": "She is going to travel next month."
+        },
+        {
+          "prompt": "Biz dostlarla görüşəcəyik.",
+          "words": [
+            "We",
+            "are",
+            "going",
+            "to",
+            "meet",
+            "friends."
+          ],
+          "speakText": "We are going to meet friends."
+        },
+        {
+          "prompt": "O (oğlan) şam yeməyi bişirəcək.",
+          "words": [
+            "He",
+            "is",
+            "going",
+            "to",
+            "cook",
+            "dinner."
+          ],
+          "speakText": "He is going to cook dinner."
+        },
+        {
+          "prompt": "Onlar bilet alacaqlar.",
+          "words": [
+            "They",
+            "are",
+            "going",
+            "to",
+            "buy",
+            "tickets."
+          ],
+          "speakText": "They are going to buy tickets."
+        },
+        {
+          "prompt": "Mən sabah işləməyəcəyəm.",
+          "words": [
+            "I",
+            "am",
+            "not",
+            "going",
+            "to",
+            "work",
+            "tomorrow."
+          ],
+          "speakText": "I am not going to work tomorrow."
+        },
+        {
+          "prompt": "Mən filmə baxacağam.",
+          "words": [
+            "I",
+            "am",
+            "going",
+            "to",
+            "watch",
+            "a",
+            "film."
+          ],
+          "speakText": "I am going to watch a film."
         }
       ]
     },
@@ -468,12 +1005,30 @@
           "hint": "Click each phrase and repeat.",
           "progressLabel": "Phrases practiced",
           "items": [
-            { "label": "I will help you.", "speakText": "I will help you." },
-            { "label": "It will rain tomorrow.", "speakText": "It will rain tomorrow." },
-            { "label": "You will love this.", "speakText": "You will love this." },
-            { "label": "I'll call you later.", "speakText": "I'll call you later." },
-            { "label": "I won't be late.", "speakText": "I won't be late." },
-            { "label": "We'll see you soon.", "speakText": "We'll see you soon." }
+            {
+              "label": "I will help you.",
+              "speakText": "I will help you."
+            },
+            {
+              "label": "It will rain tomorrow.",
+              "speakText": "It will rain tomorrow."
+            },
+            {
+              "label": "You will love this.",
+              "speakText": "You will love this."
+            },
+            {
+              "label": "I'll call you later.",
+              "speakText": "I'll call you later."
+            },
+            {
+              "label": "I won't be late.",
+              "speakText": "I won't be late."
+            },
+            {
+              "label": "We'll see you soon.",
+              "speakText": "We'll see you soon."
+            }
           ]
         },
         {
@@ -482,12 +1037,30 @@
           "hint": "Listen to will questions and short replies.",
           "progressLabel": "Q&A practiced",
           "items": [
-            { "label": "Will you come?", "speakText": "Will you come?" },
-            { "label": "Yes, I will.", "speakText": "Yes, I will." },
-            { "label": "No, I won't.", "speakText": "No, I won't." },
-            { "label": "Will it be sunny?", "speakText": "Will it be sunny?" },
-            { "label": "I think it will.", "speakText": "I think it will." },
-            { "label": "Maybe it won't.", "speakText": "Maybe it won't." }
+            {
+              "label": "Will you come?",
+              "speakText": "Will you come?"
+            },
+            {
+              "label": "Yes, I will.",
+              "speakText": "Yes, I will."
+            },
+            {
+              "label": "No, I won't.",
+              "speakText": "No, I won't."
+            },
+            {
+              "label": "Will it be sunny?",
+              "speakText": "Will it be sunny?"
+            },
+            {
+              "label": "I think it will.",
+              "speakText": "I think it will."
+            },
+            {
+              "label": "Maybe it won't.",
+              "speakText": "Maybe it won't."
+            }
           ]
         },
         {
@@ -495,9 +1068,90 @@
           "title": "3. Build a will sentence",
           "hint": "Type an offer or prediction with will.",
           "fields": [
-            { "name": "action", "label": "Action", "inputType": "text", "placeholder": "help you" }
+            {
+              "name": "action",
+              "label": "Action",
+              "inputType": "text",
+              "placeholder": "help you"
+            }
           ],
           "example": "Example: I will help you."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mən sənə kömək edəcəyəm.",
+          "words": [
+            "I",
+            "will",
+            "help",
+            "you."
+          ],
+          "speakText": "I will help you."
+        },
+        {
+          "prompt": "Sabah yağış yağacaq.",
+          "words": [
+            "It",
+            "will",
+            "rain",
+            "tomorrow."
+          ],
+          "speakText": "It will rain tomorrow."
+        },
+        {
+          "prompt": "Mən sənə sonra zəng edəcəyəm.",
+          "words": [
+            "I'll",
+            "call",
+            "you",
+            "later."
+          ],
+          "speakText": "I'll call you later."
+        },
+        {
+          "prompt": "Mən gecikməyəcəyəm.",
+          "words": [
+            "I",
+            "won't",
+            "be",
+            "late."
+          ],
+          "speakText": "I won't be late."
+        },
+        {
+          "prompt": "Sən gələcəksən?",
+          "words": [
+            "Will",
+            "you",
+            "come?"
+          ],
+          "speakText": "Will you come?"
+        },
+        {
+          "prompt": "Bəli, gələcəyəm.",
+          "words": [
+            "Yes,",
+            "I",
+            "will."
+          ],
+          "speakText": "Yes, I will."
+        },
+        {
+          "prompt": "Hava günəşli olacaq?",
+          "words": [
+            "Will",
+            "it",
+            "be",
+            "sunny?"
+          ],
+          "speakText": "Will it be sunny?"
         }
       ]
     },
@@ -566,14 +1220,38 @@
           "hint": "Click each comparative or superlative and repeat.",
           "progressLabel": "Words practiced",
           "items": [
-            { "label": "bigger", "speakText": "bigger" },
-            { "label": "smaller", "speakText": "smaller" },
-            { "label": "cheaper", "speakText": "cheaper" },
-            { "label": "more expensive", "speakText": "more expensive" },
-            { "label": "better", "speakText": "better" },
-            { "label": "worse", "speakText": "worse" },
-            { "label": "the best", "speakText": "the best" },
-            { "label": "the most interesting", "speakText": "the most interesting" }
+            {
+              "label": "bigger",
+              "speakText": "bigger"
+            },
+            {
+              "label": "smaller",
+              "speakText": "smaller"
+            },
+            {
+              "label": "cheaper",
+              "speakText": "cheaper"
+            },
+            {
+              "label": "more expensive",
+              "speakText": "more expensive"
+            },
+            {
+              "label": "better",
+              "speakText": "better"
+            },
+            {
+              "label": "worse",
+              "speakText": "worse"
+            },
+            {
+              "label": "the best",
+              "speakText": "the best"
+            },
+            {
+              "label": "the most interesting",
+              "speakText": "the most interesting"
+            }
           ]
         },
         {
@@ -582,12 +1260,30 @@
           "hint": "Listen for than and the + superlative.",
           "progressLabel": "Sentences practiced",
           "items": [
-            { "label": "Baku is bigger than Ganja.", "speakText": "Baku is bigger than Ganja." },
-            { "label": "This phone is more expensive.", "speakText": "This phone is more expensive." },
-            { "label": "My flat is smaller than yours.", "speakText": "My flat is smaller than yours." },
-            { "label": "This is the best café.", "speakText": "This is the best café." },
-            { "label": "English is more useful for work.", "speakText": "English is more useful for work." },
-            { "label": "Yesterday was worse than today.", "speakText": "Yesterday was worse than today." }
+            {
+              "label": "Baku is bigger than Ganja.",
+              "speakText": "Baku is bigger than Ganja."
+            },
+            {
+              "label": "This phone is more expensive.",
+              "speakText": "This phone is more expensive."
+            },
+            {
+              "label": "My flat is smaller than yours.",
+              "speakText": "My flat is smaller than yours."
+            },
+            {
+              "label": "This is the best café.",
+              "speakText": "This is the best café."
+            },
+            {
+              "label": "English is more useful for work.",
+              "speakText": "English is more useful for work."
+            },
+            {
+              "label": "Yesterday was worse than today.",
+              "speakText": "Yesterday was worse than today."
+            }
           ]
         },
         {
@@ -595,11 +1291,112 @@
           "title": "3. Build a comparison",
           "hint": "Compare two things with a comparative adjective.",
           "fields": [
-            { "name": "thing1", "label": "Thing 1", "inputType": "text", "placeholder": "Baku" },
-            { "name": "comparative", "label": "Comparative", "inputType": "text", "placeholder": "bigger" },
-            { "name": "thing2", "label": "Thing 2", "inputType": "text", "placeholder": "Ganja" }
+            {
+              "name": "thing1",
+              "label": "Thing 1",
+              "inputType": "text",
+              "placeholder": "Baku"
+            },
+            {
+              "name": "comparative",
+              "label": "Comparative",
+              "inputType": "text",
+              "placeholder": "bigger"
+            },
+            {
+              "name": "thing2",
+              "label": "Thing 2",
+              "inputType": "text",
+              "placeholder": "Ganja"
+            }
           ],
           "example": "Example: Baku is bigger than Ganja."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Bakı Gəncədən böyükdür.",
+          "words": [
+            "Baku",
+            "is",
+            "bigger",
+            "than",
+            "Ganja."
+          ],
+          "speakText": "Baku is bigger than Ganja."
+        },
+        {
+          "prompt": "Bu telefon daha bahadır.",
+          "words": [
+            "This",
+            "phone",
+            "is",
+            "more",
+            "expensive."
+          ],
+          "speakText": "This phone is more expensive."
+        },
+        {
+          "prompt": "Mənzilim səninkindən kiçikdir.",
+          "words": [
+            "My",
+            "flat",
+            "is",
+            "smaller",
+            "than",
+            "yours."
+          ],
+          "speakText": "My flat is smaller than yours."
+        },
+        {
+          "prompt": "Bu ən yaxşı kafedir.",
+          "words": [
+            "This",
+            "is",
+            "the",
+            "best",
+            "café."
+          ],
+          "speakText": "This is the best café."
+        },
+        {
+          "prompt": "İngilis dili iş üçün daha faydalıdır.",
+          "words": [
+            "English",
+            "is",
+            "more",
+            "useful",
+            "for",
+            "work."
+          ],
+          "speakText": "English is more useful for work."
+        },
+        {
+          "prompt": "Dünən bu gündən pis idi.",
+          "words": [
+            "Yesterday",
+            "was",
+            "worse",
+            "than",
+            "today."
+          ],
+          "speakText": "Yesterday was worse than today."
+        },
+        {
+          "prompt": "Bu kafe daha ucuzdur.",
+          "words": [
+            "This",
+            "café",
+            "is",
+            "cheaper."
+          ],
+          "speakText": "This café is cheaper."
         }
       ]
     },
@@ -668,14 +1465,38 @@
           "hint": "Click each phrase and notice the meaning.",
           "progressLabel": "Phrases practiced",
           "items": [
-            { "label": "You should rest.", "speakText": "You should rest." },
-            { "label": "You shouldn't smoke.", "speakText": "You shouldn't smoke." },
-            { "label": "You must be careful.", "speakText": "You must be careful." },
-            { "label": "I have to work.", "speakText": "I have to work." },
-            { "label": "She has to study.", "speakText": "She has to study." },
-            { "label": "You don't have to pay.", "speakText": "You don't have to pay." },
-            { "label": "We must wear a seatbelt.", "speakText": "We must wear a seatbelt." },
-            { "label": "You should drink water.", "speakText": "You should drink water." }
+            {
+              "label": "You should rest.",
+              "speakText": "You should rest."
+            },
+            {
+              "label": "You shouldn't smoke.",
+              "speakText": "You shouldn't smoke."
+            },
+            {
+              "label": "You must be careful.",
+              "speakText": "You must be careful."
+            },
+            {
+              "label": "I have to work.",
+              "speakText": "I have to work."
+            },
+            {
+              "label": "She has to study.",
+              "speakText": "She has to study."
+            },
+            {
+              "label": "You don't have to pay.",
+              "speakText": "You don't have to pay."
+            },
+            {
+              "label": "We must wear a seatbelt.",
+              "speakText": "We must wear a seatbelt."
+            },
+            {
+              "label": "You should drink water.",
+              "speakText": "You should drink water."
+            }
           ]
         },
         {
@@ -684,12 +1505,30 @@
           "hint": "Listen to real-life advice and obligation sentences.",
           "progressLabel": "Contexts practiced",
           "items": [
-            { "label": "You should sleep more.", "speakText": "You should sleep more." },
-            { "label": "Students must do homework.", "speakText": "Students must do homework." },
-            { "label": "I have to wake up early.", "speakText": "I have to wake up early." },
-            { "label": "You don't have to come.", "speakText": "You don't have to come." },
-            { "label": "Drivers must stop at red lights.", "speakText": "Drivers must stop at red lights." },
-            { "label": "You should practise English every day.", "speakText": "You should practise English every day." }
+            {
+              "label": "You should sleep more.",
+              "speakText": "You should sleep more."
+            },
+            {
+              "label": "Students must do homework.",
+              "speakText": "Students must do homework."
+            },
+            {
+              "label": "I have to wake up early.",
+              "speakText": "I have to wake up early."
+            },
+            {
+              "label": "You don't have to come.",
+              "speakText": "You don't have to come."
+            },
+            {
+              "label": "Drivers must stop at red lights.",
+              "speakText": "Drivers must stop at red lights."
+            },
+            {
+              "label": "You should practise English every day.",
+              "speakText": "You should practise English every day."
+            }
           ]
         },
         {
@@ -701,11 +1540,101 @@
               "name": "modal",
               "label": "Modal",
               "inputType": "select",
-              "options": ["should", "must", "have to", "shouldn't", "don't have to"]
+              "options": [
+                "should",
+                "must",
+                "have to",
+                "shouldn't",
+                "don't have to"
+              ]
             },
-            { "name": "action", "label": "Action", "inputType": "text", "placeholder": "study more" }
+            {
+              "name": "action",
+              "label": "Action",
+              "inputType": "text",
+              "placeholder": "study more"
+            }
           ],
           "example": "Example: You should study more."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Sən dincəlməlisən.",
+          "words": [
+            "You",
+            "should",
+            "rest."
+          ],
+          "speakText": "You should rest."
+        },
+        {
+          "prompt": "Sən siqaret çəkməməlisən.",
+          "words": [
+            "You",
+            "shouldn't",
+            "smoke."
+          ],
+          "speakText": "You shouldn't smoke."
+        },
+        {
+          "prompt": "Sən ehtiyatlı olmalısan.",
+          "words": [
+            "You",
+            "must",
+            "be",
+            "careful."
+          ],
+          "speakText": "You must be careful."
+        },
+        {
+          "prompt": "Mən işləməliyəm.",
+          "words": [
+            "I",
+            "have",
+            "to",
+            "work."
+          ],
+          "speakText": "I have to work."
+        },
+        {
+          "prompt": "Sən ödəməyə məcbur deyilsən.",
+          "words": [
+            "You",
+            "don't",
+            "have",
+            "to",
+            "pay."
+          ],
+          "speakText": "You don't have to pay."
+        },
+        {
+          "prompt": "Sən daha çox yatmalısan.",
+          "words": [
+            "You",
+            "should",
+            "sleep",
+            "more."
+          ],
+          "speakText": "You should sleep more."
+        },
+        {
+          "prompt": "Mən tezdən oyanmalıyam.",
+          "words": [
+            "I",
+            "have",
+            "to",
+            "wake",
+            "up",
+            "early."
+          ],
+          "speakText": "I have to wake up early."
         }
       ]
     },
@@ -774,14 +1703,38 @@
           "hint": "Click each phrase and notice some/any/much/many.",
           "progressLabel": "Phrases practiced",
           "items": [
-            { "label": "some apples", "speakText": "some apples" },
-            { "label": "some water", "speakText": "some water" },
-            { "label": "any milk", "speakText": "any milk" },
-            { "label": "many books", "speakText": "many books" },
-            { "label": "much time", "speakText": "much time" },
-            { "label": "a lot of people", "speakText": "a lot of people" },
-            { "label": "a few eggs", "speakText": "a few eggs" },
-            { "label": "a little sugar", "speakText": "a little sugar" }
+            {
+              "label": "some apples",
+              "speakText": "some apples"
+            },
+            {
+              "label": "some water",
+              "speakText": "some water"
+            },
+            {
+              "label": "any milk",
+              "speakText": "any milk"
+            },
+            {
+              "label": "many books",
+              "speakText": "many books"
+            },
+            {
+              "label": "much time",
+              "speakText": "much time"
+            },
+            {
+              "label": "a lot of people",
+              "speakText": "a lot of people"
+            },
+            {
+              "label": "a few eggs",
+              "speakText": "a few eggs"
+            },
+            {
+              "label": "a little sugar",
+              "speakText": "a little sugar"
+            }
           ]
         },
         {
@@ -790,12 +1743,30 @@
           "hint": "Listen and practice shopping and kitchen talk.",
           "progressLabel": "Sentences practiced",
           "items": [
-            { "label": "I have some apples.", "speakText": "I have some apples." },
-            { "label": "Do you have any milk?", "speakText": "Do you have any milk?" },
-            { "label": "I don't have any money.", "speakText": "I don't have any money." },
-            { "label": "How many eggs do you need?", "speakText": "How many eggs do you need?" },
-            { "label": "How much water is there?", "speakText": "How much water is there?" },
-            { "label": "There isn't much time.", "speakText": "There isn't much time." }
+            {
+              "label": "I have some apples.",
+              "speakText": "I have some apples."
+            },
+            {
+              "label": "Do you have any milk?",
+              "speakText": "Do you have any milk?"
+            },
+            {
+              "label": "I don't have any money.",
+              "speakText": "I don't have any money."
+            },
+            {
+              "label": "How many eggs do you need?",
+              "speakText": "How many eggs do you need?"
+            },
+            {
+              "label": "How much water is there?",
+              "speakText": "How much water is there?"
+            },
+            {
+              "label": "There isn't much time.",
+              "speakText": "There isn't much time."
+            }
           ]
         },
         {
@@ -807,11 +1778,108 @@
               "name": "quantity",
               "label": "Quantity",
               "inputType": "select",
-              "options": ["some", "any", "much", "many", "a lot of", "a few", "a little"]
+              "options": [
+                "some",
+                "any",
+                "much",
+                "many",
+                "a lot of",
+                "a few",
+                "a little"
+              ]
             },
-            { "name": "item", "label": "Item", "inputType": "text", "placeholder": "milk" }
+            {
+              "name": "item",
+              "label": "Item",
+              "inputType": "text",
+              "placeholder": "milk"
+            }
           ],
           "example": "Example: I need some milk."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mənim bir neçə almam var.",
+          "words": [
+            "I",
+            "have",
+            "some",
+            "apples."
+          ],
+          "speakText": "I have some apples."
+        },
+        {
+          "prompt": "Səndə süd varmı?",
+          "words": [
+            "Do",
+            "you",
+            "have",
+            "any",
+            "milk?"
+          ],
+          "speakText": "Do you have any milk?"
+        },
+        {
+          "prompt": "Mənim heç pulum yoxdur.",
+          "words": [
+            "I",
+            "don't",
+            "have",
+            "any",
+            "money."
+          ],
+          "speakText": "I don't have any money."
+        },
+        {
+          "prompt": "Sənə neçə yumurta lazımdır?",
+          "words": [
+            "How",
+            "many",
+            "eggs",
+            "do",
+            "you",
+            "need?"
+          ],
+          "speakText": "How many eggs do you need?"
+        },
+        {
+          "prompt": "Nə qədər su var?",
+          "words": [
+            "How",
+            "much",
+            "water",
+            "is",
+            "there?"
+          ],
+          "speakText": "How much water is there?"
+        },
+        {
+          "prompt": "Çox vaxt yoxdur.",
+          "words": [
+            "There",
+            "isn't",
+            "much",
+            "time."
+          ],
+          "speakText": "There isn't much time."
+        },
+        {
+          "prompt": "Mənə bir az şəkər lazımdır.",
+          "words": [
+            "I",
+            "need",
+            "a",
+            "little",
+            "sugar."
+          ],
+          "speakText": "I need a little sugar."
         }
       ]
     },
@@ -880,14 +1948,38 @@
           "hint": "Say each connector clearly.",
           "progressLabel": "Connectors practiced",
           "items": [
-            { "label": "and", "speakText": "and" },
-            { "label": "but", "speakText": "but" },
-            { "label": "because", "speakText": "because" },
-            { "label": "so", "speakText": "so" },
-            { "label": "although", "speakText": "although" },
-            { "label": "when", "speakText": "when" },
-            { "label": "if", "speakText": "if" },
-            { "label": "then", "speakText": "then" }
+            {
+              "label": "and",
+              "speakText": "and"
+            },
+            {
+              "label": "but",
+              "speakText": "but"
+            },
+            {
+              "label": "because",
+              "speakText": "because"
+            },
+            {
+              "label": "so",
+              "speakText": "so"
+            },
+            {
+              "label": "although",
+              "speakText": "although"
+            },
+            {
+              "label": "when",
+              "speakText": "when"
+            },
+            {
+              "label": "if",
+              "speakText": "if"
+            },
+            {
+              "label": "then",
+              "speakText": "then"
+            }
           ]
         },
         {
@@ -896,12 +1988,30 @@
           "hint": "Listen for how ideas are connected.",
           "progressLabel": "Sentences practiced",
           "items": [
-            { "label": "I stayed home because it rained.", "speakText": "I stayed home because it rained." },
-            { "label": "It rained, so I stayed home.", "speakText": "It rained, so I stayed home." },
-            { "label": "I was tired, but I finished my work.", "speakText": "I was tired, but I finished my work." },
-            { "label": "Although it was cold, we went out.", "speakText": "Although it was cold, we went out." },
-            { "label": "When I arrived, she was waiting.", "speakText": "When I arrived, she was waiting." },
-            { "label": "If I have time, I will call you.", "speakText": "If I have time, I will call you." }
+            {
+              "label": "I stayed home because it rained.",
+              "speakText": "I stayed home because it rained."
+            },
+            {
+              "label": "It rained, so I stayed home.",
+              "speakText": "It rained, so I stayed home."
+            },
+            {
+              "label": "I was tired, but I finished my work.",
+              "speakText": "I was tired, but I finished my work."
+            },
+            {
+              "label": "Although it was cold, we went out.",
+              "speakText": "Although it was cold, we went out."
+            },
+            {
+              "label": "When I arrived, she was waiting.",
+              "speakText": "When I arrived, she was waiting."
+            },
+            {
+              "label": "If I have time, I will call you.",
+              "speakText": "If I have time, I will call you."
+            }
           ]
         },
         {
@@ -909,10 +2019,119 @@
           "title": "3. Build a because sentence",
           "hint": "Connect an action with a reason.",
           "fields": [
-            { "name": "action1", "label": "Action", "inputType": "text", "placeholder": "stayed home" },
-            { "name": "reason", "label": "Reason", "inputType": "text", "placeholder": "it rained" }
+            {
+              "name": "action1",
+              "label": "Action",
+              "inputType": "text",
+              "placeholder": "stayed home"
+            },
+            {
+              "name": "reason",
+              "label": "Reason",
+              "inputType": "text",
+              "placeholder": "it rained"
+            }
           ],
           "example": "Example: I stayed home because it rained."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Yağış yağdığı üçün evdə qaldım.",
+          "words": [
+            "I",
+            "stayed",
+            "home",
+            "because",
+            "it",
+            "rained."
+          ],
+          "speakText": "I stayed home because it rained."
+        },
+        {
+          "prompt": "Yağış yağdı, ona görə evdə qaldım.",
+          "words": [
+            "It",
+            "rained,",
+            "so",
+            "I",
+            "stayed",
+            "home."
+          ],
+          "speakText": "It rained, so I stayed home."
+        },
+        {
+          "prompt": "Yorğun idim, amma işimi bitirdim.",
+          "words": [
+            "I",
+            "was",
+            "tired,",
+            "but",
+            "I",
+            "finished",
+            "my",
+            "work."
+          ],
+          "speakText": "I was tired, but I finished my work."
+        },
+        {
+          "prompt": "Soyuq olsa da, biz bayıra çıxdıq.",
+          "words": [
+            "Although",
+            "it",
+            "was",
+            "cold,",
+            "we",
+            "went",
+            "out."
+          ],
+          "speakText": "Although it was cold, we went out."
+        },
+        {
+          "prompt": "Mən gələndə o gözləyirdi.",
+          "words": [
+            "When",
+            "I",
+            "arrived,",
+            "she",
+            "was",
+            "waiting."
+          ],
+          "speakText": "When I arrived, she was waiting."
+        },
+        {
+          "prompt": "Vaxtım olsa, sənə zəng edəcəyəm.",
+          "words": [
+            "If",
+            "I",
+            "have",
+            "time,",
+            "I",
+            "will",
+            "call",
+            "you."
+          ],
+          "speakText": "If I have time, I will call you."
+        },
+        {
+          "prompt": "Yorğun idim, ona görə yatdım.",
+          "words": [
+            "I",
+            "was",
+            "tired,",
+            "so",
+            "I",
+            "went",
+            "to",
+            "bed."
+          ],
+          "speakText": "I was tired, so I went to bed."
         }
       ]
     },
@@ -981,14 +2200,38 @@
           "hint": "Click each phrase and use it in your own voice.",
           "progressLabel": "Opinion phrases practiced",
           "items": [
-            { "label": "I think...", "speakText": "I think" },
-            { "label": "In my opinion...", "speakText": "In my opinion" },
-            { "label": "I believe...", "speakText": "I believe" },
-            { "label": "For me...", "speakText": "For me" },
-            { "label": "I agree.", "speakText": "I agree." },
-            { "label": "I don't think so.", "speakText": "I don't think so." },
-            { "label": "You're right.", "speakText": "You're right." },
-            { "label": "I'm not sure.", "speakText": "I'm not sure." }
+            {
+              "label": "I think...",
+              "speakText": "I think"
+            },
+            {
+              "label": "In my opinion...",
+              "speakText": "In my opinion"
+            },
+            {
+              "label": "I believe...",
+              "speakText": "I believe"
+            },
+            {
+              "label": "For me...",
+              "speakText": "For me"
+            },
+            {
+              "label": "I agree.",
+              "speakText": "I agree."
+            },
+            {
+              "label": "I don't think so.",
+              "speakText": "I don't think so."
+            },
+            {
+              "label": "You're right.",
+              "speakText": "You're right."
+            },
+            {
+              "label": "I'm not sure.",
+              "speakText": "I'm not sure."
+            }
           ]
         },
         {
@@ -997,14 +2240,38 @@
           "hint": "Listen to natural opinion and reaction phrases.",
           "progressLabel": "Conversation lines practiced",
           "items": [
-            { "label": "I think this film is great.", "speakText": "I think this film is great." },
-            { "label": "In my opinion, English is useful.", "speakText": "In my opinion, English is useful." },
-            { "label": "Really? What about you?", "speakText": "Really? What about you?" },
-            { "label": "That sounds interesting.", "speakText": "That sounds interesting." },
-            { "label": "I agree with you.", "speakText": "I agree with you." },
-            { "label": "I'm not sure about that.", "speakText": "I'm not sure about that." },
-            { "label": "Tell me more.", "speakText": "Tell me more." },
-            { "label": "For me, family is the most important.", "speakText": "For me, family is the most important." }
+            {
+              "label": "I think this film is great.",
+              "speakText": "I think this film is great."
+            },
+            {
+              "label": "In my opinion, English is useful.",
+              "speakText": "In my opinion, English is useful."
+            },
+            {
+              "label": "Really? What about you?",
+              "speakText": "Really? What about you?"
+            },
+            {
+              "label": "That sounds interesting.",
+              "speakText": "That sounds interesting."
+            },
+            {
+              "label": "I agree with you.",
+              "speakText": "I agree with you."
+            },
+            {
+              "label": "I'm not sure about that.",
+              "speakText": "I'm not sure about that."
+            },
+            {
+              "label": "Tell me more.",
+              "speakText": "Tell me more."
+            },
+            {
+              "label": "For me, family is the most important.",
+              "speakText": "For me, family is the most important."
+            }
           ]
         },
         {
@@ -1012,10 +2279,105 @@
           "title": "3. Build your opinion sentence",
           "hint": "Share an opinion about a topic.",
           "fields": [
-            { "name": "topic", "label": "Topic", "inputType": "text", "placeholder": "English" },
-            { "name": "opinion", "label": "Opinion word", "inputType": "text", "placeholder": "useful" }
+            {
+              "name": "topic",
+              "label": "Topic",
+              "inputType": "text",
+              "placeholder": "English"
+            },
+            {
+              "name": "opinion",
+              "label": "Opinion word",
+              "inputType": "text",
+              "placeholder": "useful"
+            }
           ],
           "example": "Example: I think English is useful."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Məncə bu film əladır.",
+          "words": [
+            "I",
+            "think",
+            "this",
+            "film",
+            "is",
+            "great."
+          ],
+          "speakText": "I think this film is great."
+        },
+        {
+          "prompt": "Məncə ingilis dili faydalıdır.",
+          "words": [
+            "In",
+            "my",
+            "opinion,",
+            "English",
+            "is",
+            "useful."
+          ],
+          "speakText": "In my opinion, English is useful."
+        },
+        {
+          "prompt": "Mən səninlə razıyam.",
+          "words": [
+            "I",
+            "agree",
+            "with",
+            "you."
+          ],
+          "speakText": "I agree with you."
+        },
+        {
+          "prompt": "Mən belə düşünmürəm.",
+          "words": [
+            "I",
+            "don't",
+            "think",
+            "so."
+          ],
+          "speakText": "I don't think so."
+        },
+        {
+          "prompt": "Bu maraqlı səslənir.",
+          "words": [
+            "That",
+            "sounds",
+            "interesting."
+          ],
+          "speakText": "That sounds interesting."
+        },
+        {
+          "prompt": "Mən buna əmin deyiləm.",
+          "words": [
+            "I'm",
+            "not",
+            "sure",
+            "about",
+            "that."
+          ],
+          "speakText": "I'm not sure about that."
+        },
+        {
+          "prompt": "Mənim üçün ailə ən vacibdir.",
+          "words": [
+            "For",
+            "me,",
+            "family",
+            "is",
+            "the",
+            "most",
+            "important."
+          ],
+          "speakText": "For me, family is the most important."
         }
       ]
     },

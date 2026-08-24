@@ -13,6 +13,10 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, limit);
   });
 
+  eleventyConfig.addFilter("toJson", function(value) {
+    return JSON.stringify(value);
+  });
+
   // Add a filter to sort by date
   eleventyConfig.addFilter("sortByDate", function(array) {
     return array.sort((a, b) => {

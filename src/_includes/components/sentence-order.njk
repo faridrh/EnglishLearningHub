@@ -1,0 +1,49 @@
+{% if lesson.sentenceOrder and lesson.sentenceOrder.items and lesson.sentenceOrder.items.length %}
+<div
+  id="sentence-order"
+  class="lesson-exercise-card sentence-order-card"
+  data-exercise-type="sentence-order"
+>
+  <span class="lesson-badge">{{ lesson.sentenceOrder.sectionTitle or "Sentence order" }}</span>
+  <h3 class="topic-title">{{ lesson.sentenceOrder.title or "Put the words in order" }}</h3>
+  <p class="topic-description">{{ lesson.sentenceOrder.instruction or "Tap the English words in the correct order." }}</p>
+
+  <script type="application/json" data-role="sentence-order-data">{{ lesson.sentenceOrder.items | toJson | safe }}</script>
+
+  <div class="sentence-order-meta">
+    <p class="sentence-order-progress" data-role="counter">Sentence 1 / {{ lesson.sentenceOrder.items | length }}</p>
+    <p class="sentence-order-score" data-role="score">Correct: 0</p>
+  </div>
+
+  <div data-role="round">
+    <div class="sentence-order-prompt-block">
+      <p class="sentence-order-kicker">{{ lesson.sentenceOrder.promptLabel or "Azerbaijani" }}</p>
+      <p class="sentence-order-prompt" data-role="prompt"></p>
+    </div>
+
+    <div
+      class="sentence-order-answer is-empty"
+      data-role="answer"
+      aria-label="Your English sentence"
+    >
+      <span class="sentence-order-placeholder">Tap the words below</span>
+    </div>
+
+    <div class="sentence-order-bank" data-role="bank" role="group" aria-label="English words"></div>
+
+    <div class="lesson-action-row">
+      <button type="button" class="button button-secondary" data-action="reset">Reset</button>
+      <button type="button" class="button button-secondary" data-action="show-answer">Show answer</button>
+      <button type="button" class="button" data-action="next" hidden>Next sentence</button>
+    </div>
+
+    <p data-role="feedback" class="lesson-feedback" aria-live="polite"></p>
+  </div>
+
+  <div class="sentence-order-complete" data-role="complete" hidden>
+    <p class="sentence-order-complete-title">Well done!</p>
+    <p data-role="summary"></p>
+    <button type="button" class="button" data-action="restart">Practice again</button>
+  </div>
+</div>
+{% endif %}

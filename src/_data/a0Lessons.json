@@ -54,13 +54,55 @@
       "sectionTitle": "Practice Now",
       "title": "Alphabet, words & your first sentence",
       "instruction": "Start practicing immediately: hear letters, practice words, then build a sentence with your name.",
-      "letters": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
       "words": [
-        { "word": "cat", "speakText": "cat" },
-        { "word": "dog", "speakText": "dog" },
-        { "word": "bus", "speakText": "bus" },
-        { "word": "pen", "speakText": "pen" },
-        { "word": "map", "speakText": "map" }
+        {
+          "word": "cat",
+          "speakText": "cat"
+        },
+        {
+          "word": "dog",
+          "speakText": "dog"
+        },
+        {
+          "word": "bus",
+          "speakText": "bus"
+        },
+        {
+          "word": "pen",
+          "speakText": "pen"
+        },
+        {
+          "word": "map",
+          "speakText": "map"
+        }
       ],
       "sentence": {
         "instruction": "Type your name to complete the sentence, then hear it spoken.",
@@ -78,6 +120,84 @@
         "feedbackPrefix": "Built sentence:",
         "example": "Example: My name is Farid."
       }
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Bu bir pişikdir.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "cat."
+          ],
+          "speakText": "This is a cat."
+        },
+        {
+          "prompt": "Bu bir itdir.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "dog."
+          ],
+          "speakText": "This is a dog."
+        },
+        {
+          "prompt": "Bu bir avtobusdur.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "bus."
+          ],
+          "speakText": "This is a bus."
+        },
+        {
+          "prompt": "Bu bir qələmdir.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "pen."
+          ],
+          "speakText": "This is a pen."
+        },
+        {
+          "prompt": "Bu bir xəritədir.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "map."
+          ],
+          "speakText": "This is a map."
+        },
+        {
+          "prompt": "Mənim adım Fəriddir.",
+          "words": [
+            "My",
+            "name",
+            "is",
+            "Farid."
+          ],
+          "speakText": "My name is Farid."
+        },
+        {
+          "prompt": "Mən tələbəyəm.",
+          "words": [
+            "I",
+            "am",
+            "a",
+            "student."
+          ],
+          "speakText": "I am a student."
+        }
+      ]
     },
     "ctaDescription": "Practice these sounds aloud every day before moving to the next lesson."
   },
@@ -146,14 +266,38 @@
           "hint": "Click each greeting, then say it out loud.",
           "progressLabel": "Greetings practiced",
           "items": [
-            { "label": "Hello", "speakText": "Hello" },
-            { "label": "Hi", "speakText": "Hi" },
-            { "label": "Good morning", "speakText": "Good morning" },
-            { "label": "Good afternoon", "speakText": "Good afternoon" },
-            { "label": "Good evening", "speakText": "Good evening" },
-            { "label": "Goodbye", "speakText": "Goodbye" },
-            { "label": "Bye", "speakText": "Bye" },
-            { "label": "See you later", "speakText": "See you later" }
+            {
+              "label": "Hello",
+              "speakText": "Hello"
+            },
+            {
+              "label": "Hi",
+              "speakText": "Hi"
+            },
+            {
+              "label": "Good morning",
+              "speakText": "Good morning"
+            },
+            {
+              "label": "Good afternoon",
+              "speakText": "Good afternoon"
+            },
+            {
+              "label": "Good evening",
+              "speakText": "Good evening"
+            },
+            {
+              "label": "Goodbye",
+              "speakText": "Goodbye"
+            },
+            {
+              "label": "Bye",
+              "speakText": "Bye"
+            },
+            {
+              "label": "See you later",
+              "speakText": "See you later"
+            }
           ]
         },
         {
@@ -162,12 +306,30 @@
           "hint": "Listen, repeat, and learn how to introduce yourself.",
           "progressLabel": "Phrases practiced",
           "items": [
-            { "label": "My name is...", "speakText": "My name is" },
-            { "label": "I am...", "speakText": "I am" },
-            { "label": "What is your name?", "speakText": "What is your name?" },
-            { "label": "Nice to meet you.", "speakText": "Nice to meet you." },
-            { "label": "How are you?", "speakText": "How are you?" },
-            { "label": "I am fine, thank you.", "speakText": "I am fine, thank you." }
+            {
+              "label": "My name is...",
+              "speakText": "My name is"
+            },
+            {
+              "label": "I am...",
+              "speakText": "I am"
+            },
+            {
+              "label": "What is your name?",
+              "speakText": "What is your name?"
+            },
+            {
+              "label": "Nice to meet you.",
+              "speakText": "Nice to meet you."
+            },
+            {
+              "label": "How are you?",
+              "speakText": "How are you?"
+            },
+            {
+              "label": "I am fine, thank you.",
+              "speakText": "I am fine, thank you."
+            }
           ]
         },
         {
@@ -183,6 +345,81 @@
             }
           ],
           "example": "Example: Hi, my name is Farid. Nice to meet you."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mənim adım Annadır.",
+          "words": [
+            "My",
+            "name",
+            "is",
+            "Anna."
+          ],
+          "speakText": "My name is Anna."
+        },
+        {
+          "prompt": "Sənin adın nədir?",
+          "words": [
+            "What",
+            "is",
+            "your",
+            "name?"
+          ],
+          "speakText": "What is your name?"
+        },
+        {
+          "prompt": "Tanış olmağıma şadam.",
+          "words": [
+            "Nice",
+            "to",
+            "meet",
+            "you."
+          ],
+          "speakText": "Nice to meet you."
+        },
+        {
+          "prompt": "Necəsən?",
+          "words": [
+            "How",
+            "are",
+            "you?"
+          ],
+          "speakText": "How are you?"
+        },
+        {
+          "prompt": "Mən yaxşıyam, təşəkkür edirəm.",
+          "words": [
+            "I",
+            "am",
+            "fine,",
+            "thank",
+            "you."
+          ],
+          "speakText": "I am fine, thank you."
+        },
+        {
+          "prompt": "Sabahın xeyir.",
+          "words": [
+            "Good",
+            "morning."
+          ],
+          "speakText": "Good morning."
+        },
+        {
+          "prompt": "Sonra görüşərik.",
+          "words": [
+            "See",
+            "you",
+            "later."
+          ],
+          "speakText": "See you later."
         }
       ]
     },
@@ -251,26 +488,86 @@
           "hint": "Tap each number to hear it. Practice until you know them all.",
           "progressLabel": "Numbers practiced",
           "items": [
-            { "label": "1", "speakText": "one" },
-            { "label": "2", "speakText": "two" },
-            { "label": "3", "speakText": "three" },
-            { "label": "4", "speakText": "four" },
-            { "label": "5", "speakText": "five" },
-            { "label": "6", "speakText": "six" },
-            { "label": "7", "speakText": "seven" },
-            { "label": "8", "speakText": "eight" },
-            { "label": "9", "speakText": "nine" },
-            { "label": "10", "speakText": "ten" },
-            { "label": "11", "speakText": "eleven" },
-            { "label": "12", "speakText": "twelve" },
-            { "label": "13", "speakText": "thirteen" },
-            { "label": "14", "speakText": "fourteen" },
-            { "label": "15", "speakText": "fifteen" },
-            { "label": "16", "speakText": "sixteen" },
-            { "label": "17", "speakText": "seventeen" },
-            { "label": "18", "speakText": "eighteen" },
-            { "label": "19", "speakText": "nineteen" },
-            { "label": "20", "speakText": "twenty" }
+            {
+              "label": "1",
+              "speakText": "one"
+            },
+            {
+              "label": "2",
+              "speakText": "two"
+            },
+            {
+              "label": "3",
+              "speakText": "three"
+            },
+            {
+              "label": "4",
+              "speakText": "four"
+            },
+            {
+              "label": "5",
+              "speakText": "five"
+            },
+            {
+              "label": "6",
+              "speakText": "six"
+            },
+            {
+              "label": "7",
+              "speakText": "seven"
+            },
+            {
+              "label": "8",
+              "speakText": "eight"
+            },
+            {
+              "label": "9",
+              "speakText": "nine"
+            },
+            {
+              "label": "10",
+              "speakText": "ten"
+            },
+            {
+              "label": "11",
+              "speakText": "eleven"
+            },
+            {
+              "label": "12",
+              "speakText": "twelve"
+            },
+            {
+              "label": "13",
+              "speakText": "thirteen"
+            },
+            {
+              "label": "14",
+              "speakText": "fourteen"
+            },
+            {
+              "label": "15",
+              "speakText": "fifteen"
+            },
+            {
+              "label": "16",
+              "speakText": "sixteen"
+            },
+            {
+              "label": "17",
+              "speakText": "seventeen"
+            },
+            {
+              "label": "18",
+              "speakText": "eighteen"
+            },
+            {
+              "label": "19",
+              "speakText": "nineteen"
+            },
+            {
+              "label": "20",
+              "speakText": "twenty"
+            }
           ]
         },
         {
@@ -279,12 +576,30 @@
           "hint": "Listen and repeat these useful questions and answers.",
           "progressLabel": "Phrases practiced",
           "items": [
-            { "label": "How old are you?", "speakText": "How old are you?" },
-            { "label": "I am 10 years old.", "speakText": "I am 10 years old." },
-            { "label": "I am 15 years old.", "speakText": "I am 15 years old." },
-            { "label": "I am 20 years old.", "speakText": "I am 20 years old." },
-            { "label": "She is 12 years old.", "speakText": "She is 12 years old." },
-            { "label": "He is 18 years old.", "speakText": "He is 18 years old." }
+            {
+              "label": "How old are you?",
+              "speakText": "How old are you?"
+            },
+            {
+              "label": "I am 10 years old.",
+              "speakText": "I am 10 years old."
+            },
+            {
+              "label": "I am 15 years old.",
+              "speakText": "I am 15 years old."
+            },
+            {
+              "label": "I am 20 years old.",
+              "speakText": "I am 20 years old."
+            },
+            {
+              "label": "She is 12 years old.",
+              "speakText": "She is 12 years old."
+            },
+            {
+              "label": "He is 18 years old.",
+              "speakText": "He is 18 years old."
+            }
           ]
         },
         {
@@ -300,6 +615,90 @@
             }
           ],
           "example": "Example: I am 10 years old."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mən on yaşındayam.",
+          "words": [
+            "I",
+            "am",
+            "ten",
+            "years",
+            "old."
+          ],
+          "speakText": "I am ten years old."
+        },
+        {
+          "prompt": "Sən neçə yaşındasan?",
+          "words": [
+            "How",
+            "old",
+            "are",
+            "you?"
+          ],
+          "speakText": "How old are you?"
+        },
+        {
+          "prompt": "O (qız) on iki yaşındadır.",
+          "words": [
+            "She",
+            "is",
+            "twelve",
+            "years",
+            "old."
+          ],
+          "speakText": "She is twelve years old."
+        },
+        {
+          "prompt": "O (oğlan) on səkkiz yaşındadır.",
+          "words": [
+            "He",
+            "is",
+            "eighteen",
+            "years",
+            "old."
+          ],
+          "speakText": "He is eighteen years old."
+        },
+        {
+          "prompt": "Mən iyirmi yaşındayam.",
+          "words": [
+            "I",
+            "am",
+            "twenty",
+            "years",
+            "old."
+          ],
+          "speakText": "I am twenty years old."
+        },
+        {
+          "prompt": "Mən on beş yaşındayam.",
+          "words": [
+            "I",
+            "am",
+            "fifteen",
+            "years",
+            "old."
+          ],
+          "speakText": "I am fifteen years old."
+        },
+        {
+          "prompt": "O səkkiz yaşındadır.",
+          "words": [
+            "He",
+            "is",
+            "eight",
+            "years",
+            "old."
+          ],
+          "speakText": "He is eight years old."
         }
       ]
     },
@@ -370,12 +769,30 @@
           "hint": "Click each phrase, then repeat it out loud.",
           "progressLabel": "Country phrases practiced",
           "items": [
-            { "label": "I am from Azerbaijan.", "speakText": "I am from Azerbaijan." },
-            { "label": "I am from Georgia.", "speakText": "I am from Georgia." },
-            { "label": "I am from Turkey.", "speakText": "I am from Turkey." },
-            { "label": "I am from the UK.", "speakText": "I am from the UK." },
-            { "label": "He is from Georgia.", "speakText": "He is from Georgia." },
-            { "label": "She is from Azerbaijan.", "speakText": "She is from Azerbaijan." }
+            {
+              "label": "I am from Azerbaijan.",
+              "speakText": "I am from Azerbaijan."
+            },
+            {
+              "label": "I am from Georgia.",
+              "speakText": "I am from Georgia."
+            },
+            {
+              "label": "I am from Turkey.",
+              "speakText": "I am from Turkey."
+            },
+            {
+              "label": "I am from the UK.",
+              "speakText": "I am from the UK."
+            },
+            {
+              "label": "He is from Georgia.",
+              "speakText": "He is from Georgia."
+            },
+            {
+              "label": "She is from Azerbaijan.",
+              "speakText": "She is from Azerbaijan."
+            }
           ]
         },
         {
@@ -384,12 +801,36 @@
           "hint": "Listen and say each nationality clearly.",
           "progressLabel": "Nationalities practiced",
           "items": [
-            { "label": "Azerbaijani", "sublabel": "I am Azerbaijani.", "speakText": "Azerbaijani. I am Azerbaijani." },
-            { "label": "Georgian", "sublabel": "I am Georgian.", "speakText": "Georgian. I am Georgian." },
-            { "label": "Turkish", "sublabel": "I am Turkish.", "speakText": "Turkish. I am Turkish." },
-            { "label": "British", "sublabel": "I am British.", "speakText": "British. I am British." },
-            { "label": "American", "sublabel": "I am American.", "speakText": "American. I am American." },
-            { "label": "Russian", "sublabel": "I am Russian.", "speakText": "Russian. I am Russian." }
+            {
+              "label": "Azerbaijani",
+              "sublabel": "I am Azerbaijani.",
+              "speakText": "Azerbaijani. I am Azerbaijani."
+            },
+            {
+              "label": "Georgian",
+              "sublabel": "I am Georgian.",
+              "speakText": "Georgian. I am Georgian."
+            },
+            {
+              "label": "Turkish",
+              "sublabel": "I am Turkish.",
+              "speakText": "Turkish. I am Turkish."
+            },
+            {
+              "label": "British",
+              "sublabel": "I am British.",
+              "speakText": "British. I am British."
+            },
+            {
+              "label": "American",
+              "sublabel": "I am American.",
+              "speakText": "American. I am American."
+            },
+            {
+              "label": "Russian",
+              "sublabel": "I am Russian.",
+              "speakText": "Russian. I am Russian."
+            }
           ]
         },
         {
@@ -398,12 +839,30 @@
           "hint": "Focus on the verb forms while you listen and repeat.",
           "progressLabel": "To-be phrases practiced",
           "items": [
-            { "label": "I am a student.", "speakText": "I am a student." },
-            { "label": "He is a teacher.", "speakText": "He is a teacher." },
-            { "label": "She is a doctor.", "speakText": "She is a doctor." },
-            { "label": "You are my friend.", "speakText": "You are my friend." },
-            { "label": "We are students.", "speakText": "We are students." },
-            { "label": "They are from Turkey.", "speakText": "They are from Turkey." }
+            {
+              "label": "I am a student.",
+              "speakText": "I am a student."
+            },
+            {
+              "label": "He is a teacher.",
+              "speakText": "He is a teacher."
+            },
+            {
+              "label": "She is a doctor.",
+              "speakText": "She is a doctor."
+            },
+            {
+              "label": "You are my friend.",
+              "speakText": "You are my friend."
+            },
+            {
+              "label": "We are students.",
+              "speakText": "We are students."
+            },
+            {
+              "label": "They are from Turkey.",
+              "speakText": "They are from Turkey."
+            }
           ]
         },
         {
@@ -425,6 +884,84 @@
             }
           ],
           "example": "Example: I am from Azerbaijan. I am Azerbaijani."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mən Azərbaycandanam.",
+          "words": [
+            "I",
+            "am",
+            "from",
+            "Azerbaijan."
+          ],
+          "speakText": "I am from Azerbaijan."
+        },
+        {
+          "prompt": "Mən azərbaycanlıyam.",
+          "words": [
+            "I",
+            "am",
+            "Azerbaijani."
+          ],
+          "speakText": "I am Azerbaijani."
+        },
+        {
+          "prompt": "O Gürcüstandandır.",
+          "words": [
+            "He",
+            "is",
+            "from",
+            "Georgia."
+          ],
+          "speakText": "He is from Georgia."
+        },
+        {
+          "prompt": "O Türkiyədəndir.",
+          "words": [
+            "She",
+            "is",
+            "from",
+            "Turkey."
+          ],
+          "speakText": "She is from Turkey."
+        },
+        {
+          "prompt": "Mən tələbəyəm.",
+          "words": [
+            "I",
+            "am",
+            "a",
+            "student."
+          ],
+          "speakText": "I am a student."
+        },
+        {
+          "prompt": "Onlar Böyük Britaniyadandır.",
+          "words": [
+            "They",
+            "are",
+            "from",
+            "the",
+            "UK."
+          ],
+          "speakText": "They are from the UK."
+        },
+        {
+          "prompt": "Sən mənim dostumsan.",
+          "words": [
+            "You",
+            "are",
+            "my",
+            "friend."
+          ],
+          "speakText": "You are my friend."
         }
       ]
     },
@@ -495,14 +1032,38 @@
           "hint": "Click each word, listen, and repeat.",
           "progressLabel": "Family words practiced",
           "items": [
-            { "label": "mother", "speakText": "mother" },
-            { "label": "father", "speakText": "father" },
-            { "label": "brother", "speakText": "brother" },
-            { "label": "sister", "speakText": "sister" },
-            { "label": "friend", "speakText": "friend" },
-            { "label": "grandmother", "speakText": "grandmother" },
-            { "label": "grandfather", "speakText": "grandfather" },
-            { "label": "child", "speakText": "child" }
+            {
+              "label": "mother",
+              "speakText": "mother"
+            },
+            {
+              "label": "father",
+              "speakText": "father"
+            },
+            {
+              "label": "brother",
+              "speakText": "brother"
+            },
+            {
+              "label": "sister",
+              "speakText": "sister"
+            },
+            {
+              "label": "friend",
+              "speakText": "friend"
+            },
+            {
+              "label": "grandmother",
+              "speakText": "grandmother"
+            },
+            {
+              "label": "grandfather",
+              "speakText": "grandfather"
+            },
+            {
+              "label": "child",
+              "speakText": "child"
+            }
           ]
         },
         {
@@ -511,12 +1072,30 @@
           "hint": "Listen and say these short introductions.",
           "progressLabel": "Sentences practiced",
           "items": [
-            { "label": "This is my mother.", "speakText": "This is my mother." },
-            { "label": "This is my father.", "speakText": "This is my father." },
-            { "label": "This is my friend.", "speakText": "This is my friend." },
-            { "label": "He is my brother.", "speakText": "He is my brother." },
-            { "label": "She is my sister.", "speakText": "She is my sister." },
-            { "label": "They are my parents.", "speakText": "They are my parents." }
+            {
+              "label": "This is my mother.",
+              "speakText": "This is my mother."
+            },
+            {
+              "label": "This is my father.",
+              "speakText": "This is my father."
+            },
+            {
+              "label": "This is my friend.",
+              "speakText": "This is my friend."
+            },
+            {
+              "label": "He is my brother.",
+              "speakText": "He is my brother."
+            },
+            {
+              "label": "She is my sister.",
+              "speakText": "She is my sister."
+            },
+            {
+              "label": "They are my parents.",
+              "speakText": "They are my parents."
+            }
           ]
         },
         {
@@ -532,6 +1111,84 @@
             }
           ],
           "example": "Example: This is my brother."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Bu mənim anamdır.",
+          "words": [
+            "This",
+            "is",
+            "my",
+            "mother."
+          ],
+          "speakText": "This is my mother."
+        },
+        {
+          "prompt": "Bu mənim atamdır.",
+          "words": [
+            "This",
+            "is",
+            "my",
+            "father."
+          ],
+          "speakText": "This is my father."
+        },
+        {
+          "prompt": "O mənim qardaşımdır.",
+          "words": [
+            "He",
+            "is",
+            "my",
+            "brother."
+          ],
+          "speakText": "He is my brother."
+        },
+        {
+          "prompt": "O mənim bacımdır.",
+          "words": [
+            "She",
+            "is",
+            "my",
+            "sister."
+          ],
+          "speakText": "She is my sister."
+        },
+        {
+          "prompt": "Bu mənim dostumdur.",
+          "words": [
+            "This",
+            "is",
+            "my",
+            "friend."
+          ],
+          "speakText": "This is my friend."
+        },
+        {
+          "prompt": "Onlar mənim valideynlərimdir.",
+          "words": [
+            "They",
+            "are",
+            "my",
+            "parents."
+          ],
+          "speakText": "They are my parents."
+        },
+        {
+          "prompt": "Bu mənim nənəmdir.",
+          "words": [
+            "This",
+            "is",
+            "my",
+            "grandmother."
+          ],
+          "speakText": "This is my grandmother."
         }
       ]
     },
@@ -602,14 +1259,38 @@
           "hint": "Click each object word and repeat it.",
           "progressLabel": "Objects practiced",
           "items": [
-            { "label": "pen", "speakText": "pen" },
-            { "label": "phone", "speakText": "phone" },
-            { "label": "bag", "speakText": "bag" },
-            { "label": "key", "speakText": "key" },
-            { "label": "book", "speakText": "book" },
-            { "label": "apple", "speakText": "apple" },
-            { "label": "umbrella", "speakText": "umbrella" },
-            { "label": "egg", "speakText": "egg" }
+            {
+              "label": "pen",
+              "speakText": "pen"
+            },
+            {
+              "label": "phone",
+              "speakText": "phone"
+            },
+            {
+              "label": "bag",
+              "speakText": "bag"
+            },
+            {
+              "label": "key",
+              "speakText": "key"
+            },
+            {
+              "label": "book",
+              "speakText": "book"
+            },
+            {
+              "label": "apple",
+              "speakText": "apple"
+            },
+            {
+              "label": "umbrella",
+              "speakText": "umbrella"
+            },
+            {
+              "label": "egg",
+              "speakText": "egg"
+            }
           ]
         },
         {
@@ -618,14 +1299,38 @@
           "hint": "Notice when we use a and when we use an.",
           "progressLabel": "Examples practiced",
           "items": [
-            { "label": "a pen", "speakText": "a pen" },
-            { "label": "a book", "speakText": "a book" },
-            { "label": "a phone", "speakText": "a phone" },
-            { "label": "an apple", "speakText": "an apple" },
-            { "label": "an egg", "speakText": "an egg" },
-            { "label": "an umbrella", "speakText": "an umbrella" },
-            { "label": "This is a pen.", "speakText": "This is a pen." },
-            { "label": "This is an apple.", "speakText": "This is an apple." }
+            {
+              "label": "a pen",
+              "speakText": "a pen"
+            },
+            {
+              "label": "a book",
+              "speakText": "a book"
+            },
+            {
+              "label": "a phone",
+              "speakText": "a phone"
+            },
+            {
+              "label": "an apple",
+              "speakText": "an apple"
+            },
+            {
+              "label": "an egg",
+              "speakText": "an egg"
+            },
+            {
+              "label": "an umbrella",
+              "speakText": "an umbrella"
+            },
+            {
+              "label": "This is a pen.",
+              "speakText": "This is a pen."
+            },
+            {
+              "label": "This is an apple.",
+              "speakText": "This is an apple."
+            }
           ]
         },
         {
@@ -633,12 +1338,30 @@
           "title": "3. Drag and drop: a or an?",
           "hint": "Drag each word to the correct box. On phones, tap a word then tap a box.",
           "words": [
-            { "word": "apple", "article": "an" },
-            { "word": "umbrella", "article": "an" },
-            { "word": "egg", "article": "an" },
-            { "word": "book", "article": "a" },
-            { "word": "phone", "article": "a" },
-            { "word": "key", "article": "a" }
+            {
+              "word": "apple",
+              "article": "an"
+            },
+            {
+              "word": "umbrella",
+              "article": "an"
+            },
+            {
+              "word": "egg",
+              "article": "an"
+            },
+            {
+              "word": "book",
+              "article": "a"
+            },
+            {
+              "word": "phone",
+              "article": "a"
+            },
+            {
+              "word": "key",
+              "article": "a"
+            }
           ]
         },
         {
@@ -654,6 +1377,84 @@
             }
           ],
           "example": "Example: This is a pen."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Bu bir qələmdir.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "pen."
+          ],
+          "speakText": "This is a pen."
+        },
+        {
+          "prompt": "Bu bir kitabdır.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "book."
+          ],
+          "speakText": "This is a book."
+        },
+        {
+          "prompt": "Bu bir almadır.",
+          "words": [
+            "This",
+            "is",
+            "an",
+            "apple."
+          ],
+          "speakText": "This is an apple."
+        },
+        {
+          "prompt": "Bu bir yumurtadır.",
+          "words": [
+            "This",
+            "is",
+            "an",
+            "egg."
+          ],
+          "speakText": "This is an egg."
+        },
+        {
+          "prompt": "Bu bir telefondur.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "phone."
+          ],
+          "speakText": "This is a phone."
+        },
+        {
+          "prompt": "Bu bir çətirdir.",
+          "words": [
+            "This",
+            "is",
+            "an",
+            "umbrella."
+          ],
+          "speakText": "This is an umbrella."
+        },
+        {
+          "prompt": "Bu bir açardır.",
+          "words": [
+            "This",
+            "is",
+            "a",
+            "key."
+          ],
+          "speakText": "This is a key."
         }
       ]
     },
@@ -720,14 +1521,38 @@
           "hint": "Click each verb and say it out loud.",
           "progressLabel": "Verbs practiced",
           "items": [
-            { "label": "eat", "speakText": "eat" },
-            { "label": "drink", "speakText": "drink" },
-            { "label": "go", "speakText": "go" },
-            { "label": "like", "speakText": "like" },
-            { "label": "have", "speakText": "have" },
-            { "label": "read", "speakText": "read" },
-            { "label": "play", "speakText": "play" },
-            { "label": "work", "speakText": "work" }
+            {
+              "label": "eat",
+              "speakText": "eat"
+            },
+            {
+              "label": "drink",
+              "speakText": "drink"
+            },
+            {
+              "label": "go",
+              "speakText": "go"
+            },
+            {
+              "label": "like",
+              "speakText": "like"
+            },
+            {
+              "label": "have",
+              "speakText": "have"
+            },
+            {
+              "label": "read",
+              "speakText": "read"
+            },
+            {
+              "label": "play",
+              "speakText": "play"
+            },
+            {
+              "label": "work",
+              "speakText": "work"
+            }
           ]
         },
         {
@@ -736,14 +1561,38 @@
           "hint": "Listen and repeat these simple present sentences.",
           "progressLabel": "Sentences practiced",
           "items": [
-            { "label": "I eat bread.", "speakText": "I eat bread." },
-            { "label": "I drink water.", "speakText": "I drink water." },
-            { "label": "I like tea.", "speakText": "I like tea." },
-            { "label": "I have a phone.", "speakText": "I have a phone." },
-            { "label": "I go to school.", "speakText": "I go to school." },
-            { "label": "I read a book.", "speakText": "I read a book." },
-            { "label": "I play football.", "speakText": "I play football." },
-            { "label": "I work at home.", "speakText": "I work at home." }
+            {
+              "label": "I eat bread.",
+              "speakText": "I eat bread."
+            },
+            {
+              "label": "I drink water.",
+              "speakText": "I drink water."
+            },
+            {
+              "label": "I like tea.",
+              "speakText": "I like tea."
+            },
+            {
+              "label": "I have a phone.",
+              "speakText": "I have a phone."
+            },
+            {
+              "label": "I go to school.",
+              "speakText": "I go to school."
+            },
+            {
+              "label": "I read a book.",
+              "speakText": "I read a book."
+            },
+            {
+              "label": "I play football.",
+              "speakText": "I play football."
+            },
+            {
+              "label": "I work at home.",
+              "speakText": "I work at home."
+            }
           ]
         },
         {
@@ -765,6 +1614,80 @@
             }
           ],
           "example": "Example: I like tea."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mən çay sevirəm.",
+          "words": [
+            "I",
+            "like",
+            "tea."
+          ],
+          "speakText": "I like tea."
+        },
+        {
+          "prompt": "Mənim bir telefonum var.",
+          "words": [
+            "I",
+            "have",
+            "a",
+            "phone."
+          ],
+          "speakText": "I have a phone."
+        },
+        {
+          "prompt": "Mən çörək yeyirəm.",
+          "words": [
+            "I",
+            "eat",
+            "bread."
+          ],
+          "speakText": "I eat bread."
+        },
+        {
+          "prompt": "Mən su içirəm.",
+          "words": [
+            "I",
+            "drink",
+            "water."
+          ],
+          "speakText": "I drink water."
+        },
+        {
+          "prompt": "Mən məktəbə gedirəm.",
+          "words": [
+            "I",
+            "go",
+            "to",
+            "school."
+          ],
+          "speakText": "I go to school."
+        },
+        {
+          "prompt": "Mən kitab oxuyuram.",
+          "words": [
+            "I",
+            "read",
+            "a",
+            "book."
+          ],
+          "speakText": "I read a book."
+        },
+        {
+          "prompt": "Mən futbol oynayıram.",
+          "words": [
+            "I",
+            "play",
+            "football."
+          ],
+          "speakText": "I play football."
         }
       ]
     },
@@ -835,14 +1758,38 @@
           "hint": "Click each color and repeat it.",
           "progressLabel": "Colors practiced",
           "items": [
-            { "label": "red", "speakText": "red" },
-            { "label": "blue", "speakText": "blue" },
-            { "label": "green", "speakText": "green" },
-            { "label": "black", "speakText": "black" },
-            { "label": "white", "speakText": "white" },
-            { "label": "yellow", "speakText": "yellow" },
-            { "label": "orange", "speakText": "orange" },
-            { "label": "brown", "speakText": "brown" }
+            {
+              "label": "red",
+              "speakText": "red"
+            },
+            {
+              "label": "blue",
+              "speakText": "blue"
+            },
+            {
+              "label": "green",
+              "speakText": "green"
+            },
+            {
+              "label": "black",
+              "speakText": "black"
+            },
+            {
+              "label": "white",
+              "speakText": "white"
+            },
+            {
+              "label": "yellow",
+              "speakText": "yellow"
+            },
+            {
+              "label": "orange",
+              "speakText": "orange"
+            },
+            {
+              "label": "brown",
+              "speakText": "brown"
+            }
           ]
         },
         {
@@ -851,14 +1798,38 @@
           "hint": "Listen and practice shape and description phrases.",
           "progressLabel": "Phrases practiced",
           "items": [
-            { "label": "circle", "speakText": "circle" },
-            { "label": "square", "speakText": "square" },
-            { "label": "It is red.", "speakText": "It is red." },
-            { "label": "It is blue.", "speakText": "It is blue." },
-            { "label": "It is a square.", "speakText": "It is a square." },
-            { "label": "It is a circle.", "speakText": "It is a circle." },
-            { "label": "It is a red book.", "speakText": "It is a red book." },
-            { "label": "It is a blue bag.", "speakText": "It is a blue bag." }
+            {
+              "label": "circle",
+              "speakText": "circle"
+            },
+            {
+              "label": "square",
+              "speakText": "square"
+            },
+            {
+              "label": "It is red.",
+              "speakText": "It is red."
+            },
+            {
+              "label": "It is blue.",
+              "speakText": "It is blue."
+            },
+            {
+              "label": "It is a square.",
+              "speakText": "It is a square."
+            },
+            {
+              "label": "It is a circle.",
+              "speakText": "It is a circle."
+            },
+            {
+              "label": "It is a red book.",
+              "speakText": "It is a red book."
+            },
+            {
+              "label": "It is a blue bag.",
+              "speakText": "It is a blue bag."
+            }
           ]
         },
         {
@@ -880,6 +1851,87 @@
             }
           ],
           "example": "Example: It is a red book."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Bu qırmızıdır.",
+          "words": [
+            "It",
+            "is",
+            "red."
+          ],
+          "speakText": "It is red."
+        },
+        {
+          "prompt": "Bu bir kvadratdır.",
+          "words": [
+            "It",
+            "is",
+            "a",
+            "square."
+          ],
+          "speakText": "It is a square."
+        },
+        {
+          "prompt": "Bu qırmızı kitabdır.",
+          "words": [
+            "It",
+            "is",
+            "a",
+            "red",
+            "book."
+          ],
+          "speakText": "It is a red book."
+        },
+        {
+          "prompt": "Bu mavi çantadır.",
+          "words": [
+            "It",
+            "is",
+            "a",
+            "blue",
+            "bag."
+          ],
+          "speakText": "It is a blue bag."
+        },
+        {
+          "prompt": "Bu yaşıl qələmdir.",
+          "words": [
+            "It",
+            "is",
+            "a",
+            "green",
+            "pen."
+          ],
+          "speakText": "It is a green pen."
+        },
+        {
+          "prompt": "Bu qara telefondur.",
+          "words": [
+            "It",
+            "is",
+            "a",
+            "black",
+            "phone."
+          ],
+          "speakText": "It is a black phone."
+        },
+        {
+          "prompt": "Bu bir dairədir.",
+          "words": [
+            "It",
+            "is",
+            "a",
+            "circle."
+          ],
+          "speakText": "It is a circle."
         }
       ]
     },
@@ -948,13 +2000,34 @@
           "hint": "Tap each day to hear it. Practice until you know all seven.",
           "progressLabel": "Days practiced",
           "items": [
-            { "label": "Mon", "speakText": "Monday" },
-            { "label": "Tue", "speakText": "Tuesday" },
-            { "label": "Wed", "speakText": "Wednesday" },
-            { "label": "Thu", "speakText": "Thursday" },
-            { "label": "Fri", "speakText": "Friday" },
-            { "label": "Sat", "speakText": "Saturday" },
-            { "label": "Sun", "speakText": "Sunday" }
+            {
+              "label": "Mon",
+              "speakText": "Monday"
+            },
+            {
+              "label": "Tue",
+              "speakText": "Tuesday"
+            },
+            {
+              "label": "Wed",
+              "speakText": "Wednesday"
+            },
+            {
+              "label": "Thu",
+              "speakText": "Thursday"
+            },
+            {
+              "label": "Fri",
+              "speakText": "Friday"
+            },
+            {
+              "label": "Sat",
+              "speakText": "Saturday"
+            },
+            {
+              "label": "Sun",
+              "speakText": "Sunday"
+            }
           ]
         },
         {
@@ -963,14 +2036,38 @@
           "hint": "Listen and repeat these daily routine sentences.",
           "progressLabel": "Phrases practiced",
           "items": [
-            { "label": "morning", "speakText": "morning" },
-            { "label": "afternoon", "speakText": "afternoon" },
-            { "label": "evening", "speakText": "evening" },
-            { "label": "I wake up in the morning.", "speakText": "I wake up in the morning." },
-            { "label": "I go to work in the afternoon.", "speakText": "I go to work in the afternoon." },
-            { "label": "I watch TV in the evening.", "speakText": "I watch TV in the evening." },
-            { "label": "I study on Monday.", "speakText": "I study on Monday." },
-            { "label": "I rest on Sunday.", "speakText": "I rest on Sunday." }
+            {
+              "label": "morning",
+              "speakText": "morning"
+            },
+            {
+              "label": "afternoon",
+              "speakText": "afternoon"
+            },
+            {
+              "label": "evening",
+              "speakText": "evening"
+            },
+            {
+              "label": "I wake up in the morning.",
+              "speakText": "I wake up in the morning."
+            },
+            {
+              "label": "I go to work in the afternoon.",
+              "speakText": "I go to work in the afternoon."
+            },
+            {
+              "label": "I watch TV in the evening.",
+              "speakText": "I watch TV in the evening."
+            },
+            {
+              "label": "I study on Monday.",
+              "speakText": "I study on Monday."
+            },
+            {
+              "label": "I rest on Sunday.",
+              "speakText": "I rest on Sunday."
+            }
           ]
         },
         {
@@ -992,6 +2089,94 @@
             }
           ],
           "example": "Example: I wake up in the morning."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Mən səhər oyanıram.",
+          "words": [
+            "I",
+            "wake",
+            "up",
+            "in",
+            "the",
+            "morning."
+          ],
+          "speakText": "I wake up in the morning."
+        },
+        {
+          "prompt": "Mən günortadan sonra işə gedirəm.",
+          "words": [
+            "I",
+            "go",
+            "to",
+            "work",
+            "in",
+            "the",
+            "afternoon."
+          ],
+          "speakText": "I go to work in the afternoon."
+        },
+        {
+          "prompt": "Mən axşam televizora baxıram.",
+          "words": [
+            "I",
+            "watch",
+            "TV",
+            "in",
+            "the",
+            "evening."
+          ],
+          "speakText": "I watch TV in the evening."
+        },
+        {
+          "prompt": "Mən bazar ertəsi dərs oxuyuram.",
+          "words": [
+            "I",
+            "study",
+            "on",
+            "Monday."
+          ],
+          "speakText": "I study on Monday."
+        },
+        {
+          "prompt": "Mən bazar günü dincəlirəm.",
+          "words": [
+            "I",
+            "rest",
+            "on",
+            "Sunday."
+          ],
+          "speakText": "I rest on Sunday."
+        },
+        {
+          "prompt": "Mənim sevimli günüm cümədir.",
+          "words": [
+            "My",
+            "favorite",
+            "day",
+            "is",
+            "Friday."
+          ],
+          "speakText": "My favorite day is Friday."
+        },
+        {
+          "prompt": "Mən çərşənbə axşamı məktəbə gedirəm.",
+          "words": [
+            "I",
+            "go",
+            "to",
+            "school",
+            "on",
+            "Tuesday."
+          ],
+          "speakText": "I go to school on Tuesday."
         }
       ]
     },
@@ -1066,12 +2251,30 @@
           "hint": "Click each question, listen, and repeat with rising intonation.",
           "progressLabel": "Questions practiced",
           "items": [
-            { "label": "What is this?", "speakText": "What is this?" },
-            { "label": "Where are you from?", "speakText": "Where are you from?" },
-            { "label": "Do you like tea?", "speakText": "Do you like tea?" },
-            { "label": "Do you like coffee?", "speakText": "Do you like coffee?" },
-            { "label": "What is your name?", "speakText": "What is your name?" },
-            { "label": "How are you?", "speakText": "How are you?" }
+            {
+              "label": "What is this?",
+              "speakText": "What is this?"
+            },
+            {
+              "label": "Where are you from?",
+              "speakText": "Where are you from?"
+            },
+            {
+              "label": "Do you like tea?",
+              "speakText": "Do you like tea?"
+            },
+            {
+              "label": "Do you like coffee?",
+              "speakText": "Do you like coffee?"
+            },
+            {
+              "label": "What is your name?",
+              "speakText": "What is your name?"
+            },
+            {
+              "label": "How are you?",
+              "speakText": "How are you?"
+            }
           ]
         },
         {
@@ -1080,12 +2283,30 @@
           "hint": "Learn useful short answers for everyday questions.",
           "progressLabel": "Answers practiced",
           "items": [
-            { "label": "Yes, I do.", "speakText": "Yes, I do." },
-            { "label": "No, I do not.", "speakText": "No, I do not." },
-            { "label": "Yes, I am.", "speakText": "Yes, I am." },
-            { "label": "No, I am not.", "speakText": "No, I am not." },
-            { "label": "I am from Azerbaijan.", "speakText": "I am from Azerbaijan." },
-            { "label": "It is a book.", "speakText": "It is a book." }
+            {
+              "label": "Yes, I do.",
+              "speakText": "Yes, I do."
+            },
+            {
+              "label": "No, I do not.",
+              "speakText": "No, I do not."
+            },
+            {
+              "label": "Yes, I am.",
+              "speakText": "Yes, I am."
+            },
+            {
+              "label": "No, I am not.",
+              "speakText": "No, I am not."
+            },
+            {
+              "label": "I am from Azerbaijan.",
+              "speakText": "I am from Azerbaijan."
+            },
+            {
+              "label": "It is a book.",
+              "speakText": "It is a book."
+            }
           ]
         },
         {
@@ -1094,10 +2315,22 @@
           "hint": "Hear complete question and answer dialogues.",
           "progressLabel": "Dialogues practiced",
           "items": [
-            { "label": "Do you like tea? Yes, I do.", "speakText": "Do you like tea? Yes, I do." },
-            { "label": "Do you like coffee? No, I do not.", "speakText": "Do you like coffee? No, I do not." },
-            { "label": "Where are you from? I am from Georgia.", "speakText": "Where are you from? I am from Georgia." },
-            { "label": "What is this? It is a phone.", "speakText": "What is this? It is a phone." }
+            {
+              "label": "Do you like tea? Yes, I do.",
+              "speakText": "Do you like tea? Yes, I do."
+            },
+            {
+              "label": "Do you like coffee? No, I do not.",
+              "speakText": "Do you like coffee? No, I do not."
+            },
+            {
+              "label": "Where are you from? I am from Georgia.",
+              "speakText": "Where are you from? I am from Georgia."
+            },
+            {
+              "label": "What is this? It is a phone.",
+              "speakText": "What is this? It is a phone."
+            }
           ]
         },
         {
@@ -1115,10 +2348,89 @@
               "name": "answer",
               "label": "Answer",
               "inputType": "select",
-              "options": ["Yes, I do.", "No, I do not."]
+              "options": [
+                "Yes, I do.",
+                "No, I do not."
+              ]
             }
           ],
           "example": "Example: Q: Do you like tea? A: Yes, I do."
+        }
+      ]
+    },
+    "sentenceOrder": {
+      "sectionTitle": "Sentence order",
+      "title": "Put the words in order",
+      "instruction": "Tap the English words in the correct order.",
+      "promptLabel": "Azerbaijani",
+      "items": [
+        {
+          "prompt": "Bu nədir?",
+          "words": [
+            "What",
+            "is",
+            "this?"
+          ],
+          "speakText": "What is this?"
+        },
+        {
+          "prompt": "Sən hardansan?",
+          "words": [
+            "Where",
+            "are",
+            "you",
+            "from?"
+          ],
+          "speakText": "Where are you from?"
+        },
+        {
+          "prompt": "Sən çay sevirsən?",
+          "words": [
+            "Do",
+            "you",
+            "like",
+            "tea?"
+          ],
+          "speakText": "Do you like tea?"
+        },
+        {
+          "prompt": "Bəli, sevirəm.",
+          "words": [
+            "Yes,",
+            "I",
+            "do."
+          ],
+          "speakText": "Yes, I do."
+        },
+        {
+          "prompt": "Xeyr, sevmirəm.",
+          "words": [
+            "No,",
+            "I",
+            "do",
+            "not."
+          ],
+          "speakText": "No, I do not."
+        },
+        {
+          "prompt": "Sənin adın nədir?",
+          "words": [
+            "What",
+            "is",
+            "your",
+            "name?"
+          ],
+          "speakText": "What is your name?"
+        },
+        {
+          "prompt": "Mən Azərbaycandanam.",
+          "words": [
+            "I",
+            "am",
+            "from",
+            "Azerbaijan."
+          ],
+          "speakText": "I am from Azerbaijan."
         }
       ]
     },

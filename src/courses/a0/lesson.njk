@@ -20,6 +20,9 @@ eleventyComputed:
     <p class="lesson-goal"><strong>Goal:</strong> {{ lesson.goal }}</p>
     <nav class="lesson-jump-nav" aria-label="Lesson sections">
       <a href="#practice-now" class="button button-primary">Start Practice</a>
+      {% if lesson.sentenceOrder %}
+      <a href="#sentence-order" class="button button-secondary">Sentence Order</a>
+      {% endif %}
       <a href="#learn-content" class="button button-secondary">Review Lesson</a>
       <a href="#practice-tasks" class="button button-secondary">Speaking Tasks</a>
     </nav>
@@ -307,6 +310,8 @@ eleventyComputed:
       <p data-role="feedback" class="lesson-feedback"></p>
     </div>
     {% endif %}
+
+    {% include "components/sentence-order.njk" %}
   </div>
 </section>
 {% endif %}

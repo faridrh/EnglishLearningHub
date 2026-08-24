@@ -46,7 +46,8 @@
         { "$ref": "#/$defs/sentenceExercise" },
         { "$ref": "#/$defs/dragdropArticlesExercise" }
       ]
-    }
+    },
+    "sentenceOrder": { "$ref": "#/$defs/sentenceOrderExercise" }
   },
   "$defs": {
     "contentItem": {
@@ -209,6 +210,38 @@
         "emptyMessage": { "type": "string" },
         "feedbackPrefix": { "type": "string" },
         "example": { "type": "string" }
+      }
+    },
+    "sentenceOrderItem": {
+      "type": "object",
+      "required": ["prompt", "words"],
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "description": "L1 meaning shown to the learner (Azerbaijani on the English site)"
+        },
+        "words": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string" },
+          "description": "Target-language tokens in the correct order. Keep punctuation on the last token."
+        },
+        "speakText": { "type": "string" }
+      }
+    },
+    "sentenceOrderExercise": {
+      "type": "object",
+      "required": ["items"],
+      "properties": {
+        "sectionTitle": { "type": "string" },
+        "title": { "type": "string" },
+        "instruction": { "type": "string" },
+        "promptLabel": { "type": "string" },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/sentenceOrderItem" }
+        }
       }
     },
     "dragdropArticlesExercise": {
