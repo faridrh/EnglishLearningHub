@@ -80,7 +80,11 @@
         "id": { "type": "string" },
         "label": { "type": "string" },
         "speakText": { "type": "string" },
-        "sublabel": { "type": "string" }
+        "sublabel": { "type": "string" },
+        "translation": {
+          "type": "string",
+          "description": "Azerbaijani translation shown on hover in Practice Now"
+        }
       }
     },
     "field": {

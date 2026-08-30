@@ -67,8 +67,11 @@ eleventyComputed:
         <p class="lesson-step-hint">Click a word to hear it, then say it out loud.</p>
         <div class="practice-word-grid" data-role="word-grid">
           {% for word in lesson.exercise.words %}
-          <button type="button" class="practice-word-btn" data-speak="{{ word.speakText or word.word }}" data-word="{{ word.word }}">
+          <button type="button" class="practice-word-btn" data-speak="{{ word.speakText or word.word }}" data-word="{{ word.word }}"{% if word.translation %} aria-description="{{ word.translation }}"{% endif %}>
             <span class="practice-word-label">{{ word.word }}</span>
+            {% if word.translation %}
+            <span class="practice-word-translation" role="tooltip">{{ word.translation }}</span>
+            {% endif %}
             <span class="practice-word-action"><i class="fas fa-volume-up" aria-hidden="true"></i> Listen</span>
           </button>
           {% endfor %}
@@ -146,10 +149,14 @@ eleventyComputed:
             data-track-id="{{ item.id or item.label or item.speakText }}"
             data-speak="{{ item.speakText or item.label }}"
             data-word="{{ item.id or item.label }}"
+            {% if item.translation %}aria-description="{{ item.translation }}"{% endif %}
           >
             <span class="practice-word-label">{{ item.label }}</span>
             {% if item.sublabel %}
             <span class="practice-word-sublabel">{{ item.sublabel }}</span>
+            {% endif %}
+            {% if item.translation %}
+            <span class="practice-word-translation" role="tooltip">{{ item.translation }}</span>
             {% endif %}
             <span class="practice-word-action"><i class="fas fa-volume-up" aria-hidden="true"></i> Listen</span>
           </button>

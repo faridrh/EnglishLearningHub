@@ -85,22 +85,27 @@
       "words": [
         {
           "word": "cat",
+          "translation": "pişik",
           "speakText": "cat"
         },
         {
           "word": "dog",
+          "translation": "it",
           "speakText": "dog"
         },
         {
           "word": "bus",
+          "translation": "avtobus",
           "speakText": "bus"
         },
         {
           "word": "pen",
+          "translation": "qələm",
           "speakText": "pen"
         },
         {
           "word": "map",
+          "translation": "xəritə",
           "speakText": "map"
         }
       ],
@@ -268,34 +273,42 @@
           "items": [
             {
               "label": "Hello",
+              "translation": "Salam",
               "speakText": "Hello"
             },
             {
               "label": "Hi",
+              "translation": "Salam",
               "speakText": "Hi"
             },
             {
               "label": "Good morning",
+              "translation": "Sabahın xeyir",
               "speakText": "Good morning"
             },
             {
               "label": "Good afternoon",
+              "translation": "Günortanız xeyir",
               "speakText": "Good afternoon"
             },
             {
               "label": "Good evening",
+              "translation": "Axşamın xeyir",
               "speakText": "Good evening"
             },
             {
               "label": "Goodbye",
+              "translation": "Sağ ol",
               "speakText": "Goodbye"
             },
             {
               "label": "Bye",
+              "translation": "Sağ ol",
               "speakText": "Bye"
             },
             {
               "label": "See you later",
+              "translation": "Görüşənədək",
               "speakText": "See you later"
             }
           ]
@@ -308,26 +321,32 @@
           "items": [
             {
               "label": "My name is...",
+              "translation": "Mənim adım...",
               "speakText": "My name is"
             },
             {
               "label": "I am...",
+              "translation": "Mən...",
               "speakText": "I am"
             },
             {
               "label": "What is your name?",
+              "translation": "Sənin adın nədir?",
               "speakText": "What is your name?"
             },
             {
               "label": "Nice to meet you.",
+              "translation": "Tanışlığımıza şadam.",
               "speakText": "Nice to meet you."
             },
             {
               "label": "How are you?",
+              "translation": "Necəsən?",
               "speakText": "How are you?"
             },
             {
               "label": "I am fine, thank you.",
+              "translation": "Yaxşıyam, təşəkkür edirəm.",
               "speakText": "I am fine, thank you."
             }
           ]
@@ -578,26 +597,32 @@
           "items": [
             {
               "label": "How old are you?",
+              "translation": "Neçə yaşın var?",
               "speakText": "How old are you?"
             },
             {
               "label": "I am 10 years old.",
+              "translation": "Mənim 10 yaşım var.",
               "speakText": "I am 10 years old."
             },
             {
               "label": "I am 15 years old.",
+              "translation": "Mənim 15 yaşım var.",
               "speakText": "I am 15 years old."
             },
             {
               "label": "I am 20 years old.",
+              "translation": "Mənim 20 yaşım var.",
               "speakText": "I am 20 years old."
             },
             {
               "label": "She is 12 years old.",
+              "translation": "Onun 12 yaşı var.",
               "speakText": "She is 12 years old."
             },
             {
               "label": "He is 18 years old.",
+              "translation": "Onun 18 yaşı var.",
               "speakText": "He is 18 years old."
             }
           ]
@@ -771,26 +796,32 @@
           "items": [
             {
               "label": "I am from Azerbaijan.",
+              "translation": "Mən Azərbaycandanam.",
               "speakText": "I am from Azerbaijan."
             },
             {
               "label": "I am from Georgia.",
+              "translation": "Mən Gürcüstandanam.",
               "speakText": "I am from Georgia."
             },
             {
               "label": "I am from Turkey.",
+              "translation": "Mən Türkiyədənam.",
               "speakText": "I am from Turkey."
             },
             {
               "label": "I am from the UK.",
+              "translation": "Mən Böyük Britaniyadanam.",
               "speakText": "I am from the UK."
             },
             {
               "label": "He is from Georgia.",
+              "translation": "O Gürcüstandandır.",
               "speakText": "He is from Georgia."
             },
             {
               "label": "She is from Azerbaijan.",
+              "translation": "O Azərbaycandandır.",
               "speakText": "She is from Azerbaijan."
             }
           ]
@@ -803,31 +834,37 @@
           "items": [
             {
               "label": "Azerbaijani",
+              "translation": "azərbaycanlı",
               "sublabel": "I am Azerbaijani.",
               "speakText": "Azerbaijani. I am Azerbaijani."
             },
             {
               "label": "Georgian",
+              "translation": "gürcü",
               "sublabel": "I am Georgian.",
               "speakText": "Georgian. I am Georgian."
             },
             {
               "label": "Turkish",
+              "translation": "türk",
               "sublabel": "I am Turkish.",
               "speakText": "Turkish. I am Turkish."
             },
             {
               "label": "British",
+              "translation": "britaniyalı",
               "sublabel": "I am British.",
               "speakText": "British. I am British."
             },
             {
               "label": "American",
+              "translation": "amerikalı",
               "sublabel": "I am American.",
               "speakText": "American. I am American."
             },
             {
               "label": "Russian",
+              "translation": "rus",
               "sublabel": "I am Russian.",
               "speakText": "Russian. I am Russian."
             }
@@ -841,26 +878,32 @@
           "items": [
             {
               "label": "I am a student.",
+              "translation": "Mən tələbəyəm.",
               "speakText": "I am a student."
             },
             {
               "label": "He is a teacher.",
+              "translation": "O müəllimdir.",
               "speakText": "He is a teacher."
             },
             {
               "label": "She is a doctor.",
+              "translation": "O həkimdir.",
               "speakText": "She is a doctor."
             },
             {
               "label": "You are my friend.",
+              "translation": "Sən mənim dostumsan.",
               "speakText": "You are my friend."
             },
             {
               "label": "We are students.",
+              "translation": "Biz tələbəyik.",
               "speakText": "We are students."
             },
             {
               "label": "They are from Turkey.",
+              "translation": "Onlar Türkiyədəndirlər.",
               "speakText": "They are from Turkey."
             }
           ]
@@ -1034,34 +1077,42 @@
           "items": [
             {
               "label": "mother",
+              "translation": "ana",
               "speakText": "mother"
             },
             {
               "label": "father",
+              "translation": "ata",
               "speakText": "father"
             },
             {
               "label": "brother",
+              "translation": "qardaş",
               "speakText": "brother"
             },
             {
               "label": "sister",
+              "translation": "bacı",
               "speakText": "sister"
             },
             {
               "label": "friend",
+              "translation": "dost",
               "speakText": "friend"
             },
             {
               "label": "grandmother",
+              "translation": "nənə",
               "speakText": "grandmother"
             },
             {
               "label": "grandfather",
+              "translation": "baba",
               "speakText": "grandfather"
             },
             {
               "label": "child",
+              "translation": "uşaq",
               "speakText": "child"
             }
           ]
@@ -1074,26 +1125,32 @@
           "items": [
             {
               "label": "This is my mother.",
+              "translation": "Bu mənim anamdır.",
               "speakText": "This is my mother."
             },
             {
               "label": "This is my father.",
+              "translation": "Bu mənim atamdır.",
               "speakText": "This is my father."
             },
             {
               "label": "This is my friend.",
+              "translation": "Bu mənim dostumdur.",
               "speakText": "This is my friend."
             },
             {
               "label": "He is my brother.",
+              "translation": "O mənim qardaşımdır.",
               "speakText": "He is my brother."
             },
             {
               "label": "She is my sister.",
+              "translation": "O mənim bacımdır.",
               "speakText": "She is my sister."
             },
             {
               "label": "They are my parents.",
+              "translation": "Onlar mənim valideynlərimdir.",
               "speakText": "They are my parents."
             }
           ]
@@ -1261,34 +1318,42 @@
           "items": [
             {
               "label": "pen",
+              "translation": "qələm",
               "speakText": "pen"
             },
             {
               "label": "phone",
+              "translation": "telefon",
               "speakText": "phone"
             },
             {
               "label": "bag",
+              "translation": "çanta",
               "speakText": "bag"
             },
             {
               "label": "key",
+              "translation": "açar",
               "speakText": "key"
             },
             {
               "label": "book",
+              "translation": "kitab",
               "speakText": "book"
             },
             {
               "label": "apple",
+              "translation": "alma",
               "speakText": "apple"
             },
             {
               "label": "umbrella",
+              "translation": "çətir",
               "speakText": "umbrella"
             },
             {
               "label": "egg",
+              "translation": "yumurta",
               "speakText": "egg"
             }
           ]
@@ -1301,34 +1366,42 @@
           "items": [
             {
               "label": "a pen",
+              "translation": "bir qələm",
               "speakText": "a pen"
             },
             {
               "label": "a book",
+              "translation": "bir kitab",
               "speakText": "a book"
             },
             {
               "label": "a phone",
+              "translation": "bir telefon",
               "speakText": "a phone"
             },
             {
               "label": "an apple",
+              "translation": "bir alma",
               "speakText": "an apple"
             },
             {
               "label": "an egg",
+              "translation": "bir yumurta",
               "speakText": "an egg"
             },
             {
               "label": "an umbrella",
+              "translation": "bir çətir",
               "speakText": "an umbrella"
             },
             {
               "label": "This is a pen.",
+              "translation": "Bu bir qələmdir.",
               "speakText": "This is a pen."
             },
             {
               "label": "This is an apple.",
+              "translation": "Bu bir almadır.",
               "speakText": "This is an apple."
             }
           ]
@@ -1523,34 +1596,42 @@
           "items": [
             {
               "label": "eat",
+              "translation": "yemək",
               "speakText": "eat"
             },
             {
               "label": "drink",
+              "translation": "içmək",
               "speakText": "drink"
             },
             {
               "label": "go",
+              "translation": "getmək",
               "speakText": "go"
             },
             {
               "label": "like",
+              "translation": "sevmək",
               "speakText": "like"
             },
             {
               "label": "have",
+              "translation": "sahib olmaq",
               "speakText": "have"
             },
             {
               "label": "read",
+              "translation": "oxumaq",
               "speakText": "read"
             },
             {
               "label": "play",
+              "translation": "oynamaq",
               "speakText": "play"
             },
             {
               "label": "work",
+              "translation": "işləmək",
               "speakText": "work"
             }
           ]
@@ -1563,34 +1644,42 @@
           "items": [
             {
               "label": "I eat bread.",
+              "translation": "Mən çörək yeyirəm.",
               "speakText": "I eat bread."
             },
             {
               "label": "I drink water.",
+              "translation": "Mən su içirəm.",
               "speakText": "I drink water."
             },
             {
               "label": "I like tea.",
+              "translation": "Mən çayı sevirəm.",
               "speakText": "I like tea."
             },
             {
               "label": "I have a phone.",
+              "translation": "Mənim telefonum var.",
               "speakText": "I have a phone."
             },
             {
               "label": "I go to school.",
+              "translation": "Mən məktəbə gedirəm.",
               "speakText": "I go to school."
             },
             {
               "label": "I read a book.",
+              "translation": "Mən kitab oxuyuram.",
               "speakText": "I read a book."
             },
             {
               "label": "I play football.",
+              "translation": "Mən futbol oynayıram.",
               "speakText": "I play football."
             },
             {
               "label": "I work at home.",
+              "translation": "Mən evdə işləyirəm.",
               "speakText": "I work at home."
             }
           ]
@@ -1760,34 +1849,42 @@
           "items": [
             {
               "label": "red",
+              "translation": "qırmızı",
               "speakText": "red"
             },
             {
               "label": "blue",
+              "translation": "mavi",
               "speakText": "blue"
             },
             {
               "label": "green",
+              "translation": "yaşıl",
               "speakText": "green"
             },
             {
               "label": "black",
+              "translation": "qara",
               "speakText": "black"
             },
             {
               "label": "white",
+              "translation": "ağ",
               "speakText": "white"
             },
             {
               "label": "yellow",
+              "translation": "sarı",
               "speakText": "yellow"
             },
             {
               "label": "orange",
+              "translation": "narıncı",
               "speakText": "orange"
             },
             {
               "label": "brown",
+              "translation": "qəhvəyi",
               "speakText": "brown"
             }
           ]
@@ -1800,34 +1897,42 @@
           "items": [
             {
               "label": "circle",
+              "translation": "dairə",
               "speakText": "circle"
             },
             {
               "label": "square",
+              "translation": "kvadrat",
               "speakText": "square"
             },
             {
               "label": "It is red.",
+              "translation": "O qırmızıdır.",
               "speakText": "It is red."
             },
             {
               "label": "It is blue.",
+              "translation": "O mavidir.",
               "speakText": "It is blue."
             },
             {
               "label": "It is a square.",
+              "translation": "O bir kvadratdır.",
               "speakText": "It is a square."
             },
             {
               "label": "It is a circle.",
+              "translation": "O bir dairədir.",
               "speakText": "It is a circle."
             },
             {
               "label": "It is a red book.",
+              "translation": "Bu qırmızı kitabdır.",
               "speakText": "It is a red book."
             },
             {
               "label": "It is a blue bag.",
+              "translation": "Bu mavi çantadır.",
               "speakText": "It is a blue bag."
             }
           ]
@@ -2038,34 +2143,42 @@
           "items": [
             {
               "label": "morning",
+              "translation": "səhər",
               "speakText": "morning"
             },
             {
               "label": "afternoon",
+              "translation": "günorta",
               "speakText": "afternoon"
             },
             {
               "label": "evening",
+              "translation": "axşam",
               "speakText": "evening"
             },
             {
               "label": "I wake up in the morning.",
+              "translation": "Mən səhər oyanıram.",
               "speakText": "I wake up in the morning."
             },
             {
               "label": "I go to work in the afternoon.",
+              "translation": "Mən günortadan sonra işə gedirəm.",
               "speakText": "I go to work in the afternoon."
             },
             {
               "label": "I watch TV in the evening.",
+              "translation": "Mən axşam televizora baxıram.",
               "speakText": "I watch TV in the evening."
             },
             {
               "label": "I study on Monday.",
+              "translation": "Mən bazar ertəsi dərs oxuyuram.",
               "speakText": "I study on Monday."
             },
             {
               "label": "I rest on Sunday.",
+              "translation": "Mən bazar günü dincəlirəm.",
               "speakText": "I rest on Sunday."
             }
           ]
@@ -2253,26 +2366,32 @@
           "items": [
             {
               "label": "What is this?",
+              "translation": "Bu nədir?",
               "speakText": "What is this?"
             },
             {
               "label": "Where are you from?",
+              "translation": "Sən haradansan?",
               "speakText": "Where are you from?"
             },
             {
               "label": "Do you like tea?",
+              "translation": "Sən çayı sevirsən?",
               "speakText": "Do you like tea?"
             },
             {
               "label": "Do you like coffee?",
+              "translation": "Sən qəhvəni sevirsən?",
               "speakText": "Do you like coffee?"
             },
             {
               "label": "What is your name?",
+              "translation": "Sənin adın nədir?",
               "speakText": "What is your name?"
             },
             {
               "label": "How are you?",
+              "translation": "Necəsən?",
               "speakText": "How are you?"
             }
           ]
@@ -2285,26 +2404,32 @@
           "items": [
             {
               "label": "Yes, I do.",
+              "translation": "Bəli, sevirəm.",
               "speakText": "Yes, I do."
             },
             {
               "label": "No, I do not.",
+              "translation": "Xeyr, sevmirəm.",
               "speakText": "No, I do not."
             },
             {
               "label": "Yes, I am.",
+              "translation": "Bəli.",
               "speakText": "Yes, I am."
             },
             {
               "label": "No, I am not.",
+              "translation": "Xeyr, deyiləm.",
               "speakText": "No, I am not."
             },
             {
               "label": "I am from Azerbaijan.",
+              "translation": "Mən Azərbaycandanam.",
               "speakText": "I am from Azerbaijan."
             },
             {
               "label": "It is a book.",
+              "translation": "Bu bir kitabdır.",
               "speakText": "It is a book."
             }
           ]
@@ -2317,18 +2442,22 @@
           "items": [
             {
               "label": "Do you like tea? Yes, I do.",
+              "translation": "Sən çayı sevirsən? Bəli, sevirəm.",
               "speakText": "Do you like tea? Yes, I do."
             },
             {
               "label": "Do you like coffee? No, I do not.",
+              "translation": "Sən qəhvəni sevirsən? Xeyr, sevmirəm.",
               "speakText": "Do you like coffee? No, I do not."
             },
             {
               "label": "Where are you from? I am from Georgia.",
+              "translation": "Sən haradansan? Mən Gürcüstandanam.",
               "speakText": "Where are you from? I am from Georgia."
             },
             {
               "label": "What is this? It is a phone.",
+              "translation": "Bu nədir? Bu bir telefondur.",
               "speakText": "What is this? It is a phone."
             }
           ]
