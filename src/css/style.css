@@ -2052,3 +2052,727 @@ p {
 .page-content .about-link-card h2 {
   margin-top: 0;
 }
+
+/* Lesson pages — EasyDanish-style skin (CSS only)
+   Scoped with :has() so course indexes, grammar, stories, etc. are unchanged.
+-------------------------------------------------- */
+body:has(.lesson-page-header) {
+  --lesson-bg: #f4f0e8;
+  --lesson-surface: #fffdf8;
+  --lesson-ink: #232323;
+  --lesson-accent: #b55239;
+  --lesson-muted: #5a5247;
+  --lesson-faint: #8a7a6a;
+  --lesson-border: #eadcc7;
+  --lesson-border-strong: #d8c4a3;
+  --lesson-cream: #fffbf2;
+  --lesson-peach: #fff5f0;
+  --lesson-ok: #2a9d62;
+  --lesson-ok-bg: #edf8f1;
+  --lesson-ok-ink: #1f7a4c;
+  --color-primary: #b55239;
+  --color-primary-light: #c56b55;
+  --color-primary-dark: #934330;
+  --color-text: #232323;
+  --color-text-light: #5a5247;
+  --color-background: #fffdf8;
+  --color-background-alt: #f4f0e8;
+  --color-border: #eadcc7;
+  --font-primary: "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-headings: "Trebuchet MS", "Segoe UI", sans-serif;
+  font-family: var(--font-primary);
+  color: var(--lesson-ink);
+  background:
+    radial-gradient(circle at top right, #fce9d8, var(--lesson-bg) 42%),
+    var(--lesson-bg);
+}
+
+body:has(.lesson-page-header) h1,
+body:has(.lesson-page-header) h2,
+body:has(.lesson-page-header) h3,
+body:has(.lesson-page-header) h4,
+body:has(.lesson-page-header) h5,
+body:has(.lesson-page-header) h6 {
+  font-family: var(--font-headings);
+  color: var(--lesson-ink);
+}
+
+body:has(.lesson-page-header) a {
+  color: var(--lesson-accent);
+}
+
+body:has(.lesson-page-header) a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Slim header / footer so the lesson column matches EasyDanish */
+body:has(.lesson-page-header) .site-header {
+  background: color-mix(in srgb, var(--lesson-surface) 85%, #fff);
+  box-shadow: none;
+  border-bottom: 1px solid var(--lesson-border);
+  padding: 1rem 0;
+}
+
+body:has(.lesson-page-header) .site-tagline {
+  display: none;
+}
+
+body:has(.lesson-page-header) .logo,
+body:has(.lesson-page-header) .logo-text {
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--lesson-accent);
+}
+
+body:has(.lesson-page-header) .menu-item a:hover,
+body:has(.lesson-page-header) .menu-item.active a {
+  background: var(--lesson-peach);
+  color: var(--lesson-accent);
+}
+
+body:has(.lesson-page-header) .lang-link:hover,
+body:has(.lesson-page-header) .lang-link.active {
+  color: var(--lesson-accent);
+  background: var(--lesson-peach);
+}
+
+body:has(.lesson-page-header) .site-footer {
+  background: color-mix(in srgb, var(--lesson-surface) 85%, #fff);
+  border-top: 1px solid var(--lesson-border);
+  margin-top: 0;
+  padding: 1.25rem 0;
+}
+
+body:has(.lesson-page-header) .site-content {
+  width: min(920px, 100%);
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+}
+
+body:has(.lesson-page-header) .site-content .container {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Header block: left-aligned, no gray band */
+body:has(.lesson-page-header) .lesson-page-header {
+  text-align: left;
+  background: transparent;
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+body:has(.lesson-page-header) .lesson-page-header .page-title {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+body:has(.lesson-page-header) .lesson-page-header p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body:has(.lesson-page-header) .lesson-eyebrow {
+  color: var(--lesson-accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+}
+
+body:has(.lesson-page-header) .lesson-page-header .page-description {
+  max-width: 40rem;
+  margin: 0 0 0.75rem;
+  color: var(--lesson-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body:has(.lesson-page-header) .lesson-goal {
+  max-width: none;
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.9rem;
+  background: var(--lesson-cream);
+  border: 1px solid #f0ddb0;
+  border-radius: 10px;
+  color: var(--lesson-ink);
+  line-height: 1.5;
+}
+
+body:has(.lesson-page-header) .lesson-jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  gap: 0.5rem 0.75rem;
+}
+
+body:has(.lesson-page-header) .lesson-jump-nav a,
+body:has(.lesson-page-header) .lesson-jump-nav .button,
+body:has(.lesson-page-header) .lesson-jump-nav .button-primary,
+body:has(.lesson-page-header) .lesson-jump-nav .button-secondary {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--lesson-border-strong);
+  background: #fff;
+  color: var(--lesson-ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+body:has(.lesson-page-header) .lesson-jump-nav a:hover,
+body:has(.lesson-page-header) .lesson-jump-nav .button:hover {
+  border-color: var(--lesson-accent);
+  color: var(--lesson-accent);
+  background: #fff;
+  text-decoration: none;
+}
+
+/* Practice / review / speaking sections sit in the parchment, not tinted bands */
+body:has(.lesson-page-header) .lesson-practice-section,
+body:has(.lesson-page-header) .lesson-learn-section,
+body:has(.lesson-page-header) .tips-section {
+  padding: 0 0 2rem;
+  background: transparent;
+}
+
+body:has(.lesson-page-header) .lesson-section-heading {
+  text-align: left;
+  margin-bottom: 0.85rem;
+}
+
+body:has(.lesson-page-header) .lesson-section-intro {
+  max-width: none;
+  margin: 0;
+  color: var(--lesson-faint);
+  line-height: 1.45;
+}
+
+body:has(.lesson-page-header) .section-title {
+  text-align: left;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0;
+  font-size: 1.35rem;
+}
+
+body:has(.lesson-page-header) .section-title:after {
+  display: none;
+}
+
+body:has(.lesson-page-header) .lesson-practice-section .section-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--lesson-faint);
+}
+
+body:has(.lesson-page-header) .lesson-badge {
+  background: var(--lesson-peach);
+  color: var(--lesson-accent);
+  border: 1px solid #f0c9bc;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.2rem 0.55rem;
+}
+
+body:has(.lesson-page-header) .lesson-badge-muted {
+  background: var(--lesson-cream);
+  color: var(--lesson-faint);
+  border-color: var(--lesson-border);
+}
+
+/* Practice card */
+body:has(.lesson-page-header) .lesson-exercise-card {
+  background: var(--lesson-surface);
+  border: 1.5px solid var(--lesson-accent);
+  border-radius: 14px;
+  box-shadow: none;
+  padding: 1.15rem 1.2rem 1.35rem;
+  max-width: none;
+}
+
+body:has(.lesson-page-header) .lesson-exercise-card .topic-title {
+  color: var(--lesson-ink);
+  font-size: 1.25rem;
+  margin: 0 0 0.45rem;
+}
+
+body:has(.lesson-page-header) .lesson-exercise-card .topic-description {
+  color: var(--lesson-muted);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+body:has(.lesson-page-header) .lesson-exercise-card + .sentence-order-card {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+body:has(.lesson-page-header) .lesson-exercise-card:has(+ .sentence-order-card) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+body:has(.lesson-page-header) .lesson-step {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 0.75rem;
+  margin-top: 0;
+  padding: 0.9rem 0 0;
+  border-top: 1px solid #f1e5d4;
+}
+
+body:has(.lesson-page-header) .lesson-step:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+body:has(.lesson-page-header) .lesson-step-title {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+}
+
+body:has(.lesson-page-header) .lesson-progress {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--lesson-faint);
+  align-self: start;
+  text-align: right;
+}
+
+body:has(.lesson-page-header) .lesson-step > *:not(.lesson-step-title):not(.lesson-progress) {
+  grid-column: 1 / -1;
+}
+
+body:has(.lesson-page-header) .lesson-step-hint {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  color: #6f6254;
+}
+
+body:has(.lesson-page-header) .lesson-progress-done {
+  color: var(--lesson-ok);
+}
+
+body:has(.lesson-page-header) .alphabet-grid {
+  grid-template-columns: repeat(auto-fill, minmax(2.75rem, 1fr));
+  gap: 0.45rem;
+  max-width: none;
+}
+
+body:has(.lesson-page-header) .alphabet-key {
+  border: 1px solid var(--lesson-border-strong);
+  background: #fff;
+  border-radius: 8px;
+  min-height: 2.75rem;
+  font-size: 1rem;
+}
+
+body:has(.lesson-page-header) .alphabet-key:hover {
+  background: #f7efe4;
+  border-color: var(--lesson-accent);
+  transform: none;
+}
+
+body:has(.lesson-page-header) .alphabet-key.is-practiced {
+  background: var(--lesson-ok-bg);
+  border-color: var(--lesson-ok);
+  color: var(--lesson-ok-ink);
+}
+
+body:has(.lesson-page-header) .practice-word-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+body:has(.lesson-page-header) .practice-word-btn {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0.5rem 0.85rem;
+  min-width: 4.5rem;
+  border: 1px solid var(--lesson-border-strong);
+  border-radius: 8px;
+  background: #fff;
+}
+
+body:has(.lesson-page-header) .practice-word-btn:hover {
+  background: #f7efe4;
+  border-color: var(--lesson-accent);
+  transform: none;
+}
+
+body:has(.lesson-page-header) .practice-word-btn.is-practiced {
+  background: var(--lesson-ok-bg);
+  border-color: var(--lesson-ok);
+}
+
+body:has(.lesson-page-header) .practice-word-label {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+body:has(.lesson-page-header) .practice-word-sublabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #6f6254;
+  text-align: left;
+}
+
+body:has(.lesson-page-header) .practice-word-btn.is-practiced .practice-word-sublabel {
+  color: var(--lesson-ok-ink);
+}
+
+body:has(.lesson-page-header) .practice-word-action {
+  display: none;
+}
+
+body:has(.lesson-page-header) .sentence-builder-fields {
+  display: grid;
+  gap: 0.65rem;
+  align-items: stretch;
+  margin-bottom: 0.75rem;
+}
+
+body:has(.lesson-page-header) .lesson-field-label {
+  font-size: 0.92rem;
+}
+
+body:has(.lesson-page-header) .lesson-field-input {
+  width: 100%;
+  min-width: 0;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid var(--lesson-border-strong);
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+}
+
+body:has(.lesson-page-header) .sentence-preview {
+  margin: 0 0 0.4rem;
+  padding: 0.7rem 0.8rem;
+  background: var(--lesson-cream);
+  border: 1px dashed #e5d7c1;
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+body:has(.lesson-page-header) .lesson-example {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: #6f6254;
+}
+
+body:has(.lesson-page-header) .lesson-feedback {
+  margin: 0.75rem 0 0;
+  color: var(--lesson-ok);
+  font-weight: 600;
+}
+
+body:has(.lesson-page-header) .lesson-feedback.is-error {
+  color: #8f2424;
+}
+
+/* Drag / drop articles */
+body:has(.lesson-page-header) .lesson-word-bank {
+  background: var(--lesson-cream);
+  border: 1px dashed #e5d7c1;
+  border-radius: 10px;
+  padding: 0.55rem;
+  min-height: 2.75rem;
+}
+
+body:has(.lesson-page-header) .lesson-drop-zone {
+  border: 2px dashed var(--lesson-border-strong);
+  border-radius: 12px;
+  background: #fff;
+}
+
+body:has(.lesson-page-header) .lesson-drop-zone h4 {
+  color: var(--lesson-accent);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Buttons inside the lesson column */
+body:has(.lesson-page-header) .site-content .button {
+  background: var(--lesson-accent);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 0.55rem 0.9rem;
+  justify-self: start;
+}
+
+body:has(.lesson-page-header) .site-content .button[hidden] {
+  display: none;
+}
+
+body:has(.lesson-page-header) .site-content .button:hover {
+  background: var(--color-primary-dark);
+  color: #fff;
+  filter: brightness(0.98);
+}
+
+body:has(.lesson-page-header) .site-content .button-secondary {
+  background: #fff;
+  border-color: var(--lesson-border-strong);
+  color: var(--lesson-ink);
+}
+
+body:has(.lesson-page-header) .site-content .button-secondary:hover {
+  border-color: var(--lesson-accent);
+  color: var(--lesson-accent);
+  background: #fff;
+}
+
+body:has(.lesson-page-header) .lesson-jump-nav a,
+body:has(.lesson-page-header) .lesson-jump-nav .button,
+body:has(.lesson-page-header) .lesson-jump-nav .button-primary,
+body:has(.lesson-page-header) .lesson-jump-nav .button-secondary {
+  flex: 0 0 auto;
+  background: #fff;
+  color: var(--lesson-ink);
+  border: 1px solid var(--lesson-border-strong);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+body:has(.lesson-page-header) .lesson-jump-nav a:hover,
+body:has(.lesson-page-header) .lesson-jump-nav .button:hover {
+  background: #fff;
+  border-color: var(--lesson-accent);
+  color: var(--lesson-accent);
+  filter: none;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .topic-card .button,
+body:has(.lesson-page-header) .tip-card .button {
+  background: #fff;
+  border: 1px solid var(--lesson-border-strong);
+  color: var(--lesson-ink);
+  font-size: 0.9rem;
+  padding: 0.4rem 0.7rem;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .topic-card .button:hover,
+body:has(.lesson-page-header) .tip-card .button:hover {
+  border-color: var(--lesson-accent);
+  color: var(--lesson-accent);
+  background: #fff;
+}
+
+/* Sentence order */
+body:has(.lesson-page-header) .sentence-order-card {
+  margin-top: 1rem;
+}
+
+body:has(.lesson-page-header) .sentence-order-kicker {
+  color: var(--lesson-faint);
+  font-size: 0.72rem;
+}
+
+body:has(.lesson-page-header) .sentence-order-prompt-block {
+  margin: 0 0 0.75rem;
+  padding: 0.7rem 0.8rem;
+  background: var(--lesson-cream);
+  border: 1px solid #f1e5d4;
+  border-radius: 10px;
+}
+
+body:has(.lesson-page-header) .sentence-order-prompt {
+  font-size: 1.12rem;
+  margin: 0;
+}
+
+body:has(.lesson-page-header) .sentence-order-answer {
+  min-height: 3.25rem;
+  border: 1.5px solid var(--lesson-border-strong);
+  border-radius: 10px;
+  background: #fff;
+}
+
+body:has(.lesson-page-header) .sentence-order-answer.is-correct {
+  border-color: var(--lesson-ok);
+  background: var(--lesson-ok-bg);
+}
+
+body:has(.lesson-page-header) .sentence-order-answer.is-wrong {
+  border-color: #c64343;
+  background: #fff1f1;
+}
+
+body:has(.lesson-page-header) .sentence-order-chip {
+  border: 1px solid var(--lesson-border-strong);
+  border-radius: 8px;
+  background: #fff;
+}
+
+body:has(.lesson-page-header) .sentence-order-chip:hover:not(:disabled) {
+  background: #f7efe4;
+  border-color: var(--lesson-accent);
+  transform: none;
+}
+
+body:has(.lesson-page-header) .sentence-order-chip.is-placed {
+  background: var(--lesson-peach);
+  border-color: var(--lesson-accent);
+}
+
+body:has(.lesson-page-header) .sentence-order-answer.is-correct .sentence-order-chip.is-placed {
+  background: var(--lesson-ok-bg);
+  border-color: var(--lesson-ok);
+  color: var(--lesson-ok-ink);
+}
+
+/* Review + speaking: stacked cards, not a marketing grid */
+body:has(.lesson-page-header) .lesson-learn-section .topics-grid,
+body:has(.lesson-page-header) .tips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .topic-card,
+body:has(.lesson-page-header) .tip-card {
+  background: var(--lesson-surface);
+  border: 1px solid var(--lesson-border);
+  border-left: 1px solid var(--lesson-border);
+  border-radius: 12px;
+  box-shadow: none;
+  padding: 1rem 1.1rem;
+  text-align: left;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .topic-card:hover,
+body:has(.lesson-page-header) .tip-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .topic-title,
+body:has(.lesson-page-header) .tip-card h3 {
+  color: var(--lesson-ink);
+  font-size: 1.05rem;
+  margin: 0 0 0.45rem;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .topic-description {
+  color: #3a342c;
+  line-height: 1.55;
+  margin: 0;
+}
+
+body:has(.lesson-page-header) .tip-icon {
+  display: none;
+}
+
+body:has(.lesson-page-header) .tip-card p {
+  color: #3a342c;
+  line-height: 1.55;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .section-footer {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .section-footer .button {
+  background: transparent;
+  border: 0;
+  color: var(--lesson-accent);
+  padding: 0;
+}
+
+body:has(.lesson-page-header) .lesson-learn-section .section-footer .button:hover {
+  background: transparent;
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+/* Complete / partner CTAs → cream cards instead of blue bands */
+body:has(.lesson-page-header) .cta-section,
+body:has(.lesson-page-header) .lesson-nav-cta {
+  background: var(--lesson-surface);
+  color: var(--lesson-ink);
+  text-align: left;
+  border: 1px solid var(--lesson-border);
+  border-radius: 12px;
+  padding: 1.15rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+body:has(.lesson-page-header) .cta-title {
+  color: var(--lesson-ink);
+  font-size: 1.35rem;
+  margin: 0 0 0.35rem;
+}
+
+body:has(.lesson-page-header) .cta-description {
+  max-width: none;
+  margin: 0;
+  color: var(--lesson-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body:has(.lesson-page-header) .cta-buttons {
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  body:has(.lesson-page-header) .menu {
+    background-color: var(--lesson-surface);
+  }
+
+  body:has(.lesson-page-header) .lesson-page-header .page-title {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body:has(.lesson-page-header) .alphabet-grid {
+    grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
+  }
+
+  body:has(.lesson-page-header) .lesson-step {
+    grid-template-columns: 1fr;
+  }
+
+  body:has(.lesson-page-header) .lesson-progress {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    margin: 0 0 0.35rem;
+  }
+
+  body:has(.lesson-page-header) .cta-buttons {
+    flex-direction: column;
+  }
+
+  body:has(.lesson-page-header) .cta-buttons .button {
+    text-align: center;
+    width: 100%;
+  }
+}
