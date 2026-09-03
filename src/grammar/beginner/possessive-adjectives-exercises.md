@@ -8,7 +8,7 @@ collection: grammar
 
 # Possessive Adjectives Exercises
 
-Practice using possessive adjectives with these 5 comprehensive interactive exercises. Master choosing, matching, and correcting possessive adjectives (my, your, his, her, its, our, their) with instant feedback on your answers.
+Practice using possessive adjectives with these two interactive exercises. Master choosing, matching, and correcting possessive adjectives (my, your, his, her, its, our, their) with instant feedback on your answers.
 
 ## Exercise Instructions
 
@@ -203,6 +203,14 @@ function resetExercise(exerciseId) {
   transition: border-color 0.3s;
 }
 
+.select-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
 .fill-blank:focus {
   outline: none;
   border-color: #333;
@@ -214,6 +222,16 @@ function resetExercise(exerciseId) {
 }
 
 .fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.select-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

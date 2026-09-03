@@ -8,7 +8,7 @@ collection: grammar
 
 # Subject Pronouns Exercises
 
-Practice using subject pronouns with these 5 comprehensive interactive exercises. Master choosing, replacing, and identifying the correct subject pronouns (I, you, he, she, it, we, they) with instant feedback on your answers.
+Practice using subject pronouns with these two interactive exercises. Master choosing, replacing, and identifying the correct subject pronouns (I, you, he, she, it, we, they) with instant feedback on your answers.
 
 ## Exercise Instructions
 
@@ -41,6 +41,7 @@ Replace the underlined noun(s) with the correct subject pronoun:
       <option value="I">I</option>
       <option value="you">you</option>
       <option value="he">he</option>
+      <option value="she">she</option>
       <option value="it">it</option>
       <option value="we">we</option>
       <option value="they">they</option>
@@ -189,6 +190,14 @@ function resetExercise(exerciseId) {
   transition: border-color 0.3s;
 }
 
+.select-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
 .fill-blank:focus {
   outline: none;
   border-color: #333;
@@ -200,6 +209,16 @@ function resetExercise(exerciseId) {
 }
 
 .fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.select-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }
@@ -296,5 +315,5 @@ function resetExercise(exerciseId) {
 - **[Subject-pronouns Quiz](/quiz/beginner/subject-pronouns-quiz/)** - Test your knowledge with a quiz
 
 - **[Subject Pronouns Grammar Lesson](/grammar/beginner/subject-pronouns/)** - Learn the rules and theory
-- **[Object Pronouns](/grammar/intermediate/relative-clauses/)** - Learn about other pronouns
+- **[Object Pronouns](/grammar/beginner/object-pronouns/)** - Learn about other pronouns
 - **[More Beginner Exercises](/exercises/)** - Practice other beginner grammar topics

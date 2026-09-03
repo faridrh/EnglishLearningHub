@@ -30,31 +30,31 @@ Choose the correct article for each sentence:
   </div>
   
   <div class="exercise-item">
-    <p><strong>2.</strong> She is <input type="text" class="fill-blank" data-answer="an" placeholder="____"> excellent student.</p>
+    <p><strong>2.</strong> She is <select class="select-blank" data-answer="an"><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> excellent student.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>3.</strong> <input type="text" class="fill-blank" data-answer="The" placeholder="____"> book on the table is mine.</p>
+    <p><strong>3.</strong> <select class="select-blank" data-answer="the"><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> book on the table is mine.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>4.</strong> We saw <input type="text" class="fill-blank" data-answer="an" placeholder="____"> elephant at the zoo.</p>
+    <p><strong>4.</strong> We saw <select class="select-blank" data-answer="an"><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> elephant at the zoo.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>5.</strong> <input type="text" class="fill-blank" data-answer="The" placeholder="____"> sun rises in the east.</p>
+    <p><strong>5.</strong> <select class="select-blank" data-answer="the"><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> sun rises in the east.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>6.</strong> He wants to be <input type="text" class="fill-blank" data-answer="a" placeholder="____"> doctor.</p>
+    <p><strong>6.</strong> He wants to be <select class="select-blank" data-answer="a"><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> doctor.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>7.</strong> I love <input type="text" class="fill-blank" data-answer="" placeholder="____"> chocolate, but I don't like <input type="text" class="fill-blank" data-answer="the" placeholder="____"> chocolate cake on the counter.</p>
+    <p><strong>7.</strong> I love <select class="select-blank" data-answer=""><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> chocolate, but I don't like <select class="select-blank" data-answer="the"><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> chocolate cake on the counter.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>8.</strong> My sister plays <input type="text" class="fill-blank" data-answer="the" placeholder="____"> piano and <input type="text" class="fill-blank" data-answer="" placeholder="____"> tennis very well.</p>
+    <p><strong>8.</strong> My sister plays <select class="select-blank" data-answer="the"><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> piano and <select class="select-blank" data-answer=""><option value="">-- choose --</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="">(no article)</option></select> tennis very well.</p>
   </div>
   
   <div class="exercise-controls">
@@ -69,45 +69,6 @@ Choose the correct article for each sentence:
   </div>
 </div>
 
----
-
-## Exercise 2: Basic Article Usage
-
-Fill in the blanks with **a**, **an**, or **the**.
-
-<div class="interactive-exercise" id="articles-exercise-2" data-exercise-id="articles-basic-usage">
-  <div class="exercise-item">
-    <p><strong>1.</strong> I saw <input type="text" class="fill-blank" data-answer="an" placeholder="____"> elephant at the zoo yesterday.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> She wants to buy <input type="text" class="fill-blank" data-answer="a" placeholder="____"> new phone.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> We stayed at <input type="text" class="fill-blank" data-answer="a" placeholder="____"> hotel near the beach.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> He is <input type="text" class="fill-blank" data-answer="an" placeholder="____"> honest man.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> I found <input type="text" class="fill-blank" data-answer="a" placeholder="____"> book on the table. <input type="text" class="fill-blank" data-answer="The" placeholder="____"> book was very interesting.</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('articles-exercise-2')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('articles-exercise-2')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="articles-exercise-2-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="articles-exercise-2-score"></p>
-    <div id="articles-exercise-2-feedback"></div>
-  </div>
-</div>
----
 ---
 
 ## Exercise 2: Contextual Article Practice
@@ -225,6 +186,14 @@ function resetExercise(exerciseId) {
   transition: border-color 0.3s;
 }
 
+.select-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
 .fill-blank:focus {
   outline: none;
   border-color: #333;
@@ -236,6 +205,16 @@ function resetExercise(exerciseId) {
 }
 
 .fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.select-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

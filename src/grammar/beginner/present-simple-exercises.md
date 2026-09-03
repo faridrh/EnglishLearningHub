@@ -8,7 +8,7 @@ collection: grammar
 
 # Present Simple Exercises
 
-Practice using the present simple tense with these 5 comprehensive interactive exercises. Master affirmative sentences, negatives, yes/no questions, and wh-questions with instant feedback on your answers.
+Practice using the present simple tense with these two interactive exercises. Master affirmative sentences, negatives, yes/no questions, and wh-questions with instant feedback on your answers.
 
 ## Exercise Instructions
 
@@ -60,7 +60,7 @@ Complete each sentence using the present simple tense. Remember:
       <option value="rises">rises</option>
       <option value="rise">rise</option>
       <option value="is rising">is rising</option>
-      <option value="rised">rised</option>
+      <option value="rose">rose</option>
     </select> (rise) in the east.</p>
   </div>
   
@@ -180,6 +180,14 @@ function resetExercise(exerciseId) {
   transition: border-color 0.3s;
 }
 
+.select-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
 .fill-blank:focus {
   outline: none;
   border-color: #333;
@@ -191,6 +199,16 @@ function resetExercise(exerciseId) {
 }
 
 .fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.select-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

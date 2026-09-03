@@ -8,7 +8,7 @@ collection: grammar
 
 # Plural Nouns Exercises
 
-Practice forming plural nouns with these 5 comprehensive interactive exercises. Master regular plurals, -es endings, irregular forms, and contextual usage with instant feedback on your answers.
+Practice forming plural nouns with these two interactive exercises. Master regular plurals, -es endings, irregular forms, and contextual usage with instant feedback on your answers.
 
 ## Exercise Instructions
 
@@ -24,7 +24,7 @@ Write the plural form of the noun in parentheses:
       <option value="">-- choose --</option>
       <option value="books">books</option>
       <option value="book">book</option>
-      <option value="boooks">boooks</option>
+      <option value="bookes">bookes</option>
       <option value="boxes">boxes</option>
     </select> (book) on my desk.</p>
   </div>
@@ -169,6 +169,14 @@ function resetExercise(exerciseId) {
   transition: border-color 0.3s;
 }
 
+.select-blank {
+  border: 2px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
 .fill-blank:focus {
   outline: none;
   border-color: #333;
@@ -180,6 +188,16 @@ function resetExercise(exerciseId) {
 }
 
 .fill-blank.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.select-blank.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }
