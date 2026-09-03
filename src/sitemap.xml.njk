@@ -1,16 +1,65 @@
 ---
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
+layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% set latest = none %}
+  {% for p in collections.all %}
+    {% if p.date %}
+      {% if latest is none or p.date > latest %}
+        {% set latest = p.date %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
   <!-- Homepage -->
   <url>
     <loc>{{ site.url }}/</loc>
-    <lastmod>2025-01-28T12:00:00.000Z</lastmod>
+    <lastmod>{{ latest.toISOString() }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  {% for page in collections.all %}
+    {% set u = page.url %}
+    {% set skip = false %}
+
+    {# Allow per-page opt-out via `sitemap: false` in front matter #}
+    {% if page.data.sitemap is defined and page.data.sitemap == false %}
+      {% set skip = true %}
+    {% endif %}
+
+    {# Exclude common static directories and assets #}
+    {% set excludePrefixes = ['/css/','/js/','/images/','/attached_assets/','/assets/','/vendor/'] %}
+    {% for pfx in excludePrefixes %}
+      {% if u and u.indexOf(pfx) == 0 %}
+        {% set skip = true %}
+      {% endif %}
+    {% endfor %}
+
+    {# Exclude exact filenames or top-level files we don't want in sitemap #}
+    {% set excludeExact = ['/robots.txt','/sitemap.xml','/404.html'] %}
+    {% for ex in excludeExact %}
+      {% if u == ex %}
+        {% set skip = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% if page.url and page.url != '/' and not page.data.eleventyExcludeFromCollections and not skip %}
+      <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        {% if page.data.lastmod %}
+          <lastmod>{{ page.data.lastmod.toISOString() }}</lastmod>
+        {% else %}
+          <lastmod>{{ page.date.toISOString() }}</lastmod>
+        {% endif %}
+        <changefreq>{{ page.data.changefreq or 'monthly' }}</changefreq>
+        <priority>{{ page.data.priority or '0.5' }}</priority>
+      </url>
+    {% endif %}
+  {% endfor %}
+</urlset>
   
   <!-- Main Section Pages -->
   <url>
