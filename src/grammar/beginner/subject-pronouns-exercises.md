@@ -23,27 +23,80 @@ Replace the underlined noun(s) with the correct subject pronoun:
 
 <div class="interactive-exercise" id="subject-pronouns-exercise" data-exercise-id="subject-pronouns-beginner">
   <div class="exercise-item">
-    <p><strong>1.</strong> <strong>Maria</strong> is a teacher. <input type="text" class="fill-blank" data-answer="She" placeholder="____"> works at a school.</p>
+    <p><strong>1.</strong> <strong>Maria</strong> is a teacher. <select class="select-blank" data-answer="She">
+      <option value="">-- choose --</option>
+      <option value="I">I</option>
+      <option value="you">you</option>
+      <option value="he">he</option>
+      <option value="She">She</option>
+      <option value="it">it</option>
+      <option value="we">we</option>
+      <option value="they">they</option>
+    </select> works at a school.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>2.</strong> <strong>The car</strong> is expensive. <input type="text" class="fill-blank" data-answer="It" placeholder="______"> costs $50,000.</p>
+    <p><strong>2.</strong> <strong>The car</strong> is expensive. <select class="select-blank" data-answer="It">
+      <option value="">-- choose --</option>
+      <option value="I">I</option>
+      <option value="you">you</option>
+      <option value="he">he</option>
+      <option value="it">it</option>
+      <option value="we">we</option>
+      <option value="they">they</option>
+    </select> costs $50,000.</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>3.</strong> <strong>My brother and I</strong> are students. <input type="text" class="fill-blank" data-answer="We" placeholder="______"> study at the same university.</p>
+    <p><strong>3.</strong> <strong>My brother and I</strong> are students. <select class="select-blank" data-answer="We">
+      <option value="">-- choose --</option>
+      <option value="I">I</option>
+      <option value="you">you</option>
+      <option value="he">he</option>
+      <option value="she">she</option>
+      <option value="it">it</option>
+      <option value="We">We</option>
+      <option value="they">they</option>
+    </select> study at the same university.</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>4.</strong> <strong>David and Emma</strong> are getting married. <input type="text" class="fill-blank" data-answer="They" placeholder="______"> are very happy.</p>
+    <p><strong>4.</strong> <strong>David and Emma</strong> are getting married. <select class="select-blank" data-answer="They">
+      <option value="">-- choose --</option>
+      <option value="I">I</option>
+      <option value="you">you</option>
+      <option value="he">he</option>
+      <option value="she">she</option>
+      <option value="it">it</option>
+      <option value="we">we</option>
+      <option value="They">They</option>
+    </select> are very happy.</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>5.</strong> <strong>My father</strong> is a doctor. <input type="text" class="fill-blank" data-answer="He" placeholder="______"> works at the hospital.</p>
+    <p><strong>5.</strong> <strong>My father</strong> is a doctor. <select class="select-blank" data-answer="He">
+      <option value="">-- choose --</option>
+      <option value="I">I</option>
+      <option value="you">you</option>
+      <option value="He">He</option>
+      <option value="she">she</option>
+      <option value="it">it</option>
+      <option value="we">we</option>
+      <option value="they">they</option>
+    </select> works at the hospital.</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>6.</strong> <strong>The books</strong> are on the shelf. <input type="text" class="fill-blank" data-answer="They" placeholder="______"> belong to my sister.</p>
+    <p><strong>6.</strong> <strong>The books</strong> are on the shelf. <select class="select-blank" data-answer="They">
+      <option value="">-- choose --</option>
+      <option value="I">I</option>
+      <option value="you">you</option>
+      <option value="he">he</option>
+      <option value="she">she</option>
+      <option value="it">it</option>
+      <option value="we">we</option>
+      <option value="They">They</option>
+    </select> belong to my sister.</p>
   </div>
   
   <div class="exercise-controls">
@@ -61,7 +114,7 @@ Replace the underlined noun(s) with the correct subject pronoun:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -71,8 +124,8 @@ function checkAnswers(exerciseId) {
   let feedback = '';
   
   inputs.forEach((input, index) => {
-    const userAnswer = input.value.trim().toLowerCase();
-    const correctAnswer = input.dataset.answer.toLowerCase();
+    const userAnswer = (input.value || '').toString().trim().toLowerCase();
+    const correctAnswer = (input.dataset.answer || '').toString().toLowerCase();
     
     input.classList.remove('correct', 'incorrect');
     
@@ -97,11 +150,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -192,123 +249,6 @@ function resetExercise(exerciseId) {
   border-radius: 3px;
 }
 </style>
-
----
-
-## 📝 **Exercise 2: Choose the Correct Subject Pronoun**
-
-**Instructions**: Choose the correct subject pronoun to complete each sentence.
-
-<div class="interactive-exercise" id="choose-pronouns-exercise" data-exercise-id="choose-pronouns-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> <input type="text" class="fill-blank" data-answer="I" placeholder="______"> am a student. (Farid)</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> <input type="text" class="fill-blank" data-answer="She" placeholder="______"> is my sister. (Leyla)</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> <input type="text" class="fill-blank" data-answer="They" placeholder="______"> are playing football. (Ali and Murad)</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> <input type="text" class="fill-blank" data-answer="It" placeholder="______"> is raining today. (The weather)</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> <input type="text" class="fill-blank" data-answer="We" placeholder="______"> are going to the cinema. (My friends and I)</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('choose-pronouns-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('choose-pronouns-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="choose-pronouns-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="choose-pronouns-exercise-score"></p>
-    <div id="choose-pronouns-exercise-feedback"></div>
-  </div>
-</div>
-
----
-
-## 📝 **Exercise 3: Replace the Noun with a Subject Pronoun**
-
-**Instructions**: Rewrite each sentence by replacing the subject with a subject pronoun.
-
-<div class="interactive-exercise" id="replace-pronouns-exercise" data-exercise-id="replace-pronouns-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> Sarah is cooking dinner. → <input type="text" class="fill-blank" data-answer="She" placeholder="______"> is cooking dinner.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> The dog is barking. → <input type="text" class="fill-blank" data-answer="It" placeholder="______"> is barking.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> My brother and I are studying. → <input type="text" class="fill-blank" data-answer="We" placeholder="______"> are studying.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> The book is on the table. → <input type="text" class="fill-blank" data-answer="It" placeholder="______"> is on the table.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> Tom and Jerry are funny. → <input type="text" class="fill-blank" data-answer="They" placeholder="______"> are funny.</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('replace-pronouns-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('replace-pronouns-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="replace-pronouns-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="replace-pronouns-exercise-score"></p>
-    <div id="replace-pronouns-exercise-feedback"></div>
-  </div>
-</div>
-
----
-
-## 📝 **Exercise 4: Fill in the Blanks with Subject Pronouns**
-
-**Instructions**: Fill in the blanks with the correct subject pronoun.
-
-<div class="interactive-exercise" id="blanks-pronouns-exercise" data-exercise-id="blanks-pronouns-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> <input type="text" class="fill-blank" data-answer="I" placeholder="______"> am from Azerbaijan.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> <input type="text" class="fill-blank" data-answer="He" placeholder="______"> is my teacher. (Mr. Ali)</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> <input type="text" class="fill-blank" data-answer="They" placeholder="______"> are my parents.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> <input type="text" class="fill-blank" data-answer="It" placeholder="______"> is a beautiful flower.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> <input type="text" class="fill-blank" data-answer="We" placeholder="______"> are learning English.</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('blanks-pronouns-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('blanks-pronouns-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="blanks-pronouns-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="blanks-pronouns-exercise-score"></p>
-    <div id="blanks-pronouns-exercise-feedback"></div>
-  </div>
-</div>
 
 ---
 

@@ -20,7 +20,13 @@ Choose the correct article for each sentence:
 
 <div class="interactive-exercise" id="articles-exercise" data-exercise-id="articles-beginner">
   <div class="exercise-item">
-    <p><strong>1.</strong> I need <input type="text" class="fill-blank" data-answer="a" placeholder="____"> pen to write with.</p>
+    <p><strong>1.</strong> I need <select class="select-blank" data-answer="a">
+      <option value="">-- choose --</option>
+      <option value="a">a</option>
+      <option value="an">an</option>
+      <option value="the">the</option>
+      <option value="">(no article)</option>
+    </select> pen to write with.</p>
   </div>
   
   <div class="exercise-item">
@@ -101,10 +107,10 @@ Fill in the blanks with **a**, **an**, or **the**.
     <div id="articles-exercise-2-feedback"></div>
   </div>
 </div>
-
+---
 ---
 
-## Exercise 3: Contextual Article Practice
+## Exercise 2: Contextual Article Practice
 
 Fill in the blanks with **a**, **an**, or **the**.
 
@@ -144,7 +150,7 @@ Fill in the blanks with **a**, **an**, or **the**.
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -154,8 +160,8 @@ function checkAnswers(exerciseId) {
   let feedback = '';
   
   inputs.forEach((input, index) => {
-    const userAnswer = input.value.trim().toLowerCase();
-    const correctAnswer = input.dataset.answer.toLowerCase();
+    const userAnswer = (input.value || '').toString().trim().toLowerCase();
+    const correctAnswer = (input.dataset.answer || '').toString().toLowerCase();
     
     input.classList.remove('correct', 'incorrect');
     
@@ -180,11 +186,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   

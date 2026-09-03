@@ -23,31 +23,94 @@ Choose the correct possessive adjective:
 
 <div class="interactive-exercise" id="possessive-adjectives-exercise" data-exercise-id="possessive-adjectives-beginner">
   <div class="exercise-item">
-    <p><strong>1.</strong> I love <input type="text" class="fill-blank" data-answer="my" placeholder="____"> family very much.</p>
+    <p><strong>1.</strong> I love <select class="select-blank" data-answer="my">
+      <option value="">-- choose --</option>
+      <option value="my">my</option>
+      <option value="your">your</option>
+      <option value="his">his</option>
+      <option value="her">her</option>
+      <option value="its">its</option>
+      <option value="our">our</option>
+      <option value="their">their</option>
+    </select> family very much.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>2.</strong> Sarah is washing <input type="text" class="fill-blank" data-answer="her" placeholder="____"> car in the driveway.</p>
+    <p><strong>2.</strong> Sarah is washing <select class="select-blank" data-answer="her">
+      <option value="">-- choose --</option>
+      <option value="my">my</option>
+      <option value="your">your</option>
+      <option value="his">his</option>
+      <option value="her">her</option>
+      <option value="its">its</option>
+      <option value="our">our</option>
+      <option value="their">their</option>
+    </select> car in the driveway.</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>3.</strong> The students are doing <input type="text" class="fill-blank" data-answer="their" placeholder="____"> homework.</p>
+    <p><strong>3.</strong> The students are doing <select class="select-blank" data-answer="their">
+      <option value="">-- choose --</option>
+      <option value="my">my</option>
+      <option value="your">your</option>
+      <option value="his">his</option>
+      <option value="her">her</option>
+      <option value="its">its</option>
+      <option value="our">our</option>
+      <option value="their">their</option>
+    </select> homework.</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>4.</strong> Can you please show me <input type="text" class="fill-blank" data-answer="your" placeholder="____"> passport?</p>
+    <p><strong>4.</strong> Can you please show me <select class="select-blank" data-answer="your">
+      <option value="">-- choose --</option>
+      <option value="my">my</option>
+      <option value="your">your</option>
+      <option value="his">his</option>
+      <option value="her">her</option>
+      <option value="its">its</option>
+      <option value="our">our</option>
+      <option value="their">their</option>
+    </select> passport?</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>5.</strong> The dog is playing with <input type="text" class="fill-blank" data-answer="its" placeholder="____"> toy.</p>
+    <p><strong>5.</strong> The dog is playing with <select class="select-blank" data-answer="its">
+      <option value="">-- choose --</option>
+      <option value="my">my</option>
+      <option value="your">your</option>
+      <option value="his">his</option>
+      <option value="her">her</option>
+      <option value="its">its</option>
+      <option value="our">our</option>
+      <option value="their">their</option>
+    </select> toy.</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>6.</strong> My brother forgot <input type="text" class="fill-blank" data-answer="his" placeholder="____"> keys at home.</p>
+    <p><strong>6.</strong> My brother forgot <select class="select-blank" data-answer="his">
+      <option value="">-- choose --</option>
+      <option value="my">my</option>
+      <option value="your">your</option>
+      <option value="his">his</option>
+      <option value="her">her</option>
+      <option value="its">its</option>
+      <option value="our">our</option>
+      <option value="their">their</option>
+    </select> keys at home.</p>
   </div>
-  
+
   <div class="exercise-item">
-    <p><strong>7.</strong> We are planning <input type="text" class="fill-blank" data-answer="our" placeholder="____"> vacation for next summer.</p>
+    <p><strong>7.</strong> We are planning <select class="select-blank" data-answer="our">
+      <option value="">-- choose --</option>
+      <option value="my">my</option>
+      <option value="your">your</option>
+      <option value="his">his</option>
+      <option value="her">her</option>
+      <option value="its">its</option>
+      <option value="our">our</option>
+      <option value="their">their</option>
+    </select> vacation for next summer.</p>
   </div>
   
   <div class="exercise-controls">
@@ -65,7 +128,7 @@ Choose the correct possessive adjective:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -75,8 +138,8 @@ function checkAnswers(exerciseId) {
   let feedback = '';
   
   inputs.forEach((input, index) => {
-    const userAnswer = input.value.trim().toLowerCase();
-    const correctAnswer = input.dataset.answer.toLowerCase();
+    const userAnswer = (input.value || '').toString().trim().toLowerCase();
+    const correctAnswer = (input.dataset.answer || '').toString().toLowerCase();
     
     input.classList.remove('correct', 'incorrect');
     
@@ -101,11 +164,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -196,123 +263,6 @@ function resetExercise(exerciseId) {
   border-radius: 3px;
 }
 </style>
-
----
-
-## 📝 **Exercise 2: Fill in the Blanks with Possessive Adjectives**
-
-**Instructions**: Complete the sentences using the correct possessive adjective (my, your, his, her, its, our, their).
-
-<div class="interactive-exercise" id="fill-blanks-exercise" data-exercise-id="fill-blanks-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> I have a dog. <input type="text" class="fill-blank" data-answer="Its" placeholder="______"> name is Max.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> She is my sister. <input type="text" class="fill-blank" data-answer="Her" placeholder="______"> favorite color is blue.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> We live in Baku. <input type="text" class="fill-blank" data-answer="Our" placeholder="______"> house is near the park.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> They are students. <input type="text" class="fill-blank" data-answer="Their" placeholder="______"> teacher is very kind.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> You have a bike. Is this <input type="text" class="fill-blank" data-answer="your" placeholder="______"> helmet?</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('fill-blanks-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('fill-blanks-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="fill-blanks-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="fill-blanks-exercise-score"></p>
-    <div id="fill-blanks-exercise-feedback"></div>
-  </div>
-</div>
-
----
-
-## 📝 **Exercise 3: Match Subject Pronouns to Possessive Adjectives**
-
-**Instructions**: Match each subject pronoun to its correct possessive adjective.
-
-<div class="interactive-exercise" id="match-pronouns-exercise" data-exercise-id="match-pronouns-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> I → <input type="text" class="fill-blank" data-answer="my" placeholder="______"> book</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> You → <input type="text" class="fill-blank" data-answer="your" placeholder="______"> car</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> He → <input type="text" class="fill-blank" data-answer="his" placeholder="______"> phone</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> She → <input type="text" class="fill-blank" data-answer="her" placeholder="______"> bag</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> We → <input type="text" class="fill-blank" data-answer="our" placeholder="______"> house</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('match-pronouns-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('match-pronouns-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="match-pronouns-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="match-pronouns-exercise-score"></p>
-    <div id="match-pronouns-exercise-feedback"></div>
-  </div>
-</div>
-
----
-
-## 📝 **Exercise 4: Correct the Mistake**
-
-**Instructions**: Each sentence has a mistake in the possessive adjective. Write the correct possessive adjective.
-
-<div class="interactive-exercise" id="correct-mistakes-exercise" data-exercise-id="correct-mistakes-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> He is my brother. Her name is Sam. → <input type="text" class="fill-blank" data-answer="His" placeholder="______"> name is Sam.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> We love they dog. → We love <input type="text" class="fill-blank" data-answer="their" placeholder="______"> dog.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> I have a phone. Your screen is broken. → <input type="text" class="fill-blank" data-answer="Its" placeholder="______"> screen is broken.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> She is my friend. His house is big. → <input type="text" class="fill-blank" data-answer="Her" placeholder="______"> house is big.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> You are wearing my shoes. I want his back. → I want <input type="text" class="fill-blank" data-answer="them" placeholder="______"> back.</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('correct-mistakes-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('correct-mistakes-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="correct-mistakes-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="correct-mistakes-exercise-score"></p>
-    <div id="correct-mistakes-exercise-feedback"></div>
-  </div>
-</div>
 
 ---
 

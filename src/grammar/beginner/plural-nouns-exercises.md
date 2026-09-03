@@ -20,27 +20,63 @@ Write the plural form of the noun in parentheses:
 
 <div class="interactive-exercise" id="plural-nouns-exercise" data-exercise-id="plural-nouns-beginner">
   <div class="exercise-item">
-    <p><strong>1.</strong> I have three <input type="text" class="fill-blank" data-answer="books" placeholder="______"> (book) on my desk.</p>
+    <p><strong>1.</strong> I have three <select class="select-blank" data-answer="books">
+      <option value="">-- choose --</option>
+      <option value="books">books</option>
+      <option value="book">book</option>
+      <option value="boooks">boooks</option>
+      <option value="boxes">boxes</option>
+    </select> (book) on my desk.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>2.</strong> The <input type="text" class="fill-blank" data-answer="children" placeholder="______"> (child) are playing in the park.</p>
+    <p><strong>2.</strong> The <select class="select-blank" data-answer="children">
+      <option value="">-- choose --</option>
+      <option value="children">children</option>
+      <option value="childs">childs</option>
+      <option value="child">child</option>
+      <option value="childrenes">childrenes</option>
+    </select> (child) are playing in the park.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>3.</strong> She bought two <input type="text" class="fill-blank" data-answer="boxes" placeholder="______"> (box) of chocolates.</p>
+    <p><strong>3.</strong> She bought two <select class="select-blank" data-answer="boxes">
+      <option value="">-- choose --</option>
+      <option value="boxes">boxes</option>
+      <option value="boxs">boxs</option>
+      <option value="box">box</option>
+      <option value="boxen">boxen</option>
+    </select> (box) of chocolates.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>4.</strong> How many <input type="text" class="fill-blank" data-answer="cities" placeholder="______"> (city) have you visited?</p>
+    <p><strong>4.</strong> How many <select class="select-blank" data-answer="cities">
+      <option value="">-- choose --</option>
+      <option value="cities">cities</option>
+      <option value="city">city</option>
+      <option value="citys">citys</option>
+      <option value="cityes">cityes</option>
+    </select> (city) have you visited?</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>5.</strong> The <input type="text" class="fill-blank" data-answer="women" placeholder="______"> (woman) are discussing the project.</p>
+    <p><strong>5.</strong> The <select class="select-blank" data-answer="women">
+      <option value="">-- choose --</option>
+      <option value="women">women</option>
+      <option value="womans">womans</option>
+      <option value="woman">woman</option>
+      <option value="womens">womens</option>
+    </select> (woman) are discussing the project.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>6.</strong> There are many <input type="text" class="fill-blank" data-answer="dishes" placeholder="______"> (dish) on the table.</p>
+    <p><strong>6.</strong> There are many <select class="select-blank" data-answer="dishes">
+      <option value="">-- choose --</option>
+      <option value="dishes">dishes</option>
+      <option value="dishs">dishs</option>
+      <option value="dish">dish</option>
+      <option value="disehs">disehs</option>
+    </select> (dish) on the table.</p>
   </div>
   
   <div class="exercise-controls">
@@ -58,21 +94,21 @@ Write the plural form of the noun in parentheses:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
-  
+
   let correct = 0;
   let total = inputs.length;
   let feedback = '';
-  
+
   inputs.forEach((input, index) => {
-    const userAnswer = input.value.trim().toLowerCase();
-    const correctAnswer = input.dataset.answer.toLowerCase();
-    
+    const userAnswer = (input.value || '').toString().trim().toLowerCase();
+    const correctAnswer = (input.dataset.answer || '').toString().toLowerCase();
+
     input.classList.remove('correct', 'incorrect');
-    
+
     if (userAnswer === correctAnswer) {
       input.classList.add('correct');
       correct++;
@@ -81,10 +117,10 @@ function checkAnswers(exerciseId) {
       feedback += `<p><strong>Question ${index + 1}:</strong> Your answer: "${input.value}" | Correct answer: "${input.dataset.answer}"</p>`;
     }
   });
-  
+
   resultsDiv.style.display = 'block';
   scoreP.textContent = `Score: ${correct}/${total} (${Math.round(correct/total*100)}%)`;
-  
+
   if (correct === total) {
     feedbackDiv.innerHTML = '<p style="color: green; font-weight: bold;">Excellent! All answers are correct! 🎉</p>';
   } else {
@@ -94,14 +130,18 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
-  
+
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
-  
+
   resultsDiv.style.display = 'none';
 }
 </script>
@@ -189,123 +229,6 @@ function resetExercise(exerciseId) {
   border-radius: 3px;
 }
 </style>
-
----
-
-## 📝 **Exercise 2: Regular Plural Forms**
-
-**Instructions**: Write the plural form of each noun.
-
-<div class="interactive-exercise" id="regular-plurals-exercise" data-exercise-id="regular-plurals-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> Book → <input type="text" class="fill-blank" data-answer="books" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> Car → <input type="text" class="fill-blank" data-answer="cars" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> Dog → <input type="text" class="fill-blank" data-answer="dogs" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> Apple → <input type="text" class="fill-blank" data-answer="apples" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> Chair → <input type="text" class="fill-blank" data-answer="chairs" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('regular-plurals-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('regular-plurals-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="regular-plurals-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="regular-plurals-exercise-score"></p>
-    <div id="regular-plurals-exercise-feedback"></div>
-  </div>
-</div>
-
----
-
-## 📝 **Exercise 3: Plurals with -es Ending**
-
-**Instructions**: Write the plural form of each noun.
-
-<div class="interactive-exercise" id="es-plurals-exercise" data-exercise-id="es-plurals-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> Bus → <input type="text" class="fill-blank" data-answer="buses" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> Box → <input type="text" class="fill-blank" data-answer="boxes" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> Watch → <input type="text" class="fill-blank" data-answer="watches" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> Tomato → <input type="text" class="fill-blank" data-answer="tomatoes" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> Dish → <input type="text" class="fill-blank" data-answer="dishes" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('es-plurals-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('es-plurals-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="es-plurals-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="es-plurals-exercise-score"></p>
-    <div id="es-plurals-exercise-feedback"></div>
-  </div>
-</div>
-
----
-
-## 📝 **Exercise 4: Irregular Plural Nouns**
-
-**Instructions**: Write the plural form of each irregular noun.
-
-<div class="interactive-exercise" id="irregular-plurals-exercise" data-exercise-id="irregular-plurals-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> Child → <input type="text" class="fill-blank" data-answer="children" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> Man → <input type="text" class="fill-blank" data-answer="men" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> Woman → <input type="text" class="fill-blank" data-answer="women" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> Tooth → <input type="text" class="fill-blank" data-answer="teeth" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> Mouse → <input type="text" class="fill-blank" data-answer="mice" placeholder="______"></p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('irregular-plurals-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('irregular-plurals-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="irregular-plurals-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="irregular-plurals-exercise-score"></p>
-    <div id="irregular-plurals-exercise-feedback"></div>
-  </div>
-</div>
 
 ---
 

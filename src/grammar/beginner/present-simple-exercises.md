@@ -19,27 +19,75 @@ Complete each sentence using the present simple tense. Remember:
 
 <div class="interactive-exercise" id="present-simple-exercise" data-exercise-id="present-simple-beginner">
   <div class="exercise-item">
-    <p><strong>1.</strong> She <input type="text" class="fill-blank" data-answer="works" placeholder="______"> (work) in a hospital.</p>
+    <p><strong>1.</strong> She <select class="select-blank" data-answer="works">
+      <option value="">-- choose --</option>
+      <option value="works">works</option>
+      <option value="work">work</option>
+      <option value="is working">is working</option>
+      <option value="working">working</option>
+    </select> (work) in a hospital.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>2.</strong> They <input type="text" class="fill-blank" data-answer="don't live" placeholder="______"> (not live) in New York.</p>
+    <p><strong>2.</strong> They <select class="select-blank" data-answer="don't live">
+      <option value="">-- choose --</option>
+      <option value="don't live">don't live</option>
+      <option value="do not live">do not live</option>
+      <option value="live">live</option>
+      <option value="doesn't live">doesn't live</option>
+    </select> (not live) in New York.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>3.</strong> <input type="text" class="fill-blank" data-answer="Do" placeholder="______"> you <input type="text" class="fill-blank" data-answer="speak" placeholder="______"> (speak) English?</p>
+    <p><strong>3.</strong> <select class="select-blank" data-answer="Do">
+      <option value="">-- choose --</option>
+      <option value="Do">Do</option>
+      <option value="Does">Does</option>
+      <option value="Are">Are</option>
+      <option value="Did">Did</option>
+    </select> you <select class="select-blank" data-answer="speak">
+      <option value="">-- choose --</option>
+      <option value="speak">speak</option>
+      <option value="speaks">speaks</option>
+      <option value="speaking">speaking</option>
+      <option value="spoke">spoke</option>
+    </select> (speak) English?</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>4.</strong> The sun <input type="text" class="fill-blank" data-answer="rises" placeholder="______"> (rise) in the east.</p>
+    <p><strong>4.</strong> The sun <select class="select-blank" data-answer="rises">
+      <option value="">-- choose --</option>
+      <option value="rises">rises</option>
+      <option value="rise">rise</option>
+      <option value="is rising">is rising</option>
+      <option value="rised">rised</option>
+    </select> (rise) in the east.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>5.</strong> They <input type="text" class="fill-blank" data-answer="don't watch" placeholder="______"> (not watch) TV very often.</p>
+    <p><strong>5.</strong> They <select class="select-blank" data-answer="don't watch">
+      <option value="">-- choose --</option>
+      <option value="don't watch">don't watch</option>
+      <option value="do not watch">do not watch</option>
+      <option value="watch">watch</option>
+      <option value="doesn't watch">doesn't watch</option>
+    </select> (not watch) TV very often.</p>
   </div>
   
   <div class="exercise-item">
-    <p><strong>6.</strong> <input type="text" class="fill-blank" data-answer="Does" placeholder="______"> he <input type="text" class="fill-blank" data-answer="live" placeholder="______"> (live) in London?</p>
+    <p><strong>6.</strong> <select class="select-blank" data-answer="Does">
+      <option value="">-- choose --</option>
+      <option value="Does">Does</option>
+      <option value="Do">Do</option>
+      <option value="Is">Is</option>
+      <option value="Did">Did</option>
+    </select> he <select class="select-blank" data-answer="live">
+      <option value="">-- choose --</option>
+      <option value="live">live</option>
+      <option value="lives">lives</option>
+      <option value="living">living</option>
+      <option value="lived">lived</option>
+    </select> (live) in London?</p>
   </div>
   
   <div class="exercise-controls">
@@ -57,7 +105,7 @@ Complete each sentence using the present simple tense. Remember:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -67,8 +115,8 @@ function checkAnswers(exerciseId) {
   let feedback = '';
   
   inputs.forEach((input, index) => {
-    const userAnswer = input.value.trim().toLowerCase();
-    const correctAnswer = input.dataset.answer.toLowerCase();
+    const userAnswer = (input.value || '').toString().trim().toLowerCase();
+    const correctAnswer = (input.dataset.answer || '').toString().toLowerCase();
     
     input.classList.remove('correct', 'incorrect');
     
@@ -93,11 +141,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -188,123 +240,6 @@ function resetExercise(exerciseId) {
   border-radius: 3px;
 }
 </style>
-
----
-
-## 📝 **Exercise 2: Fill in the Verb (Affirmative Sentences)**
-
-**Instructions**: Complete the sentences with the correct form of the verb in Present Simple.
-
-<div class="interactive-exercise" id="affirmative-exercise" data-exercise-id="affirmative-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> She <input type="text" class="fill-blank" data-answer="goes" placeholder="______"> (go) to school every day.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> They <input type="text" class="fill-blank" data-answer="play" placeholder="______"> (play) football on Sundays.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> My brother <input type="text" class="fill-blank" data-answer="watches" placeholder="______"> (watch) TV in the evening.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> We <input type="text" class="fill-blank" data-answer="live" placeholder="______"> (live) in Baku.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> The cat <input type="text" class="fill-blank" data-answer="sleeps" placeholder="______"> (sleep) on the sofa.</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('affirmative-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('affirmative-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="affirmative-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="affirmative-exercise-score"></p>
-    <div id="affirmative-exercise-feedback"></div>
-  </div>
-</div>
-
----
-
-## 📝 **Exercise 3: Negative Sentences**
-
-**Instructions**: Rewrite the sentences in the negative form using Present Simple.
-
-<div class="interactive-exercise" id="negative-exercise" data-exercise-id="negative-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> He eats meat. → He <input type="text" class="fill-blank" data-answer="does not eat" placeholder="______"> meat.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> I like coffee. → I <input type="text" class="fill-blank" data-answer="do not like" placeholder="______"> coffee.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> They work on weekends. → They <input type="text" class="fill-blank" data-answer="do not work" placeholder="______"> on weekends.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> She speaks French. → She <input type="text" class="fill-blank" data-answer="does not speak" placeholder="______"> French.</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> We travel often. → We <input type="text" class="fill-blank" data-answer="do not travel" placeholder="______"> often.</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('negative-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('negative-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="negative-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="negative-exercise-score"></p>
-    <div id="negative-exercise-feedback"></div>
-  </div>
-</div>
-
----
-
-## 📝 **Exercise 4: Yes/No Questions**
-
-**Instructions**: Make yes/no questions in Present Simple.
-
-<div class="interactive-exercise" id="yesno-questions-exercise" data-exercise-id="yesno-questions-beginner">
-  <div class="exercise-item">
-    <p><strong>1.</strong> You like chocolate. → <input type="text" class="fill-blank" data-answer="Do you like" placeholder="______"> chocolate?</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>2.</strong> He plays the guitar. → <input type="text" class="fill-blank" data-answer="Does he play" placeholder="______"> the guitar?</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>3.</strong> They live in London. → <input type="text" class="fill-blank" data-answer="Do they live" placeholder="______"> in London?</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>4.</strong> She reads books. → <input type="text" class="fill-blank" data-answer="Does she read" placeholder="______"> books?</p>
-  </div>
-  
-  <div class="exercise-item">
-    <p><strong>5.</strong> We go to the gym. → <input type="text" class="fill-blank" data-answer="Do we go" placeholder="______"> to the gym?</p>
-  </div>
-  
-  <div class="exercise-controls">
-    <button onclick="checkAnswers('yesno-questions-exercise')" class="check-btn">Check Answers</button>
-    <button onclick="resetExercise('yesno-questions-exercise')" class="reset-btn">Reset</button>
-  </div>
-  
-  <div id="yesno-questions-exercise-results" class="results-section" style="display: none;">
-    <h4>Results:</h4>
-    <p id="yesno-questions-exercise-score"></p>
-    <div id="yesno-questions-exercise-feedback"></div>
-  </div>
-</div>
 
 ---
 
