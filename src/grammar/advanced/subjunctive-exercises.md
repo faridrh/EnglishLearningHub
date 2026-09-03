@@ -17,6 +17,18 @@ Use the correct subjunctive form:
 - **Past Subjunctive**: "were" for all persons in hypothetical situations
 - **Perfect Subjunctive**: "had" + past participle for past regrets
 
+## Exercise 1: Choose the Correct Subjunctive Form
+
+<div class="interactive-exercise" id="subjunctive-dropdown-exercise" data-exercise-id="subjunctive-dropdown-advanced">
+  <div class="exercise-item"><p><strong>1.</strong> I suggest that he <select class="select-blank" data-answer="be"><option value="">-- choose --</option><option value="be">be</option><option value="is">is</option><option value="was">was</option></select> more careful.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> If I <select class="select-blank" data-answer="were"><option value="">-- choose --</option><option value="was">was</option><option value="were">were</option><option value="am">am</option></select> you, I would accept the offer.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> It's important that she <select class="select-blank" data-answer="arrive"><option value="">-- choose --</option><option value="arrives">arrives</option><option value="arrive">arrive</option><option value="arrived">arrived</option></select> on time.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> I wish I <select class="select-blank" data-answer="had studied"><option value="">-- choose --</option><option value="studied">studied</option><option value="have studied">have studied</option><option value="had studied">had studied</option></select> harder for the exam.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> The judge ordered that the defendant <select class="select-blank" data-answer="be"><option value="">-- choose --</option><option value="is">is</option><option value="be">be</option><option value="was">was</option></select> released immediately.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('subjunctive-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('subjunctive-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="subjunctive-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="subjunctive-dropdown-exercise-score"></p><div id="subjunctive-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="subjunctive-exercise" data-exercise-id="subjunctive-advanced">
   <div class="exercise-item">
     <p><strong>1.</strong> I suggest that he <input type="text" class="fill-blank" data-answer="be" placeholder="______"> (be) more careful next time.</p>
@@ -61,7 +73,7 @@ Use the correct subjunctive form:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -97,11 +109,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -124,7 +140,8 @@ function resetExercise(exerciseId) {
   font-size: 16px;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 10px 14px;
   border-radius: 4px;
@@ -141,12 +158,14 @@ function resetExercise(exerciseId) {
   box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

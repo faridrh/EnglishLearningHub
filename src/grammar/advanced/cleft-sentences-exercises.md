@@ -17,6 +17,18 @@ Use cleft sentence structures for emphasis:
 - **Wh-cleft**: What/Who/Where + subject + verb + be + focus
 - **Pseudo-cleft**: What I need is... / Where she lives is...
 
+## Exercise 1: Choose the Correct Cleft Structure
+
+<div class="interactive-exercise" id="cleft-dropdown-exercise" data-exercise-id="cleft-dropdown-advanced">
+  <div class="exercise-item"><p><strong>1.</strong> John broke the window. It was <select class="select-blank" data-answer="John who broke"><option value="">-- choose --</option><option value="John who broke">John who broke</option><option value="John that breaks">John that breaks</option><option value="who John broke">who John broke</option></select> the window.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> I need some peace and quiet. What I need <select class="select-blank" data-answer="is some peace and quiet"><option value="">-- choose --</option><option value="are some peace and quiet">are some peace and quiet</option><option value="is some peace and quiet">is some peace and quiet</option><option value="some peace and quiet is">some peace and quiet is</option></select>.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> She met him at the party. It was <select class="select-blank" data-answer="at the party that"><option value="">-- choose --</option><option value="at the party who">at the party who</option><option value="that at the party">that at the party</option><option value="at the party that">at the party that</option></select> she met him.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> The noise outside annoys me. What annoys me <select class="select-blank" data-answer="is the noise outside"><option value="">-- choose --</option><option value="is the noise outside">is the noise outside</option><option value="are the noise outside">are the noise outside</option><option value="the noise outside are">the noise outside are</option></select>.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> We visited Paris last summer. It was <select class="select-blank" data-answer="last summer when"><option value="">-- choose --</option><option value="last summer who">last summer who</option><option value="when last summer">when last summer</option><option value="last summer when">last summer when</option></select> we visited Paris.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('cleft-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('cleft-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="cleft-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="cleft-dropdown-exercise-score"></p><div id="cleft-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="cleft-sentences-exercise" data-exercise-id="cleft-sentences-advanced">
   <div class="exercise-item">
     <p><strong>1.</strong> John broke the window. (emphasize John)<br>
@@ -73,7 +85,7 @@ Use cleft sentence structures for emphasis:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -109,11 +121,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -136,7 +152,8 @@ function resetExercise(exerciseId) {
   font-size: 16px;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 10px 14px;
   border-radius: 4px;
@@ -153,12 +170,14 @@ function resetExercise(exerciseId) {
   box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

@@ -18,6 +18,18 @@ Convert direct speech to reported speech. Remember:
 - **Change time expressions**: today → that day, tomorrow → the next day
 - **Use appropriate reporting verbs**: said, told, asked, etc.
 
+## Exercise 1: Choose the Correct Reported Form
+
+<div class="interactive-exercise" id="reported-speech-dropdown-exercise" data-exercise-id="reported-speech-dropdown-intermediate">
+  <div class="exercise-item"><p><strong>1.</strong> "I am tired," she said. She said that she <select class="select-blank" data-answer="was tired"><option value="">-- choose --</option><option value="is tired">is tired</option><option value="was tired">was tired</option><option value="had tired">had tired</option></select>.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> "We will call you tomorrow," they promised. They promised that they <select class="select-blank" data-answer="would call"><option value="">-- choose --</option><option value="will call">will call</option><option value="would call">would call</option><option value="called">called</option></select> us.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> "I have finished my homework," the student said. He said that he <select class="select-blank" data-answer="had finished"><option value="">-- choose --</option><option value="has finished">has finished</option><option value="finished">finished</option><option value="had finished">had finished</option></select> his homework.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> "Don't be late!" the teacher told us. The teacher told us <select class="select-blank" data-answer="not to be late"><option value="">-- choose --</option><option value="not be late">not be late</option><option value="not to be late">not to be late</option><option value="to not late">to not late</option></select>.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> "Where do you live?" she asked him. She asked him <select class="select-blank" data-answer="where he lived"><option value="">-- choose --</option><option value="where does he live">where does he live</option><option value="where he lived">where he lived</option><option value="where he lives">where he lives</option></select>.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('reported-speech-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('reported-speech-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="reported-speech-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="reported-speech-dropdown-exercise-score"></p><div id="reported-speech-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="reported-speech-exercise" data-exercise-id="reported-speech-intermediate">
   <div class="exercise-item">
     <p><strong>1.</strong> "I am tired," she said.<br>
@@ -64,7 +76,7 @@ Convert direct speech to reported speech. Remember:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -100,11 +112,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -125,7 +141,8 @@ function resetExercise(exerciseId) {
   line-height: 1.6;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 8px 12px;
   border-radius: 4px;
@@ -140,12 +157,14 @@ function resetExercise(exerciseId) {
   border-color: #333;
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

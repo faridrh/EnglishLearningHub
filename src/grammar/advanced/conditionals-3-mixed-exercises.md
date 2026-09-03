@@ -17,6 +17,18 @@ Use the correct conditional forms:
 - **Mixed Conditionals**: Mix time references (past condition → present result, or present condition → past result)
 - **Alternative forms**: Use "could have," "might have," or inversion where appropriate
 
+## Exercise 1: Choose the Correct Conditional Form
+
+<div class="interactive-exercise" id="conditionals-3-dropdown-exercise" data-exercise-id="conditionals-3-dropdown-advanced">
+  <div class="exercise-item"><p><strong>1.</strong> If she had studied harder, she <select class="select-blank" data-answer="would have passed"><option value="">-- choose --</option><option value="will pass">will pass</option><option value="would pass">would pass</option><option value="would have passed">would have passed</option></select> the exam.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> If I were more organized, I <select class="select-blank" data-answer="wouldn't have lost"><option value="">-- choose --</option><option value="wouldn't lose">wouldn't lose</option><option value="wouldn't have lost">wouldn't have lost</option><option value="didn't lose">didn't lose</option></select> my keys yesterday.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> If he had taken the job, he <select class="select-blank" data-answer="would be living"><option value="">-- choose --</option><option value="would live">would live</option><option value="would have lived">would have lived</option><option value="would be living">would be living</option></select> in London now.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> We <select class="select-blank" data-answer="might have won"><option value="">-- choose --</option><option value="might win">might win</option><option value="might have won">might have won</option><option value="would win">would win</option></select> if our best player had not been injured.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> What would you have done if you <select class="select-blank" data-answer="had missed"><option value="">-- choose --</option><option value="missed">missed</option><option value="had missed">had missed</option><option value="would miss">would miss</option></select> the train?</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('conditionals-3-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('conditionals-3-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="conditionals-3-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="conditionals-3-dropdown-exercise-score"></p><div id="conditionals-3-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="conditionals-3-mixed-exercise" data-exercise-id="conditionals-3-mixed-advanced">
   <div class="exercise-item">
     <p><strong>1.</strong> If she <input type="text" class="fill-blank" data-answer="had studied" placeholder="____________"> (study) harder, she <input type="text" class="fill-blank" data-answer="would have passed" placeholder="____________"> (pass) the exam.</p>
@@ -57,7 +69,7 @@ Use the correct conditional forms:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -93,11 +105,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -120,7 +136,8 @@ function resetExercise(exerciseId) {
   font-size: 16px;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 10px 14px;
   border-radius: 4px;
@@ -137,12 +154,14 @@ function resetExercise(exerciseId) {
   box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

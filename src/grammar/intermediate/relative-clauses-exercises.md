@@ -19,6 +19,18 @@ Choose the correct relative pronoun:
 - **when** = for time
 - **whose** = for possession
 
+## Exercise 1: Choose the Correct Relative Pronoun
+
+<div class="interactive-exercise" id="relative-clauses-dropdown-exercise" data-exercise-id="relative-clauses-dropdown-intermediate">
+  <div class="exercise-item"><p><strong>1.</strong> The woman <select class="select-blank" data-answer="who"><option value="">-- choose --</option><option value="who">who</option><option value="which">which</option><option value="where">where</option></select> lives next door is a doctor.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> This is the book <select class="select-blank" data-answer="which"><option value="">-- choose --</option><option value="who">who</option><option value="which">which</option><option value="where">where</option></select> I was telling you about.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> Do you remember the day <select class="select-blank" data-answer="when"><option value="">-- choose --</option><option value="where">where</option><option value="when">when</option><option value="whose">whose</option></select> we first met?</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> That's the restaurant <select class="select-blank" data-answer="where"><option value="">-- choose --</option><option value="when">when</option><option value="where">where</option><option value="which">which</option></select> we had dinner.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> The student <select class="select-blank" data-answer="whose"><option value="">-- choose --</option><option value="who">who</option><option value="whose">whose</option><option value="which">which</option></select> project won is very talented.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('relative-clauses-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('relative-clauses-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="relative-clauses-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="relative-clauses-dropdown-exercise-score"></p><div id="relative-clauses-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="relative-clauses-exercise" data-exercise-id="relative-clauses-intermediate">
   <div class="exercise-item">
     <p><strong>1.</strong> The woman <input type="text" class="fill-blank" data-answer="who" placeholder="______"> lives next door is a doctor.</p>
@@ -63,7 +75,7 @@ Choose the correct relative pronoun:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -99,11 +111,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -124,7 +140,8 @@ function resetExercise(exerciseId) {
   line-height: 1.6;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 8px 12px;
   border-radius: 4px;
@@ -139,12 +156,14 @@ function resetExercise(exerciseId) {
   border-color: #333;
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

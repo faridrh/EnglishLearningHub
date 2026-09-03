@@ -18,6 +18,18 @@ Complete the sentences using the correct passive voice form:
 - **Present Perfect Passive**: has/have been + past participle
 - **Modal Passive**: modal + be + past participle
 
+## Exercise 1: Choose the Correct Passive Form
+
+<div class="interactive-exercise" id="passive-voice-dropdown-exercise" data-exercise-id="passive-voice-dropdown-intermediate">
+  <div class="exercise-item"><p><strong>1.</strong> The house <select class="select-blank" data-answer="was built"><option value="">-- choose --</option><option value="was built">was built</option><option value="is built">is built</option><option value="built">built</option></select> in 1995.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> English <select class="select-blank" data-answer="is spoken"><option value="">-- choose --</option><option value="is spoken">is spoken</option><option value="was spoken">was spoken</option><option value="speaks">speaks</option></select> all over the world.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> The reports <select class="select-blank" data-answer="have been finished"><option value="">-- choose --</option><option value="have finished">have finished</option><option value="have been finished">have been finished</option><option value="were finishing">were finishing</option></select> by the team.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> The windows <select class="select-blank" data-answer="should be cleaned"><option value="">-- choose --</option><option value="should clean">should clean</option><option value="should be cleaned">should be cleaned</option><option value="are cleaning">are cleaning</option></select> before the guests arrive.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> The problem <select class="select-blank" data-answer="can be solved"><option value="">-- choose --</option><option value="can solve">can solve</option><option value="can be solved">can be solved</option><option value="is solving">is solving</option></select> with better communication.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('passive-voice-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('passive-voice-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="passive-voice-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="passive-voice-dropdown-exercise-score"></p><div id="passive-voice-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="passive-voice-exercise" data-exercise-id="passive-voice-intermediate">
   <div class="exercise-item">
     <p><strong>1.</strong> The house <input type="text" class="fill-blank" data-answer="was built" placeholder="____________"> (build) in 1995.</p>
@@ -62,7 +74,7 @@ Complete the sentences using the correct passive voice form:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -98,11 +110,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -123,7 +139,8 @@ function resetExercise(exerciseId) {
   line-height: 1.6;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 8px 12px;
   border-radius: 4px;
@@ -138,12 +155,14 @@ function resetExercise(exerciseId) {
   border-color: #333;
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

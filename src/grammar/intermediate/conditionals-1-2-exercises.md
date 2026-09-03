@@ -17,6 +17,18 @@ Choose the correct conditional form:
 - **Second Conditional** (unreal/hypothetical): If + past simple, would + base verb
 - Note: Use "were" (not "was") for all persons in second conditionals
 
+## Exercise 1: Choose the Correct Conditional Form
+
+<div class="interactive-exercise" id="conditionals-dropdown-exercise" data-exercise-id="conditionals-dropdown-intermediate">
+  <div class="exercise-item"><p><strong>1.</strong> If it rains tomorrow, we <select class="select-blank" data-answer="will stay"><option value="">-- choose --</option><option value="will stay">will stay</option><option value="would stay">would stay</option><option value="stay">stay</option></select> home.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> If I were rich, I <select class="select-blank" data-answer="would travel"><option value="">-- choose --</option><option value="will travel">will travel</option><option value="would travel">would travel</option><option value="travel">travel</option></select> around the world.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> If you study hard, you <select class="select-blank" data-answer="will pass"><option value="">-- choose --</option><option value="would pass">would pass</option><option value="will pass">will pass</option><option value="pass">pass</option></select> the exam.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> If she had more time, she <select class="select-blank" data-answer="would learn"><option value="">-- choose --</option><option value="will learn">will learn</option><option value="learns">learns</option><option value="would learn">would learn</option></select> another language.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> What would you do if you <select class="select-blank" data-answer="won"><option value="">-- choose --</option><option value="win">win</option><option value="won">won</option><option value="would win">would win</option></select> the lottery?</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('conditionals-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('conditionals-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="conditionals-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="conditionals-dropdown-exercise-score"></p><div id="conditionals-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="conditionals-exercise" data-exercise-id="conditionals-intermediate">
   <div class="exercise-item">
     <p><strong>1.</strong> If it <input type="text" class="fill-blank" data-answer="rains" placeholder="______"> (rain) tomorrow, we <input type="text" class="fill-blank" data-answer="will stay" placeholder="______"> (stay) home.</p>
@@ -57,7 +69,7 @@ Choose the correct conditional form:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -93,11 +105,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -118,7 +134,8 @@ function resetExercise(exerciseId) {
   line-height: 1.6;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 8px 12px;
   border-radius: 4px;
@@ -133,12 +150,14 @@ function resetExercise(exerciseId) {
   border-color: #333;
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

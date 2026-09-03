@@ -17,6 +17,18 @@ Complete each sentence using the past perfect tense. Remember:
 - For negative sentences, use **had not (hadn't) + past participle**
 - For questions, put **had** before the subject
 
+## Exercise 1: Choose the Correct Past Perfect Form
+
+<div class="interactive-exercise" id="past-perfect-dropdown-exercise" data-exercise-id="past-perfect-dropdown-intermediate">
+  <div class="exercise-item"><p><strong>1.</strong> By the time we arrived, the film <select class="select-blank" data-answer="had started"><option value="">-- choose --</option><option value="started">started</option><option value="had started">had started</option><option value="has started">has started</option></select>.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> She was hungry because she <select class="select-blank" data-answer="had not eaten"><option value="">-- choose --</option><option value="did not eat">did not eat</option><option value="has not eaten">has not eaten</option><option value="had not eaten">had not eaten</option></select> breakfast.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> They <select class="select-blank" data-answer="had left"><option value="">-- choose --</option><option value="had left">had left</option><option value="left">left</option><option value="have left">have left</option></select> before the rain began.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> <select class="select-blank" data-answer="Had"><option value="">-- choose --</option><option value="Did">Did</option><option value="Have">Have</option><option value="Had">Had</option></select> you finished your homework before you went out?</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> I realized I <select class="select-blank" data-answer="had forgotten"><option value="">-- choose --</option><option value="forgot">forgot</option><option value="had forgotten">had forgotten</option><option value="have forgotten">have forgotten</option></select> my keys.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('past-perfect-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('past-perfect-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="past-perfect-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="past-perfect-dropdown-exercise-score"></p><div id="past-perfect-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="past-perfect-exercise" data-exercise-id="past-perfect-intermediate">
   <div class="exercise-item">
     <p><strong>1.</strong> By the time we got to the cinema, the film <input type="text" class="fill-blank" data-answer="had already started" placeholder="____________"> (already/start).</p>
@@ -115,7 +127,7 @@ Choose the correct past perfect form to complete each sentence. Pay attention to
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -151,11 +163,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -247,7 +263,8 @@ function resetExercise2(exerciseId) {
   line-height: 1.6;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 8px 12px;
   border-radius: 4px;
@@ -262,12 +279,14 @@ function resetExercise2(exerciseId) {
   border-color: #333;
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

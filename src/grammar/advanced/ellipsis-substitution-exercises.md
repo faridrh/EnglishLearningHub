@@ -18,6 +18,18 @@ Use ellipsis and substitution to avoid repetition:
 - **Substitution with "one/ones"**: Replace repeated nouns
 - **So/Neither/Nor**: Avoid repeating entire clauses
 
+## Exercise 1: Choose the Correct Ellipsis or Substitution
+
+<div class="interactive-exercise" id="ellipsis-dropdown-exercise" data-exercise-id="ellipsis-dropdown-advanced">
+  <div class="exercise-item"><p><strong>1.</strong> John can speak French, but Mary <select class="select-blank" data-answer="can't"><option value="">-- choose --</option><option value="can't">can't</option><option value="doesn't">doesn't</option><option value="isn't">isn't</option></select>.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> I don't like coffee, and my sister doesn't <select class="select-blank" data-answer="either"><option value="">-- choose --</option><option value="too">too</option><option value="either">either</option><option value="neither">neither</option></select>.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> "Are you coming to the party?" "I hope <select class="select-blank" data-answer="so"><option value="">-- choose --</option><option value="it">it</option><option value="so">so</option><option value="that">that</option></select>."</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> I need a new pen. Do you have <select class="select-blank" data-answer="one"><option value="">-- choose --</option><option value="it">it</option><option value="one">one</option><option value="ones">ones</option></select>?</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> She works harder than I <select class="select-blank" data-answer="do"><option value="">-- choose --</option><option value="am">am</option><option value="do">do</option><option value="work">work</option></select>.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('ellipsis-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('ellipsis-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="ellipsis-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="ellipsis-dropdown-exercise-score"></p><div id="ellipsis-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="ellipsis-substitution-exercise" data-exercise-id="ellipsis-substitution-advanced">
   <div class="exercise-item">
     <p><strong>1.</strong> John can speak French, but Mary <input type="text" class="fill-blank" data-answer="can't" placeholder="______">. (ellipsis)</p>
@@ -62,7 +74,7 @@ Use ellipsis and substitution to avoid repetition:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -98,11 +110,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -125,7 +141,8 @@ function resetExercise(exerciseId) {
   font-size: 16px;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 10px 14px;
   border-radius: 4px;
@@ -142,12 +159,14 @@ function resetExercise(exerciseId) {
   box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

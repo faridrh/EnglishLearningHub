@@ -18,6 +18,18 @@ Use correct inversion structures:
 - Conditional inversion: **Had/Were/Should + subject** (without if)
 - So/Neither: **So/Neither + auxiliary + subject**
 
+## Exercise 1: Choose the Correct Inversion
+
+<div class="interactive-exercise" id="inversion-dropdown-exercise" data-exercise-id="inversion-dropdown-advanced">
+  <div class="exercise-item"><p><strong>1.</strong> Never <select class="select-blank" data-answer="have I seen"><option value="">-- choose --</option><option value="I have seen">I have seen</option><option value="have I seen">have I seen</option><option value="did I see">did I see</option></select> such a beautiful sunset.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> <select class="select-blank" data-answer="Had I known"><option value="">-- choose --</option><option value="I had known">I had known</option><option value="Had I known">Had I known</option><option value="Did I know">Did I know</option></select> about the meeting, I would have attended.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> Only when the rain stopped <select class="select-blank" data-answer="did we leave"><option value="">-- choose --</option><option value="we left">we left</option><option value="did we leave">did we leave</option><option value="have we left">have we left</option></select> the house.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> Rarely <select class="select-blank" data-answer="does she go"><option value="">-- choose --</option><option value="she goes">she goes</option><option value="does she go">does she go</option><option value="did she go">did she go</option></select> to bed before midnight.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> "I can't swim." "Neither <select class="select-blank" data-answer="can I"><option value="">-- choose --</option><option value="I can">I can</option><option value="can I">can I</option><option value="do I">do I</option></select>."</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('inversion-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('inversion-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="inversion-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="inversion-dropdown-exercise-score"></p><div id="inversion-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="inversion-exercise" data-exercise-id="inversion-advanced">
   <div class="exercise-item">
     <p><strong>1.</strong> Never <input type="text" class="fill-blank" data-answer="have I seen" placeholder="____________"> (I/see) such a beautiful sunset.</p>
@@ -62,7 +74,7 @@ Use correct inversion structures:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -98,11 +110,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -125,7 +141,8 @@ function resetExercise(exerciseId) {
   font-size: 16px;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 10px 14px;
   border-radius: 4px;
@@ -142,12 +159,14 @@ function resetExercise(exerciseId) {
   box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

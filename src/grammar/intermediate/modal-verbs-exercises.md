@@ -19,6 +19,18 @@ Choose the correct modal verb for each sentence. Consider the context and meanin
 - **should/ought to** = advice
 - **would** = polite requests or hypothetical situations
 
+## Exercise 1: Choose the Correct Modal Verb
+
+<div class="interactive-exercise" id="modal-verbs-dropdown-exercise" data-exercise-id="modal-verbs-dropdown-intermediate">
+  <div class="exercise-item"><p><strong>1.</strong> You <select class="select-blank" data-answer="must"><option value="">-- choose --</option><option value="must">must</option><option value="might">might</option><option value="could">could</option></select> wear a seatbelt in the car.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> <select class="select-blank" data-answer="May"><option value="">-- choose --</option><option value="May">May</option><option value="Should">Should</option><option value="Must">Must</option></select> I borrow your pen?</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> It <select class="select-blank" data-answer="might"><option value="">-- choose --</option><option value="must">must</option><option value="might">might</option><option value="should">should</option></select> rain later.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> When I was young, I <select class="select-blank" data-answer="could"><option value="">-- choose --</option><option value="can">can</option><option value="could">could</option><option value="should">should</option></select> climb trees easily.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> You <select class="select-blank" data-answer="should"><option value="">-- choose --</option><option value="must">must</option><option value="should">should</option><option value="might">might</option></select> have called me yesterday.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('modal-verbs-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('modal-verbs-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="modal-verbs-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="modal-verbs-dropdown-exercise-score"></p><div id="modal-verbs-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="modal-verbs-exercise" data-exercise-id="modal-verbs-intermediate">
   <div class="exercise-item">
     <p><strong>1.</strong> You <input type="text" class="fill-blank" data-answer="must" placeholder="_____"> wear a seatbelt in the car. (obligation)</p>
@@ -67,7 +79,7 @@ Choose the correct modal verb for each sentence. Consider the context and meanin
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -103,11 +115,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -128,7 +144,8 @@ function resetExercise(exerciseId) {
   line-height: 1.6;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 8px 12px;
   border-radius: 4px;
@@ -143,12 +160,14 @@ function resetExercise(exerciseId) {
   border-color: #333;
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }

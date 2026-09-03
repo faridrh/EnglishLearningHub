@@ -17,6 +17,18 @@ Use participle clauses to create more concise sentences:
 - **Past Participle (-ed)**: Shows passive meaning or completed actions
 - **Perfect Participle (having + past participle)**: Shows earlier completed action
 
+## Exercise 1: Choose the Correct Participle Clause
+
+<div class="interactive-exercise" id="participle-dropdown-exercise" data-exercise-id="participle-dropdown-advanced">
+  <div class="exercise-item"><p><strong>1.</strong> <select class="select-blank" data-answer="Feeling tired"><option value="">-- choose --</option><option value="Feeling tired">Feeling tired</option><option value="Felt tired">Felt tired</option><option value="Having tired">Having tired</option></select>, she went to bed early.</p></div>
+  <div class="exercise-item"><p><strong>2.</strong> <select class="select-blank" data-answer="Written by a famous author"><option value="">-- choose --</option><option value="Writing by a famous author">Writing by a famous author</option><option value="Written by a famous author">Written by a famous author</option><option value="Having written by a famous author">Having written by a famous author</option></select>, the book became a bestseller.</p></div>
+  <div class="exercise-item"><p><strong>3.</strong> <select class="select-blank" data-answer="Having finished"><option value="">-- choose --</option><option value="Finishing">Finishing</option><option value="Finished">Finished</option><option value="Having finished">Having finished</option></select> his homework, he watched TV.</p></div>
+  <div class="exercise-item"><p><strong>4.</strong> <select class="select-blank" data-answer="Walking in the park"><option value="">-- choose --</option><option value="Walked in the park">Walked in the park</option><option value="Walking in the park">Walking in the park</option><option value="Having walking in the park">Having walking in the park</option></select>, I met an old friend.</p></div>
+  <div class="exercise-item"><p><strong>5.</strong> <select class="select-blank" data-answer="Damaged in the accident"><option value="">-- choose --</option><option value="Damaging in the accident">Damaging in the accident</option><option value="Damaged in the accident">Damaged in the accident</option><option value="Having damage in the accident">Having damage in the accident</option></select>, the car needs repair.</p></div>
+  <div class="exercise-controls"><button onclick="checkAnswers('participle-dropdown-exercise')" class="check-btn">Check Answers</button><button onclick="resetExercise('participle-dropdown-exercise')" class="reset-btn">Reset</button></div>
+  <div id="participle-dropdown-exercise-results" class="results-section" style="display: none;"><h4>Results:</h4><p id="participle-dropdown-exercise-score"></p><div id="participle-dropdown-exercise-feedback"></div></div>
+</div>
+
 <div class="interactive-exercise" id="participle-clauses-exercise" data-exercise-id="participle-clauses-advanced">
   <div class="exercise-item">
     <p><strong>1.</strong> Because she was feeling tired, she went to bed early.<br>
@@ -63,7 +75,7 @@ Use participle clauses to create more concise sentences:
 <script>
 function checkAnswers(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   const scoreP = document.getElementById(exerciseId + '-score');
   const feedbackDiv = document.getElementById(exerciseId + '-feedback');
@@ -99,11 +111,15 @@ function checkAnswers(exerciseId) {
 
 function resetExercise(exerciseId) {
   const exercise = document.getElementById(exerciseId);
-  const inputs = exercise.querySelectorAll('.fill-blank');
+  const inputs = exercise.querySelectorAll('.fill-blank, .select-blank');
   const resultsDiv = document.getElementById(exerciseId + '-results');
   
   inputs.forEach(input => {
-    input.value = '';
+    if (input.tagName === 'SELECT') {
+      input.selectedIndex = 0;
+    } else {
+      input.value = '';
+    }
     input.classList.remove('correct', 'incorrect');
   });
   
@@ -126,7 +142,8 @@ function resetExercise(exerciseId) {
   font-size: 16px;
 }
 
-.fill-blank {
+.fill-blank,
+.select-blank {
   border: 2px solid #ddd;
   padding: 10px 14px;
   border-radius: 4px;
@@ -143,12 +160,14 @@ function resetExercise(exerciseId) {
   box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
-.fill-blank.correct {
+.fill-blank.correct,
+.select-blank.correct {
   border-color: #28a745;
   background-color: #d4edda;
 }
 
-.fill-blank.incorrect {
+.fill-blank.incorrect,
+.select-blank.incorrect {
   border-color: #dc3545;
   background-color: #f8d7da;
 }
