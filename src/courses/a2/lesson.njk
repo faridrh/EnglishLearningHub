@@ -377,28 +377,6 @@ eleventyComputed:
 </section>
 {% endif %}
 
-<section class="cta-section">
-  <div class="container">
-    <h2 class="cta-title">Want More Free Practice?</h2>
-    <p class="cta-description">Keep learning with free lessons on our partner site, then continue to the next A2 lesson.</p>
-    <div class="cta-buttons">
-      <a
-        href="https://www.ingilisdili.net/free-lessons"
-        class="button button-secondary"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Start Free Lessons
-      </a>
-      {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}" class="button button-primary">Next: Lesson {{ lesson.number + 1 }}</a>
-      {% else %}
-      <a href="/placement-test/" class="button button-primary">Take Level Test</a>
-      {% endif %}
-    </div>
-  </div>
-</section>
-
 <section class="cta-section lesson-nav-cta">
   <div class="container">
     <h2 class="cta-title">Lesson Complete</h2>
@@ -414,6 +392,23 @@ eleventyComputed:
       {% endif %}
       <a href="/courses/a2/" class="button button-secondary">Back to A2 Course</a>
       <a href="/placement-test/" class="button button-secondary">Take Level Test</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">Want Lessons with Natural Sound and More Exercises?</h2>
+    <p class="cta-description">Check it now.</p>
+    <div class="cta-buttons">
+      <a
+        href="https://www.ingilisdili.net/free-lessons"
+        class="button button-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Check it now
+      </a>
     </div>
   </div>
 </section>
