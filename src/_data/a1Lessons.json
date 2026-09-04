@@ -64,34 +64,42 @@
           "items": [
             {
               "label": "wake up",
+              "translation": "oyanmaq",
               "speakText": "wake up"
             },
             {
               "label": "get up",
+              "translation": "durmaq",
               "speakText": "get up"
             },
             {
               "label": "have breakfast",
+              "translation": "səhər yeməyi yemək",
               "speakText": "have breakfast"
             },
             {
               "label": "go to work",
+              "translation": "işə getmək",
               "speakText": "go to work"
             },
             {
               "label": "study",
+              "translation": "dərs oxumaq",
               "speakText": "study"
             },
             {
               "label": "come home",
+              "translation": "evə gəlmək",
               "speakText": "come home"
             },
             {
               "label": "have dinner",
+              "translation": "şam yeməyi yemək",
               "speakText": "have dinner"
             },
             {
               "label": "go to bed",
+              "translation": "yatağa getmək",
               "speakText": "go to bed"
             }
           ]
@@ -104,26 +112,32 @@
           "items": [
             {
               "label": "I wake up at 7.",
+              "translation": "Mən saat 7-də oyanıram.",
               "speakText": "I wake up at 7."
             },
             {
               "label": "I have breakfast every day.",
+              "translation": "Mən hər gün səhər yeməyi yeyirəm.",
               "speakText": "I have breakfast every day."
             },
             {
               "label": "I go to work in the morning.",
+              "translation": "Mən səhər işə gedirəm.",
               "speakText": "I go to work in the morning."
             },
             {
               "label": "We study English.",
+              "translation": "Biz ingilis dili öyrənirik.",
               "speakText": "We study English."
             },
             {
               "label": "They come home in the evening.",
+              "translation": "Onlar axşam evə gəlirlər.",
               "speakText": "They come home in the evening."
             },
             {
               "label": "I go to bed at night.",
+              "translation": "Mən gecə yatıram.",
               "speakText": "I go to bed at night."
             }
           ]
@@ -304,34 +318,42 @@
           "items": [
             {
               "label": "works",
+              "translation": "işləyir",
               "speakText": "works"
             },
             {
               "label": "lives",
+              "translation": "yaşayır",
               "speakText": "lives"
             },
             {
               "label": "studies",
+              "translation": "oxuyur",
               "speakText": "studies"
             },
             {
               "label": "goes",
+              "translation": "gedir",
               "speakText": "goes"
             },
             {
               "label": "watches",
+              "translation": "baxır",
               "speakText": "watches"
             },
             {
               "label": "teaches",
+              "translation": "dərs deyir",
               "speakText": "teaches"
             },
             {
               "label": "likes",
+              "translation": "sevir",
               "speakText": "likes"
             },
             {
               "label": "has",
+              "translation": "var",
               "speakText": "has"
             }
           ]
@@ -344,26 +366,32 @@
           "items": [
             {
               "label": "He works in a shop.",
+              "translation": "O mağazada işləyir.",
               "speakText": "He works in a shop."
             },
             {
               "label": "She lives in Baku.",
+              "translation": "O Bakıda yaşayır.",
               "speakText": "She lives in Baku."
             },
             {
               "label": "He studies English.",
+              "translation": "O ingilis dili oxuyur.",
               "speakText": "He studies English."
             },
             {
               "label": "She goes to school.",
+              "translation": "O məktəbə gedir.",
               "speakText": "She goes to school."
             },
             {
               "label": "He watches TV.",
+              "translation": "O televizora baxır.",
               "speakText": "He watches TV."
             },
             {
               "label": "She has two children.",
+              "translation": "Onun iki uşağı var.",
               "speakText": "She has two children."
             }
           ]
@@ -536,26 +564,32 @@
           "items": [
             {
               "label": "Do you work?",
+              "translation": "Sən işləyirsən?",
               "speakText": "Do you work?"
             },
             {
               "label": "Do you study English?",
+              "translation": "Sən ingilis dili oxuyursan?",
               "speakText": "Do you study English?"
             },
             {
               "label": "Do you like coffee?",
+              "translation": "Sən qəhvə sevirsən?",
               "speakText": "Do you like coffee?"
             },
             {
               "label": "Does she live here?",
+              "translation": "O burada yaşayır?",
               "speakText": "Does she live here?"
             },
             {
               "label": "Does he work on Monday?",
+              "translation": "O bazar ertəsi işləyir?",
               "speakText": "Does he work on Monday?"
             },
             {
               "label": "Do they go to school?",
+              "translation": "Onlar məktəbə gedirlər?",
               "speakText": "Do they go to school?"
             }
           ]
@@ -568,26 +602,32 @@
           "items": [
             {
               "label": "Yes, I do.",
+              "translation": "Bəli, edirəm.",
               "speakText": "Yes, I do."
             },
             {
               "label": "No, I don't.",
+              "translation": "Xeyr, etmirəm.",
               "speakText": "No, I don't."
             },
             {
               "label": "Yes, she does.",
+              "translation": "Bəli, edir.",
               "speakText": "Yes, she does."
             },
             {
               "label": "No, he doesn't.",
+              "translation": "Xeyr, etmir.",
               "speakText": "No, he doesn't."
             },
             {
               "label": "I don't like coffee.",
+              "translation": "Mən qəhvə sevmirəm.",
               "speakText": "I don't like coffee."
             },
             {
               "label": "He doesn't work on Sunday.",
+              "translation": "O bazar günü işləmir.",
               "speakText": "He doesn't work on Sunday."
             }
           ]
@@ -766,34 +806,42 @@
           "items": [
             {
               "label": "parents",
+              "translation": "valideynlər",
               "speakText": "parents"
             },
             {
               "label": "children",
+              "translation": "uşaqlar",
               "speakText": "children"
             },
             {
               "label": "uncle",
+              "translation": "əmi",
               "speakText": "uncle"
             },
             {
               "label": "aunt",
+              "translation": "xala",
               "speakText": "aunt"
             },
             {
               "label": "cousin",
+              "translation": "əmiuşağı",
               "speakText": "cousin"
             },
             {
               "label": "husband",
+              "translation": "ər",
               "speakText": "husband"
             },
             {
               "label": "wife",
+              "translation": "arvad",
               "speakText": "wife"
             },
             {
               "label": "neighbour",
+              "translation": "qonşu",
               "speakText": "neighbour"
             }
           ]
@@ -806,26 +854,32 @@
           "items": [
             {
               "label": "I have two brothers.",
+              "translation": "Mənim iki qardaşım var.",
               "speakText": "I have two brothers."
             },
             {
               "label": "My mother is kind.",
+              "translation": "Anam mehribandır.",
               "speakText": "My mother is kind."
             },
             {
               "label": "My father is tall.",
+              "translation": "Atam hündürdür.",
               "speakText": "My father is tall."
             },
             {
               "label": "She is my cousin.",
+              "translation": "O mənim əmiqızımdır.",
               "speakText": "She is my cousin."
             },
             {
               "label": "He is friendly.",
+              "translation": "O mehribandır.",
               "speakText": "He is friendly."
             },
             {
               "label": "They are my parents.",
+              "translation": "Onlar mənim valideynlərimdir.",
               "speakText": "They are my parents."
             }
           ]
@@ -996,34 +1050,42 @@
           "items": [
             {
               "label": "kitchen",
+              "translation": "mətbəx",
               "speakText": "kitchen"
             },
             {
               "label": "bedroom",
+              "translation": "yataq otağı",
               "speakText": "bedroom"
             },
             {
               "label": "bathroom",
+              "translation": "hamam",
               "speakText": "bathroom"
             },
             {
               "label": "living room",
+              "translation": "qonaq otağı",
               "speakText": "living room"
             },
             {
               "label": "garden",
+              "translation": "bağ",
               "speakText": "garden"
             },
             {
               "label": "balcony",
+              "translation": "balkon",
               "speakText": "balcony"
             },
             {
               "label": "hall",
+              "translation": "dəhliz",
               "speakText": "hall"
             },
             {
               "label": "dining room",
+              "translation": "yemək otağı",
               "speakText": "dining room"
             }
           ]
@@ -1036,26 +1098,32 @@
           "items": [
             {
               "label": "I live in a flat.",
+              "translation": "Mən mənzildə yaşayıram.",
               "speakText": "I live in a flat."
             },
             {
               "label": "There is a kitchen.",
+              "translation": "Bir mətbəx var.",
               "speakText": "There is a kitchen."
             },
             {
               "label": "There are two bedrooms.",
+              "translation": "İki yataq otağı var.",
               "speakText": "There are two bedrooms."
             },
             {
               "label": "The living room is big.",
+              "translation": "Qonaq otağı böyükdür.",
               "speakText": "The living room is big."
             },
             {
               "label": "There is a table in the kitchen.",
+              "translation": "Mətbəxdə bir masa var.",
               "speakText": "There is a table in the kitchen."
             },
             {
               "label": "My bedroom is small.",
+              "translation": "Yataq otağım kiçikdir.",
               "speakText": "My bedroom is small."
             }
           ]
@@ -1226,34 +1294,42 @@
           "items": [
             {
               "label": "teacher",
+              "translation": "müəllim",
               "speakText": "teacher"
             },
             {
               "label": "doctor",
+              "translation": "həkim",
               "speakText": "doctor"
             },
             {
               "label": "driver",
+              "translation": "sürücü",
               "speakText": "driver"
             },
             {
               "label": "student",
+              "translation": "tələbə",
               "speakText": "student"
             },
             {
               "label": "engineer",
+              "translation": "mühəndis",
               "speakText": "engineer"
             },
             {
               "label": "shop assistant",
+              "translation": "satıcı",
               "speakText": "shop assistant"
             },
             {
               "label": "nurse",
+              "translation": "tibb bacısı",
               "speakText": "nurse"
             },
             {
               "label": "cook",
+              "translation": "aşpaz",
               "speakText": "cook"
             }
           ]
@@ -1266,26 +1342,32 @@
           "items": [
             {
               "label": "I am a student.",
+              "translation": "Mən tələbəyəm.",
               "speakText": "I am a student."
             },
             {
               "label": "She is a doctor.",
+              "translation": "O həkimdir.",
               "speakText": "She is a doctor."
             },
             {
               "label": "He works in an office.",
+              "translation": "O ofisdə işləyir.",
               "speakText": "He works in an office."
             },
             {
               "label": "She works in a hospital.",
+              "translation": "O xəstəxanada işləyir.",
               "speakText": "She works in a hospital."
             },
             {
               "label": "I work in a shop.",
+              "translation": "Mən mağazada işləyirəm.",
               "speakText": "I work in a shop."
             },
             {
               "label": "They work at school.",
+              "translation": "Onlar məktəbdə işləyirlər.",
               "speakText": "They work at school."
             }
           ]
@@ -1460,34 +1542,42 @@
           "items": [
             {
               "label": "bread",
+              "translation": "çörək",
               "speakText": "bread"
             },
             {
               "label": "rice",
+              "translation": "düyü",
               "speakText": "rice"
             },
             {
               "label": "meat",
+              "translation": "ət",
               "speakText": "meat"
             },
             {
               "label": "fish",
+              "translation": "balıq",
               "speakText": "fish"
             },
             {
               "label": "fruit",
+              "translation": "meyvə",
               "speakText": "fruit"
             },
             {
               "label": "vegetables",
+              "translation": "tərəvəz",
               "speakText": "vegetables"
             },
             {
               "label": "tea",
+              "translation": "çay",
               "speakText": "tea"
             },
             {
               "label": "coffee",
+              "translation": "qəhvə",
               "speakText": "coffee"
             }
           ]
@@ -1500,26 +1590,32 @@
           "items": [
             {
               "label": "I have breakfast at 8.",
+              "translation": "Mən saat 8-də səhər yeməyi yeyirəm.",
               "speakText": "I have breakfast at 8."
             },
             {
               "label": "I like tea.",
+              "translation": "Mən çay sevirəm.",
               "speakText": "I like tea."
             },
             {
               "label": "I don't like coffee.",
+              "translation": "Mən qəhvə sevmirəm.",
               "speakText": "I don't like coffee."
             },
             {
               "label": "She loves fruit.",
+              "translation": "O meyvəni çox sevir.",
               "speakText": "She loves fruit."
             },
             {
               "label": "We eat rice for lunch.",
+              "translation": "Biz nahara düyü yeyirik.",
               "speakText": "We eat rice for lunch."
             },
             {
               "label": "They drink water.",
+              "translation": "Onlar su içirlər.",
               "speakText": "They drink water."
             }
           ]
@@ -1691,34 +1787,42 @@
           "items": [
             {
               "label": "read books",
+              "translation": "kitab oxumaq",
               "speakText": "read books"
             },
             {
               "label": "watch films",
+              "translation": "filmə baxmaq",
               "speakText": "watch films"
             },
             {
               "label": "play football",
+              "translation": "futbol oynamaq",
               "speakText": "play football"
             },
             {
               "label": "listen to music",
+              "translation": "musiqi dinləmək",
               "speakText": "listen to music"
             },
             {
               "label": "cook",
+              "translation": "yemək bişirmək",
               "speakText": "cook"
             },
             {
               "label": "walk in the park",
+              "translation": "parkda gəzmək",
               "speakText": "walk in the park"
             },
             {
               "label": "swim",
+              "translation": "üzmək",
               "speakText": "swim"
             },
             {
               "label": "play games",
+              "translation": "oyun oynamaq",
               "speakText": "play games"
             }
           ]
@@ -1731,26 +1835,32 @@
           "items": [
             {
               "label": "In my free time, I read.",
+              "translation": "Boş vaxtımda oxuyuram.",
               "speakText": "In my free time, I read."
             },
             {
               "label": "I play football at the weekend.",
+              "translation": "Mən həftəsonu futbol oynayıram.",
               "speakText": "I play football at the weekend."
             },
             {
               "label": "She watches films.",
+              "translation": "O filmə baxır.",
               "speakText": "She watches films."
             },
             {
               "label": "We listen to music.",
+              "translation": "Biz musiqi dinləyirik.",
               "speakText": "We listen to music."
             },
             {
               "label": "He cooks after work.",
+              "translation": "O işdən sonra yemək bişirir.",
               "speakText": "He cooks after work."
             },
             {
               "label": "They walk in the park.",
+              "translation": "Onlar parkda gəzirlər.",
               "speakText": "They walk in the park."
             }
           ]
@@ -1921,26 +2031,32 @@
           "items": [
             {
               "label": "Who",
+              "translation": "Kim",
               "speakText": "Who"
             },
             {
               "label": "What",
+              "translation": "Nə",
               "speakText": "What"
             },
             {
               "label": "Where",
+              "translation": "Harada",
               "speakText": "Where"
             },
             {
               "label": "When",
+              "translation": "Nə vaxt",
               "speakText": "When"
             },
             {
               "label": "How",
+              "translation": "Necə",
               "speakText": "How"
             },
             {
               "label": "Why",
+              "translation": "Nə üçün",
               "speakText": "Why"
             }
           ]
@@ -1953,34 +2069,42 @@
           "items": [
             {
               "label": "Where do you live?",
+              "translation": "Sən harada yaşayırsan?",
               "speakText": "Where do you live?"
             },
             {
               "label": "I live in Baku.",
+              "translation": "Mən Bakıda yaşayıram.",
               "speakText": "I live in Baku."
             },
             {
               "label": "What do you do?",
+              "translation": "Sən nə işlə məşğulsan?",
               "speakText": "What do you do?"
             },
             {
               "label": "I am a student.",
+              "translation": "Mən tələbəyəm.",
               "speakText": "I am a student."
             },
             {
               "label": "When do you work?",
+              "translation": "Sən nə vaxt işləyirsən?",
               "speakText": "When do you work?"
             },
             {
               "label": "How are you?",
+              "translation": "Necəsən?",
               "speakText": "How are you?"
             },
             {
               "label": "Who is your teacher?",
+              "translation": "Müəllimin kimdir?",
               "speakText": "Who is your teacher?"
             },
             {
               "label": "Why do you study English?",
+              "translation": "Nə üçün ingilis dili oxuyursan?",
               "speakText": "Why do you study English?"
             }
           ]
@@ -2152,34 +2276,42 @@
           "items": [
             {
               "label": "I can swim.",
+              "translation": "Mən üzə bilirəm.",
               "speakText": "I can swim."
             },
             {
               "label": "I can drive.",
+              "translation": "Mən maşın sürə bilirəm.",
               "speakText": "I can drive."
             },
             {
               "label": "I can speak English.",
+              "translation": "Mən ingiliscə danışa bilirəm.",
               "speakText": "I can speak English."
             },
             {
               "label": "I can cook.",
+              "translation": "Mən yemək bişirə bilirəm.",
               "speakText": "I can cook."
             },
             {
               "label": "I can't sing.",
+              "translation": "Mən oxuya bilmirəm.",
               "speakText": "I can't sing."
             },
             {
               "label": "She can dance.",
+              "translation": "O rəqs edə bilir.",
               "speakText": "She can dance."
             },
             {
               "label": "He can't drive.",
+              "translation": "O maşın sürə bilmir.",
               "speakText": "He can't drive."
             },
             {
               "label": "They can play football.",
+              "translation": "Onlar futbol oynaya bilirlər.",
               "speakText": "They can play football."
             }
           ]
@@ -2192,26 +2324,32 @@
           "items": [
             {
               "label": "Can you help me?",
+              "translation": "Mənə kömək edə bilərsən?",
               "speakText": "Can you help me?"
             },
             {
               "label": "Can you open the window?",
+              "translation": "Pəncərəni aça bilərsən?",
               "speakText": "Can you open the window?"
             },
             {
               "label": "Can I sit here?",
+              "translation": "Burada otura bilərəm?",
               "speakText": "Can I sit here?"
             },
             {
               "label": "Yes, I can.",
+              "translation": "Bəli, bacarıram.",
               "speakText": "Yes, I can."
             },
             {
               "label": "No, I can't.",
+              "translation": "Xeyr, bacarmıram.",
               "speakText": "No, I can't."
             },
             {
               "label": "Of course.",
+              "translation": "Əlbəttə.",
               "speakText": "Of course."
             }
           ]

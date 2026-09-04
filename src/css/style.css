@@ -1620,6 +1620,7 @@ p {
 
 .alphabet-key {
   appearance: none;
+  position: relative;
   border: 2px solid #cbd5e1;
   background: #f8fafc;
   color: var(--color-text);
@@ -2014,7 +2015,10 @@ p {
 
 .practice-word-btn:hover .practice-word-translation,
 .practice-word-btn:focus .practice-word-translation,
-.practice-word-btn:focus-visible .practice-word-translation {
+.practice-word-btn:focus-visible .practice-word-translation,
+.alphabet-key:hover .practice-word-translation,
+.alphabet-key:focus .practice-word-translation,
+.alphabet-key:focus-visible .practice-word-translation {
   opacity: 1;
   visibility: visible;
 }

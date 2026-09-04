@@ -64,34 +64,42 @@
           "items": [
             {
               "label": "worked",
+              "translation": "işlədi",
               "speakText": "worked"
             },
             {
               "label": "played",
+              "translation": "oynadı",
               "speakText": "played"
             },
             {
               "label": "studied",
+              "translation": "oxudu",
               "speakText": "studied"
             },
             {
               "label": "watched",
+              "translation": "baxdı",
               "speakText": "watched"
             },
             {
               "label": "went",
+              "translation": "getdi",
               "speakText": "went"
             },
             {
               "label": "saw",
+              "translation": "gördü",
               "speakText": "saw"
             },
             {
               "label": "had",
+              "translation": "var idi",
               "speakText": "had"
             },
             {
               "label": "bought",
+              "translation": "aldı",
               "speakText": "bought"
             }
           ]
@@ -104,26 +112,32 @@
           "items": [
             {
               "label": "I worked yesterday.",
+              "translation": "Mən dünən işlədim.",
               "speakText": "I worked yesterday."
             },
             {
               "label": "She studied English last night.",
+              "translation": "O dünən axşam ingilis dili oxudu.",
               "speakText": "She studied English last night."
             },
             {
               "label": "We went to the park.",
+              "translation": "Biz parka getdik.",
               "speakText": "We went to the park."
             },
             {
               "label": "He saw a film.",
+              "translation": "O filmə baxdı.",
               "speakText": "He saw a film."
             },
             {
               "label": "They had dinner at home.",
+              "translation": "Onlar evdə şam yeməyi yedilər.",
               "speakText": "They had dinner at home."
             },
             {
               "label": "I bought a new phone.",
+              "translation": "Mən yeni telefon aldım.",
               "speakText": "I bought a new phone."
             }
           ]
@@ -299,26 +313,32 @@
           "items": [
             {
               "label": "Did you work yesterday?",
+              "translation": "Sən dünən işlədin?",
               "speakText": "Did you work yesterday?"
             },
             {
               "label": "Did you go out?",
+              "translation": "Sən bayıra çıxdın?",
               "speakText": "Did you go out?"
             },
             {
               "label": "Did she study English?",
+              "translation": "O ingilis dili oxudu?",
               "speakText": "Did she study English?"
             },
             {
               "label": "Did he buy a ticket?",
+              "translation": "O bilet aldı?",
               "speakText": "Did he buy a ticket?"
             },
             {
               "label": "Did they like the food?",
+              "translation": "Onlar yeməyi bəyəndilər?",
               "speakText": "Did they like the food?"
             },
             {
               "label": "Did you see the film?",
+              "translation": "Sən filmi gördün?",
               "speakText": "Did you see the film?"
             }
           ]
@@ -331,26 +351,32 @@
           "items": [
             {
               "label": "Yes, I did.",
+              "translation": "Bəli, etdim.",
               "speakText": "Yes, I did."
             },
             {
               "label": "No, I didn't.",
+              "translation": "Xeyr, etmədim.",
               "speakText": "No, I didn't."
             },
             {
               "label": "Yes, she did.",
+              "translation": "Bəli, etdi.",
               "speakText": "Yes, she did."
             },
             {
               "label": "No, he didn't.",
+              "translation": "Xeyr, etmədi.",
               "speakText": "No, he didn't."
             },
             {
               "label": "I didn't go out.",
+              "translation": "Mən bayıra çıxmadım.",
               "speakText": "I didn't go out."
             },
             {
               "label": "They didn't buy it.",
+              "translation": "Onlar onu almadılar.",
               "speakText": "They didn't buy it."
             }
           ]
@@ -529,34 +555,42 @@
           "items": [
             {
               "label": "studying",
+              "translation": "dərs oxuyur",
               "speakText": "studying"
             },
             {
               "label": "working",
+              "translation": "işləyir",
               "speakText": "working"
             },
             {
               "label": "watching",
+              "translation": "baxır",
               "speakText": "watching"
             },
             {
               "label": "meeting",
+              "translation": "görüşür",
               "speakText": "meeting"
             },
             {
               "label": "cooking",
+              "translation": "bişirir",
               "speakText": "cooking"
             },
             {
               "label": "travelling",
+              "translation": "səyahət edir",
               "speakText": "travelling"
             },
             {
               "label": "waiting",
+              "translation": "gözləyir",
               "speakText": "waiting"
             },
             {
               "label": "reading",
+              "translation": "oxuyur",
               "speakText": "reading"
             }
           ]
@@ -569,26 +603,32 @@
           "items": [
             {
               "label": "I am studying now.",
+              "translation": "Mən indi oxuyuram.",
               "speakText": "I am studying now."
             },
             {
               "label": "She is working at the moment.",
+              "translation": "O hazırda işləyir.",
               "speakText": "She is working at the moment."
             },
             {
               "label": "They are watching a film.",
+              "translation": "Onlar filmə baxırlar.",
               "speakText": "They are watching a film."
             },
             {
               "label": "I am meeting a friend tomorrow.",
+              "translation": "Mən sabah dostumla görüşürəm.",
               "speakText": "I am meeting a friend tomorrow."
             },
             {
               "label": "We are travelling next week.",
+              "translation": "Biz gələn həftə səyahət edirik.",
               "speakText": "We are travelling next week."
             },
             {
               "label": "He is cooking dinner.",
+              "translation": "O şam yeməyi bişirir.",
               "speakText": "He is cooking dinner."
             }
           ]
@@ -767,26 +807,32 @@
           "items": [
             {
               "label": "going to study",
+              "translation": "dərs oxuyacaq",
               "speakText": "going to study"
             },
             {
               "label": "going to travel",
+              "translation": "səyahət edəcək",
               "speakText": "going to travel"
             },
             {
               "label": "going to cook",
+              "translation": "yemək bişirəcək",
               "speakText": "going to cook"
             },
             {
               "label": "going to meet friends",
+              "translation": "dostlarla görüşəcək",
               "speakText": "going to meet friends"
             },
             {
               "label": "going to watch a film",
+              "translation": "filmə baxacaq",
               "speakText": "going to watch a film"
             },
             {
               "label": "going to buy tickets",
+              "translation": "bilet alacaq",
               "speakText": "going to buy tickets"
             }
           ]
@@ -799,26 +845,32 @@
           "items": [
             {
               "label": "I am going to study tonight.",
+              "translation": "Mən bu axşam dərs oxuyacağam.",
               "speakText": "I am going to study tonight."
             },
             {
               "label": "She is going to travel next month.",
+              "translation": "O gələn ay səyahət edəcək.",
               "speakText": "She is going to travel next month."
             },
             {
               "label": "We are going to meet friends.",
+              "translation": "Biz dostlarla görüşəcəyik.",
               "speakText": "We are going to meet friends."
             },
             {
               "label": "He is going to cook dinner.",
+              "translation": "O şam yeməyi bişirəcək.",
               "speakText": "He is going to cook dinner."
             },
             {
               "label": "They are going to buy tickets.",
+              "translation": "Onlar bilet alacaqlar.",
               "speakText": "They are going to buy tickets."
             },
             {
               "label": "I am not going to work tomorrow.",
+              "translation": "Mən sabah işləməyəcəyəm.",
               "speakText": "I am not going to work tomorrow."
             }
           ]
@@ -1007,26 +1059,32 @@
           "items": [
             {
               "label": "I will help you.",
+              "translation": "Mən sənə kömək edəcəyəm.",
               "speakText": "I will help you."
             },
             {
               "label": "It will rain tomorrow.",
+              "translation": "Sabah yağış yağacaq.",
               "speakText": "It will rain tomorrow."
             },
             {
               "label": "You will love this.",
+              "translation": "Bunu çox bəyənəcəksən.",
               "speakText": "You will love this."
             },
             {
               "label": "I'll call you later.",
+              "translation": "Mən sənə sonra zəng edəcəyəm.",
               "speakText": "I'll call you later."
             },
             {
               "label": "I won't be late.",
+              "translation": "Mən gecikməyəcəyəm.",
               "speakText": "I won't be late."
             },
             {
               "label": "We'll see you soon.",
+              "translation": "Tezliklə görüşəcəyik.",
               "speakText": "We'll see you soon."
             }
           ]
@@ -1039,26 +1097,32 @@
           "items": [
             {
               "label": "Will you come?",
+              "translation": "Sən gələcəksən?",
               "speakText": "Will you come?"
             },
             {
               "label": "Yes, I will.",
+              "translation": "Bəli, gələcəyəm.",
               "speakText": "Yes, I will."
             },
             {
               "label": "No, I won't.",
+              "translation": "Xeyr, gəlməyəcəyəm.",
               "speakText": "No, I won't."
             },
             {
               "label": "Will it be sunny?",
+              "translation": "Hava günəşli olacaq?",
               "speakText": "Will it be sunny?"
             },
             {
               "label": "I think it will.",
+              "translation": "Məncə olacaq.",
               "speakText": "I think it will."
             },
             {
               "label": "Maybe it won't.",
+              "translation": "Bəlkə olmayacaq.",
               "speakText": "Maybe it won't."
             }
           ]
@@ -1222,34 +1286,42 @@
           "items": [
             {
               "label": "bigger",
+              "translation": "daha böyük",
               "speakText": "bigger"
             },
             {
               "label": "smaller",
+              "translation": "daha kiçik",
               "speakText": "smaller"
             },
             {
               "label": "cheaper",
+              "translation": "daha ucuz",
               "speakText": "cheaper"
             },
             {
               "label": "more expensive",
+              "translation": "daha bahalı",
               "speakText": "more expensive"
             },
             {
               "label": "better",
+              "translation": "daha yaxşı",
               "speakText": "better"
             },
             {
               "label": "worse",
+              "translation": "daha pis",
               "speakText": "worse"
             },
             {
               "label": "the best",
+              "translation": "ən yaxşı",
               "speakText": "the best"
             },
             {
               "label": "the most interesting",
+              "translation": "ən maraqlı",
               "speakText": "the most interesting"
             }
           ]
@@ -1262,26 +1334,32 @@
           "items": [
             {
               "label": "Baku is bigger than Ganja.",
+              "translation": "Bakı Gəncədən böyükdür.",
               "speakText": "Baku is bigger than Ganja."
             },
             {
               "label": "This phone is more expensive.",
+              "translation": "Bu telefon daha bahadır.",
               "speakText": "This phone is more expensive."
             },
             {
               "label": "My flat is smaller than yours.",
+              "translation": "Mənzilim səninkindən kiçikdir.",
               "speakText": "My flat is smaller than yours."
             },
             {
               "label": "This is the best café.",
+              "translation": "Bu ən yaxşı kafedir.",
               "speakText": "This is the best café."
             },
             {
               "label": "English is more useful for work.",
+              "translation": "İngilis dili iş üçün daha faydalıdır.",
               "speakText": "English is more useful for work."
             },
             {
               "label": "Yesterday was worse than today.",
+              "translation": "Dünən bu gündən pis idi.",
               "speakText": "Yesterday was worse than today."
             }
           ]
@@ -1467,34 +1545,42 @@
           "items": [
             {
               "label": "You should rest.",
+              "translation": "Sən dincəlməlisən.",
               "speakText": "You should rest."
             },
             {
               "label": "You shouldn't smoke.",
+              "translation": "Sən siqaret çəkməməlisən.",
               "speakText": "You shouldn't smoke."
             },
             {
               "label": "You must be careful.",
+              "translation": "Sən ehtiyatlı olmalısan.",
               "speakText": "You must be careful."
             },
             {
               "label": "I have to work.",
+              "translation": "Mən işləməliyəm.",
               "speakText": "I have to work."
             },
             {
               "label": "She has to study.",
+              "translation": "O dərs oxumalıdır.",
               "speakText": "She has to study."
             },
             {
               "label": "You don't have to pay.",
+              "translation": "Sən ödəməyə məcbur deyilsən.",
               "speakText": "You don't have to pay."
             },
             {
               "label": "We must wear a seatbelt.",
+              "translation": "Biz təhlükəsizlik kəməri taxmalıyıq.",
               "speakText": "We must wear a seatbelt."
             },
             {
               "label": "You should drink water.",
+              "translation": "Sən su içməlisən.",
               "speakText": "You should drink water."
             }
           ]
@@ -1507,26 +1593,32 @@
           "items": [
             {
               "label": "You should sleep more.",
+              "translation": "Sən daha çox yatmalısan.",
               "speakText": "You should sleep more."
             },
             {
               "label": "Students must do homework.",
+              "translation": "Tələbələr ev tapşırığı etməlidir.",
               "speakText": "Students must do homework."
             },
             {
               "label": "I have to wake up early.",
+              "translation": "Mən tezdən oyanmalıyam.",
               "speakText": "I have to wake up early."
             },
             {
               "label": "You don't have to come.",
+              "translation": "Sən gəlməyə məcbur deyilsən.",
               "speakText": "You don't have to come."
             },
             {
               "label": "Drivers must stop at red lights.",
+              "translation": "Sürücülər qırmızı işıqda dayanmalıdır.",
               "speakText": "Drivers must stop at red lights."
             },
             {
               "label": "You should practise English every day.",
+              "translation": "Sən hər gün ingilis dili məşq etməlisən.",
               "speakText": "You should practise English every day."
             }
           ]
@@ -1705,34 +1797,42 @@
           "items": [
             {
               "label": "some apples",
+              "translation": "bir neçə alma",
               "speakText": "some apples"
             },
             {
               "label": "some water",
+              "translation": "bir az su",
               "speakText": "some water"
             },
             {
               "label": "any milk",
+              "translation": "hər hansı süd",
               "speakText": "any milk"
             },
             {
               "label": "many books",
+              "translation": "çox kitab",
               "speakText": "many books"
             },
             {
               "label": "much time",
+              "translation": "çox vaxt",
               "speakText": "much time"
             },
             {
               "label": "a lot of people",
+              "translation": "çox adam",
               "speakText": "a lot of people"
             },
             {
               "label": "a few eggs",
+              "translation": "bir neçə yumurta",
               "speakText": "a few eggs"
             },
             {
               "label": "a little sugar",
+              "translation": "bir az şəkər",
               "speakText": "a little sugar"
             }
           ]
@@ -1745,26 +1845,32 @@
           "items": [
             {
               "label": "I have some apples.",
+              "translation": "Mənim bir neçə almam var.",
               "speakText": "I have some apples."
             },
             {
               "label": "Do you have any milk?",
+              "translation": "Səndə süd varmı?",
               "speakText": "Do you have any milk?"
             },
             {
               "label": "I don't have any money.",
+              "translation": "Mənim heç pulum yoxdur.",
               "speakText": "I don't have any money."
             },
             {
               "label": "How many eggs do you need?",
+              "translation": "Sənə neçə yumurta lazımdır?",
               "speakText": "How many eggs do you need?"
             },
             {
               "label": "How much water is there?",
+              "translation": "Nə qədər su var?",
               "speakText": "How much water is there?"
             },
             {
               "label": "There isn't much time.",
+              "translation": "Çox vaxt yoxdur.",
               "speakText": "There isn't much time."
             }
           ]
@@ -1950,34 +2056,42 @@
           "items": [
             {
               "label": "and",
+              "translation": "və",
               "speakText": "and"
             },
             {
               "label": "but",
+              "translation": "amma",
               "speakText": "but"
             },
             {
               "label": "because",
+              "translation": "çünki",
               "speakText": "because"
             },
             {
               "label": "so",
+              "translation": "ona görə",
               "speakText": "so"
             },
             {
               "label": "although",
+              "translation": "olsa da",
               "speakText": "although"
             },
             {
               "label": "when",
+              "translation": "o zaman",
               "speakText": "when"
             },
             {
               "label": "if",
+              "translation": "əgər",
               "speakText": "if"
             },
             {
               "label": "then",
+              "translation": "sonra",
               "speakText": "then"
             }
           ]
@@ -1990,26 +2104,32 @@
           "items": [
             {
               "label": "I stayed home because it rained.",
+              "translation": "Yağış yağdığı üçün evdə qaldım.",
               "speakText": "I stayed home because it rained."
             },
             {
               "label": "It rained, so I stayed home.",
+              "translation": "Yağış yağdı, ona görə evdə qaldım.",
               "speakText": "It rained, so I stayed home."
             },
             {
               "label": "I was tired, but I finished my work.",
+              "translation": "Yorğun idim, amma işimi bitirdim.",
               "speakText": "I was tired, but I finished my work."
             },
             {
               "label": "Although it was cold, we went out.",
+              "translation": "Soyuq olsa da, biz bayıra çıxdıq.",
               "speakText": "Although it was cold, we went out."
             },
             {
               "label": "When I arrived, she was waiting.",
+              "translation": "Mən gələndə o gözləyirdi.",
               "speakText": "When I arrived, she was waiting."
             },
             {
               "label": "If I have time, I will call you.",
+              "translation": "Vaxtım olsa, sənə zəng edəcəyəm.",
               "speakText": "If I have time, I will call you."
             }
           ]
@@ -2202,34 +2322,42 @@
           "items": [
             {
               "label": "I think...",
+              "translation": "Məncə...",
               "speakText": "I think"
             },
             {
               "label": "In my opinion...",
+              "translation": "Mənim fikrimcə...",
               "speakText": "In my opinion"
             },
             {
               "label": "I believe...",
+              "translation": "İnanıram ki...",
               "speakText": "I believe"
             },
             {
               "label": "For me...",
+              "translation": "Mənim üçün...",
               "speakText": "For me"
             },
             {
               "label": "I agree.",
+              "translation": "Razıyam.",
               "speakText": "I agree."
             },
             {
               "label": "I don't think so.",
+              "translation": "Mən belə düşünmürəm.",
               "speakText": "I don't think so."
             },
             {
               "label": "You're right.",
+              "translation": "Sən haqlısan.",
               "speakText": "You're right."
             },
             {
               "label": "I'm not sure.",
+              "translation": "Əmin deyiləm.",
               "speakText": "I'm not sure."
             }
           ]
@@ -2242,34 +2370,42 @@
           "items": [
             {
               "label": "I think this film is great.",
+              "translation": "Məncə bu film əladır.",
               "speakText": "I think this film is great."
             },
             {
               "label": "In my opinion, English is useful.",
+              "translation": "Mənim fikrimcə, ingilis dili faydalıdır.",
               "speakText": "In my opinion, English is useful."
             },
             {
               "label": "Really? What about you?",
+              "translation": "Həqiqətən? Bəs sən?",
               "speakText": "Really? What about you?"
             },
             {
               "label": "That sounds interesting.",
+              "translation": "Bu maraqlı səslənir.",
               "speakText": "That sounds interesting."
             },
             {
               "label": "I agree with you.",
+              "translation": "Mən səninlə razıyam.",
               "speakText": "I agree with you."
             },
             {
               "label": "I'm not sure about that.",
+              "translation": "Mən buna əmin deyiləm.",
               "speakText": "I'm not sure about that."
             },
             {
               "label": "Tell me more.",
+              "translation": "Daha ətraflı danış.",
               "speakText": "Tell me more."
             },
             {
               "label": "For me, family is the most important.",
+              "translation": "Mənim üçün ailə ən vacibdir.",
               "speakText": "For me, family is the most important."
             }
           ]
