@@ -22,6 +22,9 @@ courseLevel: A0
     <div class="topics-grid">
       {% for lesson in a0Lessons %}
       <div class="topic-card">
+        {% if lesson.emoji %}
+        <span class="topic-card-emoji" aria-hidden="true">{{ lesson.emoji }}</span>
+        {% endif %}
         <h3 class="topic-title">Dərs {{ lesson.number }}: {{ lesson.indexTitle }}</h3>
         <p class="topic-description">{{ lesson.indexDescription }}</p>
         <a href="/courses/a0/lesson-{{ lesson.number }}/" class="topic-link">Dərsi Aç</a>
