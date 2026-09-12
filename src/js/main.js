@@ -81,10 +81,12 @@ function initLanguageSwitching() {
     '/grammar/beginner/': '/az/qrammatika/baslangic/',
     '/grammar/intermediate/': '/az/qrammatika/orta/',
     '/grammar/advanced/': '/az/qrammatika/ireli/',
+    '/grammar/beginner/articles/': '/az/qrammatika/baslangic/articles/',
     '/az/qrammatika/': '/grammar/',
     '/az/qrammatika/baslangic/': '/grammar/beginner/',
     '/az/qrammatika/orta/': '/grammar/intermediate/',
     '/az/qrammatika/ireli/': '/grammar/advanced/',
+    '/az/qrammatika/baslangic/articles/': '/grammar/beginner/articles/',
     
     // Stories pages
     '/stories/': '/az/hekayeler/',

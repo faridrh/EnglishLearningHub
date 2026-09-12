@@ -9,8 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
       const currentPath = window.location.pathname;
       let targetUrl = '/az/';
       
+      // Handle pages with a direct Azerbaijani adaptation
+      if (currentPath === '/grammar/beginner/articles/') {
+        targetUrl = '/az/qrammatika/baslangic/articles/';
+      }
       // Handle vocabulary pages - redirect all vocabulary subpages to main Azerbaijani vocabulary page
-      if (currentPath.includes('/vocabulary/')) {
+      else if (currentPath.includes('/vocabulary/')) {
         targetUrl = '/az/luget/';
       }
       // Handle grammar pages - redirect all grammar subpages to main Azerbaijani grammar page

@@ -3,6 +3,7 @@ layout: layouts/page.njk
 title: Articles (a, an, the)
 description: Master the basic rules for using articles in English sentences.
 level: Beginner
+azUrl: /az/qrammatika/baslangic/articles/
 ---
 
 <div class="grammar-content">

@@ -97,7 +97,7 @@ Bu sözləri effektiv öyrənmək üçün:
 ## Öyrənməni Əlaqələndirin
 
 ### Praktika üçün Qrammatika Mövzuları
-- **[Mətndə Artikllar](/grammar/beginner/articles/)** - "a", "an", "the" artikllarını lüğətlə öyrənin
+- **[Mətndə artikellər](/az/qrammatika/baslangic/articles/)** - "a", "an", "the" artikellərini lüğətlə öyrənin
 - **[Həzirki Zaman](/grammar/beginner/present-simple/)** - Gündəlik lüğətlə sadə cümlələr qurun
 - **[Çoğul İsimlər](/grammar/beginner/plural-nouns/)** - Yeni sözlərin tək və cəm formalarını öyrənin
 
