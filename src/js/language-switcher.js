@@ -29,10 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
       else if (currentPath.includes('/about')) {
         targetUrl = '/az/haqqinda/';
       }
-      // Handle contact page
-      else if (currentPath.includes('/contact')) {
-        targetUrl = '/az/elaqe/';
-      }
       // Default to Azerbaijani homepage
       else {
         targetUrl = '/az/';

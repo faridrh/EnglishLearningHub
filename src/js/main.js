@@ -43,53 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to initialize interactive elements
 function initInteractiveElements() {
-  // Contact form validation (if present)
-  const contactForm = document.querySelector('.contact-form');
-  
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Basic validation
-      let isValid = true;
-      const requiredFields = contactForm.querySelectorAll('[required]');
-      
-      requiredFields.forEach(field => {
-        if (!field.value.trim()) {
-          isValid = false;
-          field.classList.add('error');
-        } else {
-          field.classList.remove('error');
-        }
-      });
-      
-      // Email validation
-      const emailField = contactForm.querySelector('input[type="email"]');
-      if (emailField && emailField.value.trim()) {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(emailField.value)) {
-          isValid = false;
-          emailField.classList.add('error');
-        }
-      }
-      
-      if (isValid) {
-        // Display success message (in a real application, you would submit the form)
-        const successMessage = document.createElement('div');
-        successMessage.className = 'alert alert-success';
-        successMessage.innerHTML = 'Thank you for your message! We will respond shortly.';
-        
-        contactForm.parentNode.insertBefore(successMessage, contactForm);
-        contactForm.reset();
-        
-        // Remove success message after 5 seconds
-        setTimeout(() => {
-          successMessage.remove();
-        }, 5000);
-      }
-    });
-  }
-  
   // Add hover effects to cards
   document.querySelectorAll('.card, .feature-card, .vocabulary-card, .video-card, .tip-card')
     .forEach(card => {
@@ -149,9 +102,7 @@ function initLanguageSwitching() {
     
     // Other pages
     '/about/': '/az/haqqinda/',
-    '/contact/': '/az/elaqe/',
-    '/az/haqqinda/': '/about/',
-    '/az/elaqe/': '/contact/'
+    '/az/haqqinda/': '/about/'
   };
   
   // Function to get the equivalent URL in the other language

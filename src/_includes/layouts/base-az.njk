@@ -31,8 +31,8 @@
   
   <!-- Hreflang for multilingual SEO -->
   <link rel="alternate" hreflang="az" href="https://www.ingilisdili.com{{ page.url }}">
-  <link rel="alternate" hreflang="en" href="https://www.ingilisdili.com{% if page.url != '/az/' %}{{ page.url | replace('/az/', '/') | replace('luget', 'vocabulary') | replace('qrammatika', 'grammar') | replace('hekayeler', 'stories') | replace('haqqinda', 'about') | replace('elaqe', 'contact') | replace('oyunlar', 'games') }}{% else %}/{% endif %}">
-  <link rel="alternate" hreflang="x-default" href="https://www.ingilisdili.com{% if page.url != '/az/' %}{{ page.url | replace('/az/', '/') | replace('luget', 'vocabulary') | replace('qrammatika', 'grammar') | replace('hekayeler', 'stories') | replace('haqqinda', 'about') | replace('elaqe', 'contact') | replace('oyunlar', 'games') }}{% else %}/{% endif %}">
+  <link rel="alternate" hreflang="en" href="https://www.ingilisdili.com{% if page.url != '/az/' %}{{ page.url | replace('/az/', '/') | replace('luget', 'vocabulary') | replace('qrammatika', 'grammar') | replace('hekayeler', 'stories') | replace('haqqinda', 'about') | replace('oyunlar', 'games') }}{% else %}/{% endif %}">
+  <link rel="alternate" hreflang="x-default" href="https://www.ingilisdili.com{% if page.url != '/az/' %}{{ page.url | replace('/az/', '/') | replace('luget', 'vocabulary') | replace('qrammatika', 'grammar') | replace('hekayeler', 'stories') | replace('haqqinda', 'about') | replace('oyunlar', 'games') }}{% else %}/{% endif %}">
   
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -154,9 +154,6 @@
     </li>
     <li class="menu-item {% if page.url === '/az/haqqinda/' %}active{% endif %}">
       <a href="/az/haqqinda/">Haqqında</a>
-    </li>
-    <li class="menu-item {% if page.url === '/az/elaqe/' %}active{% endif %}">
-      <a href="/az/elaqe/">Əlaqə</a>
     </li>
   </ul>
 
