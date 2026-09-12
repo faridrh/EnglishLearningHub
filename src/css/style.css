@@ -928,6 +928,109 @@ p {
 
 /* Grammar Topics
 -------------------------------------------------- */
+.grammar-next-steps {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-background-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.grammar-next-steps-heading {
+  margin-bottom: var(--spacing-lg);
+}
+
+.grammar-next-steps-heading h2 {
+  margin-bottom: 0;
+  font-size: 1.75rem;
+}
+
+.grammar-next-steps-kicker {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.grammar-next-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-md);
+}
+
+.grammar-next-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--spacing-md);
+  min-height: 112px;
+  padding: var(--spacing-lg);
+  color: var(--color-text);
+  text-decoration: none;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium), border-color var(--transition-medium);
+}
+
+.grammar-next-step-featured {
+  border-color: var(--color-primary);
+}
+
+.grammar-next-step:hover {
+  color: var(--color-text);
+  border-color: var(--color-primary);
+  box-shadow: var(--box-shadow-md);
+  transform: translateY(-3px);
+}
+
+.grammar-next-step:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.grammar-next-step-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--color-primary);
+  background-color: var(--color-background-alt);
+  border-radius: 50%;
+}
+
+.grammar-next-step strong,
+.grammar-next-step small {
+  display: block;
+}
+
+.grammar-next-step strong {
+  margin-bottom: 4px;
+  color: var(--color-primary);
+  font-size: 1.05rem;
+}
+
+.grammar-next-step small {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.grammar-next-step-arrow {
+  color: var(--color-primary);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+  .grammar-next-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grammar-next-step {
+    min-height: auto;
+  }
+}
+
 .topics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
