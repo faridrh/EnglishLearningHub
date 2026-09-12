@@ -3,6 +3,7 @@ layout: layouts/page.njk
 title: Possessive Adjectives
 description: Learn how to use my, your, his, her, its, our, and their to show ownership.
 level: Beginner
+azUrl: /az/qrammatika/baslangic/possessive-adjectives/
 ---
 
 <div class="grammar-content">

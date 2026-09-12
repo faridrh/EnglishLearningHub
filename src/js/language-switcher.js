@@ -13,6 +13,21 @@ document.addEventListener('DOMContentLoaded', function() {
       if (currentPath === '/grammar/beginner/articles/') {
         targetUrl = '/az/qrammatika/baslangic/articles/';
       }
+      else if (currentPath === '/grammar/beginner/plural-nouns/') {
+        targetUrl = '/az/qrammatika/baslangic/plural-nouns/';
+      }
+      else if (currentPath === '/grammar/beginner/possessive-adjectives/') {
+        targetUrl = '/az/qrammatika/baslangic/possessive-adjectives/';
+      }
+      else if (currentPath === '/grammar/beginner/present-simple/') {
+        targetUrl = '/az/qrammatika/baslangic/present-simple/';
+      }
+      else if (currentPath === '/grammar/beginner/present-continuous/') {
+        targetUrl = '/az/qrammatika/baslangic/present-continuous/';
+      }
+      else if (currentPath === '/grammar/beginner/subject-pronouns/') {
+        targetUrl = '/az/qrammatika/baslangic/subject-pronouns/';
+      }
       // Handle vocabulary pages - redirect all vocabulary subpages to main Azerbaijani vocabulary page
       else if (currentPath.includes('/vocabulary/')) {
         targetUrl = '/az/luget/';

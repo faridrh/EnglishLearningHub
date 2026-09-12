@@ -3,6 +3,7 @@ layout: layouts/page.njk
 title: Plural Nouns
 description: Learn how to form regular and irregular plural nouns in English.
 level: Beginner
+azUrl: /az/qrammatika/baslangic/plural-nouns/
 ---
 
 <div class="grammar-content">

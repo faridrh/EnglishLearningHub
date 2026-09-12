@@ -4,6 +4,7 @@ title: Present Simple Tense
 description: Learn how to form and use the present simple tense for habits, facts, and routines.
 keywords: present simple tense, English grammar, beginner grammar, simple present, verb tenses, English lessons
 level: Beginner
+azUrl: /az/qrammatika/baslangic/present-simple/
 ---
 
 <div class="grammar-content">

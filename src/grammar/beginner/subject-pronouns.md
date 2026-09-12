@@ -3,6 +3,7 @@ layout: layouts/page.njk
 title: Subject Pronouns
 description: Understand the correct usage of I, you, he, she, it, we, and they.
 level: Beginner
+azUrl: /az/qrammatika/baslangic/subject-pronouns/
 ---
 
 <div class="grammar-content">

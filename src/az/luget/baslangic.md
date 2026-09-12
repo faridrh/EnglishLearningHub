@@ -98,8 +98,8 @@ Bu sözləri effektiv öyrənmək üçün:
 
 ### Praktika üçün Qrammatika Mövzuları
 - **[Mətndə artikellər](/az/qrammatika/baslangic/articles/)** - "a", "an", "the" artikellərini lüğətlə öyrənin
-- **[Həzirki Zaman](/grammar/beginner/present-simple/)** - Gündəlik lüğətlə sadə cümlələr qurun
-- **[Çoğul İsimlər](/grammar/beginner/plural-nouns/)** - Yeni sözlərin tək və cəm formalarını öyrənin
+- **[Present Simple zamanı](/az/qrammatika/baslangic/present-simple/)** - Gündəlik lüğətlə sadə cümlələr qurun
+- **[Cəm isimlər](/az/qrammatika/baslangic/plural-nouns/)** - Yeni sözlərin tək və cəm formalarını öyrənin
 
 ### Lüğət Təcrübəsi üçün Hekayələr
 - **[Mənim Gündəlik Rutinlərim](/stories/beginner/my-daily-routine/)** - Gündəlik fəaliyyət sözləri kontekstdə

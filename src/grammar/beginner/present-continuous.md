@@ -3,6 +3,7 @@ layout: layouts/page.njk
 title: Present Continuous Tense
 description: Understand when to use the present continuous for actions happening now.
 level: Beginner
+azUrl: /az/qrammatika/baslangic/present-continuous/
 ---
 
 <div class="grammar-content">
