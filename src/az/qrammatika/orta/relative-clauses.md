@@ -49,9 +49,13 @@ Təyin budaq cümləsi isim haqqında əlavə məlumat verir və iki cümləni b
 2. Vergüllü əlavə məlumat cümləsində `that` işlətmək.
 3. Mübtəda olan nisbi əvəzliyi buraxmaq.
 
-### Məşq
+### İnteraktiv çalışma
 
-- The teacher <input type="text" class="fill-blank" data-answer="who" placeholder="______"> helped me was very kind.
-- This is the city <input type="text" class="fill-blank" data-answer="where" placeholder="______"> I was born.
+<div class="interactive-exercise" id="relative-clauses-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> The teacher <input type="text" class="fill-blank" data-answer="who" aria-label="1-ci sualın cavabı" placeholder="______"> helped me was very kind.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> This is the city <input type="text" class="fill-blank" data-answer="where" aria-label="2-ci sualın cavabı" placeholder="______"> I was born.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="relative-clauses-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="relative-clauses-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

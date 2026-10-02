@@ -36,9 +36,13 @@ Qeyri-real arzu və fərzi vəziyyətlərdə `were` bütün şəxslərlə işlə
 2. `suggest`-dən sonra birbaşa infinitive işlətmək.
 3. Real keçmişlə qeyri-real `were` formasını qarışdırmaq.
 
-### Məşq
+### İnteraktiv çalışma
 
-- It is important that she <input type="text" class="fill-blank" data-answer="be" placeholder="______"> present.
-- I wish I <input type="text" class="fill-blank" data-answer="were" placeholder="______"> more confident.
+<div class="interactive-exercise" id="subjunctive-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> It is important that she <input type="text" class="fill-blank" data-answer="be" aria-label="1-ci sualın cavabı" placeholder="______"> present.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> I wish I <input type="text" class="fill-blank" data-answer="were" aria-label="2-ci sualın cavabı" placeholder="______"> more confident.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="subjunctive-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="subjunctive-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

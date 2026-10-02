@@ -53,9 +53,13 @@ Gələcəkdə baş verməsi mümkün olan vəziyyətlər üçün işlədilir.
 2. 2-ci növdə `would`-u hər iki hissədə işlətmək: **If I would have** deyil, **If I had**.
 3. 2-ci növü real, planlaşdırılmış gələcək hadisə üçün işlətmək.
 
-### Məşq
+### İnteraktiv çalışma
 
-- If she <input type="text" class="fill-blank" data-answer="studies" placeholder="______"> (study), she will pass.
-- If I <input type="text" class="fill-blank" data-answer="were" placeholder="______"> (be) rich, I would travel more.
+<div class="interactive-exercise" id="conditionals-1-2-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> If she <input type="text" class="fill-blank" data-answer="studies" aria-label="1-ci sualın cavabı" placeholder="______"> (study), she will pass.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> If I <input type="text" class="fill-blank" data-answer="were" aria-label="2-ci sualın cavabı" placeholder="______"> (be) rich, I would travel more.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="conditionals-1-2-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="conditionals-1-2-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

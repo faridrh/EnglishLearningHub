@@ -55,9 +55,13 @@ Wh-sual sözləri saxlanılır.
 2. Lazım olduqda əvəzliyi dəyişməmək.
 3. Dəyişməyən faktlarda zamanı mütləq geri çəkmək.
 
-### Məşq
+### İnteraktiv çalışma
 
-- “I am busy.” → He said that he <input type="text" class="fill-blank" data-answer="was busy" placeholder="______">.
-- “Will you come?” → She asked if I <input type="text" class="fill-blank" data-answer="would come" placeholder="______">.
+<div class="interactive-exercise" id="reported-speech-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> “I am busy.” → He said that he <input type="text" class="fill-blank" data-answer="was busy" aria-label="1-ci sualın cavabı" placeholder="______">.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> “Will you come?” → She asked if I <input type="text" class="fill-blank" data-answer="would come" aria-label="2-ci sualın cavabı" placeholder="______">.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="reported-speech-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="reported-speech-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

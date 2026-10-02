@@ -41,9 +41,13 @@ Hərəkəti edənin kimliyi vacib olduqda `by` işlədilir.
 2. Felin üçüncü forması əvəzinə əsas formanı işlətmək.
 3. Keçidsiz felləri passive etmək: `arrive`, `sleep`, `happen` passive olmur.
 
-### Məşq
+### İnteraktiv çalışma
 
-- The emails <input type="text" class="fill-blank" data-answer="are sent" placeholder="______"> (send) every morning.
-- This bridge <input type="text" class="fill-blank" data-answer="was built" placeholder="______"> (build) in 1998.
+<div class="interactive-exercise" id="passive-voice-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> The emails <input type="text" class="fill-blank" data-answer="are sent" aria-label="1-ci sualın cavabı" placeholder="______"> (send) every morning.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> This bridge <input type="text" class="fill-blank" data-answer="was built" aria-label="2-ci sualın cavabı" placeholder="______"> (build) in 1998.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="passive-voice-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="passive-voice-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

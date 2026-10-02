@@ -44,9 +44,13 @@ Formal üslubda `if` buraxılıb inversiya işlədilə bilər.
 2. `does/did`-dən sonra felə `-s/-ed` artırmaq.
 3. Adi tezlik zərflərindən sonra lazımsız inversiya etmək.
 
-### Məşq
+### İnteraktiv çalışma
 
-- Never <input type="text" class="fill-blank" data-answer="have I seen" placeholder="______"> such a beautiful painting.
-- Only then <input type="text" class="fill-blank" data-answer="did we realize" placeholder="______"> our mistake.
+<div class="interactive-exercise" id="inversion-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> Never <input type="text" class="fill-blank" data-answer="have I seen" aria-label="1-ci sualın cavabı" placeholder="______"> such a beautiful painting.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> Only then <input type="text" class="fill-blank" data-answer="did we realize" aria-label="2-ci sualın cavabı" placeholder="______"> our mistake.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="inversion-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="inversion-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

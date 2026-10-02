@@ -13,3 +13,65 @@ layout: layouts/base-az.njk
     </div>
   </article>
 </div>
+
+<script>
+document.addEventListener('click', event => {
+  const button = event.target.closest('[data-exercise-action]');
+  if (!button) return;
+
+  const exercise = document.getElementById(button.dataset.exerciseTarget);
+  if (!exercise) return;
+
+  const inputs = exercise.querySelectorAll('.fill-blank');
+  const results = exercise.querySelector('.results-section');
+  const score = exercise.querySelector('.exercise-score');
+  const feedback = exercise.querySelector('.exercise-feedback');
+
+  if (button.dataset.exerciseAction === 'reset') {
+    inputs.forEach(input => {
+      input.value = '';
+      input.classList.remove('correct', 'incorrect');
+    });
+    results.hidden = true;
+    return;
+  }
+
+  let correct = 0;
+  const messages = [];
+  inputs.forEach((input, index) => {
+    const answer = input.value.trim().toLowerCase().replace(/’/g, "'");
+    const expected = input.dataset.answer.toLowerCase();
+    const isCorrect = answer === expected;
+    input.classList.toggle('correct', isCorrect);
+    input.classList.toggle('incorrect', !isCorrect);
+    if (isCorrect) correct += 1;
+    else messages.push(`<p><strong>${index + 1}-ci boşluq:</strong> Düzgün cavab: ${input.dataset.answer}</p>`);
+  });
+
+  results.hidden = false;
+  score.textContent = `Nəticə: ${correct}/${inputs.length} (${Math.round(correct / inputs.length * 100)}%)`;
+  feedback.innerHTML = correct === inputs.length
+    ? '<p class="exercise-success">Əla! Bütün cavablar doğrudur.</p>'
+    : messages.join('');
+});
+</script>
+
+<style>
+.interactive-exercise {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.exercise-item { margin: 15px 0; line-height: 1.6; }
+.fill-blank { min-width: 120px; max-width: 100%; margin: 3px; padding: 8px 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; }
+.fill-blank:focus { outline: none; border-color: #007bff; }
+.fill-blank.correct { background-color: #d4edda; border-color: #28a745; }
+.fill-blank.incorrect { background-color: #f8d7da; border-color: #dc3545; }
+.exercise-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 20px 0; }
+.check-btn, .reset-btn { padding: 10px 20px; color: white; background: #007bff; border: 0; border-radius: 5px; cursor: pointer; font-size: 16px; }
+.reset-btn { background: #6c757d; }
+.results-section { margin-top: 20px; padding: 15px; background: white; border-left: 4px solid #007bff; border-radius: 5px; }
+.exercise-success { color: #188038; font-weight: 700; }
+</style>

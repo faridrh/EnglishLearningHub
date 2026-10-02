@@ -40,9 +40,13 @@ Keçmişdəki səbəbin indiki nəticəsini göstərir:
 2. Past Perfect əvəzinə Past Simple işlətmək.
 3. Keçmişdə mümkün real vəziyyətlər üçün bu quruluşdan istifadə etmək.
 
-### Məşq
+### İnteraktiv çalışma
 
-- If we <input type="text" class="fill-blank" data-answer="had left" placeholder="______"> earlier, we would have arrived on time.
-- If I had studied medicine, I <input type="text" class="fill-blank" data-answer="would be" placeholder="______"> a doctor now.
+<div class="interactive-exercise" id="conditionals-3-mixed-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> If we <input type="text" class="fill-blank" data-answer="had left" aria-label="1-ci sualın cavabı" placeholder="______"> earlier, we would have arrived on time.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> If I had studied medicine, I <input type="text" class="fill-blank" data-answer="would be" aria-label="2-ci sualın cavabı" placeholder="______"> a doctor now.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="conditionals-3-mixed-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="conditionals-3-mixed-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

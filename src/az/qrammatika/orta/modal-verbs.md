@@ -44,9 +44,13 @@ Modal fellər bacarıq, ehtimal, icazə, məsləhət və zərurət bildirir. Onl
 2. Üçüncü şəxsdə `-s` artırmaq: **She can**, `She cans` deyil.
 3. Keçmişdə zərurəti `musted` ilə ifadə etmək. Düzgün forma: **had to**.
 
-### Məşq
+### İnteraktiv çalışma
 
-- You <input type="text" class="fill-blank" data-answer="should" placeholder="______"> (məsləhət) drink more water.
-- <input type="text" class="fill-blank" data-answer="Could" placeholder="______"> you open the window, please?
+<div class="interactive-exercise" id="modal-verbs-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> You <input type="text" class="fill-blank" data-answer="should" aria-label="1-ci sualın cavabı" placeholder="______"> (məsləhət) drink more water.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> <input type="text" class="fill-blank" data-answer="Could" aria-label="2-ci sualın cavabı" placeholder="______"> you open the window, please?</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="modal-verbs-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="modal-verbs-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

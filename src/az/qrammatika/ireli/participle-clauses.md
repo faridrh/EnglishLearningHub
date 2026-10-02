@@ -39,9 +39,13 @@ Passive məna üçün:
 2. Eyni vaxtlı hərəkət üçün `having + V3` işlətmək.
 3. Passive məna üçün `-ing` işlətmək.
 
-### Məşq
+### İnteraktiv çalışma
 
-- <input type="text" class="fill-blank" data-answer="Having finished" placeholder="______"> (finish) the work, he left.
-- <input type="text" class="fill-blank" data-answer="Built" placeholder="______"> (build) in 1850, the bridge is historic.
+<div class="interactive-exercise" id="participle-clauses-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> <input type="text" class="fill-blank" data-answer="Having finished" aria-label="1-ci sualın cavabı" placeholder="______"> (finish) the work, he left.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> <input type="text" class="fill-blank" data-answer="Built" aria-label="2-ci sualın cavabı" placeholder="______"> (build) in 1850, the bridge is historic.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="participle-clauses-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="participle-clauses-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>

@@ -40,9 +40,13 @@ Cleft cümlələri məlumatı iki hissəyə bölərək xüsusi bir elementi vur�
 2. İnsan üçün `which` işlətmək.
 3. Vurğulamaq lazım olmayan sadə cümlələrdə bu ağır quruluşdan istifadə etmək.
 
-### Məşq
+### İnteraktiv çalışma
 
-- It was my sister <input type="text" class="fill-blank" data-answer="who" placeholder="______"> found the keys.
-- What I want <input type="text" class="fill-blank" data-answer="is" placeholder="______"> a quiet evening.
+<div class="interactive-exercise" id="cleft-sentences-exercise-az">
+	<div class="exercise-item"><p><strong>1.</strong> It was my sister <input type="text" class="fill-blank" data-answer="who" aria-label="1-ci sualın cavabı" placeholder="______"> found the keys.</p></div>
+	<div class="exercise-item"><p><strong>2.</strong> What I want <input type="text" class="fill-blank" data-answer="is" aria-label="2-ci sualın cavabı" placeholder="______"> a quiet evening.</p></div>
+	<div class="exercise-controls"><button type="button" data-exercise-action="check" data-exercise-target="cleft-sentences-exercise-az" class="check-btn">Cavabları yoxla</button><button type="button" data-exercise-action="reset" data-exercise-target="cleft-sentences-exercise-az" class="reset-btn">Sıfırla</button></div>
+	<div class="results-section" hidden><h4>Nəticə:</h4><p class="exercise-score"></p><div class="exercise-feedback"></div></div>
+</div>
 
 </div>
